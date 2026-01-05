@@ -1,0 +1,15 @@
+# node / build
+node_modules/
+npm-debug.log
+yarn.lock
+
+# env
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# editor
+.vscode/
+.idea/
