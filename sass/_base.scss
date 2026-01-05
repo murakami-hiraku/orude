@@ -1,0 +1,96 @@
+@use "sass:map";
+
+$main-color: #907910;
+$sub-color-dark: #000;
+$sub-color-light: #fff;
+$accent-color-r: #f8453d;
+$text-color-dark: #333333;
+$text-color-light: #000;
+$text-color-light-more: #000;
+$text-color-white: #fff;
+$border-color-gray: #d9d9d9;
+
+$font-family-ja: "Noto Serif JP", serif;
+$font-family-en: "Alice", serif;
+$font-family-en-sub: "Alegreya", serif;
+
+$breakpoints: (
+  sp: "(max-width: 767px)",
+  tb: "(min-width: 768px)",
+  pc: "(min-width: 1024px)",
+  lg: "(min-width: 1440px)",
+);
+
+// *{outline:1px solid #0000FF}
+
+@mixin mq($breakpoint) {
+  @media #{map.get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+.hidden-sp {
+  @include mq(sp) {
+    display: none !important;
+  }
+}
+.hidden-tb {
+  @include mq(tb) {
+    display: none !important;
+  }
+}
+.hidden-pc {
+  @include mq(pc) {
+    display: none !important;
+  }
+}
+
+.hidden-lg {
+  @include mq(lg) {
+    display: none !important;
+  }
+}
+
+html {
+  // スムーススクロール
+  // scroll-behavior: smooth;
+  margin-top: 0 !important;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+body {
+  margin-inline: auto !important;
+  background: $sub-color-light;
+  width: 100%;
+  max-width: 1920px;
+  overflow-x: clip;
+  color: $text-color-dark;
+  font-weight: 500;
+  font-size: 16px !important;
+  line-height: 24px;
+  font-family: $font-family-ja;
+
+  &.no-scroll {
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+#wpadminbar {
+  display: none;
+}
+
+// フェードイン
+/* 初期状態（非表示） */
+.fadein {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+/* 表示状態（ふわっと現れる） */
+.fadein.is-active {
+  opacity: 1;
+  transform: translateY(0);
+}
