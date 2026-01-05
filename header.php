@@ -41,11 +41,10 @@
       <div class="header__inner">
         <!-- /header-logo -->
         <a class="header__logo" href="<?php echo home_url('/'); ?>">
-          <div class="header__logo__word">
-            <h2 class="header__logo__word-main"></h2>
-            <h3 class="header__logo__word-sub"></h3>
-          </div>
-        </a><!-- /header-logo -->
+            <h2>オルデ</h2>
+            <h3>-orude-</h3>
+        </a>
+        <!-- /header-logo -->
         <nav id="js-drawer-content" class="header__nav">
           <?php
           wp_nav_menu([
@@ -55,8 +54,7 @@
             'fallback_cb' => false         // メニュー未設定時に何も出さない
           ]);
           ?>
-          <?php get_template_part('template-parts/block/block-tel'); ?>
-          <a class="header__button" href="<?php echo get_permalink(get_page_by_path('contact')); ?>">
+          <a class="header__btn" href="<?php echo get_permalink(get_page_by_path('contact')); ?>"><span class="header__btn-icon"></span>お問い合わせはこちら
           </a>
         </nav>
         <div class="header__open hidden-lg">
