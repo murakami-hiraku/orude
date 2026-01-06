@@ -118,12 +118,11 @@ body.no-scroll {
 }
 .header__logo h2 {
   font-size: 18px;
-  margin-bottom: -5px;
+  line-height: 1;
 }
 @media (min-width: 1024px) {
   .header__logo h2 {
     font-size: 24px;
-    margin-bottom: -2px;
   }
 }
 @media (min-width: 1440px) {
@@ -133,13 +132,12 @@ body.no-scroll {
 }
 .header__logo h3 {
   font-size: 9px;
+  line-height: 1;
   font-family: "Alegreya", serif;
-  margin-top: -5px;
 }
 @media (min-width: 1024px) {
   .header__logo h3 {
     font-size: 12px;
-    margin-top: -2px;
   }
 }
 @media (min-width: 1440px) {
