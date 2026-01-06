@@ -38,7 +38,7 @@
   <div class="wrapper">
     <!-- Header -->
     <header id="js-header" class="header">
-      <div class="header__inner">
+      <div class="header__inner inner">
         <!-- /header-logo -->
         <a class="header__logo" href="<?php echo home_url('/'); ?>">
           <h2>オルデ</h2>
@@ -57,15 +57,15 @@
           <a class="header__btn" href="<?php echo get_permalink(get_page_by_path('contact')); ?>"><img class="header__btn-icon" src="<?php echo get_template_directory_uri(); ?>/img/mail-icon.svg" alt="">お問い合わせはこちら
           </a>
         </nav>
-        <div class="header__open hidden-xl">
+        <div class="header__open hidden-lg">
           <button
             type="button"
             id="js-drawer-button"
-            class="header__drawer-icon hidden-xl"
+            class="header__drawer-icon hidden-lg"
             aria-label="メニューボタン">
-            <span class="header__icon-bar hidden-xl"></span>
-            <span class="header__icon-bar hidden-xl"></span>
-            <span class="header__icon-bar hidden-xl"></span>
+            <span class="header__icon-bar hidden-lg"></span>
+            <span class="header__icon-bar hidden-lg"></span>
+            <span class="header__icon-bar hidden-lg"></span>
           </button>
         </div>
       </div>

@@ -69,7 +69,6 @@ body {
   margin-inline: auto !important;
   background: $sub-color-light;
   width: 100%;
-  max-width: 1920px;
   overflow-x: clip;
   color: $text-color-dark;
   font-weight: 400;
@@ -81,6 +80,11 @@ body {
     height: 100%;
     overflow: hidden;
   }
+}
+
+.inner {
+  max-width: 1920px;
+  margin-inline: auto;
 }
 
 #wpadminbar {

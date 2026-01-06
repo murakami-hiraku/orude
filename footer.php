@@ -1,6 +1,6 @@
 <!-- footer -->
 <footer class="footer">
-  <div class="footer__inner">
+  <div class="footer__inner inner">
     <div class="footer__content">
       <!-- footer-logo -->
       <a class="footer__logo" href="<?php echo home_url('/'); ?>">

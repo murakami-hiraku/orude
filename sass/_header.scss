@@ -10,13 +10,14 @@
     height: 10.256vw;
     max-height: 80px;
 
-    @include b.mq(pc) {
-      padding-inline: clamp(60px, 6.25vw, 110px);
+    @include b.mq(lg) {
+      max-width: 1680px;
+      padding: 0;
+      margin-inline: auto;
       height: 100px;
     }
     @include b.mq(xl) {
       // padding-inline: 120px;
-      padding-inline: clamp(60px, 6.25vw, 120px);
     }
   }
 
@@ -32,10 +33,7 @@
       font-size: 18px;
       line-height: 1;
 
-      @include b.mq(pc) {
-        font-size: 24px;
-      }
-      @include b.mq(lg) {
+      @include b.mq(tb) {
         font-size: 36px;
       }
     }
@@ -44,10 +42,7 @@
       line-height: 1;
       font-family: b.$font-family-en-sub;
 
-      @include b.mq(pc) {
-        font-size: 12px;
-      }
-      @include b.mq(lg) {
+      @include b.mq(tb) {
         font-size: 18px;
       }
     }
@@ -75,10 +70,10 @@
     @include b.mq(tb) {
     }
     @include b.mq(pc) {
-      right: 6.25vw;
+      // right: 6.25vw;
     }
 
-    @include b.mq(xl) {
+    @include b.mq(lg) {
       display: flex;
       top: 0;
       right: 0;
@@ -99,7 +94,7 @@
       display: flex;
       flex-direction: column;
 
-      @include b.mq(xl) {
+      @include b.mq(lg) {
         flex-direction: row;
         gap: 30px;
       }
@@ -147,10 +142,12 @@
     align-items: center;
     gap: 8px;
     background: b.$main-color;
+    position: relative;
 
     &.is-checked {
       .header__icon-bar {
         position: absolute;
+
         &:nth-child(1) {
           top: 50%;
           transform: translateY(-50%);

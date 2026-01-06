@@ -39,7 +39,6 @@ body {
   margin-inline: auto !important;
   background: #fff;
   width: 100%;
-  max-width: 1920px;
   overflow-x: clip;
   color: #333333;
   font-weight: 400;
@@ -50,6 +49,11 @@ body {
 body.no-scroll {
   height: 100%;
   overflow: hidden;
+}
+
+.inner {
+  max-width: 1920px;
+  margin-inline: auto;
 }
 
 #wpadminbar {
@@ -88,15 +92,12 @@ body.no-scroll {
   height: 10.256vw;
   max-height: 80px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   .header__inner {
-    padding-inline: clamp(60px, 6.25vw, 110px);
+    max-width: 1680px;
+    padding: 0;
+    margin-inline: auto;
     height: 100px;
-  }
-}
-@media (min-width: 1719px) {
-  .header__inner {
-    padding-inline: clamp(60px, 6.25vw, 120px);
   }
 }
 .header__logo {
@@ -120,12 +121,7 @@ body.no-scroll {
   font-size: 18px;
   line-height: 1;
 }
-@media (min-width: 1024px) {
-  .header__logo h2 {
-    font-size: 24px;
-  }
-}
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   .header__logo h2 {
     font-size: 36px;
   }
@@ -135,12 +131,7 @@ body.no-scroll {
   line-height: 1;
   font-family: "Alegreya", serif;
 }
-@media (min-width: 1024px) {
-  .header__logo h3 {
-    font-size: 12px;
-  }
-}
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   .header__logo h3 {
     font-size: 18px;
   }
@@ -168,12 +159,7 @@ body.no-scroll {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
-@media (min-width: 1024px) {
-  .header__nav {
-    right: 6.25vw;
-  }
-}
-@media (min-width: 1719px) {
+@media (min-width: 1440px) {
   .header__nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -208,7 +194,7 @@ body.no-scroll {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-@media (min-width: 1719px) {
+@media (min-width: 1440px) {
   .header__nav__list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -271,6 +257,7 @@ body.no-scroll {
           align-items: center;
   gap: 8px;
   background: #907910;
+  position: relative;
 }
 .header__drawer-icon.is-checked .header__icon-bar {
   position: absolute;
