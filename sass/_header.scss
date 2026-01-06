@@ -67,6 +67,7 @@
     max-width: 400px;
     height: calc(100% - 40px);
     color: b.$text-color-white;
+    font-size: 15px;
 
     &.is-checked {
       transform: translateX(0);
@@ -92,6 +93,7 @@
       max-width: none;
       height: 100px;
       color: b.$main-color;
+      font-weight: 900;
     }
 
     &__list {

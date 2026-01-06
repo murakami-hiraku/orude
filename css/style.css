@@ -164,6 +164,7 @@ body.no-scroll {
   max-width: 400px;
   height: calc(100% - 40px);
   color: #fff;
+  font-size: 15px;
 }
 .header__nav.is-checked {
   -webkit-transform: translateX(0);
@@ -197,6 +198,7 @@ body.no-scroll {
     max-width: none;
     height: 100px;
     color: #907910;
+    font-weight: 900;
   }
 }
 .header__nav__list {
