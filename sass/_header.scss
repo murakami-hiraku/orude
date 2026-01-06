@@ -3,14 +3,26 @@
 
 .header {
   &__inner {
-    padding-inline: 15px;
+    padding-inline: clamp(15px, 3.85vw, 120px);
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 10.256vw;
+    max-height: 80px;
+
+    @include b.mq(pc) {
+      padding-inline: clamp(60px, 6.25vw, 110px);
+      height: 100px;
+    }
+    @include b.mq(xl) {
+      // padding-inline: 120px;
+      padding-inline: clamp(60px, 6.25vw, 120px);
+    }
   }
 
   &__logo {
     color: b.$main-color;
-    height: 40px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,36 +30,79 @@
     h2 {
       font-size: 18px;
       margin-bottom: -5px;
+
+      @include b.mq(pc) {
+        font-size: 24px;
+        margin-bottom: -2px;
+      }
+      @include b.mq(lg) {
+        font-size: 36px;
+      }
     }
     h3 {
       font-size: 9px;
       font-family: b.$font-family-en-sub;
       margin-top: -5px;
+
+      @include b.mq(pc) {
+        font-size: 12px;
+        margin-top: -2px;
+      }
+      @include b.mq(lg) {
+        font-size: 18px;
+      }
     }
   }
 
   &__nav {
     position: fixed;
-    top: 40px;
-    right: 0 !important;
-    transform: translateX(100%);
+    top: 10.256vw;
+    top: clamp(40px, 10.256vw, 80px);
+    right: 0;
+    transform: translateX(200%);
     z-index: 100;
     transition: transform 0.4s;
     background: b.$main-color;
     width: 100%;
     max-width: 400px;
     height: calc(100% - 40px);
-
     color: b.$text-color-white;
 
     &.is-checked {
       transform: translateX(0);
     }
 
+    @include b.mq(tb) {
+    }
+    @include b.mq(pc) {
+      right: 6.25vw;
+    }
+
+    @include b.mq(xl) {
+      display: flex;
+      top: 0;
+      right: 0;
+      position: relative;
+      align-items: center;
+      gap: 30px;
+      transform: none;
+      transition: none;
+      background: none;
+      width: fit-content;
+      max-width: none;
+      height: 100px;
+      color: b.$main-color;
+    }
+
     &__list {
       display: flex;
       flex-direction: column;
-      
+
+      @include b.mq(xl) {
+        flex-direction: row;
+        gap: 30px;
+      }
+
       li {
         display: flex;
         align-items: center;
@@ -61,7 +116,18 @@
     }
   }
   &__btn {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 20px;
+    background: b.$main-color;
+    color: b.$text-color-white;
+    border-radius: 10px;
+
     &-icon {
+      width: 35px;
+      height: 27px;
     }
   }
 
@@ -69,8 +135,10 @@
   }
 
   &__drawer-icon {
-    width: 40px;
-    height: 40px;
+    width: 10.256vw;
+    height: 10.256vw;
+    max-width: 50px;
+    max-height: 50px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -83,7 +151,8 @@
       .header__icon-bar {
         position: absolute;
         &:nth-child(1) {
-          top: 20px;
+          top: 50%;
+          transform: translateY(-50%);
           transform: rotate(45deg);
         }
 
@@ -92,7 +161,8 @@
         }
 
         &:nth-child(3) {
-          top: 20px;
+          top: 50%;
+          transform: translateY(-50%);
           transform: rotate(-45deg);
         }
       }
