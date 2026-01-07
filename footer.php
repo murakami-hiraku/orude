@@ -3,10 +3,7 @@
   <div class="footer__inner inner">
     <div class="footer__content">
       <!-- footer-logo -->
-      <a class="footer__logo" href="<?php echo home_url('/'); ?>">
-        <h2>オルデ</h2>
-        <h3>-orude-</h3>
-      </a>
+      <?php get_template_part('template-parts/parts/logo'); ?>
       <!-- /footer-logo -->
       <!-- footer-info -->
       <address class=" footer__info" id="footer-info">

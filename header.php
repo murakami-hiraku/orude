@@ -40,10 +40,7 @@
     <header id="js-header" class="header">
       <div class="header__inner inner">
         <!-- /header-logo -->
-        <a class="header__logo" href="<?php echo home_url('/'); ?>">
-          <h2>オルデ</h2>
-          <h3>-orude-</h3>
-        </a>
+        <?php get_template_part('template-parts/parts/logo'); ?>
         <!-- /header-logo -->
         <nav id="js-drawer-content" class="header__nav">
           <?php
