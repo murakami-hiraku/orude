@@ -65,22 +65,64 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// swiperの設定
-const swiper = new Swiper(".mySwiper", {
-  slidesPerView: 1, // 横に1枚のスライド
-  slidesPerGroup: 1, // スライド単位で移動
-  spaceBetween: 30,
+// スワイパーの設定
+const swiper = new Swiper(".fv-swiper", {
+  direction: "vertical",
+  slidesPerView: "auto",
   loop: false,
+  speed: 25000,
+  allowTouchMove: true,
 
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    type: "bullets",
+  // コンテンツの高さに基づいてスクロールを有効にする
+  watchSlidesProgress: true,
+
+  // 【重要】フリーモードの設定を細かく調整
+  freeMode: {
+    enabled: true,
+    momentum: false, // 指を離した後の「慣性」をオフにする（これでじわじわ動かなくなる）
+    minimumVelocity: 0.02,
   },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
   },
+
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    draggable: true,
+    hide: false,
+    snapOnRelease: false, // 指を離した時にスライド位置に吸い付かせない
+  },
+
+  mousewheel: true,
+});
+
+// --- 停止・制御処理 ---
+
+// 1. タッチした瞬間に、アニメーションを「物理的に」止める
+swiper.on("touchStart", () => {
+  swiper.autoplay.stop();
+  const wrapper = swiper.wrapperEl;
+  const matrix = window.getComputedStyle(wrapper).transform;
+  // 現在の正確な位置を固定する（これがズレとじわじわの防止に効きます）
+  wrapper.style.transform = matrix;
+  swiper.setTransition(0);
+});
+
+// 2. 指を離した瞬間、勝手に動かないように改めて固定する
+swiper.on("touchEnd", () => {
+  swiper.setTransition(0);
+  // もし自動再生を再開させたくない場合はここで止めたままにする
+  // 再開させたい場合は swiper.autoplay.start() ですが、リニアなので挙動が難しくなります
+});
+
+// 3. スクロールバー操作中のズレを防止
+swiper.on("setTranslate", () => {
+  // 手動操作中はTransitionを強制的に0にする
+  if (swiper.autoplay.running === false) {
+    swiper.setTransition(0);
+  }
 });
 
 // 読み込み時、スクロール時、セクションをフェードイン

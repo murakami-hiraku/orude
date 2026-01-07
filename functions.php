@@ -101,4 +101,3 @@ function enqueue_cf7_redirect_script()
   }
 }
 add_action('wp_enqueue_scripts', 'enqueue_cf7_redirect_script');
-

@@ -1,0 +1,65 @@
+@use "sass:map";
+@use "../../base" as b;
+
+.section-fv {
+  width: 100%;
+  height: 356px;
+  overflow: hidden;
+
+  &__inner {
+    position: relative;
+    height: 100%;
+    display: flex;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+
+  &-wrapper {
+    height: 100%;
+    transition-timing-function: linear !important;
+  }
+
+  &-slide {
+    height: 1800px;
+
+    &-container {
+      position: relative;
+      display: flex;
+      flex-direction: column; /* 縦に並べる */
+      width: 100%;
+    }
+  }
+
+  &-img {
+    position: relative; /* absoluteをやめる */
+    width: 80%; /* 任意 */
+    margin: 0 auto;
+    max-width: 400px;
+    display: block;
+    height: 300px;
+  }
+
+  &-scrollbar {
+    background: #000; // バーの背景色
+    width: 2px !important; // バーの太さ
+    right: 4px !important; // 右端からの位置
+    height: 96px !important;
+
+    // 動くツマミ部分のデザイン
+    &-drag {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #ffee03 !important; // ツマミの色
+      // ツマミ自体の追従が遅れる場合は、ここもlinearにすると同期が強まります
+      transition-timing-function: linear !important;
+      /* ツマミの基準点を中心にする */
+      cursor: grab;
+    }
+  }
+}

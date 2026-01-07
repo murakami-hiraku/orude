@@ -371,3 +371,67 @@ body.no-scroll {
     font-size: 18px;
   }
 }
+
+.section-fv {
+  width: 100%;
+  height: 356px;
+  overflow: hidden;
+}
+.section-fv__inner {
+  position: relative;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.swiper-wrapper {
+  height: 100%;
+  -webkit-transition-timing-function: linear !important;
+          transition-timing-function: linear !important;
+}
+.swiper-slide {
+  height: 1800px;
+}
+.swiper-slide-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; /* 縦に並べる */
+  width: 100%;
+}
+.swiper-img {
+  position: relative; /* absoluteをやめる */
+  width: 80%; /* 任意 */
+  margin: 0 auto;
+  max-width: 400px;
+  display: block;
+  height: 300px;
+}
+.swiper-scrollbar {
+  background: #000;
+  width: 2px !important;
+  right: 4px !important;
+  height: 96px !important;
+}
+.swiper-scrollbar-drag {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #ffee03 !important;
+  -webkit-transition-timing-function: linear !important;
+          transition-timing-function: linear !important;
+  /* ツマミの基準点を中心にする */
+  cursor: -webkit-grab;
+  cursor: grab;
+}
