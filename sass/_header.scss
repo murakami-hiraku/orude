@@ -29,6 +29,10 @@
     justify-content: center;
     align-items: center;
 
+    @include b.mq(lg) {
+      padding-left: 15px;
+    }
+
     h2 {
       font-size: 18px;
       line-height: 1;
@@ -93,9 +97,13 @@
     &__list {
       display: flex;
       flex-direction: column;
+      font-size: 15px;
 
       @include b.mq(lg) {
         flex-direction: row;
+        gap: 20px;
+      }
+      @include b.mq(xl) {
         gap: 30px;
       }
 
