@@ -128,23 +128,23 @@ const swiper = new Swiper(".fv-swiper", {
 // --- 外部イベント（インスタンス名の後の処理） ---
 // ここは swiper.on(...) で書き並べて問題ありません
 
-// swiper.on("touchStart", () => {
-//   swiper.autoplay.stop();
-//   const wrapper = swiper.wrapperEl;
-//   const matrix = window.getComputedStyle(wrapper).transform;
-//   wrapper.style.transform = matrix;
-//   swiper.setTransition(0);
-// });
+swiper.on("touchStart", () => {
+  swiper.autoplay.stop();
+  const wrapper = swiper.wrapperEl;
+  const matrix = window.getComputedStyle(wrapper).transform;
+  wrapper.style.transform = matrix;
+  swiper.setTransition(0);
+});
 
-// swiper.on("touchEnd", () => {
-//   swiper.setTransition(0);
-// });
+swiper.on("touchEnd", () => {
+  swiper.setTransition(0);
+});
 
-// swiper.on("setTranslate", () => {
-//   if (!swiper.autoplay.running) {
-//     swiper.setTransition(0);
-//   }
-// });
+swiper.on("setTranslate", () => {
+  if (!swiper.autoplay.running) {
+    swiper.setTransition(0);
+  }
+});
 
 // 読み込み時、スクロール時、セクションをフェードイン
 document.addEventListener("DOMContentLoaded", () => {

@@ -11,9 +11,41 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 128px;
     padding-bottom: 54px;
     padding-left: 15px;
+  }
+
+  &__lead {
+    position: absolute;
+    pointer-events: none;
+    top: 32px;
+    right: 3.84vw;
+    color: b.$main-color;
+    text-align: left;
+    z-index: 100;
+    .section-fv__lead-en {
+      font-family: b.$font-family-en;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 500;
+      color: b.$text-color-white;
+      letter-spacing: 0.2em;
+      -webkit-text-stroke: 0.3px b.$main-color; // 縁の太さ 色
+    }
+
+    .section-fv__lead-ja {
+      font-family: b.$font-family-ja;
+      font-weight: 900;
+      margin-top: 8px;
+
+      h3 {
+        font-size: 14px;
+      }
+      h2 {
+        font-size: 18px;
+      }
+    }
   }
 }
 
@@ -68,6 +100,7 @@
     right: 32px !important; // 右端からの位置
     height: 96px !important;
     padding-top: 5px;
+    margin-top: 130px;
 
     &::after {
       content: "SCROLL";

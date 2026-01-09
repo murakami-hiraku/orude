@@ -1,6 +1,16 @@
 <!-- ファーストビュー -->
 <section class="section-fv">
   <div class="section-fv__inner inner">
+
+    <div class="section-fv__lead">
+      <h3 class="section-fv__lead-en">-May the journey<br>
+        　ahead be a peaceful one.-</h3>
+
+      <div class="section-fv__lead-ja">
+        <h3>ーペットの総合供養ー</h3>
+        <h2>これからの旅が<br>穏やかな旅でありますように</h2>
+      </div>
+    </div>
     <!-- メイン（自動スクロール） -->
     <div class="swiper fv-swiper">
 

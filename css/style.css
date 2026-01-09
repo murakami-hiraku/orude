@@ -388,9 +388,38 @@ body.no-scroll {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 100px;
+  padding-top: 128px;
   padding-bottom: 54px;
   padding-left: 15px;
+}
+.section-fv__lead {
+  position: absolute;
+  pointer-events: none;
+  top: 32px;
+  right: 3.84vw;
+  color: #907910;
+  text-align: left;
+  z-index: 100;
+}
+.section-fv__lead .section-fv__lead-en {
+  font-family: "Alice", serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 0.2em;
+  -webkit-text-stroke: 0.3px #907910;
+}
+.section-fv__lead .section-fv__lead-ja {
+  font-family: "Noto Serif JP", serif;
+  font-weight: 900;
+  margin-top: 8px;
+}
+.section-fv__lead .section-fv__lead-ja h3 {
+  font-size: 14px;
+}
+.section-fv__lead .section-fv__lead-ja h2 {
+  font-size: 18px;
 }
 
 .swiper {
@@ -446,6 +475,7 @@ body.no-scroll {
   right: 32px !important;
   height: 96px !important;
   padding-top: 5px;
+  margin-top: 130px;
 }
 .swiper-scrollbar::after {
   content: "SCROLL";
