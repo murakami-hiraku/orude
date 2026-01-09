@@ -24,13 +24,12 @@
     color: b.$main-color;
     text-align: left;
     z-index: 100;
+
     .section-fv__lead-en {
       font-family: b.$font-family-en;
-      font-size: 14px;
-      line-height: 20px;
+      font-size: 20px;
       font-weight: 500;
       color: b.$text-color-white;
-      letter-spacing: 0.2em;
       -webkit-text-stroke: 0.3px b.$main-color; // 縁の太さ 色
     }
 
@@ -38,6 +37,7 @@
       font-family: b.$font-family-ja;
       font-weight: 900;
       margin-top: 8px;
+      letter-spacing: 0.05em;
 
       h3 {
         font-size: 14px;
@@ -47,58 +47,57 @@
       }
     }
   }
-}
 
-.swiper {
-  width: 100%;
-  height: 230px;
-  overflow: hidden;
-  position: relative;
-  margin-right: auto;
+  &__img {
+    position: relative;
+    display: flex;
+    flex-direction: column; /* 縦に並べる */
+    width: 80.76vw; /* 任意 */
+    height: auto;
+    margin-right: auto;
 
-  &-wrapper {
-    height: 100%;
-    transition-timing-function: linear !important;
-  }
-
-  &-slide {
-    height: fit-content !important;
-
-    &-container {
+    img {
       position: relative;
-      display: flex;
-      flex-direction: column; /* 縦に並べる */
-      width: 80.76vw; /* 任意 */
-      height: auto;
+      display: block;
+      // --- アニメーションの共通設定 ---
+      opacity: 0; // 最初は消しておく
+      animation: fadeIn 1.2s ease-out forwards; // forwardsでアニメーション終了時の状態を維持    }
+    }
+
+    .img-1 {
+      width: 41vw;
+      max-width: 41vw;
+      height: 47.43vw;
       margin-right: auto;
+      animation-delay: 0.3s; // 0.3秒後に開始
+    }
+    .img-2 {
+      width: 24.87vw;
+      max-width: 24.87vw;
+      height: 31.28vw;
+      margin-left: auto;
+      margin-top: -54px;
+      animation-delay: 0.8s; // 0.8秒後に開始（1枚目より遅らせる）
+    }
+
+    // --- フェードインのアニメーション定義 ---
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px); // 少し下から浮き上がる動き（任意）
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   }
-
-  &-img {
-    position: relative; /* absoluteをやめる */
-    display: block;
-    aspect-ratio: auto;
-  }
-
-  .img-1 {
-    width: 41vw;
-    height: 47.43vw;
-    margin-right: auto;
-  }
-
-  .img-2 {
-    width: 24.87vw;
-    height: 31.28vw;
-    margin-left: auto;
-    margin-top: -54px;
-  }
-
-  &-scrollbar {
+  &__scrollbar {
     position: relative;
     background: b.$main-color; // バーの背景色
-    width: 1px !important; // バーの太さ
-    right: 32px !important; // 右端からの位置
-    height: 96px !important;
+    width: 1px; // バーの太さ
+    right: 32px; // 右端からの位置
+    height: 96px;
     padding-top: 5px;
     margin-top: 130px;
 
@@ -114,18 +113,31 @@
       left: -4px;
     }
 
-    // 動くツマミ部分のデザイン
-    &-drag {
-      width: 7px;
-      height: 7px !important;
-      left: -3px !important;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -3px;
+      width: 7px; // バーの太さ
+      height: 7px; // バーの長さ
       border-radius: 50%;
-      border: 1px solid b.$main-color;
-      background: b.$sub-color-light !important; // ツマミの色
-      // ツマミ自体の追従が遅れる場合は、ここもlinearにすると同期が強まります
-      transition-timing-function: linear !important;
-      /* ツマミの基準点を中心にする */
-      // cursor: grab;
+      border: 1px solid b.$main-color; // 円の枠線の色
+      background: b.$sub-color-light; // 円の背景色
+
+      // --- アニメーションの設定を追加 ---
+      animation: scrollMove 8s ease-in-out infinite;
+    }
+  }
+  // --- キーフレームの定義 ---
+  @keyframes scrollMove {
+    0% {
+      top: 6px;
+    }
+    50% {
+      top: 84px; // バーの下の方まで移動
+    }
+    100% {
+      top: 6px;
     }
   }
 }

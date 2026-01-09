@@ -403,17 +403,16 @@ body.no-scroll {
 }
 .section-fv__lead .section-fv__lead-en {
   font-family: "Alice", serif;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 20px;
   font-weight: 500;
   color: #fff;
-  letter-spacing: 0.2em;
   -webkit-text-stroke: 0.3px #907910;
 }
 .section-fv__lead .section-fv__lead-ja {
   font-family: "Noto Serif JP", serif;
   font-weight: 900;
   margin-top: 8px;
+  letter-spacing: 0.05em;
 }
 .section-fv__lead .section-fv__lead-ja h3 {
   font-size: 14px;
@@ -421,25 +420,7 @@ body.no-scroll {
 .section-fv__lead .section-fv__lead-ja h2 {
   font-size: 18px;
 }
-
-.swiper {
-  width: 100%;
-  height: 230px;
-  overflow: hidden;
-  position: relative;
-  margin-right: auto;
-}
-.swiper-wrapper {
-  height: 100%;
-  -webkit-transition-timing-function: linear !important;
-          transition-timing-function: linear !important;
-}
-.swiper-slide {
-  height: -webkit-fit-content !important;
-  height: -moz-fit-content !important;
-  height: fit-content !important;
-}
-.swiper-slide-container {
+.section-fv__img {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -452,32 +433,64 @@ body.no-scroll {
   height: auto;
   margin-right: auto;
 }
-.swiper-img {
-  position: relative; /* absoluteをやめる */
+.section-fv__img img {
+  position: relative;
   display: block;
-  aspect-ratio: auto;
+  opacity: 0;
+  -webkit-animation: fadeIn 1.2s ease-out forwards;
+          animation: fadeIn 1.2s ease-out forwards;
 }
-.swiper .img-1 {
+.section-fv__img .img-1 {
   width: 41vw;
+  max-width: 41vw;
   height: 47.43vw;
   margin-right: auto;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
 }
-.swiper .img-2 {
+.section-fv__img .img-2 {
   width: 24.87vw;
+  max-width: 24.87vw;
   height: 31.28vw;
   margin-left: auto;
   margin-top: -54px;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
 }
-.swiper-scrollbar {
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+.section-fv__scrollbar {
   position: relative;
   background: #907910;
-  width: 1px !important;
-  right: 32px !important;
-  height: 96px !important;
+  width: 1px;
+  right: 32px;
+  height: 96px;
   padding-top: 5px;
   margin-top: 130px;
 }
-.swiper-scrollbar::after {
+.section-fv__scrollbar::after {
   content: "SCROLL";
   font-size: 9px;
   font-family: "Alegreya", serif;
@@ -489,14 +502,38 @@ body.no-scroll {
   bottom: 11px;
   left: -4px;
 }
-.swiper-scrollbar-drag {
+.section-fv__scrollbar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -3px;
   width: 7px;
-  height: 7px !important;
-  left: -3px !important;
+  height: 7px;
   border-radius: 50%;
   border: 1px solid #907910;
-  background: #fff !important;
-  -webkit-transition-timing-function: linear !important;
-          transition-timing-function: linear !important;
-  /* ツマミの基準点を中心にする */
+  background: #fff;
+  -webkit-animation: scrollMove 8s ease-in-out infinite;
+          animation: scrollMove 8s ease-in-out infinite;
+}
+@-webkit-keyframes scrollMove {
+  0% {
+    top: 6px;
+  }
+  50% {
+    top: 84px;
+  }
+  100% {
+    top: 6px;
+  }
+}
+@keyframes scrollMove {
+  0% {
+    top: 6px;
+  }
+  50% {
+    top: 84px;
+  }
+  100% {
+    top: 6px;
+  }
 }
