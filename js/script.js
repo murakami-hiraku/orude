@@ -70,60 +70,81 @@ const swiper = new Swiper(".fv-swiper", {
   direction: "vertical",
   slidesPerView: "auto",
   loop: false,
-  speed: 25000,
+  speed: 3000,
   allowTouchMove: true,
+  spaceBetween: 54,
 
-  // コンテンツの高さに基づいてスクロールを有効にする
-  watchSlidesProgress: true,
+  // resistance: false,
+  // resistanceRatio: 0,
+  // watchSlidesProgress: true,
 
-  // 【重要】フリーモードの設定を細かく調整
   freeMode: {
     enabled: true,
-    momentum: false, // 指を離した後の「慣性」をオフにする（これでじわじわ動かなくなる）
-    minimumVelocity: 0.02,
+    momentum: false,
   },
 
   autoplay: {
     delay: 0,
     disableOnInteraction: false,
+    stopOnLastSlide: true,
   },
 
   scrollbar: {
     el: ".swiper-scrollbar",
     draggable: true,
     hide: false,
-    snapOnRelease: false, // 指を離した時にスライド位置に吸い付かせない
+    snapOnRelease: false,
   },
 
   mousewheel: true,
+  updateOnImagesReady: true,
+  observer: true,
+  observeParents: true,
+
+  // --- イベント（on）は1つにまとめます ---
+  on: {
+    init: function () {
+      // 1. 全ての画像が読み込まれたら再計算
+      window.addEventListener("load", () => {
+        this.update();
+      });
+      // 2. 念のため少し遅れて再計算（WordPressの遅延対策）
+      setTimeout(() => {
+        this.update();
+      }, 1000);
+    },
+    reachEnd: function () {
+      const self = this;
+      self.autoplay.stop();
+      setTimeout(() => {
+        // 最初に戻る際、speedを0にするとパッと戻り、
+        // 数値を入れるとスルスル戻ります
+        self.slideTo(0, 1000);
+      }, 1000);
+    },
+  },
 });
 
-// --- 停止・制御処理 ---
+// --- 外部イベント（インスタンス名の後の処理） ---
+// ここは swiper.on(...) で書き並べて問題ありません
 
-// 1. タッチした瞬間に、アニメーションを「物理的に」止める
-swiper.on("touchStart", () => {
-  swiper.autoplay.stop();
-  const wrapper = swiper.wrapperEl;
-  const matrix = window.getComputedStyle(wrapper).transform;
-  // 現在の正確な位置を固定する（これがズレとじわじわの防止に効きます）
-  wrapper.style.transform = matrix;
-  swiper.setTransition(0);
-});
+// swiper.on("touchStart", () => {
+//   swiper.autoplay.stop();
+//   const wrapper = swiper.wrapperEl;
+//   const matrix = window.getComputedStyle(wrapper).transform;
+//   wrapper.style.transform = matrix;
+//   swiper.setTransition(0);
+// });
 
-// 2. 指を離した瞬間、勝手に動かないように改めて固定する
-swiper.on("touchEnd", () => {
-  swiper.setTransition(0);
-  // もし自動再生を再開させたくない場合はここで止めたままにする
-  // 再開させたい場合は swiper.autoplay.start() ですが、リニアなので挙動が難しくなります
-});
+// swiper.on("touchEnd", () => {
+//   swiper.setTransition(0);
+// });
 
-// 3. スクロールバー操作中のズレを防止
-swiper.on("setTranslate", () => {
-  // 手動操作中はTransitionを強制的に0にする
-  if (swiper.autoplay.running === false) {
-    swiper.setTransition(0);
-  }
-});
+// swiper.on("setTranslate", () => {
+//   if (!swiper.autoplay.running) {
+//     swiper.setTransition(0);
+//   }
+// });
 
 // 読み込み時、スクロール時、セクションをフェードイン
 document.addEventListener("DOMContentLoaded", () => {

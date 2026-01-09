@@ -8,22 +8,26 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="swiper-slide-container">
-            <img class="swiper-img" src="<?php echo get_template_directory_uri(); ?>/img/fv-img-1.png" alt="">
-            <img class="swiper-img" src="<?php echo get_template_directory_uri(); ?>/img/fv-img-2.png" alt="">
-            <img class="swiper-img" src="<?php echo get_template_directory_uri(); ?>/img/fv-img-1.png" alt="">
-            <img class="swiper-img" src="<?php echo get_template_directory_uri(); ?>/img/fv-img-2.png" alt="">
-            <img class="swiper-img" src="<?php echo get_template_directory_uri(); ?>/img/fv-img-1.png" alt="">
-            <img class="swiper-img" src="<?php echo get_template_directory_uri(); ?>/img/fv-img-2.png" alt="">
+            <img class="swiper-img img-1" src="<?php echo get_template_directory_uri(); ?>/img/fv-img-1.png" alt="">
+            <img class="swiper-img img-2" src="<?php echo get_template_directory_uri(); ?>/img/fv-img-2.png" alt="">
           </div>
         </div>
         <div class="swiper-slide">
           <div class="swiper-slide-container">
-            <img class="swiper-img" src="<?php echo get_template_directory_uri(); ?>/img/fv-img-1.png" alt="">
-            <img class="swiper-img" src="<?php echo get_template_directory_uri(); ?>/img/fv-img-2.png" alt="">
-            <img class="swiper-img" src="<?php echo get_template_directory_uri(); ?>/img/fv-img-1.png" alt="">
-            <img class="swiper-img" src="<?php echo get_template_directory_uri(); ?>/img/fv-img-2.png" alt="">
-            <img class="swiper-img" src="<?php echo get_template_directory_uri(); ?>/img/fv-img-1.png" alt="">
-            <img class="swiper-img" src="<?php echo get_template_directory_uri(); ?>/img/fv-img-2.png" alt="">
+            <img class="swiper-img img-1" src="<?php echo get_template_directory_uri(); ?>/img/fv-img-1.png" alt="">
+            <img class="swiper-img img-2" src="<?php echo get_template_directory_uri(); ?>/img/fv-img-2.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-slide-container">
+            <img class="swiper-img img-1" src="<?php echo get_template_directory_uri(); ?>/img/fv-img-1.png" alt="">
+            <img class="swiper-img img-2" src="<?php echo get_template_directory_uri(); ?>/img/fv-img-2.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-slide-container">
+            <img class="swiper-img img-1" src="<?php echo get_template_directory_uri(); ?>/img/fv-img-1.png" alt="">
+            <img class="swiper-img img-2" src="<?php echo get_template_directory_uri(); ?>/img/fv-img-2.png" alt="">
           </div>
         </div>
       </div>
