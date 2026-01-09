@@ -1,5 +1,5 @@
 <!-- ファーストビュー -->
-<section class="section-fv">
+<section class="section-fv .fadein">
   <div class="section-fv__inner inner">
 
     <div class="section-fv__lead">
