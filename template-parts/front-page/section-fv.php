@@ -3,12 +3,12 @@
   <div class="section-fv__inner inner">
 
     <div class="section-fv__lead">
-      <h3 class="section-fv__lead-en">-May the journey<br>
-        　ahead be a peaceful one.-</h3>
+      <p class="section-fv__lead-en">-May the journey<br>
+        　ahead be a peaceful one.-</p>
 
       <div class="section-fv__lead-ja">
-        <h3>ーペットの総合供養ー</h3>
-        <h2>これからの旅が<br>穏やかな旅でありますように</h2>
+        <p>ーペットの総合供養ー</p>
+        <h1>これからの旅が<br>穏やかな旅でありますように</h1>
       </div>
     </div>
 
