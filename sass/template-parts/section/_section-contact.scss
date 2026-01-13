@@ -1,2 +1,65 @@
 @use "sass:map";
 @use "../../base" as b;
+
+.section-contact {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__ttl {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  &__info {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  &__tel {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  &__links {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  &__link {
+    margin-bottom: 15px;
+    text-align: center;
+
+    .mail {
+      margin-bottom: 15px;
+    }
+
+    .line {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__txt {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  &__card-logo {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  &__img {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  &__bg-txt {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
