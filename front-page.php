@@ -10,6 +10,10 @@
 <?php get_template_part('template-parts/front-page/section-message'); ?>
 <!-- /メッセージ -->
 
+<!-- コンタクト -->
+<?php get_template_part('template-parts/section/section-contact'); ?>
+<!-- /コンタクト -->
+
 
 <!-- フッター -->
 <?php get_footer(); ?>

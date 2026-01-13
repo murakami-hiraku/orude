@@ -521,7 +521,7 @@ body.no-scroll {
           flex-direction: column; /* 縦に並べる */
   width: clamp(360px, 80.76vw, 1000px); /* 任意 */
   height: auto;
-  margin-right: auto;
+  margin-right: 46px;
 }
 @media (min-width: 1024px) {
   .section-fv__img {
@@ -557,6 +557,7 @@ body.no-scroll {
 @media (min-width: 1024px) {
   .section-fv__img .img-2 {
     margin-top: -125px;
+    margin-right: 30px;
   }
 }
 @media (min-width: 1440px) {
@@ -592,13 +593,15 @@ body.no-scroll {
   position: relative;
   background: #907910;
   width: 1px;
-  right: 32px;
+  right: 16px;
   height: 96px;
   padding-top: 5px;
   margin-top: 130px;
+  margin-top: clamp(130px, 33.3vw, 200px);
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .section-fv__scrollbar {
+    margin-top: 400px;
     height: 200px;
   }
 }
@@ -614,7 +617,7 @@ body.no-scroll {
   bottom: 11px;
   left: -4px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .section-fv__scrollbar::after {
     font-size: 20px;
   }
@@ -632,7 +635,7 @@ body.no-scroll {
   -webkit-animation: scrollMove 8s ease-in-out infinite;
           animation: scrollMove 8s ease-in-out infinite;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .section-fv__scrollbar::before {
     width: 14px;
     height: 14px;
@@ -660,4 +663,56 @@ body.no-scroll {
   100% {
     top: 6.25%;
   }
+}
+
+.section-message__img-left {
+  grid-area: left-img;
+}
+
+.section-message__box {
+  grid-area: text-box;
+}
+
+.section-message__img-right {
+  grid-area: right-img;
+}
+
+.section-message {
+  margin-top: 100px;
+  width: 100%;
+}
+.section-message__inner {
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  /* SP: 2列にして、1行目にテキストを配置 */
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "text-box text-box" "left-img right-img";
+}
+@media (min-width: 1024px) {
+  .section-message__inner {
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: "left-img text-box right-img";
+  }
+}
+.section-message__img-left {
+  width: 94px;
+}
+.section-message__img-left img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.section-message__box {
+  text-align: center;
+}
+.section-message__img-right {
+  width: 94px;
+}
+.section-message__img-right img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
