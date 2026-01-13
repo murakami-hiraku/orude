@@ -32,7 +32,7 @@
 
     @include b.mq(pc) {
       top: 109px; // PCでは少し位置を下げるなど調整
-      right: 0;
+      right: 4.9vw;
     }
 
     .section-fv__lead-en {
@@ -41,8 +41,8 @@
       font-weight: 500;
       color: b.$text-color-white;
       -webkit-text-stroke: 0.3px b.$main-color;
-      line-height: 1.2; // 英語の見出し用に少し詰め気味に設定
-      margin-bottom: 20px; // 日本語との間隔を空ける
+      line-height: 1.3;
+      letter-spacing: 0.03em;
 
       @include b.mq(pc) {
         font-size: 64px;
@@ -53,22 +53,26 @@
     .section-fv__lead-ja {
       font-family: b.$font-family-ja;
       font-weight: 900;
-      margin-top: 8px;
+      margin-top: 16px;
       letter-spacing: 0.05em;
+
+      @include b.mq(pc) {
+        margin-top: 60px;
+      }
 
       p {
         font-size: 14px;
-        line-height: 1.6;
-        margin-bottom: 10px;
+        line-height: 1.2;
 
         @include b.mq(pc) {
+          line-height: 1.8;
           font-size: 24px;
         }
       }
 
       h1 {
         font-size: 18px;
-        line-height: 1.3; // 大きな文字が重ならないように調整
+        line-height: 1.8;
 
         @include b.mq(pc) {
           font-size: 40px;
@@ -118,7 +122,7 @@
       width: 24.87vw;
       height: 31.28vw;
       margin-left: auto;
-      margin-top: -54px;
+      margin-top: -79px;
       animation-delay: 0.8s; // 0.8秒後に開始（1枚目より遅らせる）
 
       @include b.mq(pc) {
