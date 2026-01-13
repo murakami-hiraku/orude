@@ -2,7 +2,7 @@
 <section class="section-message">
   <div class="section-message__inner inner">
 
-    <div class="section-message__img pc">
+    <div class="section-message__img-left">
       <img src="<?php echo get_template_directory_uri(); ?>/img/message-img-left.png" alt="" class="left">
     </div>
 
@@ -17,8 +17,7 @@
       </div>
     </div>
 
-    <div class="section-message__img sp">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/message-img-left.png" alt="" class="left">
+    <div class="section-message__img-right">
       <img src="<?php echo get_template_directory_uri(); ?>/img/message-img-right.png" alt="" class="right">
     </div>
   </div>
