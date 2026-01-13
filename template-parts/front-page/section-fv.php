@@ -12,13 +12,14 @@
       </div>
     </div>
 
-    <div class="section-fv__img">
-      <img class="img-1" src="<?php echo get_template_directory_uri(); ?>/img/fv-img-1.png" alt="">
-      <img class="img-2" src="<?php echo get_template_directory_uri(); ?>/img/fv-img-2.png" alt="">
-    </div>
+    <div class="section-fv__content">
+      <div class="section-fv__img">
+        <img class="img-1" src="<?php echo get_template_directory_uri(); ?>/img/fv-img-1.png" alt="">
+        <img class="img-2" src="<?php echo get_template_directory_uri(); ?>/img/fv-img-2.png" alt="">
+      </div>
 
-    <div class="section-fv__scrollbar">
-
+      <div class="section-fv__scrollbar">
+      </div>
     </div>
 
   </div>

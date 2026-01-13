@@ -12,8 +12,11 @@
     justify-content: center;
     align-items: center;
     padding-top: 128px;
-    padding-bottom: 54px;
     padding-left: 15px;
+
+    @include b.mq(pc) {
+      padding-top: 89px;
+    }
   }
 
   &__lead {
@@ -24,13 +27,27 @@
     color: b.$main-color;
     text-align: left;
     z-index: 100;
+    // 行間を確保（文字サイズの約1.5倍程度が一般的です）
+    line-height: 1.4;
+
+    @include b.mq(pc) {
+      top: 109px; // PCでは少し位置を下げるなど調整
+      right: 0;
+    }
 
     .section-fv__lead-en {
       font-family: b.$font-family-en;
       font-size: 20px;
       font-weight: 500;
       color: b.$text-color-white;
-      -webkit-text-stroke: 0.3px b.$main-color; // 縁の太さ 色
+      -webkit-text-stroke: 0.3px b.$main-color;
+      line-height: 1.2; // 英語の見出し用に少し詰め気味に設定
+      margin-bottom: 20px; // 日本語との間隔を空ける
+
+      @include b.mq(pc) {
+        font-size: 64px;
+        -webkit-text-stroke: 1px b.$main-color; // PCでは縁も少し太くすると綺麗です
+      }
     }
 
     .section-fv__lead-ja {
@@ -41,11 +58,34 @@
 
       p {
         font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 10px;
+
+        @include b.mq(pc) {
+          font-size: 24px;
+        }
       }
+
       h1 {
         font-size: 18px;
+        line-height: 1.3; // 大きな文字が重ならないように調整
+
+        @include b.mq(pc) {
+          font-size: 40px;
+          // 改行を維持しつつ、幅が狭くならないように
+          white-space: nowrap;
+        }
       }
     }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1280px;
+    margin-inline: auto;
   }
 
   &__img {
@@ -65,19 +105,26 @@
     }
 
     .img-1 {
+      max-width: 540px;
+      max-height: 619px;
       width: 41vw;
-      max-width: 41vw;
       height: 47.43vw;
       margin-right: auto;
       animation-delay: 0.3s; // 0.3秒後に開始
     }
     .img-2 {
+      max-width: 337px;
+      max-height: 422px;
       width: 24.87vw;
-      max-width: 24.87vw;
       height: 31.28vw;
       margin-left: auto;
       margin-top: -54px;
       animation-delay: 0.8s; // 0.8秒後に開始（1枚目より遅らせる）
+
+      @include b.mq(pc) {
+        margin-right: 8.3vw;
+        margin-top: -125px;
+      }
     }
 
     // --- フェードインのアニメーション定義 ---
@@ -101,6 +148,10 @@
     padding-top: 5px;
     margin-top: 130px;
 
+    @include b.mq(pc) {
+      height: 200px;
+    }
+
     &::after {
       content: "SCROLL";
       font-size: 9px;
@@ -111,6 +162,10 @@
       transform: rotate(270deg);
       bottom: 11px;
       left: -4px;
+
+      @include b.mq(pc) {
+        font-size: 20px;
+      }
     }
 
     &::before {
@@ -126,6 +181,12 @@
 
       // --- アニメーションの設定を追加 ---
       animation: scrollMove 8s ease-in-out infinite;
+
+      @include b.mq(pc) {
+        width: 14px;
+        height: 14px;
+        left: -6.5px;
+      }
     }
   }
   // --- キーフレームの定義 ---
