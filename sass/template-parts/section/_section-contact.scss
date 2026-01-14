@@ -2,64 +2,126 @@
 @use "../../base" as b;
 
 .section-contact {
+  &__wrap {
+    padding-block: 50px;
+  }
   &__inner {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
+    padding-inline: 15px;
+  }
+
+  &__info-box {
+    text-align: center;
   }
 
   &__ttl {
-    margin-bottom: 30px;
-    text-align: center;
+    font-weight: 900;
+    font-size: 20px;
+    color: b.$main-color;
   }
 
   &__info {
-    margin-bottom: 30px;
+    margin-top: 25px;
     text-align: center;
+
+    p {
+      font-weight: 900;
+      font-size: 14px;
+      line-height: 2;
+    }
   }
 
   &__tel {
-    margin-bottom: 30px;
     text-align: center;
+    margin-bottom: 10px;
+    a {
+      font-weight: 900;
+      font-size: 18px;
+      color: b.$main-color;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    img {
+      width: 33.5px;
+      height: 24px;
+    }
+  }
+
+  &__link-box {
+    margin-top: 25px;
   }
 
   &__links {
-    margin-bottom: 30px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-inline: 55px;
   }
 
   &__link {
-    margin-bottom: 15px;
     text-align: center;
+    border-radius: 5px;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 20px;
+    color: b.$text-color-white;
+    font-weight: 900;
+    font-size: 16px;
 
-    .mail {
-      margin-bottom: 15px;
-    }
-
-    .line {
-      margin-bottom: 15px;
+    &-icon {
+      clip-path: polygon(0 0, 0 100%, 85% 50%);
+      background: b.$sub-color-light;
+      display: inline-block;
+      width: 10px;
+      height: 10px;
     }
   }
 
+  .mail {
+    background: b.$main-color;
+  }
+
+  .line {
+    background: #a6ce4f;
+  }
+
   &__txt {
-    margin-bottom: 30px;
+    margin-top: 25px;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 1.8;
     text-align: center;
   }
 
   &__card-logo {
-    margin-bottom: 30px;
+    margin-top: 25px;
+    padding-inline: 25px;
+
     text-align: center;
   }
 
   &__img {
-    margin-bottom: 30px;
+    margin-top: 50px;
+    padding-inline: 63px;
     text-align: center;
   }
 
   &__bg-txt {
-    margin-bottom: 30px;
-    text-align: center;
+    font-weight: 500;
+    color: b.$text-color-white;
+    -webkit-text-stroke: 0.3px b.$main-color;
+    font-size: 36px;
+    font-family: b.$font-family-en;
+    letter-spacing: 0.03em;
+    line-height: 1.3;
+    white-space: nowrap;
   }
 }
