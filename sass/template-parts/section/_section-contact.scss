@@ -55,6 +55,11 @@
 
   &__link-box {
     margin-top: 25px;
+    background: b.$sub-color-light;
+
+    @include b.mq(pc) {
+      box-shadow: 0px 4px 4px 0px #00000040;
+    }
   }
 
   &__links {

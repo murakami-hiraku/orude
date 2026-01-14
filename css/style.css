@@ -778,6 +778,13 @@ body.no-scroll {
 }
 .section-contact__link-box {
   margin-top: 25px;
+  background: #fff;
+}
+@media (min-width: 1024px) {
+  .section-contact__link-box {
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  }
 }
 .section-contact__links {
   display: -webkit-box;
