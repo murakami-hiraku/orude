@@ -18,7 +18,7 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    padding-inline: 15px;
+    padding-inline: 3.84vw;
 
     @include b.mq(pc) {
       width: 100%;
@@ -27,6 +27,8 @@
       align-items: start;
 
       flex-direction: row;
+      padding-inline: 0;
+      padding-left: 3.125vw;
     }
   }
 
@@ -112,20 +114,20 @@
       padding: 60px 50px;
       position: absolute;
       bottom: -28px;
-      left: 0;
+      left: 3.125vw;
     }
   }
 
   &__links {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 25px;
     padding-inline: 55px;
 
     @include b.mq(pc) {
       flex-direction: row;
-      justify-content: center;
-      align-items: center;
       gap: 50px;
       padding-inline: 0;
     }
@@ -154,6 +156,7 @@
     font-weight: 900;
     font-size: 16px;
     white-space: nowrap;
+    max-width: 250px;
 
     .link-icon {
       clip-path: polygon(0 0, 0 100%, 85% 50%);
@@ -187,7 +190,7 @@
 
   &__card-logo {
     margin-top: 25px;
-    padding-inline: 25px;
+    padding-inline: 6.41vw; // 25px
 
     text-align: center;
 
@@ -199,7 +202,7 @@
 
   &__img {
     margin-top: 50px;
-    padding-inline: 63px;
+    padding-inline: 16.15vw; // 63px
     text-align: center;
 
     @include b.mq(pc) {
@@ -240,6 +243,7 @@
 
     @include b.mq(pc) {
       font-size: 128px;
+      -webkit-text-stroke: 1px b.$main-color; // PCでは縁も少し太く
     }
   }
 }

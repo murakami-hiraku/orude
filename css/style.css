@@ -754,7 +754,7 @@ body.no-scroll {
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
-  padding-inline: 15px;
+  padding-inline: 3.84vw;
 }
 @media (min-width: 1024px) {
   .section-contact__inner {
@@ -768,6 +768,8 @@ body.no-scroll {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    padding-inline: 0;
+    padding-left: 3.125vw;
   }
 }
 .section-contact__info-box {
@@ -864,7 +866,7 @@ body.no-scroll {
     padding: 60px 50px;
     position: absolute;
     bottom: -28px;
-    left: 0;
+    left: 3.125vw;
   }
 }
 .section-contact__links {
@@ -875,6 +877,12 @@ body.no-scroll {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 25px;
   padding-inline: 55px;
 }
@@ -884,12 +892,6 @@ body.no-scroll {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     gap: 50px;
     padding-inline: 0;
   }
@@ -923,6 +925,7 @@ body.no-scroll {
   font-weight: 900;
   font-size: 16px;
   white-space: nowrap;
+  max-width: 250px;
 }
 .section-contact__link .link-icon {
   clip-path: polygon(0 0, 0 100%, 85% 50%);
@@ -952,7 +955,7 @@ body.no-scroll {
 }
 .section-contact__card-logo {
   margin-top: 25px;
-  padding-inline: 25px;
+  padding-inline: 6.41vw;
   text-align: center;
 }
 @media (min-width: 1024px) {
@@ -963,7 +966,7 @@ body.no-scroll {
 }
 .section-contact__img {
   margin-top: 50px;
-  padding-inline: 63px;
+  padding-inline: 16.15vw;
   text-align: center;
 }
 @media (min-width: 1024px) {
@@ -1007,5 +1010,6 @@ body.no-scroll {
 @media (min-width: 1024px) {
   .section-contact__bg-txt {
     font-size: 128px;
+    -webkit-text-stroke: 1px #907910;
   }
 }

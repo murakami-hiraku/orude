@@ -25,7 +25,7 @@
         </div>
 
         <p class="section-contact__txt">
-          お支払いは、現金またはクレジットカードでの<br class="hidden-pc">ご精算となります。</p>
+          お支払いは、現金またはクレジットカードでの<br class="hidden-tb">ご精算となります。</p>
 
         <div class="section-contact__card-logo">
           <img src="<?php echo get_template_directory_uri(); ?>/img/contact-card-logo.png" alt="">
@@ -37,7 +37,7 @@
       <span class="section-contact__bg-circle bg-circle"></span>
 
     </div>
-    <span class="section-contact__bg-txt">-May the journey ahead be a peaceful one.-</span>
+    <span class="section-contact__bg-txt" aria-hidden="true">-May the journey ahead be a peaceful one.-</span>
 
   </div>
 
