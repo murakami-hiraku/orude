@@ -455,6 +455,7 @@ body.no-scroll {
   }
 }
 .section-fv__lead .section-fv__lead-ja p {
+  text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
   font-size: 14px;
   line-height: 1.2;
 }
@@ -468,6 +469,7 @@ body.no-scroll {
   .section-fv__lead .section-fv__lead-ja p {
     line-height: 1.8;
     font-size: 20px;
+    text-shadow: 2px 2px 0 #fff, -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff;
   }
 }
 @media (min-width: 1440px) {
@@ -477,6 +479,7 @@ body.no-scroll {
   }
 }
 .section-fv__lead .section-fv__lead-ja h1 {
+  text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
   font-size: 18px;
   line-height: 1.8;
 }
@@ -489,6 +492,7 @@ body.no-scroll {
 @media (min-width: 1024px) {
   .section-fv__lead .section-fv__lead-ja h1 {
     font-size: 32px;
+    text-shadow: 2px 2px 0 #fff, -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff;
   }
 }
 @media (min-width: 1440px) {

@@ -70,6 +70,9 @@
       }
 
       p {
+        text-shadow: 1px 1px 0 b.$sub-color-light,
+          -1px -1px 0 b.$sub-color-light, 1px -1px 0 b.$sub-color-light,
+          -1px 1px 0 b.$sub-color-light;
         font-size: 14px;
         line-height: 1.2;
 
@@ -80,6 +83,9 @@
         @include b.mq(pc) {
           line-height: 1.8;
           font-size: 20px;
+          text-shadow: 2px 2px 0 b.$sub-color-light,
+            -2px -2px 0 b.$sub-color-light, 2px -2px 0 b.$sub-color-light,
+            -2px 2px 0 b.$sub-color-light;
         }
         @include b.mq(lg) {
           line-height: 1.8;
@@ -88,6 +94,9 @@
       }
 
       h1 {
+        text-shadow: 1px 1px 0 b.$sub-color-light,
+          -1px -1px 0 b.$sub-color-light, 1px -1px 0 b.$sub-color-light,
+          -1px 1px 0 b.$sub-color-light;
         font-size: 18px;
         line-height: 1.8;
 
@@ -98,6 +107,9 @@
         }
         @include b.mq(pc) {
           font-size: 32px;
+          text-shadow: 2px 2px 0 b.$sub-color-light,
+            -2px -2px 0 b.$sub-color-light, 2px -2px 0 b.$sub-color-light,
+            -2px 2px 0 b.$sub-color-light;
         }
         @include b.mq(lg) {
           font-size: 40px;
