@@ -114,6 +114,17 @@
     text-align: center;
   }
 
+  &__bg-circle {
+    width: 200px;
+    height: 200px;
+    border: 1px solid b.$border-color-light;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 1;
+  }
+
   &__bg-txt {
     font-weight: 500;
     color: b.$text-color-white;

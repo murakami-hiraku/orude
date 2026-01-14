@@ -838,6 +838,16 @@ body.no-scroll {
   padding-inline: 63px;
   text-align: center;
 }
+.section-contact__bg-circle {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #e4e4e4;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 1;
+}
 .section-contact__bg-txt {
   font-weight: 500;
   color: #fff;

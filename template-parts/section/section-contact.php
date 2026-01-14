@@ -33,7 +33,7 @@
 
       <img src="<?php echo get_template_directory_uri(); ?>/img/contact-img.png" alt="" class="section-contact__img">
     </div>
-
+    <span class="section-contact__bg-circle"></span>
     <span class="section-contact__bg-txt">-May the journey ahead be a peaceful one.-</span>
 
   </div>
