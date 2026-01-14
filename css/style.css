@@ -680,6 +680,17 @@ body.no-scroll {
 .section-message {
   margin-top: 100px;
   width: 100%;
+  position: relative;
+}
+.section-message__bg-circle {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #e4e4e4;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 1;
 }
 .section-message__inner {
   display: grid;
@@ -719,6 +730,7 @@ body.no-scroll {
 
 .section-contact__wrap {
   padding-block: 50px;
+  position: relative;
 }
 .section-contact__inner {
   display: -webkit-box;

@@ -1,5 +1,7 @@
 <!-- メッセージ -->
 <section class="section-message">
+
+  <span class="section-message__bg-circle bg-circle"></span>
   <div class="section-message__inner inner">
 
     <div class="section-message__img-left">
