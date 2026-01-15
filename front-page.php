@@ -2,6 +2,8 @@
 <?php get_header(); ?>
 <!-- /ヘッダー -->
 
+<?php get_template_part('template-parts/block/block-page-title'); ?>
+
 <!-- ファーストビュー -->
 <?php get_template_part('template-parts/front-page/section-fv'); ?>
 <!-- /ファーストビュー -->
