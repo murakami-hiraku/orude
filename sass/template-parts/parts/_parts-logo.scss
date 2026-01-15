@@ -1,7 +1,7 @@
 @use "sass:map";
 @use "../../base" as b;
 
-.parts__logo {
+.parts-logo {
   color: b.$main-color;
   height: 100%;
   display: flex;

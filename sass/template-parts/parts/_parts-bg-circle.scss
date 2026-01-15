@@ -1,0 +1,101 @@
+@use "sass:map";
+@use "../../base" as b;
+
+.parts-bg-circle {
+  position: absolute;
+  width: 300px;
+  height: 300px; // 高さを確保
+  perspective: 1000px; // 奥行き感を少し強めに
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -10;
+}
+
+.circle-container {
+  position: relative;
+}
+
+// 線を3Dで回転させる
+.circle {
+  position: absolute;
+  width: 181px;
+  height: 181px;
+  border: 0.3px solid b.$border-color-light;
+  border-radius: 50%;
+  transform-style: preserve-3d;
+  // box-shadow: 0 0 15px rgba(0, 212, 255, 0.5); // 3Dで見やすくするための影
+
+  &-1 {
+    top: 0;
+    left: 0;
+    animation: rotate-v1 20s linear infinite;
+  }
+  &-2 {
+    top: 10px;
+    left: -5px;
+    animation: rotate-v2 20s linear infinite;
+  }
+  &-3 {
+    top: 5px;
+    left: 8px;
+    animation: rotate-v3 20s linear infinite;
+  }
+}
+
+// 線をグラデーションカラーにする方法
+// .circle {
+//   width: 250px;
+//   height: 250px;
+//   border-radius: 50%;
+//   border: 2px solid transparent; // 枠線の太さを確保
+//   background-image: linear-gradient(#1a1a1a, #1a1a1a),
+//     // 内側の色（背景色に合わせる）
+//     linear-gradient(to right, #00d4ff, #ff007a); // 枠線のグラデーション
+//   background-origin: border-box;
+//   background-clip: content-box, border-box;
+
+//   &-1 {
+//     top: 100px;
+//     left: 200px;
+//     animation: rotate-v1 8s linear infinite;
+//   }
+//   &-2 {
+//     top: 90px;
+//     left: 205px;
+//     animation: rotate-v2 8s linear infinite;
+//   }
+//   &-3 {
+//     top: 105px;
+//     left: 190px;
+//     animation: rotate-v3 8s linear infinite;
+//   }
+// }
+
+// 軸ごとに回転を分けることで、複雑に交差する動きを作る
+@keyframes rotate-v1 {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+@keyframes rotate-v2 {
+  0% {
+    transform: rotateX(45deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(405deg) rotateY(360deg);
+  }
+}
+
+@keyframes rotate-v3 {
+  0% {
+    transform: rotateX(-45deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(315deg) rotateY(360deg);
+  }
+}

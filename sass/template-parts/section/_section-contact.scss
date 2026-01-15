@@ -215,20 +215,9 @@
     }
   }
 
-  &__bg-circle {
-    width: 200px;
-    height: 200px;
-    border: 1px solid b.$border-color-light;
-    border-radius: 50%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    opacity: 1;
-
-    @include b.mq(pc) {
-      width: 500px;
-      height: 500px;
-    }
+  .parts-bg-circle {
+    right: -30px;
+    bottom: 160px;
   }
 
   &__bg-txt {

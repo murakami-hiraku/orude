@@ -4,7 +4,8 @@
 @use "footer";
 @use "single";
 @use "page-introduce";
-@use "template-parts/parts/logo";
+@use "template-parts/parts/parts-logo";
+@use "template-parts/parts/parts-bg-circle";
 @use "template-parts/front-page/section-fv.scss";
 @use "template-parts/front-page/section-message.scss";
 @use "template-parts/section/section-contact.scss";
