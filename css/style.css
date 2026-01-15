@@ -84,7 +84,7 @@ body.no-scroll {
 }
 
 .header__inner {
-  padding-inline: clamp(15px, 3.85vw, 120px);
+  padding-inline: clamp(15px, 3.84vw, 120px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
