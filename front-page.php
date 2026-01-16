@@ -4,17 +4,29 @@
 
   <main class="front-page">
 
-    <!-- ファーストビュー -->
+    <!-- ファーストビュー(fv) -->
     <?php get_template_part('template-parts/front-page/section-fv'); ?>
-    <!-- /ファーストビュー -->
+    <!-- /ファーストビュー(fv) -->
 
-    <!-- メッセージ -->
-    <?php get_template_part('template-parts/front-page/section-message'); ?>
-    <!-- /メッセージ -->
+    <!-- 私たちの想い（concept） -->
+    <?php get_template_part('template-parts/front-page/section-concept'); ?>
+    <!-- /私たちの想い（concept） -->
 
-    <!-- コンタクト -->
+    <!-- 大切な家族との、最後の時間を穏やかに過ごしていただくために（service） -->
+    <?php get_template_part('template-parts/front-page/section-service'); ?>
+    <!-- /大切な家族との、最後の時間を穏やかに過ごしていただくために（service） -->
+
+    <!-- ご利用の流れ（guide） -->
+    <?php get_template_part('template-parts/front-page/section-guide'); ?>
+    <!-- /ご利用の流れ（guide） -->
+
+    <!-- オルデが選ばれる理由（features） -->
+    <?php get_template_part('template-parts/front-page/section-features'); ?>
+    <!-- /オルデが選ばれる理由（features） -->
+
+    <!-- コンタクト（contact） -->
     <?php get_template_part('template-parts/section/section-contact'); ?>
-    <!-- /コンタクト -->
+    <!-- /コンタクト（contact） -->
 
   </main>
 

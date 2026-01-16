@@ -1,0 +1,69 @@
+@use "sass:map";
+@use "../../base" as b;
+
+// グリッドエリアの定義
+.section-message__img-left {
+  grid-area: left-img;
+}
+.section-message__box {
+  grid-area: text-box;
+}
+.section-message__img-right {
+  grid-area: right-img;
+}
+
+.section-message {
+  margin-top: 100px;
+  width: 100%;
+  position: relative;
+
+  &__bg-circle {
+    width: 200px;
+    height: 200px;
+    border: 1px solid b.$border-color-light;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 1;
+  }
+
+  &__inner {
+    display: grid;
+    align-items: center;
+    gap: 20px;
+    /* SP: 2列にして、1行目にテキストを配置 */
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "text-box text-box"
+      "left-img right-img";
+
+    @include b.mq(pc) {
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-areas: "left-img text-box right-img";
+    }
+  }
+
+  &__img-left {
+    width: 94px;
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  &__box {
+    text-align: center; // テキストを中央寄せにすることが多いです
+  }
+
+  &__img-right {
+    width: 94px;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+}
