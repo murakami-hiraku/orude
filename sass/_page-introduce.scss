@@ -9,6 +9,12 @@
   }
 
   &__contents {
+    position: relative;
+
+    .parts-bg-circle {
+      top: -24px;
+      right: -60px;
+    }
   }
 
   &__lead {

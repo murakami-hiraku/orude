@@ -346,6 +346,13 @@ body.no-scroll {
     padding: 0;
   }
 }
+.page-introduce__contents {
+  position: relative;
+}
+.page-introduce__contents .parts-bg-circle {
+  top: -24px;
+  right: -60px;
+}
 .page-introduce__lead {
   font-weight: 900;
   border-bottom: 1px solid #000000;
@@ -457,8 +464,8 @@ body.no-scroll {
 
 .parts-bg-circle {
   position: absolute;
-  width: 300px;
-  height: 300px;
+  width: 181px;
+  height: 181px;
   -webkit-perspective: 1000px;
           perspective: 1000px;
   display: -webkit-box;
@@ -475,10 +482,16 @@ body.no-scroll {
 
 .circle-container {
   position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .circle {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 181px;
   height: 181px;
   border: 0.3px solid #e4e4e4;
