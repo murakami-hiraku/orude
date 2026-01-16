@@ -2,17 +2,17 @@
 @use "../../base" as b;
 
 // グリッドエリアの定義
-.section-message__img-left {
+.section-concept__img-left {
   grid-area: left-img;
 }
-.section-message__box {
+.section-concept__box {
   grid-area: text-box;
 }
-.section-message__img-right {
+.section-concept__img-right {
   grid-area: right-img;
 }
 
-.section-message {
+.section-concept {
   margin-top: 100px;
   width: 100%;
   position: relative;
