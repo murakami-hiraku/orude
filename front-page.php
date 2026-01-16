@@ -1,22 +1,23 @@
-<main class="front-page">
   <!-- ヘッダー -->
   <?php get_header(); ?>
   <!-- /ヘッダー -->
 
-  <!-- ファーストビュー -->
-  <?php get_template_part('template-parts/front-page/section-fv'); ?>
-  <!-- /ファーストビュー -->
+  <main class="front-page">
 
-  <!-- メッセージ -->
-  <?php get_template_part('template-parts/front-page/section-message'); ?>
-  <!-- /メッセージ -->
+    <!-- ファーストビュー -->
+    <?php get_template_part('template-parts/front-page/section-fv'); ?>
+    <!-- /ファーストビュー -->
 
-  <!-- コンタクト -->
-  <?php get_template_part('template-parts/section/section-contact'); ?>
-  <!-- /コンタクト -->
+    <!-- メッセージ -->
+    <?php get_template_part('template-parts/front-page/section-message'); ?>
+    <!-- /メッセージ -->
 
+    <!-- コンタクト -->
+    <?php get_template_part('template-parts/section/section-contact'); ?>
+    <!-- /コンタクト -->
+
+  </main>
 
   <!-- フッター -->
   <?php get_footer(); ?>
   <!-- /フッター -->
-</main>
