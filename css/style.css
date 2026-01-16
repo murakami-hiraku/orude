@@ -341,21 +341,45 @@ body.no-scroll {
   }
 }
 
-@media (min-width: 1024px) {
-  .page-introduce__inner {
-    padding: 0;
-  }
-}
-.page-introduce__contents {
+.page-introduce__section {
   position: relative;
 }
-.page-introduce__contents .parts-bg-circle {
+.page-introduce__section .parts-bg-circle {
   top: -24px;
   right: -60px;
 }
+@media (min-width: 1024px) {
+  .page-introduce__section .parts-bg-circle {
+    top: 5px;
+  }
+}
+@media (min-width: 1024px) {
+  .page-introduce__inner {
+    overflow: hidden;
+  }
+}
+@media (min-width: 1024px) {
+  .page-introduce__contents {
+    max-width: 1080px;
+    margin-inline: auto;
+  }
+}
+.page-introduce__line {
+  width: 100%;
+  height: 1px;
+  background: #000000;
+}
+@media (min-width: 1024px) {
+  .page-introduce__line {
+    /* 1. 幅を「親の100%」から「画面の右端まで」に広げる計算 */
+    /* 100%（親の幅） + 50vw（画面の半分） - 50%（親の半分の幅） */
+    width: calc(100% + 50vw - 50%);
+    /* 2. 算出した分だけ右側に突き出させる */
+    margin-right: calc(50% - 50vw);
+  }
+}
 .page-introduce__lead {
   font-weight: 900;
-  border-bottom: 1px solid #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -370,16 +394,37 @@ body.no-scroll {
   padding-top: 50px;
   padding-bottom: 30px;
 }
+@media (min-width: 1024px) {
+  .page-introduce__lead {
+    padding-top: 100px;
+  }
+}
 .page-introduce__lead h3 {
   font-size: 20px;
   color: #907910;
+}
+@media (min-width: 1024px) {
+  .page-introduce__lead h3 {
+    font-size: 24px;
+  }
 }
 .page-introduce__lead p {
   font-size: 14px;
   line-height: 1.8;
 }
+@media (min-width: 1024px) {
+  .page-introduce__lead p {
+    font-size: 16px;
+  }
+}
 .page-introduce__content {
   padding-top: 50px;
+}
+@media (min-width: 1024px) {
+  .page-introduce__content {
+    max-width: 1080px;
+    padding-top: 100px;
+  }
 }
 .page-introduce__cards {
   padding-inline: 30px;
@@ -395,34 +440,102 @@ body.no-scroll {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (min-width: 1024px) {
+  .page-introduce__cards {
+    padding-inline: 0;
+  }
+}
 .page-introduce__card {
   font-weight: 900;
+  background: #fff;
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
 }
+@media (min-width: 1024px) {
+  .page-introduce__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+}
 .page-introduce__card img {
   width: 100%;
+  max-width: 300px;
+  max-height: 250px;
+}
+@media (min-width: 1024px) {
+  .page-introduce__card img {
+    max-height: 365px;
+  }
 }
 .page-introduce__card-txt {
   padding: 25px 15px 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+}
+@media (min-width: 1024px) {
+  .page-introduce__card-txt {
+    width: 100%;
+    padding: 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    gap: 10px;
+  }
 }
 .page-introduce__card-txt h4 {
   font-size: 18px;
   color: #907910;
-  margin-bottom: 25px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin-inline: auto;
 }
+@media (min-width: 1024px) {
+  .page-introduce__card-txt h4 {
+    margin-inline: 0;
+    font-size: 24px;
+  }
+}
 .page-introduce__card-txt p {
   font-size: 14px;
   line-height: 1.8;
-  margin-bottom: 35px;
+}
+@media (min-width: 1024px) {
+  .page-introduce__card-txt p {
+    font-size: 16px;
+    padding-top: 15px;
+  }
 }
 .page-introduce__card-txt span {
   font-size: 14px;
   line-height: 1.8;
+  padding-top: 10px;
+}
+@media (min-width: 1024px) {
+  .page-introduce__card-txt span {
+    font-size: 16px;
+    padding-top: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .page-introduce .card-1 span {
+    padding-top: 30px;
+  }
 }
 
 .parts-logo {
@@ -464,8 +577,12 @@ body.no-scroll {
 
 .parts-bg-circle {
   position: absolute;
-  width: 181px;
-  height: 181px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   -webkit-perspective: 1000px;
           perspective: 1000px;
   display: -webkit-box;
@@ -482,8 +599,14 @@ body.no-scroll {
 
 .circle-container {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 200px;
+  height: 200px;
+}
+@media (min-width: 1024px) {
+  .circle-container {
+    width: 700px;
+    height: 700px;
+  }
 }
 
 .circle {
@@ -498,6 +621,12 @@ body.no-scroll {
   border-radius: 50%;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
+}
+@media (min-width: 1024px) {
+  .circle {
+    width: 670px;
+    height: 670px;
+  }
 }
 .circle-1 {
   top: 0;
@@ -944,6 +1073,18 @@ body.no-scroll {
     padding-bottom: 228px;
   }
 }
+.section-contact .parts-bg-circle {
+  right: -30px;
+  bottom: 180px;
+}
+@media (min-width: 1024px) {
+  .section-contact .parts-bg-circle {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
 .section-contact__inner {
   position: relative;
   display: -webkit-box;
@@ -965,7 +1106,11 @@ body.no-scroll {
 @media (min-width: 1024px) {
   .section-contact__inner {
     width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     max-width: 1080px;
+    max-height: 690px;
     margin-inline: auto;
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -1186,10 +1331,6 @@ body.no-scroll {
         -ms-flex: 1;
             flex: 1;
   }
-}
-.section-contact .parts-bg-circle {
-  right: -30px;
-  bottom: 160px;
 }
 .section-contact__bg-txt {
   font-weight: 500;

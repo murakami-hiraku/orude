@@ -9,18 +9,21 @@
   ?>
 
   <section class="page-introduce__section">
+    <?php get_template_part('template-parts/parts/parts-bg-circle'); ?>
+
 
     <div class="page-introduce__inner inner">
 
+
       <div class="page-introduce__contents">
-        <?php get_template_part('template-parts/parts/parts-bg-circle'); ?>
 
 
         <div class="page-introduce__lead">
 
           <h3>大切なお子様が旅立たれたときに</h3>
-          <p>深い悲しみと、戸惑いの中で「何をすればいいのか」<br class="hidden-pc">「このままでいいのか」<br class="hidden-pc">そんな不安に包まれている方へ、<br>少しでも安心していただけるよう、今できることを順にご案内いたします。</p>
+          <p>深い悲しみと、戸惑いの中で「何をすればいいのか」<br class="hidden-pc">「このままでいいのか」<br>そんな不安に包まれている方へ、<br>少しでも安心していただけるよう、今できることを順にご案内いたします。</p>
         </div>
+        <div class="page-introduce__line"></div>
 
         <div class="page-introduce__content">
           <div class="page-introduce__cards">
