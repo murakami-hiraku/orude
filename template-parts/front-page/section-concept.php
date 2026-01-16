@@ -1,7 +1,10 @@
 <!-- 私たちの想い（concept） -->
 <section class="section-concept section fadein">
 
-  <span class="section-concept__bg-circle bg-circle"></span>
+  <?php
+  get_template_part('template-parts/parts/parts-bg-circle');
+  ?>
+
   <div class="section-concept__inner inner">
 
     <div class="section-concept__img-left">

@@ -17,17 +17,8 @@
   width: 100%;
   position: relative;
 
-  &__bg-circle {
-    width: 200px;
-    height: 200px;
-    border: 1px solid b.$border-color-light;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    opacity: 1;
+  .parts-bg-circle {
   }
-
   &__inner {
     display: grid;
     align-items: center;

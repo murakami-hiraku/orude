@@ -854,16 +854,6 @@ body.no-scroll {
   width: 100%;
   position: relative;
 }
-.section-concept__bg-circle {
-  width: 200px;
-  height: 200px;
-  border: 1px solid #e4e4e4;
-  border-radius: 50%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  opacity: 1;
-}
 .section-concept__inner {
   display: grid;
   -webkit-box-align: center;
