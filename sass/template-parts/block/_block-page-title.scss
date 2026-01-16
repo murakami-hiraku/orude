@@ -15,9 +15,14 @@
   overflow: hidden;
   text-align: center;
   padding-inline: 3.85vw;
+  z-index: 2;
 
   @include b.mq(pc) {
     background-position: 20% center;
+  }
+
+  @include b.mq(xl) {
+    background-position: 20% 65%;
   }
   &__overlay {
     position: absolute;

@@ -34,37 +34,35 @@
 </head>
 
 <body>
-  <!-- wrapper-->
-  <div class="wrapper">
-    <!-- Header -->
-    <header id="js-header" class="header">
-      <div class="header__inner inner">
-        <!-- /header-logo -->
-        <?php get_template_part('template-parts/parts/parts-logo'); ?>
-        <!-- /header-logo -->
-        <nav id="js-drawer-content" class="header__nav">
-          <?php
-          wp_nav_menu([
-            'theme_location' => 'header-nav',
-            'container' => false,          // <div> を出さない
-            'menu_class'  => 'header__nav__list', // <ul> にクラスを付ける
-            'fallback_cb' => false         // メニュー未設定時に何も出さない
-          ]);
-          ?>
-          <a class="header__btn" href="<?php echo get_permalink(get_page_by_path('contact')); ?>"><img class="header__btn-icon" src="<?php echo get_template_directory_uri(); ?>/img/mail-icon.svg" alt="">お問い合わせはこちら
-          </a>
-        </nav>
-        <div class="header__open hidden-lg">
-          <button
-            type="button"
-            id="js-drawer-button"
-            class="header__drawer-icon hidden-lg"
-            aria-label="メニューボタン">
-            <span class="header__icon-bar hidden-lg"></span>
-            <span class="header__icon-bar hidden-lg"></span>
-            <span class="header__icon-bar hidden-lg"></span>
-          </button>
-        </div>
+  <!-- Header -->
+  <header id="js-header" class="header">
+    <div class="header__inner inner">
+      <!-- /header-logo -->
+      <?php get_template_part('template-parts/parts/parts-logo'); ?>
+      <!-- /header-logo -->
+      <nav id="js-drawer-content" class="header__nav">
+        <?php
+        wp_nav_menu([
+          'theme_location' => 'header-nav',
+          'container' => false,          // <div> を出さない
+          'menu_class'  => 'header__nav__list', // <ul> にクラスを付ける
+          'fallback_cb' => false         // メニュー未設定時に何も出さない
+        ]);
+        ?>
+        <a class="header__btn" href="<?php echo get_permalink(get_page_by_path('contact')); ?>"><img class="header__btn-icon" src="<?php echo get_template_directory_uri(); ?>/img/mail-icon.svg" alt="">お問い合わせはこちら
+        </a>
+      </nav>
+      <div class="header__open hidden-lg">
+        <button
+          type="button"
+          id="js-drawer-button"
+          class="header__drawer-icon hidden-lg"
+          aria-label="メニューボタン">
+          <span class="header__icon-bar hidden-lg"></span>
+          <span class="header__icon-bar hidden-lg"></span>
+          <span class="header__icon-bar hidden-lg"></span>
+        </button>
       </div>
-    </header>
-    <!-- /Header -->
+    </div>
+  </header>
+  <!-- /Header -->
