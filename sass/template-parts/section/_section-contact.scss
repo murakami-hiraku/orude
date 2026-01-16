@@ -2,13 +2,18 @@
 @use "../../base" as b;
 
 .section-contact {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: fit-content;
+
+  @include b.mq(pc) {
+    margin-top: 200px;
+    margin-bottom: 200px;
+  }
   &__wrap {
-    padding-block: 50px;
     position: relative;
 
     @include b.mq(pc) {
-      padding-top: 200px;
-      padding-bottom: 228px;
     }
   }
 
