@@ -91,6 +91,7 @@
 
     @include b.mq(pc) {
       padding-inline: 0;
+      padding-bottom: 4px;
     }
   }
 
@@ -98,6 +99,8 @@
     font-weight: 900;
     background: b.$sub-color-light;
     box-shadow: 0px 4px 4px 0px #00000040;
+    width: fit-content;
+    max-width: 550px;
 
     @include b.mq(pc) {
       display: flex;
@@ -105,14 +108,16 @@
       justify-content: center;
       align-items: center;
       width: 100%;
+      max-width: none;
+      padding-right: 10px;
     }
 
     img {
       width: 100%;
-      max-width: 300px;
-      max-height: 250px;
+      max-width: 550px;
 
       @include b.mq(pc) {
+        max-width: 300px;
         max-height: 365px;
       }
     }

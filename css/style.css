@@ -443,6 +443,7 @@ body.no-scroll {
 @media (min-width: 1024px) {
   .page-introduce__cards {
     padding-inline: 0;
+    padding-bottom: 4px;
   }
 }
 .page-introduce__card {
@@ -450,6 +451,10 @@ body.no-scroll {
   background: #fff;
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 550px;
 }
 @media (min-width: 1024px) {
   .page-introduce__card {
@@ -464,15 +469,17 @@ body.no-scroll {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
+    max-width: none;
+    padding-right: 10px;
   }
 }
 .page-introduce__card img {
   width: 100%;
-  max-width: 300px;
-  max-height: 250px;
+  max-width: 550px;
 }
 @media (min-width: 1024px) {
   .page-introduce__card img {
+    max-width: 300px;
     max-height: 365px;
   }
 }
@@ -1063,15 +1070,21 @@ body.no-scroll {
   display: block;
 }
 
-.section-contact__wrap {
-  padding-block: 50px;
-  position: relative;
+.section-contact {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 @media (min-width: 1024px) {
-  .section-contact__wrap {
-    padding-top: 200px;
-    padding-bottom: 228px;
+  .section-contact {
+    margin-top: 200px;
+    margin-bottom: 200px;
   }
+}
+.section-contact__wrap {
+  position: relative;
 }
 .section-contact .parts-bg-circle {
   right: -30px;
