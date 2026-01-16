@@ -3,8 +3,8 @@
 
 .parts-bg-circle {
   position: absolute;
-  width: 181px;
-  height: 181px; // 高さを確保
+  width: fit-content;
+  height: fit-content;
   perspective: 1000px; // 奥行き感を少し強めに
   display: flex;
   justify-content: center;
@@ -14,8 +14,13 @@
 
 .circle-container {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 200px;
+  height: 200px;
+
+  @include b.mq(pc) {
+    width: 700px;
+    height: 700px;
+  }
 }
 
 // 線を3Dで回転させる
@@ -30,6 +35,11 @@
   border-radius: 50%;
   transform-style: preserve-3d;
   // box-shadow: 0 0 15px rgba(0, 212, 255, 0.5); // 3Dで見やすくするための影
+
+  @include b.mq(pc) {
+    width: 670px;
+    height: 670px;
+  }
 
   &-1 {
     top: 0;

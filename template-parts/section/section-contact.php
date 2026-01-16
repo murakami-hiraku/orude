@@ -2,6 +2,8 @@
 <section class="section-contact section fadein">
 
   <div class="section-contact__wrap">
+    <?php get_template_part('template-parts/parts/parts-bg-circle'); ?>
+
     <div class="section-contact__inner inner">
 
       <div class="section-contact__info-box">
@@ -34,7 +36,6 @@
 
       <img src="<?php echo get_template_directory_uri(); ?>/img/contact-img.png" alt="" class="section-contact__img">
 
-      <?php get_template_part('template-parts/parts/parts-bg-circle'); ?>
 
     </div>
     <span class="section-contact__bg-txt" aria-hidden="true">-May the journey ahead be a peaceful one.-</span>
