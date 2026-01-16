@@ -297,7 +297,7 @@ body.no-scroll {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.footer .parts__logo {
+.footer .parts-logo {
   color: #fff;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
