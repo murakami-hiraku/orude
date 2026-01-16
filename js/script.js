@@ -1,3 +1,13 @@
+// ページが表示されたらメニューを閉じる
+window.addEventListener("pageshow", () => {
+  const headerNav = document.getElementById("js-drawer-content");
+  const drawerBtn = document.getElementById("js-drawer-button");
+
+  // ページが表示されたら、強制的にクラスを削除する
+  headerNav.classList.remove("is-checked");
+  drawerBtn.classList.remove("is-checked");
+});
+
 // ドロワーメニュー開閉
 document
   .querySelector("#js-drawer-button")
