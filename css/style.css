@@ -59,6 +59,7 @@ body.no-scroll {
 .inner {
   max-width: 1680px;
   margin-inline: auto;
+  padding-inline: 3.85vw;
 }
 
 #wpadminbar {
@@ -338,6 +339,83 @@ body.no-scroll {
     margin-top: 204px;
     font-size: 16px;
   }
+}
+
+@media (min-width: 1024px) {
+  .page-introduce__inner {
+    padding: 0;
+  }
+}
+.page-introduce__lead {
+  font-weight: 900;
+  border-bottom: 1px solid #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.page-introduce__lead h3 {
+  font-size: 20px;
+  color: #907910;
+}
+.page-introduce__lead p {
+  font-size: 14px;
+  line-height: 1.8;
+}
+.page-introduce__content {
+  padding-top: 50px;
+}
+.page-introduce__cards {
+  padding-inline: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.page-introduce__card {
+  font-weight: 900;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+}
+.page-introduce__card img {
+  width: 100%;
+}
+.page-introduce__card-txt {
+  padding: 25px 15px 35px;
+}
+.page-introduce__card-txt h4 {
+  font-size: 18px;
+  color: #907910;
+  margin-bottom: 25px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-inline: auto;
+}
+.page-introduce__card-txt p {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 35px;
+}
+.page-introduce__card-txt span {
+  font-size: 14px;
+  line-height: 1.8;
 }
 
 .parts-logo {
