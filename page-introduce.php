@@ -1,14 +1,13 @@
+<!-- ヘッダー -->
+<?php get_header(); ?>
+<!-- /ヘッダー -->
+
 <main class="page-introduce">
-
-  <!-- ヘッダー -->
-  <?php get_header(); ?>
-  <!-- /ヘッダー -->
-
   <?php
   get_template_part('template-parts/block/block-page-title');
   ?>
 
-  <section class="page-introduce__section">
+  <section class="page-introduce__section fadein">
     <?php get_template_part('template-parts/parts/parts-bg-circle'); ?>
 
 
@@ -83,9 +82,8 @@
   <?php get_template_part('template-parts/section/section-contact'); ?>
   <!-- /コンタクト -->
 
-
-  <!-- フッター -->
-  <?php get_footer(); ?>
-  <!-- /フッター -->
-
 </main>
+
+<!-- フッター -->
+<?php get_footer(); ?>
+<!-- /フッター -->
