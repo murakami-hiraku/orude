@@ -1,5 +1,5 @@
 <!-- 私たちの想い（concept） -->
-<section class="section-concept">
+<section class="section-concept section fadein">
 
   <span class="section-concept__bg-circle bg-circle"></span>
   <div class="section-concept__inner inner">
