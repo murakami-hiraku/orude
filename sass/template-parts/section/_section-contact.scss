@@ -5,6 +5,7 @@
   margin-top: 50px;
   margin-bottom: 50px;
   height: fit-content;
+  overflow: hidden;
 
   @include b.mq(pc) {
     margin-top: 200px;
@@ -12,6 +13,9 @@
   }
   &__wrap {
     position: relative;
+    width: 100%;
+    max-width: 2600px;
+    margin-inline: auto;
 
     @include b.mq(pc) {
     }
@@ -19,10 +23,12 @@
 
   .parts-bg-circle {
     right: -30px;
-    bottom: 180px;
+    // bottom: 180px;
+    bottom: 46.15vw;
 
     @include b.mq(pc) {
       top: 50%;
+      bottom: unset;
       left: 50%;
       transform: translate(-50%, -50%);
     }
@@ -104,11 +110,13 @@
       align-items: center;
       justify-content: center;
       width: fit-content;
+      margin-inline: auto;
 
       @include b.mq(pc) {
         font-size: 32px;
         justify-content: start;
         margin-top: 28px;
+        margin: 0;
       }
     }
 
@@ -243,6 +251,9 @@
     letter-spacing: 0.03em;
     line-height: 1.3;
     white-space: nowrap;
+    display: block;
+    width: fit-content;
+    margin-inline: auto;
 
     @include b.mq(pc) {
       font-size: 128px;

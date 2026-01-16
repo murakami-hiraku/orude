@@ -19,7 +19,7 @@ $breakpoints: (
   tb: "(min-width: 768px)",
   pc: "(min-width: 1024px)",
   lg: "(min-width: 1440px)",
-  xl: "(min-width: 1719px)",
+  xl: "(min-width: 1921px)",
 );
 
 // *{outline:1px solid #0000FF}
@@ -75,6 +75,7 @@ body {
   font-size: 16px !important;
   line-height: 24px;
   font-family: $font-family-ja;
+  position: relative;
 
   &.no-scroll {
     height: 100%;
@@ -82,7 +83,16 @@ body {
   }
 }
 
-.wrapper {
+main {
+  position: relative;
+}
+
+.section {
+  width: 100%;
+  margin-inline: auto;
+}
+
+.wrap {
   max-width: 1920px;
   margin-inline: auto;
 }
