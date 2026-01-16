@@ -103,6 +103,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      width: fit-content;
 
       @include b.mq(pc) {
         font-size: 32px;
