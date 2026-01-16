@@ -8,7 +8,7 @@
 $page_title = '';
 
 if (is_404()) {
-  $page_title = '404：ページが見つかりません。';
+  $page_title = 'お探しのページがございません。404';
 } elseif (is_page('contact-thanks')) {
   $page_title = 'お問い合わせありがとうございます。';
 } else {
