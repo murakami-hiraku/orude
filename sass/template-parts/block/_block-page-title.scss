@@ -55,11 +55,14 @@
     padding-top: 90px;
     color: b.$text-color-white;
     text-shadow:
-    /* --- 縁取り（上下左右・斜めの8方向） --- */ 1px 1px 0
-        b.$main-color,
-      -0.5px -0.5px 0 b.$main-color, -0.5px 0.5px 0 b.$main-color,
-      0.5px -0.5px 0 b.$main-color, 0px 0.5px 0 b.$main-color,
-      0px -0.5px 0 b.$main-color, -0.5px 0px 0 b.$main-color,
+    /* --- 縁取り（上下左右・斜めの8方向） --- */
+      1px 1px 0 b.$main-color,
+      -0.5px -0.5px 0 b.$main-color,
+      -0.5px 0.5px 0 b.$main-color,
+      0.5px -0.5px 0 b.$main-color,
+      0px 0.5px 0 b.$main-color,
+      0px -0.5px 0 b.$main-color,
+      -0.5px 0px 0 b.$main-color,
       0.5px 0px 0 b.$main-color,
       /* --- ドロップシャドウ（最後に記述） --- */ 0px 4px 4px
         rgba(0, 0, 0, 0.3);
