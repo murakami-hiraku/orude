@@ -596,8 +596,79 @@ main {
     background-position: 20% 65%;
   }
 }
-.page-faq__section {
-  padding: 0;
+.page-faq__section .parts-bg-circle {
+  top: -115px;
+  right: -130px;
+}
+.page-faq__section .circle-container {
+  width: 83.333vw;
+  height: 83.333vw;
+  min-width: 325px;
+  min-height: 325px;
+}
+@media (min-width: 1024px) {
+  .page-faq__section .circle-container {
+    width: 36.46vw;
+    height: 36.46vw;
+    max-width: 700px;
+    max-height: 700px;
+  }
+}
+.page-faq__section .circle {
+  width: 82.82vw;
+  height: 82.82vw;
+  min-width: 323px;
+  min-height: 323px;
+}
+@media (min-width: 1024px) {
+  .page-faq__section .circle {
+    width: 34.9vw;
+    height: 34.9vw;
+    max-width: 670px;
+    max-height: 670px;
+  }
+}
+.page-faq__inner {
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+.page-faq__contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 75px;
+}
+.page-faq__category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+}
+.page-faq__ttl {
+  font-weight: 900;
+  color: #907910;
+  font-size: 20px;
+  text-align: center;
+}
+.page-faq .cremation .page-faq__ttl {
+  padding-inline: 50px;
+  min-width: 258px;
+}
+.page-faq .funeral .page-faq__ttl {
+  padding-inline: 60px;
+  min-width: 240px;
+}
+.page-faq .perpetual-care .page-faq__ttl {
+  padding-inline: 30px;
+  min-width: 300px;
 }
 .page-faq__card {
   display: -webkit-box;
@@ -607,12 +678,13 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-weight: 700;
 }
 .page-faq__q, .page-faq__a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 15px;
+  gap: 29px;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -626,9 +698,22 @@ main {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.7;
   margin: 0;
+}
+.page-faq__q {
+  padding-bottom: 10px;
+}
+.page-faq__q .page-faq__txt {
+  color: #907910;
+}
+.page-faq__a {
+  padding-top: 15px;
+  border-top: 1px solid #907910;
+}
+.page-faq__a .page-faq__txt {
+  font-size: 14px;
 }
 
 .section-fv {

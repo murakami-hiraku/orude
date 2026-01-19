@@ -25,30 +25,96 @@
   }
 
   &__section {
-    padding: 0;
+    .parts-bg-circle {
+      top: -115px;
+      right: -130px;
+    }
+
+    .circle-container {
+      width: 83.333vw;
+      height: 83.333vw;
+      min-width: 325px;
+      min-height: 325px;
+
+      @include b.mq(pc) {
+        width: 36.46vw;
+        height: 36.46vw;
+        max-width: 700px;
+        max-height: 700px;
+      }
+    }
+
+    // 線を3Dで回転させる
+    .circle {
+      width: 82.82vw;
+      height: 82.82vw;
+      min-width: 323px;
+      min-height: 323px;
+
+      @include b.mq(pc) {
+        width: 34.9vw;
+        height: 34.9vw;
+        max-width: 670px;
+        max-height: 670px;
+      }
+    }
   }
 
   &__inner {
+    padding-top: 50px;
+    padding-bottom: 25px;
   }
 
   &__contents {
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
   }
 
   &__category {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
   }
 
   &__ttl {
+    font-weight: 900;
+    color: b.$main-color;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .cremation {
+    .page-faq__ttl {
+      padding-inline: 50px;
+      min-width: 258px;
+    }
+  }
+
+  .funeral {
+    .page-faq__ttl {
+      padding-inline: 60px;
+      min-width: 240px;
+    }
+  }
+
+  .perpetual-care {
+    .page-faq__ttl {
+      padding-inline: 30px;
+      min-width: 300px;
+    }
   }
 
   &__card {
     display: flex;
     flex-direction: column;
+    font-weight: 700;
   }
 
   &__q,
   &__a {
     display: flex;
-    gap: 15px; // ラベルとテキストの間の距離
+    gap: 29px; // ラベルとテキストの間の距離
     align-items: flex-start; // 上揃えにする
   }
 
@@ -59,8 +125,29 @@
 
   &__txt {
     flex: 1; // 残りの幅をすべて使う
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.7;
     margin: 0; // ブラウザ規定の余白をリセット
+  }
+
+  &__q {
+    padding-bottom: 10px;
+    .page-faq__label {
+    }
+
+    .page-faq__txt {
+      color: b.$main-color;
+    }
+  }
+  &__a {
+    padding-top: 15px;
+    border-top: 1px solid b.$main-color;
+
+    .page-faq__label {
+    }
+
+    .page-faq__txt {
+      font-size: 14px;
+    }
   }
 }
