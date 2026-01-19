@@ -368,7 +368,7 @@ main {
 }
 @media (min-width: 1024px) {
   .page-introduce__wrap .parts-bg-circle {
-    right: 0;
+    right: -150px;
     top: 5px;
   }
 }

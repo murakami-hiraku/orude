@@ -21,7 +21,7 @@
       right: -60px;
 
       @include b.mq(pc) {
-        right: 0;
+        right: -150px;
         top: 5px;
       }
     }
