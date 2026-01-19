@@ -865,7 +865,7 @@ main {
   }
 }
 
-.section-concept__img-left {
+.section-concept__img.left {
   grid-area: left-img;
 }
 
@@ -873,21 +873,39 @@ main {
   grid-area: text-box;
 }
 
-.section-concept__img-right {
+.section-concept__img.right {
   grid-area: right-img;
 }
 
 .section-concept {
-  margin-top: 100px;
+  margin-top: 75px;
   width: 100%;
   position: relative;
 }
+.section-concept .parts-bg-circle {
+  right: -100px;
+}
+.section-concept .parts-bg-circle .circle-container {
+  width: 76.9vw;
+  height: 76.9vw;
+  min-width: 300px;
+  min-height: 300px;
+}
+.section-concept .parts-bg-circle .circle {
+  width: 67.7vw;
+  height: 67.7vw;
+  min-width: 264px;
+  min-height: 264px;
+}
 .section-concept__inner {
   display: grid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 20px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px 0;
   /* SP: 2列にして、1行目にテキストを配置 */
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "text-box text-box" "left-img right-img";
@@ -898,26 +916,45 @@ main {
     grid-template-areas: "left-img text-box right-img";
   }
 }
-.section-concept__img-left {
-  width: 94px;
-}
-.section-concept__img-left img {
+.section-concept__img {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+.section-concept__img img {
+  width: 24.38vw;
   height: auto;
   display: block;
 }
 .section-concept__box {
+  font-weight: 900;
   text-align: center;
 }
-.section-concept__img-right {
-  width: 94px;
+.section-concept__ttl {
+  font-size: 20px;
+  line-height: 1;
+  color: #907910;
+  padding-block: 25px;
 }
-.section-concept__img-right img {
-  width: 100%;
-  height: auto;
+.section-concept__txt {
+  line-height: 2;
+}
+.section-concept__from {
   display: block;
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 1;
 }
-
+.section-concept__img.right {
+  padding-top: 50px;
+}
 .parts-logo {
   color: #907910;
   height: 100%;

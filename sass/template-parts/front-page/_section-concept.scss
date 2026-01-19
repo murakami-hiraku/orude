@@ -2,27 +2,42 @@
 @use "../../base" as b;
 
 // グリッドエリアの定義
-.section-concept__img-left {
+.section-concept__img.left {
   grid-area: left-img;
 }
 .section-concept__box {
   grid-area: text-box;
 }
-.section-concept__img-right {
+.section-concept__img.right {
   grid-area: right-img;
 }
 
 .section-concept {
-  margin-top: 100px;
+  margin-top: 75px;
   width: 100%;
   position: relative;
 
   .parts-bg-circle {
+    right: -100px;
+    .circle-container {
+      width: 76.9vw;
+      height: 76.9vw;
+      min-width: 300px;
+      min-height: 300px;
+    }
+
+    .circle {
+      width: 67.7vw;
+      height: 67.7vw;
+      min-width: 264px;
+      min-height: 264px;
+    }
   }
   &__inner {
     display: grid;
-    align-items: center;
-    gap: 20px;
+    align-items: start;
+    justify-content: center;
+    gap: 30px 0;
     /* SP: 2列にして、1行目にテキストを配置 */
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -35,26 +50,52 @@
     }
   }
 
-  &__img-left {
-    width: 94px;
+  &__img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
     img {
-      width: 100%;
+      // width: 94px;
+      width: 24.38vw;
       height: auto;
       display: block;
     }
   }
 
+  &__img.left {
+    img {
+    }
+  }
+
   &__box {
+    font-weight: 900;
+
     text-align: center; // テキストを中央寄せにすることが多いです
   }
 
-  &__img-right {
-    width: 94px;
+  &__ttl {
+    font-size: 20px;
+    line-height: 1;
+    color: b.$main-color;
+    padding-block: 25px;
+  }
 
+  &__txt {
+    line-height: 2;
+  }
+
+  &__from {
+    display: block;
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1;
+  }
+
+  &__img.right {
+    padding-top: 50px;
     img {
-      width: 100%;
-      height: auto;
-      display: block;
     }
   }
 }
