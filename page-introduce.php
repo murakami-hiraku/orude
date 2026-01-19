@@ -4,7 +4,7 @@
 
 <main class="page-introduce">
   <?php
-  get_template_part('template-parts/block/block-page-title');
+  get_template_part('template-parts/block/block-page-ttl');
   ?>
 
   <section class="page-introduce__section fadein">

@@ -11,7 +11,7 @@ get_header(); // ヘッダーを読み込む
   <main id="main" class="site-main">
 
     <?php
-    get_template_part('template-parts/block/block-page-title');
+    get_template_part('template-parts/block/block-page-ttl');
     ?>
 
     <?php
