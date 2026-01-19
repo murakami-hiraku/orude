@@ -7,13 +7,6 @@
     /* 左から20%・上↓中央の位置を中心に表示する */
     background-position: 46% bottom;
     background-size: 400%;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-    text-align: center;
-    padding-inline: 3.85vw;
-    z-index: 2;
 
     @include b.mq(pc) {
       background-position: 20% center;
