@@ -1,0 +1,33 @@
+@use "sass:map";
+@use "base" as b;
+
+.page-about {
+  &__section {
+  }
+
+  &__inner {
+  }
+
+  &__img {
+    img {
+    }
+
+    &.img-1 {
+    }
+
+    &.img-2 {
+    }
+  }
+
+  &__container {
+  }
+
+  &__ttl {
+  }
+
+  &__txt {
+  }
+
+  &__signature {
+  }
+}
