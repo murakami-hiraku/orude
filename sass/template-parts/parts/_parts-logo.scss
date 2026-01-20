@@ -5,25 +5,48 @@
   color: b.$main-color;
   height: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 7px;
 
-  h2 {
-    font-size: 18px;
-    line-height: 1;
+  &__img {
+    width: 46px;
+    height: fit-content;
+    padding-bottom: 2px;
 
     @include b.mq(tb) {
-      font-size: 36px;
+      width: 84px;
+    }
+
+    img {
+      width: 100%;
     }
   }
-  h3 {
-    font-size: 9px;
-    line-height: 1;
-    font-family: b.$font-family-en-sub;
 
-    @include b.mq(tb) {
+  &__word {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+
+    h2 {
       font-size: 18px;
+      line-height: 1;
+
+      @include b.mq(tb) {
+        font-size: 36px;
+      }
+    }
+    h3 {
+      font-size: 9px;
+      line-height: 1;
+      font-family: b.$font-family-en-sub;
+
+      @include b.mq(tb) {
+        font-size: 18px;
+      }
     }
   }
 }
