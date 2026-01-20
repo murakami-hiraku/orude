@@ -7,13 +7,18 @@
     /* 左から20%・上↓中央の位置を中心に表示する */
     background-position: 46% bottom;
     background-size: 400%;
+    background-size: clamp(120%, calc(450% - 10vw), 400%);
 
+    @include b.mq(tb) {
+      background-size: 200%;
+    }
     @include b.mq(pc) {
-      background-position: 20% bottom;
-      background-size: cover;
+      background-position: 40% bottom;
+      background-size: 200%;
     }
 
     @include b.mq(xl) {
+      background-size: cover;
       background-position: 20% 65%;
     }
   }
@@ -72,12 +77,16 @@
     display: flex;
     flex-direction: column;
     gap: 75px;
+    max-width: 620px;
+    margin-inline: auto;
 
     @include b.mq(pc) {
-      max-width: 1280px;
+      max-width: 920px;
       width: 100%;
-      margin-inline: auto;
       gap: 100px;
+    }
+    @include b.mq(lg) {
+      max-width: 1280px;
     }
   }
 
@@ -99,16 +108,22 @@
 
     @include b.mq(pc) {
       font-weight: 700;
-      font-size: 40px;
+      font-size: 32px;
       padding: 0;
+    }
+    @include b.mq(lg) {
+      font-size: 40px;
     }
 
     span {
       @include b.mq(pc) {
         display: inline-block;
         font-weight: 700;
-        font-size: 40px;
+        font-size: 32px;
         color: b.$main-color;
+      }
+      @include b.mq(lg) {
+        font-size: 40px;
       }
     }
   }
@@ -143,7 +158,12 @@
     font-weight: 700;
 
     @include b.mq(pc) {
-      padding-left: 161px;
+      // padding-left: 161px;
+      padding-left: clamp(15px, 1.4648vw, 30px);
+    }
+
+    @include b.mq(lg) {
+      padding-left: clamp(15px, 8.385vw, 161px);
     }
   }
 
@@ -177,6 +197,9 @@
       color: b.$main-color;
 
       @include b.mq(pc) {
+        margin-top: 4px;
+      }
+      @include b.mq(lg) {
         margin-top: 12px;
       }
     }
@@ -185,6 +208,9 @@
       color: b.$main-color;
 
       @include b.mq(pc) {
+        font-size: 24px;
+      }
+      @include b.mq(lg) {
         font-size: 30px;
       }
     }
@@ -205,9 +231,15 @@
 
     .page-faq__txt {
       font-size: 14px;
+
       @include b.mq(pc) {
         font-size: 20px;
-        margin-right: 161px;
+        // margin-right: 161px;
+        margin-right: clamp(15px, 1.4648vw, 30px);
+      }
+
+      @include b.mq(lg) {
+        margin-right: clamp(15px, 8.385vw, 161px);
       }
     }
   }

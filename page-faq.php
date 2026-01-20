@@ -39,7 +39,7 @@
           <div class="page-faq__card">
             <div class="page-faq__q">
               <span class="page-faq__label">Q3</span>
-              <h3 class="page-faq__txt">自宅に駐車場がありませんが、訪問火葬は可能でしょうか？</h3>
+              <h3 class="page-faq__txt">自宅に駐車場がありませんが、<br class="hidden-tb">訪問火葬は可能でしょうか？</h3>
             </div>
             <div class="page-faq__a">
               <span class="page-faq__label">A3</span>
@@ -49,7 +49,7 @@
           <div class="page-faq__card">
             <div class="page-faq__q">
               <span class="page-faq__label">Q4</span>
-              <h3 class="page-faq__txt">火葬の際の臭いや煙が心配です。近所への影響は大丈夫でしょうか？</h3>
+              <h3 class="page-faq__txt">火葬の際の臭いや煙が心配です。<br class="hidden-tb">近所への影響は大丈夫でしょうか？</h3>
             </div>
             <div class="page-faq__a">
               <span class="page-faq__label">A4</span>
@@ -82,7 +82,7 @@
           <div class="page-faq__card">
             <div class="page-faq__q">
               <span class="page-faq__label">Q1</span>
-              <h3 class="page-faq__txt">自宅で葬儀をする場合、何か準備しておくことはありますか？</h3>
+              <h3 class="page-faq__txt">自宅で葬儀をする場合、<br class="hidden-tb">何か準備しておくことはありますか？</h3>
             </div>
             <div class="page-faq__a">
               <span class="page-faq__label">A1</span>
@@ -92,7 +92,7 @@
           <div class="page-faq__card">
             <div class="page-faq__q">
               <span class="page-faq__label">Q2</span>
-              <h3 class="page-faq__txt">お坊さんの読経は必ずお願いしなければいけませんか？</h3>
+              <h3 class="page-faq__txt">お坊さんの読経は<br class="hidden-tb">必ずお願いしなければいけませんか？</h3>
             </div>
             <div class="page-faq__a">
               <span class="page-faq__label">A2</span>
@@ -155,7 +155,7 @@
           <div class="page-faq__card">
             <div class="page-faq__q">
               <span class="page-faq__label">Q3</span>
-              <h3 class="page-faq__txt">ペットが先に亡くなった場合や、複数のペットがいる場合も対応できますか？</h3>
+              <h3 class="page-faq__txt">ペットが先に亡くなった場合や、<br class="hidden-tb">複数のペットがいる場合も対応できますか？</h3>
             </div>
             <div class="page-faq__a">
               <span class="page-faq__label">A3</span>
@@ -165,8 +165,7 @@
           <div class="page-faq__card">
             <div class="page-faq__q">
               <span class="page-faq__label">Q4</span>
-              <h3 class="page-faq__txt">利用にあたり
-                宗教・宗派の指定はありますか？</h3>
+              <h3 class="page-faq__txt">利用にあたり<br class="hidden-tb">宗教・宗派の指定はありますか？</h3>
             </div>
             <div class="page-faq__a">
               <span class="page-faq__label">A4</span>
@@ -176,7 +175,7 @@
           <div class="page-faq__card">
             <div class="page-faq__q">
               <span class="page-faq__label">Q5</span>
-              <h3 class="page-faq__txt">遠方に住んでいてお墓参りに行けなくなったらどうなりますか？</h3>
+              <h3 class="page-faq__txt">遠方に住んでいてお墓参りに<br class="hidden-tb">行けなくなったらどうなりますか？</h3>
             </div>
             <div class="page-faq__a">
               <span class="page-faq__label">A5</span>

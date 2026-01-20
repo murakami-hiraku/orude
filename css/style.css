@@ -582,15 +582,22 @@ main {
   /* 左から20%・上↓中央の位置を中心に表示する */
   background-position: 46% bottom;
   background-size: 400%;
+  background-size: clamp(120%, 450% - 10vw, 400%);
+}
+@media (min-width: 768px) {
+  .page-faq .block-page-ttl {
+    background-size: 200%;
+  }
 }
 @media (min-width: 1024px) {
   .page-faq .block-page-ttl {
-    background-position: 20% bottom;
-    background-size: cover;
+    background-position: 40% bottom;
+    background-size: 200%;
   }
 }
 @media (min-width: 1921px) {
   .page-faq .block-page-ttl {
+    background-size: cover;
     background-position: 20% 65%;
   }
 }
@@ -650,13 +657,19 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 75px;
+  max-width: 620px;
+  margin-inline: auto;
 }
 @media (min-width: 1024px) {
   .page-faq__contents {
-    max-width: 1280px;
+    max-width: 920px;
     width: 100%;
-    margin-inline: auto;
     gap: 100px;
+  }
+}
+@media (min-width: 1440px) {
+  .page-faq__contents {
+    max-width: 1280px;
   }
 }
 .page-faq__category {
@@ -683,16 +696,26 @@ main {
 @media (min-width: 1024px) {
   .page-faq__ttl {
     font-weight: 700;
-    font-size: 40px;
+    font-size: 32px;
     padding: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .page-faq__ttl {
+    font-size: 40px;
   }
 }
 @media (min-width: 1024px) {
   .page-faq__ttl span {
     display: inline-block;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 32px;
     color: #907910;
+  }
+}
+@media (min-width: 1440px) {
+  .page-faq__ttl span {
+    font-size: 40px;
   }
 }
 .page-faq .cremation .page-faq__ttl {
@@ -719,7 +742,12 @@ main {
 }
 @media (min-width: 1024px) {
   .page-faq__card {
-    padding-left: 161px;
+    padding-left: clamp(15px, 1.4648vw, 30px);
+  }
+}
+@media (min-width: 1440px) {
+  .page-faq__card {
+    padding-left: clamp(15px, 8.385vw, 161px);
   }
 }
 .page-faq__q, .page-faq__a {
@@ -759,6 +787,11 @@ main {
 }
 @media (min-width: 1024px) {
   .page-faq__q .page-faq__label {
+    margin-top: 4px;
+  }
+}
+@media (min-width: 1440px) {
+  .page-faq__q .page-faq__label {
     margin-top: 12px;
   }
 }
@@ -766,6 +799,11 @@ main {
   color: #907910;
 }
 @media (min-width: 1024px) {
+  .page-faq__q .page-faq__txt {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1440px) {
   .page-faq__q .page-faq__txt {
     font-size: 30px;
   }
@@ -790,7 +828,12 @@ main {
 @media (min-width: 1024px) {
   .page-faq__a .page-faq__txt {
     font-size: 20px;
-    margin-right: 161px;
+    margin-right: clamp(15px, 1.4648vw, 30px);
+  }
+}
+@media (min-width: 1440px) {
+  .page-faq__a .page-faq__txt {
+    margin-right: clamp(15px, 8.385vw, 161px);
   }
 }
 
