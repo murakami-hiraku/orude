@@ -7,7 +7,7 @@
   get_template_part('template-parts/block/block-page-ttl');
   ?>
 
-  <section class="page-faq__section fadein">
+  <section class="page-faq__section section fadein">
 
     <?php get_template_part('template-parts/parts/parts-bg-circle'); ?>
 
