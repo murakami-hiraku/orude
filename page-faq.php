@@ -15,7 +15,7 @@
 
       <div class="page-faq__contents">
         <div class="page-faq__category cremation">
-          <h2 class="page-faq__ttl">プレミアム訪問ペット火葬に関するご質問</h2>
+          <h2 class="page-faq__ttl">プレミアム訪問ペット火葬<span class="hidden-sp">サービス</span>に関するご質問</h2>
           <div class="page-faq__card">
             <div class="page-faq__q">
               <span class="page-faq__label">Q1</span>
@@ -92,8 +92,7 @@
           <div class="page-faq__card">
             <div class="page-faq__q">
               <span class="page-faq__label">Q2</span>
-              <h3 class="page-faq__txt">お坊さんの読経は
-                必ずお願いしなければいけませんか？</h3>
+              <h3 class="page-faq__txt">お坊さんの読経は必ずお願いしなければいけませんか？</h3>
             </div>
             <div class="page-faq__a">
               <span class="page-faq__label">A2</span>
@@ -156,8 +155,7 @@
           <div class="page-faq__card">
             <div class="page-faq__q">
               <span class="page-faq__label">Q3</span>
-              <h3 class="page-faq__txt">ペットが先に亡くなった場合や、
-                複数のペットがいる場合も対応できますか？</h3>
+              <h3 class="page-faq__txt">ペットが先に亡くなった場合や、複数のペットがいる場合も対応できますか？</h3>
             </div>
             <div class="page-faq__a">
               <span class="page-faq__label">A3</span>
@@ -178,8 +176,7 @@
           <div class="page-faq__card">
             <div class="page-faq__q">
               <span class="page-faq__label">Q5</span>
-              <h3 class="page-faq__txt">遠方に住んでいてお墓参りに
-                行けなくなったらどうなりますか？</h3>
+              <h3 class="page-faq__txt">遠方に住んでいてお墓参りに行けなくなったらどうなりますか？</h3>
             </div>
             <div class="page-faq__a">
               <span class="page-faq__label">A5</span>

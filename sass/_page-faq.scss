@@ -9,7 +9,8 @@
     background-size: 400%;
 
     @include b.mq(pc) {
-      background-position: 20% center;
+      background-position: 20% bottom;
+      background-size: cover;
     }
 
     @include b.mq(xl) {
@@ -21,6 +22,11 @@
     .parts-bg-circle {
       top: -115px;
       right: -130px;
+
+      @include b.mq(pc) {
+        top: 0;
+        right: -100px;
+      }
     }
 
     .circle-container {
@@ -56,18 +62,33 @@
   &__inner {
     padding-top: 50px;
     padding-bottom: 25px;
+
+    @include b.mq(pc) {
+      padding-bottom: 0;
+    }
   }
 
   &__contents {
     display: flex;
     flex-direction: column;
     gap: 75px;
+
+    @include b.mq(pc) {
+      max-width: 1280px;
+      width: 100%;
+      margin-inline: auto;
+      gap: 100px;
+    }
   }
 
   &__category {
     display: flex;
     flex-direction: column;
     gap: 25px;
+
+    @include b.mq(pc) {
+      gap: 36px;
+    }
   }
 
   &__ttl {
@@ -75,12 +96,31 @@
     color: b.$main-color;
     font-size: 20px;
     text-align: center;
+    line-height: 1;
+
+    @include b.mq(pc) {
+      font-weight: 700;
+      font-size: 40px;
+      padding: 0;
+    }
+
+    span {
+      @include b.mq(pc) {
+        display: inline-block;
+        font-weight: 700;
+        font-size: 40px;
+        color: b.$main-color;
+      }
+    }
   }
 
   .cremation {
     .page-faq__ttl {
       padding-inline: 50px;
       min-width: 258px;
+
+      @include b.mq(pc) {
+      }
     }
   }
 
@@ -102,18 +142,27 @@
     display: flex;
     flex-direction: column;
     font-weight: 700;
+
+    @include b.mq(pc) {
+      padding-left: 161px;
+    }
   }
 
   &__q,
   &__a {
     display: flex;
     gap: 29px; // ラベルとテキストの間の距離
-    align-items: flex-start; // 上揃えにする
+    align-items: flex-start;
   }
 
   &__label {
     flex-shrink: 0; // ラベルが横に潰れないように固定
     width: 1.4em; // ラベルの幅を固定するとより綺麗です
+    height: fit-content;
+
+    @include b.mq(pc) {
+      font-size: 20px;
+    }
   }
 
   &__txt {
@@ -125,22 +174,43 @@
 
   &__q {
     padding-bottom: 10px;
+
     .page-faq__label {
+      color: b.$main-color;
+
+      @include b.mq(pc) {
+        margin-top: 12px;
+      }
     }
 
     .page-faq__txt {
       color: b.$main-color;
+
+      @include b.mq(pc) {
+        font-size: 30px;
+      }
     }
   }
   &__a {
     padding-top: 15px;
     border-top: 1px solid b.$main-color;
 
+    @include b.mq(pc) {
+      border: none;
+    }
+
     .page-faq__label {
+      @include b.mq(pc) {
+        margin-top: 5px;
+      }
     }
 
     .page-faq__txt {
       font-size: 14px;
+      @include b.mq(pc) {
+        font-size: 20px;
+        margin-right: 161px;
+      }
     }
   }
 }
