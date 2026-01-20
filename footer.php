@@ -3,7 +3,7 @@
   <div class="footer__inner inner">
     <div class="footer__content">
       <!-- footer-logo -->
-      <?php get_template_part('template-parts/parts/parts-logo'); ?>
+      <?php get_template_part('template-parts/parts/parts-logo--white'); ?>
       <!-- /footer-logo -->
       <!-- footer-info -->
       <address class=" footer__info" id="footer-info">
