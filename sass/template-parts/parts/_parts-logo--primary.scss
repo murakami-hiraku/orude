@@ -1,0 +1,55 @@
+@use "sass:map";
+@use "../../base" as b;
+
+.parts-logo {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+
+  &__img {
+    width: 46px;
+    height: fit-content;
+    padding-bottom: 2px;
+
+    @include b.mq(tb) {
+      width: 84px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__word {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+
+    h2 {
+      font-size: 18px;
+      line-height: 1;
+
+      @include b.mq(tb) {
+        font-size: 36px;
+      }
+    }
+    h3 {
+      font-size: 9px;
+      line-height: 1;
+      font-family: b.$font-family-en-sub;
+
+      @include b.mq(tb) {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.logo--primary {
+  color: b.$main-color;
+}

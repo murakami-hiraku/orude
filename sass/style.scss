@@ -11,7 +11,8 @@
 @use "template-parts/front-page/section-service";
 @use "template-parts/front-page/section-guide";
 @use "template-parts/front-page/section-features";
-@use "template-parts/parts/parts-logo";
+@use "template-parts/parts/parts-logo--primary";
+@use "template-parts/parts/parts-logo--white";
 @use "template-parts/parts/parts-bg-circle";
 @use "template-parts/block/block-page-ttl";
 @use "template-parts/section/section-contact";

@@ -1177,7 +1177,6 @@ main {
   padding-top: 50px;
 }
 .parts-logo {
-  color: #907910;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1242,6 +1241,81 @@ main {
   .parts-logo__word h3 {
     font-size: 18px;
   }
+}
+
+.logo--primary {
+  color: #907910;
+}
+
+.parts-logo {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 7px;
+}
+.parts-logo__img {
+  width: 46px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-bottom: 2px;
+}
+@media (min-width: 768px) {
+  .parts-logo__img {
+    width: 84px;
+  }
+}
+.parts-logo__img img {
+  width: 100%;
+}
+.parts-logo__word {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 400;
+}
+.parts-logo__word h2 {
+  font-size: 18px;
+  line-height: 1;
+}
+@media (min-width: 768px) {
+  .parts-logo__word h2 {
+    font-size: 36px;
+  }
+}
+.parts-logo__word h3 {
+  font-size: 9px;
+  line-height: 1;
+  font-family: "Alegreya", serif;
+}
+@media (min-width: 768px) {
+  .parts-logo__word h3 {
+    font-size: 18px;
+  }
+}
+
+.logo--white {
+  color: #fff;
 }
 
 .parts-bg-circle {
