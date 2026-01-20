@@ -116,6 +116,10 @@ main {
     height: 100px;
   }
 }
+.header .parts__logo {
+  position: relative;
+  z-index: 1000;
+}
 @media (min-width: 1440px) {
   .header .parts__logo {
     padding-left: 15px;
@@ -123,8 +127,7 @@ main {
 }
 .header__nav {
   position: fixed;
-  top: 10.256vw;
-  top: clamp(40px, 10.256vw, 80px);
+  top: 0;
   right: 0;
   -webkit-transform: translateX(200%);
           transform: translateX(200%);
@@ -249,6 +252,7 @@ main {
   gap: 8px;
   background: #907910;
   position: relative;
+  z-index: 1000;
 }
 .header__drawer-icon.is-checked .header__icon-bar {
   position: absolute;

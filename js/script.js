@@ -15,7 +15,6 @@ document
     e.preventDefault();
 
     document.querySelector("#js-drawer-button").classList.toggle("is-checked");
-
     document.querySelector("#js-drawer-content").classList.toggle("is-checked");
   });
 
@@ -90,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       threshold: 0.2,
-    }
+    },
   );
 
   // 読み込み時に画面内の要素は即フェードイン
