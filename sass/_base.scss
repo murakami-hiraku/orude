@@ -73,7 +73,7 @@ body {
   color: $text-color-dark;
   font-weight: 400;
   font-size: 16px !important;
-  line-height: 24px;
+  line-height: 1.4;
   font-family: $font-family-ja;
   position: relative;
 
@@ -112,7 +112,9 @@ main {
 .fadein {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
 }
 
 /* 表示状態（ふわっと現れる） */

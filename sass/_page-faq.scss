@@ -96,7 +96,6 @@
     color: b.$main-color;
     font-size: 20px;
     text-align: center;
-    line-height: 1;
 
     @include b.mq(pc) {
       font-weight: 700;
@@ -168,7 +167,6 @@
   &__txt {
     flex: 1; // 残りの幅をすべて使う
     font-size: 14px;
-    line-height: 1.7;
     margin: 0; // ブラウザ規定の余白をリセット
   }
 
