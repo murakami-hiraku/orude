@@ -2,32 +2,110 @@
 @use "base" as b;
 
 .page-about {
+  .block-page-ttl {
+    background-position: center center;
+
+    @include b.mq(pc) {
+      background-position: center 80%;
+    }
+
+    @include b.mq(xl) {
+      background-position: center 65%;
+    }
+  }
+
   &__section {
   }
 
   &__inner {
-  }
+    position: relative;
+    padding-block: 50px 25px;
 
-  &__img {
-    img {
-    }
-
-    &.img-1 {
-    }
-
-    &.img-2 {
+    @include b.mq(pc) {
+      padding-block: 100px 0;
     }
   }
 
   &__container {
+    position: relative;
+  }
+
+  &__img {
+    position: absolute;
+    width: 86px;
+    height: 62px;
+
+    @include b.mq(pc) {
+      max-width: 300px;
+      max-height: 215px;
+      width: 15.625vw;
+      height: 11.198vw;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    &.img-1 {
+      top: -8px;
+      right: 0;
+
+      @include b.mq(pc) {
+        top: -40px;
+      }
+    }
+
+    &.img-2 {
+      bottom: -24px;
+      left: 0;
+
+      @include b.mq(pc) {
+        bottom: -32px;
+      }
+    }
+  }
+
+  &__box {
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    max-width: 530px;
+    margin-inline: auto;
+
+    @include b.mq(pc) {
+      max-width: 960px;
+      gap: 30px;
+    }
   }
 
   &__ttl {
+    color: b.$main-color;
+    font-size: 20px;
+
+    @include b.mq(pc) {
+      font-size: 24px;
+    }
   }
 
   &__txt {
+    line-height: 2;
+
+    @include b.mq(pc) {
+      font-size: 20px;
+    }
   }
 
   &__signature {
+    font-size: 16px;
+    margin-left: auto;
+
+    @include b.mq(pc) {
+      margin-top: 20px;
+      font-size: 24px;
+    }
   }
 }

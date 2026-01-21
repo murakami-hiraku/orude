@@ -69,7 +69,7 @@ main {
 .inner {
   max-width: 1680px;
   margin-inline: auto;
-  padding-inline: 3.85vw;
+  padding-inline: clamp(15px, 3.85vw, 120px);
 }
 
 #wpadminbar {
@@ -834,6 +834,121 @@ main {
 @media (min-width: 1440px) {
   .page-faq__a .page-faq__txt {
     margin-right: clamp(15px, 8.385vw, 161px);
+  }
+}
+
+.page-about .block-page-ttl {
+  background-position: center center;
+}
+@media (min-width: 1024px) {
+  .page-about .block-page-ttl {
+    background-position: center 80%;
+  }
+}
+@media (min-width: 1921px) {
+  .page-about .block-page-ttl {
+    background-position: center 65%;
+  }
+}
+.page-about__inner {
+  position: relative;
+  padding-block: 50px 25px;
+}
+@media (min-width: 1024px) {
+  .page-about__inner {
+    padding-block: 100px 0;
+  }
+}
+.page-about__container {
+  position: relative;
+}
+.page-about__img {
+  position: absolute;
+  width: 86px;
+  height: 62px;
+}
+@media (min-width: 1024px) {
+  .page-about__img {
+    max-width: 300px;
+    max-height: 215px;
+    width: 15.625vw;
+    height: 11.198vw;
+  }
+}
+.page-about__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.page-about__img.img-1 {
+  top: -8px;
+  right: 0;
+}
+@media (min-width: 1024px) {
+  .page-about__img.img-1 {
+    top: -40px;
+  }
+}
+.page-about__img.img-2 {
+  bottom: -24px;
+  left: 0;
+}
+@media (min-width: 1024px) {
+  .page-about__img.img-2 {
+    bottom: -32px;
+  }
+}
+.page-about__box {
+  font-weight: 900;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 25px;
+  max-width: 530px;
+  margin-inline: auto;
+}
+@media (min-width: 1024px) {
+  .page-about__box {
+    max-width: 960px;
+    gap: 30px;
+  }
+}
+.page-about__ttl {
+  color: #907910;
+  font-size: 20px;
+}
+@media (min-width: 1024px) {
+  .page-about__ttl {
+    font-size: 24px;
+  }
+}
+.page-about__txt {
+  line-height: 2;
+}
+@media (min-width: 1024px) {
+  .page-about__txt {
+    font-size: 20px;
+  }
+}
+.page-about__signature {
+  font-size: 16px;
+  margin-left: auto;
+}
+@media (min-width: 1024px) {
+  .page-about__signature {
+    margin-top: 20px;
+    font-size: 24px;
   }
 }
 
