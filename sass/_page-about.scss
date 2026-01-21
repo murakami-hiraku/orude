@@ -30,39 +30,20 @@
     position: relative;
   }
 
-  &__img {
-    position: absolute;
-    width: 86px;
-    height: 62px;
+  .parts-bg-flower--right {
+    top: -8px;
+    right: 0;
 
     @include b.mq(pc) {
-      max-width: 300px;
-      max-height: 215px;
-      width: 15.625vw;
-      height: 11.198vw;
+      top: -40px;
     }
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
+  }
+  .parts-bg-flower--left {
+    top: -8px;
+    right: 0;
 
-    &.img-1 {
-      top: -8px;
-      right: 0;
-
-      @include b.mq(pc) {
-        top: -40px;
-      }
-    }
-
-    &.img-2 {
-      bottom: -24px;
-      left: 0;
-
-      @include b.mq(pc) {
-        bottom: -32px;
-      }
+    @include b.mq(pc) {
+      top: -40px;
     }
   }
 
