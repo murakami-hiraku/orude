@@ -100,7 +100,7 @@ main {
 .inner {
   max-width: 1680px;
   margin-inline: auto;
-  padding-inline: 3.85vw;
+  padding-inline: clamp(15px, 3.85vw, 120px);
 }
 
 #wpadminbar {
