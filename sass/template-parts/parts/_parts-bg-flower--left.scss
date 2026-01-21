@@ -5,6 +5,7 @@
   position: absolute;
   width: 86px;
   height: 62px;
+  z-index: -2;
 
   @include b.mq(pc) {
     max-width: 300px;
