@@ -10,11 +10,11 @@
   <section class="page-company__section section fadein">
     <div class="page-company__inner inner">
       <div class="page-company__container">
-        <div class="page-company__img">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/bg-flower-1.png" alt="">
-        </div>
+        <?php
+        get_template_part('template-parts/parts/parts-bg-flower--right')
+        ?>
         <div class="page-company__box">
-          <h2 class="page-company__ttl"></h2>
+          <h2 class="page-company__ttl">会社概要</h2>
           <table class="page-company__table">
             <tr class="page-company__table-list">
               <th class="page-company__table-ttl">商号</th>
@@ -30,8 +30,7 @@
             </tr>
             <tr class="page-company__table-list">
               <th class="page-company__table-ttl">本社</th>
-              <td class="page-company__table-input">〒583-0872
-                大阪府羽曳野市はびきの3-316-84</td>
+              <td class="page-company__table-input">〒583-0872<br>大阪府羽曳野市はびきの<br>3-316-84</td>
             </tr>
             <tr class="page-company__table-list">
               <th class="page-company__table-ttl">電話番号</th>

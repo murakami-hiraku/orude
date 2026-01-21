@@ -3,6 +3,7 @@
 
 .page-company {
   &__section {
+    padding-bottom: 32px;
   }
 
   &__inner {
@@ -10,10 +11,14 @@
   }
 
   &__container {
-  }
+    position: relative;
+    .parts-bg-flower--right {
+      top: -8px;
+      right: 0;
 
-  &__img {
-    img {
+      @include b.mq(pc) {
+        top: -30px;
+      }
     }
   }
 
@@ -24,6 +29,8 @@
     font-weight: 900;
     color: b.$main-color;
     font-size: 20px;
+    text-align: center;
+    margin-bottom: 32px;
   }
 
   &__table {
@@ -37,37 +44,19 @@
     &-list {
       display: flex;
       align-items: stretch;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.6;
 
-      &:first-child {
-        border-top: 1px solid #d3d3d3;
-        @include b.mq(pc) {
-          border-top: none;
-        }
+      letter-spacing: 0.02em;
 
-        .page-company__table-input {
-          border-top: none;
-
-          @include b.mq(pc) {
-            border-top: 1px solid #333333;
-          }
-        }
-      }
       &:last-child {
-        border-bottom: 1px solid #d3d3d3;
-        @include b.mq(pc) {
-          border-bottom: none;
-        }
-
         .page-company__table-ttl {
-          @include b.mq(pc) {
-            border-bottom: 1px solid #333333;
-          }
+          border-bottom: 1px solid b.$border-color-dark;
         }
 
         .page-company__table-input {
-          @include b.mq(pc) {
-            border-bottom: 1px solid #333333;
-          }
+          border-bottom: 1px solid b.$border-color-dark;
         }
       }
 
@@ -79,22 +68,14 @@
     }
     &-ttl {
       display: flex;
-      justify-content: center;
+      justify-content: start;
       align-items: stretch;
-      border-top: 1px solid #d3d3d3;
-      background: b.$main-color;
-      width: 25%;
-      color: b.$text-color-white;
-      font-weight: bold;
-      padding-block: 25px;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 200%;
-      letter-spacing: 0.02em;
+      width: 35%;
+      padding-block: 32px;
       vertical-align: middle;
+      border-top: 1px solid b.$border-color-dark;
 
       @include b.mq(pc) {
-        border-top: 1px solid #333333;
         width: 100%;
         max-width: 196px;
         padding-block: 0;
@@ -105,19 +86,13 @@
       display: flex;
       justify-content: flex-start;
       align-items: flex-start;
-      margin-left: 15px;
-      padding-left: 5px;
-      border-top: 1px solid #d3d3d3;
-      width: 75%;
-      padding-block: 25px;
-      font-weight: 500;
-      font-size: 15px;
-      line-height: 200%;
-      letter-spacing: 0;
+      margin-left: 56px;
+      width: 50%;
+      padding-block: 32px;
+      border-top: 1px solid b.$border-color-dark;
 
       @include b.mq(pc) {
         margin-left: 0;
-        border-top: 1px solid #333333;
         padding-left: 20px;
         width: 100%;
         max-width: 628px;
