@@ -2,12 +2,37 @@
 @use "base" as b;
 
 .page-company {
+  .block-page-ttl {
+    position: relative;
+    background-position: 30% bottom;
+    background-size: 300%;
+
+    @include b.mq(tb) {
+      background-position: 20% bottom;
+      background-size: 160%;
+    }
+    @include b.mq(pc) {
+      background-position: 20% 60%;
+    }
+    @include b.mq(lg) {
+      background-position: 20% 65%;
+      background-size: cover;
+    }
+
+    @include b.mq(xl) {
+      background-position: 20% 50%;
+    }
+  }
   &__section {
-    padding-bottom: 32px;
   }
 
   &__inner {
     padding-top: 50px;
+    padding-bottom: 32px;
+
+    @include b.mq(pc) {
+      padding-top: 100px;
+    }
   }
 
   &__container {
@@ -17,12 +42,20 @@
       right: 0;
 
       @include b.mq(pc) {
+        max-width: 364px;
+        width: 18.958vw;
         top: -30px;
       }
     }
   }
 
   &__box {
+    max-width: 560px;
+    margin-inline: auto;
+
+    @include b.mq(pc) {
+      max-width: none;
+    }
   }
 
   &__ttl {
@@ -31,6 +64,11 @@
     font-size: 20px;
     text-align: center;
     margin-bottom: 32px;
+
+    @include b.mq(pc) {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
   }
 
   &__table {
@@ -46,9 +84,11 @@
       align-items: stretch;
       font-weight: 700;
       font-size: 14px;
-      line-height: 1.6;
-
       letter-spacing: 0.02em;
+
+      @include b.mq(pc) {
+        font-size: 16px;
+      }
 
       &:last-child {
         .page-company__table-ttl {
@@ -74,30 +114,15 @@
       padding-block: 32px;
       vertical-align: middle;
       border-top: 1px solid b.$border-color-dark;
-
-      @include b.mq(pc) {
-        width: 100%;
-        max-width: 196px;
-        padding-block: 0;
-        align-items: center;
-      }
     }
     &-input {
       display: flex;
       justify-content: flex-start;
       align-items: flex-start;
       margin-left: 56px;
-      width: 50%;
+      width: 65%;
       padding-block: 32px;
       border-top: 1px solid b.$border-color-dark;
-
-      @include b.mq(pc) {
-        margin-left: 0;
-        padding-left: 20px;
-        width: 100%;
-        max-width: 628px;
-        padding-block: 30px;
-      }
     }
   }
 }
