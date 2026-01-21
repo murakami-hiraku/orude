@@ -39,11 +39,11 @@
     }
   }
   .parts-bg-flower--left {
-    top: -8px;
-    right: 0;
+    bottom: -24px;
+    left: 0;
 
     @include b.mq(pc) {
-      top: -40px;
+      bottom: -40px;
     }
   }
 
