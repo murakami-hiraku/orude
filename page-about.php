@@ -13,7 +13,7 @@
     <div class="page-about__inner inner">
       <div class="page-about__container">
         <div class="page-about__img img-1">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/about-img-1.png" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/bg-flower-1.png" alt="">
         </div>
         <div class="page-about__box">
           <h2 class="page-about__ttl">代表者ご挨拶</h2>
@@ -21,7 +21,7 @@
           <p class="page-about__signature">代表取締役　北池　章一</p>
         </div>
         <div class="page-about__img img-2">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/about-img-2.png" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/bg-flower-2.png" alt="">
         </div>
       </div>
     </div>
