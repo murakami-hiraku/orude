@@ -30,7 +30,7 @@
             </tr>
             <tr class="page-company__table-list">
               <th class="page-company__table-ttl">本社</th>
-              <td class="page-company__table-input">〒583-0872<br>大阪府羽曳野市はびきの<br>3-316-84</td>
+              <td class="page-company__table-input">〒583-0872<br>大阪府羽曳野市はびきの<br class="hidden-tb">3-316-84</td>
             </tr>
             <tr class="page-company__table-list">
               <th class="page-company__table-ttl">電話番号</th>

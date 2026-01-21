@@ -37,6 +37,7 @@
 
   &__container {
     position: relative;
+
     .parts-bg-flower--right {
       top: -8px;
       right: 0;
@@ -54,7 +55,7 @@
     margin-inline: auto;
 
     @include b.mq(pc) {
-      max-width: none;
+      max-width: 880px;
     }
   }
 
@@ -75,10 +76,6 @@
     border-collapse: collapse;
     width: 100%;
 
-    @include b.mq(pc) {
-      margin-inline: auto;
-      max-width: 880px;
-    }
     &-list {
       display: flex;
       align-items: stretch;
@@ -101,7 +98,6 @@
       }
 
       @include b.mq(pc) {
-        gap: 56px;
         border-top: none;
         border-bottom: none;
       }
@@ -110,19 +106,29 @@
       display: flex;
       justify-content: start;
       align-items: stretch;
-      width: 35%;
+      width: 34.5%;
+      max-width: 196px;
       padding-block: 32px;
       vertical-align: middle;
       border-top: 1px solid b.$border-color-dark;
+
+      @include b.mq(pc) {
+        width: 24%;
+      }
     }
     &-input {
+      margin-left: 56px;
       display: flex;
       justify-content: flex-start;
       align-items: flex-start;
-      margin-left: 56px;
-      width: 65%;
+      width: calc(65.5% - 56px);
+      max-width: 628px;
       padding-block: 32px;
       border-top: 1px solid b.$border-color-dark;
+
+      @include b.mq(pc) {
+        width: 100%;
+      }
     }
   }
 }

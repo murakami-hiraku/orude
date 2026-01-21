@@ -989,7 +989,7 @@ main {
 }
 @media (min-width: 1024px) {
   .page-company__box {
-    max-width: none;
+    max-width: 880px;
   }
 }
 .page-company__ttl {
@@ -1008,12 +1008,6 @@ main {
 .page-company__table {
   border-collapse: collapse;
   width: 100%;
-}
-@media (min-width: 1024px) {
-  .page-company__table {
-    margin-inline: auto;
-    max-width: 880px;
-  }
 }
 .page-company__table-list {
   display: -webkit-box;
@@ -1039,7 +1033,6 @@ main {
 }
 @media (min-width: 1024px) {
   .page-company__table-list {
-    gap: 56px;
     border-top: none;
     border-bottom: none;
   }
@@ -1054,12 +1047,19 @@ main {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  width: 35%;
+  width: 34.5%;
+  max-width: 196px;
   padding-block: 32px;
   vertical-align: middle;
   border-top: 1px solid #333333;
 }
+@media (min-width: 1024px) {
+  .page-company__table-ttl {
+    width: 24%;
+  }
+}
 .page-company__table-input {
+  margin-left: 56px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1069,10 +1069,15 @@ main {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-left: 56px;
-  width: 65%;
+  width: calc(65.5% - 56px);
+  max-width: 628px;
   padding-block: 32px;
   border-top: 1px solid #333333;
+}
+@media (min-width: 1024px) {
+  .page-company__table-input {
+    width: 100%;
+  }
 }
 
 .section-fv {
