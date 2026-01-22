@@ -89,10 +89,6 @@
 
   </section>
 
-  <!-- コンタクト -->
-  <?php get_template_part('template-parts/section/section-contact'); ?>
-  <!-- /コンタクト -->
-
 </main>
 
 <!-- フッター -->

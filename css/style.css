@@ -1080,6 +1080,47 @@ main {
   }
 }
 
+.page-privacy-policy__inner {
+  padding-block: 50px;
+}
+.page-privacy-policy__container {
+  font-weight: 900;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+}
+.page-privacy-policy__head {
+  line-height: 1.8;
+}
+.page-privacy-policy__head-ttl {
+  font-size: 18px;
+}
+.page-privacy-policy__head-txt {
+  font-size: 14px;
+}
+.page-privacy-policy__body {
+  line-height: 1.8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+}
+.page-privacy-policy__card-ttl {
+  font-size: 18px;
+}
+.page-privacy-policy__card-txt {
+  font-size: 14px;
+}
+
 .section-fv {
   width: 100%;
   overflow: hidden;
