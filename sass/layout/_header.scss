@@ -87,9 +87,10 @@
       .menu-item {
         white-space: nowrap;
         padding-block: 20px;
-        border-top: dashed 1px b.$text-color-white;
+        border-top: dashed 1px b.$sub-color-light;
 
         &:last-child {
+          border-bottom: dashed 1px b.$sub-color-light;
         }
       }
     }

@@ -197,6 +197,9 @@ main {
   padding-block: 20px;
   border-top: dashed 1px #fff;
 }
+.header__nav-list .menu-item:last-child {
+  border-bottom: dashed 1px #fff;
+}
 .header__btn {
   display: -webkit-box;
   display: -ms-flexbox;
