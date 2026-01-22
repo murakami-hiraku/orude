@@ -1083,8 +1083,12 @@ main {
 .page-privacy-policy__inner {
   padding-block: 50px;
 }
+@media (min-width: 1024px) {
+  .page-privacy-policy__inner {
+    padding-block: 100px;
+  }
+}
 .page-privacy-policy__container {
-  font-weight: 900;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1093,15 +1097,35 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 24px;
+  max-width: 780px;
+  margin-inline: auto;
+}
+@media (min-width: 1024px) {
+  .page-privacy-policy__container {
+    max-width: 1080px;
+    gap: 40px;
+  }
 }
 .page-privacy-policy__head {
   line-height: 1.8;
 }
 .page-privacy-policy__head-ttl {
+  font-weight: 900;
   font-size: 18px;
 }
+@media (min-width: 1024px) {
+  .page-privacy-policy__head-ttl {
+    font-size: 24px;
+  }
+}
 .page-privacy-policy__head-txt {
+  font-weight: 900;
   font-size: 14px;
+}
+@media (min-width: 1024px) {
+  .page-privacy-policy__head-txt {
+    font-size: 16px;
+  }
 }
 .page-privacy-policy__body {
   line-height: 1.8;
@@ -1116,9 +1140,21 @@ main {
 }
 .page-privacy-policy__card-ttl {
   font-size: 18px;
+  font-weight: 900;
+}
+@media (min-width: 1024px) {
+  .page-privacy-policy__card-ttl {
+    font-size: 24px;
+  }
 }
 .page-privacy-policy__card-txt {
   font-size: 14px;
+  font-weight: 900;
+}
+@media (min-width: 1024px) {
+  .page-privacy-policy__card-txt {
+    font-size: 16px;
+  }
 }
 
 .section-fv {

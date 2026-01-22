@@ -32,8 +32,7 @@
           </div>
           <div class="page-privacy-policy__card">
             <h2 class="page-privacy-policy__card-ttl">【4.個人情報の利用目的】</h2>
-            <p class="page-privacy-policy__card-txt">当社は、当社が取得した個人情報について、法令に定める場合又は本人の同意を得た場合を除き、以下に定める利用目的の達成に必要な範囲を超えて利用することはありません。
-              ①　本サイトの運営、維持、管理<br>②　本サイトを通じたサービスの提供及び紹介<br>③　本サイトの品質向上のためのアンケート</p>
+            <p class="page-privacy-policy__card-txt">当社は、当社が取得した個人情報について、法令に定める場合又は本人の同意を得た場合を除き、以下に定める利用目的の達成に必要な範囲を超えて利用することはありません。<br>①　本サイトの運営、維持、管理<br>②　本サイトを通じたサービスの提供及び紹介<br>③　本サイトの品質向上のためのアンケート</p>
           </div>
           <div class="page-privacy-policy__card">
             <h2 class="page-privacy-policy__card-ttl">【5.個人情報の開示および訂正等】</h2>
