@@ -116,12 +116,11 @@ main {
     height: 100px;
   }
 }
-.header .parts__logo {
+.header .parts-logo {
   position: relative;
-  z-index: 1000;
 }
 @media (min-width: 1440px) {
-  .header .parts__logo {
+  .header .parts-logo {
     padding-left: 15px;
   }
 }
@@ -129,6 +128,8 @@ main {
   position: fixed;
   top: 0;
   right: 0;
+  padding-block: 5px;
+  padding-inline: clamp(15px, 3.85vw, 120px);
   -webkit-transform: translateX(200%);
           transform: translateX(200%);
   z-index: 100;
@@ -139,9 +140,8 @@ main {
   background: #907910;
   width: 100%;
   max-width: 400px;
-  height: calc(100% - 40px);
+  height: 100%;
   color: #fff;
-  font-size: 15px;
 }
 .header__nav.is-checked {
   -webkit-transform: translateX(0);
@@ -173,7 +173,15 @@ main {
     font-weight: 900;
   }
 }
-.header__nav__list {
+.header__nav .parts-logo {
+  margin-right: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 10.256vw;
+  max-height: 80px;
+}
+.header__nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -181,34 +189,13 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-size: 15px;
+  font-size: 14px;
+  padding-top: 20px;
 }
-@media (min-width: 1440px) {
-  .header__nav__list {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    gap: 20px;
-  }
-}
-@media (min-width: 1921px) {
-  .header__nav__list {
-    gap: 30px;
-  }
-}
-.header__nav__list li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  text-align: center;
+.header__nav-list .menu-item {
   white-space: nowrap;
+  padding-block: 20px;
+  border-top: dashed 1px #fff;
 }
 .header__btn {
   display: -webkit-box;
@@ -222,13 +209,22 @@ main {
       -ms-flex-align: center;
           align-items: center;
   padding: 25px 20px;
-  background: #907910;
-  color: #fff;
+  background: #fff;
+  color: #907910;
   border-radius: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-inline: auto;
+  font-weight: 900;
+  font-size: 15px;
 }
 .header__btn-icon {
   width: 35px;
   height: 27px;
+  -webkit-mask-image: url("../img/mail-icon.svg");
+          mask-image: url("../img/mail-icon.svg");
+  background-color: #907910;
 }
 .header__drawer-icon {
   width: 10.256vw;
