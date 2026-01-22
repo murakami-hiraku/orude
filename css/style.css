@@ -1609,75 +1609,69 @@ main {
   color: #907910;
 }
 
-.parts-logo {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 7px;
-}
-.parts-logo__img {
-  width: 46px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  padding-bottom: 2px;
-}
-@media (min-width: 768px) {
-  .parts-logo__img {
-    width: 84px;
-  }
-}
-.parts-logo__img img {
-  width: 100%;
-}
-.parts-logo__word {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-weight: 400;
-}
-.parts-logo__word h2 {
-  font-size: 18px;
-  line-height: 1;
-}
-@media (min-width: 768px) {
-  .parts-logo__word h2 {
-    font-size: 36px;
-  }
-}
-.parts-logo__word h3 {
-  font-size: 9px;
-  line-height: 1;
-  font-family: "Alegreya", serif;
-}
-@media (min-width: 768px) {
-  .parts-logo__word h3 {
-    font-size: 18px;
-  }
-}
-
 .logo--white {
   color: #fff;
+}
+
+.parts-tel {
+  margin-bottom: 10px;
+}
+@media (min-width: 1024px) {
+  .parts-tel {
+    margin-bottom: 15px;
+  }
+}
+.parts-tel a {
+  font-weight: 900;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-inline: auto;
+}
+@media (min-width: 1024px) {
+  .parts-tel a {
+    font-size: 32px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin-top: 28px;
+    margin: 0;
+  }
+}
+.parts-tel span {
+  width: 33.5px;
+  height: 24px;
+  -webkit-mask-image: url("../img/tel-icon.svg");
+          mask-image: url("../img/tel-icon.svg");
+}
+@media (min-width: 1024px) {
+  .parts-tel span {
+    width: 58px;
+    height: 41.5px;
+  }
+}
+.parts-tel--primary a {
+  color: #907910;
+}
+.parts-tel--primary span {
+  background-color: #907910;
+}
+
+.parts-tel--white a {
+  color: #fff;
+}
+.parts-tel--white span {
+  background-color: #fff;
 }
 
 .parts-bg-circle {
@@ -1933,6 +1927,33 @@ main {
   }
 }
 
+.block-info {
+  margin-top: 25px;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .block-info {
+    text-align: left;
+  }
+}
+.block-info p {
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 2;
+}
+@media (min-width: 1024px) {
+  .block-info p {
+    font-size: 16px;
+  }
+}
+.block-info--primary p {
+  color: #333333;
+}
+
+.block-info--white p {
+  color: #fff;
+}
+
 .section-contact {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -2024,71 +2045,6 @@ main {
 @media (min-width: 1024px) {
   .section-contact__ttl {
     font-size: 40px;
-  }
-}
-.section-contact__info {
-  margin-top: 25px;
-  text-align: center;
-}
-@media (min-width: 1024px) {
-  .section-contact__info {
-    text-align: left;
-  }
-}
-.section-contact__info p {
-  font-weight: 900;
-  font-size: 14px;
-  line-height: 2;
-}
-@media (min-width: 1024px) {
-  .section-contact__info p {
-    font-size: 16px;
-  }
-}
-.section-contact__tel {
-  margin-bottom: 10px;
-}
-@media (min-width: 1024px) {
-  .section-contact__tel {
-    margin-bottom: 15px;
-  }
-}
-.section-contact__tel a {
-  font-weight: 900;
-  font-size: 18px;
-  color: #907910;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin-inline: auto;
-}
-@media (min-width: 1024px) {
-  .section-contact__tel a {
-    font-size: 32px;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    margin-top: 28px;
-    margin: 0;
-  }
-}
-.section-contact__tel img {
-  width: 33.5px;
-  height: 24px;
-}
-@media (min-width: 1024px) {
-  .section-contact__tel img {
-    width: 58px;
-    height: 41.5px;
   }
 }
 .section-contact__link-box {

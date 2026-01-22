@@ -1,0 +1,6 @@
+<div class="block-info block-info--primary">
+  <?php get_template_part('template-parts/parts/parts-tel--primary'); ?>
+
+  <p>営業時間：9:00~18:00</p>
+  <p>定休日：年中無休(年末年始等を除く)</p>
+</div>

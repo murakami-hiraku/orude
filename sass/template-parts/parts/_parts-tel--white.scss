@@ -1,0 +1,14 @@
+@use "sass:map";
+@use "../../foundation/base" as b;
+
+.parts-tel {
+  &--white {
+    a {
+      color: b.$sub-color-light;
+    }
+
+    span {
+      background-color: b.$sub-color-light;
+    }
+  }
+}

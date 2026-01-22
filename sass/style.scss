@@ -16,8 +16,12 @@
 @use "template-parts/front-page/section-features";
 @use "template-parts/parts/parts-logo--primary";
 @use "template-parts/parts/parts-logo--white";
+@use "template-parts/parts/parts-tel--primary";
+@use "template-parts/parts/parts-tel--white";
 @use "template-parts/parts/parts-bg-circle";
 @use "template-parts/parts/parts-bg-flower--right";
 @use "template-parts/parts/parts-bg-flower--left";
 @use "template-parts/block/block-page-ttl";
+@use "template-parts/block/block-info--primary";
+@use "template-parts/block/block-info--white";
 @use "template-parts/section/section-contact";

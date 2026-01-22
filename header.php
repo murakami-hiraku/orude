@@ -51,6 +51,9 @@
           'fallback_cb' => false         // メニュー未設定時に何も出さない
         ]);
         ?>
+
+        <?php get_template_part('template-parts/block/block-info--white'); ?>
+
         <a class="header__btn" href="<?php echo get_permalink(get_page_by_path('contact')); ?>">
           <span class="header__btn-icon"></span>
           お問い合わせはこちら
