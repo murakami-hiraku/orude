@@ -4,7 +4,7 @@
 
   <main class="page-contact">
 
-
+    <?php the_content(); ?>
   </main>
 
 

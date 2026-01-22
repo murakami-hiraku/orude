@@ -4,6 +4,7 @@
 
   <main class="page-contact-confirm">
 
+    <?php the_content(); ?>
 
   </main>
 

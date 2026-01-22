@@ -4,6 +4,7 @@
 
   <main class="page-contact-thanks">
 
+    <?php the_content(); ?>
 
   </main>
 
