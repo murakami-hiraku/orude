@@ -18,6 +18,9 @@
 
         <div class="page-about__box">
           <h2 class="page-about__ttl">代表者ご挨拶</h2>
+          <div class="page-about__img">
+            <img src="" alt="">
+          </div>
           <p class="page-about__txt">ペットは私たちの大切な家族だからこそ、最愛の家族を安心して送り出せる場所がいかに大切かを、私たちは実感しています。<br>最後のお別れが悲しみだけではなく、共に過ごしたすばらしい日々を振り返る温かな時間となりますよう、また、皆様がこれからの一歩を踏み出すお手伝いができますよう、スタッフ一同、誠心誠意努めてまいります。</p>
           <p class="page-about__signature">代表取締役　北池　章一</p>
         </div>
