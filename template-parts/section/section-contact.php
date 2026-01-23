@@ -8,15 +8,8 @@
 
       <div class="section-contact__info-box">
         <h1 class="section-contact__ttl">お問い合わせ</h1>
-        <div class="section-contact__info">
-          <div class="section-contact__tel">
-            <a href="">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/tel-icon.svg" alt="">
-              0120-000-000</a>
-          </div>
-          <p>営業時間：9:00~18:00</p>
-          <p>定休日：年中無休(年末年始等を除く)</p>
-        </div>
+        <?php get_template_part('template-parts/block/block-info--primary'); ?>
+
       </div>
 
       <div class="section-contact__link-box">

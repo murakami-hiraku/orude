@@ -76,61 +76,6 @@
     }
   }
 
-  &__info {
-    margin-top: 25px;
-    text-align: center;
-
-    @include b.mq(pc) {
-      text-align: left;
-    }
-
-    p {
-      font-weight: 900;
-      font-size: 14px;
-      line-height: 2;
-
-      @include b.mq(pc) {
-        font-size: 16px;
-      }
-    }
-  }
-
-  &__tel {
-    margin-bottom: 10px;
-
-    @include b.mq(pc) {
-      margin-bottom: 15px;
-    }
-
-    a {
-      font-weight: 900;
-      font-size: 18px;
-      color: b.$main-color;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: fit-content;
-      margin-inline: auto;
-
-      @include b.mq(pc) {
-        font-size: 32px;
-        justify-content: start;
-        margin-top: 28px;
-        margin: 0;
-      }
-    }
-
-    img {
-      width: 33.5px;
-      height: 24px;
-
-      @include b.mq(pc) {
-        width: 58px;
-        height: 41.5px;
-      }
-    }
-  }
-
   &__link-box {
     margin-top: 25px;
     background: b.$sub-color-light;

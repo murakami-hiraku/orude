@@ -41,15 +41,22 @@
       <?php get_template_part('template-parts/parts/parts-logo--primary'); ?>
       <!-- /header-logo -->
       <nav id="js-drawer-content" class="header__nav">
+        <?php get_template_part('template-parts/parts/parts-logo--white'); ?>
+
         <?php
         wp_nav_menu([
           'theme_location' => 'header-nav',
           'container' => false,          // <div> を出さない
-          'menu_class'  => 'header__nav__list', // <ul> にクラスを付ける
+          'menu_class'  => 'header__nav-list', // <ul> にクラスを付ける
           'fallback_cb' => false         // メニュー未設定時に何も出さない
         ]);
         ?>
-        <a class="header__btn" href="<?php echo get_permalink(get_page_by_path('contact')); ?>"><img class="header__btn-icon" src="<?php echo get_template_directory_uri(); ?>/img/mail-icon.svg" alt="">お問い合わせはこちら
+
+        <?php get_template_part('template-parts/block/block-info--white'); ?>
+
+        <a class="header__btn" href="<?php echo get_permalink(get_page_by_path('contact')); ?>">
+          <span class="header__btn-icon"></span>
+          お問い合わせはこちら
         </a>
       </nav>
       <div class="header__open hidden-lg">

@@ -1,0 +1,27 @@
+@use "sass:map";
+@use "../../foundation/base" as b;
+
+.block-info {
+  margin-top: 25px;
+  text-align: center;
+
+  @include b.mq(pc) {
+    text-align: left;
+  }
+
+  p {
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 2;
+
+    @include b.mq(pc) {
+      font-size: 16px;
+    }
+  }
+
+  &--primary {
+    p {
+      color: b.$text-color-dark;
+    }
+  }
+}

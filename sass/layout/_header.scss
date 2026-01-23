@@ -21,9 +21,8 @@
     }
   }
 
-  .parts__logo {
+  .parts-logo {
     position: relative;
-    z-index: 1000;
 
     @include b.mq(lg) {
       padding-left: 15px;
@@ -34,15 +33,16 @@
     position: fixed;
     top: 0;
     right: 0;
+    padding-block: 5px;
+    padding-inline: clamp(15px, 3.85vw, 120px);
     transform: translateX(200%);
     z-index: 100;
     transition: transform 0.4s;
     background: b.$main-color;
     width: 100%;
     max-width: 400px;
-    height: calc(100% - 40px);
+    height: 100%;
     color: b.$text-color-white;
-    font-size: 15px;
 
     &.is-checked {
       transform: translateX(0);
@@ -71,27 +71,26 @@
       font-weight: 900;
     }
 
-    &__list {
+    .parts-logo {
+      margin-right: auto;
+      width: fit-content;
+      height: 10.256vw;
+      max-height: 80px;
+    }
+
+    &-list {
       display: flex;
       flex-direction: column;
-      font-size: 15px;
+      font-size: 14px;
+      padding-top: 20px;
 
-      @include b.mq(lg) {
-        flex-direction: row;
-        gap: 20px;
-      }
-      @include b.mq(xl) {
-        gap: 30px;
-      }
-
-      li {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        text-align: center;
+      .menu-item {
         white-space: nowrap;
+        padding-block: 20px;
+        border-top: dashed 1px b.$sub-color-light;
 
         &:last-child {
+          border-bottom: dashed 1px b.$sub-color-light;
         }
       }
     }
@@ -102,13 +101,19 @@
     justify-content: center;
     align-items: center;
     padding: 25px 20px;
-    background: b.$main-color;
-    color: b.$text-color-white;
+    background: b.$sub-color-light;
+    color: b.$main-color;
     border-radius: 10px;
+    width: fit-content;
+    margin-inline: auto;
+    font-weight: 900;
+    font-size: 15px;
 
     &-icon {
       width: 35px;
       height: 27px;
+      mask-image: url("../img/mail-icon.svg");
+      background-color: b.$main-color;
     }
   }
 
