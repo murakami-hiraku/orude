@@ -7,6 +7,9 @@
 @use "pages/page-faq";
 @use "pages/page-about";
 @use "pages/page-company";
+@use "pages/page-contact";
+@use "pages/page-contact-confirm";
+@use "pages/page-contact-thanks";
 @use "pages/page-privacy-policy";
 @use "pages/404" as error_404;
 @use "template-parts/front-page/section-fv";
@@ -19,5 +22,6 @@
 @use "template-parts/parts/parts-bg-circle";
 @use "template-parts/parts/parts-bg-flower--right";
 @use "template-parts/parts/parts-bg-flower--left";
+@use "template-parts/parts/parts-bg-flower--white";
 @use "template-parts/block/block-page-ttl";
 @use "template-parts/section/section-contact";

@@ -1,7 +1,7 @@
 @use "sass:map";
 @use "../../foundation/base" as b;
 
-.parts-bg-flower--right {
+.parts-bg-flower {
   position: absolute;
   width: 86px;
   height: 62px;
@@ -17,5 +17,8 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
+  }
+
+  &--right {
   }
 }
