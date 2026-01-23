@@ -41,33 +41,38 @@
       <?php get_template_part('template-parts/parts/parts-logo--primary'); ?>
       <!-- /header-logo -->
       <nav id="js-drawer-content" class="header__nav">
-        <?php get_template_part('template-parts/parts/parts-logo--white'); ?>
 
-        <?php
-        wp_nav_menu([
-          'theme_location' => 'header-nav',
-          'container' => false,          // <div> を出さない
-          'menu_class'  => 'header__nav-list', // <ul> にクラスを付ける
-          'fallback_cb' => false         // メニュー未設定時に何も出さない
-        ]);
-        ?>
+        <div class="header__nav-menu">
+          <?php get_template_part('template-parts/parts/parts-logo--white'); ?>
 
-        <?php get_template_part('template-parts/block/block-info--white'); ?>
+          <?php
+          wp_nav_menu([
+            'theme_location' => 'header-nav',
+            'container' => false,          // <div> を出さない
+            'menu_class'  => 'header__nav-list', // <ul> にクラスを付ける
+            'fallback_cb' => false         // メニュー未設定時に何も出さない
+          ]);
+          ?>
+        </div>
 
-        <a class="header__btn" href="<?php echo get_permalink(get_page_by_path('contact')); ?>">
-          <span class="header__btn-icon"></span>
-          お問い合わせはこちら
-        </a>
+        <div class="header__nav-card">
+          <?php get_template_part('template-parts/block/block-info--white'); ?>
+
+          <a class="header__btn" href="<?php echo get_permalink(get_page_by_path('contact')); ?>">
+            <span class="header__btn-icon"></span>
+            お問い合わせはこちら
+          </a>
+        </div>
       </nav>
-      <div class="header__open hidden-lg">
+      <div class="header__open">
         <button
           type="button"
           id="js-drawer-button"
-          class="header__drawer-icon hidden-lg"
+          class="header__drawer-icon"
           aria-label="メニューボタン">
-          <span class="header__icon-bar hidden-lg"></span>
-          <span class="header__icon-bar hidden-lg"></span>
-          <span class="header__icon-bar hidden-lg"></span>
+          <span class="header__icon-bar"></span>
+          <span class="header__icon-bar"></span>
+          <span class="header__icon-bar"></span>
         </button>
       </div>
     </div>

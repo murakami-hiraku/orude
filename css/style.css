@@ -130,8 +130,8 @@ main {
   right: 0;
   padding-block: 10px;
   padding-inline: clamp(15px, 3.85vw, 120px);
-  -webkit-transform: translateX(200%);
-          transform: translateX(200%);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
   z-index: 100;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
@@ -149,30 +149,24 @@ main {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   .header__nav {
+    width: 100%;
+    max-width: 1680px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    top: 0;
-    right: 0;
-    position: relative;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 30px;
-    -webkit-transform: none;
-            transform: none;
-    -webkit-transition: none;
-    transition: none;
-    background: none;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    max-width: none;
-    height: 100px;
-    color: #907910;
-    font-weight: 900;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 117px;
+  }
+  .header__nav.is-checked {
+    -webkit-transform: translateX(-3.85vw);
+            transform: translateX(-3.85vw);
   }
 }
 .header__nav .parts-logo {

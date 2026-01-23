@@ -35,7 +35,7 @@
     right: 0;
     padding-block: 10px;
     padding-inline: clamp(15px, 3.85vw, 120px);
-    transform: translateX(200%);
+    transform: translateX(100%);
     z-index: 100;
     transition: transform 0.4s;
     background: b.$main-color;
@@ -52,23 +52,34 @@
     }
     @include b.mq(pc) {
       // right: 6.25vw;
+      width: 100%;
+      max-width: 1680px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 117px;
+
+      &.is-checked {
+        transform: translateX(-3.85vw);
+      }
     }
 
     @include b.mq(lg) {
-      display: flex;
-      top: 0;
-      right: 0;
-      position: relative;
-      align-items: center;
-      gap: 30px;
-      transform: none;
-      transition: none;
-      background: none;
-      width: fit-content;
-      max-width: none;
-      height: 100px;
-      color: b.$main-color;
-      font-weight: 900;
+      // display: flex;
+      // top: 0;
+      // right: 0;
+      // position: relative;
+      // align-items: center;
+      // gap: 30px;
+      // transform: none;
+      // transition: none;
+      // background: none;
+      // width: fit-content;
+      // max-width: none;
+      // height: 100px;
+      // color: b.$main-color;
+      // font-weight: 900;
     }
 
     .parts-logo {
