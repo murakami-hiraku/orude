@@ -33,15 +33,15 @@
     position: fixed;
     top: 0;
     right: 0;
-    padding-block: 5px;
+    padding-block: 10px;
     padding-inline: clamp(15px, 3.85vw, 120px);
-    transform: translateX(200%);
+    transform: translateX(100%);
     z-index: 100;
     transition: transform 0.4s;
     background: b.$main-color;
     width: 100%;
-    max-width: 400px;
-    height: 100%;
+    max-width: 390px;
+    height: fit-content;
     color: b.$text-color-white;
 
     &.is-checked {
@@ -52,24 +52,35 @@
     }
     @include b.mq(pc) {
       // right: 6.25vw;
+      width: 100%;
+      max-width: 1680px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 117px;
+
+      &.is-checked {
+        transform: translateX(-3.85vw);
+      }
     }
 
-    // @include b.mq(lg) {
-    //   display: flex;
-    //   top: 0;
-    //   right: 0;
-    //   position: relative;
-    //   align-items: center;
-    //   gap: 30px;
-    //   transform: none;
-    //   transition: none;
-    //   background: none;
-    //   width: fit-content;
-    //   max-width: none;
-    //   height: 100px;
-    //   color: b.$main-color;
-    //   font-weight: 900;
-    // }
+    @include b.mq(lg) {
+      // display: flex;
+      // top: 0;
+      // right: 0;
+      // position: relative;
+      // align-items: center;
+      // gap: 30px;
+      // transform: none;
+      // transition: none;
+      // background: none;
+      // width: fit-content;
+      // max-width: none;
+      // height: 100px;
+      // color: b.$main-color;
+      // font-weight: 900;
+    }
 
     .parts-logo {
       margin-right: auto;
@@ -87,15 +98,29 @@
       .menu-item {
         white-space: nowrap;
         padding-block: 20px;
-        border-top: dashed 1px b.$sub-color-light;
+        border-bottom: dashed 1px b.$sub-color-light;
 
         &:last-child {
-          border-bottom: dashed 1px b.$sub-color-light;
+        }
+      }
+    }
+
+    .parts-tel {
+      &--white {
+        a {
+          font-size: 24px;
+        }
+
+        span {
+          width: 50px;
+          height: 36px;
+          background-color: b.$sub-color-light;
         }
       }
     }
   }
   &__btn {
+    margin-top: 20px;
     display: flex;
     gap: 15px;
     justify-content: center;
