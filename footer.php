@@ -9,7 +9,7 @@
       <address class=" footer__info" id="footer-info">
         <p class="footer__info-address">〒583-0872 <br class="hidden-pc">大阪府羽曳野市はびきの3-316-84</p>
         <p class="footer__info-tel">TEL 000-000-0000</p>
-        <a href="" class="footer__info-privacy-policy">プライバシーポリシー</a>
+        <a href="privacy-policy" class="footer__info-privacy-policy">プライバシーポリシー</a>
       </address>
       <!-- /footer-info -->
     </div>
