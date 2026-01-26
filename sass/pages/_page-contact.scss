@@ -27,6 +27,7 @@
     font-size: 20px;
 
     @include b.mq(pc) {
+      font-size: 32px;
     }
   }
   &__steps {
@@ -35,6 +36,14 @@
     justify-content: center;
     gap: 20px;
     margin: 30px auto 35px;
+
+    @include b.mq(pc) {
+      gap: 36px;
+    }
+    @include b.mq(lg) {
+      gap: 58px;
+      margin: 100px auto 80px;
+    }
   }
 
   &__step {
@@ -42,6 +51,15 @@
     background: b.$sub-color-light;
     color: b.$text-color-dark;
     padding: 14px 28px;
+
+    @include b.mq(pc) {
+      font-size: 24px;
+      padding: 24px 100px;
+    }
+    @include b.mq(lg) {
+      font-size: 24px;
+      padding: 24px 125px;
+    }
 
     &--input {
       color: b.$text-color-white;
@@ -57,35 +75,53 @@
   }
 
   &__form {
+    max-width: 600px;
+    width: 100%;
+    margin-inline: auto;
+
     @include b.mq(pc) {
-      max-width: 600px;
+      max-width: 840px;
     }
-    max-width: 840px;
     .form-box {
+      width: 100%;
       display: flex;
       flex-direction: column;
       gap: 25px;
+      font-weight: 700;
+
+      @include b.mq(pc) {
+        font-size: 24px;
+      }
 
       .forum-item {
+        width: 100%;
       }
 
-      .form-item,
-      .category {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        position: relative;
+      .form-item {
+        &.category {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          position: relative;
+          width: fit-content;
+          @include b.mq(pc) {
+          }
+        }
       }
 
       .category {
-        width: fit-content;
+        @include b.mq(pc) {
+        }
 
         p {
         }
         select {
-          font-weight: 700;
-          width: 56.41vw;
           padding: 14px 60px 14px 12px;
+          width: 220px;
+
+          @include b.mq(pc) {
+            width: 420px;
+          }
 
           /* 1. 標準の矢印を消す */
           appearance: none; // これで標準の「v」が消える
@@ -110,10 +146,16 @@
           background-position: center;
 
           pointer-events: none; // マークの上をクリックしてもセレクトボックスが反応するようにする
+
+          @include b.mq(pc) {
+            top: 68px;
+          }
         }
       }
 
       .form-item {
+        @include b.mq(pc) {
+        }
         p {
           display: flex;
           flex-direction: column;
@@ -130,7 +172,6 @@
         width: 100%;
         border: none;
         padding: 14px 20px;
-        font-weight: 700;
 
         &:focus {
           outline: none; /* 青い枠線を消す */
@@ -146,6 +187,7 @@
         }
       }
       .category {
+        margin-bottom: 20px;
       }
 
       .address {
@@ -195,46 +237,72 @@
             width: 142px;
             padding: 10px 64px 10px 2px;
             margin-left: -12px;
+
+            @include b.mq(pc) {
+              width: 170px;
+            }
           }
         }
       }
     }
 
-    .check-box {
-      width: fit-content;
-      margin-inline: auto;
-      label {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        justify-content: center;
-      }
+    .form-item {
+      &.check-box {
+        width: fit-content;
+        margin-inline: auto;
+        label {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          justify-content: center;
+        }
 
-      input {
-        width: 20px;
-        height: 20px;
-        margin: 0;
-        accent-color: b.$sub-color-light;
-      }
+        input {
+          width: 20px;
+          height: 20px;
+          margin: 0;
+          accent-color: b.$sub-color-light;
+        }
 
-      .wpcf7-list-item-label {
-        font-weight: 700;
-        color: b.$text-color-white;
+        .wpcf7-list-item {
+          margin: 0;
+        }
+
+        .wpcf7-list-item-label {
+          font-weight: 700;
+          color: b.$text-color-white;
+
+          @include b.mq(pc) {
+            font-size: 16px;
+          }
+        }
       }
     }
 
-    .confirm-btn {
-      width: fit-content;
-      margin-inline: auto;
-      margin-top: 30px;
+    .form-item {
+      &.confirm-btn {
+        width: fit-content;
+        margin-inline: auto;
+        margin-top: 30px;
 
-      .wpcf7-submit {
-        background: b.$sub-color-light;
-        color: b.$main-color;
-        font-weight: 700;
-        font-size: 20px;
-        padding: 10px 100px;
+        .wpcf7-submit {
+          background: b.$sub-color-light;
+          color: b.$main-color;
+          font-weight: 700;
+          font-size: 20px;
+          padding: 10px 100px;
+
+          @include b.mq(pc) {
+            font-size: 24px;
+          }
+        }
       }
+    }
+
+    // プレースホルダーの色
+    .wpcf7 input::placeholder,
+    .wpcf7 textarea::placeholder {
+      color: #dcdcdc;
     }
   }
 }
