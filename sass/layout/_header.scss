@@ -54,22 +54,22 @@
       // right: 6.25vw;
     }
 
-    @include b.mq(lg) {
-      display: flex;
-      top: 0;
-      right: 0;
-      position: relative;
-      align-items: center;
-      gap: 30px;
-      transform: none;
-      transition: none;
-      background: none;
-      width: fit-content;
-      max-width: none;
-      height: 100px;
-      color: b.$main-color;
-      font-weight: 900;
-    }
+    // @include b.mq(lg) {
+    //   display: flex;
+    //   top: 0;
+    //   right: 0;
+    //   position: relative;
+    //   align-items: center;
+    //   gap: 30px;
+    //   transform: none;
+    //   transition: none;
+    //   background: none;
+    //   width: fit-content;
+    //   max-width: none;
+    //   height: 100px;
+    //   color: b.$main-color;
+    //   font-weight: 900;
+    // }
 
     .parts-logo {
       margin-right: auto;

@@ -59,15 +59,15 @@
           お問い合わせはこちら
         </a>
       </nav>
-      <div class="header__open hidden-lg">
+      <div class="header__open">
         <button
           type="button"
           id="js-drawer-button"
-          class="header__drawer-icon hidden-lg"
+          class="header__drawer-icon"
           aria-label="メニューボタン">
-          <span class="header__icon-bar hidden-lg"></span>
-          <span class="header__icon-bar hidden-lg"></span>
-          <span class="header__icon-bar hidden-lg"></span>
+          <span class="header__icon-bar"></span>
+          <span class="header__icon-bar"></span>
+          <span class="header__icon-bar"></span>
         </button>
       </div>
     </div>
