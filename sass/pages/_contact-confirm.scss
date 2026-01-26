@@ -1,2 +1,314 @@
 @use "sass:map";
 @use "../foundation/base" as b;
+
+.page-contact-confirm {
+  margin-bottom: 50px;
+  &__section {
+    background: b.$main-color;
+  }
+  &__inner {
+    padding-block: 50px 25px;
+  }
+
+  &__container {
+    position: relative;
+    .parts-bg-flower {
+      top: -44px;
+      right: 0;
+
+      @include b.mq(pc) {
+      }
+    }
+  }
+  &__ttl {
+    color: b.$text-color-white;
+    text-align: center;
+    font-weight: 900;
+    font-size: 20px;
+
+    @include b.mq(pc) {
+      font-size: 32px;
+    }
+  }
+  &__steps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px auto 35px;
+
+    @include b.mq(pc) {
+      gap: 36px;
+    }
+    @include b.mq(lg) {
+      gap: 58px;
+      margin: 100px auto 80px;
+    }
+  }
+
+  &__step {
+    font-weight: 700;
+    background: b.$sub-color-light;
+    color: b.$text-color-dark;
+    padding: 14px 28px;
+
+    @include b.mq(pc) {
+      font-size: 24px;
+      padding: 24px 100px;
+    }
+    @include b.mq(lg) {
+      font-size: 24px;
+      padding: 24px 125px;
+    }
+
+    &--input {
+      clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 100%, 0 0);
+    }
+    &--confirm {
+      background: #bfa944;
+      color: b.$text-color-white;
+      clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 100%, 0 0);
+    }
+    &--complete {
+    }
+  }
+
+  &__form {
+    max-width: 600px;
+    width: 100%;
+    margin-inline: auto;
+
+    @include b.mq(pc) {
+      max-width: 840px;
+    }
+    .form-box {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      font-weight: 700;
+      color: b.$text-color-white;
+
+      @include b.mq(pc) {
+        font-size: 24px;
+      }
+
+      .forum-item {
+        width: 100%;
+      }
+
+      .form-item {
+        &.category {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          position: relative;
+          width: fit-content;
+          @include b.mq(pc) {
+          }
+        }
+      }
+
+      .category {
+        pointer-events: none;
+        @include b.mq(pc) {
+        }
+
+        p {
+        }
+        select {
+          padding: 14px 12px 14px 36px;
+          width: 220px;
+          background: b.$main-color;
+          border: none;
+
+          @include b.mq(pc) {
+            width: 420px;
+          }
+
+          /* 1. 標準の矢印を消す */
+          appearance: none; // これで標準の「v」が消える
+          -webkit-appearance: none; // Safari用
+          -moz-appearance: none; // Firefox用
+          cursor: default;
+        }
+
+        /* 2. 新しいマークを作る */
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 48px;
+          width: 20px;
+          height: 20px;
+
+          // 画像の読み込み（テーマフォルダ内のパスに合わせて調整してください）
+          background: b.$main-color;
+          border: 1px solid b.$sub-color-light;
+          border-radius: 50%;
+          pointer-events: none; // マークの上をクリックしてもセレクトボックスが反応しないように
+
+          @include b.mq(pc) {
+            top: 68px;
+          }
+        }
+      }
+
+      .form-item {
+        @include b.mq(pc) {
+        }
+        p {
+          display: flex;
+          flex-direction: column;
+
+          br {
+            display: none;
+          }
+        }
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        border: none;
+        padding: 14px 36px;
+
+        background: b.$main-color;
+
+        &:focus {
+          outline: none; /* 青い枠線を消す */
+          box-shadow: none; /* ブラウザによっては影が出ていることもあるので消す */
+          border-color: #ccc; /* 枠線の色が勝手に変わるのを防ぎ、任意の色に固定する */
+        }
+      }
+      /* CF7のテキストエリアを狙い撃ち */
+      .wpcf7-textarea {
+        height: 200px; /* お好みの高さに */
+        padding-inline: 12px;
+
+        /* ユーザーが手動で横に広げてレイアウトを壊すのを防ぐ */
+        resize: vertical;
+      }
+
+      .label-text {
+        span {
+          color: b.$accent-color-red;
+        }
+      }
+      .category {
+        margin: 0;
+      }
+
+      .address {
+        .label-text {
+          display: block;
+          margin-bottom: 10px;
+        }
+
+        input {
+          padding-block: 10px;
+        }
+      }
+
+      .address-box {
+        display: flex;
+        flex-direction: column;
+      }
+      .zip-wrap {
+        position: relative;
+        p {
+          display: flex;
+          flex-direction: row;
+          align-items: start;
+          width: fit-content;
+
+          .zip-icon {
+            height: 100%;
+            background: b.$main-color;
+            padding-left: 0;
+            padding-right: 20px;
+            padding-block: 10px;
+            font-weight: 700;
+          }
+
+          .address-txt {
+            background: b.$main-color;
+            color: b.$text-color-white;
+            font-weight: 700;
+            display: inline-block;
+            height: 100%;
+            padding-top: 10px;
+          }
+
+          input {
+            width: 142px;
+            padding: 10px 64px 10px 2px;
+            margin-left: -12px;
+
+            @include b.mq(pc) {
+              width: 170px;
+            }
+          }
+        }
+      }
+    }
+
+    .form-item {
+      &.check-box {
+        width: fit-content;
+        margin-inline: auto;
+        label {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          justify-content: center;
+        }
+
+        input {
+          width: 20px;
+          height: 20px;
+          margin: 0;
+          accent-color: b.$sub-color-light;
+        }
+
+        .wpcf7-list-item {
+          margin: 0;
+        }
+
+        .wpcf7-list-item-label {
+          font-weight: 700;
+          color: b.$text-color-white;
+
+          @include b.mq(pc) {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .form-navigation {
+      .submit-btn {
+        width: fit-content;
+        margin-inline: auto;
+
+        .wpcf7-submit {
+          background: b.$sub-color-light;
+          color: b.$main-color;
+          font-weight: 700;
+          font-size: 20px;
+          padding: 10px 100px;
+
+          @include b.mq(pc) {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+
+    // プレースホルダーの色
+    .wpcf7 input::placeholder,
+    .wpcf7 textarea::placeholder {
+      color: #dcdcdc;
+    }
+  }
+}

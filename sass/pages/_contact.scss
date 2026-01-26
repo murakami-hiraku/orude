@@ -179,6 +179,14 @@
           border-color: #ccc; /* 枠線の色が勝手に変わるのを防ぎ、任意の色に固定する */
         }
       }
+
+      /* CF7のテキストエリアを狙い撃ち */
+      .wpcf7-textarea {
+        height: 200px; /* お好みの高さに */
+
+        /* ユーザーが手動で横に広げてレイアウトを壊すのを防ぐ */
+        resize: vertical;
+      }
       .label-text {
         font-weight: 700;
         color: b.$text-color-white;
