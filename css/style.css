@@ -147,32 +147,6 @@ main {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
-@media (min-width: 1440px) {
-  .header__nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    top: 0;
-    right: 0;
-    position: relative;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 30px;
-    -webkit-transform: none;
-            transform: none;
-    -webkit-transition: none;
-    transition: none;
-    background: none;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    max-width: none;
-    height: 100px;
-    color: #907910;
-    font-weight: 900;
-  }
-}
 .header__nav .parts-logo {
   margin-right: auto;
   width: -webkit-fit-content;
@@ -1079,6 +1053,9 @@ main {
   }
 }
 
+.page-contact {
+  margin-bottom: 50px;
+}
 .page-contact__section {
   background: #907910;
 }
@@ -1125,6 +1102,14 @@ main {
 .page-contact__step--confirm {
   clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 100%, 0 0);
 }
+.page-contact__form {
+  max-width: 840px;
+}
+@media (min-width: 1024px) {
+  .page-contact__form {
+    max-width: 600px;
+  }
+}
 .page-contact__form .form-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1134,6 +1119,47 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 25px;
+}
+.page-contact__form .form-box .form-item,
+.page-contact__form .form-box .category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+.page-contact__form .form-box .category {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  /* 2. 新しいマークを作る */
+}
+.page-contact__form .form-box .category select {
+  font-weight: 700;
+  width: 56.41vw;
+  padding: 14px 60px 14px 12px;
+  /* 1. 標準の矢印を消す */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+.page-contact__form .form-box .category::after {
+  content: "";
+  position: absolute;
+  right: 32px;
+  top: 50px;
+  width: 18px;
+  height: 20px;
+  background-image: url("../img/contact-form-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  pointer-events: none;
 }
 .page-contact__form .form-box .form-item p {
   display: -webkit-box;
@@ -1153,6 +1179,7 @@ main {
   width: 100%;
   border: none;
   padding: 14px 20px;
+  font-weight: 700;
 }
 .page-contact__form .form-box input:focus,
 .page-contact__form .form-box textarea:focus {

@@ -2,6 +2,7 @@
 @use "../foundation/base" as b;
 
 .page-contact {
+  margin-bottom: 50px;
   &__section {
     background: b.$main-color;
   }
@@ -56,10 +57,61 @@
   }
 
   &__form {
+    @include b.mq(pc) {
+      max-width: 600px;
+    }
+    max-width: 840px;
     .form-box {
       display: flex;
       flex-direction: column;
       gap: 25px;
+
+      .forum-item {
+      }
+
+      .form-item,
+      .category {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: relative;
+      }
+
+      .category {
+        width: fit-content;
+
+        p {
+        }
+        select {
+          font-weight: 700;
+          width: 56.41vw;
+          padding: 14px 60px 14px 12px;
+
+          /* 1. 標準の矢印を消す */
+          appearance: none; // これで標準の「v」が消える
+          -webkit-appearance: none; // Safari用
+          -moz-appearance: none; // Firefox用
+          cursor: pointer;
+        }
+
+        /* 2. 新しいマークを作る */
+        &::after {
+          content: "";
+          position: absolute;
+          right: 32px; // 右端からの位置
+          top: 50px;
+          width: 18px;
+          height: 20px;
+
+          // 画像の読み込み（テーマフォルダ内のパスに合わせて調整してください）
+          background-image: url("../img/contact-form-icon.svg");
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+
+          pointer-events: none; // マークの上をクリックしてもセレクトボックスが反応するようにする
+        }
+      }
 
       .form-item {
         p {
@@ -78,6 +130,7 @@
         width: 100%;
         border: none;
         padding: 14px 20px;
+        font-weight: 700;
 
         &:focus {
           outline: none; /* 青い枠線を消す */
