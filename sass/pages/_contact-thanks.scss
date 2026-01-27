@@ -1,2 +1,33 @@
 @use "sass:map";
 @use "../foundation/base" as b;
+
+.parts-page-contact-steps {
+  &__step {
+    &--input {
+      color: b.$text-color-dark;
+      background: b.$sub-color-light;
+    }
+    &--confirm {
+      color: b.$text-color-dark;
+      background: b.$sub-color-light;
+    }
+    &--complete {
+      color: b.$text-color-white;
+      background: #bfa944;
+    }
+  }
+}
+
+.page-contact-thanks {
+  &__txt {
+    color: b.$text-color-white;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.8;
+    text-align: center;
+
+    @include b.mq(pc) {
+      font-size: 24px;
+    }
+  }
+}

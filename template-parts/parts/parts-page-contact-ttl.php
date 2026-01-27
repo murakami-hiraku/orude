@@ -3,4 +3,4 @@
           $step = $args['step'] ?? '入力';
           ?>
 
-          <h2 class="parts-page-contact-ttl">お問い合わせ・お申込み<?php echo esc_html($step); ?></h2>
+          <h2 class="parts-page-contact-ttl">お問い合わせ・お申込み<?php echo $args['step']; ?></h2>
