@@ -11,8 +11,8 @@
           <?php
           get_template_part('template-parts/parts/parts-bg-flower--white')
           ?>
-          <h2 class="page-contact__ttl">お問い合わせ・お申込み</h2>
 
+          <?php get_template_part('template-parts/parts/parts-page-contact-ttl', null, array('step' => '入力')); ?>
           <?php
           get_template_part('template-parts/parts/parts-page-contact-steps')
           ?>

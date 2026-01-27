@@ -1337,17 +1337,6 @@ main {
   top: -44px;
   right: 0;
 }
-.page-contact__ttl {
-  color: #fff;
-  text-align: center;
-  font-weight: 900;
-  font-size: 20px;
-}
-@media (min-width: 1024px) {
-  .page-contact__ttl {
-    font-size: 32px;
-  }
-}
 .page-contact .parts-page-contact-steps__step--input {
   color: #fff;
   background: #bfa944;
@@ -1627,17 +1616,6 @@ main {
 .page-contact-confirm__container .parts-bg-flower {
   top: -44px;
   right: 0;
-}
-.page-contact-confirm__ttl {
-  color: #fff;
-  text-align: center;
-  font-weight: 900;
-  font-size: 20px;
-}
-@media (min-width: 1024px) {
-  .page-contact-confirm__ttl {
-    font-size: 32px;
-  }
 }
 .page-contact-confirm .parts-page-contact-steps__step--confirm {
   color: #fff;
@@ -2657,6 +2635,18 @@ main {
   -o-object-fit: contain;
      object-fit: contain;
 }
+.parts-page-contact-ttl {
+  color: #fff;
+  text-align: center;
+  font-weight: 900;
+  font-size: 20px;
+}
+@media (min-width: 1024px) {
+  .parts-page-contact-ttl {
+    font-size: 32px;
+  }
+}
+
 .parts-page-contact-steps {
   display: -webkit-box;
   display: -ms-flexbox;
