@@ -1,0 +1,13 @@
+@use "sass:map";
+@use "../../foundation/base" as b;
+
+.parts-page-contact-ttl {
+  color: b.$text-color-white;
+  text-align: center;
+  font-weight: 900;
+  font-size: 20px;
+
+  @include b.mq(pc) {
+    font-size: 32px;
+  }
+}
