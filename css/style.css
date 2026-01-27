@@ -1314,7 +1314,7 @@ main {
     gap: 6.1vw;
     margin-top: 20px;
     border-radius: 10px;
-    padding: 0 0 100px;
+    padding: 50px 0 100px;
     width: 100%;
     max-width: 1260px;
   }
@@ -1348,8 +1348,6 @@ main {
   position: absolute;
   top: 0;
   right: 0;
-  width: 50px;
-  height: 50px;
 }
 .header__nav-close #js-close-button {
   margin-left: auto;
@@ -1429,6 +1427,11 @@ main {
   height: 10.256vw;
   max-height: 80px;
 }
+@media (min-width: 1440px) {
+  .header__nav .parts-logo {
+    padding-inline: 0;
+  }
+}
 @media (min-width: 1920px) {
   .header__nav .parts-logo {
     display: none;
@@ -1444,6 +1447,11 @@ main {
           flex-direction: column;
   padding-top: 20px;
   padding-inline: 3.85vw;
+}
+@media (min-width: 1440px) {
+  .header__nav-list {
+    padding-inline: 0;
+  }
 }
 @media (min-width: 1920px) {
   .header__nav-list {
@@ -1525,6 +1533,13 @@ main {
   height: 10.256vw;
   max-height: 50px;
 }
+@media (min-width: 1440px) {
+  .header__drawer-icon {
+    gap: 12px;
+    max-width: 70px;
+    min-height: 70px;
+  }
+}
 .header__drawer-icon.is-checked .header__icon-bar {
   position: absolute;
 }
@@ -1551,6 +1566,12 @@ main {
   background: #fff;
   width: 30px;
   height: 1px;
+}
+@media (min-width: 1440px) {
+  .header__icon-bar {
+    width: 40px;
+    height: 3px;
+  }
 }
 
 .footer {

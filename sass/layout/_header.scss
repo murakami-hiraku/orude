@@ -59,7 +59,7 @@
       gap: 6.1vw;
       margin-top: 20px;
       border-radius: 10px;
-      padding: 0 0 100px;
+      padding: 50px 0 100px;
       // right: 6.25vw;
       width: 100%;
       max-width: 1260px;
@@ -87,14 +87,13 @@
       position: absolute;
       top: 0;
       right: 0;
-      width: 50px;
-      height: 50px;
 
       #js-close-button {
         margin-left: auto;
         &.is-checked {
           .header__icon-bar {
             position: absolute;
+
             &:nth-child(1) {
               top: 50%;
               transform: rotate(45deg);
@@ -168,6 +167,10 @@
       height: 10.256vw;
       max-height: 80px;
 
+      @include b.mq(lg) {
+        padding-inline: 0;
+      }
+
       @include b.mq(xl) {
         display: none;
       }
@@ -178,6 +181,10 @@
       flex-direction: column;
       padding-top: 20px;
       padding-inline: 3.85vw;
+
+      @include b.mq(lg) {
+        padding-inline: 0;
+      }
 
       @include b.mq(xl) {
         flex-direction: row;
@@ -257,6 +264,12 @@
     height: 10.256vw;
     max-height: 50px;
 
+    @include b.mq(lg) {
+      gap: 12px;
+      max-width: 70px;
+      min-height: 70px;
+    }
+
     &.is-checked {
       .header__icon-bar {
         position: absolute;
@@ -285,5 +298,10 @@
     background: b.$text-color-white;
     width: 30px;
     height: 1px;
+
+    @include b.mq(lg) {
+      width: 40px;
+      height: 3px;
+    }
   }
 }
