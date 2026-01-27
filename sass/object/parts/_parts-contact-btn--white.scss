@@ -1,0 +1,16 @@
+@use "sass:map";
+@use "../../foundation/base" as b;
+
+.parts-contact-btn {
+  span {
+  }
+  &--white {
+    background: b.$sub-color-light;
+    color: b.$main-color;
+
+    span {
+      mask-image: url("../img/mail-icon.svg");
+      background-color: b.$main-color;
+    }
+  }
+}
