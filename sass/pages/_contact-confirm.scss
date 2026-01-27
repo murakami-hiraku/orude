@@ -8,6 +8,10 @@
   }
   &__inner {
     padding-block: 50px 25px;
+
+    @include b.mq(pc) {
+      padding-block: 100px 80px;
+    }
   }
 
   &__container {
@@ -30,46 +34,13 @@
       font-size: 32px;
     }
   }
-  &__steps {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    margin: 30px auto 35px;
 
-    @include b.mq(pc) {
-      gap: 36px;
-    }
-    @include b.mq(lg) {
-      gap: 58px;
-      margin: 100px auto 80px;
-    }
-  }
-
-  &__step {
-    font-weight: 700;
-    background: b.$sub-color-light;
-    color: b.$text-color-dark;
-    padding: 14px 28px;
-
-    @include b.mq(pc) {
-      font-size: 24px;
-      padding: 24px 100px;
-    }
-    @include b.mq(lg) {
-      font-size: 24px;
-      padding: 24px 125px;
-    }
-
-    &--input {
-      clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 100%, 0 0);
-    }
-    &--confirm {
-      background: #bfa944;
-      color: b.$text-color-white;
-      clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 100%, 0 0);
-    }
-    &--complete {
+  .parts-page-contact-steps {
+    &__step {
+      &--confirm {
+        color: b.$text-color-white;
+        background: #bfa944;
+      }
     }
   }
 

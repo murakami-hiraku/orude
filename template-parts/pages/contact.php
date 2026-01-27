@@ -13,11 +13,10 @@
           ?>
           <h2 class="page-contact__ttl">お問い合わせ・お申込み</h2>
 
-          <div class="page-contact__steps">
-            <div class="page-contact__step page-contact__step--input">1.入力</div>
-            <div class="page-contact__step page-contact__step--confirm">2.確認</div>
-            <div class="page-contact__step page-contact__step--complete">3.完了</div>
-          </div>
+          <?php
+          get_template_part('template-parts/parts/parts-page-contact-steps')
+          ?>
+
 
           <div class="page-contact__form">
             <?php the_content(); ?>

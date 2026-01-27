@@ -1348,55 +1348,9 @@ main {
     font-size: 32px;
   }
 }
-.page-contact__steps {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 20px;
-  margin: 30px auto 35px;
-}
-@media (min-width: 1024px) {
-  .page-contact__steps {
-    gap: 36px;
-  }
-}
-@media (min-width: 1440px) {
-  .page-contact__steps {
-    gap: 58px;
-    margin: 100px auto 80px;
-  }
-}
-.page-contact__step {
-  font-weight: 700;
-  background: #fff;
-  color: #333333;
-  padding: 14px 28px;
-}
-@media (min-width: 1024px) {
-  .page-contact__step {
-    font-size: 24px;
-    padding: 24px 100px;
-  }
-}
-@media (min-width: 1440px) {
-  .page-contact__step {
-    font-size: 24px;
-    padding: 24px 125px;
-  }
-}
-.page-contact__step--input {
+.page-contact .parts-page-contact-steps__step--input {
   color: #fff;
   background: #bfa944;
-  clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 100%, 0 0);
-}
-.page-contact__step--confirm {
-  clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 100%, 0 0);
 }
 .page-contact__form {
   max-width: 600px;
@@ -1662,6 +1616,11 @@ main {
 .page-contact-confirm__inner {
   padding-block: 50px 25px;
 }
+@media (min-width: 1024px) {
+  .page-contact-confirm__inner {
+    padding-block: 100px 80px;
+  }
+}
 .page-contact-confirm__container {
   position: relative;
 }
@@ -1680,55 +1639,9 @@ main {
     font-size: 32px;
   }
 }
-.page-contact-confirm__steps {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 20px;
-  margin: 30px auto 35px;
-}
-@media (min-width: 1024px) {
-  .page-contact-confirm__steps {
-    gap: 36px;
-  }
-}
-@media (min-width: 1440px) {
-  .page-contact-confirm__steps {
-    gap: 58px;
-    margin: 100px auto 80px;
-  }
-}
-.page-contact-confirm__step {
-  font-weight: 700;
-  background: #fff;
-  color: #333333;
-  padding: 14px 28px;
-}
-@media (min-width: 1024px) {
-  .page-contact-confirm__step {
-    font-size: 24px;
-    padding: 24px 100px;
-  }
-}
-@media (min-width: 1440px) {
-  .page-contact-confirm__step {
-    font-size: 24px;
-    padding: 24px 125px;
-  }
-}
-.page-contact-confirm__step--input {
-  clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 100%, 0 0);
-}
-.page-contact-confirm__step--confirm {
-  background: #bfa944;
+.page-contact-confirm .parts-page-contact-steps__step--confirm {
   color: #fff;
-  clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 100%, 0 0);
+  background: #bfa944;
 }
 .page-contact-confirm__form {
   max-width: 600px;
@@ -2743,6 +2656,62 @@ main {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+.parts-page-contact-steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  margin: 30px auto 35px;
+}
+@media (max-width: 389px) {
+  .parts-page-contact-steps {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (min-width: 1024px) {
+  .parts-page-contact-steps {
+    gap: 36px;
+    margin: 100px auto 80px;
+  }
+}
+@media (min-width: 1440px) {
+  .parts-page-contact-steps {
+    gap: 58px;
+  }
+}
+.parts-page-contact-steps__step {
+  font-weight: 700;
+  background: #fff;
+  color: #333333;
+  padding: 14px 28px;
+}
+@media (min-width: 1024px) {
+  .parts-page-contact-steps__step {
+    font-size: 24px;
+    padding: 24px 100px;
+  }
+}
+@media (min-width: 1440px) {
+  .parts-page-contact-steps__step {
+    font-size: 24px;
+    padding: 24px 125px;
+  }
+}
+.parts-page-contact-steps__step--input {
+  clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 100%, 0 0);
+}
+.parts-page-contact-steps__step--confirm {
+  clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0 100%, 0 0);
 }
 .block-page-ttl {
   position: relative;

@@ -14,12 +14,9 @@
           ?>
           <h2 class="page-contact-confirm__ttl">お問い合わせ・お申込み</h2>
 
-          <div class="page-contact-confirm__steps">
-            <div class="page-contact-confirm__step page-contact-confirm__step--input">1.入力</div>
-            <div class="page-contact-confirm__step page-contact-confirm__step--confirm">2.確認</div>
-            <div class="page-contact-confirm__step page-contact-confirm__step--complete">3.完了</div>
-          </div>
-
+          <?php
+          get_template_part('template-parts/parts/parts-page-contact-steps')
+          ?>
           <div class="page-contact-confirm__form">
             <?php the_content(); ?>
           </div>

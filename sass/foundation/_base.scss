@@ -15,6 +15,7 @@ $font-family-en: "Alice", serif;
 $font-family-en-sub: "Alegreya", serif;
 
 $breakpoints: (
+  xs: "(max-width: 389px)",
   sp: "(max-width: 767px)",
   tb: "(min-width: 768px)",
   pc: "(min-width: 1024px)",
