@@ -2,6 +2,15 @@
 @use "../foundation/base" as b;
 
 .header {
+  width: 100%;
+  background-color: #fff; // 通常ページは白背景
+
+  .home & {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent; // 背景を透明に
+  }
   &__inner {
     display: flex;
     justify-content: space-between;

@@ -33,8 +33,7 @@
   <?php wp_head(); ?>
 </head>
 
-<body>
-  <!-- Header -->
+<body <?php body_class(); ?>> <!-- Header -->
   <header id="js-header" class="header">
     <div class="header__inner inner">
       <!-- /header-logo -->

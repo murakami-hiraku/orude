@@ -1237,6 +1237,16 @@ main {
   }
 }
 
+.header {
+  width: 100%;
+  background-color: #fff;
+}
+.home .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+}
 .header__inner {
   display: -webkit-box;
   display: -ms-flexbox;
