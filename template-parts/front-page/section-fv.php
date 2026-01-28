@@ -1,25 +1,47 @@
 <!-- ファーストビュー -->
 <section class="section-fv section fadein">
-  <div class="section-fv__inner inner">
-
-    <div class="section-fv__lead">
-      <p class="section-fv__lead-en">-May the journey<br>
-        　ahead be a peaceful one.-</p>
-
-      <div class="section-fv__lead-ja">
-        <p>ーペットの総合供養ー</p>
-        <h1>これからの旅が<br>穏やかな旅でありますように</h1>
+  <div class="section-fv__overlay"></div>
+  <div class="swiper p-fv-slider">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="p-fv-slider__bg" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/fv-img-1.png');"></div>
+      </div>
+      <div class="swiper-slide">
+        <div class="p-fv-slider__bg" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/fv-img-2.png');"></div>
+      </div>
+      <div class="swiper-slide">
+        <div class="p-fv-slider__bg" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/fv-img-3.png');"></div>
+      </div>
+      <div class="swiper-slide">
+        <div class="p-fv-slider__bg" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/fv-img-4.png');"></div>
+      </div>
+      <div class="swiper-slide">
+        <div class="p-fv-slider__bg" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/fv-img-5.png');"></div>
       </div>
     </div>
+  </div>
 
-    <div class="section-fv__content">
-      <div class="section-fv__img">
-        <img class="img-1" src="<?php echo get_template_directory_uri(); ?>/img/fv-img-1.png" alt="">
-        <img class="img-2" src="<?php echo get_template_directory_uri(); ?>/img/fv-img-2.png" alt="">
+  <div class="section-fv__inner inner">
+
+    <div class="section-fv__ttl">
+      <h3>ーペットの総合供養ー</h3>
+      <h2>これからの旅が<br>穏やかな旅でありますように</h2>
+    </div>
+
+    <div class="section-fv__container">
+      <div class="section-fv__links">
+
+        <a class="section-fv__link cremation" href="<?php echo home_url('/about'); ?>"><span class="link-img"><img src="" alt=""></span>火葬ご希望の方はこちら<span class="icon-arrow"></span></a>
+
+        <a class="section-fv__link ceremony" href="<?php echo home_url('/about'); ?>"><span class="link-img"><img src="" alt=""></span>ゆっくりお別れをしたい方はこちら<span class="icon-arrow"></span></a>
+
+        <a class="section-fv__link perpetual-care" href="<?php echo home_url('/about'); ?>"><span class="link-img"><img src="" alt=""></span>永代供養ご希望の方はこちら<span class="icon-arrow"></span></a>
+
       </div>
 
       <div class="section-fv__scrollbar">
       </div>
+
     </div>
 
   </div>
