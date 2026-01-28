@@ -29,15 +29,19 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.addEventListener("click", (e) => {
       e.preventDefault();
 
-      // クラスの切り替え
       drawerButtons.forEach((el) => el.classList.toggle("is-checked"));
       const isOpen = nav.classList.toggle("is-checked");
 
-      // 背景固定の連動
       if (isOpen) {
         lockBackground();
       } else {
         unlockBackground();
+        // ＼追加！／ ドロワーを閉じる時にサブメニューの状態もリセット
+        document.querySelectorAll(".menu-item-has-children").forEach((el) => {
+          el.classList.remove("is-open");
+          const sub = el.querySelector(".sub-menu");
+          if (sub) sub.style.display = "none";
+        });
       }
     });
   });
@@ -46,14 +50,19 @@ document.addEventListener("DOMContentLoaded", () => {
   document
     .querySelectorAll('#js-drawer-content a[href^="#"]')
     .forEach((link) => {
-      link.addEventListener("click", () => {
+      link.addEventListener("click", (e) => {
+        // サブメニューの親ボタン（#）なら、ドロワーを閉じる処理を行わない
+        if (link.getAttribute("href") === "#") {
+          return;
+        }
+
         drawerButtons.forEach((el) => el.classList.remove("is-checked"));
         nav.classList.remove("is-checked");
         unlockBackground();
       });
     });
 
-  // --- 4. フェードインアニメーション (IntersectionObserver) ---
+  // --- 4. フェードインアニメーション ---
   const targets = document.querySelectorAll(".fadein");
   const observer = new IntersectionObserver(
     (entries, obs) => {
@@ -88,22 +97,39 @@ window.addEventListener("pageshow", () => {
   if (nav && drawerButtons) {
     nav.classList.remove("is-checked");
     drawerButtons.forEach((btn) => btn.classList.remove("is-checked"));
-    // 背景固定も念のため解除
     document.body.style.position = "";
     document.body.style.top = "";
   }
 });
 
-// --- 6. スワイパー制御 ---
+// --- 6. サブメニュー制御 (jQuery) ---
+jQuery(function ($) {
+  // セレクタを限定し、伝播を止める
+  $('.header__nav-list .menu-item-has-children > a[href="#"]').on(
+    "click",
+    function (e) {
+      e.preventDefault();
+      e.stopPropagation(); // イベントの親への伝播を防止
+
+      const $parent = $(this).parent();
+      const $subMenu = $(this).next(".sub-menu");
+
+      $parent.toggleClass("is-open");
+      $subMenu.stop().slideToggle(300); // 300ms程度が自然
+    },
+  );
+});
+
+// --- 7. スワイパー制御 ---
 const fvSwiper = new Swiper(".p-fv-slider", {
   loop: true,
-  effect: "fade", // フェード
+  effect: "fade",
   fadeEffect: {
-    crossFade: true, // 前のスライドが消えながら次が重なる
+    crossFade: true,
   },
   autoplay: {
-    delay: 4000, // ?秒ごとに切り替え
+    delay: 4000,
     disableOnInteraction: false,
   },
-  speed: 2000, // ?秒かけてフェード
+  speed: 2000,
 });
