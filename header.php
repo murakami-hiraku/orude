@@ -37,7 +37,7 @@
   <header id="js-header" class="header">
     <div class="header__inner inner">
       <!-- /header-logo -->
-      <?php get_template_part('template-parts/parts/parts-logo--primary'); ?>
+      <?php get_template_part('template-parts/parts/parts-logo--white'); ?>
       <!-- /header-logo -->
       <nav id="js-drawer-content" class="header__nav">
 

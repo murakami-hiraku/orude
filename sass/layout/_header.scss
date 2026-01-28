@@ -10,6 +10,7 @@
     top: 0;
     left: 0;
     background-color: transparent; // 背景を透明に
+    z-index: 100;
   }
   &__inner {
     display: flex;
@@ -99,9 +100,12 @@
 
       #js-close-button {
         margin-left: auto;
+        background: b.$main-color;
+
         &.is-checked {
           .header__icon-bar {
             position: absolute;
+            background: b.$sub-color-light;
 
             &:nth-child(1) {
               top: 50%;
@@ -267,11 +271,13 @@
     gap: 8px;
     z-index: 1000;
     border-radius: 10px;
-    background: b.$main-color;
+    background: b.$sub-color-light;
     width: 10.256vw;
     max-width: 50px;
     height: 10.256vw;
     max-height: 50px;
+    border: 1px solid b.$main-color;
+    box-sizing: border-box;
 
     @include b.mq(lg) {
       gap: 12px;
@@ -304,7 +310,7 @@
 
   &__icon-bar {
     transition: 0.4s;
-    background: b.$text-color-white;
+    background: b.$main-color;
     width: 30px;
     height: 1px;
 
