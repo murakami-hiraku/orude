@@ -34,11 +34,18 @@
 
       <div class="section-fv__links">
 
-        <a class="section-fv__link cremation" href="<?php echo home_url('/about'); ?>"><span class="link-img"><img src="<?php echo get_template_directory_uri(); ?>/img/fv-link-img-1.png" alt=""></span>火葬ご希望の方はこちら<span class="icon-arrow"></span></a>
+        <a class="section-fv__link cremation" href="<?php echo home_url('/about'); ?>"><span class="link-img"><img src="<?php echo get_template_directory_uri(); ?>/img/fv-link-img-1.png" alt=""></span>
+          <p class="link-txt">
+            火葬ご希望の方はこちら</p><span class="icon-arrow"></span>
+        </a>
 
-        <a class="section-fv__link ceremony" href="<?php echo home_url('/about'); ?>"><span class="link-img"><img src="<?php echo get_template_directory_uri(); ?>/img/fv-link-img-2.png" alt=""></span>ゆっくりお別れをしたい方はこちら<span class="icon-arrow"></span></a>
+        <a class="section-fv__link ceremony" href="<?php echo home_url('/about'); ?>"><span class="link-img"><img src="<?php echo get_template_directory_uri(); ?>/img/fv-link-img-2.png" alt=""></span>
+          <p class="link-txt">ゆっくりお別れをしたい方はこちら</p><span class="icon-arrow"></span>
+        </a>
 
-        <a class="section-fv__link perpetual-care" href="<?php echo home_url('/about'); ?>"><span class="link-img"><img src="<?php echo get_template_directory_uri(); ?>/img/fv-link-img-3.png" alt=""></span>永代供養ご希望の方はこちら<span class="icon-arrow"></span></a>
+        <a class="section-fv__link perpetual-care" href="<?php echo home_url('/about'); ?>"><span class="link-img"><img src="<?php echo get_template_directory_uri(); ?>/img/fv-link-img-3.png" alt=""></span>
+          <p class="link-txt">永代供養ご希望の方はこちら</p><span class="icon-arrow"></span>
+        </a>
 
       </div>
 

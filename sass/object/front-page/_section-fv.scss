@@ -79,6 +79,8 @@
     height: 100%;
     padding-block: 100px 150px;
     padding-inline: clamp(15px, 3.85vw, 120px);
+    display: flex;
+    flex-direction: column;
 
     @include b.mq(pc) {
       padding-top: 300px;
@@ -87,6 +89,7 @@
   }
 
   &__ttl {
+    flex-shrink: 0;
     width: 100%;
     color: b.$text-color-white;
     font-weight: 900;
@@ -125,11 +128,11 @@
 
     @include b.mq(pc) {
       width: 100%;
-      height: 200px;
+      flex: 1;
       display: block;
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: end;
     }
   }
 
@@ -153,7 +156,7 @@
       position: absolute;
       display: inline-block; // ← 必須
       transform: rotate(270deg);
-      bottom: 11px;
+      bottom: 32px;
       left: -4px;
 
       @include b.mq(tb) {
@@ -203,6 +206,7 @@
 
   &__link {
     display: flex;
+    gap: 18px;
     align-items: center;
     width: 400px;
     color: b.$text-color-white;
@@ -221,12 +225,17 @@
       }
     }
 
+    .link-txt {
+      margin-right: auto;
+    }
+
     .icon-arrow {
       position: relative;
       display: inline-block;
       width: 20px;
       height: 2px;
       margin: 5.7px 0;
+      margin-right: 10px;
       border-radius: 9999px;
       background-color: b.$sub-color-light;
 
