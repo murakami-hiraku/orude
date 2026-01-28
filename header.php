@@ -42,6 +42,18 @@
       <!-- /header-logo -->
       <nav id="js-drawer-content" class="header__nav">
 
+        <div class="header__nav-close hidden-xl">
+          <button
+            type="button"
+            id="js-close-button"
+            class="header__drawer-icon"
+            aria-label="メニューを閉じる">
+            <span class="header__icon-bar"></span>
+            <span class="header__icon-bar"></span>
+            <span class="header__icon-bar"></span>
+          </button>
+        </div>
+
         <div class="header__nav-menu">
           <?php get_template_part('template-parts/parts/parts-logo--white'); ?>
 
@@ -56,20 +68,31 @@
         </div>
 
         <div class="header__nav-card">
+
+          <div class="header__nav-ttl hidden-xl">
+            <h3>ーペットの総合供養ー</h3>
+            <h2>これからの旅が<br>穏やかな旅でありますように</h2>
+          </div>
+
           <?php get_template_part('template-parts/block/block-info--white'); ?>
 
-          <a class="header__btn" href="<?php echo get_permalink(get_page_by_path('contact')); ?>">
-            <span class="header__btn-icon"></span>
-            お問い合わせはこちら
-          </a>
+          <?php
+          get_template_part('template-parts/parts/parts-contact-btn--white')
+          ?>
         </div>
+
       </nav>
-      <div class="header__open">
+
+      <?php
+      get_template_part('template-parts/parts/parts-contact-btn--primary')
+      ?>
+
+      <div class="header__open hidden-xl">
         <button
           type="button"
           id="js-drawer-button"
           class="header__drawer-icon"
-          aria-label="メニューボタン">
+          aria-label="メニューを開く">
           <span class="header__icon-bar"></span>
           <span class="header__icon-bar"></span>
           <span class="header__icon-bar"></span>
