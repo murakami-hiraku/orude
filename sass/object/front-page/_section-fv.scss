@@ -30,6 +30,23 @@
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+
+      &--1 {
+        background-position: 60% center;
+      }
+      &--2 {
+        background-size: 300%;
+        background-position: center top;
+      }
+      &--3 {
+        background-position: center top;
+      }
+      &--4 {
+        background-size: cover;
+      }
+      &--5 {
+        background-position: 60% center;
+      }
     }
   }
 

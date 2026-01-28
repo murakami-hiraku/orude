@@ -4,19 +4,19 @@
   <div class="swiper p-fv-slider">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <div class="p-fv-slider__bg" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/fv-img-1.png');"></div>
+        <div class="p-fv-slider__bg p-fv-slider__bg--1" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/fv-img-1.png');"></div>
       </div>
       <div class="swiper-slide">
-        <div class="p-fv-slider__bg" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/fv-img-2.png');"></div>
+        <div class="p-fv-slider__bg p-fv-slider__bg--2" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/fv-img-2.png');"></div>
       </div>
       <div class="swiper-slide">
-        <div class="p-fv-slider__bg" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/fv-img-3.png');"></div>
+        <div class="p-fv-slider__bg p-fv-slider__bg--3" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/fv-img-3.png');"></div>
       </div>
       <div class="swiper-slide">
-        <div class="p-fv-slider__bg" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/fv-img-4.png');"></div>
+        <div class="p-fv-slider__bg p-fv-slider__bg--4" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/fv-img-4.png');"></div>
       </div>
       <div class="swiper-slide">
-        <div class="p-fv-slider__bg" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/fv-img-5.png');"></div>
+        <div class="p-fv-slider__bg p-fv-slider__bg--5" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/fv-img-5.png');"></div>
       </div>
     </div>
   </div>
