@@ -7,6 +7,10 @@
   position: relative;
   overflow: hidden;
 
+  @include b.mq(pc) {
+    height: 42.9166vw;
+  }
+
   &__overlay {
     position: absolute;
     z-index: 5;
@@ -48,6 +52,25 @@
         background-position: 60% center;
       }
     }
+
+    @include b.mq(pc) {
+      &__bg {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        &--1 {
+        }
+        &--2 {
+        }
+        &--3 {
+        }
+        &--4 {
+        }
+        &--5 {
+        }
+      }
+    }
   }
 
   &__inner {
@@ -58,7 +81,8 @@
     padding-inline: clamp(15px, 3.85vw, 120px);
 
     @include b.mq(pc) {
-      padding-top: 89px;
+      padding-top: 300px;
+      padding-bottom: 20px;
     }
   }
 
@@ -73,46 +97,51 @@
     align-items: center;
     gap: 20px;
 
+    @include b.mq(pc) {
+      gap: none;
+    }
+
     h3 {
       font-size: 20px;
       text-shadow: 0px 4px 4px 0px #00000040;
+
+      @include b.mq(pc) {
+        font-size: 32px;
+      }
     }
     h2 {
       text-align: center;
       font-size: 24px;
       text-shadow: 0px 4px 4px 0px #00000040;
+
+      @include b.mq(pc) {
+        font-size: 40px;
+      }
     }
   }
 
   &__container {
     display: none;
-  }
 
-  &__links {
-  }
-
-  &__link {
-    .link-img {
-      img {
-      }
-    }
-
-    .icon-arrow {
+    @include b.mq(pc) {
+      width: 100%;
+      height: 200px;
+      display: block;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
   }
 
   &__scrollbar {
     position: relative;
-    background: b.$main-color; // バーの背景色
+    background: b.$sub-color-light; // バーの背景色
     width: 1px; // バーの太さ
     right: 16px; // 右端からの位置
     height: 96px;
     padding-top: 5px;
-    margin-top: 130px;
-    margin-top: clamp(130px, 33.3vw, 200px);
 
     @include b.mq(tb) {
-      margin-top: 400px;
       height: 200px;
     }
 
@@ -120,7 +149,7 @@
       content: "SCROLL";
       font-size: 9px;
       font-family: b.$font-family-en-sub;
-      color: b.$main-color;
+      color: b.$sub-color-light;
       position: absolute;
       display: inline-block; // ← 必須
       transform: rotate(270deg);
@@ -140,7 +169,7 @@
       width: 7px; // バーの太さ
       height: 7px; // バーの長さ
       border-radius: 50%;
-      border: 1px solid b.$main-color; // 円の枠線の色
+      border: 1px solid b.$sub-color-light; // 円の枠線の色
       background: b.$sub-color-light; // 円の背景色
 
       // --- アニメーションの設定を追加 ---
@@ -163,6 +192,64 @@
     }
     100% {
       top: 6.25%;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    color: b.$text-color-white;
+    background-color: b.$main-color;
+    border: 2px solid b.$main-color;
+    font-weight: 900;
+    line-height: 1.8;
+
+    .link-img {
+      width: 60px;
+      height: 40px;
+      background-color: b.$sub-color-light;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .icon-arrow {
+      position: relative;
+      display: inline-block;
+      width: 20px;
+      height: 2px;
+      margin: 5.7px 0;
+      border-radius: 9999px;
+      background-color: b.$sub-color-light;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: calc(50% - 1px);
+        right: 0;
+        width: 10px;
+        height: 2px;
+        border-radius: 9999px;
+        background-color: b.$sub-color-light;
+        transform-origin: calc(100% - 1px) 50%;
+      }
+
+      &::before {
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+      }
     }
   }
 }
