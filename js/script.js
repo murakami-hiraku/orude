@@ -93,3 +93,17 @@ window.addEventListener("pageshow", () => {
     document.body.style.top = "";
   }
 });
+
+// --- 6. スワイパー制御 ---
+const fvSwiper = new Swiper(".p-fv-slider", {
+  loop: true,
+  effect: "fade", // フェード
+  fadeEffect: {
+    crossFade: true, // 前のスライドが消えながら次が重なる
+  },
+  autoplay: {
+    delay: 4000, // ?秒ごとに切り替え
+    disableOnInteraction: false,
+  },
+  speed: 2000, // ?秒かけてフェード
+});
