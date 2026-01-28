@@ -104,6 +104,7 @@ main {
 @media (min-width: 1024px) {
   .section-fv {
     height: 42.9166vw;
+    max-height: 824px;
   }
 }
 .section-fv__overlay {

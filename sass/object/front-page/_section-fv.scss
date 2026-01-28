@@ -9,6 +9,7 @@
 
   @include b.mq(pc) {
     height: 42.9166vw;
+    max-height: 824px;
   }
 
   &__overlay {
