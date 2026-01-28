@@ -2435,11 +2435,6 @@ main {
   }
 }
 
-.parts-page-contact-steps__step--input {
-  color: #fff;
-  background: #bfa944;
-}
-
 .page-contact {
   margin-bottom: 50px;
 }
@@ -2455,6 +2450,10 @@ main {
 .page-contact__container .parts-bg-flower {
   top: -44px;
   right: 0;
+}
+.page-contact__container .parts-page-contact-steps__step--input {
+  color: #fff;
+  background: #bfa944;
 }
 .page-contact__form {
   max-width: 600px;
@@ -2712,15 +2711,14 @@ main {
   color: #dcdcdc;
 }
 
-.parts-page-contact-steps__step--input {
+.page-contact-confirm__container .parts-page-contact-steps__step--input {
   color: #333333;
   background: #fff;
 }
-.parts-page-contact-steps__step--confirm {
+.page-contact-confirm__container .parts-page-contact-steps__step--confirm {
   color: #fff;
   background: #bfa944;
 }
-
 .page-contact-confirm__form .form-box {
   color: #fff;
   /* CF7のテキストエリアを狙い撃ち */
@@ -2786,19 +2784,18 @@ main {
   margin-inline: auto;
 }
 
-.parts-page-contact-steps__step--input {
+.page-contact-thanks__container .parts-page-contact-steps__step--input {
   color: #333333;
   background: #fff;
 }
-.parts-page-contact-steps__step--confirm {
+.page-contact-thanks__container .parts-page-contact-steps__step--confirm {
   color: #333333;
   background: #fff;
 }
-.parts-page-contact-steps__step--complete {
+.page-contact-thanks__container .parts-page-contact-steps__step--complete {
   color: #fff;
   background: #bfa944;
 }
-
 .page-contact-thanks__txt {
   color: #fff;
   font-size: 14px;

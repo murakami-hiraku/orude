@@ -1,20 +1,21 @@
 @use "sass:map";
 @use "../foundation/base" as b;
 
-.parts-page-contact-steps {
-  &__step {
-    &--input {
-      color: b.$text-color-dark;
-      background: b.$sub-color-light;
-    }
-    &--confirm {
-      color: b.$text-color-white;
-      background: #bfa944;
+.page-contact-confirm {
+  &__container {
+    .parts-page-contact-steps {
+      &__step {
+        &--input {
+          color: b.$text-color-dark;
+          background: b.$sub-color-light;
+        }
+        &--confirm {
+          color: b.$text-color-white;
+          background: #bfa944;
+        }
+      }
     }
   }
-}
-
-.page-contact-confirm {
   &__form {
     .form-box {
       color: b.$text-color-white;

@@ -1,15 +1,6 @@
 @use "sass:map";
 @use "../foundation/base" as b;
 
-.parts-page-contact-steps {
-  &__step {
-    &--input {
-      color: b.$text-color-white;
-      background: #bfa944;
-    }
-  }
-}
-
 .page-contact {
   margin-bottom: 50px;
   &__section {
@@ -26,6 +17,15 @@
       right: 0;
 
       @include b.mq(pc) {
+      }
+    }
+
+    .parts-page-contact-steps {
+      &__step {
+        &--input {
+          color: b.$text-color-white;
+          background: #bfa944;
+        }
       }
     }
   }
