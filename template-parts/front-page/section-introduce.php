@@ -12,8 +12,8 @@
 
       <div class="section-introduce__body">
         <p class="section-introduce__txt">「その時」が訪れたとき、どうすればいいのか分からず戸惑ってしまう方も少なくありません。 大切なご家族を安らかに送り出すために、すぐにできること、してあげたいことをわかりやすくご案内しています。</p>
-        <?php get_template_part('parts-button', null, [
-          'text'  => '',
+        <?php get_template_part('template-parts/parts/parts-btn', null, [
+          'text'  => '詳しく見る',
           'link'  => '/introduce/',
           'class' => '' // 色を変えたい時などの識別用クラス
         ]); ?>
