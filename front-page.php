@@ -16,13 +16,9 @@
     <?php get_template_part('template-parts/front-page/section-service'); ?>
     <!-- /大切な家族との、最後の時間を穏やかに過ごしていただくために（service） -->
 
-    <!-- ご利用の流れ（guide） -->
-    <?php get_template_part('template-parts/front-page/section-guide'); ?>
-    <!-- /ご利用の流れ（guide） -->
-
-    <!-- オルデが選ばれる理由（features） -->
-    <?php get_template_part('template-parts/front-page/section-features'); ?>
-    <!-- /オルデが選ばれる理由（features） -->
+    <!-- ご利用の流れ（introduce） -->
+    <?php get_template_part('template-parts/front-page/section-introduce'); ?>
+    <!-- /ご利用の流れ（introduce） -->
 
     <!-- コンタクト（contact） -->
     <?php get_template_part('template-parts/section/section-contact'); ?>
