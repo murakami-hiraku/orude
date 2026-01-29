@@ -662,19 +662,8 @@ main {
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
 }
-.section-service__link {
-  width: 184px;
-  background-color: #907910;
-  color: #fff;
-  font-weight: 700;
-  line-height: 1.2;
-  padding: 16px;
-  text-align: center;
-  display: block;
-  border-radius: 5px;
-}
 @media (min-width: 1024px) {
-  .section-service__link {
+  .section-service .parts-btn__link {
     margin-top: 64px;
     margin-left: auto;
   }
