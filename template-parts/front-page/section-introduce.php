@@ -7,11 +7,11 @@
 
     <div class="section-introduce__content">
       <div class="section-introduce__img">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/concept-img-left.png" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/introduce-img.png" alt="">
       </div>
 
       <div class="section-introduce__body">
-        <p class="section-introduce__txt">「その時」が訪れたとき、どうすればいいのか分からず戸惑ってしまう方も少なくありません。 大切なご家族を安らかに送り出すために、すぐにできること、してあげたいことをわかりやすくご案内しています。</p>
+        <p class="section-introduce__txt">「その時」が訪れたとき、どうすればいいのか分からず戸惑ってしまう方も少なくありません。<br>大切なご家族を安らかに送り出すために、すぐにできること、してあげたいことをわかりやすくご案内しています。</p>
         <?php get_template_part('template-parts/parts/parts-btn', null, [
           'text'  => '詳しく見る',
           'link'  => '/introduce/',
