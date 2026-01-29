@@ -1,0 +1,23 @@
+@use "sass:map";
+@use "../../foundation/base" as b;
+
+.parts-btn {
+  width: fit-content;
+
+  &__link {
+    width: 184px;
+    background-color: b.$main-color;
+    color: b.$text-color-white;
+    font-weight: 700;
+    line-height: 1.2;
+    padding: 16px;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+
+    @include b.mq(pc) {
+      margin-top: 64px;
+      margin-left: auto;
+    }
+  }
+}
