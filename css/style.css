@@ -568,12 +568,13 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  max-width: 600px;
+  margin-inline: auto;
   gap: 10px;
 }
 @media (min-width: 1024px) {
   .section-service__cards {
     max-width: 1020px;
-    margin-inline: auto;
     gap: 40px;
   }
 }
@@ -644,13 +645,15 @@ main {
   }
 }
 .section-service__img {
+  margin-inline: auto;
   padding-inline: 30px;
+  max-width: 500px;
 }
 @media (min-width: 1024px) {
   .section-service__img {
+    margin: 0;
     padding: 0;
     width: 100%;
-    max-width: 450px;
   }
 }
 .section-service__img img {
