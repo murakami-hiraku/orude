@@ -112,8 +112,11 @@
   }
 
   .parts-btn {
+    margin-inline: auto;
+
     @include b.mq(pc) {
       margin-top: 64px;
+      margin-right: 0;
       margin-left: auto;
     }
   }
