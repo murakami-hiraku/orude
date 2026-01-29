@@ -1,2 +1,43 @@
 @use "sass:map";
 @use "../../foundation/base" as b;
+
+.section-introduce {
+  &__inner {
+    padding-top: 50px;
+    padding-bottom: 25px;
+  }
+
+  &__ttl {
+    text-align: center;
+    font-weight: 900;
+    font-size: 20px;
+    color: b.$main-color;
+  }
+
+  &__content {
+  }
+
+  &__img {
+    padding: 25px 30px;
+    max-width: 500px;
+    img {
+      width: 100%;
+      box-shadow: 0px 4px 4px 0px #00000040;
+    }
+  }
+
+  &__body {
+  }
+
+  &__txt {
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 2;
+    text-align: center;
+  }
+
+  .parts-btn {
+    margin-top: 25px;
+    text-align: center;
+  }
+}
