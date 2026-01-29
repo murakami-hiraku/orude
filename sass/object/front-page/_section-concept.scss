@@ -50,7 +50,7 @@
       "left-img right-img";
 
     @include b.mq(pc) {
-      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 3fr 1fr;
       grid-template-areas: "left-img text-box right-img";
     }
   }
@@ -61,10 +61,10 @@
     display: flex;
     justify-content: center;
     align-items: start;
+    margin-inline: auto;
 
     @include b.mq(pc) {
       max-width: 186px;
-      margin-inline: auto;
     }
 
     img {

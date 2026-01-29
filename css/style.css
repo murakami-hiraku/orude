@@ -469,7 +469,7 @@ main {
 }
 @media (min-width: 1024px) {
   .section-concept__inner {
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
     grid-template-areas: "left-img text-box right-img";
   }
 }
@@ -484,11 +484,11 @@ main {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
+  margin-inline: auto;
 }
 @media (min-width: 1024px) {
   .section-concept__img {
     max-width: 186px;
-    margin-inline: auto;
   }
 }
 .section-concept__img img {
