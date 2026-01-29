@@ -2,7 +2,11 @@
 @use "../../foundation/base" as b;
 
 .section-introduce {
-  margin-top: 200px;
+  margin-top: 100px;
+
+  @include b.mq(pc) {
+    margin-top: 200px;
+  }
   &__inner {
     padding-top: 50px;
 

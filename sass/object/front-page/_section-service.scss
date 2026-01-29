@@ -20,6 +20,18 @@
     @include b.mq(pc) {
       font-size: 40px;
     }
+
+    br {
+      display: none;
+
+      @include b.mq(pc) {
+        display: block;
+      }
+
+      @include b.mq(lg) {
+        display: none;
+      }
+    }
   }
 
   &__cards {
@@ -28,16 +40,16 @@
     flex-direction: column;
     max-width: 600px;
     margin-inline: auto;
-    gap: 10px;
+    gap: 50px;
 
     @include b.mq(pc) {
+      padding-top: 50px;
       max-width: 1020px;
-      gap: 40px;
+      gap: 80px;
     }
   }
 
   &__card {
-    padding-top: 40px;
     display: flex;
     flex-direction: column; // スマホでは縦並び
     justify-content: center;

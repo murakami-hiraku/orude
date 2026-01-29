@@ -4,7 +4,7 @@
   <div class="section-service__inner inner">
 
     <h2 class="section-service__ttl">
-      大切な家族との、最後の時間を穏やかに過ごしていただくために
+      大切な家族との、<br>最後の時間を穏やかに過ごしていただくために
     </h2>
 
     <div class="section-service__cards">
