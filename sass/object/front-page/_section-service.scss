@@ -111,7 +111,7 @@
     }
   }
 
-  .parts-btn__link {
+  .parts-btn {
     @include b.mq(pc) {
       margin-top: 64px;
       margin-left: auto;
