@@ -2,8 +2,6 @@
 @use "../../foundation/base" as b;
 
 .parts-btn {
-  width: fit-content;
-
   &__link {
     width: 184px;
     background-color: b.$main-color;
@@ -12,7 +10,7 @@
     line-height: 1.2;
     padding: 16px;
     text-align: center;
-    display: block;
+    display: inline-block;
     border-radius: 5px;
   }
 }
