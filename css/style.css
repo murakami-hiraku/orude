@@ -437,7 +437,7 @@ main {
 }
 @media (min-width: 1024px) {
   .section-concept {
-    margin-top: clamp(75px, 7.552vw, 145px);
+    margin-top: 145px;
   }
 }
 .section-concept .parts-bg-circle {
@@ -549,6 +549,11 @@ main {
 .section-service {
   margin-top: 66px;
 }
+@media (min-width: 1024px) {
+  .section-service {
+    margin-top: 200px;
+  }
+}
 .section-service__ttl {
   text-align: center;
   font-weight: 900;
@@ -561,7 +566,7 @@ main {
   }
 }
 .section-service__cards {
-  padding-block: 30px;
+  padding-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -580,7 +585,7 @@ main {
   }
 }
 .section-service__card {
-  padding-block: 20px;
+  padding-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -674,17 +679,10 @@ main {
 }
 
 .section-introduce {
-  margin-top: 50px;
+  margin-top: 200px;
 }
 .section-introduce__inner {
   padding-top: 50px;
-  padding-bottom: 25px;
-}
-@media (min-width: 1024px) {
-  .section-introduce__inner {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
 }
 .section-introduce__ttl {
   text-align: center;

@@ -4,6 +4,10 @@
 .section-service {
   margin-top: 66px;
 
+  @include b.mq(pc) {
+    margin-top: 200px;
+  }
+
   &__inner {
   }
 
@@ -19,7 +23,7 @@
   }
 
   &__cards {
-    padding-block: 30px;
+    padding-top: 30px;
     display: flex;
     flex-direction: column;
     max-width: 600px;
@@ -33,7 +37,7 @@
   }
 
   &__card {
-    padding-block: 20px;
+    padding-top: 40px;
     display: flex;
     flex-direction: column; // スマホでは縦並び
     justify-content: center;

@@ -18,8 +18,8 @@
   position: relative;
 
   @include b.mq(pc) {
-    // margin-top: 235px;
-    margin-top: clamp(75px, 7.552vw, 145px);
+    margin-top: 145px;
+    // margin-top: clamp(75px, 7.552vw, 145px);
   }
 
   .parts-bg-circle {
