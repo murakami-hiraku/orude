@@ -673,9 +673,18 @@ main {
   }
 }
 
+.section-introduce {
+  margin-top: 50px;
+}
 .section-introduce__inner {
   padding-top: 50px;
   padding-bottom: 25px;
+}
+@media (min-width: 1024px) {
+  .section-introduce__inner {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 .section-introduce__ttl {
   text-align: center;
@@ -683,14 +692,51 @@ main {
   font-size: 20px;
   color: #907910;
 }
+@media (min-width: 1024px) {
+  .section-introduce__ttl {
+    font-size: 40px;
+  }
+}
+.section-introduce__content {
+  max-width: 600px;
+  margin-inline: auto;
+}
+@media (min-width: 1024px) {
+  .section-introduce__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 54px;
+    margin-top: 50px;
+    max-width: 1020px;
+  }
+}
 .section-introduce__img {
   padding: 25px 30px;
   max-width: 500px;
+  margin-inline: auto;
+}
+@media (min-width: 1024px) {
+  .section-introduce__img {
+    max-width: 450px;
+    padding: 0;
+  }
 }
 .section-introduce__img img {
   width: 100%;
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+}
+@media (min-width: 1024px) {
+  .section-introduce__body {
+    padding-top: 50px;
+  }
 }
 .section-introduce__txt {
   font-weight: 900;
@@ -698,9 +744,22 @@ main {
   line-height: 2;
   text-align: center;
 }
+@media (min-width: 1024px) {
+  .section-introduce__txt {
+    font-size: 16px;
+    -moz-text-align-last: left;
+         text-align-last: left;
+  }
+}
 .section-introduce .parts-btn {
   margin-top: 25px;
   text-align: center;
+}
+@media (min-width: 1024px) {
+  .section-introduce .parts-btn {
+    margin-top: 70px;
+    text-align: right;
+  }
 }
 
 .parts-logo {
@@ -847,6 +906,7 @@ main {
 
 .parts-btn__link {
   width: 184px;
+  height: 52px;
   background-color: #907910;
   color: #fff;
   font-weight: 700;
@@ -855,6 +915,15 @@ main {
   text-align: center;
   display: inline-block;
   border-radius: 5px;
+}
+.parts-btn__link:hover {
+  background-color: #fff;
+  color: #907910;
+  border: 1px solid #907910;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .parts-bg-circle {

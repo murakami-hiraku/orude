@@ -4,6 +4,7 @@
 .parts-btn {
   &__link {
     width: 184px;
+    height: 52px;
     background-color: b.$main-color;
     color: b.$text-color-white;
     font-weight: 700;
@@ -12,5 +13,13 @@
     text-align: center;
     display: inline-block;
     border-radius: 5px;
+
+    &:hover {
+      background-color: b.$sub-color-light;
+      color: b.$main-color;
+      border: 1px solid b.$main-color;
+      box-sizing: border-box;
+      transition: 0.3s;
+    }
   }
 }
