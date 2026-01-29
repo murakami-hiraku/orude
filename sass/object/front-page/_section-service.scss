@@ -1,2 +1,89 @@
 @use "sass:map";
 @use "../../foundation/base" as b;
+
+.section-service {
+  margin-top: 66px;
+
+  &__inner {
+  }
+
+  &__ttl {
+    font-weight: 900;
+    font-size: 20px;
+    color: b.$main-color;
+  }
+
+  &__cards {
+    padding-block: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__card {
+    padding-block: 20px;
+    display: flex;
+    flex-direction: column; // スマホでは縦並び
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+    @include b.mq(pc) {
+      flex-direction: row; // PCでは横並び
+      align-items: center;
+
+      &-item {
+        // 要素1, 2, 4 の並び順（デフォルトは 0）
+        &:nth-child(1) {
+          order: 1;
+        }
+        &:nth-child(2) {
+          order: 2;
+        }
+        &:nth-child(4) {
+          order: 3;
+        }
+
+        // 要素3を一番右にする
+        &:nth-child(3) {
+          order: 4;
+          margin-left: auto; // これで右側に飛ぶ
+        }
+      }
+    }
+
+    &-ttl {
+      text-align: center;
+      font-weight: 900;
+      font-size: 20px;
+    }
+
+    &-txt {
+      text-align: center;
+      font-weight: 900;
+      font-size: 14px;
+      line-height: 2;
+    }
+  }
+
+  &__img {
+    padding-inline: 30px;
+
+    img {
+      width: 100%;
+      box-shadow: 0px 4px 4px 0px #00000040;
+    }
+  }
+
+  &__link {
+    width: fit-content;
+    background-color: b.$main-color;
+    color: b.$text-color-white;
+    font-weight: 700;
+    line-height: 1.2;
+    padding: 16px;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+  }
+}
