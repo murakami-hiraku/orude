@@ -2,6 +2,13 @@
 @use "../foundation/base" as b;
 
 .page-contact-thanks {
+  &__inner {
+    padding-bottom: 50px;
+
+    @include b.mq(pc) {
+      padding-bottom: 100px;
+    }
+  }
   &__container {
     .parts-page-contact-steps {
       &__step {
@@ -31,5 +38,38 @@
     @include b.mq(pc) {
       font-size: 24px;
     }
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    &-txt {
+      color: b.$text-color-white;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.8;
+      text-align: center;
+
+      @include b.mq(pc) {
+        font-size: 20px;
+      }
+
+      .br-1 {
+      }
+
+      .br-2 {
+        @include b.mq(pc) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .line {
+    background: #a6ce4f;
   }
 }
