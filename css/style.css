@@ -994,6 +994,8 @@ main {
 }
 .sec-contact-mail .parts-btn__link:hover .link-icon {
   background: #907910;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .sec-contact-line .parts-btn__link {
@@ -1009,6 +1011,8 @@ main {
 }
 .sec-contact-line .parts-btn__link:hover .link-icon {
   background: #a6ce4f;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .parts-bg-circle {
