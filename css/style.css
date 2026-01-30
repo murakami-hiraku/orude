@@ -770,11 +770,13 @@ main {
 .section-introduce .parts-btn {
   margin-top: 25px;
   text-align: center;
+  margin-inline: auto;
 }
 @media (min-width: 1024px) {
   .section-introduce .parts-btn {
     margin-top: 70px;
-    text-align: right;
+    margin-inline: 0;
+    margin-left: auto;
   }
 }
 

@@ -1,5 +1,5 @@
 <!-- ペットちゃんがお亡くなりになったら（introduce） -->
-<section class="section-introduce section">
+<section class="section-introduce section fadein">
 
   <div class="section-introduce__inner inner">
 

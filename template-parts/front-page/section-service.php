@@ -1,5 +1,5 @@
 <!-- 大切な家族との、最後の時間を穏やかに過ごしていただくために（service） -->
-<section class="section-service section">
+<section class="section-service section fadein">
 
   <div class="section-service__inner inner">
 

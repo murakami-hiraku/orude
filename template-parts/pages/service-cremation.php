@@ -151,7 +151,11 @@
 
       <div class="page-s-cremation__inner inner">
         <h2 class="page-s-cremation__ttl">よくあるご質問（FAQ）</h2>
-        <div class="page-s-cremation__content"></div>
+        <div class="page-s-cremation__content">
+          <?php
+          get_template_part('template-parts/parts/parts-faq-1')
+          ?>
+        </div>
       </div>
 
     </section>
