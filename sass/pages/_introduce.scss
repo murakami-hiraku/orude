@@ -2,6 +2,14 @@
 @use "../foundation/base" as b;
 
 .page-introduce {
+  .block-page-ttl {
+    background-size: 200%;
+    background-position: center center;
+    @include b.mq(pc) {
+      background-size: cover;
+    }
+  }
+
   &__section {
     position: relative;
 
