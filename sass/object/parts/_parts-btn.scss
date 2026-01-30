@@ -43,6 +43,12 @@
     white-space: nowrap;
     max-width: 250px;
 
+    &:hover {
+      background: b.$sub-color-light;
+      box-sizing: border-box;
+      transition: 0.3s;
+    }
+
     .link-icon {
       clip-path: polygon(0 0, 0 100%, 85% 50%);
       background: b.$sub-color-light;
@@ -55,11 +61,31 @@
 
 .sec-contact-mail {
   .parts-btn__link {
-    background: b.$main-color;
+    &:hover {
+      color: b.$main-color;
+      border: 1px solid b.$main-color;
+      box-sizing: border-box;
+      transition: 0.3s;
+
+      .link-icon {
+        background: b.$main-color;
+      }
+    }
   }
 }
 .sec-contact-line {
   .parts-btn__link {
     background: #a6ce4f;
+
+    &:hover {
+      color: #a6ce4f;
+      border: 1px solid #a6ce4f;
+      box-sizing: border-box;
+      transition: 0.3s;
+
+      .link-icon {
+        background: #a6ce4f;
+      }
+    }
   }
 }

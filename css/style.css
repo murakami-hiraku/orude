@@ -969,6 +969,13 @@ main {
   white-space: nowrap;
   max-width: 250px;
 }
+.parts-btn.sec-contact .parts-btn__link:hover {
+  background: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
 .parts-btn.sec-contact .parts-btn__link .link-icon {
   clip-path: polygon(0 0, 0 100%, 85% 50%);
   background: #fff;
@@ -977,11 +984,30 @@ main {
   height: 10px;
 }
 
-.sec-contact-mail .parts-btn__link {
+.sec-contact-mail .parts-btn__link:hover {
+  color: #907910;
+  border: 1px solid #907910;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.sec-contact-mail .parts-btn__link:hover .link-icon {
   background: #907910;
 }
 
 .sec-contact-line .parts-btn__link {
+  background: #a6ce4f;
+}
+.sec-contact-line .parts-btn__link:hover {
+  color: #a6ce4f;
+  border: 1px solid #a6ce4f;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.sec-contact-line .parts-btn__link:hover .link-icon {
   background: #a6ce4f;
 }
 
