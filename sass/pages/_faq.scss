@@ -96,6 +96,9 @@
     gap: 25px;
 
     @include b.mq(pc) {
+      max-width: 958px;
+      width: 100%;
+      margin-inline: auto;
       gap: 36px;
     }
   }
@@ -134,6 +137,7 @@
       min-width: 258px;
 
       @include b.mq(pc) {
+        padding: 0;
       }
     }
   }
@@ -142,6 +146,10 @@
     .page-faq__ttl {
       padding-inline: 60px;
       min-width: 240px;
+
+      @include b.mq(pc) {
+        padding: 0;
+      }
     }
   }
 
@@ -149,97 +157,9 @@
     .page-faq__ttl {
       padding-inline: 30px;
       min-width: 300px;
-    }
-  }
-
-  &__card {
-    display: flex;
-    flex-direction: column;
-    font-weight: 700;
-
-    @include b.mq(pc) {
-      // padding-left: 161px;
-      padding-left: clamp(15px, 1.4648vw, 30px);
-    }
-
-    @include b.mq(lg) {
-      padding-left: clamp(15px, 8.385vw, 161px);
-    }
-  }
-
-  &__q,
-  &__a {
-    display: flex;
-    gap: 29px; // ラベルとテキストの間の距離
-    align-items: flex-start;
-  }
-
-  &__label {
-    flex-shrink: 0; // ラベルが横に潰れないように固定
-    width: 1.4em; // ラベルの幅を固定するとより綺麗です
-    height: fit-content;
-
-    @include b.mq(pc) {
-      font-size: 20px;
-    }
-  }
-
-  &__txt {
-    flex: 1; // 残りの幅をすべて使う
-    font-size: 14px;
-    margin: 0; // ブラウザ規定の余白をリセット
-  }
-
-  &__q {
-    padding-bottom: 10px;
-
-    .page-faq__label {
-      color: b.$main-color;
 
       @include b.mq(pc) {
-        margin-top: 4px;
-      }
-      @include b.mq(lg) {
-        margin-top: 12px;
-      }
-    }
-
-    .page-faq__txt {
-      color: b.$main-color;
-
-      @include b.mq(pc) {
-        font-size: 24px;
-      }
-      @include b.mq(lg) {
-        font-size: 30px;
-      }
-    }
-  }
-  &__a {
-    padding-top: 15px;
-    border-top: 1px solid b.$main-color;
-
-    @include b.mq(pc) {
-      border: none;
-    }
-
-    .page-faq__label {
-      @include b.mq(pc) {
-        margin-top: 5px;
-      }
-    }
-
-    .page-faq__txt {
-      font-size: 14px;
-
-      @include b.mq(pc) {
-        font-size: 20px;
-        // margin-right: 161px;
-        margin-right: clamp(15px, 1.4648vw, 30px);
-      }
-
-      @include b.mq(lg) {
-        margin-right: clamp(15px, 8.385vw, 161px);
+        padding: 0;
       }
     }
   }

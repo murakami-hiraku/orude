@@ -1,0 +1,80 @@
+@use "sass:map";
+@use "../../foundation/base" as b;
+
+.parts-faq-card {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+
+  &__q,
+  &__a {
+    display: flex;
+    gap: 29px; // ラベルとテキストの間の距離
+    align-items: flex-start;
+  }
+
+  &__label {
+    flex-shrink: 0; // ラベルが横に潰れないように固定
+    width: 1.4em; // ラベルの幅を固定するとより綺麗です
+    height: fit-content;
+
+    @include b.mq(pc) {
+      font-size: 20px;
+    }
+  }
+
+  &__txt {
+    flex: 1; // 残りの幅をすべて使う
+    font-size: 14px;
+    margin: 0; // ブラウザ規定の余白をリセット
+  }
+
+  &__q {
+    padding-bottom: 10px;
+
+    .parts-faq-card__label {
+      color: b.$main-color;
+
+      @include b.mq(pc) {
+        margin-top: 4px;
+      }
+      @include b.mq(lg) {
+        margin-top: 12px;
+      }
+    }
+
+    .parts-faq-card__txt {
+      color: b.$main-color;
+
+      @include b.mq(pc) {
+        font-size: 24px;
+        white-space: nowrap;
+      }
+      @include b.mq(lg) {
+        font-size: 30px;
+      }
+    }
+  }
+  &__a {
+    padding-top: 15px;
+    border-top: 1px solid b.$main-color;
+
+    @include b.mq(pc) {
+      border: none;
+    }
+
+    .parts-faq-card__label {
+      @include b.mq(pc) {
+        margin-top: 5px;
+      }
+    }
+
+    .parts-faq-card__txt {
+      font-size: 14px;
+
+      @include b.mq(pc) {
+        font-size: 20px;
+      }
+    }
+  }
+}
