@@ -14,17 +14,25 @@
 
       <div class="section-contact__link-box">
         <div class="section-contact__links">
-          <a href="" class="section-contact__link mail"><span class="link-icon"></span>メールでのお問い合わせ</a>
+          <?php get_template_part('template-parts/parts/parts-btn', null, [
+            'text'     => 'メールでのお問い合わせ',
+            'has_icon' => true, // これでspanが表示される
+            'class'    => 'sec-contact sec-contact-mail'
+          ]); ?>
           <span class="link-line"></span>
-          <a href="" class="section-contact__link line"><span class="link-icon"></span>LINEでのお問い合わせ</a>
+          <?php get_template_part('template-parts/parts/parts-btn', null, [
+            'text'     => 'LINEでのお問い合わせ',
+            'has_icon' => true, // これでspanが表示される
+            'class'    => 'sec-contact sec-contact-line'
+          ]); ?>
         </div>
-
         <p class="section-contact__txt">
           お支払いは、現金またはクレジットカードでの<br class="hidden-tb">ご精算となります。</p>
 
         <div class="section-contact__card-logo">
           <img src="<?php echo get_template_directory_uri(); ?>/img/contact-card-logo.png" alt="">
         </div>
+
       </div>
 
       <img src="<?php echo get_template_directory_uri(); ?>/img/contact-img.png" alt="" class="section-contact__img">
@@ -32,7 +40,6 @@
 
     </div>
     <span class="section-contact__bg-txt" aria-hidden="true">-May the journey ahead be a peaceful one.-</span>
-
   </div>
 
 </section>

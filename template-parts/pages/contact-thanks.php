@@ -27,7 +27,11 @@
 
         <div class="page-contact-thanks__link">
           <p class="page-contact-thanks__link-txt">分からないことは、公式LINEで気軽にご相談ください。<br class="br-1">状況に合わせて、必要な手順をご案内します。<br class="br-2">友だち追加はこちら。</p>
-          <a href="" class="section-contact__link line"><span class="link-icon"></span>LINEでのお問い合わせ</a>
+          <?php get_template_part('template-parts/parts/parts-btn', null, [
+            'text'     => 'LINEでのお問い合わせ',
+            'has_icon' => true, // これでspanが表示される
+            'class'    => 'sec-contact sec-contact-line'
+          ]); ?>
         </div>
       </div>
     </div>

@@ -45,9 +45,8 @@
 
     @include b.mq(pc) {
       width: 100%;
-      height: fit-content;
       max-width: 1080px;
-      max-height: 690px;
+      min-height: 690px;
       margin-inline: auto;
       align-items: start;
       flex-direction: row;
@@ -87,6 +86,7 @@
       position: absolute;
       bottom: -28px;
       left: 3.125vw;
+      z-index: 100;
     }
   }
 
@@ -114,37 +114,6 @@
         background-color: b.$sub-color-dark;
       }
     }
-  }
-
-  &__link {
-    text-align: center;
-    border-radius: 5px;
-    display: flex;
-    gap: 24px;
-    justify-content: center;
-    align-items: center;
-    padding: 14px 20px;
-    color: b.$text-color-white;
-    font-weight: 900;
-    font-size: 16px;
-    white-space: nowrap;
-    max-width: 250px;
-
-    .link-icon {
-      clip-path: polygon(0 0, 0 100%, 85% 50%);
-      background: b.$sub-color-light;
-      display: inline-block;
-      width: 10px;
-      height: 10px;
-    }
-  }
-
-  .mail {
-    background: b.$main-color;
-  }
-
-  .line {
-    background: #a6ce4f;
   }
 
   &__txt {
@@ -182,7 +151,7 @@
       padding: 0;
       max-width: 517px;
       max-height: 689px;
-      width: 100%;
+      object-fit: cover;
       flex: 1;
     }
   }

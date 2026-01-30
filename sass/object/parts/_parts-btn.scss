@@ -2,6 +2,7 @@
 @use "../../foundation/base" as b;
 
 .parts-btn {
+  width: fit-content;
   &__link {
     width: 184px;
     height: 52px;
@@ -21,5 +22,44 @@
       box-sizing: border-box;
       transition: 0.3s;
     }
+  }
+}
+
+// パーツ　セクション：コンタクト用
+.parts-btn.sec-contact {
+  .parts-btn__link {
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 20px;
+    color: b.$text-color-white;
+    font-weight: 900;
+    font-size: 16px;
+    white-space: nowrap;
+    max-width: 250px;
+
+    .link-icon {
+      clip-path: polygon(0 0, 0 100%, 85% 50%);
+      background: b.$sub-color-light;
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+    }
+  }
+}
+
+.sec-contact-mail {
+  .parts-btn__link {
+    background: b.$main-color;
+  }
+}
+.sec-contact-line {
+  .parts-btn__link {
+    background: #a6ce4f;
   }
 }
