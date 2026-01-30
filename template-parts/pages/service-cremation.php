@@ -4,7 +4,7 @@
 
   <main class="page-s-cremation">
     <?php
-    get_template_part('template-parts/block/block-pate-ttl')
+    get_template_part('template-parts/block/block-page-ttl')
     ?>
     <section class="page-s-cremation__section page-s-cremation__section--1 section fadein">
 
@@ -57,11 +57,9 @@
     <?php get_template_part('template-parts/section/section-contact'); ?>
     <!-- /コンタクト -->
 
-
     <section class="page-s-cremation__section page-s-cremation__section--4 section fadein">
 
       <div class="page-s-cremation__inner inner">
-
         <?php
         get_template_part('template-parts/parts/parts-bg-flower--right');
         ?>
@@ -145,8 +143,6 @@
 
     </section>
 
-
-
     <!-- コンタクト -->
     <?php get_template_part('template-parts/section/section-contact'); ?>
     <!-- /コンタクト -->
@@ -163,8 +159,6 @@
     <!-- コンタクト -->
     <?php get_template_part('template-parts/section/section-contact'); ?>
     <!-- /コンタクト -->
-
-
 
   </main>
 
