@@ -28,7 +28,7 @@
           <div class="page-s-cremation__card">
 
             <div class="page-s-cremation__card-img">
-              <img src="" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/cremation-sec2-1.png" alt="">
             </div>
             <h2 class="page-s-cremation__card-ttl">経験豊富な専門スタッフ</h2>
 
@@ -38,7 +38,7 @@
           <div class="page-s-cremation__card">
 
             <div class="page-s-cremation__card-img">
-              <img src="" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/cremation-sec2-2.png" alt="">
             </div>
             <h2 class="page-s-cremation__card-ttl">プライバシーに配慮したセレモニー車</h2>
 
@@ -48,7 +48,7 @@
           <div class="page-s-cremation__card">
 
             <div class="page-s-cremation__card-img">
-              <img src="" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/cremation-sec2-3.png" alt="">
             </div>
             <h2 class="page-s-cremation__card-ttl">高性能火葬炉による安全火葬</h2>
 
@@ -66,7 +66,7 @@
       <div class="page-s-cremation__inner inner">
         <h2 class="page-s-cremation__ttl">火葬後について</h2>
         <div class="page-s-cremation__img">
-          <img src="" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/cremation-sec3-1.png" alt="">
         </div>
         <p class="page-s-cremation__txt">火葬後は、ご希望に応じてお骨上げを行い、ご遺骨を骨壷にお納めしてご返骨いたします。 ご自宅でのご供養や、その後のご相談についても承っております。骨壷・骨袋（覆い袋）は料金に含まれております。 分骨カプセルやメモリアルグッズなどをご希望の場合は、事前にご案内いたします。</p>
       </div>
@@ -84,14 +84,11 @@
         get_template_part('template-parts/parts/parts-bg-flower--right');
         ?>
         <h2 class="page-s-cremation__ttl">プランについて</h2>
-        <div class="page-s-cremation__img">
-          <img src="" alt="">
-        </div>
 
         <div class="page-s-cremation__cards">
           <div class="page-s-cremation__card">
             <div class="page-s-cremation__card-img">
-              <img src="" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/cremation-sec4-1.png" alt="">
             </div>
             <h2 class="page-s-cremation__card-ttl">合同火葬</h2>
             <p class="page-s-cremation__card-txt">お預かりしたお子様を合同火葬いたします。
@@ -105,7 +102,7 @@
           </div>
           <div class="page-s-cremation__card">
             <div class="page-s-cremation__card-img">
-              <img src="" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/cremation-sec4-2.png" alt="">
             </div>
             <h2 class="page-s-cremation__card-ttl">一任個別火葬</h2>
             <p class="page-s-cremation__card-txt">個別火葬火葬後、お骨はスタッフが収骨を執り行い、骨壺にお納めしてお客様にお返しいたします。</p>
@@ -118,7 +115,7 @@
           </div>
           <div class="page-s-cremation__card">
             <div class="page-s-cremation__card-img">
-              <img src="" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/cremation-sec4-3.png" alt="">
             </div>
             <h2 class="page-s-cremation__card-ttl">立会個別火葬</h2>
             <p class="page-s-cremation__card-txt">個別火葬火葬後、お骨はご家族様で収骨を執り行い、骨壺にお納めしてお客様にお返しいたします。</p>
@@ -131,7 +128,7 @@
           </div>
           <div class="page-s-cremation__card">
             <div class="page-s-cremation__card-img">
-              <img src="" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/cremation-sec4-4.png" alt="">
             </div>
             <h2 class="page-s-cremation__card-ttl">自宅でのお別れ葬</h2>
             <p class="page-s-cremation__card-txt">立会個別火葬プランにご自宅に祭壇を準備させていただき、ゆっくりお別れをしていただきます。</p>
@@ -159,7 +156,7 @@
         <div class="page-s-cremation__cards">
           <div class="page-s-cremation__card">
             <div class="page-s-cremation__card-img">
-              <img src="" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/cremation-sec5-1.png" alt="">
             </div>
             <h2 class="page-s-cremation__card-ttl">01　もしもの時は・・・</h2>
             <h2 class="page-s-cremation__card-ttl--sub"><span></span>0120-000-000</h2>
@@ -167,28 +164,28 @@
           </div>
           <div class="page-s-cremation__card">
             <div class="page-s-cremation__card-img">
-              <img src="" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/cremation-sec5-2.png" alt="">
             </div>
             <h2 class="page-s-cremation__card-ttl">02　スタッフが専用車で訪問</h2>
             <p class="page-s-cremation__card-txt">ご自宅または近隣へお伺いし、周囲の環境を確認します。</p>
           </div>
           <div class="page-s-cremation__card">
             <div class="page-s-cremation__card-img">
-              <img src="" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/cremation-sec5-3.png" alt="">
             </div>
             <h2 class="page-s-cremation__card-ttl">03　火葬</h2>
             <p class="page-s-cremation__card-txt">最新式の火葬炉にて、静かに丁寧に火葬を行います。</p>
           </div>
           <div class="page-s-cremation__card">
             <div class="page-s-cremation__card-img">
-              <img src="" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/cremation-sec5-4.png" alt="">
             </div>
             <h2 class="page-s-cremation__card-ttl">04　お骨上げ・ご返骨</h2>
             <p class="page-s-cremation__card-txt">ご遺骨を骨壷にお納めし、ご家族様へお返しいたします。※合同火葬は、お骨上げ・ご返骨はできません。</p>
           </div>
           <div class="page-s-cremation__card">
             <div class="page-s-cremation__card-img">
-              <img src="" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/cremation-sec5-5.png" alt="">
             </div>
             <h2 class="page-s-cremation__card-ttl">05　すべて終了</h2>
             <p class="page-s-cremation__card-txt">火葬が完了し、全工程が終了となります。</p>
@@ -213,7 +210,7 @@
 
         <div class="page-s-cremation__container">
           <div class="page-s-cremation__img">
-            <img src="" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/cremation-sec6-1.png" alt="">
           </div>
 
           <div class="page-s-cremation__cards">
