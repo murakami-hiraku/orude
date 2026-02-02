@@ -64,11 +64,14 @@
     <section class="page-s-cremation__section page-s-cremation__section--3 section fadein">
 
       <div class="page-s-cremation__inner inner">
-        <h2 class="page-s-cremation__ttl">火葬後について</h2>
-        <div class="page-s-cremation__img">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/cremation-sec3-1.png" alt="">
+
+        <div class="page-s-cremation__card">
+          <h2 class="page-s-cremation__card-ttl">火葬後について</h2>
+          <div class="page-s-cremation__card-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/cremation-sec3-1.png" alt="">
+          </div>
+          <p class="page-s-cremation__card-txt">火葬後は、ご希望に応じてお骨上げを行い、ご遺骨を骨壷にお納めしてご返骨いたします。<br>ご自宅でのご供養や、その後のご相談についても承っております。<br>骨壷・骨袋（覆い袋）は料金に含まれております。<br>分骨カプセルやメモリアルグッズなどをご希望の場合は、事前にご案内いたします。</p>
         </div>
-        <p class="page-s-cremation__txt">火葬後は、ご希望に応じてお骨上げを行い、ご遺骨を骨壷にお納めしてご返骨いたします。 ご自宅でのご供養や、その後のご相談についても承っております。骨壷・骨袋（覆い袋）は料金に含まれております。 分骨カプセルやメモリアルグッズなどをご希望の場合は、事前にご案内いたします。</p>
       </div>
 
     </section>
