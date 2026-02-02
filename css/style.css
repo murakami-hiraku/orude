@@ -2757,7 +2757,44 @@ main {
 }
 .page-s-cremation__section--6 {
   margin-top: 100px;
+  padding-bottom: 50px;
 }
+.page-s-cremation__section--6 .page-s-cremation__txt {
+  margin-top: 15px;
+  line-height: 1.8;
+}
+.page-s-cremation__section--6 .page-s-cremation__txt--sub {
+  font-weight: 900;
+  font-size: 14px;
+  margin-top: 20px;
+}
+.page-s-cremation__section--6 .page-s-cremation__container {
+  background-color: #907910;
+  color: #fff;
+  margin-top: 25px;
+  padding-inline: 3.846vw;
+  padding-top: 24px;
+}
+.page-s-cremation__section--6 .page-s-cremation__cards {
+  margin-top: 80px;
+  padding-bottom: 20px;
+}
+.page-s-cremation__section--6 .page-s-cremation__card {
+  padding-block: 30px;
+}
+.page-s-cremation__section--6 .page-s-cremation__card-ttl {
+  line-height: 1.8;
+}
+.page-s-cremation__section--6 .page-s-cremation__card-txt {
+  text-align: center;
+  margin-top: 10px;
+  line-height: 1.8;
+  font-size: 14px;
+}
+.page-s-cremation__section--6 .page-s-cremation__card:last-child {
+  border-top: 1px dashed #e4e4e4;
+}
+
 .page-faq .block-page-ttl {
   position: relative;
   /* 左から20%・上↓中央の位置を中心に表示する */

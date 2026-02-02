@@ -265,27 +265,27 @@
       <div class="page-s-cremation__inner inner">
 
         <h2 class="page-s-cremation__ttl">料金プラン（目安）</h2>
-        <p class="page-s-cremation__txt">お迎えの手配からお別れの式、そしてご供養まで—— すべての工程を、私たちが責任を持ってお手伝いさせていただきます。</p>
+        <p class="page-s-cremation__txt">お迎えの手配からお別れの式、そしてご供養まで——<br>すべての工程を、私たちが責任を持ってお手伝いさせていただきます。</p>
         <p class="page-s-cremation__txt--sub">下記は目安となる税込料金です。正式なお見積りはお問い合わせ時にご案内いたします。</p>
-
-        <div class="page-s-cremation__container">
-          <div class="page-s-cremation__img">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/cremation-sec6-1.png" alt="">
-          </div>
-
-          <div class="page-s-cremation__cards">
-            <div class="page-s-cremation__card">
-              <h2 class="page-s-cremation__card-ttl">料金に含まれる内容</h2>
-              <p class="page-s-cremation__card-txt">個別葬プラン（一任個別葬・立会個別葬）には、骨壷・骨袋（覆い袋）が含まれております。合同葬プランは、お骨をお返しできません。火葬後は、一部のお骨を合同墓へお納めいたします。生花・祭壇・葬儀セレモニー等は含まれておりません。</p>
-            </div>
-            <div class="page-s-cremation__card">
-              <h2 class="page-s-cremation__card-ttl">お迎え・出張費について</h2>
-              <p class="page-s-cremation__card-txt">ご遺体のお迎えは大阪市内無料大阪市外3,300円（高速代をご請求することもございます。状況によりご相談を承っております。</p>
-            </div>
-          </div>
+      </div>
+      <div class="page-s-cremation__container">
+        <div class="page-s-cremation__img">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/cremation-sec6-1.png" alt="">
         </div>
 
+        <div class="page-s-cremation__cards">
+          <div class="page-s-cremation__card">
+            <h2 class="page-s-cremation__card-ttl">料金に含まれる内容</h2>
+            <p class="page-s-cremation__card-txt">個別葬プラン（一任個別葬・立会個別葬）には、骨壷・骨袋（覆い袋）が含まれております。<br>合同葬プランは、お骨をお返しできません。火葬後は、一部のお骨を合同墓へお納めいたします。<br>生花・祭壇・葬儀セレモニー等は含まれておりません。</p>
+          </div>
+          <div class="page-s-cremation__card">
+            <h2 class="page-s-cremation__card-ttl">お迎え・出張費について</h2>
+            <p class="page-s-cremation__card-txt">ご遺体のお迎えは<br>大阪市内　無料<br>大阪市外　3,300円（高速代をご請求することもございます。）<br>状況によりご相談を承っております。</p>
+          </div>
+        </div>
       </div>
+
+
 
     </section>
     <!-- /セクション6 -->

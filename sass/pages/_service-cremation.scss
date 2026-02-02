@@ -28,7 +28,7 @@
   // 共通スタイルーーーーーーーーーーーーーーーーーーーーーーーーー
 
   &__section {
-    // セクション１ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+    // セクション１  ご自宅近くで行う、やさしいお見送りーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
     &--1 {
       margin-top: 50px;
 
@@ -45,7 +45,7 @@
       }
     }
 
-    // セクション２ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+    // セクション２  アエル・デならではの安心品質ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
     &--2 {
       margin-top: 96px;
       .page-s-cremation {
@@ -96,7 +96,7 @@
       }
     }
 
-    // セクション３ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+    // セクション３  火葬後についてーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
     &--3 {
       margin-top: 75px;
 
@@ -129,7 +129,7 @@
       }
     }
 
-    // セクション４ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+    // セクション４  プランについてーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
     &--4 {
       .page-s-cremation {
         &__inner {
@@ -235,7 +235,7 @@
       }
     }
 
-    // セクション５ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+    // セクション５  お見送りの流れーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
     &--5 {
       margin-top: 100px;
       .page-s-cremation {
@@ -249,9 +249,6 @@
             left: 0;
             bottom: -25px;
           }
-        }
-
-        &__ttl {
         }
 
         &__cards {
@@ -299,8 +296,11 @@
         }
       }
     }
+
+    // セクション５  料金プラン（目安）ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
     &--6 {
       margin-top: 100px;
+      padding-bottom: 50px;
 
       .page-s-cremation {
         &__inner {
@@ -310,11 +310,21 @@
         }
 
         &__txt {
+          margin-top: 15px;
+          line-height: 1.8;
           &--sub {
+            font-weight: 900;
+            font-size: 14px;
+            margin-top: 20px;
           }
         }
 
         &__container {
+          background-color: b.$main-color;
+          color: b.$text-color-white;
+          margin-top: 25px;
+          padding-inline: 3.846vw;
+          padding-top: 24px;
         }
         &__img {
           img {
@@ -322,24 +332,24 @@
         }
 
         &__cards {
+          margin-top: 80px;
+          padding-bottom: 20px;
         }
         &__card {
+          padding-block: 30px;
           &-ttl {
+            line-height: 1.8;
           }
           &-txt {
+            text-align: center;
+            margin-top: 10px;
+            line-height: 1.8;
+            font-size: 14px;
           }
-        }
-      }
-    }
-    &--7 {
-      .page-s-cremation {
-        &__inner {
-        }
 
-        &__ttl {
-        }
-
-        &__content {
+          &:last-child {
+            border-top: 1px dashed b.$border-color-light;
+          }
         }
       }
     }
