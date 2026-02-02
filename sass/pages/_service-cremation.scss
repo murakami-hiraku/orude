@@ -9,10 +9,19 @@
     color: b.$main-color;
     font-size: 20px;
     text-align: center;
+
+    @include b.mq(pc) {
+      font-size: 40px;
+    }
   }
   &__txt {
     font-weight: 900;
     text-align: center;
+
+    @include b.mq(pc) {
+      font-size: 24px;
+      line-height: 1.8;
+    }
   }
 
   &__cards {
@@ -20,10 +29,18 @@
   }
   &__card-ttl {
     font-weight: 900;
+
+    @include b.mq(pc) {
+      font-size: 20px;
+    }
   }
   &__card-txt {
     font-weight: 900;
     font-size: 14px;
+
+    @include b.mq(pc) {
+      font-size: 16px;
+    }
   }
   // 共通スタイルーーーーーーーーーーーーーーーーーーーーーーーーー
 
@@ -31,6 +48,10 @@
     // セクション１  ご自宅近くで行う、やさしいお見送りーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
     &--1 {
       margin-top: 50px;
+
+      @include b.mq(pc) {
+        margin-top: 100px;
+      }
 
       .page-s-cremation {
         &__inner {
@@ -41,6 +62,10 @@
         }
         &__txt {
           margin-top: 25px;
+
+          @include b.mq(pc) {
+            margin-top: 40px;
+          }
         }
       }
     }
@@ -48,6 +73,11 @@
     // セクション２  アエル・デならではの安心品質ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
     &--2 {
       margin-top: 96px;
+
+      @include b.mq(pc) {
+        margin-top: 175px;
+      }
+
       .page-s-cremation {
         &__inner {
         }
@@ -58,6 +88,10 @@
         &__txt {
           margin-top: 15px;
           line-height: 1.8;
+
+          @include b.mq(pc) {
+            margin-top: 35px;
+          }
         }
 
         &__cards {
@@ -68,6 +102,16 @@
           justify-content: center;
           gap: 35px;
           max-width: 550px;
+          margin-inline: auto;
+
+          @include b.mq(pc) {
+            margin-top: 65px;
+            flex-direction: row;
+            max-width: 1280px;
+            align-items: stretch;
+            justify-content: center;
+            gap: 40px;
+          }
         }
         &__card {
           background: b.$main-color;
@@ -79,6 +123,11 @@
           align-items: center;
           justify-content: center;
 
+          @include b.mq(pc) {
+            flex: 1;
+            padding: 35px 25px 88px;
+          }
+
           &-img {
             padding-inline: 40px;
             img {
@@ -87,10 +136,13 @@
               object-fit: cover;
             }
           }
-          &-ttl {
-          }
+
           &-txt {
             line-height: 1.8;
+
+            @include b.mq(pc) {
+              flex-grow: 1;
+            }
           }
         }
       }
@@ -99,6 +151,10 @@
     // セクション３  火葬後についてーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
     &--3 {
       margin-top: 75px;
+
+      @include b.mq(pc) {
+        margin-top: 150px;
+      }
 
       .page-s-cremation {
         &__inner {
@@ -112,8 +168,17 @@
           gap: 20px;
           align-items: center;
           justify-content: center;
+          margin-inline: auto;
+
+          @include b.mq(pc) {
+            margin-top: 100px;
+            max-width: 1280px;
+            flex-direction: row;
+            gap: 80px;
+          }
 
           &-img {
+            max-width: 500px;
             img {
               width: 100%;
               height: 100%;
@@ -124,6 +189,11 @@
             line-height: 2;
             padding-inline: 3.846vw;
             text-align: left;
+
+            @include b.mq(pc) {
+              padding-inline: 0;
+              font-size: 20px;
+            }
           }
         }
       }
@@ -140,12 +210,21 @@
         }
 
         &__cards {
+          max-width: 550px;
           margin-top: 30px;
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
           gap: 50px;
+
+          @include b.mq(pc) {
+            margin-inline: auto;
+            max-width: 1080px;
+            gap: 75px;
+            justify-content: start;
+            align-items: start;
+          }
         }
         &__card {
           display: flex;
@@ -154,9 +233,20 @@
           justify-content: center;
           gap: 20px;
 
+          @include b.mq(pc) {
+            flex-direction: row;
+            gap: 44px;
+            align-items: end;
+          }
+
           &-img {
             padding-inline: 54px;
             width: 100%;
+
+            @include b.mq(pc) {
+              padding-inline: 0;
+              max-width: 250px;
+            }
 
             img {
               aspect-ratio: 1 / 1;
@@ -165,35 +255,60 @@
             }
           }
 
+          &-body {
+            @include b.mq(pc) {
+            }
+          }
+
           &-ttl {
             color: b.$main-color;
             font-size: 24px;
+          }
+
+          &-txt {
+            @include b.mq(pc) {
+              text-align: start;
+              margin-top: 20px;
+            }
           }
         }
 
         &__flow {
           padding-top: 5px;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          gap: 25px;
+          align-items: center;
 
-          &-container {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-            align-items: center;
+          @include b.mq(pc) {
+            flex-direction: row;
+            gap: 36px;
+            width: fit-content;
+            margin-top: 78px;
+          }
 
-            // --- 中央の線 ---
-            &::before {
-              content: "";
-              position: absolute;
-              top: 0;
-              bottom: 0;
-              left: 50%;
-              transform: translateX(-50%);
-              width: 3px; // 線の太さ
-              background-color: #333; // 線の色
-              z-index: -1; // 図形の下に配置
+          // --- 中央の線 ---
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 3px; // 線の太さ
+            background-color: #333; // 線の色
+            z-index: -1; // 図形の下に配置
+
+            @include b.mq(pc) {
+              left: 0;
+              top: 50%;
+              transform: translateY(-50%);
+              height: 3px;
+              width: 100%;
             }
           }
+
           &-step {
             width: 100px;
             height: 35px;

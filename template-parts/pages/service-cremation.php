@@ -107,11 +107,11 @@
             <div class="page-s-cremation__card-img">
               <img src="<?php echo get_template_directory_uri(); ?>/img/cremation-sec4-1.png" alt="">
             </div>
-            <h2 class="page-s-cremation__card-ttl">合同火葬</h2>
-            <p class="page-s-cremation__card-txt">お預かりしたお子様を合同火葬いたします。
-              火葬後のご遺骨の一部を合同墓へ埋葬いたします。※お骨をお返しすることはできません。</p>
-            <div class="page-s-cremation__flow">
-              <div class="page-s-cremation__flow-container">
+            <div class="page-s-cremation__card-body">
+              <h2 class="page-s-cremation__card-ttl">合同火葬</h2>
+              <p class="page-s-cremation__card-txt">お預かりしたお子様を合同火葬いたします。
+                火葬後のご遺骨の一部を合同墓へ埋葬いたします。※お骨をお返しすることはできません。</p>
+              <div class="page-s-cremation__flow">
                 <div class="page-s-cremation__flow-step step--1">お伺い
                 </div>
                 <div class="page-s-cremation__flow-step step--2">合同火葬
@@ -125,10 +125,10 @@
             <div class="page-s-cremation__card-img">
               <img src="<?php echo get_template_directory_uri(); ?>/img/cremation-sec4-2.png" alt="">
             </div>
-            <h2 class="page-s-cremation__card-ttl">一任個別火葬</h2>
-            <p class="page-s-cremation__card-txt">個別火葬火葬後、お骨はスタッフが収骨を執り行い、骨壺にお納めしてお客様にお返しいたします。</p>
-            <div class="page-s-cremation__flow">
-              <div class="page-s-cremation__flow-container">
+            <div class="page-s-cremation__card-body">
+              <h2 class="page-s-cremation__card-ttl">一任個別火葬</h2>
+              <p class="page-s-cremation__card-txt">個別火葬火葬後、お骨はスタッフが収骨を執り行い、骨壺にお納めしてお客様にお返しいたします。</p>
+              <div class="page-s-cremation__flow">
                 <div class="page-s-cremation__flow-step step--1">お伺い
                 </div>
                 <div class="page-s-cremation__flow-step step--2">個別火葬
@@ -144,10 +144,10 @@
             <div class="page-s-cremation__card-img">
               <img src="<?php echo get_template_directory_uri(); ?>/img/cremation-sec4-3.png" alt="">
             </div>
-            <h2 class="page-s-cremation__card-ttl">立会個別火葬</h2>
-            <p class="page-s-cremation__card-txt">個別火葬火葬後、お骨はご家族様で収骨を執り行い、骨壺にお納めしてお客様にお返しいたします。</p>
-            <div class="page-s-cremation__flow">
-              <div class="page-s-cremation__flow-container">
+            <div class="page-s-cremation__card-body">
+              <h2 class="page-s-cremation__card-ttl">立会個別火葬</h2>
+              <p class="page-s-cremation__card-txt">個別火葬火葬後、お骨はご家族様で収骨を執り行い、骨壺にお納めしてお客様にお返しいたします。</p>
+              <div class="page-s-cremation__flow">
                 <div class="page-s-cremation__flow-step step--1">お伺い
                 </div>
                 <div class="page-s-cremation__flow-step step--2">個別火葬
@@ -163,10 +163,10 @@
             <div class="page-s-cremation__card-img">
               <img src="<?php echo get_template_directory_uri(); ?>/img/cremation-sec4-4.png" alt="">
             </div>
-            <h2 class="page-s-cremation__card-ttl">自宅でのお別れ葬</h2>
-            <p class="page-s-cremation__card-txt">立会個別火葬プランにご自宅に祭壇を準備させていただき、ゆっくりお別れをしていただきます。</p>
-            <div class="page-s-cremation__flow">
-              <div class="page-s-cremation__flow-container">
+            <div class="page-s-cremation__card-body">
+              <h2 class="page-s-cremation__card-ttl">自宅でのお別れ葬</h2>
+              <p class="page-s-cremation__card-txt">立会個別火葬プランにご自宅に祭壇を準備させていただき、ゆっくりお別れをしていただきます。</p>
+              <div class="page-s-cremation__flow">
                 <div class="page-s-cremation__flow-step step--1">お伺い
                 </div>
                 <div class="page-s-cremation__flow-step step--2">自宅祭壇設営
