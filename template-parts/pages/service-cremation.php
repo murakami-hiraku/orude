@@ -6,6 +6,8 @@
     <?php
     get_template_part('template-parts/block/block-page-ttl')
     ?>
+
+    <!-- セクション１ -->
     <section class="page-s-cremation__section page-s-cremation__section--1 section fadein">
 
       <div class="page-s-cremation__inner inner">
@@ -18,7 +20,10 @@
       </div>
 
     </section>
+    <!-- /セクション１ -->
 
+
+    <!-- セクション2 -->
     <section class="page-s-cremation__section page-s-cremation__section--2 section fadein">
       <div class="page-s-cremation__inner inner">
         <h2 class="page-s-cremation__ttl">アエル・デならではの安心品質</h2>
@@ -60,7 +65,10 @@
       </div>
 
     </section>
+    <!-- /セクション2 -->
 
+
+    <!-- セクション3 -->
     <section class="page-s-cremation__section page-s-cremation__section--3 section fadein">
 
       <div class="page-s-cremation__inner inner">
@@ -74,11 +82,15 @@
       </div>
 
     </section>
+    <!-- /セクション3 -->
+
 
     <!-- コンタクト -->
     <?php get_template_part('template-parts/section/section-contact'); ?>
     <!-- /コンタクト -->
 
+
+    <!-- セクション4 -->
     <section class="page-s-cremation__section page-s-cremation__section--4 section fadein">
 
       <div class="page-s-cremation__inner inner">
@@ -88,7 +100,7 @@
         <h2 class="page-s-cremation__ttl">プランについて</h2>
 
         <div class="page-s-cremation__cards">
-          <div class="page-s-cremation__card">
+          <div class="page-s-cremation__card card--1">
             <div class="page-s-cremation__card-img">
               <img src="<?php echo get_template_directory_uri(); ?>/img/cremation-sec4-1.png" alt="">
             </div>
@@ -97,12 +109,16 @@
               火葬後のご遺骨の一部を合同墓へ埋葬いたします。※お骨をお返しすることはできません。</p>
             <div class="page-s-cremation__flow">
               <div class="page-s-cremation__flow-container">
-                <div class="page-s-cremation__flow-step page-s-cremation__flow-step--1">
+                <div class="page-s-cremation__flow-step step--1">お伺い
+                </div>
+                <div class="page-s-cremation__flow-step step--2">合同火葬
+                </div>
+                <div class="page-s-cremation__flow-step step--3">合同埋葬
                 </div>
               </div>
             </div>
           </div>
-          <div class="page-s-cremation__card">
+          <div class="page-s-cremation__card card--2">
             <div class="page-s-cremation__card-img">
               <img src="<?php echo get_template_directory_uri(); ?>/img/cremation-sec4-2.png" alt="">
             </div>
@@ -110,12 +126,18 @@
             <p class="page-s-cremation__card-txt">個別火葬火葬後、お骨はスタッフが収骨を執り行い、骨壺にお納めしてお客様にお返しいたします。</p>
             <div class="page-s-cremation__flow">
               <div class="page-s-cremation__flow-container">
-                <div class="page-s-cremation__flow-step page-s-cremation__flow-step--1">
+                <div class="page-s-cremation__flow-step step--1">お伺い
+                </div>
+                <div class="page-s-cremation__flow-step step--2">個別火葬
+                </div>
+                <div class="page-s-cremation__flow-step step--3">スタッフ収骨
+                </div>
+                <div class="page-s-cremation__flow-step step--4">返骨
                 </div>
               </div>
             </div>
           </div>
-          <div class="page-s-cremation__card">
+          <div class="page-s-cremation__card card--3">
             <div class="page-s-cremation__card-img">
               <img src="<?php echo get_template_directory_uri(); ?>/img/cremation-sec4-3.png" alt="">
             </div>
@@ -123,12 +145,18 @@
             <p class="page-s-cremation__card-txt">個別火葬火葬後、お骨はご家族様で収骨を執り行い、骨壺にお納めしてお客様にお返しいたします。</p>
             <div class="page-s-cremation__flow">
               <div class="page-s-cremation__flow-container">
-                <div class="page-s-cremation__flow-step page-s-cremation__flow-step--1">
+                <div class="page-s-cremation__flow-step step--1">お伺い
+                </div>
+                <div class="page-s-cremation__flow-step step--2">個別火葬
+                </div>
+                <div class="page-s-cremation__flow-step step--3">ご家族様収骨
+                </div>
+                <div class="page-s-cremation__flow-step step--4">返骨
                 </div>
               </div>
             </div>
           </div>
-          <div class="page-s-cremation__card">
+          <div class="page-s-cremation__card card--4">
             <div class="page-s-cremation__card-img">
               <img src="<?php echo get_template_directory_uri(); ?>/img/cremation-sec4-4.png" alt="">
             </div>
@@ -136,7 +164,17 @@
             <p class="page-s-cremation__card-txt">立会個別火葬プランにご自宅に祭壇を準備させていただき、ゆっくりお別れをしていただきます。</p>
             <div class="page-s-cremation__flow">
               <div class="page-s-cremation__flow-container">
-                <div class="page-s-cremation__flow-step page-s-cremation__flow-step--1">
+                <div class="page-s-cremation__flow-step step--1">お伺い
+                </div>
+                <div class="page-s-cremation__flow-step step--2">自宅祭壇設営
+                </div>
+                <div class="page-s-cremation__flow-step step--3">翌日お伺い
+                </div>
+                <div class="page-s-cremation__flow-step step--4">個別火葬
+                </div>
+                <div class="page-s-cremation__flow-step step--5">ご家族様収骨
+                </div>
+                <div class="page-s-cremation__flow-step step--6">返骨
                 </div>
               </div>
             </div>
@@ -145,12 +183,15 @@
       </div>
 
     </section>
+    <!-- /セクション4 -->
 
+
+    <!-- セクション5 -->
     <section class="page-s-cremation__section page-s-cremation__section--5 section fadein">
 
       <div class="page-s-cremation__inner inner">
         <?php
-        get_template_part('template-parts/parts/parts-bg-flower--right');
+        get_template_part('/template-parts/parts/parts-bg-flower--right');
         ?>
 
         <h2 class="page-s-cremation__ttl">お見送りの流れ</h2>
@@ -160,37 +201,49 @@
             <div class="page-s-cremation__card-img">
               <img src="<?php echo get_template_directory_uri(); ?>/img/cremation-sec5-1.png" alt="">
             </div>
-            <h2 class="page-s-cremation__card-ttl">01　もしもの時は・・・</h2>
-            <h2 class="page-s-cremation__card-ttl--sub"><span></span>0120-000-000</h2>
-            <p class="page-s-cremation__card-txt">営業時間：10:00~20:00<br>定休日：不定休</p>
+            <div class="page-s-cremation__card-body">
+              <h2 class="page-s-cremation__card-ttl">01　もしもの時は・・・</h2>
+              <?php
+              get_template_part('/template-parts/parts/parts-tel--primary.php')
+              ?>
+              <p class="page-s-cremation__card-txt">営業時間：10:00~20:00<br>定休日：不定休</p>
+            </div>
           </div>
           <div class="page-s-cremation__card">
             <div class="page-s-cremation__card-img">
               <img src="<?php echo get_template_directory_uri(); ?>/img/cremation-sec5-2.png" alt="">
             </div>
-            <h2 class="page-s-cremation__card-ttl">02　スタッフが専用車で訪問</h2>
-            <p class="page-s-cremation__card-txt">ご自宅または近隣へお伺いし、周囲の環境を確認します。</p>
+            <div class="page-s-cremation__card-body">
+              <h2 class="page-s-cremation__card-ttl">02　スタッフが専用車で訪問</h2>
+              <p class="page-s-cremation__card-txt">ご自宅または近隣へお伺いし、周囲の環境を確認します。</p>
+            </div>
           </div>
           <div class="page-s-cremation__card">
             <div class="page-s-cremation__card-img">
               <img src="<?php echo get_template_directory_uri(); ?>/img/cremation-sec5-3.png" alt="">
             </div>
-            <h2 class="page-s-cremation__card-ttl">03　火葬</h2>
-            <p class="page-s-cremation__card-txt">最新式の火葬炉にて、静かに丁寧に火葬を行います。</p>
+            <div class="page-s-cremation__card-body">
+              <h2 class="page-s-cremation__card-ttl">03　火葬</h2>
+              <p class="page-s-cremation__card-txt">最新式の火葬炉にて、静かに丁寧に火葬を行います。</p>
+            </div>
           </div>
           <div class="page-s-cremation__card">
             <div class="page-s-cremation__card-img">
               <img src="<?php echo get_template_directory_uri(); ?>/img/cremation-sec5-4.png" alt="">
             </div>
-            <h2 class="page-s-cremation__card-ttl">04　お骨上げ・ご返骨</h2>
-            <p class="page-s-cremation__card-txt">ご遺骨を骨壷にお納めし、ご家族様へお返しいたします。※合同火葬は、お骨上げ・ご返骨はできません。</p>
+            <div class="page-s-cremation__card-body">
+              <h2 class="page-s-cremation__card-ttl">04　お骨上げ・ご返骨</h2>
+              <p class="page-s-cremation__card-txt">ご遺骨を骨壷にお納めし、ご家族様へお返しいたします。※合同火葬は、お骨上げ・ご返骨はできません。</p>
+            </div>
           </div>
           <div class="page-s-cremation__card">
             <div class="page-s-cremation__card-img">
               <img src="<?php echo get_template_directory_uri(); ?>/img/cremation-sec5-5.png" alt="">
             </div>
-            <h2 class="page-s-cremation__card-ttl">05　すべて終了</h2>
-            <p class="page-s-cremation__card-txt">火葬が完了し、全工程が終了となります。</p>
+            <div class="page-s-cremation__card-body">
+              <h2 class="page-s-cremation__card-ttl">05　すべて終了</h2>
+              <p class="page-s-cremation__card-txt">火葬が完了し、全工程が終了となります。</p>
+            </div>
           </div>
         </div>
 
@@ -201,7 +254,9 @@
       </div>
 
     </section>
+    <!-- /セクション5 -->
 
+    <!-- セクション6 -->
     <section class="page-s-cremation__section page-s-cremation__section--6 section fadein">
 
       <div class="page-s-cremation__inner inner">
@@ -230,23 +285,8 @@
       </div>
 
     </section>
+    <!-- /セクション6 -->
 
-    <!-- コンタクト -->
-    <?php get_template_part('template-parts/section/section-contact'); ?>
-    <!-- /コンタクト -->
-
-    <section class="page-s-cremation__section page-s-cremation__section--7 section fadein">
-
-      <div class="page-s-cremation__inner inner">
-        <h2 class="page-s-cremation__ttl">よくあるご質問（FAQ）</h2>
-        <div class="page-s-cremation__content">
-          <?php
-          get_template_part('template-parts/parts/parts-faq-1')
-          ?>
-        </div>
-      </div>
-
-    </section>
 
     <!-- コンタクト -->
     <?php get_template_part('template-parts/section/section-contact'); ?>

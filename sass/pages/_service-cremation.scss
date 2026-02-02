@@ -4,23 +4,31 @@
 .page-s-cremation {
   // 共通スタイルーーーーーーーーーーーーーーーーーーーーーーーーー
 
-  font-weight: 900;
-
   &__ttl {
+    font-weight: 900;
     color: b.$main-color;
     font-size: 20px;
     text-align: center;
   }
   &__txt {
+    font-weight: 900;
     text-align: center;
   }
 
+  &__cards {
+    max-width: 550px;
+  }
+  &__card-ttl {
+    font-weight: 900;
+  }
   &__card-txt {
+    font-weight: 900;
     font-size: 14px;
   }
   // 共通スタイルーーーーーーーーーーーーーーーーーーーーーーーーー
 
   &__section {
+    // セクション１ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
     &--1 {
       margin-top: 50px;
 
@@ -37,6 +45,7 @@
       }
     }
 
+    // セクション２ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
     &--2 {
       margin-top: 96px;
       .page-s-cremation {
@@ -86,6 +95,8 @@
         }
       }
     }
+
+    // セクション３ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
     &--3 {
       margin-top: 75px;
 
@@ -117,39 +128,116 @@
         }
       }
     }
+
+    // セクション４ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
     &--4 {
       .page-s-cremation {
         &__inner {
-        }
-
-        &__ttl {
+          .parts-bg-flower {
+            right: 0;
+            top: -15px;
+          }
         }
 
         &__cards {
+          margin-top: 30px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 50px;
         }
         &__card {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 20px;
+
           &-img {
+            padding-inline: 54px;
+            width: 100%;
+
             img {
+              aspect-ratio: 1 / 1;
+              width: 100%;
+              object-fit: cover;
             }
           }
 
           &-ttl {
-          }
-          &-txt {
+            color: b.$main-color;
+            font-size: 24px;
           }
         }
 
         &__flow {
+          padding-top: 5px;
+
           &-container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            align-items: center;
+
+            // --- 中央の線 ---
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              left: 50%;
+              transform: translateX(-50%);
+              width: 3px; // 線の太さ
+              background-color: #333; // 線の色
+              z-index: -1; // 図形の下に配置
+            }
           }
           &-step {
-            &--1 {
+            width: 100px;
+            height: 35px;
+            background: #333333;
+            font-weight: 900;
+            font-size: 18px;
+            color: b.$sub-color-light;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:first-child {
+              background: b.$main-color;
+            }
+            &:last-child {
+              background: b.$main-color;
             }
           }
         }
       }
+      .card--2 {
+        .step--3 {
+          font-size: 14px;
+        }
+      }
+
+      .card--3 {
+        .step--3 {
+          font-size: 14px;
+        }
+      }
+
+      .card--4 {
+        .step--2,
+        .step--3,
+        .step--5 {
+          font-size: 14px;
+        }
+      }
     }
+
+    // セクション５ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
     &--5 {
+      margin-top: 100px;
       .page-s-cremation {
         &__inner {
         }
@@ -158,18 +246,46 @@
         }
 
         &__cards {
+          margin-top: 35px;
+          padding-inline: 30px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 35px;
         }
         &__card {
+          box-shadow: 0px 4px 4px 0px #00000040;
+
           &-img {
+            width: 100%;
             img {
+              aspect-ratio: 300 / 250;
+              width: 100%;
+              object-fit: cover;
+            }
+          }
+
+          &-body {
+            padding-top: 35px;
+            padding-bottom: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            align-items: center;
+            justify-content: center;
+
+            .parts-tel {
             }
           }
 
           &-ttl {
-            &--sub {
-            }
+            color: b.$main-color;
+            font-size: 20px;
           }
           &-txt {
+            line-height: 1.8;
+            padding-inline: 25px;
           }
         }
       }

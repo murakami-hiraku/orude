@@ -2451,18 +2451,24 @@ main {
   }
 }
 
-.page-s-cremation {
-  font-weight: 900;
-}
 .page-s-cremation__ttl {
+  font-weight: 900;
   color: #907910;
   font-size: 20px;
   text-align: center;
 }
 .page-s-cremation__txt {
+  font-weight: 900;
   text-align: center;
 }
+.page-s-cremation__cards {
+  max-width: 550px;
+}
+.page-s-cremation__card-ttl {
+  font-weight: 900;
+}
 .page-s-cremation__card-txt {
+  font-weight: 900;
   font-size: 14px;
 }
 .page-s-cremation__section--1 {
@@ -2565,6 +2571,180 @@ main {
   line-height: 2;
   padding-inline: 3.846vw;
   text-align: left;
+}
+.page-s-cremation__section--4 .page-s-cremation__inner .parts-bg-flower {
+  right: 0;
+  top: -15px;
+}
+.page-s-cremation__section--4 .page-s-cremation__cards {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+}
+.page-s-cremation__section--4 .page-s-cremation__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+.page-s-cremation__section--4 .page-s-cremation__card-img {
+  padding-inline: 54px;
+  width: 100%;
+}
+.page-s-cremation__section--4 .page-s-cremation__card-img img {
+  aspect-ratio: 1/1;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.page-s-cremation__section--4 .page-s-cremation__card-ttl {
+  color: #907910;
+  font-size: 24px;
+}
+.page-s-cremation__section--4 .page-s-cremation__flow {
+  padding-top: 5px;
+}
+.page-s-cremation__section--4 .page-s-cremation__flow-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.page-s-cremation__section--4 .page-s-cremation__flow-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 3px;
+  background-color: #333;
+  z-index: -1;
+}
+.page-s-cremation__section--4 .page-s-cremation__flow-step {
+  width: 100px;
+  height: 35px;
+  background: #333333;
+  font-weight: 900;
+  font-size: 18px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.page-s-cremation__section--4 .page-s-cremation__flow-step:first-child {
+  background: #907910;
+}
+.page-s-cremation__section--4 .page-s-cremation__flow-step:last-child {
+  background: #907910;
+}
+.page-s-cremation__section--4 .card--2 .step--3 {
+  font-size: 14px;
+}
+.page-s-cremation__section--4 .card--3 .step--3 {
+  font-size: 14px;
+}
+.page-s-cremation__section--4 .card--4 .step--2,
+.page-s-cremation__section--4 .card--4 .step--3,
+.page-s-cremation__section--4 .card--4 .step--5 {
+  font-size: 14px;
+}
+.page-s-cremation__section--5 {
+  margin-top: 100px;
+}
+.page-s-cremation__section--5 .page-s-cremation__cards {
+  margin-top: 35px;
+  padding-inline: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 35px;
+}
+.page-s-cremation__section--5 .page-s-cremation__card {
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+}
+.page-s-cremation__section--5 .page-s-cremation__card-img {
+  width: 100%;
+}
+.page-s-cremation__section--5 .page-s-cremation__card-img img {
+  aspect-ratio: 300/250;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.page-s-cremation__section--5 .page-s-cremation__card-body {
+  padding-top: 35px;
+  padding-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 18px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.page-s-cremation__section--5 .page-s-cremation__card-ttl {
+  color: #907910;
+  font-size: 20px;
+}
+.page-s-cremation__section--5 .page-s-cremation__card-txt {
+  line-height: 1.8;
+  padding-inline: 25px;
 }
 .page-faq .block-page-ttl {
   position: relative;
