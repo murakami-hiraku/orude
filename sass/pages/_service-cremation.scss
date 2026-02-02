@@ -1,2 +1,174 @@
 @use "sass:map";
 @use "../foundation/base" as b;
+
+.page-s-cremation {
+  &__section {
+    &--1 {
+      margin-top: 50px;
+
+      .page-s-cremation {
+        &__inner {
+          .parts-bg-circle {
+            right: -50px;
+            top: -80px;
+          }
+        }
+
+        &__ttl {
+          color: b.$main-color;
+          font-weight: 900;
+          font-size: 20px;
+          text-align: center;
+        }
+
+        &__txt {
+          margin-top: 25px;
+          font-weight: 900;
+          text-align: center;
+        }
+      }
+    }
+
+    &--2 {
+      .page-s-cremation {
+        &__inner {
+        }
+
+        &__ttl {
+        }
+
+        &__txt {
+        }
+
+        &__cards {
+        }
+        &__card {
+        }
+        &__card-img {
+          img {
+          }
+        }
+        &__card-ttl {
+        }
+        &__card-txt {
+        }
+      }
+    }
+    &--3 {
+      .page-s-cremation {
+        &__inner {
+        }
+
+        &__ttl {
+        }
+
+        &__img {
+          img {
+          }
+        }
+
+        &__txt {
+        }
+      }
+    }
+    &--4 {
+      .page-s-cremation {
+        &__inner {
+        }
+
+        &__ttl {
+        }
+
+        &__cards {
+        }
+        &__card {
+          &-img {
+            img {
+            }
+          }
+
+          &-ttl {
+          }
+          &-txt {
+          }
+        }
+
+        &__flow {
+          &-container {
+          }
+          &-step {
+            &--1 {
+            }
+          }
+        }
+      }
+    }
+    &--5 {
+      .page-s-cremation {
+        &__inner {
+        }
+
+        &__ttl {
+        }
+
+        &__cards {
+        }
+        &__card {
+          &-img {
+            img {
+            }
+          }
+
+          &-ttl {
+            &--sub {
+            }
+          }
+          &-txt {
+          }
+        }
+      }
+    }
+    &--6 {
+      .page-s-cremation {
+        &__inner {
+        }
+
+        &__ttl {
+        }
+
+        &__txt {
+          &--sub {
+          }
+        }
+
+        &__container {
+        }
+        &__img {
+          img {
+          }
+        }
+
+        &__cards {
+        }
+        &__card {
+          &-ttl {
+          }
+          &-txt {
+          }
+        }
+      }
+    }
+    &--7 {
+      .page-s-cremation {
+        &__inner {
+        }
+
+        &__ttl {
+        }
+
+        &__content {
+        }
+      }
+    }
+  }
+}
