@@ -2503,7 +2503,7 @@ main {
 .page-s-cremation__section--2 .page-s-cremation__card {
   background: #907910;
   color: #fff;
-  padding: 5.13vw 3.846vw;
+  padding: 20px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2520,8 +2520,7 @@ main {
           justify-content: center;
 }
 .page-s-cremation__section--2 .page-s-cremation__card-img {
-  width: 250px;
-  height: 250px;
+  padding-inline: 40px;
 }
 .page-s-cremation__section--2 .page-s-cremation__card-img img {
   width: 100%;
