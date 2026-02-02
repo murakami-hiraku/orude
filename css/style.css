@@ -2535,6 +2535,9 @@ main {
 .page-s-cremation__section--3 {
   margin-top: 75px;
 }
+.page-s-cremation__section--3 .page-s-cremation__inner {
+  padding-bottom: 50px;
+}
 .page-s-cremation__section--3 .page-s-cremation__card {
   margin-top: 20px;
   max-width: 550px;
