@@ -64,9 +64,8 @@
     <section class="page-s-cremation__section page-s-cremation__section--3 section fadein">
 
       <div class="page-s-cremation__inner inner">
-
+        <h2 class="page-s-cremation__ttl">火葬後について</h2>
         <div class="page-s-cremation__card">
-          <h2 class="page-s-cremation__card-ttl">火葬後について</h2>
           <div class="page-s-cremation__card-img">
             <img src="<?php echo get_template_directory_uri(); ?>/img/cremation-sec3-1.png" alt="">
           </div>
