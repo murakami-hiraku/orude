@@ -133,7 +133,7 @@
     &--4 {
       .page-s-cremation {
         &__inner {
-          .parts-bg-flower {
+          .parts-bg-flower--right {
             right: 0;
             top: -15px;
           }
@@ -240,6 +240,15 @@
       margin-top: 100px;
       .page-s-cremation {
         &__inner {
+          .parts-bg-flower--right {
+            right: 0;
+            top: -15px;
+          }
+
+          .parts-bg-flower--left {
+            left: 0;
+            bottom: -25px;
+          }
         }
 
         &__ttl {
@@ -291,6 +300,8 @@
       }
     }
     &--6 {
+      margin-top: 100px;
+
       .page-s-cremation {
         &__inner {
         }

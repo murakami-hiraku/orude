@@ -67,6 +67,7 @@ main {
 }
 
 .inner {
+  position: relative;
   max-width: 1680px;
   margin-inline: auto;
   padding-inline: clamp(15px, 3.85vw, 120px);
@@ -2572,7 +2573,7 @@ main {
   padding-inline: 3.846vw;
   text-align: left;
 }
-.page-s-cremation__section--4 .page-s-cremation__inner .parts-bg-flower {
+.page-s-cremation__section--4 .page-s-cremation__inner .parts-bg-flower--right {
   right: 0;
   top: -15px;
 }
@@ -2689,6 +2690,14 @@ main {
 .page-s-cremation__section--5 {
   margin-top: 100px;
 }
+.page-s-cremation__section--5 .page-s-cremation__inner .parts-bg-flower--right {
+  right: 0;
+  top: -15px;
+}
+.page-s-cremation__section--5 .page-s-cremation__inner .parts-bg-flower--left {
+  left: 0;
+  bottom: -25px;
+}
 .page-s-cremation__section--5 .page-s-cremation__cards {
   margin-top: 35px;
   padding-inline: 30px;
@@ -2745,6 +2754,9 @@ main {
 .page-s-cremation__section--5 .page-s-cremation__card-txt {
   line-height: 1.8;
   padding-inline: 25px;
+}
+.page-s-cremation__section--6 {
+  margin-top: 100px;
 }
 .page-faq .block-page-ttl {
   position: relative;

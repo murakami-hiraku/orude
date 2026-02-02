@@ -61,6 +61,9 @@
 
           </div>
         </div>
+        <?php
+        get_template_part('template-parts/parts/parts-bg-flower--left');
+        ?>
 
       </div>
 
