@@ -600,6 +600,7 @@
         &__cards {
           margin-top: 80px;
           padding-bottom: 20px;
+          max-width: none;
 
           @include b.mq(pc) {
             margin-top: 115px;
