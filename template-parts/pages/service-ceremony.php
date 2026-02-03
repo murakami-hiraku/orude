@@ -28,7 +28,7 @@
         <p class="page-s-ceremony__txt">ご葬儀とは、火葬の前にその子に心を届ける儀式の時間。</p>
         <p class="page-s-ceremony__txt--sub sub-1">「ありがとう」「またね」「大好きだよ」——その想いを、静かに、丁寧に伝える場をご用意します。</p>
         <div class="page-s-ceremony__img">
-          <img src="" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/ceremony-sec2-1.png" alt="">
         </div>
         <p class="page-s-ceremony__txt--sub sub-2">大切なのは“その子に寄り添う”こと。ご希望やご事情を伺いながら、最適なセレモニーを一緒に創ってまいります。</p>
 
@@ -48,22 +48,22 @@
 
           <div class="page-s-ceremony__card">
             <div class="page-s-ceremony__card-img">
-              <img src="" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/ceremony-sec3-1.png" alt="">
             </div>
             <h2 class="page-s-ceremony__card-ttl">セレモニープランA</h2>
             <p class="page-s-ceremony__card-txt">花籠を用いた、やさしく温かな飾り付けのセレモニーです。コンパクトながらもお花に囲まれた空間で、静かにお別れいただけます。</p>
             <p class="page-s-ceremony__card-price">55,000円（税込）〜</p>
             <div class="page-s-ceremony__card-img--sub">
-              <img src="" alt="">
-              <img src="" alt="">
-              <img src="" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/ceremony-sec3-2.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/ceremony-sec3-1.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/ceremony-sec3-3.png" alt="">
             </div>
             <p class="page-s-ceremony__card-txt--sub">※花籠については、以下の3色からお選びいただけます。・ピンク　　・イエロー　　・ブルーお子様のイメージやご家族のお気持ちに合わせてお選びください。</p>
           </div>
 
           <div class="page-s-ceremony__card">
             <div class="page-s-ceremony__card-img">
-              <img src="" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/ceremony-sec3-4.png" alt="">
             </div>
             <h2 class="page-s-ceremony__card-ttl">セレモニープランB</h2>
             <p class="page-s-ceremony__card-txt">アーチ型のフラワー装飾を用いた、より華やかなセレモニーです。その子らしさや、ご家族の想いを表現した特別な空間を演出します。</p>
@@ -90,7 +90,7 @@
         <div class="page-s-ceremony__cards">
           <div class="page-s-ceremony__card">
             <div class="page-s-ceremony__card-img">
-              <img src="" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/ceremony-sec4-1.png" alt="">
             </div>
             <h2 class="page-s-ceremony__card-ttl">01　お問い合わせ</h2>
             <p class="page-s-ceremony__card-txt">お子様がお亡くなりになったら、まずはオルデまでご連絡ください。お電話やLINE、メールからお問い合わせいただけます。専任スタッフが状況をお伺いし、ご葬儀の内容や日程、ご希望のセレモニースタイルについて丁寧にご案内いたします。初めてのことで不安なことや分からないことがあれば、どんなことでもお話しください。</p>
@@ -98,7 +98,7 @@
           </div>
           <div class="page-s-ceremony__card">
             <div class="page-s-ceremony__card-img">
-              <img src="" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/ceremony-sec4-2.png" alt="">
             </div>
             <h2 class="page-s-ceremony__card-ttl">02　打ち合わせ</h2>
             <p class="page-s-ceremony__card-txt">ご希望のセレモニープランや飾り付け、お花の色、当日の流れについて打ち合わせを行います。「どのように送り出してあげたいか」「どんな時間を過ごしたいか」など、ご家族様の想いを大切にしながら内容を決めていきます。形式にとらわれず、その子らしいお別れができるよう、細かな部分までご相談いただけます。</p>
@@ -106,7 +106,7 @@
           </div>
           <div class="page-s-ceremony__card">
             <div class="page-s-ceremony__card-img">
-              <img src="" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/ceremony-sec4-3.png" alt="">
             </div>
             <h2 class="page-s-ceremony__card-ttl">03　お伺い・設営</h2>
             <p class="page-s-ceremony__card-txt">ご葬儀当日、スタッフがご自宅またはご指定の場所へお伺いします。セレモニーに必要な祭壇や飾り付けを丁寧に設営し、落ち着いてお別れの時間を過ごしていただける空間を整えます。準備が整いましたら、ご家族様だけの静かなセレモニーの時間が始まります。慌ただしさのない、ゆっくりとしたひとときをお過ごしください。</p>
