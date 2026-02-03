@@ -2703,6 +2703,7 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 50px;
+  margin-inline: auto;
 }
 @media (min-width: 1024px) {
   .page-s-cremation__section--4 .page-s-cremation__cards {
@@ -2762,8 +2763,18 @@ main {
      object-fit: cover;
 }
 .page-s-cremation__section--4 .page-s-cremation__card-ttl {
+  text-align: center;
   color: #907910;
   font-size: 24px;
+}
+@media (min-width: 1024px) {
+  .page-s-cremation__section--4 .page-s-cremation__card-ttl {
+    text-align: start;
+  }
+}
+.page-s-cremation__section--4 .page-s-cremation__card-txt {
+  text-align: center;
+  margin-top: 20px;
 }
 @media (min-width: 1024px) {
   .page-s-cremation__section--4 .page-s-cremation__card-txt {
@@ -2771,8 +2782,35 @@ main {
     margin-top: 20px;
   }
 }
+@media (min-width: 1024px) {
+  .page-s-cremation__section--4 .page-s-cremation__card.card--4 .page-s-cremation__flow {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 20px 36px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .page-s-cremation__section--4 .page-s-cremation__card.card--4 .page-s-cremation__flow-step:nth-child(4) {
+    grid-column: 2;
+  }
+  .page-s-cremation__section--4 .page-s-cremation__card.card--4 .page-s-cremation__flow::before {
+    content: none;
+  }
+}
+@media (min-width: 1440px) {
+  .page-s-cremation__section--4 .page-s-cremation__card.card--4 .page-s-cremation__flow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    grid-template-columns: none;
+  }
+  .page-s-cremation__section--4 .page-s-cremation__card.card--4 .page-s-cremation__flow::before {
+    content: "";
+  }
+}
 .page-s-cremation__section--4 .page-s-cremation__flow {
-  padding-top: 5px;
+  margin-top: 25px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2899,13 +2937,13 @@ main {
   gap: 35px;
   max-width: 550px;
   width: 100%;
+  margin-inline: auto;
 }
 @media (min-width: 1024px) {
   .page-s-cremation__section--5 .page-s-cremation__cards {
     margin-top: 40px;
     gap: 50px;
     padding: 0;
-    margin-inline: auto;
     max-width: 1080px;
   }
 }

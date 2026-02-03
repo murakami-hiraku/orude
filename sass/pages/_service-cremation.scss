@@ -226,6 +226,7 @@
           align-items: center;
           justify-content: center;
           gap: 50px;
+          margin-inline: auto;
 
           @include b.mq(pc) {
             margin-inline: auto;
@@ -270,20 +271,58 @@
           }
 
           &-ttl {
+            text-align: center;
             color: b.$main-color;
             font-size: 24px;
+
+            @include b.mq(pc) {
+              text-align: start;
+            }
           }
 
           &-txt {
+            text-align: center;
+            margin-top: 20px;
             @include b.mq(pc) {
               text-align: start;
               margin-top: 20px;
             }
           }
+
+          &.card--4 {
+            // card--4の時だけ、その中にあるflowを制御
+            .page-s-cremation__flow {
+              @include b.mq(pc) {
+                display: grid;
+                // 1列ずらすスペースを作るため、3列ではなく「4列」定義します
+                grid-template-columns: repeat(4, 100px);
+                gap: 20px 36px;
+                width: fit-content;
+
+                // 4つ目の要素（2行目の最初）を「2列目」から開始させる
+                &-step:nth-child(4) {
+                  grid-column: 2;
+                }
+                // 2行になるので背景の線を消す
+                &::before {
+                  content: none;
+                }
+              }
+
+              @include b.mq(lg) {
+                display: flex;
+                grid-template-columns: none;
+
+                &::before {
+                  content: "";
+                }
+              }
+            }
+          }
         }
 
         &__flow {
-          padding-top: 5px;
+          margin-top: 25px;
           position: relative;
           display: flex;
           flex-direction: column;
@@ -397,12 +436,12 @@
           gap: 35px;
           max-width: 550px;
           width: 100%;
+          margin-inline: auto;
 
           @include b.mq(pc) {
             margin-top: 40px;
             gap: 50px;
             padding: 0;
-            margin-inline: auto;
             max-width: 1080px;
           }
         }
