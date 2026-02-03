@@ -2849,6 +2849,11 @@ main {
 .page-s-cremation__section--5 {
   margin-top: 100px;
 }
+@media (min-width: 1024px) {
+  .page-s-cremation__section--5 {
+    margin-top: 200px;
+  }
+}
 .page-s-cremation__section--5 .page-s-cremation__inner .parts-bg-flower--right {
   right: 0;
   top: -15px;
@@ -2874,13 +2879,44 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 35px;
+  max-width: 550px;
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .page-s-cremation__section--5 .page-s-cremation__cards {
+    margin-top: 40px;
+    gap: 50px;
+    padding: 0;
+    margin-inline: auto;
+    max-width: 1080px;
+  }
 }
 .page-s-cremation__section--5 .page-s-cremation__card {
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
 }
+@media (min-width: 1024px) {
+  .page-s-cremation__section--5 .page-s-cremation__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    gap: 50px;
+    width: 100%;
+  }
+}
 .page-s-cremation__section--5 .page-s-cremation__card-img {
   width: 100%;
+}
+@media (min-width: 1024px) {
+  .page-s-cremation__section--5 .page-s-cremation__card-img {
+    max-width: 300px;
+  }
 }
 .page-s-cremation__section--5 .page-s-cremation__card-img img {
   aspect-ratio: 300/250;
@@ -2906,13 +2942,57 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.page-s-cremation__section--5 .page-s-cremation__card-body .parts-tel {
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 1024px) {
+  .page-s-cremation__section--5 .page-s-cremation__card-body .parts-tel {
+    padding-left: 50px;
+  }
+}
+@media (min-width: 1024px) {
+  .page-s-cremation__section--5 .page-s-cremation__card-body {
+    gap: 25px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
 .page-s-cremation__section--5 .page-s-cremation__card-ttl {
   color: #907910;
   font-size: 20px;
 }
+@media (min-width: 1024px) {
+  .page-s-cremation__section--5 .page-s-cremation__card-ttl {
+    font-size: 24px;
+  }
+}
 .page-s-cremation__section--5 .page-s-cremation__card-txt {
   line-height: 1.8;
   padding-inline: 25px;
+}
+@media (min-width: 1024px) {
+  .page-s-cremation__section--5 .page-s-cremation__card-txt {
+    padding-inline: 0;
+    font-size: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .page-s-cremation__section--5 .page-s-cremation__card .is-pad {
+    padding-left: 50px;
+  }
+}
+.page-s-cremation__section--5 .page-s-cremation .card-4 br {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .page-s-cremation__section--5 .page-s-cremation .card-4 br {
+    display: block;
+  }
 }
 .page-s-cremation__section--6 {
   margin-top: 100px;
@@ -2922,10 +3002,23 @@ main {
   margin-top: 15px;
   line-height: 1.8;
 }
+@media (min-width: 1024px) {
+  .page-s-cremation__section--6 .page-s-cremation__txt {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+}
 .page-s-cremation__section--6 .page-s-cremation__txt--sub {
+  text-align: center;
   font-weight: 900;
   font-size: 14px;
   margin-top: 20px;
+}
+@media (min-width: 1024px) {
+  .page-s-cremation__section--6 .page-s-cremation__txt--sub {
+    margin-top: 20px;
+    font-size: 16px;
+  }
 }
 .page-s-cremation__section--6 .page-s-cremation__container {
   background-color: #907910;
@@ -2934,21 +3027,66 @@ main {
   padding-inline: 3.846vw;
   padding-top: 24px;
 }
+@media (min-width: 1024px) {
+  .page-s-cremation__section--6 .page-s-cremation__container {
+    max-width: 1280px;
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: 160px;
+    padding-top: 50px;
+  }
+}
+.page-s-cremation__section--6 .page-s-cremation__img {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .page-s-cremation__section--6 .page-s-cremation__img {
+    max-width: 774px;
+    margin-inline: auto;
+  }
+}
+.page-s-cremation__section--6 .page-s-cremation__img img {
+  width: 100%;
+}
 .page-s-cremation__section--6 .page-s-cremation__cards {
   margin-top: 80px;
   padding-bottom: 20px;
 }
+@media (min-width: 1024px) {
+  .page-s-cremation__section--6 .page-s-cremation__cards {
+    margin-top: 115px;
+    padding-bottom: 10px;
+    max-width: 960px;
+    margin-inline: auto;
+  }
+}
 .page-s-cremation__section--6 .page-s-cremation__card {
   padding-block: 30px;
+}
+@media (min-width: 1024px) {
+  .page-s-cremation__section--6 .page-s-cremation__card {
+    padding-block: 40px;
+  }
 }
 .page-s-cremation__section--6 .page-s-cremation__card-ttl {
   line-height: 1.8;
 }
+@media (min-width: 1024px) {
+  .page-s-cremation__section--6 .page-s-cremation__card-ttl {
+    font-size: 20px;
+  }
+}
 .page-s-cremation__section--6 .page-s-cremation__card-txt {
-  text-align: center;
+  text-align: left;
   margin-top: 10px;
   line-height: 1.8;
   font-size: 14px;
+}
+@media (min-width: 1024px) {
+  .page-s-cremation__section--6 .page-s-cremation__card-txt {
+    margin-top: 15px;
+    font-size: 16px;
+  }
 }
 .page-s-cremation__section--6 .page-s-cremation__card:last-child {
   border-top: 1px dashed #e4e4e4;

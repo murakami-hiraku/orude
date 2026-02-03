@@ -207,9 +207,9 @@
             <div class="page-s-cremation__card-body">
               <h2 class="page-s-cremation__card-ttl">01　もしもの時は・・・</h2>
               <?php
-              get_template_part('/template-parts/parts/parts-tel--primary.php')
+              get_template_part('/template-parts/parts/parts-tel--primary')
               ?>
-              <p class="page-s-cremation__card-txt">営業時間：10:00~20:00<br>定休日：不定休</p>
+              <p class="page-s-cremation__card-txt is-pad">営業時間：10:00~20:00<br class="hidden-pc">定休日：不定休</p>
             </div>
           </div>
           <div class="page-s-cremation__card">
@@ -230,13 +230,13 @@
               <p class="page-s-cremation__card-txt">最新式の火葬炉にて、静かに丁寧に火葬を行います。</p>
             </div>
           </div>
-          <div class="page-s-cremation__card">
+          <div class="page-s-cremation__card card-4">
             <div class="page-s-cremation__card-img">
               <img src="<?php echo get_template_directory_uri(); ?>/img/cremation-sec5-4.png" alt="">
             </div>
             <div class="page-s-cremation__card-body">
               <h2 class="page-s-cremation__card-ttl">04　お骨上げ・ご返骨</h2>
-              <p class="page-s-cremation__card-txt">ご遺骨を骨壷にお納めし、ご家族様へお返しいたします。※合同火葬は、お骨上げ・ご返骨はできません。</p>
+              <p class="page-s-cremation__card-txt">ご遺骨を骨壷にお納めし、ご家族様へお返しいたします。<br>※合同火葬は、お骨上げ・ご返骨はできません。</p>
             </div>
           </div>
           <div class="page-s-cremation__card">
