@@ -1,2 +1,72 @@
 @use "sass:map";
 @use "../foundation/base" as b;
+
+.page-s-ceremony {
+  .block-page-ttl {
+    background-position: 50% center;
+    background-size: cover;
+
+    @include b.mq(pc) {
+      background-position: center center;
+
+      br {
+        display: none;
+      }
+    }
+  }
+
+  // 共通スタイルーーーーーーーーーーーーーーーーーーーーーーーーー
+
+  &__ttl {
+    font-weight: 900;
+    color: b.$main-color;
+    font-size: 20px;
+    text-align: center;
+
+    @include b.mq(pc) {
+      font-size: 40px;
+    }
+  }
+  &__txt {
+    font-weight: 900;
+    text-align: center;
+
+    @include b.mq(pc) {
+      font-size: 24px;
+      line-height: 1.8;
+    }
+  }
+
+  &__cards {
+    max-width: 550px;
+  }
+  &__card-ttl {
+    font-weight: 900;
+
+    @include b.mq(pc) {
+      font-size: 20px;
+    }
+  }
+  &__card-txt {
+    font-weight: 900;
+    font-size: 14px;
+
+    @include b.mq(pc) {
+      font-size: 16px;
+    }
+  }
+  // 共通スタイルーーーーーーーーーーーーーーーーーーーーーーーーー
+
+  &__section {
+    &--1 {
+    }
+    &--2 {
+    }
+
+    &--3 {
+    }
+
+    &--4 {
+    }
+  }
+}

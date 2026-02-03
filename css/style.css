@@ -3155,6 +3155,59 @@ main {
   border-top: 1px dashed #e4e4e4;
 }
 
+.page-s-ceremony .block-page-ttl {
+  background-position: 50% center;
+  background-size: cover;
+}
+@media (min-width: 1024px) {
+  .page-s-ceremony .block-page-ttl {
+    background-position: center center;
+  }
+  .page-s-ceremony .block-page-ttl br {
+    display: none;
+  }
+}
+.page-s-ceremony__ttl {
+  font-weight: 900;
+  color: #907910;
+  font-size: 20px;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .page-s-ceremony__ttl {
+    font-size: 40px;
+  }
+}
+.page-s-ceremony__txt {
+  font-weight: 900;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .page-s-ceremony__txt {
+    font-size: 24px;
+    line-height: 1.8;
+  }
+}
+.page-s-ceremony__cards {
+  max-width: 550px;
+}
+.page-s-ceremony__card-ttl {
+  font-weight: 900;
+}
+@media (min-width: 1024px) {
+  .page-s-ceremony__card-ttl {
+    font-size: 20px;
+  }
+}
+.page-s-ceremony__card-txt {
+  font-weight: 900;
+  font-size: 14px;
+}
+@media (min-width: 1024px) {
+  .page-s-ceremony__card-txt {
+    font-size: 16px;
+  }
+}
 .page-faq .block-page-ttl {
   position: relative;
   /* 左から20%・上↓中央の位置を中心に表示する */
