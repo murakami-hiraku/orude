@@ -12,15 +12,13 @@ if (is_404()) {
 } elseif (is_page('contact-thanks')) {
   $page_title = 'お問い合わせありがとうございます。';
 } else {
-  // ACFのフィールド 'display_title' を取得
   $acf_title = get_field('display_title');
-
   if ($acf_title) {
-    // ACFに入力があればそれを使う
-    $page_title = $acf_title;
+    // 【重要】テキストエリアの改行を <br> に変換する
+    // esc_htmlで安全を確保してから nl2br で改行を入れる
+    $page_title = nl2br(esc_html($acf_title));
   } else {
-    // なければ通常のページタイトル
-    $page_title = get_the_title();
+    $page_title = esc_html(get_the_title());
   }
 }
 ?>
@@ -47,6 +45,6 @@ $style = ' style="background-image: url(' . esc_url($bg_img) . ');"';
     <!-- <?php get_template_part('template-parts/block/block-breadcrumb'); ?> -->
 
     <h1 class="block-page-ttl__txt">
-      <?php echo esc_html($page_title); ?> </h1>
+      <?php echo $page_title; ?> </h1>
   </div>
 </div>
