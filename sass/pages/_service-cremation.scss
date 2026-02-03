@@ -2,6 +2,15 @@
 @use "../foundation/base" as b;
 
 .page-s-cremation {
+  .block-page-ttl {
+    background-position: 75% center;
+    background-size: cover;
+
+    @include b.mq(pc) {
+      background-position: center center;
+    }
+  }
+
   // 共通スタイルーーーーーーーーーーーーーーーーーーーーーーーーー
 
   &__ttl {
@@ -367,6 +376,14 @@
           .parts-bg-flower--left {
             left: 0;
             bottom: -25px;
+
+            @include b.mq(pc) {
+              bottom: -180px;
+              max-width: 500px;
+              max-height: 400px;
+              width: 26.1vw;
+              height: 20.1vw;
+            }
           }
         }
 
@@ -479,6 +496,11 @@
     &--6 {
       margin-top: 100px;
       padding-bottom: 50px;
+
+      @include b.mq(pc) {
+        margin-top: 250px;
+        padding-bottom: 0;
+      }
 
       .page-s-cremation {
         &__inner {

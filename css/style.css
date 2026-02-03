@@ -2452,6 +2452,15 @@ main {
   }
 }
 
+.page-s-cremation .block-page-ttl {
+  background-position: 75% center;
+  background-size: cover;
+}
+@media (min-width: 1024px) {
+  .page-s-cremation .block-page-ttl {
+    background-position: center center;
+  }
+}
 .page-s-cremation__ttl {
   font-weight: 900;
   color: #907910;
@@ -2862,6 +2871,15 @@ main {
   left: 0;
   bottom: -25px;
 }
+@media (min-width: 1024px) {
+  .page-s-cremation__section--5 .page-s-cremation__inner .parts-bg-flower--left {
+    bottom: -180px;
+    max-width: 500px;
+    max-height: 400px;
+    width: 26.1vw;
+    height: 20.1vw;
+  }
+}
 .page-s-cremation__section--5 .page-s-cremation__cards {
   margin-top: 35px;
   padding-inline: 30px;
@@ -2997,6 +3015,12 @@ main {
 .page-s-cremation__section--6 {
   margin-top: 100px;
   padding-bottom: 50px;
+}
+@media (min-width: 1024px) {
+  .page-s-cremation__section--6 {
+    margin-top: 250px;
+    padding-bottom: 0;
+  }
 }
 .page-s-cremation__section--6 .page-s-cremation__txt {
   margin-top: 15px;
