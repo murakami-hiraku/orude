@@ -120,7 +120,7 @@ jQuery(function ($) {
   );
 });
 
-// --- 7. スワイパー制御 ---
+// --- 7. fvスワイパー制御 ---
 const fvSwiper = new Swiper(".p-fv-slider", {
   loop: true,
   effect: "fade",
@@ -132,4 +132,16 @@ const fvSwiper = new Swiper(".p-fv-slider", {
     disableOnInteraction: false,
   },
   speed: 2000,
+});
+// --- 8. secスワイパー制御 ---
+const secSwiper = new Swiper(".p-sec-slider", {
+  loop: true,
+  autoplay: false,
+  speed: 2000,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true, // これを追加！
+    dynamicMainBullets: 6, // メインで見せるドットの数
+  },
 });
