@@ -3196,6 +3196,13 @@ main {
 }
 .page-s-ceremony__cards {
   max-width: 550px;
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .page-s-ceremony__cards {
+    max-width: 1080px;
+    margin-inline: auto;
+  }
 }
 .page-s-ceremony__card-ttl {
   font-weight: 900;
@@ -3222,32 +3229,101 @@ main {
   left: -48px;
   top: -36px;
 }
+@media (min-width: 1024px) {
+  .page-s-ceremony__section--1 .page-s-ceremony__inner .parts-bg-circle {
+    top: 87px;
+    left: -15%;
+  }
+}
 .page-s-ceremony__section--1 .page-s-ceremony__container {
+  overflow: hidden;
+  width: 100%;
+}
+.page-s-ceremony__section--1 .page-s-ceremony__box {
   padding-bottom: 30px;
   border-bottom: 1px solid #333333;
 }
+@media (min-width: 1024px) {
+  .page-s-ceremony__section--1 .page-s-ceremony__box {
+    padding-bottom: 25px;
+    margin-left: 15.625%;
+  }
+}
 .page-s-ceremony__section--1 .page-s-ceremony__ttl {
   text-align: left;
+}
+@media (min-width: 1024px) {
+  .page-s-ceremony__section--1 .page-s-ceremony__ttl {
+    font-size: 24px;
+  }
 }
 .page-s-ceremony__section--1 .page-s-ceremony__txt {
   text-align: left;
   margin-top: 10px;
 }
+@media (min-width: 1024px) {
+  .page-s-ceremony__section--1 .page-s-ceremony__txt {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+}
 .page-s-ceremony__section--2 {
   margin-top: 75px;
+}
+@media (min-width: 1024px) {
+  .page-s-ceremony__section--2 {
+    margin-top: 100px;
+  }
 }
 .page-s-ceremony__section--2 .page-s-ceremony__txt {
   margin-top: 15px;
   line-height: 2;
 }
+@media (min-width: 1024px) {
+  .page-s-ceremony__section--2 .page-s-ceremony__txt {
+    margin-top: 35px;
+    font-size: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  .page-s-ceremony__section--2 .page-s-ceremony__txt--sub {
+    font-size: 20px;
+  }
+}
 .page-s-ceremony__section--2 .page-s-ceremony__txt--sub.sub-1 {
-  margin-top: 10px;
+  margin-top: 35px;
 }
 .page-s-ceremony__section--2 .page-s-ceremony__txt--sub.sub-2 {
   margin-top: 30px;
 }
-.page-s-ceremony__section--2 .page-s-ceremony__img {
+@media (min-width: 1024px) {
+  .page-s-ceremony__section--2 .page-s-ceremony__txt--sub.sub-2 {
+    margin: 0;
+    text-align: left;
+  }
+}
+.page-s-ceremony__section--2 .page-s-ceremony__card {
   margin-top: 40px;
+}
+@media (min-width: 1024px) {
+  .page-s-ceremony__section--2 .page-s-ceremony__card {
+    margin-top: 54px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 65px;
+  }
+}
+@media (min-width: 1024px) {
+  .page-s-ceremony__section--2 .page-s-ceremony__img {
+    max-width: 500px;
+  }
 }
 .page-s-ceremony__section--2 .page-s-ceremony__img img {
   width: 100%;
@@ -3255,9 +3331,19 @@ main {
 .page-s-ceremony__section--3 {
   margin-top: 75px;
 }
+@media (min-width: 1024px) {
+  .page-s-ceremony__section--3 {
+    margin-top: 200px;
+  }
+}
 .page-s-ceremony__section--3 .page-s-ceremony__txt {
   margin-top: 15px;
   font-size: 14px;
+}
+@media (min-width: 1024px) {
+  .page-s-ceremony__section--3 .page-s-ceremony__txt {
+    font-size: 20px;
+  }
 }
 .page-s-ceremony__section--3 .page-s-ceremony__cards {
   margin-top: 30px;
@@ -3276,6 +3362,18 @@ main {
           justify-content: center;
   gap: 50px;
 }
+@media (min-width: 1024px) {
+  .page-s-ceremony__section--3 .page-s-ceremony__cards {
+    margin-top: 50px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
 .page-s-ceremony__section--3 .page-s-ceremony__card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3292,6 +3390,11 @@ main {
           justify-content: center;
   gap: 10px;
 }
+@media (min-width: 1024px) {
+  .page-s-ceremony__section--3 .page-s-ceremony__card {
+    max-width: 420px;
+  }
+}
 .page-s-ceremony__section--3 .page-s-ceremony__card-img--sub {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3306,6 +3409,11 @@ main {
   gap: 20px;
   margin-top: 15px;
 }
+@media (min-width: 1024px) {
+  .page-s-ceremony__section--3 .page-s-ceremony__card-img--sub {
+    max-width: 325px;
+  }
+}
 .page-s-ceremony__section--3 .page-s-ceremony__card-img--sub img {
   display: inline-block;
   width: 30%;
@@ -3314,21 +3422,46 @@ main {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media (min-width: 1024px) {
+  .page-s-ceremony__section--3 .page-s-ceremony__card-img--sub img {
+    max-width: 95px;
+  }
+}
 .page-s-ceremony__section--3 .page-s-ceremony__card-ttl {
   margin-top: 10px;
+}
+@media (min-width: 1024px) {
+  .page-s-ceremony__section--3 .page-s-ceremony__card-ttl {
+    margin-top: 20px;
+  }
 }
 .page-s-ceremony__section--3 .page-s-ceremony__card-txt {
   text-align: center;
   line-height: 2;
 }
+@media (min-width: 1024px) {
+  .page-s-ceremony__section--3 .page-s-ceremony__card-txt {
+    padding-inline: 36px;
+  }
+}
 .page-s-ceremony__section--3 .page-s-ceremony__card-txt--sub {
   margin-top: 10px;
   text-align: center;
+}
+@media (min-width: 1024px) {
+  .page-s-ceremony__section--3 .page-s-ceremony__card-txt--sub {
+    margin-top: 20px;
+  }
 }
 .page-s-ceremony__section--3 .page-s-ceremony__card-price {
   font-weight: 900;
   color: #907910;
   font-size: 32px;
+}
+@media (min-width: 1024px) {
+  .page-s-ceremony__section--3 .page-s-ceremony__card-price {
+    margin-top: 5px;
+  }
 }
 .page-s-ceremony__section--3 .page-s-ceremony__card-price small {
   font-size: 20px;
@@ -3337,6 +3470,11 @@ main {
   margin-top: 20px;
   text-align: center;
   font-weight: 900;
+}
+@media (min-width: 1024px) {
+  .page-s-ceremony__section--3 .page-s-ceremony__card-price--sub {
+    margin-top: 35px;
+  }
 }
 .page-s-ceremony__section--3 .page-s-ceremony__card-price--sub strong {
   font-weight: 900;
@@ -3355,15 +3493,41 @@ main {
   margin-top: 100px;
   padding-bottom: 50px;
 }
+@media (min-width: 1024px) {
+  .page-s-ceremony__section--4 {
+    padding-bottom: 0;
+  }
+}
 .page-s-ceremony__section--4 .page-s-ceremony__inner .parts-bg-flower--right {
   top: -50px;
   right: -15px;
 }
+.page-s-ceremony__section--4 .page-s-ceremony__inner .parts-bg-flower--left {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .page-s-ceremony__section--4 .page-s-ceremony__inner .parts-bg-flower--left {
+    display: block;
+    bottom: 0;
+    left: -15px;
+  }
+}
 .page-s-ceremony__section--4 .page-s-ceremony__txt.txt-1 {
   margin-top: 15px;
 }
+@media (min-width: 1024px) {
+  .page-s-ceremony__section--4 .page-s-ceremony__txt.txt-1 {
+    margin-top: 36px;
+  }
+}
 .page-s-ceremony__section--4 .page-s-ceremony__txt.txt-2 {
   margin-top: 35px;
+}
+@media (min-width: 1024px) {
+  .page-s-ceremony__section--4 .page-s-ceremony__txt.txt-2 {
+    margin-top: 50px;
+    font-size: 20px;
+  }
 }
 .page-s-ceremony__section--4 .page-s-ceremony__cards {
   margin-top: 78px;
@@ -3382,7 +3546,13 @@ main {
           justify-content: center;
   gap: 50px;
 }
+@media (min-width: 1024px) {
+  .page-s-ceremony__section--4 .page-s-ceremony__cards {
+    margin-top: 50px;
+  }
+}
 .page-s-ceremony__section--4 .page-s-ceremony__card {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3401,16 +3571,70 @@ main {
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
 }
+@media (min-width: 1024px) {
+  .page-s-ceremony__section--4 .page-s-ceremony__card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    padding: 0;
+    gap: 50px;
+  }
+}
+@media (min-width: 1024px) {
+  .page-s-ceremony__section--4 .page-s-ceremony__card-img {
+    max-width: 300px;
+  }
+}
 .page-s-ceremony__section--4 .page-s-ceremony__card-img img {
+  aspect-ratio: 300/250;
   width: 100%;
+}
+.page-s-ceremony__section--4 .page-s-ceremony__card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  gap: 20px;
+}
+@media (min-width: 1024px) {
+  .page-s-ceremony__section--4 .page-s-ceremony__card-ttl {
+    margin-top: 35px;
+  }
 }
 .page-s-ceremony__section--4 .page-s-ceremony__card-txt {
   padding-inline: 10px;
   line-height: 1.8;
 }
+@media (min-width: 1024px) {
+  .page-s-ceremony__section--4 .page-s-ceremony__card-txt {
+    padding-inline: 0;
+    padding-right: 44px;
+  }
+}
 .page-s-ceremony__section--4 .parts-btn {
   margin-top: 20px;
   margin-inline: auto;
+}
+@media (min-width: 1024px) {
+  .page-s-ceremony__section--4 .parts-btn {
+    margin-top: 25px;
+  }
 }
 
 .page-faq .block-page-ttl {

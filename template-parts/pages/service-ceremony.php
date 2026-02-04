@@ -14,8 +14,10 @@
         get_template_part('/template-parts/parts/parts-bg-circle')
         ?>
         <div class="page-s-ceremony__container">
-          <h2 class="page-s-ceremony__ttl">その子らしく、美しく。心を込めたお別れの時間を</h2>
-          <p class="page-s-ceremony__txt">大切なご家族とのお別れを、もっと丁寧に、もっとその子らしく。オルデでは、火葬だけでなく、葬儀としてのセレモニーを大切に考えています。お花に囲まれた空間で、ゆっくりと感謝を伝える時間——それは、ご家族の心にとっても、必要なひとときです。</p>
+          <div class="page-s-ceremony__box">
+            <h2 class="page-s-ceremony__ttl">その子らしく、美しく。心を込めたお別れの時間を</h2>
+            <p class="page-s-ceremony__txt">大切なご家族とのお別れを、もっと丁寧に、もっとその子らしく。オルデでは、火葬だけでなく、葬儀としてのセレモニーを大切に考えています。<br>お花に囲まれた空間で、ゆっくりと感謝を伝える時間——<br>それは、ご家族の心にとっても、必要なひとときです。</p>
+          </div>
         </div>
       </div>
 
@@ -28,12 +30,14 @@
       <div class="page-s-ceremony__inner inner">
         <h2 class="page-s-ceremony__ttl">セレモニーという“お別れのかたち”</h2>
         <p class="page-s-ceremony__txt">ご葬儀とは、火葬の前にその子に心を届ける儀式の時間。</p>
-        <p class="page-s-ceremony__txt--sub sub-1">「ありがとう」「またね」「大好きだよ」——その想いを、静かに、丁寧に伝える場をご用意します。</p>
-        <div class="page-s-ceremony__img">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/ceremony-sec2-1.png" alt="">
-        </div>
-        <p class="page-s-ceremony__txt--sub sub-2">大切なのは“その子に寄り添う”こと。<br>ご希望やご事情を伺いながら、<br>最適なセレモニーを一緒に創ってまいります。</p>
+        <p class="page-s-ceremony__txt--sub sub-1">「ありがとう」「またね」「大好きだよ」——<br>その想いを、静かに、丁寧に伝える場をご用意します。</p>
 
+        <div class="page-s-ceremony__card">
+          <div class="page-s-ceremony__img">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/ceremony-sec2-1.png" alt="">
+          </div>
+          <p class="page-s-ceremony__txt--sub sub-2">大切なのは“その子に寄り添う”こと。<br>ご希望やご事情を伺いながら、<br>最適なセレモニーを一緒に創ってまいります。</p>
+        </div>
 
       </div>
 
@@ -72,7 +76,7 @@
             <h2 class="page-s-ceremony__card-ttl">セレモニープランB</h2>
             <p class="page-s-ceremony__card-txt">アーチ型のフラワー装飾を用いた、より華やかなセレモニーです。<br>その子らしさや、ご家族の想いを表現した特別な空間を演出します。</p>
             <p class="page-s-ceremony__card-price">55,000<small>円（税込）〜</small></p>
-            <p class="page-s-ceremony__card-price--sub">セレモニーと火葬をセットで行う場合は、<strong>3,300</strong><small>円（税込）</small>引かせていただきます。</p>
+            <p class="page-s-ceremony__card-price--sub">セレモニーと火葬をセットで行う場合は、<br><strong>3,300</strong><small>円（税込）</small>引かせていただきます。</p>
             <?php get_template_part('template-parts/parts/parts-btn', null, [
               'text'  => '火葬料金はこちら',
               'link'  => '/',
@@ -99,25 +103,33 @@
             <div class="page-s-ceremony__card-img">
               <img src="<?php echo get_template_directory_uri(); ?>/img/ceremony-sec4-1.png" alt="">
             </div>
-            <h2 class="page-s-ceremony__card-ttl">01　お問い合わせ</h2>
-            <p class="page-s-ceremony__card-txt">お子様がお亡くなりになったら、まずはオルデまでご連絡ください。<br>お電話やLINE、メールからお問い合わせいただけます。<br>専任スタッフが状況をお伺いし、ご葬儀の内容や日程、ご希望のセレモニースタイルについて丁寧にご案内いたします。<br>初めてのことで不安なことや分からないことがあれば、どんなことでもお話しください。</p>
+            <div class="page-s-ceremony__card-body">
+              <h2 class="page-s-ceremony__card-ttl">01　お問い合わせ</h2>
+              <p class="page-s-ceremony__card-txt">お子様がお亡くなりになったら、まずはオルデまでご連絡ください。<br>お電話やLINE、メールからお問い合わせいただけます。<br>専任スタッフが状況をお伺いし、ご葬儀の内容や日程、ご希望のセレモニースタイルについて丁寧にご案内いたします。<br>初めてのことで不安なことや分からないことがあれば、どんなことでもお話しください。</p>
 
+            </div>
           </div>
           <div class="page-s-ceremony__card">
             <div class="page-s-ceremony__card-img">
               <img src="<?php echo get_template_directory_uri(); ?>/img/ceremony-sec4-2.png" alt="">
             </div>
-            <h2 class="page-s-ceremony__card-ttl">02　打ち合わせ</h2>
-            <p class="page-s-ceremony__card-txt">ご希望のセレモニープランや飾り付け、お花の色、当日の流れについて打ち合わせを行います。<br>「どのように送り出してあげたいか」「どんな時間を過ごしたいか」など、<br>ご家族様の想いを大切にしながら内容を決めていきます。<br>形式にとらわれず、その子らしいお別れができるよう、細かな部分までご相談いただけます。</p>
+            <div class="page-s-ceremony__card-body">
 
+              <h2 class="page-s-ceremony__card-ttl">02　打ち合わせ</h2>
+              <p class="page-s-ceremony__card-txt">ご希望のセレモニープランや飾り付け、お花の色、当日の流れについて打ち合わせを行います。<br>「どのように送り出してあげたいか」「どんな時間を過ごしたいか」など、<br>ご家族様の想いを大切にしながら内容を決めていきます。<br>形式にとらわれず、その子らしいお別れができるよう、細かな部分までご相談いただけます。</p>
+
+            </div>
           </div>
           <div class="page-s-ceremony__card">
             <div class="page-s-ceremony__card-img">
               <img src="<?php echo get_template_directory_uri(); ?>/img/ceremony-sec4-3.png" alt="">
             </div>
-            <h2 class="page-s-ceremony__card-ttl">03　お伺い・設営</h2>
-            <p class="page-s-ceremony__card-txt">ご葬儀当日、スタッフがご自宅またはご指定の場所へお伺いします。<br>セレモニーに必要な祭壇や飾り付けを丁寧に設営し、落ち着いてお別れの時間を過ごしていただける空間を整えます。<br>準備が整いましたら、ご家族様だけの静かなセレモニーの時間が始まります。<br>慌ただしさのない、ゆっくりとしたひとときをお過ごしください。</p>
+            <div class="page-s-ceremony__card-body">
 
+              <h2 class="page-s-ceremony__card-ttl">03　お伺い・設営</h2>
+              <p class="page-s-ceremony__card-txt">ご葬儀当日、スタッフがご自宅またはご指定の場所へお伺いします。<br>セレモニーに必要な祭壇や飾り付けを丁寧に設営し、<br>落ち着いてお別れの時間を過ごしていただける空間を整えます。<br>準備が整いましたら、ご家族様だけの静かなセレモニーの時間が始まります。<br>慌ただしさのない、ゆっくりとしたひとときをお過ごしください。</p>
+
+            </div>
           </div>
         </div>
 
@@ -127,6 +139,10 @@
           'link'  => '/',
           'class' => '' // 色を変えたい時などの識別用クラス
         ]); ?>
+
+        <?php
+        get_template_part('/template-parts/parts/parts-bg-flower--left')
+        ?>
       </div>
 
     </section>
