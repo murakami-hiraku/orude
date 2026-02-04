@@ -86,9 +86,9 @@
           </div>
 
           <div class="swiper-controls">
-            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-prev"><span class="swiper-button-icon swiper-button-icon--prev"></span></div>
             <div class="swiper-pagination"></div>
-            <div class="swiper-button-next"></div>
+            <div class="swiper-button-next"><span class="swiper-button-icon swiper-button-icon--next"></span></div>
           </div>
         </div>
 

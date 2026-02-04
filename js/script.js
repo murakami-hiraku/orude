@@ -133,15 +133,19 @@ const fvSwiper = new Swiper(".p-fv-slider", {
   },
   speed: 2000,
 });
+
 // --- 8. secスワイパー制御 ---
 const secSwiper = new Swiper(".p-sec-slider", {
   loop: true,
   autoplay: false,
-  speed: 2000,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    dynamicBullets: true, // これを追加！
-    dynamicMainBullets: 6, // メインで見せるドットの数
-  },
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  spaceBetween: 20,
+  // 【ここがポイント】手動スワイプ・ドラッグを禁止にする
+  allowTouchMove: false,
+
+  observer: true,
+  observeParents: true,
+
+  // centeredSlides: true,
 });
