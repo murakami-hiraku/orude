@@ -47,10 +47,10 @@
   &__cards {
     max-width: 550px;
     width: 100%;
+    margin-inline: auto;
 
     @include b.mq(pc) {
       max-width: 1080px;
-      margin-inline: auto;
     }
   }
   &__card-ttl {
@@ -418,7 +418,7 @@
 
           @include b.mq(pc) {
             flex-direction: row;
-            align-items: start;
+            align-items: center;
             justify-content: start;
             padding: 0;
             gap: 50px;
@@ -437,13 +437,18 @@
           &-body {
             display: flex;
             flex-direction: column;
-            align-items: start;
-            justify-content: start;
+            align-items: center;
+            justify-content: center;
             gap: 20px;
+
+            @include b.mq(pc) {
+              align-items: start;
+              justify-content: center;
+            }
           }
+
           &-ttl {
             @include b.mq(pc) {
-              margin-top: 35px;
             }
           }
           &-txt {

@@ -3197,11 +3197,11 @@ main {
 .page-s-ceremony__cards {
   max-width: 550px;
   width: 100%;
+  margin-inline: auto;
 }
 @media (min-width: 1024px) {
   .page-s-ceremony__cards {
     max-width: 1080px;
-    margin-inline: auto;
   }
 }
 .page-s-ceremony__card-ttl {
@@ -3577,9 +3577,9 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
@@ -3604,17 +3604,22 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 20px;
 }
 @media (min-width: 1024px) {
-  .page-s-ceremony__section--4 .page-s-ceremony__card-ttl {
-    margin-top: 35px;
+  .page-s-ceremony__section--4 .page-s-ceremony__card-body {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 .page-s-ceremony__section--4 .page-s-ceremony__card-txt {
