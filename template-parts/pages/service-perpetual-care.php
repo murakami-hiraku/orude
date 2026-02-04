@@ -59,19 +59,28 @@
         <div class="swiper p-sec-slider">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-care-sec4-3.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-swiper-1.png" alt="">
             </div>
             <div class="swiper-slide">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-care-sec4-3.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-swiper-2.png" alt="">
             </div>
             <div class="swiper-slide">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-care-sec4-3.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-swiper-3.png" alt="">
             </div>
             <div class="swiper-slide">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-care-sec4-3.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-swiper-4.png" alt="">
             </div>
             <div class="swiper-slide">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-care-sec4-3.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-swiper-5.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-swiper-6.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-swiper-7.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-swiper-8.png" alt="">
             </div>
 
           </div>
