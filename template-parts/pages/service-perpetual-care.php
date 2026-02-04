@@ -36,7 +36,7 @@
 
         <div class="page-s-perpetual-care__card">
           <div class="page-s-perpetual-care__card-img">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-care-sec2-1.png" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-sec2-1.png" alt="">
           </div>
           <p class="page-s-perpetual-care__card-txt">大当社の理念は、「ペットも大切な家族」という想いのもと、死後も安らげる場所を提供することです。飼い主様とお子様双方にとって最適な“終の棲家”をご用意します。また、当社提携先のペット専用合同供養墓のご案内も可能です。さらに生前契約にも対応しており、元気なうちからお子様とご自身の永代納骨先を決めておかれる方も増えています。専門の寺院と提携し、手厚い法要と行き届いた管理体制のもと運営しておりますので、安心してお任せください。</p>
         </div>
@@ -113,7 +113,7 @@
         <div class="page-s-perpetual-care__cards">
           <div class="page-s-perpetual-care__card">
             <div class="page-s-perpetual-care__card-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-care-sec4-1.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-sec4-1.png" alt="">
             </div>
             <div class="page-s-perpetual-care__card-body">
               <h2 class="page-s-perpetual-care__card-ttl">01　お問い合わせ・ご相談</h2>
@@ -125,7 +125,7 @@
           </div>
           <div class="page-s-perpetual-care__card">
             <div class="page-s-perpetual-care__card-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-care-sec4-1.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-sec4-2.png" alt="">
             </div>
             <div class="page-s-perpetual-care__card-body">
               <h2 class="page-s-perpetual-care__card-ttl">02　現地見学・お申し込み</h2>
@@ -137,7 +137,7 @@
           </div>
           <div class="page-s-perpetual-care__card">
             <div class="page-s-perpetual-care__card-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-care-sec4-1.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-sec4-3.png" alt="">
             </div>
             <div class="page-s-perpetual-care__card-body">
               <h2 class="page-s-perpetual-care__card-ttl">03　納骨準備・法要打ち合わせ</h2>
@@ -147,7 +147,7 @@
           </div>
           <div class="page-s-perpetual-care__card">
             <div class="page-s-perpetual-care__card-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-care-sec4-1.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-sec4-4.png" alt="">
             </div>
             <div class="page-s-perpetual-care__card-body">
               <h2 class="page-s-perpetual-care__card-ttl">04　ご納骨・納骨式</h2>
@@ -161,7 +161,7 @@
           </div>
           <div class="page-s-perpetual-care__card">
             <div class="page-s-perpetual-care__card-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-care-sec4-1.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-sec4-5.png" alt="">
             </div>
             <div class="page-s-perpetual-care__card-body">
               <h2 class="page-s-perpetual-care__card-ttl">05　お参り</h2>
@@ -187,7 +187,7 @@
 
         <div class="page-s-perpetual-care__card">
           <div class="page-s-perpetual-care__card-img">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-care-sec2-1.png" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-sec5-1.png" alt="">
           </div>
 
 
@@ -228,7 +228,7 @@
         <h2 class="page-s-perpetual-care__ttl">提携霊園・寺院のご案内について</h2>
 
         <div class="page-s-perpetual-care__img">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-care-sec2-1.png" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-sec6-1.png" alt="">
         </div>
 
         <p class="page-s-perpetual-care__txt">オルデでは、銀山寺での永代納骨を中心にご案内しておりますが、ご家族様のご事情やご希望に応じて、その他の霊園・寺院のご紹介も可能です。
