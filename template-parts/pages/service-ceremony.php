@@ -110,7 +110,7 @@
             </div>
           </div>
           <div class="page-s-ceremony__card">
-            <div class="page-s-ceremony__card-img">
+            <div class="page-s-ceremony__card-img img-2">
               <img src="<?php echo get_template_directory_uri(); ?>/img/ceremony-sec4-2.png" alt="">
             </div>
             <div class="page-s-ceremony__card-body">

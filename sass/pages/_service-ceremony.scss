@@ -161,7 +161,7 @@
               font-size: 20px;
             }
             &.sub-1 {
-              margin-top: 35px;
+              margin-top: 10px;
             }
             &.sub-2 {
               margin-top: 30px;
@@ -425,12 +425,26 @@
           }
 
           &-img {
+            max-height: 69.231vw;
+            overflow: hidden;
+            display: flex; // 中央寄せのためにFlexを導入
+            align-items: center; // 垂直中央
+            justify-content: center; // 水平中央
+
             @include b.mq(pc) {
               max-width: 300px;
             }
             img {
-              aspect-ratio: 300 / 250;
               width: 100%;
+              height: 100%;
+              object-fit: cover;
+              object-position: center center;
+            }
+          }
+
+          .img-2 {
+            @include b.mq(pc) {
+              max-height: 230px;
             }
           }
 
@@ -444,6 +458,7 @@
             @include b.mq(pc) {
               align-items: start;
               justify-content: center;
+              gap: 12px;
             }
           }
 
