@@ -107,7 +107,7 @@
 
           @include b.mq(pc) {
             padding-bottom: 25px;
-            margin-left: 15.625%;
+            margin-left: 14.825%;
           }
         }
 
@@ -418,7 +418,7 @@
 
           @include b.mq(pc) {
             flex-direction: row;
-            align-items: center;
+            align-items: start;
             justify-content: start;
             padding: 0;
             gap: 50px;
@@ -456,6 +456,7 @@
             gap: 20px;
 
             @include b.mq(pc) {
+              margin-top: 35px;
               align-items: start;
               justify-content: center;
               gap: 12px;
