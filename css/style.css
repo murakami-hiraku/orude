@@ -889,6 +889,8 @@ main {
             justify-content: start;
     margin-top: 28px;
     margin: 0;
+    pointer-events: none;
+    cursor: default; /* カーソルを指マークにしない */
   }
 }
 .parts-tel span {
