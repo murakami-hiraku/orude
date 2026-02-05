@@ -1621,8 +1621,11 @@ main {
 }
 @media (min-width: 1024px) {
   .section-contact__links .link-line {
-    display: inline-block;
+    display: block;
     width: 1px;
+    min-width: 1px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     height: 75px;
     background-color: #000;
   }

@@ -19,7 +19,7 @@
             'has_icon' => true, // これでspanが表示される
             'class'    => 'sec-contact sec-contact-mail'
           ]); ?>
-          <span class="link-line"></span>
+          <div class="link-line"></div>
           <?php get_template_part('template-parts/parts/parts-btn', null, [
             'text'     => 'LINEでのお問い合わせ',
             'has_icon' => true, // これでspanが表示される

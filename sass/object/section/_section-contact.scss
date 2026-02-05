@@ -108,8 +108,10 @@
       display: none;
 
       @include b.mq(pc) {
-        display: inline-block;
+        display: block;
         width: 1px;
+        min-width: 1px;
+        flex-shrink: 0; // flex内で潰されるのを防ぐ
         height: 75px;
         background-color: b.$sub-color-dark;
       }
