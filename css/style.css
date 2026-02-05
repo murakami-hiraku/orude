@@ -3802,7 +3802,11 @@ main {
   }
 }
 .page-s-perpetual-care__section--3 .p-sec-slider {
+  overflow: hidden;
   position: relative;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
   max-width: 550px;
   margin-inline: auto;
 }

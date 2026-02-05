@@ -141,11 +141,21 @@ const secSwiper = new Swiper(".p-sec-slider", {
   slidesPerView: 1,
   slidesPerGroup: 1,
   spaceBetween: 20,
-  // 【ここがポイント】手動スワイプ・ドラッグを禁止にする
-  allowTouchMove: false,
-
   observer: true,
   observeParents: true,
 
+  // 手動スワイプ・ドラッグを禁止にするか否か
+  // allowTouchMove: false,
+
+  // アクティブなスライドを常に中央に配置する
   // centeredSlides: true,
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });

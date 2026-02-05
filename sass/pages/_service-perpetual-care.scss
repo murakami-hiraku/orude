@@ -193,7 +193,14 @@
       }
 
       .p-sec-slider {
+        // ★ Swiperの必須スタイル swiperタグが二つあると挙動がおかしいのでこちらはswiperタグを使わず
+        overflow: hidden;
         position: relative;
+        list-style: none;
+        padding: 0;
+        z-index: 1;
+        // ★ Swiperの必須スタイル
+
         max-width: 550px;
         margin-inline: auto; // スライダー自体を中央に
 

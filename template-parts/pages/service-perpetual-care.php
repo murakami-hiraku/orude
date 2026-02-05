@@ -56,7 +56,7 @@
 
           境内は四季折々に豊かな表情を見せ、梅や桜、バラ、あじさいなど様々な花木が季節ごとに美しく咲き誇ります。春には桜の薄紅に彩られ、秋には色づく木々が情緒を添える銀山寺は、都心にありながら静寂で穏やかな空気に包まれています。寺院ならではの厳かな雰囲気と、花々がもたらす自然の潤いが調和した境内は、訪れる方の心を和ませ、「終の棲家」としてふさわしい安らぎに満ちています。</p>
 
-        <div class="swiper p-sec-slider">
+        <div class="p-sec-slider">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-swiper-1.png" alt="">
