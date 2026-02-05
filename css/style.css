@@ -3753,21 +3753,21 @@ main {
   padding-bottom: 30px;
   border-bottom: 1px solid #333333;
 }
-.page-s-perpetual-care__section--1 .page-s-perpetual-care__box__ttl {
+.page-s-perpetual-care__section--1 .page-s-perpetual-care__ttl {
   text-align: left;
 }
 @media (min-width: 1024px) {
-  .page-s-perpetual-care__section--1 .page-s-perpetual-care__box__ttl {
+  .page-s-perpetual-care__section--1 .page-s-perpetual-care__ttl {
     font-size: 24px;
   }
 }
-.page-s-perpetual-care__section--1 .page-s-perpetual-care__box__txt {
+.page-s-perpetual-care__section--1 .page-s-perpetual-care__txt {
   text-align: left;
   margin-top: 10px;
   font-size: 14px;
 }
 @media (min-width: 1024px) {
-  .page-s-perpetual-care__section--1 .page-s-perpetual-care__box__txt {
+  .page-s-perpetual-care__section--1 .page-s-perpetual-care__txt {
     margin-top: 20px;
     font-size: 16px;
   }

@@ -104,24 +104,24 @@
         &__box {
           padding-bottom: 30px;
           border-bottom: 1px solid b.$border-color-dark;
+        }
 
-          &__ttl {
-            text-align: left;
+        &__ttl {
+          text-align: left;
 
-            @include b.mq(pc) {
-              font-size: 24px;
-            }
+          @include b.mq(pc) {
+            font-size: 24px;
           }
+        }
 
-          &__txt {
-            text-align: left;
-            margin-top: 10px;
-            font-size: 14px;
+        &__txt {
+          text-align: left;
+          margin-top: 10px;
+          font-size: 14px;
 
-            @include b.mq(pc) {
-              margin-top: 20px;
-              font-size: 16px;
-            }
+          @include b.mq(pc) {
+            margin-top: 20px;
+            font-size: 16px;
           }
         }
       }
