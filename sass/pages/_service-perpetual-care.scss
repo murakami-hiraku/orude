@@ -82,7 +82,9 @@
       .page-s-perpetual-care {
         &__inner {
           padding-top: 50px;
+
           @include b.mq(pc) {
+            padding-top: 100px;
           }
 
           .parts-bg-circle {
@@ -90,8 +92,10 @@
             top: -36px;
 
             @include b.mq(pc) {
-              top: 87px;
-              left: -15%;
+              left: auto;
+              top: auto;
+              bottom: -820px;
+              right: -120px;
             }
           }
         }
@@ -104,6 +108,11 @@
         &__box {
           padding-bottom: 30px;
           border-bottom: 1px solid b.$border-color-dark;
+
+          @include b.mq(pc) {
+            padding-bottom: 35px;
+            margin-left: 14.825%;
+          }
         }
 
         &__ttl {
@@ -142,6 +151,11 @@
         }
 
         &__ttl {
+          br {
+            @include b.mq(pc) {
+              display: none;
+            }
+          }
         }
 
         &__txt {
@@ -151,24 +165,32 @@
           @include b.mq(pc) {
             margin-top: 35px;
             font-size: 24px;
+            line-height: 1.8;
           }
         }
 
         &__card {
           margin-top: 40px;
+          margin-inline: auto;
+          max-width: 550px;
 
           @include b.mq(pc) {
             margin-top: 54px;
+            max-width: 1080px;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 65px;
+            gap: 35px;
           }
 
           &-img {
+            width: 100%;
+
             @include b.mq(pc) {
-              max-width: 500px;
+              max-width: 430px;
+              flex: 1;
             }
+
             img {
               width: 100%;
             }
@@ -181,6 +203,9 @@
 
             @include b.mq(pc) {
               margin-top: 0;
+              text-align: left;
+              line-height: 2;
+              flex: 1;
             }
           }
         }
@@ -193,7 +218,7 @@
       margin-top: 75px;
 
       @include b.mq(pc) {
-        margin-top: 200px;
+        margin-top: 136px;
       }
 
       .page-s-perpetual-care {
@@ -203,12 +228,28 @@
         &__ttl {
         }
 
+        &__container {
+          @include b.mq(pc) {
+            margin-top: 50px;
+            max-width: 1280px;
+            margin-inline: auto;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            gap: 67px;
+          }
+        }
+
         &__txt {
           margin-top: 15px;
           font-size: 14px;
 
           @include b.mq(pc) {
-            font-size: 20px;
+            flex: 1;
+            text-align: left;
+            margin: 0;
+            font-size: 16px;
+            line-height: 2;
           }
         }
       }
@@ -225,7 +266,14 @@
         margin-top: 36px;
         padding-bottom: 25px;
         max-width: 550px;
+        width: 100%;
         margin-inline: auto; // スライダー自体を中央に
+
+        @include b.mq(pc) {
+          flex: 1;
+          margin-top: 0;
+          max-width: 600px;
+        }
 
         .swiper-wrapper {
           width: auto;
@@ -243,10 +291,17 @@
 
         .swiper-controls {
           margin-top: 16px;
+          max-width: 450px;
+          width: 100%;
           display: flex;
           align-items: center;
           justify-content: space-between;
-          gap: 15px; // ボタンとドットの間の隙間
+          padding-inline: 10px;
+
+          @include b.mq(pc) {
+            max-width: 600px;
+            padding-inline: 75px;
+          }
         }
 
         .swiper-pagination {
@@ -255,6 +310,10 @@
           display: flex;
           gap: 10px;
           margin: 0;
+
+          @include b.mq(pc) {
+            gap: 20px;
+          }
 
           .swiper-pagination-bullet {
             width: 20px; // Swiperの自動計算より優先させる
@@ -373,7 +432,7 @@
 
               @include b.mq(pc) {
                 display: block;
-                bottom: 0;
+                bottom: -150px;
                 left: -15px;
               }
             }
@@ -389,6 +448,7 @@
           gap: 35px;
 
           @include b.mq(pc) {
+            gap: 50px;
           }
         }
 
@@ -404,18 +464,27 @@
 
           @include b.mq(pc) {
             flex-direction: row;
-            align-items: center;
+            align-items: start;
             justify-content: start;
             padding: 0;
             gap: 50px;
           }
 
           &-img {
+            max-height: 69.231vw;
+            overflow: hidden;
+            display: flex; // 中央寄せのためにFlexを導入
+            align-items: center; // 垂直中央
+            justify-content: center; // 水平中央
+
             @include b.mq(pc) {
               max-width: 300px;
             }
             img {
               width: 100%;
+              height: 100%;
+              object-fit: cover;
+              object-position: center center;
             }
           }
 
@@ -427,6 +496,7 @@
             gap: 20px;
 
             @include b.mq(pc) {
+              margin-top: 35px;
               align-items: start;
               justify-content: center;
               gap: 25px;
@@ -435,6 +505,7 @@
 
           &-ttl {
             @include b.mq(pc) {
+              font-size: 24px;
             }
           }
           &-txt {
@@ -443,7 +514,13 @@
 
             @include b.mq(pc) {
               padding-inline: 0;
-              padding-right: 44px;
+              padding-right: 24px;
+            }
+
+            .br-1 {
+              @include b.mq(pc) {
+                display: none;
+              }
             }
           }
         }
@@ -472,26 +549,29 @@
 
           @include b.mq(pc) {
             margin-top: 35px;
-            font-size: 24px;
+            font-size: 20px;
           }
         }
 
         &__card {
           margin-top: 40px;
+          max-width: 550px;
+          margin-inline: auto;
 
           @include b.mq(pc) {
             margin-top: 54px;
+            max-width: 1080px;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 65px;
+            gap: 64px;
           }
           &-img {
             padding-inline: 30px;
 
             @include b.mq(pc) {
               padding-inline: 0;
-              max-width: 500px;
+              max-width: 300px;
             }
             img {
               aspect-ratio: 300 / 250;
@@ -502,21 +582,35 @@
 
           &-body {
             margin-top: 20px;
+
+            @include b.mq(pc) {
+              margin-top: 0;
+              padding-right: 90px;
+              width: 100%;
+            }
           }
 
           &-txt {
             text-align: left;
             line-height: 1.8;
             margin-top: 20px;
+
+            @include b.mq(pc) {
+              margin-top: 15px;
+            }
           }
         }
 
         &__list {
           display: flex;
           flex-direction: column;
-          align-items: center;
+          align-items: start;
           justify-content: start;
           font-weight: 900;
+
+          @include b.mq(pc) {
+            width: 100%;
+          }
 
           &-item {
             display: flex;
@@ -524,6 +618,11 @@
             justify-content: space-between;
             line-height: 1.8;
             width: 100%;
+
+            @include b.mq(pc) {
+              font-size: 18px;
+              max-width: 380px;
+            }
           }
 
           .item-1 {
@@ -532,6 +631,13 @@
             align-items: start;
             font-size: 20px;
             margin-bottom: 10px;
+
+            @include b.mq(pc) {
+              flex-direction: row;
+              font-size: 24px;
+              margin-bottom: 15px;
+              max-width: 566px;
+            }
           }
 
           &-label {
@@ -550,7 +656,7 @@
       padding-bottom: 25px;
 
       @include b.mq(pc) {
-        margin-top: 100px;
+        margin-top: 160px;
       }
 
       .page-s-perpetual-care {
@@ -560,12 +666,28 @@
         &__ttl {
         }
 
-        &__img {
+        &__container {
+          max-width: 550px;
           margin-top: 20px;
+          margin-inline: auto;
+
+          @include b.mq(pc) {
+            margin-top: 50px;
+            max-width: 960px;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: start;
+            justify-content: center;
+            gap: 26px;
+          }
+        }
+
+        &__img {
           width: 100%;
 
           @include b.mq(pc) {
-            max-width: 500px;
+            max-width: 350px;
+            flex: 1;
           }
           img {
             aspect-ratio: 350 / 290;
@@ -581,8 +703,17 @@
           text-align: left;
 
           @include b.mq(pc) {
-            margin-top: 35px;
-            font-size: 24px;
+            flex: 1;
+            margin-top: 17px;
+            font-size: 16px;
+          }
+
+          .br-1 {
+            display: none;
+
+            @include b.mq(pc) {
+              display: block;
+            }
           }
         }
       }

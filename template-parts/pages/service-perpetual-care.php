@@ -49,44 +49,46 @@
     <section class="page-s-perpetual-care__section page-s-perpetual-care__section--3 section fadein ">
       <div class="page-s-perpetual-care__inner inner">
         <h2 class="page-s-perpetual-care__ttl">銀山寺のご紹介</h2>
-        <p class="page-s-perpetual-care__txt">銀山寺（ぎんざんじ）は大阪市天王寺区・四天王寺のほど近くに位置する浄土宗の古刹です。創建は安土桃山時代の1591年（天正19年）、豊臣秀吉の大坂城下町整備の一環として建立され、当初は「大福寺」と称しましたが、後に太閤秀吉の命により「寶樹山 銀山寺」と改められました。開山（創始者）は京都・黒谷の金戒光明寺の僧で、以来430年以上の歴史を紡いできた由緒ある寺院です。大阪市内中心部の上町台地に位置し交通の便がよいお寺で、地下鉄谷町線・千日前線「谷町九丁目」駅から徒歩約10分とアクセス至便です。寺町の一角に佇む重厚な本堂は歴史の重みを感じさせ、境内には著名人や学者の墓所も祀られています。<br><br>境内は四季折々に豊かな表情を見せ、梅や桜、バラ、あじさいなど様々な花木が季節ごとに美しく咲き誇ります。春には桜の薄紅に彩られ、秋には色づく木々が情緒を添える銀山寺は、都心にありながら静寂で穏やかな空気に包まれています。寺院ならではの厳かな雰囲気と、花々がもたらす自然の潤いが調和した境内は、訪れる方の心を和ませ、「終の棲家」としてふさわしい安らぎに満ちています。</p>
 
-        <div class="p-sec-slider">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-swiper-1.png" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-swiper-2.png" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-swiper-3.png" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-swiper-4.png" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-swiper-5.png" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-swiper-6.png" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-swiper-7.png" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-swiper-8.png" alt="">
+        <div class="page-s-perpetual-care__container">
+          <p class="page-s-perpetual-care__txt">銀山寺（ぎんざんじ）は大阪市天王寺区・四天王寺のほど近くに位置する浄土宗の古刹です。創建は安土桃山時代の1591年（天正19年）、豊臣秀吉の大坂城下町整備の一環として建立され、当初は「大福寺」と称しましたが、後に太閤秀吉の命により「寶樹山 銀山寺」と改められました。開山（創始者）は京都・黒谷の金戒光明寺の僧で、以来430年以上の歴史を紡いできた由緒ある寺院です。大阪市内中心部の上町台地に位置し交通の便がよいお寺で、地下鉄谷町線・千日前線「谷町九丁目」駅から徒歩約10分とアクセス至便です。寺町の一角に佇む重厚な本堂は歴史の重みを感じさせ、境内には著名人や学者の墓所も祀られています。<br><br>境内は四季折々に豊かな表情を見せ、梅や桜、バラ、あじさいなど様々な花木が季節ごとに美しく咲き誇ります。春には桜の薄紅に彩られ、秋には色づく木々が情緒を添える銀山寺は、都心にありながら静寂で穏やかな空気に包まれています。寺院ならではの厳かな雰囲気と、花々がもたらす自然の潤いが調和した境内は、訪れる方の心を和ませ、「終の棲家」としてふさわしい安らぎに満ちています。</p>
+
+          <div class="p-sec-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-swiper-1.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-swiper-2.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-swiper-3.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-swiper-4.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-swiper-5.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-swiper-6.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-swiper-7.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-swiper-8.png" alt="">
+              </div>
+
             </div>
 
-          </div>
-
-          <div class="swiper-controls">
-            <div class="swiper-button-prev"><span class="swiper-button-icon swiper-button-icon--prev"></span></div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-next"><span class="swiper-button-icon swiper-button-icon--next"></span></div>
+            <div class="swiper-controls">
+              <div class="swiper-button-prev"><span class="swiper-button-icon swiper-button-icon--prev"></span></div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"><span class="swiper-button-icon swiper-button-icon--next"></span></div>
+            </div>
           </div>
         </div>
-
       </div>
 
     </section>
@@ -139,7 +141,7 @@
             </div>
             <div class="page-s-perpetual-care__card-body">
               <h2 class="page-s-perpetual-care__card-ttl">04　ご納骨・納骨式</h2>
-              <p class="page-s-perpetual-care__card-txt">銀山寺境内にて納骨式を執り行います。<br>当日はご家族立会いのもと、ご遺骨を永代供養納骨墓の人用区画またはペット用区画へそれぞれ安置します。銀山寺の住職が読経し、<br>故人とペットの冥福を共に祈る法要を営みます<br>魂が安らかに鎮まるよう、心を込めて儀式を進めさせていただきます。<br>塔婆の建立やプレート（オプション）の設置なども行い、永代納骨への納骨が完了します。</p>
+              <p class="page-s-perpetual-care__card-txt">銀山寺境内にて納骨式を執り行います。<br>当日はご家族立会いのもと、ご遺骨を永代供養納骨墓の人用区画またはペット用区画へそれぞれ安置します。銀山寺の住職が読経し、<br class="br-1">故人とペットの冥福を共に祈る法要を営みます<br>魂が安らかに鎮まるよう、心を込めて儀式を進めさせていただきます。<br>塔婆の建立やプレート（オプション）の設置なども行い、永代納骨への納骨が完了します。</p>
             </div>
           </div>
           <div class="page-s-perpetual-care__card">
@@ -152,6 +154,9 @@
             </div>
           </div>
         </div>
+        <?php
+        get_template_part('/template-parts/parts/parts-bg-flower--left')
+        ?>
       </div>
 
     </section>
@@ -204,13 +209,15 @@
       <div class="page-s-perpetual-care__inner inner">
         <h2 class="page-s-perpetual-care__ttl">提携霊園・寺院のご案内について</h2>
 
-        <div class="page-s-perpetual-care__img">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-sec6-1.png" alt="">
+        <div class="page-s-perpetual-care__container">
+          <div class="page-s-perpetual-care__img">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/perpetual-sec6-1.png" alt="">
+          </div>
+
+          <p class="page-s-perpetual-care__txt">オルデでは、銀山寺での永代納骨を中心にご案内しておりますが、<br class="br-1">ご家族様のご事情やご希望に応じて、その他の霊園・寺院のご紹介も可能です。<br>・立地やアクセスを重視したい方<br>・ご自宅から通いやすい場所を選びたい方<br>・静かな環境や雰囲気を大切にしたい方<br>・宗教・宗派や供養形式についてご希望がある方<br>それぞれのお考えに寄り添い、最適な供養先をご提案いたします。</p>
         </div>
 
-        <p class="page-s-perpetual-care__txt">オルデでは、銀山寺での永代納骨を中心にご案内しておりますが、ご家族様のご事情やご希望に応じて、その他の霊園・寺院のご紹介も可能です。<br>・立地やアクセスを重視したい方<br>・ご自宅から通いやすい場所を選びたい方<br>・静かな環境や雰囲気を大切にしたい方<br>・宗教・宗派や供養形式についてご希望がある方<br>それぞれのお考えに寄り添い、最適な供養先をご提案いたします。</p>
       </div>
-
     </section>
     <!-- セクション6ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
 
