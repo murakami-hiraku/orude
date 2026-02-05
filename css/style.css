@@ -3874,6 +3874,11 @@ main {
 @media (min-width: 1024px) {
   .page-s-perpetual-care__section--3 .page-s-perpetual-care__container {
     margin-top: 50px;
+  }
+}
+@media (min-width: 1440px) {
+  .page-s-perpetual-care__section--3 .page-s-perpetual-care__container {
+    margin-top: 50px;
     max-width: 1280px;
     margin-inline: auto;
     display: -webkit-box;
@@ -3892,7 +3897,7 @@ main {
   margin-top: 15px;
   font-size: 14px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   .page-s-perpetual-care__section--3 .page-s-perpetual-care__txt {
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -3911,17 +3916,21 @@ main {
   z-index: 1;
   margin-top: 36px;
   padding-bottom: 25px;
-  max-width: 550px;
+  max-width: 600px;
   width: 100%;
   margin-inline: auto;
 }
 @media (min-width: 1024px) {
   .page-s-perpetual-care__section--3 .p-sec-slider {
+    margin-top: 50px;
+  }
+}
+@media (min-width: 1440px) {
+  .page-s-perpetual-care__section--3 .p-sec-slider {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
     margin-top: 0;
-    max-width: 600px;
   }
 }
 .page-s-perpetual-care__section--3 .p-sec-slider .swiper-wrapper {
@@ -3950,12 +3959,15 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-inline: 10px;
+  margin-inline: auto;
 }
 @media (min-width: 1024px) {
   .page-s-perpetual-care__section--3 .p-sec-slider .swiper-controls {
     max-width: 600px;
-    padding-inline: 75px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 75px;
   }
 }
 .page-s-perpetual-care__section--3 .p-sec-slider .swiper-pagination {
@@ -4147,6 +4159,9 @@ main {
 }
 @media (min-width: 1024px) {
   .page-s-perpetual-care__section--4 .page-s-perpetual-care__card-img {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     max-width: 300px;
   }
 }
@@ -4176,7 +4191,7 @@ main {
 }
 @media (min-width: 1024px) {
   .page-s-perpetual-care__section--4 .page-s-perpetual-care__card-body {
-    margin-top: 35px;
+    margin-top: 15px;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
@@ -4184,6 +4199,14 @@ main {
         -ms-flex-pack: center;
             justify-content: center;
     gap: 25px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+@media (min-width: 1440px) {
+  .page-s-perpetual-care__section--4 .page-s-perpetual-care__card-body {
+    margin-top: 35px;
   }
 }
 @media (min-width: 1024px) {
@@ -4334,12 +4357,23 @@ main {
   font-size: 20px;
   margin-bottom: 10px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .page-s-perpetual-care__section--5 .page-s-perpetual-care__list .item-1 {
+    white-space: nowrap;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media (min-width: 1024px) {
+  .page-s-perpetual-care__section--5 .page-s-perpetual-care__list .item-1 {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
     font-size: 24px;
     margin-bottom: 15px;
     max-width: 566px;
