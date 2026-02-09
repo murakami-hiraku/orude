@@ -101,3 +101,15 @@ function enqueue_cf7_redirect_script()
   }
 }
 add_action('wp_enqueue_scripts', 'enqueue_cf7_redirect_script');
+
+// エディタースタイル
+function my_theme_setup()
+{
+  // エディタースタイルを有効化
+  add_theme_support('editor-styles');
+
+  // 読み込むCSSファイルのパスを指定
+  // cssフォルダの中にある場合は 'css/editor-style.css'
+  add_editor_style('css/editor-style.css');
+}
+add_action('after_setup_theme', 'my_theme_setup');
