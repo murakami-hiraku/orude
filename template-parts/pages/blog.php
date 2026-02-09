@@ -161,6 +161,5 @@ Template Name: ブログ一覧
 <?php get_template_part('template-parts/section/section-contact'); ?>
 
 
-<?php get_header(); ?>
 
 <?php get_footer(); ?>
