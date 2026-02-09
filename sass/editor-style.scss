@@ -17,198 +17,249 @@ h1 {
   margin-block: 15px !important;
 }
 
-.is-root-container {
-  // display: flex !important;
-  // flex-direction: column !important;
-  // gap: 15px !important;
-  // align-items: start !important;
-  // justify-content: center !important;
+.block-editor-iframe__body {
+  .is-root-container {
+    max-width: 1080px !important;
+    // display: flex !important;
+    // flex-direction: column !important;
+    // gap: 15px !important;
+    // align-items: start !important;
+    // justify-content: center !important;
 
-  h2 {
-    margin: 0 !important;
-    margin-right: auto !important;
-    margin-block: 15px !important;
+    h2.wp-block {
+      max-width: 1080px !important;
 
-    position: relative;
-    font-size: 20px;
-    border-bottom: 3px solid b.$accent-color-yellow;
-    width: 100%;
+      margin: 0 !important;
+      margin-right: auto !important;
+      margin-block: 15px !important;
 
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: -3px;
-      left: 0;
-      width: 30%;
-      height: 3px;
-      background-color: b.$main-color;
-    }
-  }
-
-  h3 {
-    margin: 0 !important;
-    margin-right: auto !important;
-    margin-block: 15px !important;
-
-    width: 83%;
-    font-weight: 700;
-    font-size: 20px;
-    position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: -3px;
-      left: 0;
-      width: 83%;
-      height: 3px;
-      background-color: b.$main-color;
-    }
-  }
-
-  h4 {
-    margin: 0 !important;
-    margin-right: auto !important;
-    margin-block: 15px !important;
-
-    font-weight: 700;
-    font-size: 18px;
-    border-left: 4px solid b.$main-color;
-  }
-
-  h5 {
-    display: block;
-    min-width: 184px;
-    width: fit-content;
-    padding-right: 90px;
-    margin: 0 !important;
-    margin-right: auto !important;
-    margin-block: 15px !important;
-
-    font-weight: 700;
-    font-size: 18px;
-    border-bottom: 2px solid b.$main-color;
-  }
-
-  h6 {
-    display: block;
-    min-width: 184px;
-    width: fit-content;
-    padding-right: 90px;
-    margin: 0 !important;
-    margin-right: auto !important;
-    margin-block: 15px !important;
-
-    font-weight: 700;
-    font-size: 18px;
-    border-bottom: 4px dashed b.$main-color;
-  }
-
-  ul {
-    margin: 0 !important;
-    margin-right: auto !important;
-    margin-block: 15px !important;
-
-    list-style: none; /* デフォルトの丸を消す */
-    padding: 0;
-
-    li {
       position: relative;
-      padding-left: 1.2em; // 文頭の空きスペース
+      font-size: 20px;
+      border-bottom: 3px solid b.$accent-color-yellow;
+      box-sizing: border-box !important;
+      width: 100% !important;
 
-      &::before {
-        content: "✓"; // ここに好きな文字を入れる
-        font-weight: 900;
+      &::after {
+        content: "";
         position: absolute;
+        bottom: -3px;
         left: 0;
-        color: b.$main-color;
+        width: 30%;
+        height: 3px;
+        background-color: b.$main-color;
       }
     }
-  }
 
-  ol {
-    margin: 0 !important;
-    margin-right: auto !important;
-    margin-block: 15px !important;
+    h3.wp-block {
+      max-width: 1000px !important;
 
-    list-style-type: decimal; /* 標準の数字 (1, 2, 3...) */
-    padding-left: 20px; /* 数字が出るスペースを確保 */
-    li {
-      &::marker {
-        color: b.$main-color; // 数字の色だけを指定！
-        font-weight: bold; // 太字にするなどの調整も可能
-      }
+      // margin: 0 !important;
+      // margin-right: auto !important;
+      // margin-block: 15px !important;
+
+      // width: 83%;
+      // font-weight: 700;
+      // font-size: 20px;
+      // position: relative;
+
+      // &::after {
+      //   content: "";
+      //   position: absolute;
+      //   bottom: -3px;
+      //   left: 0;
+      //   width: 83%;
+      //   height: 3px;
+      //   background-color: b.$main-color;
+      // }
+
+      display: block;
+      min-width: 300px;
+      width: fit-content !important;
+      padding-right: 128px;
+      margin: 0 !important;
+      margin-right: auto !important;
+      margin-block: 15px !important;
+      font-weight: 700;
+      font-size: 18px;
+      border-bottom: 2px solid b.$main-color;
+      box-sizing: border-box !important;
+      width: 100% !important;
     }
-  }
 
-  .wp-block-table {
-    margin: 0 !important;
-    margin-right: auto !important;
-    margin-block: 15px !important;
+    h4.wp-block {
+      max-width: 920px !important;
 
-    width: 100%;
-    overflow-x: auto; // この箱の中だけ横スクロールを許可する
-    -webkit-overflow-scrolling: touch; // iOSでのスクロールを滑らかにする
-  }
+      padding-right: 150px;
 
-  table {
-    font-size: 14px;
-    table-layout: fixed; // ★ 幅の計算を「固定」にする
-    width: 100%; // 全体の幅を指定
+      margin: 0 !important;
+      margin-right: auto !important;
+      margin-block: 15px !important;
 
-    tbody {
-      tr {
-        display: flex;
-        align-items: center;
-        justify-content: start;
+      font-weight: 700;
+      font-size: 18px;
+      border-left: 4px solid b.$main-color;
+      box-sizing: border-box !important;
+      width: 100% !important;
+    }
 
-        td {
-          display: block;
-          font-weight: 700;
-          min-width: 150px;
-          white-space: nowrap;
-          width: fit-content;
-          padding: 15px;
-          border: 1px solid #d9d9d9;
-          box-sizing: border-box;
+    h5.wp-block {
+      max-width: 780px !important;
+
+      display: block;
+      min-width: 184px;
+      width: fit-content;
+      padding-right: 90px;
+      margin: 0 !important;
+      margin-right: auto !important;
+      margin-block: 15px !important;
+
+      font-weight: 700;
+      font-size: 18px;
+      border-bottom: 2px solid b.$main-color;
+      box-sizing: border-box !important;
+      width: 100% !important;
+    }
+
+    h6.wp-block {
+      max-width: 780px !important;
+
+      display: block;
+      min-width: 184px;
+      width: fit-content;
+      padding-right: 90px;
+      margin: 0 !important;
+      margin-right: auto !important;
+      margin-block: 15px !important;
+
+      font-weight: 700;
+      font-size: 18px;
+      border-bottom: 4px dashed b.$main-color;
+      box-sizing: border-box !important;
+      width: 100% !important;
+    }
+
+    ul {
+      max-width: 1080px !important;
+
+      margin: 0 !important;
+      margin-right: auto !important;
+      margin-block: 15px !important;
+
+      list-style: none; /* デフォルトの丸を消す */
+      padding: 0;
+
+      li {
+        margin: 0 !important;
+        margin-right: auto !important;
+
+        position: relative;
+        padding-left: 1.2em; // 文頭の空きスペース
+
+        &::before {
+          content: "✓"; // ここに好きな文字を入れる
+          font-weight: 900;
+          position: absolute;
+          left: 0;
+          color: b.$main-color;
         }
-        &:first-child {
+      }
+    }
+
+    ol {
+      max-width: 1080px !important;
+
+      margin: 0 !important;
+      margin-right: auto !important;
+      margin-block: 15px !important;
+
+      list-style-type: decimal; /* 標準の数字 (1, 2, 3...) */
+      padding-left: 20px; /* 数字が出るスペースを確保 */
+      li {
+        margin: 0 !important;
+        margin-right: auto !important;
+
+        &::marker {
+          color: b.$main-color; // 数字の色だけを指定！
+          font-weight: bold; // 太字にするなどの調整も可能
+        }
+      }
+    }
+
+    .wp-block-table {
+      max-width: 1080px !important;
+
+      margin: 0 !important;
+      margin-right: auto !important;
+      margin-block: 15px !important;
+
+      width: 100%;
+      overflow-x: auto; // この箱の中だけ横スクロールを許可する
+      -webkit-overflow-scrolling: touch; // iOSでのスクロールを滑らかにする
+    }
+
+    table {
+      font-size: 14px;
+      table-layout: fixed; // ★ 幅の計算を「固定」にする
+      width: 100%; // 全体の幅を指定
+
+      tbody {
+        tr {
+          display: flex;
+          align-items: center;
+          justify-content: start;
+
           td {
-            border: 1px solid #efefef;
-            background: b.$main-color;
-            color: b.$text-color-white;
-            text-align: center;
-            margin-bottom: 3px;
+            display: block;
+            font-weight: 700;
+            min-width: 150px;
+            white-space: nowrap;
+            width: fit-content;
+            padding: 15px;
+            border: 1px solid #d9d9d9;
+            box-sizing: border-box;
+          }
+          &:first-child {
+            td {
+              border: 1px solid #efefef;
+              background: b.$main-color;
+              color: b.$text-color-white;
+              text-align: center;
+              margin-bottom: 3px;
+            }
           }
         }
       }
     }
-  }
 
-  p {
-    margin: 0 !important;
-    margin-right: auto !important;
-    margin-block: 15px !important;
+    p {
+      max-width: 840px !important;
 
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 2;
-    letter-spacing: 0.02em;
-  }
+      margin: 0 !important;
+      margin-right: auto !important;
+      margin-block: 15px !important;
 
-  a {
-    line-height: 2;
-    font-weight: 900;
-    color: b.$main-color;
-    letter-spacing: 0.02em;
-  }
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 2;
+      letter-spacing: 0.02em;
+    }
 
-  img {
-    margin: 0 !important;
-    margin-right: auto !important;
-    margin-block: 15px !important;
+    a {
+      line-height: 2;
+      font-weight: 900;
+      color: b.$main-color;
+      letter-spacing: 0.02em;
+    }
 
-    max-width: 100%;
-    height: auto;
+    img {
+      max-width: 1080px !important;
+
+      margin: 0 !important;
+      margin-right: auto !important;
+      margin-block: 15px !important;
+
+      max-width: 100%;
+      height: auto;
+    }
   }
 }

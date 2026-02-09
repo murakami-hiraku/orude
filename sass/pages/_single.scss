@@ -14,6 +14,7 @@
     }
 
     .p-entry {
+      max-width: 1080px;
       &__header {
         margin-bottom: 30px;
         font-weight: 900;
@@ -33,12 +34,14 @@
         text-align: left;
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: 20px;
         align-items: start;
         justify-content: center;
+        margin-top: 25px;
 
         // WordPressの本文内のタグにスタイルを当てる
         h2 {
+          max-width: 1080px;
           position: relative;
           font-size: 20px;
           border-bottom: 3px solid b.$accent-color-yellow;
@@ -56,29 +59,46 @@
         }
 
         h3 {
-          width: 83%;
-          font-weight: 700;
-          font-size: 20px;
-          position: relative;
+          max-width: 1000px;
 
-          &::after {
-            content: "";
-            position: absolute;
-            bottom: -3px;
-            left: 0;
-            width: 83%;
-            height: 3px;
-            background-color: b.$main-color;
-          }
+          // width: 83%;
+          // font-weight: 700;
+          // font-size: 20px;
+          // position: relative;
+
+          // &::after {
+          //   content: "";
+          //   position: absolute;
+          //   bottom: -3px;
+          //   left: 0;
+          //   width: 83%;
+          //   height: 3px;
+          //   background-color: b.$main-color;
+          // }
+
+          display: inline-block;
+          width: fit-content;
+          min-width: 300px;
+          padding-right: 128px;
+          margin-right: auto;
+          font-weight: 700;
+          font-size: 18px;
+          border-bottom: 2px solid b.$main-color;
         }
 
         h4 {
+          max-width: 920px;
+
+          padding-right: 150px;
+
           font-weight: 700;
           font-size: 18px;
           border-left: 4px solid b.$main-color;
         }
 
         h5 {
+          max-width: 780px;
+
           display: inline-block;
           width: fit-content;
           padding-right: 90px;
@@ -89,6 +109,7 @@
         }
 
         h6 {
+          max-width: 780px;
           display: inline-block;
           width: fit-content;
           padding-right: 90px;
@@ -99,6 +120,8 @@
         }
 
         ul {
+          max-width: 1080px;
+
           list-style: none; /* デフォルトの丸を消す */
           padding: 0;
 
@@ -117,6 +140,8 @@
         }
 
         ol {
+          max-width: 1080px;
+
           list-style-type: decimal; /* 標準の数字 (1, 2, 3...) */
           padding-left: 20px; /* 数字が出るスペースを確保 */
           li {
@@ -128,6 +153,7 @@
         }
 
         .wp-block-table {
+          max-width: 1080px;
           width: 100%;
           overflow-x: auto; // この箱の中だけ横スクロールを許可する
           -webkit-overflow-scrolling: touch; // iOSでのスクロールを滑らかにする
@@ -168,6 +194,7 @@
         }
 
         p {
+          max-width: 840px;
           font-weight: 500;
           font-size: 14px;
           line-height: 2;
