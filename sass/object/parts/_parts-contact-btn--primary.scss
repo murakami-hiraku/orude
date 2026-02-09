@@ -13,6 +13,21 @@
   width: fit-content;
   font-weight: 900;
   font-size: 15px;
+  transition: 0.3s;
+
+  &:hover {
+    background: b.$sub-color-light;
+    color: b.$main-color;
+
+    .header__btn-icon {
+      mask-image: url("../img/mail-icon.svg");
+      background-color: b.$main-color;
+
+      img {
+        display: none;
+      }
+    }
+  }
 
   span {
     width: 35px;

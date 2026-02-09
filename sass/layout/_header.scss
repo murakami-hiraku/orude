@@ -135,6 +135,32 @@
         max-width: none;
         height: auto;
         color: b.$main-color;
+
+        .menu-item {
+          transition: 0.3s;
+
+          &:hover {
+            color: b.$text-color-white;
+
+            a {
+              &::after {
+                color: b.$text-color-white;
+              }
+            }
+          }
+        }
+
+        #menu-item-237 {
+          &:hover {
+            color: b.$text-color-white;
+
+            a {
+              &::after {
+                color: b.$text-color-white;
+              }
+            }
+          }
+        }
       }
     }
 
@@ -369,13 +395,23 @@
     gap: 8px;
     z-index: 1000;
     border-radius: 10px;
-    background: b.$sub-color-light;
+    background: b.$main-color;
     width: 10.256vw;
     max-width: 50px;
     height: 10.256vw;
     max-height: 50px;
     border: 1px solid b.$main-color;
     box-sizing: border-box;
+    transition: 0.3s;
+
+    &:hover {
+      background: b.$sub-color-light;
+      border: 1px solid b.$main-color;
+
+      .header__icon-bar {
+        background: b.$main-color;
+      }
+    }
 
     @include b.mq(lg) {
       gap: 12px;
@@ -407,8 +443,7 @@
   }
 
   &__icon-bar {
-    transition: 0.4s;
-    background: b.$main-color;
+    background: b.$sub-color-light;
     width: 30px;
     height: 1px;
 

@@ -360,7 +360,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 15px;
+  gap: 16px;
 }
 .section-fv__link {
   display: -webkit-box;
@@ -376,6 +376,18 @@ main {
   border: 2px solid #907910;
   font-weight: 900;
   line-height: 1.8;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.section-fv__link:hover {
+  background-color: #fff;
+  color: #907910;
+}
+.section-fv__link:hover .icon-arrow {
+  background: #907910;
+}
+.section-fv__link:hover .icon-arrow::before, .section-fv__link:hover .icon-arrow::after {
+  background: #907910;
 }
 .section-fv__link .link-img {
   width: 60px;
@@ -397,6 +409,8 @@ main {
   margin-right: 10px;
   border-radius: 9999px;
   background-color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .section-fv__link .icon-arrow::before, .section-fv__link .icon-arrow::after {
   content: "";
@@ -1269,6 +1283,20 @@ main {
   width: fit-content;
   font-weight: 900;
   font-size: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.parts-contact-btn:hover {
+  background: #fff;
+  color: #907910;
+}
+.parts-contact-btn:hover .header__btn-icon {
+  -webkit-mask-image: url("../img/mail-icon.svg");
+          mask-image: url("../img/mail-icon.svg");
+  background-color: #907910;
+}
+.parts-contact-btn:hover .header__btn-icon img {
+  display: none;
 }
 .parts-contact-btn span {
   width: 35px;
@@ -1856,6 +1884,22 @@ main {
     height: auto;
     color: #907910;
   }
+  .header__nav-menu .menu-item {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .header__nav-menu .menu-item:hover {
+    color: #fff;
+  }
+  .header__nav-menu .menu-item:hover a::after {
+    color: #fff;
+  }
+  .header__nav-menu #menu-item-237:hover {
+    color: #fff;
+  }
+  .header__nav-menu #menu-item-237:hover a::after {
+    color: #fff;
+  }
 }
 @media (min-width: 1440px) {
   .header__nav-card {
@@ -2103,7 +2147,7 @@ main {
   gap: 8px;
   z-index: 1000;
   border-radius: 10px;
-  background: #fff;
+  background: #907910;
   width: 10.256vw;
   max-width: 50px;
   height: 10.256vw;
@@ -2111,6 +2155,15 @@ main {
   border: 1px solid #907910;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.header__drawer-icon:hover {
+  background: #fff;
+  border: 1px solid #907910;
+}
+.header__drawer-icon:hover .header__icon-bar {
+  background: #907910;
 }
 @media (min-width: 1440px) {
   .header__drawer-icon {
@@ -2140,9 +2193,7 @@ main {
           transform: rotate(-45deg);
 }
 .header__icon-bar {
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  background: #907910;
+  background: #fff;
   width: 30px;
   height: 1px;
 }
