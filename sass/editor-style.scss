@@ -11,17 +11,23 @@
 }
 
 // WordPressの本文内のタグにスタイルを当てる
+h1 {
+  margin: 0 !important;
+  margin-right: auto !important;
+  margin-block: 15px !important;
+}
 
 .is-root-container {
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 15px !important;
-  align-items: start !important;
-  justify-content: center !important;
+  // display: flex !important;
+  // flex-direction: column !important;
+  // gap: 15px !important;
+  // align-items: start !important;
+  // justify-content: center !important;
 
   h2 {
     margin: 0 !important;
     margin-right: auto !important;
+    margin-block: 15px !important;
 
     position: relative;
     font-size: 20px;
@@ -42,6 +48,7 @@
   h3 {
     margin: 0 !important;
     margin-right: auto !important;
+    margin-block: 15px !important;
 
     width: 83%;
     font-weight: 700;
@@ -62,6 +69,7 @@
   h4 {
     margin: 0 !important;
     margin-right: auto !important;
+    margin-block: 15px !important;
 
     font-weight: 700;
     font-size: 18px;
@@ -70,10 +78,13 @@
 
   h5 {
     display: block;
+    min-width: 184px;
     width: fit-content;
     padding-right: 90px;
     margin: 0 !important;
     margin-right: auto !important;
+    margin-block: 15px !important;
+
     font-weight: 700;
     font-size: 18px;
     border-bottom: 2px solid b.$main-color;
@@ -81,10 +92,13 @@
 
   h6 {
     display: block;
+    min-width: 184px;
     width: fit-content;
     padding-right: 90px;
     margin: 0 !important;
     margin-right: auto !important;
+    margin-block: 15px !important;
+
     font-weight: 700;
     font-size: 18px;
     border-bottom: 4px dashed b.$main-color;
@@ -93,6 +107,7 @@
   ul {
     margin: 0 !important;
     margin-right: auto !important;
+    margin-block: 15px !important;
 
     list-style: none; /* デフォルトの丸を消す */
     padding: 0;
@@ -114,6 +129,7 @@
   ol {
     margin: 0 !important;
     margin-right: auto !important;
+    margin-block: 15px !important;
 
     list-style-type: decimal; /* 標準の数字 (1, 2, 3...) */
     padding-left: 20px; /* 数字が出るスペースを確保 */
@@ -128,6 +144,7 @@
   .wp-block-table {
     margin: 0 !important;
     margin-right: auto !important;
+    margin-block: 15px !important;
 
     width: 100%;
     overflow-x: auto; // この箱の中だけ横スクロールを許可する
@@ -171,6 +188,7 @@
   p {
     margin: 0 !important;
     margin-right: auto !important;
+    margin-block: 15px !important;
 
     font-weight: 500;
     font-size: 14px;
@@ -188,6 +206,7 @@
   img {
     margin: 0 !important;
     margin-right: auto !important;
+    margin-block: 15px !important;
 
     max-width: 100%;
     height: auto;

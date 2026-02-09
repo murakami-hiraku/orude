@@ -104,25 +104,16 @@ main {
   margin-right: auto;
 }
 
-.is-root-container {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -webkit-box-orient: vertical !important;
-  -webkit-box-direction: normal !important;
-      -ms-flex-direction: column !important;
-          flex-direction: column !important;
-  gap: 15px !important;
-  -webkit-box-align: start !important;
-      -ms-flex-align: start !important;
-          align-items: start !important;
-  -webkit-box-pack: center !important;
-      -ms-flex-pack: center !important;
-          justify-content: center !important;
+h1 {
+  margin: 0 !important;
+  margin-right: auto !important;
+  margin-block: 15px !important;
 }
+
 .is-root-container h2 {
   margin: 0 !important;
   margin-right: auto !important;
+  margin-block: 15px !important;
   position: relative;
   font-size: 20px;
   border-bottom: 3px solid #f2e5aa;
@@ -140,6 +131,7 @@ main {
 .is-root-container h3 {
   margin: 0 !important;
   margin-right: auto !important;
+  margin-block: 15px !important;
   width: 83%;
   font-weight: 700;
   font-size: 20px;
@@ -157,30 +149,35 @@ main {
 .is-root-container h4 {
   margin: 0 !important;
   margin-right: auto !important;
+  margin-block: 15px !important;
   font-weight: 700;
   font-size: 18px;
   border-left: 4px solid #907910;
 }
 .is-root-container h5 {
   display: block;
+  min-width: 184px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding-right: 90px;
   margin: 0 !important;
   margin-right: auto !important;
+  margin-block: 15px !important;
   font-weight: 700;
   font-size: 18px;
   border-bottom: 2px solid #907910;
 }
 .is-root-container h6 {
   display: block;
+  min-width: 184px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding-right: 90px;
   margin: 0 !important;
   margin-right: auto !important;
+  margin-block: 15px !important;
   font-weight: 700;
   font-size: 18px;
   border-bottom: 4px dashed #907910;
@@ -188,6 +185,7 @@ main {
 .is-root-container ul {
   margin: 0 !important;
   margin-right: auto !important;
+  margin-block: 15px !important;
   list-style: none; /* デフォルトの丸を消す */
   padding: 0;
 }
@@ -205,6 +203,7 @@ main {
 .is-root-container ol {
   margin: 0 !important;
   margin-right: auto !important;
+  margin-block: 15px !important;
   list-style-type: decimal; /* 標準の数字 (1, 2, 3...) */
   padding-left: 20px; /* 数字が出るスペースを確保 */
 }
@@ -215,6 +214,7 @@ main {
 .is-root-container .wp-block-table {
   margin: 0 !important;
   margin-right: auto !important;
+  margin-block: 15px !important;
   width: 100%;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
@@ -258,6 +258,7 @@ main {
 .is-root-container p {
   margin: 0 !important;
   margin-right: auto !important;
+  margin-block: 15px !important;
   font-weight: 500;
   font-size: 14px;
   line-height: 2;
@@ -272,6 +273,7 @@ main {
 .is-root-container img {
   margin: 0 !important;
   margin-right: auto !important;
+  margin-block: 15px !important;
   max-width: 100%;
   height: auto;
 }
