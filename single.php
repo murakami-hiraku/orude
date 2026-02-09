@@ -11,9 +11,7 @@
               <time datetime="<?php echo get_the_date('Y-m-d'); ?>">
                 <?php echo get_the_date(); ?>
               </time>
-              <span class="p-entry__category">
-                <?php the_category(', '); ?>
-              </span>
+
             </div>
             <h1 class="p-entry__title"><?php the_title(); ?></h1>
           </header>
