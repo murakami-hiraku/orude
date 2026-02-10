@@ -264,16 +264,91 @@
   .p-fv-windows {
     position: absolute;
     width: 100%;
+    max-width: 1080px;
     left: 50%;
     bottom: -30px;
     transform: translateX(-50%);
-    z-index: 5;
+    z-index: 3;
     pointer-events: none; // 下の要素（ボタン等）を触れるように
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: end;
+
+    @include b.mq(pc) {
+      left: 30%;
+      bottom: 18px;
+    }
   }
+
+  .p-fv-slider-wrap {
+    position: relative;
+    display: block;
+    width: 115px;
+    height: 115px;
+    flex-shrink: 0; // 潰れないように固定
+
+    @include b.mq(lg) {
+      width: 150px;
+      height: 150px;
+    }
+    @include b.mq(xl) {
+      width: 210px;
+      height: 210px;
+    }
+  }
+
+  .p-fv-slider-circle {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1px solid b.$main-color;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    @include b.mq(lg) {
+      width: 160px;
+      height: 160px;
+    }
+    @include b.mq(xl) {
+      width: 220px;
+      height: 220px;
+    }
+
+    &--1 {
+      z-index: 15;
+      top: -12px;
+      left: -15px;
+
+      @include b.mq(pc) {
+        top: -110px;
+        left: 65px;
+      }
+    }
+    &--2 {
+      z-index: 35;
+      top: -10px;
+      left: -5px;
+
+      @include b.mq(pc) {
+        top: 2px;
+        left: -18px;
+      }
+    }
+    &--3 {
+      z-index: 25;
+      top: -6px;
+      left: 12px;
+
+      @include b.mq(pc) {
+        top: -51px;
+        left: -36px;
+      }
+    }
+  }
+
   .p-fv-slider {
     position: relative;
     display: block;
@@ -282,38 +357,34 @@
     border-radius: 50%;
     background-color: #fff;
     pointer-events: auto; // スライダー自体は触れるように戻す
-    flex-shrink: 0; // 潰れないように固定
+    overflow: hidden;
 
-    &::after {
-      content: "";
-      position: absolute;
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      border: 1px solid b.$main-color;
-      z-index: 10;
+    @include b.mq(lg) {
+      width: 150px;
+      height: 150px;
+    }
+    @include b.mq(xl) {
+      width: 210px;
+      height: 210px;
     }
 
-    @include b.mq(pc) {
-    }
-
-    // 個別の位置指定
     &--1 {
-      &::after {
-        top: -10px;
-        left: -15px;
+      z-index: 10;
+      @include b.mq(pc) {
+        left: 80px;
+        top: -87px;
       }
     }
     &--2 {
-      &::after {
-        top: -12px;
-        left: -5px;
+      z-index: 30;
+      @include b.mq(pc) {
       }
     }
     &--3 {
-      &::after {
-        top: -6px;
-        left: 12px;
+      z-index: 20;
+      @include b.mq(pc) {
+        right: 40px;
+        top: -35px;
       }
     }
 
@@ -321,15 +392,22 @@
       width: 100%;
       height: 100%;
       border-radius: 50%; // wrapperを丸くする
-      overflow: hidden;
     }
 
     .swiper-slide {
       border-radius: 50%;
-      overflow: hidden; // ★ 中の画像を丸で切り抜く
       width: 115px;
       height: 115px;
       background-color: #fff; // 各スライドにも念のため設定
+
+      @include b.mq(lg) {
+        width: 150px;
+        height: 150px;
+      }
+      @include b.mq(xl) {
+        width: 210px;
+        height: 210px;
+      }
     }
 
     &__img {
