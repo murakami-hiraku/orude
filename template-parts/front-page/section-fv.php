@@ -1,22 +1,28 @@
 <!-- ファーストビュー -->
 <section class="section-fv section fadein">
   <div class="section-fv__overlay"></div>
+
+  <div class="section-fv__img--main">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/fv-img-3.png" alt="">
+  </div>
+
   <div class="swiper p-fv-slider">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <div class="p-fv-slider__bg p-fv-slider__bg--1" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/fv-img-1.png');"></div>
+        <img class="p-fv-slider__img p-fv-slider__img--1" src="<?php echo get_template_directory_uri(); ?>/img/fv-img-1.png" alt="">
+
       </div>
       <div class="swiper-slide">
-        <div class="p-fv-slider__bg p-fv-slider__bg--2" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/fv-img-2.png');"></div>
+        <img class="p-fv-slider__img p-fv-slider__img--2" src="<?php echo get_template_directory_uri(); ?>/img/fv-img-2.png" alt="">
       </div>
       <div class="swiper-slide">
-        <div class="p-fv-slider__bg p-fv-slider__bg--3" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/fv-img-3.png');"></div>
+        <img class="p-fv-slider__img p-fv-slider__img--3" src="<?php echo get_template_directory_uri(); ?>/img/fv-img-3.png" alt="">
       </div>
       <div class="swiper-slide">
-        <div class="p-fv-slider__bg p-fv-slider__bg--4" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/fv-img-4.png');"></div>
+        <img class="p-fv-slider__img p-fv-slider__img--4" src="<?php echo get_template_directory_uri(); ?>/img/fv-img-4.png" alt="">
       </div>
       <div class="swiper-slide">
-        <div class="p-fv-slider__bg p-fv-slider__bg--5" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/fv-img-5.png');"></div>
+        <img class="p-fv-slider__img p-fv-slider__img--5" src="<?php echo get_template_directory_uri(); ?>/img/fv-img-5.png" alt="">
       </div>
     </div>
   </div>

@@ -129,7 +129,7 @@ const fvSwiper = new Swiper(".p-fv-slider", {
   },
   autoplay: {
     delay: 4000,
-    disableOnInteraction: false,
+    disableOnInteraction: true,
   },
   speed: 2000,
 });

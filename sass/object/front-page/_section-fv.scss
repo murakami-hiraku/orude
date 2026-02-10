@@ -15,52 +15,58 @@
 
   &__overlay {
     position: absolute;
-    z-index: 5;
+    z-index: 2;
     pointer-events: none;
     inset: 0;
     background: #55555566;
   }
 
+  &__img {
+    &--main {
+      width: 100%;
+      max-height: 822px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
   /* 背景スライダーのスタイル */
   .p-fv-slider {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1; /* 背面 */
+    bottom: 64px;
+    left: 17%;
+    width: 205px;
+    height: 205px;
+    border-radius: 50%;
+    z-index: 5;
+    overflow: hidden; // 丸からはみ出た画像を隠す
+    background-color: #fff; // ★ここを白にすると、透けなくなります
 
-    &__bg {
+    .swiper-wrapper {
       width: 100%;
       height: 100%;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
+    }
 
-      &--1 {
-        background-position: 60% center;
-      }
-      &--2 {
-        background-size: 300%;
-        background-position: center top;
-      }
-      &--3 {
-        background-position: center top;
-      }
-      &--4 {
-        background-size: cover;
-      }
-      &--5 {
-        background-position: 60% center;
-      }
+    .swiper-slide {
+      width: 100%;
+      height: 100%;
+      background-color: #fff; // 各スライドにも念のため設定
+    }
+
+    &__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; // ★imgタグの場合はこれを使います
     }
 
     @include b.mq(pc) {
-      &__bg {
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-
+      &__img {
         &--1 {
         }
         &--2 {
