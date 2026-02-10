@@ -7,10 +7,21 @@
   max-height: 500px;
   position: relative;
   overflow: hidden;
+  padding-bottom: 30px;
 
   @include b.mq(pc) {
     height: 42.9166vw;
     max-height: 824px;
+  }
+
+  &__wrap {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    background-image: url(../img/fv-img-main.png);
+    background-size: cover;
+    background-position: 30% center;
   }
 
   &__overlay {
@@ -19,66 +30,6 @@
     pointer-events: none;
     inset: 0;
     background: #55555566;
-  }
-
-  &__img {
-    &--main {
-      width: 100%;
-      max-height: 822px;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 1;
-
-      img {
-        width: 100%;
-      }
-    }
-  }
-
-  /* 背景スライダーのスタイル */
-  .p-fv-slider {
-    position: absolute;
-    bottom: 64px;
-    left: 17%;
-    width: 205px;
-    height: 205px;
-    border-radius: 50%;
-    z-index: 5;
-    overflow: hidden; // 丸からはみ出た画像を隠す
-    background-color: #fff; // ★ここを白にすると、透けなくなります
-
-    .swiper-wrapper {
-      width: 100%;
-      height: 100%;
-    }
-
-    .swiper-slide {
-      width: 100%;
-      height: 100%;
-      background-color: #fff; // 各スライドにも念のため設定
-    }
-
-    &__img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    @include b.mq(pc) {
-      &__img {
-        &--1 {
-        }
-        &--2 {
-        }
-        &--3 {
-        }
-        &--4 {
-        }
-        &--5 {
-        }
-      }
-    }
   }
 
   &__inner {
@@ -304,6 +255,101 @@
 
       &::after {
         transform: rotate(-45deg);
+      }
+    }
+  }
+
+  /* 背景スライダーのスタイル */
+
+  .p-fv-windows {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    bottom: -30px;
+    transform: translateX(-50%);
+    z-index: 5;
+    pointer-events: none; // 下の要素（ボタン等）を触れるように
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+  }
+  .p-fv-slider {
+    position: relative;
+    display: block;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    background-color: #fff;
+    pointer-events: auto; // スライダー自体は触れるように戻す
+    flex-shrink: 0; // 潰れないように固定
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 1px solid b.$main-color;
+      z-index: 10;
+    }
+
+    @include b.mq(pc) {
+    }
+
+    // 個別の位置指定
+    &--1 {
+      &::after {
+        top: -10px;
+        left: -15px;
+      }
+    }
+    &--2 {
+      &::after {
+        top: -12px;
+        left: -5px;
+      }
+    }
+    &--3 {
+      &::after {
+        top: -6px;
+        left: 12px;
+      }
+    }
+
+    .swiper-wrapper {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%; // wrapperを丸くする
+      overflow: hidden;
+    }
+
+    .swiper-slide {
+      border-radius: 50%;
+      overflow: hidden; // ★ 中の画像を丸で切り抜く
+      width: 115px;
+      height: 115px;
+      background-color: #fff; // 各スライドにも念のため設定
+    }
+
+    &__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @include b.mq(pc) {
+      &__img {
+        &--1 {
+        }
+        &--2 {
+        }
+        &--3 {
+        }
+        &--4 {
+        }
+        &--5 {
+        }
       }
     }
   }

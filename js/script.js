@@ -123,13 +123,17 @@ jQuery(function ($) {
 // --- 7. fvスワイパー制御 ---
 const fvSwiper = new Swiper(".p-fv-slider", {
   loop: true,
-  effect: "fade",
-  fadeEffect: {
-    crossFade: true,
-  },
+  spaceBetween: 0,
+
   autoplay: {
     delay: 4000,
+    slidesPerView: 1,
+    slidesPerGroup: 1,
     disableOnInteraction: true,
+    allowTouchMove: false,
+    centeredSlides: true,
+    observer: true,
+    observeParents: true,
   },
   speed: 2000,
 });
