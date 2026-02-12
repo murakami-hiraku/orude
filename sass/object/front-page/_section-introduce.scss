@@ -3,13 +3,12 @@
 
 .section-introduce {
   margin-top: 100px;
+  padding-bottom: 50px;
 
   @include b.mq(pc) {
     margin-top: 200px;
   }
   &__inner {
-    padding-top: 50px;
-
     @include b.mq(pc) {
     }
   }
