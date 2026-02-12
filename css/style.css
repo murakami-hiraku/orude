@@ -106,8 +106,9 @@ main {
 }
 @media (min-width: 1024px) {
   .section-fv {
-    height: 42.9166vw;
-    max-height: 824px;
+    height: 43.4375vw;
+    max-height: 834px;
+    padding-bottom: 0;
   }
 }
 .section-fv__wrap {
@@ -515,7 +516,6 @@ main {
   width: 115px;
   height: 115px;
   border-radius: 50%;
-  background-color: #fff;
   pointer-events: auto;
   overflow: hidden;
 }
@@ -561,7 +561,6 @@ main {
   border-radius: 50%;
   width: 115px;
   height: 115px;
-  background-color: #fff;
 }
 @media (min-width: 1440px) {
   .section-fv .p-fv-slider .swiper-slide {

@@ -124,6 +124,7 @@ jQuery(function ($) {
 const fvSwiper = new Swiper(".p-fv-slider", {
   loop: true,
   spaceBetween: 0,
+  effect: "fade",
 
   autoplay: {
     delay: 4000,

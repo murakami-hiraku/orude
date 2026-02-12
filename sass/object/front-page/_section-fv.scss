@@ -10,8 +10,9 @@
   padding-bottom: 30px;
 
   @include b.mq(pc) {
-    height: 42.9166vw;
-    max-height: 824px;
+    height: 43.4375vw;
+    max-height: 834px;
+    padding-bottom: 0;
   }
 
   &__wrap {
@@ -356,7 +357,6 @@
     width: 115px;
     height: 115px;
     border-radius: 50%;
-    background-color: #fff;
     pointer-events: auto; // スライダー自体は触れるように戻す
     overflow: hidden;
 
@@ -399,7 +399,6 @@
       border-radius: 50%;
       width: 115px;
       height: 115px;
-      background-color: #fff; // 各スライドにも念のため設定
 
       @include b.mq(lg) {
         width: 150px;
