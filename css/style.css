@@ -102,7 +102,6 @@ main {
   position: relative;
   overflow: hidden;
   padding-bottom: 30px;
-  /* 背景スライダーのスタイル */
 }
 @media (min-width: 1024px) {
   .section-fv {
@@ -403,6 +402,9 @@ main {
 .section-fv__link .icon-arrow::after {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+.section-fv {
+  /* 背景スライダーのスタイル */
 }
 .section-fv .p-fv-windows {
   position: absolute;
@@ -1487,7 +1489,7 @@ main {
   gap: 29px;
   -webkit-box-align: start;
       -ms-flex-align: start;
-          align-items: flex-start;
+          align-items: start;
 }
 .parts-faq-card__label {
   -ms-flex-negative: 0;
@@ -1511,19 +1513,12 @@ main {
 }
 .parts-faq-card__q {
   padding-bottom: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .parts-faq-card__q .parts-faq-card__label {
   color: #907910;
-}
-@media (min-width: 1024px) {
-  .parts-faq-card__q .parts-faq-card__label {
-    margin-top: 4px;
-  }
-}
-@media (min-width: 1440px) {
-  .parts-faq-card__q .parts-faq-card__label {
-    margin-top: 12px;
-  }
 }
 .parts-faq-card__q .parts-faq-card__txt {
   color: #907910;
@@ -5713,7 +5708,6 @@ main {
           flex-direction: column;
   gap: 25px;
   font-weight: 700;
-  /* CF7のテキストエリアを狙い撃ち */
 }
 @media (min-width: 1024px) {
   .page-contact__form .form-box {
@@ -5737,23 +5731,25 @@ main {
   width: -moz-fit-content;
   width: fit-content;
 }
-.page-contact__form .form-box .category {
-  /* 2. 新しいマークを作る */
-}
 .page-contact__form .form-box .category select {
   padding: 14px 60px 14px 12px;
   width: 220px;
   border: none;
+}
+@media (min-width: 1024px) {
+  .page-contact__form .form-box .category select {
+    width: 420px;
+  }
+}
+.page-contact__form .form-box .category select {
   /* 1. 標準の矢印を消す */
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   cursor: pointer;
 }
-@media (min-width: 1024px) {
-  .page-contact__form .form-box .category select {
-    width: 420px;
-  }
+.page-contact__form .form-box .category {
+  /* 2. 新しいマークを作る */
 }
 .page-contact__form .form-box .category::after {
   content: "";
@@ -5798,6 +5794,9 @@ main {
   -webkit-box-shadow: none;
           box-shadow: none; /* ブラウザによっては影が出ていることもあるので消す */
   border-color: #ccc; /* 枠線の色が勝手に変わるのを防ぎ、任意の色に固定する */
+}
+.page-contact__form .form-box {
+  /* CF7のテキストエリアを狙い撃ち */
 }
 .page-contact__form .form-box .wpcf7-textarea {
   height: 200px; /* お好みの高さに */
@@ -5958,7 +5957,6 @@ main {
 }
 .page-contact-confirm__form .form-box {
   color: #fff;
-  /* CF7のテキストエリアを狙い撃ち */
 }
 .page-contact-confirm__form .form-box .category {
   pointer-events: none;
@@ -5982,6 +5980,9 @@ main {
 .page-contact-confirm__form .form-box textarea {
   padding: 14px 36px;
   background: #907910;
+}
+.page-contact-confirm__form .form-box {
+  /* CF7のテキストエリアを狙い撃ち */
 }
 .page-contact-confirm__form .form-box .wpcf7-textarea {
   padding-inline: 12px;

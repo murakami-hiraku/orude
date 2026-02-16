@@ -10,7 +10,7 @@
   &__a {
     display: flex;
     gap: 29px; // ラベルとテキストの間の距離
-    align-items: flex-start;
+    align-items: start;
   }
 
   &__label {
@@ -31,16 +31,10 @@
 
   &__q {
     padding-bottom: 10px;
+    align-items: center;
 
     .parts-faq-card__label {
       color: b.$main-color;
-
-      @include b.mq(pc) {
-        margin-top: 4px;
-      }
-      @include b.mq(lg) {
-        margin-top: 12px;
-      }
     }
 
     .parts-faq-card__txt {
