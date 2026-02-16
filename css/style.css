@@ -2992,12 +2992,12 @@ main {
 }
 
 .page-s-cremation .block-page-ttl {
-  background-position: 75% center;
+  background-position: center center;
   background-size: cover;
 }
 @media (min-width: 1024px) {
   .page-s-cremation .block-page-ttl {
-    background-position: center center;
+    background-position: center 40%;
   }
 }
 .page-s-cremation__ttl {
@@ -3301,6 +3301,24 @@ main {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media (min-width: 1024px) {
+  .page-s-cremation__section--4 .page-s-cremation__card-body {
+    margin-top: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
 .page-s-cremation__section--4 .page-s-cremation__card-ttl {
   text-align: center;
   color: #907910;
@@ -3348,6 +3366,95 @@ main {
     content: "";
   }
 }
+.page-s-cremation__section--4 .page-s-cremation__card.card--4 .page-s-cremation__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 7px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 320px;
+  margin-top: 30px;
+  margin-inline: auto;
+  color: #fff;
+  background-color: #907910;
+  border: 1px solid #907910;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 1.8;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+@media (min-width: 1024px) {
+  .page-s-cremation__section--4 .page-s-cremation__card.card--4 .page-s-cremation__link {
+    margin-top: 20px;
+    width: 365px;
+    height: 40px;
+    font-size: 16px;
+    gap: 15px;
+  }
+}
+@media (min-width: 1440px) {
+  .page-s-cremation__section--4 .page-s-cremation__card.card--4 .page-s-cremation__link {
+    margin-right: auto;
+  }
+}
+.page-s-cremation__section--4 .page-s-cremation__card.card--4 .page-s-cremation__link:hover {
+  background-color: #fff;
+  color: #907910;
+}
+.page-s-cremation__section--4 .page-s-cremation__card.card--4 .page-s-cremation__link:hover .icon-arrow {
+  background: #907910;
+}
+.page-s-cremation__section--4 .page-s-cremation__card.card--4 .page-s-cremation__link:hover .icon-arrow::before, .page-s-cremation__section--4 .page-s-cremation__card.card--4 .page-s-cremation__link:hover .icon-arrow::after {
+  background: #907910;
+}
+.page-s-cremation__section--4 .page-s-cremation__card.card--4 .page-s-cremation__link .link-img {
+  width: 56px;
+  height: 40px;
+  background-color: #fff;
+}
+.page-s-cremation__section--4 .page-s-cremation__card.card--4 .page-s-cremation__link .link-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.page-s-cremation__section--4 .page-s-cremation__card.card--4 .page-s-cremation__link .link-txt {
+  margin-right: auto;
+}
+.page-s-cremation__section--4 .page-s-cremation__card.card--4 .page-s-cremation__link .icon-arrow {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  margin: 5.7px 0;
+  margin-right: 10px;
+  border-radius: 9999px;
+  background-color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.page-s-cremation__section--4 .page-s-cremation__card.card--4 .page-s-cremation__link .icon-arrow::before, .page-s-cremation__section--4 .page-s-cremation__card.card--4 .page-s-cremation__link .icon-arrow::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 1px);
+  right: 0;
+  width: 10px;
+  height: 2px;
+  border-radius: 9999px;
+  background-color: #fff;
+  -webkit-transform-origin: calc(100% - 1px) 50%;
+          transform-origin: calc(100% - 1px) 50%;
+}
+.page-s-cremation__section--4 .page-s-cremation__card.card--4 .page-s-cremation__link .icon-arrow::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.page-s-cremation__section--4 .page-s-cremation__card.card--4 .page-s-cremation__link .icon-arrow::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
 .page-s-cremation__section--4 .page-s-cremation__flow {
   margin-top: 25px;
   position: relative;
@@ -3376,6 +3483,11 @@ main {
     margin-top: 78px;
   }
 }
+@media (min-width: 1024px) and (min-width: 1440px) {
+  .page-s-cremation__section--4 .page-s-cremation__flow {
+    margin-top: 100px;
+  }
+}
 .page-s-cremation__section--4 .page-s-cremation__flow::before {
   content: "";
   position: absolute;
@@ -3399,7 +3511,7 @@ main {
   }
 }
 .page-s-cremation__section--4 .page-s-cremation__flow-step {
-  width: 100px;
+  width: 135px;
   height: 35px;
   background: #333333;
   font-weight: 900;
@@ -3414,6 +3526,15 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 2px 5px;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .page-s-cremation__section--4 .page-s-cremation__flow-step {
+    width: 100px;
+    height: 60px;
+    padding: 5px 2px;
+  }
 }
 .page-s-cremation__section--4 .page-s-cremation__flow-step:first-child {
   background: #907910;
@@ -3421,16 +3542,37 @@ main {
 .page-s-cremation__section--4 .page-s-cremation__flow-step:last-child {
   background: #907910;
 }
+.page-s-cremation__section--4 .card--1 .page-s-cremation__flow {
+  margin-top: 78px;
+}
 .page-s-cremation__section--4 .card--2 .step--3 {
   font-size: 14px;
 }
 .page-s-cremation__section--4 .card--3 .step--3 {
   font-size: 14px;
 }
+@media (min-width: 1024px) {
+  .page-s-cremation__section--4 .card--4 .page-s-cremation__flow {
+    margin-top: 18px;
+  }
+}
+@media (min-width: 1440px) {
+  .page-s-cremation__section--4 .card--4 .page-s-cremation__flow {
+    margin-top: 40px;
+  }
+}
 .page-s-cremation__section--4 .card--4 .step--2,
 .page-s-cremation__section--4 .card--4 .step--3,
 .page-s-cremation__section--4 .card--4 .step--5 {
   font-size: 14px;
+}
+.page-s-cremation__section--4 .card--4 .step--5 {
+  width: 180px;
+}
+@media (min-width: 1024px) {
+  .page-s-cremation__section--4 .card--4 .step--5 {
+    width: 100px;
+  }
 }
 .page-s-cremation__section--5 {
   margin-top: 100px;
@@ -3520,8 +3662,8 @@ main {
      object-fit: cover;
 }
 .page-s-cremation__section--5 .page-s-cremation__card-body {
-  padding-top: 35px;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3542,11 +3684,6 @@ main {
   padding: 0;
 }
 @media (min-width: 1024px) {
-  .page-s-cremation__section--5 .page-s-cremation__card-body .parts-tel {
-    padding-left: 50px;
-  }
-}
-@media (min-width: 1024px) {
   .page-s-cremation__section--5 .page-s-cremation__card-body {
     gap: 25px;
     -webkit-box-align: start;
@@ -3555,6 +3692,7 @@ main {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
+    padding-top: 35px;
   }
 }
 .page-s-cremation__section--5 .page-s-cremation__card-ttl {
@@ -3566,27 +3704,45 @@ main {
     font-size: 24px;
   }
 }
+.page-s-cremation__section--5 .page-s-cremation__card-lead {
+  font-weight: 900;
+  padding-inline: 25px;
+}
+@media (min-width: 1024px) {
+  .page-s-cremation__section--5 .page-s-cremation__card-lead {
+    padding-inline: 0;
+    font-size: 20px;
+  }
+}
 .page-s-cremation__section--5 .page-s-cremation__card-txt {
+  font-size: 16px;
   line-height: 1.8;
   padding-inline: 25px;
 }
 @media (min-width: 1024px) {
   .page-s-cremation__section--5 .page-s-cremation__card-txt {
     padding-inline: 0;
-    font-size: 20px;
+  }
+}
+.page-s-cremation__section--5 .page-s-cremation__card-txt--sub {
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 1.8;
+  padding-inline: 25px;
+}
+@media (min-width: 1024px) {
+  .page-s-cremation__section--5 .page-s-cremation__card-txt--sub {
+    padding-inline: 0;
   }
 }
 @media (min-width: 1024px) {
-  .page-s-cremation__section--5 .page-s-cremation__card .is-pad {
-    padding-left: 50px;
+  .page-s-cremation__section--5 .page-s-cremation__card.card--1 .page-s-cremation__card-body {
+    padding: 0;
   }
 }
-.page-s-cremation__section--5 .page-s-cremation .card-4 br {
-  display: none;
-}
 @media (min-width: 1024px) {
-  .page-s-cremation__section--5 .page-s-cremation .card-4 br {
-    display: block;
+  .page-s-cremation__section--5 .page-s-cremation__card.card--3 .page-s-cremation__card-body {
+    padding: 0;
   }
 }
 .page-s-cremation__section--6 {
@@ -3625,20 +3781,22 @@ main {
   background-color: #907910;
   color: #fff;
   margin-top: 25px;
-  padding-inline: 3.846vw;
   padding-top: 24px;
 }
 @media (min-width: 1024px) {
   .page-s-cremation__section--6 .page-s-cremation__container {
     max-width: 1280px;
     width: 100%;
+    margin-top: 40px;
     margin-inline: auto;
     padding-inline: 160px;
     padding-top: 50px;
   }
 }
 .page-s-cremation__section--6 .page-s-cremation__img {
+  background: #fff;
   width: 100%;
+  padding: 12px 8px;
 }
 @media (min-width: 1024px) {
   .page-s-cremation__section--6 .page-s-cremation__img {
@@ -3650,8 +3808,7 @@ main {
   width: 100%;
 }
 .page-s-cremation__section--6 .page-s-cremation__cards {
-  margin-top: 80px;
-  padding-bottom: 20px;
+  padding-inline: 3.846vw;
   max-width: none;
 }
 @media (min-width: 1024px) {
@@ -3692,6 +3849,12 @@ main {
 }
 .page-s-cremation__section--6 .page-s-cremation__card:last-child {
   border-top: 1px dashed #e4e4e4;
+}
+@media (min-width: 1024px) {
+  .page-s-cremation__section--6 .page-s-cremation__card.card--1 {
+    padding: 0;
+    padding-bottom: 40px;
+  }
 }
 
 .page-s-ceremony .block-page-ttl {

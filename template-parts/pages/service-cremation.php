@@ -133,7 +133,7 @@
                 </div>
                 <div class="page-s-cremation__flow-step step--2">個別火葬
                 </div>
-                <div class="page-s-cremation__flow-step step--3">スタッフ収骨
+                <div class="page-s-cremation__flow-step step--3">スタッフお骨上げ
                 </div>
                 <div class="page-s-cremation__flow-step step--4">返骨
                 </div>
@@ -152,7 +152,7 @@
                 </div>
                 <div class="page-s-cremation__flow-step step--2">個別火葬
                 </div>
-                <div class="page-s-cremation__flow-step step--3">ご家族様収骨
+                <div class="page-s-cremation__flow-step step--3">ご家族様お骨上げ
                 </div>
                 <div class="page-s-cremation__flow-step step--4">返骨
                 </div>
@@ -166,6 +166,11 @@
             <div class="page-s-cremation__card-body">
               <h2 class="page-s-cremation__card-ttl">自宅でのお別れ葬</h2>
               <p class="page-s-cremation__card-txt">立会個別火葬プランにご自宅に祭壇を準備させていただき、ゆっくりお別れをしていただきます。</p>
+
+              <a class="page-s-cremation__link ceremony" href="<?php echo home_url('/service-ceremony'); ?>"><span class="link-img"><img src="<?php echo get_template_directory_uri(); ?>/img/fv-link-img-2.png" alt=""></span>
+                <p class="link-txt">セレモニープランの詳細はこちら</p><span class="icon-arrow"></span>
+              </a>
+
               <div class="page-s-cremation__flow">
                 <div class="page-s-cremation__flow-step step--1">お伺い
                 </div>
@@ -175,7 +180,7 @@
                 </div>
                 <div class="page-s-cremation__flow-step step--4">個別火葬
                 </div>
-                <div class="page-s-cremation__flow-step step--5">ご家族様収骨
+                <div class="page-s-cremation__flow-step step--5">スタッフまたはご家族様で<br class="hidden-pc">お骨上げ
                 </div>
                 <div class="page-s-cremation__flow-step step--6">返骨
                 </div>
@@ -197,19 +202,20 @@
         get_template_part('/template-parts/parts/parts-bg-flower--right');
         ?>
 
-        <h2 class="page-s-cremation__ttl">お見送りの流れ</h2>
+        <h2 class="page-s-cremation__ttl">訪問火葬プランの流れ</h2>
 
         <div class="page-s-cremation__cards">
-          <div class="page-s-cremation__card">
+          <div class="page-s-cremation__card card--1">
             <div class="page-s-cremation__card-img">
               <img src="<?php echo get_template_directory_uri(); ?>/img/cremation-sec5-1.png" alt="">
             </div>
             <div class="page-s-cremation__card-body">
               <h2 class="page-s-cremation__card-ttl">01　もしもの時は・・・</h2>
+              <h4 class="page-s-cremation__card-lead">完全予約制になっております。<br>最後の時間をゆっくり取れるよう日程のご相談ください。</h4>
               <?php
               get_template_part('/template-parts/parts/parts-tel--primary')
               ?>
-              <p class="page-s-cremation__card-txt is-pad">営業時間：10:00~20:00<br class="hidden-pc">定休日：不定休</p>
+              <p class="page-s-cremation__card-txt--sub">お問い合わせ受付時間：9:00~20:00<br class="hidden-pc">定休日：年中無休（年末年始を除く）</p>
             </div>
           </div>
           <div class="page-s-cremation__card">
@@ -217,26 +223,28 @@
               <img src="<?php echo get_template_directory_uri(); ?>/img/cremation-sec5-2.png" alt="">
             </div>
             <div class="page-s-cremation__card-body">
-              <h2 class="page-s-cremation__card-ttl">02　スタッフが専用車で訪問</h2>
-              <p class="page-s-cremation__card-txt">ご自宅または近隣へお伺いし、周囲の環境を確認します。</p>
+              <h2 class="page-s-cremation__card-ttl">02　お迎え</h2>
+              <p class="page-s-cremation__card-txt">ご自宅またはご指定の場所にお伺いに上がります。<br>お迎えに上がる前までにお別れを済ませておいていただくようお願いいたします。</p>
             </div>
           </div>
-          <div class="page-s-cremation__card">
+          <div class="page-s-cremation__card card--3">
             <div class="page-s-cremation__card-img">
               <img src="<?php echo get_template_directory_uri(); ?>/img/cremation-sec5-3.png" alt="">
             </div>
             <div class="page-s-cremation__card-body">
               <h2 class="page-s-cremation__card-ttl">03　火葬</h2>
-              <p class="page-s-cremation__card-txt">最新式の火葬炉にて、静かに丁寧に火葬を行います。</p>
+              <p class="page-s-cremation__card-txt">ご迷惑にならない場所で火葬を行います。<br>火葬の煙・においが発生しにくい最新式の火葬炉になっておりますのでご安心ください。</p>
+              <p class="page-s-cremation__card-txt--sub">※火葬については、近隣の安全な場所に移動して火葬を行います。移動をしながらの火葬はしませんので、ご安心ください。</p>
             </div>
           </div>
-          <div class="page-s-cremation__card card-4">
+          <div class="page-s-cremation__card card--4">
             <div class="page-s-cremation__card-img">
               <img src="<?php echo get_template_directory_uri(); ?>/img/cremation-sec5-4.png" alt="">
             </div>
             <div class="page-s-cremation__card-body">
               <h2 class="page-s-cremation__card-ttl">04　お骨上げ・ご返骨</h2>
-              <p class="page-s-cremation__card-txt">ご遺骨を骨壷にお納めし、ご家族様へお返しいたします。<br>※合同火葬は、お骨上げ・ご返骨はできません。</p>
+              <p class="page-s-cremation__card-txt">ご遺骨を骨壷にお納めし、ご家族様へお返しいたします。</p>
+              <p class="page-s-cremation__card-txt--sub">※合同火葬は、お骨上げ・ご返骨はできません。</p>
             </div>
           </div>
           <div class="page-s-cremation__card">
@@ -274,13 +282,13 @@
         </div>
 
         <div class="page-s-cremation__cards">
-          <div class="page-s-cremation__card">
+          <div class="page-s-cremation__card card--1">
             <h2 class="page-s-cremation__card-ttl">料金に含まれる内容</h2>
             <p class="page-s-cremation__card-txt">個別葬プラン（一任個別葬・立会個別葬）には、骨壷・骨袋（覆い袋）が含まれております。<br>合同葬プランは、お骨をお返しできません。火葬後は、一部のお骨を合同墓へお納めいたします。<br>生花・祭壇・葬儀セレモニー等は含まれておりません。</p>
           </div>
           <div class="page-s-cremation__card">
             <h2 class="page-s-cremation__card-ttl">お迎え・出張費について</h2>
-            <p class="page-s-cremation__card-txt">ご遺体のお迎えは<br>大阪市内　無料<br>大阪市外　3,300円（高速代をご請求することもございます。）<br>状況によりご相談を承っております。</p>
+            <p class="page-s-cremation__card-txt">ご遺体のお迎えは<br>大阪市内　無料<br>大阪市外　3,300円（高速代をご請求することもございます。）<br>対応エリア　大阪府内・兵庫県尼崎市・伊丹市・西宮市・芦屋市・神戸市・奈良県奈良市<br>状況によりご相談を承っております。</p>
           </div>
         </div>
       </div>

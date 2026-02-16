@@ -3,11 +3,11 @@
 
 .page-s-cremation {
   .block-page-ttl {
-    background-position: 75% center;
+    background-position: center center;
     background-size: cover;
 
     @include b.mq(pc) {
-      background-position: center center;
+      background-position: center 40%;
     }
   }
 
@@ -267,6 +267,11 @@
 
           &-body {
             @include b.mq(pc) {
+              margin-top: 14px;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: start;
             }
           }
 
@@ -318,6 +323,98 @@
                 }
               }
             }
+
+            .page-s-cremation__link {
+              display: flex;
+              gap: 7px;
+              align-items: center;
+              width: 320px;
+              margin-top: 30px;
+              margin-inline: auto;
+              color: b.$text-color-white;
+              background-color: b.$main-color;
+              border: 1px solid b.$main-color;
+              // box-sizing: border-box;
+              font-weight: 900;
+              font-size: 14px;
+              line-height: 1.8;
+              transition: 0.3s;
+
+              @include b.mq(pc) {
+                margin-top: 20px;
+                width: 365px;
+                height: 40px;
+                // margin-bottom: 100%;
+                font-size: 16px;
+                gap: 15px;
+              }
+
+              @include b.mq(lg) {
+                margin-right: auto;
+              }
+
+              &:hover {
+                background-color: b.$sub-color-light;
+                color: b.$main-color;
+
+                .icon-arrow {
+                  background: b.$main-color;
+
+                  &::before,
+                  &::after {
+                    background: b.$main-color;
+                  }
+                }
+              }
+
+              .link-img {
+                width: 56px;
+                height: 40px;
+                background-color: b.$sub-color-light;
+
+                img {
+                  width: 100%;
+                  object-fit: cover;
+                }
+              }
+
+              .link-txt {
+                margin-right: auto;
+              }
+
+              .icon-arrow {
+                position: relative;
+                display: inline-block;
+                width: 20px;
+                height: 2px;
+                margin: 5.7px 0;
+                margin-right: 10px;
+                border-radius: 9999px;
+                background-color: b.$sub-color-light;
+                transition: 0.3s;
+
+                &::before,
+                &::after {
+                  content: "";
+                  position: absolute;
+                  top: calc(50% - 1px);
+                  right: 0;
+                  width: 10px;
+                  height: 2px;
+                  border-radius: 9999px;
+                  background-color: b.$sub-color-light;
+                  transform-origin: calc(100% - 1px) 50%;
+                }
+
+                &::before {
+                  transform: rotate(45deg);
+                }
+
+                &::after {
+                  transform: rotate(-45deg);
+                }
+              }
+            }
           }
         }
 
@@ -334,6 +431,10 @@
             gap: 36px;
             width: fit-content;
             margin-top: 78px;
+
+            @include b.mq(lg) {
+              margin-top: 100px;
+            }
           }
 
           // --- 中央の線 ---
@@ -358,7 +459,7 @@
           }
 
           &-step {
-            width: 100px;
+            width: 135px;
             height: 35px;
             background: #333333;
             font-weight: 900;
@@ -367,6 +468,14 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            padding: 2px 5px;
+            text-align: center;
+
+            @include b.mq(pc) {
+              width: 100px;
+              height: 60px;
+              padding: 5px 2px;
+            }
 
             &:first-child {
               background: b.$main-color;
@@ -377,6 +486,13 @@
           }
         }
       }
+
+      .card--1 {
+        .page-s-cremation__flow {
+          margin-top: 78px;
+        }
+      }
+
       .card--2 {
         .step--3 {
           font-size: 14px;
@@ -390,15 +506,31 @@
       }
 
       .card--4 {
+        .page-s-cremation__flow {
+          @include b.mq(pc) {
+            margin-top: 18px;
+          }
+          @include b.mq(lg) {
+            margin-top: 40px;
+          }
+        }
         .step--2,
         .step--3,
         .step--5 {
           font-size: 14px;
         }
+
+        .step--5 {
+          width: 180px;
+
+          @include b.mq(pc) {
+            width: 100px;
+          }
+        }
       }
     }
 
-    // セクション５  お見送りの流れーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+    // セクション５  訪問火葬プランの流れーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
     &--5 {
       margin-top: 100px;
 
@@ -470,8 +602,8 @@
           }
 
           &-body {
-            padding-top: 35px;
-            padding-bottom: 50px;
+            padding-top: 20px;
+            padding-bottom: 25px;
             display: flex;
             flex-direction: column;
             gap: 18px;
@@ -481,16 +613,13 @@
             .parts-tel {
               margin: 0;
               padding: 0;
-
-              @include b.mq(pc) {
-                padding-left: 50px;
-              }
             }
 
             @include b.mq(pc) {
               gap: 25px;
               align-items: start;
               justify-content: start;
+              padding-top: 35px;
             }
           }
 
@@ -502,29 +631,50 @@
               font-size: 24px;
             }
           }
-          &-txt {
-            line-height: 1.8;
-            padding-inline: 25px;
 
+          &-lead {
+            font-weight: 900;
+            padding-inline: 25px;
             @include b.mq(pc) {
               padding-inline: 0;
               font-size: 20px;
             }
           }
 
-          .is-pad {
+          &-txt {
+            font-size: 16px;
+            line-height: 1.8;
+            padding-inline: 25px;
+
             @include b.mq(pc) {
-              padding-left: 50px;
+              padding-inline: 0;
+            }
+
+            &--sub {
+              font-weight: 900;
+              font-size: 14px;
+              line-height: 1.8;
+              padding-inline: 25px;
+
+              @include b.mq(pc) {
+                padding-inline: 0;
+              }
             }
           }
-        }
 
-        .card-4 {
-          br {
-            display: none;
+          &.card--1 {
+            .page-s-cremation__card-body {
+              @include b.mq(pc) {
+                padding: 0;
+              }
+            }
+          }
 
-            @include b.mq(pc) {
-              display: block;
+          &.card--3 {
+            .page-s-cremation__card-body {
+              @include b.mq(pc) {
+                padding: 0;
+              }
             }
           }
         }
@@ -574,19 +724,21 @@
           background-color: b.$main-color;
           color: b.$text-color-white;
           margin-top: 25px;
-          padding-inline: 3.846vw;
           padding-top: 24px;
 
           @include b.mq(pc) {
             max-width: 1280px;
             width: 100%;
+            margin-top: 40px;
             margin-inline: auto;
             padding-inline: 160px;
             padding-top: 50px;
           }
         }
         &__img {
+          background: b.$sub-color-light;
           width: 100%;
+          padding: 12px 8px;
 
           @include b.mq(pc) {
             max-width: 774px;
@@ -598,8 +750,7 @@
         }
 
         &__cards {
-          margin-top: 80px;
-          padding-bottom: 20px;
+          padding-inline: 3.846vw;
           max-width: none;
 
           @include b.mq(pc) {
@@ -637,6 +788,13 @@
 
           &:last-child {
             border-top: 1px dashed b.$border-color-light;
+          }
+
+          &.card--1 {
+            @include b.mq(pc) {
+              padding: 0;
+              padding-bottom: 40px;
+            }
           }
         }
       }
