@@ -63,15 +63,15 @@
 
             <div class="page-s-ceremony__card-img--sub">
               <img src="<?php echo get_template_directory_uri(); ?>/img/ceremony-sec3-2.png" alt="">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/ceremony-sec3-1.png" alt="">
               <img src="<?php echo get_template_directory_uri(); ?>/img/ceremony-sec3-3.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/ceremony-sec3-4.png" alt="">
             </div>
             <p class="page-s-ceremony__card-txt--sub">※花籠については、以下の3色からお選びいただけます。<br>・ピンク　　・イエロー　　・ブルー<br>お子様のイメージやご家族のお気持ちに合わせてお選びください。</p>
           </div>
 
           <div class="page-s-ceremony__card">
             <div class="page-s-ceremony__card-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/ceremony-sec3-4.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/ceremony-sec3-5.png" alt="">
             </div>
             <h2 class="page-s-ceremony__card-ttl">セレモニープランB</h2>
             <p class="page-s-ceremony__card-txt">アーチ型のフラワー装飾を用いた、より華やかなセレモニーです。<br>その子らしさや、ご家族の想いを表現した特別な空間を演出します。</p>
@@ -99,14 +99,24 @@
         <p class="page-s-ceremony__txt txt-1">初めてご依頼される方にも安心していただけるよう、オルデの一般的な葬儀当日の流れをご説明いたします。<br>ご家族のご希望や状況に応じて多少前後する場合もございますが、一例として参考にしてください。</p>
 
         <div class="page-s-ceremony__cards">
-          <div class="page-s-ceremony__card">
+          <div class="page-s-ceremony__card card--1">
             <div class="page-s-ceremony__card-img">
               <img src="<?php echo get_template_directory_uri(); ?>/img/ceremony-sec4-1.png" alt="">
             </div>
             <div class="page-s-ceremony__card-body">
               <h2 class="page-s-ceremony__card-ttl">01　お問い合わせ</h2>
-              <p class="page-s-ceremony__card-txt">お子様がお亡くなりになったら、まずはオルデまでご連絡ください。<br>お電話やLINE、メールからお問い合わせいただけます。<br>専任スタッフが状況をお伺いし、ご葬儀の内容や日程、ご希望のセレモニースタイルについて丁寧にご案内いたします。<br>初めてのことで不安なことや分からないことがあれば、どんなことでもお話しください。</p>
-
+              <p class="page-s-ceremony__card-txt">
+                完全予約制になっております。<br>
+                ご希望のセレモニープランをお申し付けください。<br>
+                最後の時間をゆっくりと取れるよう日程のご相談ください。
+              </p>
+              <?php
+              get_template_part('/template-parts/parts/parts-tel--primary')
+              ?>
+              <p class="page-s-ceremony__card-txt--sub">
+                お問い合わせ受付時間：9:00~20:00<br class="hidden-pc">
+                定休日：年中無休（年末年始を除く）
+              </p>
             </div>
           </div>
           <div class="page-s-ceremony__card">
@@ -115,8 +125,11 @@
             </div>
             <div class="page-s-ceremony__card-body">
 
-              <h2 class="page-s-ceremony__card-ttl">02　打ち合わせ</h2>
-              <p class="page-s-ceremony__card-txt">ご希望のセレモニープランや飾り付け、お花の色、当日の流れについて打ち合わせを行います。<br>「どのように送り出してあげたいか」「どんな時間を過ごしたいか」など、<br>ご家族様の想いを大切にしながら内容を決めていきます。<br>形式にとらわれず、その子らしいお別れができるよう、細かな部分までご相談いただけます。</p>
+              <h2 class="page-s-ceremony__card-ttl">02　ご訪問・設営</h2>
+              <p class="page-s-ceremony__card-txt">
+                ご葬儀当日、スタッフがご自宅またはご指定の場所へお伺いします。<br>
+                セレモニーに必要な祭壇や飾り付けを丁寧に設営し、落ち着いてお別れの時間を過ごしていただける空間を整えます。
+              </p>
 
             </div>
           </div>
@@ -126,8 +139,81 @@
             </div>
             <div class="page-s-ceremony__card-body">
 
-              <h2 class="page-s-ceremony__card-ttl">03　お伺い・設営</h2>
-              <p class="page-s-ceremony__card-txt">ご葬儀当日、スタッフがご自宅またはご指定の場所へお伺いします。<br>セレモニーに必要な祭壇や飾り付けを丁寧に設営し、<br>落ち着いてお別れの時間を過ごしていただける空間を整えます。<br>準備が整いましたら、ご家族様だけの静かなセレモニーの時間が始まります。<br>慌ただしさのない、ゆっくりとしたひとときをお過ごしください。</p>
+              <h2 class="page-s-ceremony__card-ttl">03　お通夜・ご葬儀</h2>
+              <p class="page-s-ceremony__card-txt">
+                お子様との最後のお別れの時間をゆっくりお過ごしください。<br>
+                ※他社で火葬の場合、設営翌日に祭壇・飾り付けお引取りになります。<br>
+                ※ご自宅でのお飾りとなります。必ず駐車場所（1台分）を確保下さい。<br>
+                ※近隣の有料駐車場にお止めした場合の費用は実費請求させて頂きます。
+              </p>
+
+            </div>
+          </div>
+          <div class="page-s-ceremony__card">
+            <div class="page-s-ceremony__card-img">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/ceremony-sec4-4.png" alt="">
+            </div>
+            <div class="page-s-ceremony__card-body">
+
+              <h2 class="page-s-ceremony__card-ttl">04　お花入れ</h2>
+              <p class="page-s-ceremony__card-txt">
+                火葬当日にお伺いさせていただきお別れの準備をさせていただきます。<br>
+                飾り付けたお花をご家族様で棺の中にお納めしていただきます。
+              </p>
+
+            </div>
+          </div>
+          <div class="page-s-ceremony__card">
+            <div class="page-s-ceremony__card-img">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/ceremony-sec4-5.png" alt="">
+            </div>
+            <div class="page-s-ceremony__card-body">
+
+              <h2 class="page-s-ceremony__card-ttl">05　火葬</h2>
+              <p class="page-s-ceremony__card-txt">
+                ご迷惑にならない場所で火葬を行ないます。<br>
+                火葬の煙・においが発生しにくい最新式の火葬炉になっておりますのでご安心ください。
+              </p>
+
+            </div>
+          </div>
+          <div class="page-s-ceremony__card">
+            <div class="page-s-ceremony__card-img">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/ceremony-sec4-6.png" alt="">
+            </div>
+            <div class="page-s-ceremony__card-body">
+
+              <h2 class="page-s-ceremony__card-ttl">06　お引取り</h2>
+              <p class="page-s-ceremony__card-txt">
+                祭壇や飾り付けを丁寧にお引取りさせていただきます。
+              </p>
+
+            </div>
+          </div>
+          <div class="page-s-ceremony__card">
+            <div class="page-s-ceremony__card-img">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/ceremony-sec4-7.png" alt="">
+            </div>
+            <div class="page-s-ceremony__card-body">
+
+              <h2 class="page-s-ceremony__card-ttl">07　お骨上げ・ご返骨</h2>
+              <p class="page-s-ceremony__card-txt">
+                ご遺骨を骨壷にお納めし、ご家族様へお返しいたします。<br>
+                ※合同火葬は、お骨上げ・ご返骨はできません。
+              </p>
+
+            </div>
+          </div>
+          <div class="page-s-ceremony__card">
+            <div class="page-s-ceremony__card-img">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/ceremony-sec4-8.png" alt="">
+            </div>
+            <div class="page-s-ceremony__card-body">
+
+              <h2 class="page-s-ceremony__card-ttl">07　すべて終了</h2>
+              <p class="page-s-ceremony__card-txt">
+                火葬が完了し、全工程が終了となります。
+              </p>
 
             </div>
           </div>
