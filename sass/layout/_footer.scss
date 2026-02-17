@@ -47,6 +47,12 @@
     }
 
     &-privacy-policy {
+      &:hover {
+        text-decoration: underline;
+        text-decoration-color: b.$text-color-white;
+        text-decoration-thickness: 1.5px;
+        text-underline-offset: 8px;
+      }
       @include b.mq(pc) {
         margin-top: 25px;
       }

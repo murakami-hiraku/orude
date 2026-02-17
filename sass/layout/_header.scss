@@ -70,6 +70,8 @@
       margin-top: 20px;
       border-radius: 10px;
       padding: 50px 0 100px;
+      padding-inline: 4.861vw;
+
       // right: 6.25vw;
       width: 100%;
       max-width: 1260px;
@@ -124,14 +126,18 @@
     }
 
     &-menu {
-      .menu-item {
-        &:hover {
-          text-decoration: underline;
-          text-decoration-color: b.$text-color-white; // 下線の色
-          text-decoration-thickness: 2px; // 下線の太さ
-          text-underline-offset: 8px; // 文字と線の距離
+      @include b.mq(lg) {
+        flex: 1;
+      }
 
-          a {
+      .menu-item {
+        a {
+          &:hover {
+            text-decoration: underline;
+            text-decoration-color: b.$text-color-white; // 下線の色
+            text-decoration-thickness: 2px; // 下線の太さ
+            text-underline-offset: 8px; // 文字と線の距離
+
             &::after {
               text-decoration: underline;
               text-decoration-color: b.$text-color-white; // 下線の色
@@ -152,19 +158,12 @@
         .menu-item {
           transition: 0.3s;
 
-          &:hover {
-            text-decoration: underline;
-            text-decoration-color: b.$main-color; // 下線の色
-            text-decoration-thickness: 2px; // 下線の太さ
-            text-underline-offset: 8px; // 文字と線の距離
-
-            a {
-              &::after {
-                text-decoration: underline;
-                text-decoration-color: b.$main-color; // 下線の色
-                text-decoration-thickness: 2px; // 下線の太さ
-                text-underline-offset: 8px; // 文字と線の距離
-              }
+          a {
+            &:hover {
+              text-decoration: underline;
+              text-decoration-color: b.$main-color; // 下線の色
+              text-decoration-thickness: 2px; // 下線の太さ
+              text-underline-offset: 8px; // 文字と線の距離
             }
           }
         }
@@ -178,24 +177,38 @@
             @include b.mq(xl) {
               color: b.$main-color;
             }
-            &:hover {
-              text-decoration: underline;
-              text-decoration-color: b.$text-color-white; // 下線の色
-              text-decoration-thickness: 2px; // 下線の太さ
-              text-underline-offset: 8px; // 文字と線の距離
 
-              @include b.mq(xl) {
-                text-decoration: none;
-                color: b.$text-color-white;
-              }
+            a {
+              &:hover {
+                @include b.mq(xl) {
+                  text-decoration: underline;
+                  text-decoration-color: b.$text-color-white; // 下線の色
+                  text-decoration-thickness: 2px; // 下線の太さ
+                  text-underline-offset: 8px; // 文字と線の距離
+                  color: b.$text-color-white;
 
-              a {
-                color: b.$text-color-white;
+                  text-decoration: none;
+                  color: b.$text-color-white;
+                }
 
                 // ここが重要：ホバー時に矢印の色を強制的に白へ
                 &::after {
                   color: b.$text-color-white !important;
                   text-decoration: none; // 矢印にアンダーラインがつかないよう念押し
+                }
+              }
+            }
+
+            .sub-menu {
+              a {
+                &:hover {
+                  @include b.mq(xl) {
+                    // 子メニュー特有のアンダーライン
+                    text-decoration: underline;
+                    text-decoration-color: b.$text-color-white; // 下線の色
+                    text-decoration-thickness: 1.5px;
+                    text-underline-offset: 6px;
+                  }
                 }
               }
             }
@@ -206,6 +219,7 @@
 
     &-card {
       @include b.mq(lg) {
+        flex: 1;
         width: 40%;
         max-width: 416px;
       }
@@ -297,12 +311,10 @@
 
         // 子メニューを持つ親（WordPressが自動付与するクラス）
         &.menu-item-has-children {
-          &:hover {
-            text-decoration: none;
-          }
-
-          @include b.mq(xl) {
-            pointer-events: auto;
+          a {
+            &:hover {
+              text-decoration: none;
+            }
           }
 
           > a {
@@ -401,6 +413,10 @@
                 text-decoration-color: b.$text-color-white; // 下線の色
                 text-decoration-thickness: 1.5px;
                 text-underline-offset: 6px;
+              }
+
+              @include b.mq(xl) {
+                color: b.$text-color-white;
               }
             }
 
