@@ -3,10 +3,13 @@
 
 .header {
   width: 100%;
-  background-color: #fff; // 通常ページは白背景
+  background-color: b.$sub-color-light; // 通常ページは白背景
+  position: fixed; // 常に固定
+  top: 0;
+  left: 0;
+  z-index: 50;
 
   .home & {
-    position: absolute;
     top: 0;
     left: 0;
     background-color: transparent; // 背景を透明に
@@ -132,6 +135,8 @@
 
       .menu-item {
         a {
+          transition: 0.3s;
+
           &:hover {
             text-decoration: underline;
             text-decoration-color: b.$text-color-white; // 下線の色

@@ -1893,9 +1893,12 @@ main {
 .header {
   width: 100%;
   background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
 }
 .home .header {
-  position: absolute;
   top: 0;
   left: 0;
   background-color: transparent;
