@@ -54,6 +54,7 @@
     }
     @include b.mq(xl) {
       padding-block: 300px 20px;
+      padding-right: 0;
     }
   }
 
