@@ -251,6 +251,14 @@
           font-weight: 700;
           font-size: 20px;
           padding: 10px 100px;
+          transition: 0.3s;
+          border: 2px solid transparent;
+
+          &:hover {
+            border: 2px solid b.$sub-color-light;
+            background: b.$main-color;
+            color: b.$text-color-white;
+          }
 
           @include b.mq(pc) {
             font-size: 24px;

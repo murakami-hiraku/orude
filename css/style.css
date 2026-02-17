@@ -46,6 +46,8 @@ body {
   line-height: 1.4;
   font-family: "Noto Serif JP", serif;
   position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 body.no-scroll {
   height: 100%;
@@ -6194,6 +6196,14 @@ main {
   font-weight: 700;
   font-size: 20px;
   padding: 10px 100px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: 2px solid transparent;
+}
+.page-contact__form .form-item.confirm-btn .wpcf7-submit:hover {
+  border: 2px solid #fff;
+  background: #907910;
+  color: #fff;
 }
 @media (min-width: 1024px) {
   .page-contact__form .form-item.confirm-btn .wpcf7-submit {
@@ -6290,6 +6300,16 @@ main {
   width: -moz-fit-content;
   width: fit-content;
   margin-inline: auto;
+}
+.page-contact-confirm__form .form-navigation .submit-btn p .wpcf7-submit {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: 2px solid transparent;
+}
+.page-contact-confirm__form .form-navigation .submit-btn p .wpcf7-submit:hover {
+  background: #907910;
+  color: #fff;
+  border-color: #fff;
 }
 
 .page-contact-thanks__inner {

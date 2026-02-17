@@ -94,6 +94,19 @@
       .submit-btn {
         width: fit-content;
         margin-inline: auto;
+
+        p {
+          .wpcf7-submit {
+            transition: 0.3s;
+            border: 2px solid transparent;
+
+            &:hover {
+              background: b.$main-color;
+              color: b.$text-color-white;
+              border-color: b.$sub-color-light;
+            }
+          }
+        }
       }
     }
   }
