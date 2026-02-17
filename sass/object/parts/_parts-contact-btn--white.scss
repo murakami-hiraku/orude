@@ -2,6 +2,8 @@
 @use "../../foundation/base" as b;
 
 .parts-contact-btn {
+  transform: 0.3s;
+
   span {
   }
   &--white {
@@ -11,6 +13,23 @@
     span {
       mask-image: url("../img/mail-icon.svg");
       background-color: b.$main-color;
+
+      img {
+        display: none;
+      }
+    }
+
+    &:hover {
+      background: b.$main-color;
+      color: b.$sub-color-light;
+      border: 2px solid b.$sub-color-light;
+
+      span {
+        mask-image: none;
+        img {
+          display: block;
+        }
+      }
     }
   }
 }

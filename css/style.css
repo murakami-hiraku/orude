@@ -1432,10 +1432,14 @@ main {
   font-size: 15px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  border: 2px solid transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .parts-contact-btn:hover {
   background: #fff;
   color: #907910;
+  border-color: #907910;
 }
 .parts-contact-btn:hover .header__btn-icon {
   -webkit-mask-image: url("../img/mail-icon.svg");
@@ -1462,6 +1466,10 @@ main {
   width: 100%;
 }
 
+.parts-contact-btn {
+  -webkit-transform: 0.3s;
+          transform: 0.3s;
+}
 .parts-contact-btn--white {
   background: #fff;
   color: #907910;
@@ -1470,6 +1478,21 @@ main {
   -webkit-mask-image: url("../img/mail-icon.svg");
           mask-image: url("../img/mail-icon.svg");
   background-color: #907910;
+}
+.parts-contact-btn--white span img {
+  display: none;
+}
+.parts-contact-btn--white:hover {
+  background: #907910;
+  color: #fff;
+  border: 2px solid #fff;
+}
+.parts-contact-btn--white:hover span {
+  -webkit-mask-image: none;
+          mask-image: none;
+}
+.parts-contact-btn--white:hover span img {
+  display: block;
 }
 
 .parts-faq-card {

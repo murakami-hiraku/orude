@@ -14,10 +14,13 @@
   font-weight: 900;
   font-size: 15px;
   transition: 0.3s;
+  border: 2px solid transparent; // ★最初から2pxの隙間を確保しておく
+  box-sizing: border-box;
 
   &:hover {
     background: b.$sub-color-light;
     color: b.$main-color;
+    border-color: b.$main-color;
 
     .header__btn-icon {
       mask-image: url("../img/mail-icon.svg");
