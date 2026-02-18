@@ -15,13 +15,13 @@
 
       <div class="page-faq__contents">
         <div class="page-faq__category cremation">
-          <h2 class="page-faq__ttl">訪問火葬プラン・セレモニープランに<br>関するご質問</h2>
+          <h2 class="page-faq__ttl">訪問火葬プラン・セレモニープランに<br class="hidden-pc">関するご質問</h2>
           <?php
           get_template_part('template-parts/parts/parts-faq-1')
           ?>
         </div>
         <div class="page-faq__category funeral">
-          <h2 class="page-faq__ttl">永代供養サービスに<br>関するご質問</h2>
+          <h2 class="page-faq__ttl">永代供養サービスに<br class="hidden-pc">関するご質問</h2>
           <?php
           get_template_part('template-parts/parts/parts-faq-2')
           ?>

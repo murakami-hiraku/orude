@@ -53,6 +53,17 @@ body.no-scroll {
   height: 100%;
   overflow: hidden;
 }
+body {
+  padding-top: clamp(40px, 10.256vw, 80px); /* ヘッダーの高さ（max-heightなど）に合わせて調整 */
+}
+@media (min-width: 1920px) {
+  body {
+    padding-top: 100px;
+  }
+}
+body.home {
+  padding-top: 0;
+}
 
 main {
   position: relative;

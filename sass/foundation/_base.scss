@@ -84,6 +84,20 @@ body {
     height: 100%;
     overflow: hidden;
   }
+
+  padding-top: clamp(
+    40px,
+    10.256vw,
+    80px
+  ); /* ヘッダーの高さ（max-heightなど）に合わせて調整 */
+
+  @include mq(xl) {
+    padding-top: 100px;
+  }
+
+  &.home {
+    padding-top: 0;
+  }
 }
 
 main {

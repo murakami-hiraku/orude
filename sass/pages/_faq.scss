@@ -83,7 +83,7 @@
     @include b.mq(pc) {
       max-width: 920px;
       width: 100%;
-      gap: 100px;
+      gap: 200px;
     }
     @include b.mq(lg) {
       max-width: 1280px;

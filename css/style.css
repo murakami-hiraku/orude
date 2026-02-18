@@ -53,6 +53,17 @@ body.no-scroll {
   height: 100%;
   overflow: hidden;
 }
+body {
+  padding-top: clamp(40px, 10.256vw, 80px); /* ヘッダーの高さ（max-heightなど）に合わせて調整 */
+}
+@media (min-width: 1920px) {
+  body {
+    padding-top: 100px;
+  }
+}
+body.home {
+  padding-top: 0;
+}
 
 main {
   position: relative;
@@ -1427,7 +1438,7 @@ main {
   margin-top: 20px;
   margin-inline: auto;
   border-radius: 10px;
-  padding: 25px 20px;
+  padding: 20px 25px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -1929,6 +1940,7 @@ main {
     padding: 0;
     max-width: 1680px;
     height: 100px;
+    max-height: 100px;
     gap: 30px;
   }
 }
@@ -5392,7 +5404,7 @@ main {
   .page-faq__contents {
     max-width: 920px;
     width: 100%;
-    gap: 100px;
+    gap: 200px;
   }
 }
 @media (min-width: 1440px) {
@@ -5761,11 +5773,6 @@ main {
   background: #907910;
   width: 25px;
   height: 25px;
-}
-.page-blog__pagination-nav:hover {
-  background: #000;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 .page-blog__pagination-nav--disabled {
   opacity: 0;
