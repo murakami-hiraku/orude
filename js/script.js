@@ -135,8 +135,12 @@ parentMenuItems.forEach((link) => {
 const fvSwiper = new Swiper(".p-fv-slider", {
   loop: true,
   effect: "fade",
-  autoplay: { delay: 4000 },
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false, // ユーザーが触った後も自動再生を止めない設定
+  },
   speed: 2000,
+  allowTouchMove: false, // ← これを追加：マウスでのドラッグや指でのフリックを禁止します
 });
 
 // --- 9. secスワイパー制御 ---
