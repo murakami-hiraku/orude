@@ -1,5 +1,5 @@
 <!-- ファーストビュー -->
-<section class="section-fv section fadein">
+<section class="section-fv js-fv section fadein">
   <div class="section-fv__wrap">
     <div class="section-fv__overlay"></div>
 

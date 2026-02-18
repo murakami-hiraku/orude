@@ -1897,12 +1897,17 @@ main {
   top: 0;
   left: 0;
   z-index: 50;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
 }
 .home .header {
   top: 0;
   left: 0;
   background-color: transparent;
   z-index: 100;
+}
+.home .header.is-scrolled {
+  background-color: #fff;
 }
 .header__inner {
   display: -webkit-box;
@@ -2081,39 +2086,6 @@ main {
     text-decoration-thickness: 2px;
     text-underline-offset: 8px;
   }
-  .home .header__nav-menu .menu-item {
-    color: #fff;
-  }
-}
-@media (min-width: 1920px) and (min-width: 1920px) {
-  .home .header__nav-menu .menu-item {
-    color: #907910;
-  }
-}
-@media (min-width: 1920px) and (min-width: 1920px) {
-  .home .header__nav-menu .menu-item a:hover {
-    text-decoration: underline;
-    text-decoration-color: #fff;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 8px;
-    color: #fff;
-    text-decoration: none;
-    color: #fff;
-  }
-}
-@media (min-width: 1920px) {
-  .home .header__nav-menu .menu-item a:hover::after {
-    color: #fff !important;
-    text-decoration: none;
-  }
-}
-@media (min-width: 1920px) and (min-width: 1920px) {
-  .home .header__nav-menu .menu-item .sub-menu a:hover {
-    text-decoration: underline;
-    text-decoration-color: #fff;
-    text-decoration-thickness: 1.5px;
-    text-underline-offset: 6px;
-  }
 }
 @media (min-width: 1440px) {
   .header__nav-card {
@@ -2218,8 +2190,59 @@ main {
     padding-block: 10px;
   }
 }
-.header__nav-list .menu-item.menu-item-has-children a:hover {
-  text-decoration: none;
+.header__nav-list .menu-item.menu-item-has-children {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  z-index: 1000;
+}
+.header__nav-list .menu-item.menu-item-has-children > a {
+  pointer-events: none;
+  cursor: default;
+}
+@media (min-width: 1919px) {
+  .header__nav-list .menu-item.menu-item-has-children .sub-menu {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    visibility: visible;
+    opacity: 1;
+    position: static;
+  }
+  .header__nav-list .menu-item.menu-item-has-children > a {
+    pointer-events: none;
+    cursor: default;
+  }
+}
+@media (min-width: 1920px) {
+  .header__nav-list .menu-item.menu-item-has-children .sub-menu {
+    display: block;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    padding-top: 60px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s, visibility 0.3s;
+    transition: opacity 0.3s, visibility 0.3s;
+    pointer-events: none;
+  }
+  .header__nav-list .menu-item.menu-item-has-children:hover .sub-menu {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .header__nav-list .menu-item.menu-item-has-children:hover > a {
+    position: relative;
+    z-index: 99999;
+    color: #fff;
+  }
+  .header__nav-list .menu-item.menu-item-has-children:hover > a::after {
+    color: #fff;
+  }
 }
 .header__nav-list .menu-item.menu-item-has-children > a {
   width: -webkit-fit-content;
@@ -2268,7 +2291,6 @@ main {
   }
 }
 .header__nav-list .menu-item .sub-menu {
-  display: none;
   position: static;
   top: 100%;
   left: 0;
@@ -2277,7 +2299,7 @@ main {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  z-index: 9999;
+  z-index: 999;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2298,14 +2320,27 @@ main {
 }
 @media (min-width: 1920px) {
   .header__nav-list .menu-item .sub-menu {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: absolute;
     text-align: center;
     gap: 10px;
     top: 100%;
     left: 0;
-    padding: 5px;
-    width: 135px;
+    padding: 0;
+    padding-bottom: 15px;
+    width: 145px;
   }
   .header__nav-list .menu-item .sub-menu[style*="display: block"] {
     display: block !important;

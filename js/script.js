@@ -36,11 +36,9 @@ document.addEventListener("DOMContentLoaded", () => {
         lockBackground();
       } else {
         unlockBackground();
-        // ＼追加！／ ドロワーを閉じる時にサブメニューの状態もリセット
+        // サブメニューのリセット
         document.querySelectorAll(".menu-item-has-children").forEach((el) => {
           el.classList.remove("is-open");
-          const sub = el.querySelector(".sub-menu");
-          if (sub) sub.style.display = "none";
         });
       }
     });
@@ -51,11 +49,9 @@ document.addEventListener("DOMContentLoaded", () => {
     .querySelectorAll('#js-drawer-content a[href^="#"]')
     .forEach((link) => {
       link.addEventListener("click", (e) => {
-        // サブメニューの親ボタン（#）なら、ドロワーを閉じる処理を行わない
         if (link.getAttribute("href") === "#") {
           return;
         }
-
         drawerButtons.forEach((el) => el.classList.remove("is-checked"));
         nav.classList.remove("is-checked");
         unlockBackground();
@@ -85,15 +81,35 @@ document.addEventListener("DOMContentLoaded", () => {
       observer.observe(target);
     }
   });
+
+  // --- 5. ヘッダー制御（DOMContentLoaded内に移動してまとめました） ---
+  const header = document.getElementById("js-header");
+  const fv = document.querySelector(".js-fv");
+
+  if (header && fv) {
+    const checkScroll = () => {
+      const fvHeight = fv.offsetHeight;
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
+
+      if (scrollTop > fvHeight) {
+        header.classList.add("is-scrolled");
+      } else {
+        header.classList.remove("is-scrolled");
+      }
+    };
+    window.addEventListener("scroll", checkScroll);
+    window.addEventListener("resize", checkScroll);
+    checkScroll();
+  }
 });
 
-// --- 5. ブラウザの戻るボタン対策 ---
+// --- 6. ブラウザの戻るボタン対策 ---
 window.addEventListener("pageshow", () => {
   const nav = document.getElementById("js-drawer-content");
   const drawerButtons = document.querySelectorAll(
     "#js-drawer-button, #js-close-button",
   );
-
   if (nav && drawerButtons) {
     nav.classList.remove("is-checked");
     drawerButtons.forEach((btn) => btn.classList.remove("is-checked"));
@@ -102,65 +118,30 @@ window.addEventListener("pageshow", () => {
   }
 });
 
-// --- 6. サブメニュー制御 (jQuery) ---
-jQuery(function ($) {
-  // セレクタを限定し、伝播を止める
-  $('.header__nav-list .menu-item-has-children > a[href="#"]').on(
-    "click",
-    function (e) {
+// --- 7. サブメニュー制御 ---
+const parentMenuItems = document.querySelectorAll(
+  ".header__nav-list .menu-item-has-children > a",
+);
+parentMenuItems.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    if (link.getAttribute("href") === "#" || window.innerWidth <= 1200) {
       e.preventDefault();
-      e.stopPropagation(); // イベントの親への伝播を防止
-
-      const $parent = $(this).parent();
-      const $subMenu = $(this).next(".sub-menu");
-
-      $parent.toggleClass("is-open");
-      $subMenu.stop().slideToggle(300); // 300ms程度が自然
-    },
-  );
+      e.stopPropagation();
+    }
+  });
 });
 
-// --- 7. fvスワイパー制御 ---
+// --- 8. fvスワイパー制御 ---
 const fvSwiper = new Swiper(".p-fv-slider", {
   loop: true,
-  spaceBetween: 0,
   effect: "fade",
-
-  autoplay: {
-    delay: 4000,
-    slidesPerView: 1,
-    slidesPerGroup: 1,
-    disableOnInteraction: true,
-    allowTouchMove: false,
-    centeredSlides: true,
-    observer: true,
-    observeParents: true,
-  },
+  autoplay: { delay: 4000 },
   speed: 2000,
 });
 
-// --- 8. secスワイパー制御 ---
+// --- 9. secスワイパー制御 ---
 const secSwiper = new Swiper(".p-sec-slider", {
   loop: true,
-  autoplay: false,
-  slidesPerView: 1,
-  slidesPerGroup: 1,
-  spaceBetween: 20,
-  observer: true,
-  observeParents: true,
-
-  // 手動スワイプ・ドラッグを禁止にするか否か
-  // allowTouchMove: false,
-
-  // アクティブなスライドを常に中央に配置する
-  // centeredSlides: true,
-
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+  pagination: { el: ".swiper-pagination", clickable: true },
+  navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
 });
