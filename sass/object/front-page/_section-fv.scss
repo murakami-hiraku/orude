@@ -6,7 +6,8 @@
   height: 102.564vw;
   max-height: 500px;
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
+  // overflow: clip;
   padding-bottom: 30px;
 
   @include b.mq(pc) {
@@ -110,11 +111,10 @@
 
     @include b.mq(pc) {
       width: 100%;
-      flex: 1;
-      display: block;
       display: flex;
       justify-content: space-between;
       align-items: end;
+      height: 100%;
     }
   }
 
@@ -184,6 +184,44 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+
+    // --- 追従（PCのみ） ---
+    @include b.mq(pc) {
+      // right: clamp(15px, 3.85vw, 120px); // innerの余白と同じ位置に固定
+      position: relative;
+      z-index: 10;
+      transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
+
+      &.is-fixed {
+        position: fixed !important;
+        top: 100px !important;
+
+        // --- ここから位置計算 ---
+
+        // 1. 基本は画面端からの余白（1680px以下の時）
+        right: max(15px, 3.846vw) !important;
+
+        // 2. 画面幅がヘッダーの最大幅（1680px）を超えた時
+        @media (min-width: 1680px) {
+          // 画面中央(50%) から ヘッダーの半分(840px) 右に寄せた位置
+          // そこからヘッダー内の余白分などは 0 になっているので、
+          // ヘッダーの inner が 1680px 内いっぱいに広がっているなら 50% - 840px
+          right: calc(50% - 840px) !important;
+        }
+
+        // --- ここまで ---
+
+        z-index: 9999 !important;
+        display: flex !important;
+
+        flex-direction: column;
+        width: 400px;
+        padding-block: 10px;
+        pointer-events: auto !important;
+      }
+    }
   }
 
   &__link {

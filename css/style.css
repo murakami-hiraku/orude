@@ -83,7 +83,7 @@ main {
   position: relative;
   max-width: 1680px;
   margin-inline: auto;
-  padding-inline: clamp(15px, 3.85vw, 120px);
+  padding-inline: clamp(15px, 3.846vw, 120px);
 }
 
 #wpadminbar {
@@ -113,7 +113,6 @@ main {
   height: 102.564vw;
   max-height: 500px;
   position: relative;
-  overflow: hidden;
   padding-bottom: 30px;
 }
 @media (min-width: 1024px) {
@@ -250,10 +249,6 @@ main {
 @media (min-width: 1024px) {
   .section-fv__container {
     width: 100%;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    display: block;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -263,6 +258,7 @@ main {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: end;
+    height: 100%;
   }
 }
 .section-fv__scrollbar {
@@ -346,6 +342,37 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 16px;
+}
+@media (min-width: 1024px) {
+  .section-fv__links {
+    position: relative;
+    z-index: 10;
+    -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+    transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease, -webkit-transform 0.3s ease;
+  }
+  .section-fv__links.is-fixed {
+    position: fixed !important;
+    top: 100px !important;
+    right: max(15px, 3.846vw) !important;
+    z-index: 9999 !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 400px;
+    padding-block: 10px;
+    pointer-events: auto !important;
+  }
+}
+@media (min-width: 1024px) and (min-width: 1680px) {
+  .section-fv__links.is-fixed {
+    right: calc(50% - 840px) !important;
+  }
 }
 .section-fv__link {
   display: -webkit-box;
@@ -1967,7 +1994,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-inline: clamp(15px, 3.84vw, 120px);
+  padding-inline: clamp(15px, 3.846vw, 120px);
   height: 10.256vw;
   max-height: 80px;
 }
@@ -2018,7 +2045,7 @@ main {
 }
 @media (min-width: 768px) {
   .header__nav {
-    right: 3.85vw;
+    right: max(15px, 3.846vw);
   }
 }
 @media (min-width: 1440px) {

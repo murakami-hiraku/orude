@@ -149,3 +149,43 @@ const secSwiper = new Swiper(".p-sec-slider", {
   pagination: { el: ".swiper-pagination", clickable: true },
   navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
 });
+
+// --- 10. fvのリンクをバナー化のためのクラス付与 ---
+document.addEventListener("DOMContentLoaded", function () {
+  const links = document.querySelector(".section-fv__links");
+  const container = document.querySelector(".section-fv__container");
+  const header = document.querySelector(".header");
+
+  if (!links || !header) return;
+
+  // 初期位置の情報を保存
+  const initialRect = links.getBoundingClientRect();
+  const initialOffsetTop = initialRect.top + window.pageYOffset;
+  const initialRight = window.innerWidth - initialRect.right;
+
+  // 元の親（container）を覚えておく
+  const originalParent = links.parentNode;
+
+  window.addEventListener("scroll", function () {
+    if (window.innerWidth >= 1025) {
+      const scrollY = window.pageYOffset;
+      const headerHeight = header.offsetHeight;
+
+      if (scrollY > initialOffsetTop - headerHeight) {
+        if (!links.classList.contains("is-fixed")) {
+          // 【ここがポイント】body直下に移動させることで、親の制限を無視する
+          document.body.appendChild(links);
+          links.classList.add("is-fixed");
+        }
+        // links.style.right = initialRight + "px";
+      } else {
+        if (links.classList.contains("is-fixed")) {
+          // 元の場所に戻す
+          originalParent.appendChild(links);
+          links.classList.remove("is-fixed");
+          // links.style.right = "";
+        }
+      }
+    }
+  });
+});
