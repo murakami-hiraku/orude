@@ -17,13 +17,15 @@
           <?php get_template_part('template-parts/parts/parts-btn', null, [
             'text'     => 'メールでのお問い合わせ',
             'has_icon' => true, // これでspanが表示される
-            'class'    => 'sec-contact sec-contact-mail'
+            'class'    => 'sec-contact sec-contact-mail',
+            'link' => home_url('/contact/'), // リンク先を指定
           ]); ?>
           <div class="link-line"></div>
           <?php get_template_part('template-parts/parts/parts-btn', null, [
             'text'     => 'LINEでのお問い合わせ',
             'has_icon' => true, // これでspanが表示される
-            'class'    => 'sec-contact sec-contact-line'
+            'class'    => 'sec-contact sec-contact-line',
+            'link' => 'https://lin.ee/HSE92oT',
           ]); ?>
         </div>
         <p class="section-contact__txt">
