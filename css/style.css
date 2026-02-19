@@ -1920,6 +1920,12 @@ main {
 .home .header.is-scrolled {
   background-color: #fff;
 }
+.home .header.is-scrolled .parts-logo__word {
+  color: #907910;
+}
+.home .header.is-scrolled .menu-item a {
+  color: #907910;
+}
 .header__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1951,6 +1957,9 @@ main {
   .header .parts-logo {
     padding-left: 15px;
   }
+}
+.home .header .parts-logo__word {
+  color: #fff;
 }
 .header__nav {
   position: fixed;
@@ -2072,11 +2081,21 @@ main {
   text-decoration-thickness: 2px;
   text-underline-offset: 8px;
 }
+@media (min-width: 1920px) {
+  .header__nav-menu .menu-item a:hover {
+    text-decoration-color: #907910;
+  }
+}
 .header__nav-menu .menu-item a:hover::after {
   text-decoration: underline;
   text-decoration-color: #fff;
   text-decoration-thickness: 2px;
   text-underline-offset: 8px;
+}
+@media (min-width: 1920px) {
+  .header__nav-menu .menu-item a:hover::after {
+    text-decoration-color: #907910;
+  }
 }
 @media (min-width: 1920px) {
   .header__nav-menu {
@@ -2088,15 +2107,53 @@ main {
     height: auto;
     color: #907910;
   }
-  .header__nav-menu .menu-item {
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
+  .home .header__nav-menu .menu-item a {
+    color: #fff;
   }
-  .header__nav-menu .menu-item a:hover {
+  .home .header__nav-menu .menu-item a:hover {
+    color: #fff !important;
     text-decoration: underline;
-    text-decoration-color: #907910;
+    text-decoration-color: #fff;
     text-decoration-thickness: 2px;
     text-underline-offset: 8px;
+  }
+}
+@media (min-width: 1920px) and (min-width: 1920px) {
+  .home .header__nav-menu .menu-item a:hover {
+    text-decoration-color: #fff;
+  }
+}
+@media (min-width: 1920px) {
+  .home .header__nav-menu .menu-item-has-children:hover > a {
+    color: #fff !important;
+  }
+  .home .header__nav-menu .menu-item-has-children:hover > a::after {
+    color: #fff !important;
+  }
+  .is-scrolled .header__nav-menu .menu-item a {
+    color: #907910 !important;
+  }
+  .is-scrolled .header__nav-menu .menu-item a:hover {
+    color: #907910 !important;
+    text-decoration-color: #907910;
+  }
+  .is-scrolled .header__nav-menu .menu-item-has-children > a::after {
+    color: #907910 !important;
+  }
+  .is-scrolled .header__nav-menu .menu-item-has-children:hover > a {
+    color: #fff !important;
+  }
+  .is-scrolled .header__nav-menu .menu-item-has-children:hover > a::after {
+    color: #fff !important;
+  }
+  .is-scrolled .header__nav-menu .sub-menu {
+    background: #907910;
+  }
+  .is-scrolled .header__nav-menu .sub-menu a {
+    color: #fff !important;
+  }
+  .is-scrolled .header__nav-menu .sub-menu a:hover {
+    text-decoration-color: #fff;
   }
 }
 @media (min-width: 1440px) {
@@ -2287,7 +2344,7 @@ main {
 }
 @media (min-width: 1920px) {
   .header__nav-list .menu-item.menu-item-has-children > a::after {
-    color: #907910;
+    color: #fff;
     right: 10px;
   }
 }
