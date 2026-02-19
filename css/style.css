@@ -2187,6 +2187,11 @@ main {
     text-decoration-color: #fff;
   }
 }
+@media (min-width: 1920px) and (min-width: 1920px) {
+  .is-scrolled .header__nav-menu .sub-menu a:hover {
+    color: #fff !important;
+  }
+}
 @media (min-width: 1440px) {
   .header__nav-card {
     -webkit-box-flex: 1;

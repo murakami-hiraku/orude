@@ -255,6 +255,10 @@
               color: b.$text-color-white !important; // なので中の文字は白
               &:hover {
                 text-decoration-color: b.$text-color-white;
+
+                @include b.mq(xl) {
+                  color: b.$text-color-white !important;
+                }
               }
             }
           }
