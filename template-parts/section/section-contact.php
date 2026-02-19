@@ -41,7 +41,10 @@
 
 
     </div>
-    <span class="section-contact__bg-txt" aria-hidden="true">-May the journey ahead be a peaceful one.-</span>
+    <div class="section-contact__bg-txt-wrap" aria-hidden="true">
+      <span class="section-contact__bg-txt">-May the journey ahead be a peaceful one.-</span>
+      <span class="section-contact__bg-txt">-May the journey ahead be a peaceful one.-</span>
+    </div>
   </div>
 
 </section>
