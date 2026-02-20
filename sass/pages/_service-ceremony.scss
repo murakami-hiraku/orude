@@ -28,13 +28,13 @@
     }
   }
   &__txt {
-    font-weight: 900;
+    font-weight: 600;
     text-align: center;
     line-height: 1.8;
 
     &--sub {
       text-align: center;
-      font-weight: 900;
+      font-weight: 600;
       font-size: 14px;
       line-height: 1.8;
     }
@@ -62,11 +62,11 @@
     }
   }
   &__card-txt {
-    font-weight: 900;
+    font-weight: 600;
     font-size: 14px;
 
     &--sub {
-      font-weight: 900;
+      font-weight: 600;
       font-size: 14px;
     }
 
@@ -148,6 +148,7 @@
         }
 
         &__txt {
+          font-weight: 900;
           margin-top: 15px;
           line-height: 2;
 
@@ -476,7 +477,6 @@
             }
 
             &--sub {
-              font-weight: 900;
               font-size: 14px;
               line-height: 1.8;
             }
@@ -484,6 +484,18 @@
 
           .parts-tel {
             margin-inline: auto;
+
+            a {
+              font-size: 24px;
+
+              span {
+                margin-top: 3px;
+                width: 40px;
+                height: 100%;
+
+                aspect-ratio: 33.5 / 24;
+              }
+            }
 
             @include b.mq(pc) {
               margin: 0;

@@ -79,7 +79,7 @@
             <p class="page-s-ceremony__card-price--sub">セレモニーと火葬をセットで行う場合は、<br><strong>3,300</strong><small>円（税込）</small>引かせていただきます。</p>
             <?php get_template_part('template-parts/parts/parts-btn', null, [
               'text'  => '火葬料金はこちら',
-              'link'  => '/',
+              'link'  => home_url('/service-cremation/#price-list'),
               'class' => '' // 色を変えたい時などの識別用クラス
             ]); ?>
           </div>
@@ -222,7 +222,7 @@
         <p class="page-s-ceremony__txt txt-2">セレモニーのあと、どのようにお見送りされるかはご家族様それぞれです。<br>火葬に関する料金やプランの詳細は、下記よりご確認いただけます。</p>
         <?php get_template_part('template-parts/parts/parts-btn', null, [
           'text'  => '火葬料金はこちら',
-          'link'  => '/',
+          'link'  => home_url('/service-cremation/#price-list'),
           'class' => '' // 色を変えたい時などの識別用クラス
         ]); ?>
 
