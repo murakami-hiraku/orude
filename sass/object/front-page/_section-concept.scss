@@ -63,6 +63,19 @@
     align-items: start;
     margin-inline: auto;
 
+    // --- 初期状態：透明にして少し下に下げておく ---
+    opacity: 0;
+    transform: translateY(30px);
+    transition:
+      opacity 1.2s ease,
+      transform 1.2s ease; // ゆっくり表示
+
+    // 親の .fadein クラスが発火
+    .fadein.is-active & {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
     @include b.mq(pc) {
       max-width: 186px;
     }
@@ -74,10 +87,12 @@
     }
 
     &--left {
+      transition-delay: 0.2s;
     }
 
     &--right {
       padding-top: 50px;
+      transition-delay: 0.6s;
 
       @include b.mq(pc) {
         padding-top: 270px;

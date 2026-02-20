@@ -1,5 +1,5 @@
 <!-- 私たちの想い（concept） -->
-<section class="section-concept section fadein">
+<section class="section-concept section">
 
   <?php
   get_template_part('template-parts/parts/parts-bg-circle');
@@ -7,7 +7,7 @@
 
   <div class="section-concept__inner inner">
 
-    <div class="section-concept__img section-concept__img--left">
+    <div class="section-concept__img section-concept__img--left fadein">
       <img src="<?php echo get_template_directory_uri(); ?>/img/concept-img-left.png" alt="" class="left">
     </div>
 
@@ -22,7 +22,7 @@
       <small class="section-concept__from">スタッフ一同</small>
     </div>
 
-    <div class="section-concept__img section-concept__img--right">
+    <div class="section-concept__img section-concept__img--right fadein">
       <img src="<?php echo get_template_directory_uri(); ?>/img/concept-img-right.png" alt="" class="right">
     </div>
   </div>
