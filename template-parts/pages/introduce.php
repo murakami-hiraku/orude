@@ -30,7 +30,7 @@
             <div class="page-introduce__content">
               <div class="page-introduce__cards">
                 <div class="page-introduce__card card-1">
-                  <img src="<?php echo get_template_directory_uri(); ?>/img/introduce-img-1.png" alt="">
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/page-introduce/introduce-img-1.png" alt="">
                   <div class="page-introduce__card-txt">
                     <h4>01　安らかに眠る場所のご用意</h4>
                     <p>まずは、その子がゆっくりと横になれる空間をご用意します。<br>普段お使いのベッドやお箱に、バスタオルやペットシーツをやさしく敷いていただければ充分です。</p>
@@ -38,7 +38,7 @@
                   </div>
                 </div>
                 <div class="page-introduce__card card-2">
-                  <img src="<?php echo get_template_directory_uri(); ?>/img/introduce-img-2.png" alt="">
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/page-introduce/introduce-img-2.png" alt="">
                   <div class="page-introduce__card-txt">
 
                     <h4>02　身体をきれいに整えてあげる</h4>
@@ -50,7 +50,7 @@
                   </div>
                 </div>
                 <div class="page-introduce__card card-3">
-                  <img src="<?php echo get_template_directory_uri(); ?>/img/introduce-img-3.png" alt="">
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/page-introduce/introduce-img-3.png" alt="">
                   <div class="page-introduce__card-txt">
 
                     <h4>03　保冷の準備</h4>
@@ -64,7 +64,7 @@
                   </div>
                 </div>
                 <div class="page-introduce__card card-4">
-                  <img src="<?php echo get_template_directory_uri(); ?>/img/introduce-img-4.png" alt="">
+                  <img src="<?php echo get_template_directory_uri(); ?>/img/page-introduce/introduce-img-4.png" alt="">
                   <div class="page-introduce__card-txt">
 
                     <h4>04　お別れの時間をゆっくりと</h4>

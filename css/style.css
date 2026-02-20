@@ -130,7 +130,7 @@ main {
   width: 100%;
   height: 100%;
   position: relative;
-  background-image: url(../img/fv-img-main.png);
+  background-image: url(../img/common/c-arch.png);
   background-size: cover;
   background-position: 30% center;
 }
@@ -1131,8 +1131,8 @@ main {
 .parts-tel span {
   width: 33.5px;
   height: 24px;
-  -webkit-mask-image: url("../img/tel-icon.svg");
-          mask-image: url("../img/tel-icon.svg");
+  -webkit-mask-image: url("../img/ui/tel-icon.svg");
+          mask-image: url("../img/ui/tel-icon.svg");
   -webkit-mask-size: cover;
           mask-size: cover;
   -webkit-mask-repeat: no-repeat;
@@ -3458,10 +3458,16 @@ main {
   padding-inline: 40px;
 }
 .page-s-cremation__section--2 .page-s-cremation__card-img img {
+  aspect-ratio: 1/1;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (min-width: 1024px) {
+  .page-s-cremation__section--2 .page-s-cremation__card-img img {
+    max-width: 250px;
+  }
 }
 .page-s-cremation__section--2 .page-s-cremation__card-txt {
   line-height: 1.8;
@@ -4469,13 +4475,21 @@ main {
     gap: 65px;
   }
 }
+.page-s-ceremony__section--2 .page-s-ceremony__img {
+  margin-inline: auto;
+  aspect-ratio: 500/300;
+  max-width: 550px;
+}
 @media (min-width: 1024px) {
   .page-s-ceremony__section--2 .page-s-ceremony__img {
+    margin: 0;
     max-width: 500px;
   }
 }
 .page-s-ceremony__section--2 .page-s-ceremony__img img {
-  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .page-s-ceremony__section--3 {
   margin-top: 75px;

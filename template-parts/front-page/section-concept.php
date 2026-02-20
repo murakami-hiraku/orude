@@ -8,7 +8,7 @@
   <div class="section-concept__inner inner">
 
     <div class="section-concept__img section-concept__img--left fadein">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/concept-img-left.png" alt="" class="left">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/front-page/concept-img-left.png" alt="" class="left">
     </div>
 
     <div class="section-concept__box">
@@ -23,7 +23,7 @@
     </div>
 
     <div class="section-concept__img section-concept__img--right fadein">
-      <img src="<?php echo get_template_directory_uri(); ?>/img/concept-img-right.png" alt="" class="right">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/front-page/concept-img-right.png" alt="" class="right">
     </div>
   </div>
 </section>

@@ -34,7 +34,7 @@
 
         <div class="page-s-ceremony__card">
           <div class="page-s-ceremony__img">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/ceremony-sec2-1.png" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/common/c-arch.png" alt="">
           </div>
           <p class="page-s-ceremony__txt--sub sub-2">大切なのは“その子に寄り添う”こと。<br>ご希望やご事情を伺いながら、<br>最適なセレモニーを一緒に創ってまいります。</p>
         </div>
@@ -54,7 +54,7 @@
 
           <div class="page-s-ceremony__card">
             <div class="page-s-ceremony__card-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/ceremony-sec3-1.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/page-ceremony/ceremony-sec3-1.png" alt="">
             </div>
             <h2 class="page-s-ceremony__card-ttl">セレモニープランA</h2>
             <p class="page-s-ceremony__card-txt">花籠を用いた、やさしく温かな飾り付けのセレモニーです。<br>コンパクトながらもお花に囲まれた空間で、静かにお別れいただけます。</p>
@@ -62,16 +62,16 @@
               </small></p>
 
             <div class="page-s-ceremony__card-img--sub">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/ceremony-sec3-2.png" alt="">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/ceremony-sec3-3.png" alt="">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/ceremony-sec3-4.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/page-ceremony/ceremony-sec3-2.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/page-ceremony/ceremony-sec3-3.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/page-ceremony/ceremony-sec3-4.png" alt="">
             </div>
             <p class="page-s-ceremony__card-txt--sub">※花籠については、以下の3色からお選びいただけます。<br>・ピンク　　・イエロー　　・ブルー<br>お子様のイメージやご家族のお気持ちに合わせてお選びください。</p>
           </div>
 
           <div class="page-s-ceremony__card">
             <div class="page-s-ceremony__card-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/ceremony-sec3-5.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/page-ceremony/ceremony-sec3-5.png" alt="">
             </div>
             <h2 class="page-s-ceremony__card-ttl">セレモニープランB</h2>
             <p class="page-s-ceremony__card-txt">アーチ型のフラワー装飾を用いた、より華やかなセレモニーです。<br>その子らしさや、ご家族の想いを表現した特別な空間を演出します。</p>
@@ -101,7 +101,7 @@
         <div class="page-s-ceremony__cards">
           <div class="page-s-ceremony__card card--1">
             <div class="page-s-ceremony__card-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/ceremony-sec4-1.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/common/c-operator.png" alt="">
             </div>
             <div class="page-s-ceremony__card-body">
               <h2 class="page-s-ceremony__card-ttl">01　お問い合わせ</h2>
@@ -121,7 +121,7 @@
           </div>
           <div class="page-s-ceremony__card">
             <div class="page-s-ceremony__card-img img-2">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/ceremony-sec4-2.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/page-ceremony/ceremony-sec4-2.png" alt="">
             </div>
             <div class="page-s-ceremony__card-body">
 
@@ -135,7 +135,7 @@
           </div>
           <div class="page-s-ceremony__card">
             <div class="page-s-ceremony__card-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/ceremony-sec4-3.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/page-ceremony/ceremony-sec4-3.png" alt="">
             </div>
             <div class="page-s-ceremony__card-body">
 
@@ -151,7 +151,7 @@
           </div>
           <div class="page-s-ceremony__card">
             <div class="page-s-ceremony__card-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/ceremony-sec4-4.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/page-ceremony/ceremony-sec4-4.png" alt="">
             </div>
             <div class="page-s-ceremony__card-body">
 
@@ -165,7 +165,7 @@
           </div>
           <div class="page-s-ceremony__card">
             <div class="page-s-ceremony__card-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/ceremony-sec4-5.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/page-ceremony/ceremony-sec4-5.png" alt="">
             </div>
             <div class="page-s-ceremony__card-body">
 
@@ -179,7 +179,7 @@
           </div>
           <div class="page-s-ceremony__card">
             <div class="page-s-ceremony__card-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/ceremony-sec4-6.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/page-ceremony/ceremony-sec4-6.png" alt="">
             </div>
             <div class="page-s-ceremony__card-body">
 
@@ -192,7 +192,7 @@
           </div>
           <div class="page-s-ceremony__card">
             <div class="page-s-ceremony__card-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/ceremony-sec4-7.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/page-ceremony/ceremony-sec4-7.png" alt="">
             </div>
             <div class="page-s-ceremony__card-body">
 
@@ -206,7 +206,7 @@
           </div>
           <div class="page-s-ceremony__card">
             <div class="page-s-ceremony__card-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/ceremony-sec4-8.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/page-ceremony/ceremony-sec4-8.png" alt="">
             </div>
             <div class="page-s-ceremony__card-body">
 

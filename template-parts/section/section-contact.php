@@ -32,12 +32,12 @@
           お支払いは、現金またはクレジットカードでの<br class="hidden-tb">ご精算となります。</p>
 
         <div class="section-contact__card-logo">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/contact-card-logo.png" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/ui/contact-card-logo.png" alt="">
         </div>
 
       </div>
 
-      <img src="<?php echo get_template_directory_uri(); ?>/img/contact-img.png" alt="" class="section-contact__img">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/ui/contact-img.png" alt="" class="section-contact__img">
 
 
     </div>

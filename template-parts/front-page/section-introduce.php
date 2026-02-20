@@ -7,7 +7,7 @@
 
     <div class="section-introduce__content">
       <div class="section-introduce__img">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/introduce-img.png" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/front-page/introduce-img.png" alt="">
       </div>
 
       <div class="section-introduce__body">

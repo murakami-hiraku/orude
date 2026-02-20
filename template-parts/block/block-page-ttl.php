@@ -31,7 +31,7 @@ $bg_img = get_field('page_ttl_bg');
 if (!$bg_img) {
   // get_template_directory_uri() はテーマのルートURLを返します
   // /img/default-bg.jpg の部分は実際のファイル名に合わせて書き換えてください
-  $bg_img = get_template_directory_uri() . '/img/page-ttl-img-common.png';
+  $bg_img = get_template_directory_uri() . '/img/common/page-ttl-img-common.png';
 }
 
 // 3. 最終的なURLを使ってstyle属性を作る
