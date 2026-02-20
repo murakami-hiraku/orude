@@ -140,7 +140,7 @@ const fvSwiper = new Swiper(".p-fv-slider", {
     disableOnInteraction: false, // ユーザーが触った後も自動再生を止めない設定
   },
   speed: 2000,
-  allowTouchMove: false, // ← これを追加：マウスでのドラッグや指でのフリックを禁止します
+  allowTouchMove: false, // マウスでのドラッグや指でのフリックを禁止
 });
 
 // --- 9. secスワイパー制御 ---
@@ -189,3 +189,32 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+// 第二案　バナーがフッターに被らないようにする制御
+// document.addEventListener("DOMContentLoaded", function () {
+//   const links = document.querySelector(".links");
+//   const footer = document.querySelector("footer"); // フッターのタグ名を確認！
+
+//   if (!links || !footer) return;
+
+//   // フッターを監視するセンサー（Intersection Observer）
+//   const observer = new IntersectionObserver(
+//     (entries) => {
+//       entries.forEach((entry) => {
+//         if (entry.isIntersecting) {
+//           // フッターが画面内に入ったら止める
+//           links.classList.add("is-stopped");
+//         } else {
+//           // フッターが画面外（下）に消えたら追従再開
+//           links.classList.remove("is-stopped");
+//         }
+//       });
+//     },
+//     {
+//       rootMargin: "0px 0px 0px 0px", // 反応する位置の微調整が必要ならここ
+//       threshold: 0, // 少しでもフッターが見えたら反応
+//     },
+//   );
+
+//   observer.observe(footer);
+// });

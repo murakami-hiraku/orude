@@ -3030,6 +3030,10 @@ main {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
+.front-page {
+  position: relative;
+}
+
 .page-introduce .block-page-ttl {
   background-size: 200%;
   background-position: center center;
