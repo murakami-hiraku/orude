@@ -273,7 +273,7 @@
     <!-- /セクション5 -->
 
     <!-- セクション6 -->
-    <section class="page-s-cremation__section page-s-cremation__section--6 section fadein">
+    <section id="price-list" class="page-s-cremation__section page-s-cremation__section--6 section fadein">
 
       <div class="page-s-cremation__inner inner">
 
