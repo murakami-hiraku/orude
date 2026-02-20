@@ -59,6 +59,10 @@ $breakpoints: (
   }
 }
 
+[id] {
+  scroll-margin-top: 100px;
+}
+
 html {
   // スムーススクロール
   // scroll-behavior: smooth;
