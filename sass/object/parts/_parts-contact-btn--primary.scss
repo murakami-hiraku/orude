@@ -23,8 +23,9 @@
     border-color: b.$main-color;
 
     .header__btn-icon {
-      mask-image: url("../img/mail-icon.svg");
+      mask-image: url("../img/ui/mail-icon.svg");
       background-color: b.$main-color;
+      transition: 0.3s;
 
       img {
         display: none;

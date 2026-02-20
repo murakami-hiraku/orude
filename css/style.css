@@ -1516,9 +1516,11 @@ main {
   border-color: #907910;
 }
 .parts-contact-btn:hover .header__btn-icon {
-  -webkit-mask-image: url("../img/mail-icon.svg");
-          mask-image: url("../img/mail-icon.svg");
+  -webkit-mask-image: url("../img/ui/mail-icon.svg");
+          mask-image: url("../img/ui/mail-icon.svg");
   background-color: #907910;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .parts-contact-btn:hover .header__btn-icon img {
   display: none;
@@ -1549,8 +1551,8 @@ main {
   color: #907910;
 }
 .parts-contact-btn--white span {
-  -webkit-mask-image: url("../img/mail-icon.svg");
-          mask-image: url("../img/mail-icon.svg");
+  -webkit-mask-image: url("../img/ui/mail-icon.svg");
+          mask-image: url("../img/ui/mail-icon.svg");
   background-color: #907910;
 }
 .parts-contact-btn--white span img {
