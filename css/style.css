@@ -3142,6 +3142,7 @@ main {
   }
 }
 .page-introduce__lead p {
+  font-weight: 600;
   font-size: 14px;
   line-height: 1.8;
 }
@@ -3267,6 +3268,7 @@ main {
   }
 }
 .page-introduce__card-txt p {
+  font-weight: 600;
   font-size: 14px;
   line-height: 1.8;
 }
@@ -3277,6 +3279,7 @@ main {
   }
 }
 .page-introduce__card-txt span {
+  font-weight: 600;
   font-size: 14px;
   line-height: 1.8;
   padding-top: 10px;
