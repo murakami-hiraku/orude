@@ -1,5 +1,5 @@
 <!-- 私たちの想い（concept） -->
-<section class="section-concept section">
+<section class="section-concept section fadein">
 
   <?php
   get_template_part('template-parts/parts/parts-bg-circle');

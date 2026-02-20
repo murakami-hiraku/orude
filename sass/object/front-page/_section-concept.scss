@@ -13,6 +13,14 @@
 }
 
 .section-concept {
+  // 1. セクション全体のフェード（既存）
+  opacity: 0;
+  transition: opacity 1s ease;
+
+  &.is-active {
+    opacity: 1;
+  }
+
   margin-top: 68px;
   width: 100%;
   position: relative;
@@ -71,7 +79,7 @@
       transform 1.2s ease; // ゆっくり表示
 
     // 親の .fadein クラスが発火
-    .fadein.is-active & {
+    .section-concept.is-active & {
       opacity: 1;
       transform: translateY(0);
     }
@@ -87,7 +95,7 @@
     }
 
     &--left {
-      transition-delay: 0.2s;
+      transition-delay: 0.3s;
     }
 
     &--right {
