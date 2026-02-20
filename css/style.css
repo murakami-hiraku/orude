@@ -754,6 +754,7 @@ main {
   }
 }
 .section-concept__txt {
+  font-weight: 600;
   line-height: 2;
 }
 .section-concept__txt br {
@@ -765,6 +766,7 @@ main {
   }
 }
 .section-concept__from {
+  font-weight: 600;
   display: block;
   margin-top: 20px;
   font-size: 14px;
@@ -884,7 +886,7 @@ main {
 }
 .section-service__card-txt {
   text-align: center;
-  font-weight: 900;
+  font-weight: 600;
   font-size: 14px;
   line-height: 2;
 }
@@ -984,7 +986,7 @@ main {
   }
 }
 .section-introduce__txt {
-  font-weight: 900;
+  font-weight: 600;
   font-size: 14px;
   line-height: 2;
   text-align: center;

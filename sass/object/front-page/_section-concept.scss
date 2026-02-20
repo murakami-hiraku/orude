@@ -128,6 +128,7 @@
   }
 
   &__txt {
+    font-weight: 600;
     line-height: 2;
     br {
       display: none;
@@ -141,6 +142,8 @@
   }
 
   &__from {
+    font-weight: 600;
+
     display: block;
     margin-top: 20px;
     font-size: 14px;
