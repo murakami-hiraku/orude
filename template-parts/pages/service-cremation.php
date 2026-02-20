@@ -26,7 +26,7 @@
     <!-- セクション2 -->
     <section class="page-s-cremation__section page-s-cremation__section--2 section fadein">
       <div class="page-s-cremation__inner inner">
-        <h2 class="page-s-cremation__ttl">アエル・デならではの安心品質</h2>
+        <h2 class="page-s-cremation__ttl">オルデならではの安心品質</h2>
         <p class="page-s-cremation__txt">大切な家族の旅立ちを真心を込めてお手伝いいたします。</p>
 
         <div class="page-s-cremation__cards">
@@ -37,7 +37,7 @@
             </div>
             <h2 class="page-s-cremation__card-ttl">経験豊富な専門スタッフ</h2>
 
-            <p class="page-s-cremation__card-txt">訪問火葬に精通したスタッフが対応し、ご家族様のお気持ちに寄り添いながら進行いたします。初めての方にも分かりやすく、流れや注意点をご説明いたしますのでご安心ください。</p>
+            <p class="page-s-cremation__card-txt">訪問火葬に精通したスタッフが対応いたします。<br>初めての方にも分かりやすく、流れや注意点をご説明いたしますのでご安心ください。</p>
 
           </div>
           <div class="page-s-cremation__card">
@@ -57,7 +57,7 @@
             </div>
             <h2 class="page-s-cremation__card-ttl">高性能火葬炉による安全火葬</h2>
 
-            <p class="page-s-cremation__card-txt">使用する火葬炉は最新式の高性能炉で、臭い・煙・騒音を極力抑えた設計です。各自治体の条例に則った正式な許可を受けた車両・炉を使用しており、スタッフが周囲の状況や風向きにも気を配り安全な場所で火葬いたします。</p>
+            <p class="page-s-cremation__card-txt">臭い・煙・音を最小限に抑えた最新式の火葬炉を使用しています。<br>各自治体の条例に基づいた正式な許可を受けた設備を使用し、風向きや周囲の状況を確認したうえで安全に火葬を行います。</p>
 
           </div>
         </div>
@@ -80,7 +80,13 @@
           <div class="page-s-cremation__card-img">
             <img src="<?php echo get_template_directory_uri(); ?>/img/cremation-sec3-1.png" alt="">
           </div>
-          <p class="page-s-cremation__card-txt">火葬後は、ご希望に応じてお骨上げを行い、ご遺骨を骨壷にお納めしてご返骨いたします。<br>ご自宅でのご供養や、その後のご相談についても承っております。<br>骨壷・骨袋（覆い袋）は料金に含まれております。<br>分骨カプセルやメモリアルグッズなどをご希望の場合は、事前にご案内いたします。</p>
+          <div class="page-s-cremation__card-body">
+            <p class="page-s-cremation__card-txt">火葬後は、ご希望に応じてお骨上げを行い、ご遺骨を骨壷にお納めしてご返骨いたします。<br>ご自宅でのご供養や、その後のご相談についても承っております。<br>骨壷・骨袋（覆い袋）は料金に含まれております。<br>分骨カプセルやメモリアルグッズなどをご希望の場合は、事前にご案内いたします。</p>
+
+            <a class="page-s-cremation__link ceremony" href="<?php echo home_url('/service-ceremony'); ?>"><span class="link-img"><img src="<?php echo get_template_directory_uri(); ?>/img/fv-link-img-2.png" alt=""></span>
+              <p class="link-txt">セレモニープランの詳細はこちら</p><span class="icon-arrow"></span>
+            </a>
+          </div>
         </div>
       </div>
 
@@ -109,8 +115,7 @@
             </div>
             <div class="page-s-cremation__card-body">
               <h2 class="page-s-cremation__card-ttl">合同火葬</h2>
-              <p class="page-s-cremation__card-txt">お預かりしたお子様を合同火葬いたします。
-                火葬後のご遺骨の一部を合同墓へ埋葬いたします。※お骨をお返しすることはできません。</p>
+              <p class="page-s-cremation__card-txt">お預かりしたお子様を合同火葬いたします。<br>火葬後のご遺骨の一部を合同墓へ埋葬いたします。<br>※お骨をお返しすることはできません。</p>
               <div class="page-s-cremation__flow">
                 <div class="page-s-cremation__flow-step step--1">お伺い
                 </div>
@@ -133,7 +138,7 @@
                 </div>
                 <div class="page-s-cremation__flow-step step--2">個別火葬
                 </div>
-                <div class="page-s-cremation__flow-step step--3">スタッフお骨上げ
+                <div class="page-s-cremation__flow-step step--3">スタッフ<br>お骨上げ
                 </div>
                 <div class="page-s-cremation__flow-step step--4">返骨
                 </div>
@@ -152,7 +157,7 @@
                 </div>
                 <div class="page-s-cremation__flow-step step--2">個別火葬
                 </div>
-                <div class="page-s-cremation__flow-step step--3">ご家族様お骨上げ
+                <div class="page-s-cremation__flow-step step--3">ご家族様で<br>お骨上げ
                 </div>
                 <div class="page-s-cremation__flow-step step--4">返骨
                 </div>
@@ -180,7 +185,7 @@
                 </div>
                 <div class="page-s-cremation__flow-step step--4">個別火葬
                 </div>
-                <div class="page-s-cremation__flow-step step--5">スタッフまたはご家族様で<br class="hidden-pc">お骨上げ
+                <div class="page-s-cremation__flow-step step--5">スタッフまたは<br>ご家族様で<br class="br-1">お骨上げ
                 </div>
                 <div class="page-s-cremation__flow-step step--6">返骨
                 </div>
