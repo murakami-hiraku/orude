@@ -213,6 +213,12 @@
             }
           }
 
+          .menu-item-has-children > a {
+            &::after {
+              color: b.$text-color-white !important; // 矢印も白
+            }
+          }
+
           // 子メニューを持つ親のホバー時も白を維持
           .menu-item-has-children:hover > a {
             color: b.$text-color-white !important;
@@ -447,7 +453,7 @@
               transition: transform 0.3s; // アニメーション用
 
               @include b.mq(xl) {
-                color: b.$text-color-white;
+                color: b.$main-color;
                 right: 10px;
               }
             }
