@@ -5,6 +5,6 @@
 
           <div class="parts-logo__word">
             <h2>オルデ</h2>
-            <h3>-orude-</h3>
+            <h3>-ollude-</h3>
           </div>
         </a>

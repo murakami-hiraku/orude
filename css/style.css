@@ -1061,9 +1061,9 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-weight: 400;
 }
 .parts-logo__word h2 {
+  font-weight: 400;
   font-size: 18px;
   line-height: 1;
 }
@@ -1073,6 +1073,7 @@ main {
   }
 }
 .parts-logo__word h3 {
+  font-weight: 400;
   font-size: 9px;
   line-height: 1;
   font-family: "Alegreya", serif;
