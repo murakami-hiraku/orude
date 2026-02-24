@@ -146,6 +146,11 @@ const fvSwiper = new Swiper(".p-fv-slider", {
 // --- 9. secスワイパー制御 ---
 const secSwiper = new Swiper(".p-sec-slider", {
   loop: true,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: true, // ユーザーが触った後は自動再生を止める設定
+  },
+  speed: 2000,
   pagination: { el: ".swiper-pagination", clickable: true },
   navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
 });
