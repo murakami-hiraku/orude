@@ -18,7 +18,7 @@
           <table class="page-company__table">
             <tr class="page-company__table-list">
               <th class="page-company__table-ttl">商号</th>
-              <td class="page-company__table-input">株式会社アエルデ</td>
+              <td class="page-company__table-input">株式会社アエル・デ</td>
             </tr>
             <tr class="page-company__table-list">
               <th class="page-company__table-ttl">サービスブランド</th>
@@ -30,15 +30,11 @@
             </tr>
             <tr class="page-company__table-list">
               <th class="page-company__table-ttl">本社</th>
-              <td class="page-company__table-input">〒583-0872<br>大阪府羽曳野市はびきの<br class="hidden-tb">3-316-84</td>
-            </tr>
-            <tr class="page-company__table-list">
-              <th class="page-company__table-ttl">電話番号</th>
-              <td class="page-company__table-input">06-0000-0000</td>
+              <td class="page-company__table-input">〒558-0051<br>大阪市住吉区東粉浜<br class="hidden-tb">3-12-17</td>
             </tr>
             <tr class="page-company__table-list">
               <th class="page-company__table-ttl">フリーダイヤル</th>
-              <td class="page-company__table-input">0120-000-000</td>
+              <td class="page-company__table-input">0800-080-0188</td>
             </tr>
             <tr class="page-company__table-list">
               <th class="page-company__table-ttl">営業時間</th>
