@@ -133,7 +133,7 @@
 
   .cremation {
     .page-faq__ttl {
-      padding-inline: 50px;
+      padding-inline: 0;
       min-width: 258px;
 
       @include b.mq(pc) {
