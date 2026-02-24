@@ -1,5 +1,5 @@
 <div class="parts-tel parts-tel--primary">
-  <a href="">
+  <a href="tel:0800-080-0188">
     <span></span>
-    0120-000-000</a>
+    0800-080-0188</a>
 </div>

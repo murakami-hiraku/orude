@@ -1156,6 +1156,12 @@ main {
 .parts-tel--white a {
   color: #fff;
 }
+@media (min-width: 1024px) {
+  .parts-tel--white a {
+    pointer-events: none;
+    cursor: default;
+  }
+}
 .parts-tel--white span {
   background-color: #fff;
 }

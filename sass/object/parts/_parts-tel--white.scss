@@ -5,6 +5,11 @@
   &--white {
     a {
       color: b.$text-color-white;
+
+      @include b.mq(pc) {
+        pointer-events: none; // クリックできないようにする
+        cursor: default; // カーソルを普通の矢印にする
+      }
     }
 
     span {

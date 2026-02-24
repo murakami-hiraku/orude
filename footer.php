@@ -8,7 +8,7 @@
       <!-- footer-info -->
       <address class=" footer__info" id="footer-info">
         <p class="footer__info-address">〒558-0051 <br class="hidden-pc">大阪市住吉区東粉浜3-12-17</p>
-        <p class="footer__info-tel">TEL 000-000-0000</p>
+        <p class="footer__info-tel">TEL 0800-080-0188</p>
         <a href="privacy-policy" class="footer__info-privacy-policy">プライバシーポリシー</a>
       </address>
       <!-- /footer-info -->
