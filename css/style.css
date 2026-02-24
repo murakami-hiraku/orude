@@ -5544,7 +5544,7 @@ main {
   font-size: 20px;
   margin-bottom: 10px;
 }
-@media (min-width: 768px) {
+@media (min-width: 550px) {
   .page-s-perpetual-care__section--5 .page-s-perpetual-care__list .item-1 {
     white-space: nowrap;
     -webkit-box-orient: horizontal;

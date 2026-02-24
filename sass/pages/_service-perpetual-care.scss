@@ -641,7 +641,8 @@
             font-size: 20px;
             margin-bottom: 10px;
 
-            @include b.mq(tb) {
+            // この要素だけ、1000pxで横並びに変える！
+            @media (min-width: 550px) {
               white-space: nowrap;
               flex-direction: row;
               justify-content: space-between;
