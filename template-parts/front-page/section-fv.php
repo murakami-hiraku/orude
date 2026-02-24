@@ -31,7 +31,7 @@
           </a>
 
           <a class="section-fv__link perpetual-care" href="<?php echo home_url('/service-perpetual-care'); ?>"><span class="link-img"><img src="<?php echo get_template_directory_uri(); ?>/img/front-page/fv-link-img-3.png" alt=""></span>
-            <p class="link-txt">永代供養ご希望の方はこちら</p><span class="icon-arrow"></span>
+            <p class="link-txt">納骨をご希望の方はこちら</p><span class="icon-arrow"></span>
           </a>
 
         </div>

@@ -110,10 +110,10 @@
         <div class="page-s-perpetual-care__cards">
           <div class="page-s-perpetual-care__card">
             <div class="page-s-perpetual-care__card-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/page-perpetual/perpetual-sec4-1.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/common/c-operator.png" alt="">
             </div>
             <div class="page-s-perpetual-care__card-body">
-              <h2 class="page-s-perpetual-care__card-ttl">01　お問い合わせ・ご相談</h2>
+              <h2 class="page-s-perpetual-care__card-ttl">01　お問い合わせ</h2>
               <p class="page-s-perpetual-care__card-txt">まずはお電話やホームページのお問い合わせフォームにてご連絡ください。<br>専任スタッフがサービス内容や費用の目安などについて丁寧にご説明いたします。<br>疑問点や不安な点は何でもご相談ください。<br>生前のお申し込みについてのご相談も承っております。</p>
             </div>
           </div>
@@ -140,8 +140,8 @@
               <img src="<?php echo get_template_directory_uri(); ?>/img/page-perpetual/perpetual-sec4-4.png" alt="">
             </div>
             <div class="page-s-perpetual-care__card-body">
-              <h2 class="page-s-perpetual-care__card-ttl">04　ご納骨・納骨式</h2>
-              <p class="page-s-perpetual-care__card-txt">銀山寺境内にて納骨式を執り行います。<br>当日はご家族立会いのもと、ご遺骨を永代供養納骨墓の人用区画またはペット用区画へそれぞれ安置します。銀山寺の住職が読経し、<br class="br-1">故人とペットの冥福を共に祈る法要を営みます<br>魂が安らかに鎮まるよう、心を込めて儀式を進めさせていただきます。<br>塔婆の建立やプレート（オプション）の設置なども行い、永代納骨への納骨が完了します。</p>
+              <h2 class="page-s-perpetual-care__card-ttl">04　ご納骨</h2>
+              <p class="page-s-perpetual-care__card-txt">銀山寺境内にて納骨式を執り行います。<br>当日はご家族立会いのもと、ご遺骨を永代納骨墓の人用区画またはペット用区画へそれぞれ安置します。銀山寺の住職が読経し、<br class="br-1">故人とペットの冥福を共に祈る法要を営みます<br>魂が安らかに鎮まるよう、心を込めて儀式を進めさせていただきます。<br>塔婆の建立やプレート（オプション）の設置なども行い、永代納骨墓への納骨が完了します。</p>
             </div>
           </div>
           <div class="page-s-perpetual-care__card">
@@ -167,7 +167,8 @@
     <section class="page-s-perpetual-care__section page-s-perpetual-care__section--5 section fadein ">
       <div class="page-s-perpetual-care__inner inner">
         <h2 class="page-s-perpetual-care__ttl">料金・プラン例</h2>
-        <p class="page-s-perpetual-care__txt">ご利用料金は供養形態や収蔵人数（ペットの頭数）によって異なりますが<br>主なプランの価格目安は以下の通りです（すべて永代供養料込み・税込みの金額です）。</p>
+        <p class="page-s-perpetual-care__txt">ご利用料金は供養形態や収蔵人数（ペットの頭数）によって異なりますが、<br>
+          主なプランの価格目安は以下の通りです。</p>
 
         <div class="page-s-perpetual-care__card">
           <div class="page-s-perpetual-care__card-img">
@@ -178,7 +179,7 @@
           <div class="page-s-perpetual-care__card-body">
             <div class="page-s-perpetual-care__list">
               <dl class="page-s-perpetual-care__list-item item-1">
-                <dt class="page-s-perpetual-care__list-label">永代納骨『ともに』プラン（合祀型）</dt>
+                <dt class="page-s-perpetual-care__list-label">永代納骨『ともに』プラン（合同墓）</dt>
                 <dd class="page-s-perpetual-care__list-value">– ¥150,000円</dd>
               </dl>
               <dl class="page-s-perpetual-care__list-item">
@@ -214,7 +215,13 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/page-perpetual/perpetual-sec6-1.png" alt="">
           </div>
 
-          <p class="page-s-perpetual-care__txt">オルデでは、銀山寺での永代納骨を中心にご案内しておりますが、<br class="br-1">ご家族様のご事情やご希望に応じて、その他の霊園・寺院のご紹介も可能です。<br>・立地やアクセスを重視したい方<br>・ご自宅から通いやすい場所を選びたい方<br>・静かな環境や雰囲気を大切にしたい方<br>・宗教・宗派や供養形式についてご希望がある方<br>それぞれのお考えに寄り添い、最適な供養先をご提案いたします。</p>
+          <p class="page-s-perpetual-care__txt">
+            オルデでは、銀山寺での永代納骨を中心にご案内しておりますが、<br>
+            ご家族様のご事情やご希望に応じて、その他の霊園・寺院のご紹介も可能です。<br>
+            ・立地やアクセスを重視したい方<br>
+            ・ご自宅から通いやすい場所を選びたい方<br>
+            ・静かな環境や雰囲気を大切にしたい方<br>
+            それぞれのお考えに寄り添い、最適な供養先をご提案いたします。</p>
         </div>
 
       </div>
