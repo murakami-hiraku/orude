@@ -92,16 +92,16 @@
     <!-- セクション３ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
 
     <!-- セクション４　当日のステップーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
-    <section class="page-s-ceremony__section page-s-ceremony__section--4 section">
+    <section class="page-s-ceremony__section page-s-ceremony__section--4 section fadein">
       <div class="page-s-ceremony__inner inner">
         <?php
         get_template_part('/template-parts/parts/parts-bg-flower--right')
         ?>
-        <h2 class="page-s-ceremony__ttl fadein">ご葬儀の流れ ～セレモニー当日のステップ～</h2>
-        <p class="page-s-ceremony__txt txt-1 fadein">初めてご依頼される方にも安心していただけるよう、オルデの一般的な葬儀当日の流れをご説明いたします。<br>ご家族のご希望や状況に応じて多少前後する場合もございますが、一例として参考にしてください。</p>
+        <h2 class="page-s-ceremony__ttl">ご葬儀の流れ ～セレモニー当日のステップ～</h2>
+        <p class="page-s-ceremony__txt txt-1">初めてご依頼される方にも安心していただけるよう、オルデの一般的な葬儀当日の流れをご説明いたします。<br>ご家族のご希望や状況に応じて多少前後する場合もございますが、一例として参考にしてください。</p>
 
         <div class="page-s-ceremony__cards">
-          <div class="page-s-ceremony__card card--1 fadein">
+          <div class="page-s-ceremony__card card--1">
             <div class="page-s-ceremony__card-img">
               <img src="<?php echo get_template_directory_uri(); ?>/img/common/c-operator.png" alt="">
             </div>
@@ -121,7 +121,7 @@
               </p>
             </div>
           </div>
-          <div class="page-s-ceremony__card fadein">
+          <div class="page-s-ceremony__card">
             <div class="page-s-ceremony__card-img img-2">
               <img src="<?php echo get_template_directory_uri(); ?>/img/page-ceremony/ceremony-sec4-2.png" alt="">
             </div>
@@ -135,7 +135,7 @@
 
             </div>
           </div>
-          <div class="page-s-ceremony__card fadein">
+          <div class="page-s-ceremony__card">
             <div class="page-s-ceremony__card-img">
               <img src="<?php echo get_template_directory_uri(); ?>/img/page-ceremony/ceremony-sec4-3.png" alt="">
             </div>
@@ -151,7 +151,7 @@
 
             </div>
           </div>
-          <div class="page-s-ceremony__card fadein">
+          <div class="page-s-ceremony__card">
             <div class="page-s-ceremony__card-img">
               <img src="<?php echo get_template_directory_uri(); ?>/img/page-ceremony/ceremony-sec4-4.png" alt="">
             </div>
@@ -165,7 +165,7 @@
 
             </div>
           </div>
-          <div class="page-s-ceremony__card fadein">
+          <div class="page-s-ceremony__card">
             <div class="page-s-ceremony__card-img">
               <img src="<?php echo get_template_directory_uri(); ?>/img/page-ceremony/ceremony-sec4-5.png" alt="">
             </div>
@@ -179,7 +179,7 @@
 
             </div>
           </div>
-          <div class="page-s-ceremony__card fadein">
+          <div class="page-s-ceremony__card">
             <div class="page-s-ceremony__card-img">
               <img src="<?php echo get_template_directory_uri(); ?>/img/page-ceremony/ceremony-sec4-6.png" alt="">
             </div>
@@ -192,7 +192,7 @@
 
             </div>
           </div>
-          <div class="page-s-ceremony__card fadein">
+          <div class="page-s-ceremony__card">
             <div class="page-s-ceremony__card-img">
               <img src="<?php echo get_template_directory_uri(); ?>/img/page-ceremony/ceremony-sec4-7.png" alt="">
             </div>
@@ -206,7 +206,7 @@
 
             </div>
           </div>
-          <div class="page-s-ceremony__card fadein">
+          <div class="page-s-ceremony__card">
             <div class="page-s-ceremony__card-img">
               <img src="<?php echo get_template_directory_uri(); ?>/img/page-ceremony/ceremony-sec4-8.png" alt="">
             </div>
@@ -221,7 +221,7 @@
           </div>
         </div>
 
-        <p class="page-s-ceremony__txt txt-2 fadein">セレモニーのあと、どのようにお見送りされるかはご家族様それぞれです。<br>火葬に関する料金やプランの詳細は、下記よりご確認いただけます。</p>
+        <p class="page-s-ceremony__txt txt-2">セレモニーのあと、どのようにお見送りされるかはご家族様それぞれです。<br>火葬に関する料金やプランの詳細は、下記よりご確認いただけます。</p>
         <?php get_template_part('template-parts/parts/parts-btn', null, [
           'text'  => '火葬料金はこちら',
           'link'  => home_url('/service-cremation/#price-list'),

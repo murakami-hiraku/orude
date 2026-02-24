@@ -60,26 +60,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // --- 4. フェードインアニメーション ---
   const targets = document.querySelectorAll(".fadein");
+
   const observer = new IntersectionObserver(
     (entries, obs) => {
       entries.forEach((entry) => {
+        // 少しでも（あるいは指定した割合が）画面に入ったら発火
         if (entry.isIntersecting) {
           entry.target.classList.add("is-active");
-          obs.unobserve(entry.target);
+          obs.unobserve(entry.target); // 一度表示したら監視を終了
         }
       });
     },
-    { threshold: 0.2 },
+    {
+      // rootMarginを使って「画面の下端より少し手前」で反応させるのがプロの技！
+      rootMargin: "0px 0px -10% 0px",
+      threshold: 0, // 0にすると、要素の端っこが少しでも入った瞬間に反応します
+    },
   );
 
   targets.forEach((target) => {
-    const rect = target.getBoundingClientRect();
-    const inView = rect.top < window.innerHeight * 0.8 && rect.bottom > 0;
-    if (inView) {
-      target.classList.add("is-active");
-    } else {
-      observer.observe(target);
-    }
+    observer.observe(target);
   });
 
   // --- 5. ヘッダー制御（DOMContentLoaded内に移動してまとめました） ---
