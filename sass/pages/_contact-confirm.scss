@@ -40,6 +40,10 @@
           border: 1px solid b.$sub-color-light;
           border-radius: 50%;
           pointer-events: none; // マークの上をクリックしてもセレクトボックスが反応しないように
+
+          @include b.mq(pc) {
+            top: 67px;
+          }
         }
       }
 

@@ -6637,6 +6637,11 @@ main {
   border-radius: 50%;
   pointer-events: none;
 }
+@media (min-width: 1024px) {
+  .page-contact-confirm__form .form-box .category::after {
+    top: 67px;
+  }
+}
 .page-contact-confirm__form .form-box input,
 .page-contact-confirm__form .form-box textarea {
   padding: 14px 36px;
