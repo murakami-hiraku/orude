@@ -119,7 +119,7 @@
 
     &-body {
       margin-top: 56px;
-      font-weight: 900;
+      font-weight: 600;
       color: b.$text-color-white;
     }
 
@@ -130,7 +130,7 @@
     }
 
     &-ttl {
-      font-weight: 900;
+      font-weight: 600;
       font-size: 18px;
       overflow: hidden; /* はみ出た部分を隠す */
       text-overflow: ellipsis; /* はみ出た部分を「...」にする */
@@ -143,7 +143,7 @@
 
     &-txt {
       padding-right: 56px;
-      font-weight: 900;
+      font-weight: 600;
       font-size: 15px;
       line-height: 180%;
       letter-spacing: 0;
