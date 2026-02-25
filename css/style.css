@@ -6353,7 +6353,7 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 25px;
-  font-weight: 700;
+  font-weight: 600;
 }
 @media (min-width: 1024px) {
   .page-contact__form .form-box {
@@ -6450,7 +6450,7 @@ main {
   resize: vertical;
 }
 .page-contact__form .form-box .label-text {
-  font-weight: 700;
+  font-weight: 600;
   color: #fff;
 }
 .page-contact__form .form-box .label-text span {
@@ -6501,12 +6501,12 @@ main {
   padding-left: 22px;
   padding-right: 16px;
   padding-block: 10px;
-  font-weight: 700;
+  font-weight: 600;
 }
 .page-contact__form .form-box .zip-wrap p .address-txt {
   background: #907910;
   color: #fff;
-  font-weight: 700;
+  font-weight: 600;
   display: inline-block;
   height: 100%;
   padding-top: 10px;
@@ -6549,7 +6549,7 @@ main {
   margin: 0;
 }
 .page-contact__form .form-item.check-box .wpcf7-list-item-label {
-  font-weight: 700;
+  font-weight: 600;
   color: #fff;
 }
 .page-contact__form .form-item.check-box .wpcf7-list-item-label a:hover {
@@ -6574,7 +6574,7 @@ main {
 .page-contact__form .form-item.confirm-btn .wpcf7-submit {
   background: #fff;
   color: #907910;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 20px;
   padding: 10px 100px;
   -webkit-transition: 0.3s;
@@ -6672,7 +6672,7 @@ main {
 .page-contact-confirm__form .form-item.submit-btn .wpcf7-submit {
   background: #fff;
   color: #907910;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 20px;
   padding: 10px 100px;
 }
@@ -6721,7 +6721,7 @@ main {
 .page-contact-thanks__txt {
   color: #fff;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.8;
   text-align: center;
 }
@@ -6748,7 +6748,7 @@ main {
 }
 .page-contact-thanks__link-txt {
   color: #fff;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 14px;
   line-height: 1.8;
   text-align: center;

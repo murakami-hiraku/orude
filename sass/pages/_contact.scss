@@ -43,7 +43,7 @@
       display: flex;
       flex-direction: column;
       gap: 25px;
-      font-weight: 700;
+      font-weight: 600;
 
       @include b.mq(pc) {
         font-size: 24px;
@@ -140,7 +140,7 @@
         resize: vertical;
       }
       .label-text {
-        font-weight: 700;
+        font-weight: 600;
         color: b.$text-color-white;
         span {
           color: b.$accent-color-red;
@@ -181,13 +181,13 @@
             padding-left: 22px;
             padding-right: 16px;
             padding-block: 10px;
-            font-weight: 700;
+            font-weight: 600;
           }
 
           .address-txt {
             background: b.$main-color;
             color: b.$text-color-white;
-            font-weight: 700;
+            font-weight: 600;
             display: inline-block;
             height: 100%;
             padding-top: 10px;
@@ -229,7 +229,7 @@
         }
 
         .wpcf7-list-item-label {
-          font-weight: 700;
+          font-weight: 600;
           color: b.$text-color-white;
 
           a {
@@ -258,7 +258,7 @@
         .wpcf7-submit {
           background: b.$sub-color-light;
           color: b.$main-color;
-          font-weight: 700;
+          font-weight: 600;
           font-size: 20px;
           padding: 10px 100px;
           transition: 0.3s;
