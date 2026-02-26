@@ -4,7 +4,11 @@
 .page-s-ceremony {
   .block-page-ttl {
     background-position: 50% center;
-    background-size: cover;
+    background-size: 180% auto;
+
+    @include b.mq(tb) {
+      background-size: cover;
+    }
 
     @include b.mq(pc) {
       background-position: center center;

@@ -4320,7 +4320,12 @@ main {
 
 .page-s-ceremony .block-page-ttl {
   background-position: 50% center;
-  background-size: cover;
+  background-size: 180% auto;
+}
+@media (min-width: 768px) {
+  .page-s-ceremony .block-page-ttl {
+    background-size: cover;
+  }
 }
 @media (min-width: 1024px) {
   .page-s-ceremony .block-page-ttl {
