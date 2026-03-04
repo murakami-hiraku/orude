@@ -137,7 +137,7 @@ parentMenuItems.forEach((link) => {
 const swiperOptions = {
   effect: "fade",
   loop: true,
-  speed: 6000, // スライドが動くスピード
+  speed: 5000, // スライドが動くスピード
   allowTouchMove: false, // 手動操作を禁止
 };
 
@@ -155,15 +155,15 @@ function startSequentialLoop() {
   // 1番目から ○○秒後に2番目を動かす
   setTimeout(() => {
     if (fvSwiper2) fvSwiper2.slideNext();
-  }, 5000);
+  }, 3000);
 
-  // さらに 2.5秒後（累計5秒後）に3番目を動かす
+  // さらに ○○秒後（累計5秒後）に3番目を動かす
   setTimeout(() => {
     if (fvSwiper3) fvSwiper3.slideNext();
-  }, 10000);
+  }, 6000);
 
   // 10秒おきにこの関数自体をループさせる
-  setTimeout(startSequentialLoop, 15000);
+  setTimeout(startSequentialLoop, 9000);
 }
 
 // ページ読み込み完了後に実行
