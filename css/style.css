@@ -3324,6 +3324,9 @@ main {
     background-position: center 40%;
   }
 }
+.page-s-cremation .block-page-ttl__txt {
+  font-size: 48px;
+}
 .page-s-cremation__ttl {
   font-weight: 900;
   color: #907910;
@@ -3576,32 +3579,32 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 7px;
+  padding-inline: 8px;
+  padding-block: 6px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 320px;
-  margin-top: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 275px;
   margin-inline: auto;
-  color: #fff;
-  background-color: #907910;
-  border: 1px solid #907910;
-  font-weight: 900;
-  font-size: 14px;
-  line-height: 1.8;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 @media (min-width: 1024px) {
   .page-s-cremation__section--3 .page-s-cremation__link {
-    margin-top: 20px;
-    width: 365px;
-    height: 40px;
-    font-size: 16px;
-    gap: 15px;
     margin-inline: 0;
     margin-left: auto;
   }
+}
+.page-s-cremation__section--3 .page-s-cremation__link {
+  color: #fff;
+  background-color: #907910;
+  border: 2px solid #907910;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 1.8;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .page-s-cremation__section--3 .page-s-cremation__link:hover {
   background-color: #fff;
@@ -3613,26 +3616,16 @@ main {
 .page-s-cremation__section--3 .page-s-cremation__link:hover .icon-arrow::before, .page-s-cremation__section--3 .page-s-cremation__link:hover .icon-arrow::after {
   background: #907910;
 }
-.page-s-cremation__section--3 .page-s-cremation__link .link-img {
-  width: 56px;
-  height: 40px;
-  background-color: #fff;
-}
-.page-s-cremation__section--3 .page-s-cremation__link .link-img img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
 .page-s-cremation__section--3 .page-s-cremation__link .link-txt {
   margin-right: auto;
+  white-space: nowrap;
 }
 .page-s-cremation__section--3 .page-s-cremation__link .icon-arrow {
   position: relative;
   display: inline-block;
-  width: 20px;
-  height: 2px;
+  width: 10px;
+  height: 0;
   margin: 5.7px 0;
-  margin-right: 10px;
   border-radius: 9999px;
   background-color: #fff;
   -webkit-transition: 0.3s;
@@ -3784,12 +3777,14 @@ main {
 }
 .page-s-cremation__section--4 .page-s-cremation__card-txt {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 @media (min-width: 1024px) {
   .page-s-cremation__section--4 .page-s-cremation__card-txt {
     text-align: start;
     margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 @media (min-width: 1024px) {
@@ -3823,37 +3818,32 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 7px;
+  padding-inline: 8px;
+  padding-block: 6px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 320px;
-  margin-top: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 275px;
   margin-inline: auto;
-  color: #fff;
-  background-color: #907910;
-  border: 1px solid #907910;
-  font-weight: 900;
-  font-size: 14px;
-  line-height: 1.8;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 @media (min-width: 1024px) {
   .page-s-cremation__section--4 .page-s-cremation__card.card--4 .page-s-cremation__link {
-    margin-top: 20px;
-    width: 365px;
-    height: 40px;
-    font-size: 16px;
-    gap: 15px;
     margin-inline: 0;
     margin-right: auto;
   }
 }
-@media (min-width: 1440px) {
-  .page-s-cremation__section--4 .page-s-cremation__card.card--4 .page-s-cremation__link {
-    margin-right: auto;
-  }
+.page-s-cremation__section--4 .page-s-cremation__card.card--4 .page-s-cremation__link {
+  color: #fff;
+  background-color: #907910;
+  border: 2px solid #907910;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 1.8;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .page-s-cremation__section--4 .page-s-cremation__card.card--4 .page-s-cremation__link:hover {
   background-color: #fff;
@@ -3865,26 +3855,16 @@ main {
 .page-s-cremation__section--4 .page-s-cremation__card.card--4 .page-s-cremation__link:hover .icon-arrow::before, .page-s-cremation__section--4 .page-s-cremation__card.card--4 .page-s-cremation__link:hover .icon-arrow::after {
   background: #907910;
 }
-.page-s-cremation__section--4 .page-s-cremation__card.card--4 .page-s-cremation__link .link-img {
-  width: 56px;
-  height: 40px;
-  background-color: #fff;
-}
-.page-s-cremation__section--4 .page-s-cremation__card.card--4 .page-s-cremation__link .link-img img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
 .page-s-cremation__section--4 .page-s-cremation__card.card--4 .page-s-cremation__link .link-txt {
   margin-right: auto;
+  white-space: nowrap;
 }
 .page-s-cremation__section--4 .page-s-cremation__card.card--4 .page-s-cremation__link .icon-arrow {
   position: relative;
   display: inline-block;
-  width: 20px;
-  height: 2px;
+  width: 10px;
+  height: 0;
   margin: 5.7px 0;
-  margin-right: 10px;
   border-radius: 9999px;
   background-color: #fff;
   -webkit-transition: 0.3s;

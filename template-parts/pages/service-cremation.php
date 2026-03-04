@@ -71,27 +71,7 @@
     <!-- /セクション2 -->
 
 
-    <!-- セクション3 -->
-    <section class="page-s-cremation__section page-s-cremation__section--3 section fadein">
 
-      <div class="page-s-cremation__inner inner">
-        <h2 class="page-s-cremation__ttl">火葬後について</h2>
-        <div class="page-s-cremation__card">
-          <div class="page-s-cremation__card-img">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/page-cremation/cremation-sec3-1.png" alt="">
-          </div>
-          <div class="page-s-cremation__card-body">
-            <p class="page-s-cremation__card-txt">火葬後は、ご希望に応じてお骨上げを行い、ご遺骨を骨壷にお納めしてご返骨いたします。<br>ご自宅でのご供養や、その後のご相談についても承っております。<br>骨壷・骨袋（覆い袋）は料金に含まれております。<br>分骨カプセルやメモリアルグッズなどをご希望の場合は、事前にご案内いたします。</p>
-
-            <a class="page-s-cremation__link ceremony" href="<?php echo home_url('/service-ceremony'); ?>"><span class="link-img"><img src="<?php echo get_template_directory_uri(); ?>/img/front-page/fv-link-img-2.png" alt=""></span>
-              <p class="link-txt">セレモニープランの詳細はこちら</p><span class="icon-arrow"></span>
-            </a>
-          </div>
-        </div>
-      </div>
-
-    </section>
-    <!-- /セクション3 -->
 
 
     <!-- コンタクト -->
@@ -170,9 +150,10 @@
             </div>
             <div class="page-s-cremation__card-body">
               <h2 class="page-s-cremation__card-ttl">自宅でのお別れ葬</h2>
-              <p class="page-s-cremation__card-txt">立会個別火葬プランにご自宅に祭壇を準備させていただき、ゆっくりお別れをしていただきます。</p>
+              <p class="page-s-cremation__card-txt">一任・立会個別火葬プランにご自宅に祭壇を準備させていただき、ゆっくりお別れをしていただきます。</p>
 
-              <a class="page-s-cremation__link ceremony" href="<?php echo home_url('/service-ceremony'); ?>"><span class="link-img"><img src="<?php echo get_template_directory_uri(); ?>/img/front-page/fv-link-img-2.png" alt=""></span>
+              <a class="page-s-cremation__link ceremony" href="<?php echo home_url('/service-ceremony'); ?>">
+
                 <p class="link-txt">セレモニープランの詳細はこちら</p><span class="icon-arrow"></span>
               </a>
 
@@ -220,7 +201,7 @@
               <?php
               get_template_part('/template-parts/parts/parts-tel--primary')
               ?>
-              <p class="page-s-cremation__card-txt--sub">お問い合わせ受付時間：9:00~20:00<br class="hidden-pc">定休日：年中無休（年末年始を除く）</p>
+              <p class="page-s-cremation__card-txt--sub">電話受付時間：9:00~22:00<br class="hidden-pc">定休日：年中無休（年末年始を除く）</p>
             </div>
           </div>
           <div class="page-s-cremation__card">
@@ -239,10 +220,10 @@
             <div class="page-s-cremation__card-body">
               <h2 class="page-s-cremation__card-ttl">03　火葬</h2>
               <p class="page-s-cremation__card-txt">ご迷惑にならない場所で火葬を行います。<br>火葬の煙・においが発生しにくい最新式の火葬炉になっておりますのでご安心ください。</p>
-              <p class="page-s-cremation__card-txt--sub">※火葬については、近隣の安全な場所に移動して火葬を行います。移動をしながらの火葬はしませんので、ご安心ください。</p>
+              <p class="page-s-cremation__card-txt--sub">※火葬については、各市区町村の条例に従い安全に火葬出来る場所で火葬を行います。移動をしながらの火葬はしませんので、ご安心ください。</p>
             </div>
           </div>
-          <div class="page-s-cremation__card card--4">
+          <div class="page-s-cremation__card card--4">で
             <div class="page-s-cremation__card-img">
               <img src="<?php echo get_template_directory_uri(); ?>/img/page-cremation/cremation-sec5-4.png" alt="">
             </div>
@@ -272,6 +253,28 @@
     </section>
     <!-- /セクション5 -->
 
+    <!-- セクション3 -->
+    <section class="page-s-cremation__section page-s-cremation__section--3 section fadein">
+
+      <div class="page-s-cremation__inner inner">
+        <h2 class="page-s-cremation__ttl">火葬後について</h2>
+        <div class="page-s-cremation__card">
+          <div class="page-s-cremation__card-img">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/page-cremation/cremation-sec3-1.png" alt="">
+          </div>
+          <div class="page-s-cremation__card-body">
+            <p class="page-s-cremation__card-txt">火葬後は、ご希望に応じてお骨上げを行い、ご遺骨を骨壷にお納めしてご返骨いたします。<br>ご自宅でのご供養や、その後のご相談についても承っております。<br>分骨カプセルやメモリアルグッズなどをご希望の場合は、事前にご案内いたします。</p>
+
+            <a class="page-s-cremation__link ceremony" href="<?php echo home_url('/service-perpetual-care'); ?>">
+              <p class="link-txt">納骨をご希望の方はこちら</p><span class="icon-arrow"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- /セクション3 -->
+
     <!-- セクション6 -->
     <section id="price-list" class="page-s-cremation__section page-s-cremation__section--6 section fadein">
 
@@ -289,18 +292,20 @@
         <div class="page-s-cremation__cards">
           <div class="page-s-cremation__card card--1">
             <h2 class="page-s-cremation__card-ttl">料金に含まれる内容</h2>
-            <p class="page-s-cremation__card-txt">個別葬プラン（一任個別葬・立会個別葬）には、骨壷・骨袋（覆い袋）が含まれております。<br>合同葬プランは、お骨をお返しできません。火葬後は、一部のお骨を合同墓へお納めいたします。<br>生花・祭壇・葬儀セレモニー等は含まれておりません。</p>
+            <p class="page-s-cremation__card-txt">
+              個別火葬プラン（一任個別葬・立会個別葬）には、骨壷・骨袋（覆い袋）が含まれております。<br>
+              個別火葬プランは、お骨をお返しできません。火葬後は、一部のお骨を合同墓へお納めいたします。<br>
+              生花・祭壇・葬儀セレモニー等は含まれておりません。
+            </p>
           </div>
           <div class="page-s-cremation__card">
             <h2 class="page-s-cremation__card-ttl">お迎え・出張費について</h2>
             <p class="page-s-cremation__card-txt">
-              ご遺体のお迎えは<br>
-              大阪市内　無料<br>
-              大阪府 3,300円<br>
-              兵庫県尼崎市・伊丹市・奈良県奈良市 4,400円<br>
-              兵庫県西宮市・神戸市 5,500円（高速代をご請求することもございます。）<br>
-              対応エリア　大阪府内・兵庫県尼崎市・伊丹市・西宮市・芦屋市・神戸市・奈良県奈良市<br>
-              状況によりご相談を承っております。</p>
+              ご遺体のお迎えエリアは<br>
+              大阪府下全域　尼崎市・芦屋市・伊丹市・川西市・神戸市・西宮市・生駒市・宇陀市・橿原市・葛城市・御所市・五條市・桜井市・天理市・奈良市<br>
+              ※神戸市・西宮市に関して、一部対応外地域がございますので、ご相談ください。<br>
+              ※地域により別途出張費￥３,３００～必要となります。<br>
+            </p>
           </div>
         </div>
       </div>

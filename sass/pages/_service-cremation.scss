@@ -9,6 +9,10 @@
     @include b.mq(pc) {
       background-position: center 40%;
     }
+
+    &__txt {
+      font-size: 48px;
+    }
   }
 
   // 共通スタイルーーーーーーーーーーーーーーーーーーーーーーーーー
@@ -228,33 +232,26 @@
       }
       .page-s-cremation__link {
         display: flex;
-        gap: 7px;
+        padding-inline: 8px;
+        padding-block: 6px;
         align-items: center;
-        width: 320px;
-        margin-top: 30px;
+        justify-content: space-between;
+        width: 275px;
         margin-inline: auto;
-        color: b.$text-color-white;
-        background-color: b.$main-color;
-        border: 1px solid b.$main-color;
-        // box-sizing: border-box;
-        font-weight: 900;
-        font-size: 14px;
-        line-height: 1.8;
-        transition: 0.3s;
 
         @include b.mq(pc) {
-          margin-top: 20px;
-          width: 365px;
-          height: 40px;
-          // margin-bottom: 100%;
-          font-size: 16px;
-          gap: 15px;
           margin-inline: 0;
           margin-left: auto;
         }
 
-        @include b.mq(lg) {
-        }
+        color: b.$text-color-white;
+        background-color: b.$main-color;
+        border: 2px solid b.$main-color;
+        // box-sizing: border-box;
+        font-weight: 900;
+        font-size: 15px;
+        line-height: 1.8;
+        transition: 0.3s;
 
         &:hover {
           background-color: b.$sub-color-light;
@@ -270,28 +267,17 @@
           }
         }
 
-        .link-img {
-          width: 56px;
-          height: 40px;
-          background-color: b.$sub-color-light;
-
-          img {
-            width: 100%;
-            object-fit: cover;
-          }
-        }
-
         .link-txt {
           margin-right: auto;
+          white-space: nowrap;
         }
 
         .icon-arrow {
           position: relative;
           display: inline-block;
-          width: 20px;
-          height: 2px;
+          width: 10px;
+          height: 0;
           margin: 5.7px 0;
-          margin-right: 10px;
           border-radius: 9999px;
           background-color: b.$sub-color-light;
           transition: 0.3s;
@@ -415,10 +401,13 @@
 
           &-txt {
             text-align: center;
-            margin-top: 20px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+
             @include b.mq(pc) {
               text-align: start;
               margin-top: 20px;
+              margin-bottom: 20px;
             }
           }
 
@@ -454,34 +443,26 @@
 
             .page-s-cremation__link {
               display: flex;
-              gap: 7px;
+              padding-inline: 8px;
+              padding-block: 6px;
               align-items: center;
-              width: 320px;
-              margin-top: 30px;
+              justify-content: space-between;
+              width: 275px;
               margin-inline: auto;
-              color: b.$text-color-white;
-              background-color: b.$main-color;
-              border: 1px solid b.$main-color;
-              // box-sizing: border-box;
-              font-weight: 900;
-              font-size: 14px;
-              line-height: 1.8;
-              transition: 0.3s;
 
               @include b.mq(pc) {
-                margin-top: 20px;
-                width: 365px;
-                height: 40px;
-                // margin-bottom: 100%;
-                font-size: 16px;
-                gap: 15px;
                 margin-inline: 0;
                 margin-right: auto;
               }
 
-              @include b.mq(lg) {
-                margin-right: auto;
-              }
+              color: b.$text-color-white;
+              background-color: b.$main-color;
+              border: 2px solid b.$main-color;
+              // box-sizing: border-box;
+              font-weight: 900;
+              font-size: 15px;
+              line-height: 1.8;
+              transition: 0.3s;
 
               &:hover {
                 background-color: b.$sub-color-light;
@@ -497,28 +478,17 @@
                 }
               }
 
-              .link-img {
-                width: 56px;
-                height: 40px;
-                background-color: b.$sub-color-light;
-
-                img {
-                  width: 100%;
-                  object-fit: cover;
-                }
-              }
-
               .link-txt {
                 margin-right: auto;
+                white-space: nowrap;
               }
 
               .icon-arrow {
                 position: relative;
                 display: inline-block;
-                width: 20px;
-                height: 2px;
+                width: 10px;
+                height: 0;
                 margin: 5.7px 0;
-                margin-right: 10px;
                 border-radius: 9999px;
                 background-color: b.$sub-color-light;
                 transition: 0.3s;
