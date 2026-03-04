@@ -17,7 +17,7 @@
           <h2 class="page-company__ttl">会社概要</h2>
           <table class="page-company__table">
             <tr class="page-company__table-list">
-              <th class="page-company__table-ttl">商号</th>
+              <th class="page-company__table-ttl">会社名</th>
               <td class="page-company__table-input">株式会社アエル・デ</td>
             </tr>
             <tr class="page-company__table-list">
@@ -29,7 +29,7 @@
               <td class="page-company__table-input">代表取締役　北池　章一</td>
             </tr>
             <tr class="page-company__table-list">
-              <th class="page-company__table-ttl">本社</th>
+              <th class="page-company__table-ttl">所在地</th>
               <td class="page-company__table-input">〒558-0051<br>大阪市住吉区東粉浜<br class="hidden-tb">3-12-17</td>
             </tr>
             <tr class="page-company__table-list">
