@@ -181,12 +181,14 @@
   }
 
   &__links {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+    display: none;
 
     // --- 追従（PCのみ） ---
     @include b.mq(pc) {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
       // right: clamp(15px, 3.85vw, 120px); // innerの余白と同じ位置に固定
       position: relative;
       z-index: 10;
