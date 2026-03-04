@@ -132,15 +132,43 @@ parentMenuItems.forEach((link) => {
 });
 
 // --- 8. fvスワイパー制御 ---
-const fvSwiper = new Swiper(".p-fv-slider", {
-  loop: true,
+
+// 1. まず、共通の設定（swiperOptions）を定義する（これが必要！）
+const swiperOptions = {
   effect: "fade",
-  autoplay: {
-    delay: 4000,
-    disableOnInteraction: false, // ユーザーが触った後も自動再生を止めない設定
-  },
-  speed: 2000,
-  allowTouchMove: false, // マウスでのドラッグや指でのフリックを禁止
+  loop: true,
+  speed: 6000, // スライドが動くスピード
+  allowTouchMove: false, // 手動操作を禁止
+};
+
+// 2. 定義した swiperOptions を使って初期化
+const fvSwiper1 = new Swiper(".p-fv-slider--1", swiperOptions);
+const fvSwiper2 = new Swiper(".p-fv-slider--2", swiperOptions);
+const fvSwiper3 = new Swiper(".p-fv-slider--3", swiperOptions);
+
+// --- 自動・数珠つなぎループのロジック ---
+
+function startSequentialLoop() {
+  // 1番目を動かす
+  if (fvSwiper1) fvSwiper1.slideNext();
+
+  // 1番目から ○○秒後に2番目を動かす
+  setTimeout(() => {
+    if (fvSwiper2) fvSwiper2.slideNext();
+  }, 5000);
+
+  // さらに 2.5秒後（累計5秒後）に3番目を動かす
+  setTimeout(() => {
+    if (fvSwiper3) fvSwiper3.slideNext();
+  }, 10000);
+
+  // 10秒おきにこの関数自体をループさせる
+  setTimeout(startSequentialLoop, 15000);
+}
+
+// ページ読み込み完了後に実行
+window.addEventListener("load", () => {
+  setTimeout(startSequentialLoop, 2000);
 });
 
 // --- 9. secスワイパー制御 ---

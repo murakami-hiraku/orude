@@ -57,11 +57,11 @@
 
           <div class="p-fv-slider p-fv-slider--2">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/front-page/fv-img-2.png" alt=""></div>
               <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/front-page/fv-img-3.png" alt=""></div>
               <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/front-page/fv-img-4.png" alt=""></div>
               <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/front-page/fv-img-5.png" alt=""></div>
               <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/front-page/fv-img-1.png" alt=""></div>
+              <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/front-page/fv-img-2.png" alt=""></div>
             </div>
           </div>
         </div>
@@ -71,11 +71,11 @@
 
           <div class="p-fv-slider p-fv-slider--3">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/front-page/fv-img-3.png" alt=""></div>
-              <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/front-page/fv-img-4.png" alt=""></div>
               <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/front-page/fv-img-5.png" alt=""></div>
               <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/front-page/fv-img-1.png" alt=""></div>
               <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/front-page/fv-img-2.png" alt=""></div>
+              <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/front-page/fv-img-3.png" alt=""></div>
+              <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/front-page/fv-img-4.png" alt=""></div>
             </div>
           </div>
         </div>
