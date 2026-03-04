@@ -57,7 +57,9 @@
               <img src="<?php echo get_template_directory_uri(); ?>/img/page-ceremony/ceremony-sec3-1.png" alt="">
             </div>
             <h2 class="page-s-ceremony__card-ttl">セレモニープランA</h2>
-            <p class="page-s-ceremony__card-txt">花籠を用いた、やさしく温かな飾り付けのセレモニーです。<br>コンパクトながらもお花に囲まれた空間で、静かにお別れいただけます。</p>
+            <p class="page-s-ceremony__card-txt">
+              たくさんの愛をくれた存在へ「ありがとう」を——そんな想いを込めたセレモニープランです。
+            </p>
             <p class="page-s-ceremony__card-price">55,000円 <small>（税込）〜
               </small></p>
 
@@ -74,7 +76,9 @@
               <img src="<?php echo get_template_directory_uri(); ?>/img/page-ceremony/ceremony-sec3-5.png" alt="">
             </div>
             <h2 class="page-s-ceremony__card-ttl">セレモニープランB</h2>
-            <p class="page-s-ceremony__card-txt">アーチ型のフラワー装飾を用いた、より華やかなセレモニーです。<br>その子らしさや、ご家族の想いを表現した特別な空間を演出します。</p>
+            <p class="page-s-ceremony__card-txt">
+              虹の向こうでまた会える——そんな願いを込めたセレモニープランです。
+            </p>
             <p class="page-s-ceremony__card-price">55,000<small>円（税込）〜</small></p>
             <p class="page-s-ceremony__card-price--sub">セレモニーと火葬をセットで行う場合は、<br><strong>3,300</strong><small>円（税込）</small>引かせていただきます。</p>
             <?php get_template_part('template-parts/parts/parts-btn', null, [
@@ -116,7 +120,7 @@
               get_template_part('/template-parts/parts/parts-tel--primary')
               ?>
               <p class="page-s-ceremony__card-txt--sub">
-                お問い合わせ受付時間：9:00~20:00<br class="hidden-pc">
+                電話受付時間：9:00~22:00<br class="hidden-pc">
                 定休日：年中無休（年末年始を除く）
               </p>
             </div>
