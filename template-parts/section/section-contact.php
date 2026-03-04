@@ -29,11 +29,10 @@
           ]); ?>
         </div>
         <p class="section-contact__txt">
-          お支払いは、現金またはクレジットカードでの<br class="hidden-tb">ご精算となります。</p>
+          お支払いは、現金またはクレジットカードでのご精算となります。<br>
+          ※永代合同墓のご契約は現金のみとなります。
+        </p>
 
-        <div class="section-contact__card-logo">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/ui/contact-card-logo.png" alt="">
-        </div>
 
       </div>
 
