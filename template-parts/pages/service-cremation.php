@@ -201,7 +201,10 @@
               <?php
               get_template_part('/template-parts/parts/parts-tel--primary')
               ?>
-              <p class="page-s-cremation__card-txt--sub">電話受付時間：9:00~22:00<br class="hidden-pc">定休日：年中無休（年末年始を除く）</p>
+              <p class="page-s-cremation__card-txt--sub">
+                電話受付時間：9:00~22:00<br class="hidden-pc">
+                定休日：年中無休（年末年始を除く）
+              </p>
             </div>
           </div>
           <div class="page-s-cremation__card">
