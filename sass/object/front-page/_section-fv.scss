@@ -200,24 +200,29 @@
 
         // --- ここから位置計算 ---
 
-        // 1. 基本は画面端からの余白（1680px以下の時）
-        right: max(15px, 3.846vw) !important;
+        // 1. 基本設定：ヘッダーInnerの余白(padding)と右端を揃える
+        right: clamp(15px, 3.85vw, 120px) !important;
 
-        // 2. 画面幅がヘッダーの最大幅（1680px）を超えた時
+        // 2. 画面幅が1680pxを超えた場合
+        // 画面中央(50%)から、ヘッダー最大幅の半分(840px)外側に寄せ、
+        // そこからInnerの余白分だけ内側に押し戻して位置を固定する
         @media (min-width: 1680px) {
-          // 画面中央(50%) から ヘッダーの半分(840px) 右に寄せた位置
-          // そこからヘッダー内の余白分などは 0 になっているので、
-          // ヘッダーの inner が 1680px 内いっぱいに広がっているなら 50% - 840px
-          right: calc(50% - 840px) !important;
+          // 3.85vw はデザイン上のInner余白（可変値）に合わせた調整
+          right: calc(50% - (1680px / 2) + 3.85vw) !important;
         }
 
+        // 3. XLサイズ（1680px付近の最終調整）
+        @include b.mq(xl) {
+          // 中央から最大幅の半分(840px)の位置＝ヘッダーの真横にピッタリ吸着
+          right: calc(50% - (1680px / 2)) !important;
+        }
         // --- ここまで ---
 
         z-index: 9999 !important;
         display: flex !important;
 
         flex-direction: column;
-        width: 400px;
+        width: 275px;
         padding-block: 10px;
         pointer-events: auto !important;
       }
@@ -226,14 +231,16 @@
 
   &__link {
     display: flex;
-    gap: 18px;
+    padding-inline: 8px;
     align-items: center;
-    width: 400px;
+    justify-content: space-between;
+    width: 275px;
     color: b.$text-color-white;
     background-color: b.$main-color;
     border: 2px solid b.$main-color;
     // box-sizing: border-box;
     font-weight: 900;
+    font-size: 15px;
     line-height: 1.8;
     transition: 0.3s;
 
@@ -251,27 +258,17 @@
       }
     }
 
-    .link-img {
-      width: 60px;
-      height: 40px;
-      background-color: b.$sub-color-light;
-
-      img {
-        width: 100%;
-      }
-    }
-
     .link-txt {
       margin-right: auto;
+      white-space: nowrap;
     }
 
     .icon-arrow {
       position: relative;
       display: inline-block;
-      width: 20px;
-      height: 2px;
+      width: 10px;
+      height: 0;
       margin: 5.7px 0;
-      margin-right: 10px;
       border-radius: 9999px;
       background-color: b.$sub-color-light;
       transition: 0.3s;

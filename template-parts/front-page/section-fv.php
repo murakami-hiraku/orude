@@ -21,16 +21,16 @@
 
         <div class="section-fv__links">
 
-          <a class="section-fv__link cremation" href="<?php echo home_url('/service-cremation'); ?>"><span class="link-img"><img src="<?php echo get_template_directory_uri(); ?>/img/front-page/fv-link-img-1.png" alt=""></span>
+          <a class="section-fv__link cremation" href="<?php echo home_url('/service-cremation'); ?>">
             <p class="link-txt">
               火葬ご希望の方はこちら</p><span class="icon-arrow"></span>
           </a>
 
-          <a class="section-fv__link ceremony" href="<?php echo home_url('/service-ceremony'); ?>"><span class="link-img"><img src="<?php echo get_template_directory_uri(); ?>/img/front-page/fv-link-img-2.png" alt=""></span>
+          <a class="section-fv__link ceremony" href="<?php echo home_url('/service-ceremony'); ?>">
             <p class="link-txt">ゆっくりお別れをしたい方はこちら</p><span class="icon-arrow"></span>
           </a>
 
-          <a class="section-fv__link perpetual-care" href="<?php echo home_url('/service-perpetual-care'); ?>"><span class="link-img"><img src="<?php echo get_template_directory_uri(); ?>/img/front-page/fv-link-img-3.png" alt=""></span>
+          <a class="section-fv__link perpetual-care" href="<?php echo home_url('/service-perpetual-care'); ?>">
             <p class="link-txt">納骨をご希望の方はこちら</p><span class="icon-arrow"></span>
           </a>
 
