@@ -157,12 +157,12 @@ function startSequentialLoop() {
     if (fvSwiper2) fvSwiper2.slideNext();
   }, 3000);
 
-  // さらに ○○秒後（累計5秒後）に3番目を動かす
+  // さらに ○○秒後に3番目を動かす
   setTimeout(() => {
     if (fvSwiper3) fvSwiper3.slideNext();
   }, 6000);
 
-  // 10秒おきにこの関数自体をループさせる
+  // ○○秒おきにこの関数自体をループさせる
   setTimeout(startSequentialLoop, 9000);
 }
 
