@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.scrollTo(0, scrollPosition);
   };
 
-  // --- 2. 開閉ボタンのクリックイベント (統合) ---
+  // --- 2. 開閉ボタンのクリックイベント ---
   drawerButtons.forEach((btn) => {
     btn.addEventListener("click", (e) => {
       e.preventDefault();
@@ -72,9 +72,9 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     },
     {
-      // rootMarginを使って「画面の下端より少し手前」で反応させるのがプロの技！
+      // rootMarginを使って「画面の下端より少し手前」で反応させる
       rootMargin: "0px 0px -10% 0px",
-      threshold: 0, // 0にすると、要素の端っこが少しでも入った瞬間に反応します
+      threshold: 0, // 0にすると、要素の端っこが少しでも入った瞬間に反応
     },
   );
 
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(target);
   });
 
-  // --- 5. ヘッダー制御（DOMContentLoaded内に移動してまとめました） ---
+  // --- 5. ヘッダー制御 ---
   const header = document.getElementById("js-header");
   const fv = document.querySelector(".js-fv");
 
@@ -133,7 +133,7 @@ parentMenuItems.forEach((link) => {
 
 // --- 8. fvスワイパー制御 ---
 
-// 1. まず、共通の設定（swiperOptions）を定義する（これが必要！）
+// 1. 共通の設定（swiperOptions）を定義する
 const swiperOptions = {
   effect: "fade",
   loop: true,
@@ -152,17 +152,17 @@ function startSequentialLoop() {
   // 1番目を動かす
   if (fvSwiper1) fvSwiper1.slideNext();
 
-  // 1番目から ○○秒後に2番目を動かす
+  // ○○秒後に2番目を動かす
   setTimeout(() => {
     if (fvSwiper2) fvSwiper2.slideNext();
   }, 3000);
 
-  // さらに ○○秒後に3番目を動かす
+  // ○○秒後に3番目を動かす
   setTimeout(() => {
     if (fvSwiper3) fvSwiper3.slideNext();
   }, 6000);
 
-  // ○○秒おきにこの関数自体をループさせる
+  // ○○秒おきにこの関数自体をループ
   setTimeout(startSequentialLoop, 9000);
 }
 
@@ -206,7 +206,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (scrollY > initialOffsetTop - headerHeight) {
         if (!links.classList.contains("is-fixed")) {
-          // 【ここがポイント】body直下に移動させることで、親の制限を無視する
+          // body直下に移動させることで、親の制限を無視する
           document.body.appendChild(links);
           links.classList.add("is-fixed");
         }
