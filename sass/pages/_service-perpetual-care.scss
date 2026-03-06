@@ -15,6 +15,27 @@
     }
   }
 
+  // コンテンツ切り替え設定ーーーーーーーーーーーーーーーーーーーーーーーーー
+  &__content {
+    display: none; // 基本は隠す
+    &.is-active {
+      display: block; // アクティブ時のみ表示
+      animation: fadeIn 0.5s ease; // ふわっと出す
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  // コンテンツ切り替え設定ーーーーーーーーーーーーーーーーーーーーーーーーー
+
   // 共通スタイルーーーーーーーーーーーーーーーーーーーーーーーーー
 
   &__ttl {
@@ -129,16 +150,133 @@
             font-size: 16px;
           }
         }
+
+        // 切り替えボタン-------------------------------------------------------
+        &__menu {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          gap: 25px;
+          margin-top: 30px;
+
+          @include b.mq(tb) {
+            flex-direction: row;
+            gap: 10px;
+            padding-top: 50px;
+          }
+          @include b.mq(pc) {
+            gap: min(8.4vw, 160px);
+          }
+
+          .btn-1 {
+            span {
+              margin-left: 12px;
+            }
+          }
+
+          .btn-2 {
+            span {
+              margin-left: 48px;
+            }
+          }
+        }
+
+        &__btn {
+          background-color: b.$main-color;
+          color: b.$text-color-white;
+          font-weight: 900;
+          font-size: 20px;
+          line-height: 1.8;
+          max-width: 350px;
+          width: 100%;
+          border: 1px solid transparent;
+          box-sizing: border-box;
+
+          padding: 2px 30px;
+          text-align: right;
+          display: inline-block;
+          cursor: pointer; // 基本は指マーク
+
+          @include b.mq(tb) {
+            padding-inline: 15px;
+          }
+          @include b.mq(pc) {
+            padding-inline: 30px;
+          }
+
+          &:hover {
+            span {
+              &::before,
+              &::after {
+                transition: 0.3s;
+
+                right: -10px;
+              }
+            }
+          }
+
+          &.is-active {
+            background-color: b.$sub-color-light;
+            color: b.$main-color;
+            border: 1px solid b.$main-color;
+            transition: 0.3s;
+            pointer-events: none; // クリックを無効化
+            cursor: default; // カーソルを矢印（標準）に戻す
+
+            span {
+              &::before,
+              &::after {
+                background-color: b.$main-color;
+              }
+            }
+          }
+
+          span {
+            position: relative;
+            display: inline-block;
+            width: 10px;
+            height: 0;
+            margin: 7.7px 0;
+            border-radius: 9999px;
+            background-color: b.$sub-color-light;
+            transition: 0.3s;
+
+            &::before,
+            &::after {
+              content: "";
+              position: absolute;
+              top: calc(50% - 1px);
+              right: 0;
+              width: 10px;
+              height: 2px;
+              border-radius: 9999px;
+              background-color: b.$sub-color-light;
+              transform-origin: calc(100% - 1px) 50%;
+            }
+
+            &::before {
+              transform: rotate(45deg);
+            }
+
+            &::after {
+              transform: rotate(-45deg);
+            }
+          }
+        }
+        // 切り替えボタン-------------------------------------------------------
       }
     }
 
     // セクション1-------------------------------------------------------
 
+    // コンテンツ１-------------------------------------------------------
     // セクション2-------------------------------------------------------
     &--2 {
       margin-top: 30px;
 
-      @include b.mq(pc) {
+      @include b.mq(tb) {
         margin-top: 100px;
       }
 
@@ -735,5 +873,214 @@
       }
     }
     // セクション6-------------------------------------------------------
+    // コンテンツ１-------------------------------------------------------
+
+    // コンテンツ２-------------------------------------------------------
+
+    // セクション７-------------------------------------------------------
+
+    &--7 {
+      .page-s-perpetual-care {
+        &__inner {
+          padding-top: 50px;
+
+          @include b.mq(tb) {
+            padding-top: 100px;
+          }
+
+          .parts-bg-circle {
+            right: 0;
+          }
+        }
+
+        &__container {
+          max-width: 550px;
+          width: 100%;
+          margin-inline: auto;
+
+          @include b.mq(pc) {
+            max-width: 1080px;
+          }
+        }
+
+        &__ttl {
+          text-align: center;
+
+          @include b.mq(pc) {
+            font-size: 40px;
+          }
+        }
+
+        &__txt {
+          text-align: center;
+          margin-top: 20px;
+          font-size: 16px;
+
+          @include b.mq(pc) {
+            margin-top: 30px;
+            font-size: 24px;
+          }
+        }
+
+        &__card {
+          margin-top: 40px;
+          margin-inline: auto;
+          max-width: 550px;
+
+          @include b.mq(pc) {
+            margin-top: 54px;
+            max-width: 1080px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 35px;
+          }
+
+          &-img {
+            width: 100%;
+
+            @include b.mq(pc) {
+              max-width: 430px;
+              width: 40%;
+              flex: 0.7;
+            }
+
+            img {
+              width: 100%;
+            }
+          }
+
+          &-txt {
+            text-align: center;
+            margin-top: 20px;
+            line-height: 1.8;
+
+            @include b.mq(pc) {
+              margin-top: 0;
+              text-align: left;
+              line-height: 2;
+              flex: 1;
+            }
+          }
+        }
+      }
+    }
+    // セクション７-------------------------------------------------------
+    // セクション８-------------------------------------------------------
+    &--8 {
+      .page-s-perpetual-care {
+        &__inner {
+          padding-top: 100px;
+          padding-bottom: 50px;
+
+          @include b.mq(pc) {
+            padding-bottom: 100px;
+          }
+        }
+
+        &__ttl {
+          text-align: center;
+
+          @include b.mq(pc) {
+            font-size: 40px;
+          }
+        }
+
+        &__cards {
+          margin-top: 33px;
+
+          width: 100%;
+          max-width: 550px;
+          margin-inline: auto; // 中央寄せ
+
+          @include b.mq(pc) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 920px; // (440px * 2) + gap(40px) で、2枚並んだ時の最大幅に固定
+
+            gap: 40px; // カード同士の隙間
+          }
+        }
+
+        &__card {
+          width: 100%; // 親のグリッド幅いっぱいに広がる
+          background: #fff;
+          padding: 6px;
+          max-width: 550px;
+          margin-inline: auto;
+
+          @include b.mq(pc) {
+            padding: 20px;
+            max-width: 440px;
+          }
+
+          &-ttl {
+            text-align: center;
+            color: b.$text-color-dark;
+            line-height: 1.8;
+
+            @include b.mq(pc) {
+              font-size: 24px;
+            }
+          }
+          &-img {
+            margin-top: 15px;
+            width: 350px;
+            height: 230px;
+            margin-inline: auto;
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+
+          &-table {
+            margin-top: 25px;
+            border-collapse: collapse;
+            width: 100%;
+
+            &-list {
+              display: flex;
+              justify-content: space-between;
+              align-items: stretch;
+              font-size: 14px;
+              line-height: 2;
+              border-top: 1px solid b.$border-color-dark;
+              padding-block: 25px;
+
+              &:last-child {
+                border-bottom: 1px solid b.$border-color-dark;
+              }
+
+              @include b.mq(pc) {
+                font-size: 16px;
+              }
+            }
+
+            &-ttl {
+              display: flex;
+              justify-content: start;
+              align-items: flex-start;
+              width: 80px;
+              padding-inline: 12px;
+            }
+
+            &-input {
+              display: flex;
+              justify-content: flex-start;
+              align-items: flex-start;
+              width: 278px;
+              padding-inline: 8px;
+            }
+          }
+        }
+      }
+    }
+
+    // セクション８-------------------------------------------------------
+    // コンテンツ２-------------------------------------------------------
   }
 }

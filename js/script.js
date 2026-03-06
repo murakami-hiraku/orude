@@ -251,3 +251,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //   observer.observe(footer);
 // });
+
+// --- 11. 永代合同墓ページコンテンツ切り替え設定 ---
+const tabButtons = document.querySelectorAll(".page-s-perpetual-care__btn");
+const tabPanels = document.querySelectorAll(".page-s-perpetual-care__content");
+
+tabButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    // 1. 全てのボタンとパネルから is-active を消す
+    tabButtons.forEach((btn) => btn.classList.remove("is-active"));
+    tabPanels.forEach((panel) => panel.classList.remove("is-active"));
+
+    // 2. クリックされたボタンに is-active をつける
+    button.classList.add("is-active");
+
+    // 3. ボタンの data-target と同じ ID を持つパネルに is-active をつける
+    const targetId = button.dataset.target;
+    document.getElementById(targetId).classList.add("is-active");
+  });
+});
