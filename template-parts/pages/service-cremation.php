@@ -226,7 +226,7 @@
               <p class="page-s-cremation__card-txt--sub">※火葬については、各市区町村の条例に従い安全に火葬出来る場所で火葬を行います。移動をしながらの火葬はしませんので、ご安心ください。</p>
             </div>
           </div>
-          <div class="page-s-cremation__card card--4">で
+          <div class="page-s-cremation__card card--4">
             <div class="page-s-cremation__card-img">
               <img src="<?php echo get_template_directory_uri(); ?>/img/page-cremation/cremation-sec5-4.png" alt="">
             </div>

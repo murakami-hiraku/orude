@@ -3579,7 +3579,7 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-inline: 8px;
+  padding-inline: 16px;
   padding-block: 6px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -3818,7 +3818,7 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-inline: 8px;
+  padding-inline: 12px;
   padding-block: 6px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -3828,22 +3828,22 @@ main {
           justify-content: space-between;
   width: 275px;
   margin-inline: auto;
+  color: #fff;
+  background-color: #907910;
+  border: 1px solid #907910;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 1.8;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 @media (min-width: 1024px) {
   .page-s-cremation__section--4 .page-s-cremation__card.card--4 .page-s-cremation__link {
     margin-inline: 0;
     margin-right: auto;
   }
-}
-.page-s-cremation__section--4 .page-s-cremation__card.card--4 .page-s-cremation__link {
-  color: #fff;
-  background-color: #907910;
-  border: 2px solid #907910;
-  font-weight: 900;
-  font-size: 15px;
-  line-height: 1.8;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 .page-s-cremation__section--4 .page-s-cremation__card.card--4 .page-s-cremation__link:hover {
   background-color: #fff;
@@ -3915,13 +3915,13 @@ main {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    margin-top: 78px;
-    height: 40px;
+    margin-top: 58px;
+    height: 45px;
   }
 }
 @media (min-width: 1024px) and (min-width: 1440px) {
   .page-s-cremation__section--4 .page-s-cremation__flow {
-    margin-top: 100px;
+    margin-top: 72px;
   }
 }
 .page-s-cremation__section--4 .page-s-cremation__flow::before {
@@ -3968,7 +3968,7 @@ main {
 @media (min-width: 1024px) {
   .page-s-cremation__section--4 .page-s-cremation__flow-step {
     width: 100px;
-    height: 60px;
+    height: 45px;
   }
 }
 .page-s-cremation__section--4 .page-s-cremation__flow-step:first-child {
@@ -3978,7 +3978,7 @@ main {
   background: #907910;
 }
 .page-s-cremation__section--4 .card--1 .page-s-cremation__flow {
-  margin-top: 78px;
+  margin-top: 48px;
 }
 .page-s-cremation__section--4 .card--2 .step--3 {
   font-size: 14px;
@@ -3989,11 +3989,7 @@ main {
 @media (min-width: 1024px) {
   .page-s-cremation__section--4 .card--4 .page-s-cremation__flow {
     margin-top: 18px;
-  }
-}
-@media (min-width: 1440px) {
-  .page-s-cremation__section--4 .card--4 .page-s-cremation__flow {
-    margin-top: 40px;
+    height: 60px;
   }
 }
 @media (min-width: 1024px) {
