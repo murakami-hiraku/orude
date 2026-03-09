@@ -610,6 +610,11 @@
             padding: 0;
             gap: 50px;
           }
+          &:first-child {
+            img {
+              height: 250px;
+            }
+          }
 
           &-img {
             max-height: 69.231vw;

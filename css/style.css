@@ -5463,6 +5463,9 @@ main {
     gap: 50px;
   }
 }
+.page-s-perpetual-care__section--4 .page-s-perpetual-care__card:first-child img {
+  height: 250px;
+}
 .page-s-perpetual-care__section--4 .page-s-perpetual-care__card-img {
   max-height: 69.231vw;
   overflow: hidden;
