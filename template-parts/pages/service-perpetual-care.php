@@ -258,7 +258,6 @@
       <section class="page-s-perpetual-care__section page-s-perpetual-care__section--7 section fadein ">
         <div class="page-s-perpetual-care__inner inner">
           <?php
-          get_template_part('template-parts/parts/parts-bg-circle');
           ?>
           <div class="page-s-perpetual-care__container">
             <h2 class="page-s-perpetual-care__ttl">あの子が、ずっと安らげる場所へ。</h2>
