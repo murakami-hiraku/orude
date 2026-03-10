@@ -85,15 +85,7 @@
                 <div class="swiper-slide">
                   <img src="<?php echo get_template_directory_uri(); ?>/img/page-perpetual/perpetual-swiper-5.png" alt="">
                 </div>
-                <div class="swiper-slide">
-                  <img src="<?php echo get_template_directory_uri(); ?>/img/page-perpetual/perpetual-swiper-6.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="<?php echo get_template_directory_uri(); ?>/img/page-perpetual/perpetual-swiper-7.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="<?php echo get_template_directory_uri(); ?>/img/page-perpetual/perpetual-swiper-8.png" alt="">
-                </div>
+
 
               </div>
 
