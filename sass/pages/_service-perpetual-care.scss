@@ -455,11 +455,11 @@
           position: static; // 絶対配置を解除
           width: fit-content;
           display: flex;
-          gap: 10px;
+          gap: 25px;
           margin: 0;
 
           @include b.mq(pc) {
-            gap: 20px;
+            gap: 30px;
           }
 
           .swiper-pagination-bullet {

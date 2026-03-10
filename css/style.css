@@ -5300,12 +5300,12 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10px;
+  gap: 25px;
   margin: 0;
 }
 @media (min-width: 1024px) {
   .page-s-perpetual-care__section--3 .p-sec-slider .swiper-pagination {
-    gap: 20px;
+    gap: 30px;
   }
 }
 .page-s-perpetual-care__section--3 .p-sec-slider .swiper-pagination .swiper-pagination-bullet {
