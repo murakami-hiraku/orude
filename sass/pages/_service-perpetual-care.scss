@@ -485,7 +485,7 @@
           height: 25px;
           background-color: b.$main-color; // ボタンの背景色
           border-radius: 50%; // 正円にする
-          color: #fff; // 矢印の色
+          color: b.$sub-color-light; // 矢印の色
 
           &::after {
             content: "";
