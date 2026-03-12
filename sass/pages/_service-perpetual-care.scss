@@ -171,24 +171,19 @@
           }
 
           .btn-1 {
-            font-size: 16px;
-
             span {
-              margin-left: 24px;
-              margin-bottom: 6px;
+              margin-left: 12px;
             }
           }
 
           .btn-2 {
             span {
               margin-left: 48px;
-              margin-bottom: 8px;
             }
           }
         }
 
         &__btn {
-          position: relative;
           background-color: b.$main-color;
           color: b.$text-color-white;
           font-weight: 900;
@@ -196,11 +191,10 @@
           line-height: 1.8;
           max-width: 350px;
           width: 100%;
-          height: 40px;
           border: 1px solid transparent;
           box-sizing: border-box;
 
-          padding: 0 20px;
+          padding: 2px 30px;
           text-align: right;
           display: inline-block;
           cursor: pointer; // 基本は指マーク
@@ -209,7 +203,7 @@
             padding-inline: 15px;
           }
           @include b.mq(pc) {
-            padding-inline: 20px;
+            padding-inline: 30px;
           }
 
           &:hover {
@@ -244,7 +238,7 @@
             display: inline-block;
             width: 10px;
             height: 0;
-            margin: 0;
+            margin: 7.7px 0;
             border-radius: 9999px;
             background-color: b.$sub-color-light;
             transition: 0.3s;
