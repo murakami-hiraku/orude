@@ -5024,12 +5024,6 @@ main {
     gap: min(8.4vw, 160px);
   }
 }
-.page-s-perpetual-care__section--1 .page-s-perpetual-care__menu .btn-1 span {
-  margin-left: 12px;
-}
-.page-s-perpetual-care__section--1 .page-s-perpetual-care__menu .btn-2 span {
-  margin-left: 12px;
-}
 .page-s-perpetual-care__section--1 .page-s-perpetual-care__btn {
   background-color: #907910;
   color: #fff;
@@ -5082,12 +5076,9 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: inline-block;
   width: 10px;
-  height: 0;
-  margin: 7.7px 0;
-  border-radius: 9999px;
-  background-color: #fff;
+  height: 40px;
+  padding-left: 22px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }

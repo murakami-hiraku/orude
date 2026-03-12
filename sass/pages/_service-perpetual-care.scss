@@ -172,13 +172,11 @@
 
           .btn-1 {
             span {
-              margin-left: 12px;
             }
           }
 
           .btn-2 {
             span {
-              margin-left: 12px;
             }
           }
         }
@@ -238,12 +236,10 @@
             position: relative;
             text-align: center;
             align-items: center;
-            display: inline-block;
             width: 10px;
-            height: 0;
-            margin: 7.7px 0;
-            border-radius: 9999px;
-            background-color: b.$sub-color-light;
+            height: 40px;
+            padding-left: 22px;
+            // margin: 8px 0;
             transition: 0.3s;
 
             &::before,
