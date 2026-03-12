@@ -5868,12 +5868,7 @@ main {
 }
 .page-s-perpetual-care__section--8 .page-s-perpetual-care__inner {
   padding-top: 100px;
-  padding-bottom: 50px;
-}
-@media (min-width: 1024px) {
-  .page-s-perpetual-care__section--8 .page-s-perpetual-care__inner {
-    padding-bottom: 100px;
-  }
+  text-align: center;
 }
 .page-s-perpetual-care__section--8 .page-s-perpetual-care__ttl {
   text-align: center;
@@ -5886,34 +5881,46 @@ main {
 .page-s-perpetual-care__section--8 .page-s-perpetual-care__cards {
   margin-top: 33px;
   width: 100%;
-  max-width: 550px;
-  margin-inline: auto;
+  max-width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+}
+@media (min-width: 768px) {
+  .page-s-perpetual-care__section--8 .page-s-perpetual-care__cards {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 20px;
+  }
 }
 @media (min-width: 1024px) {
   .page-s-perpetual-care__section--8 .page-s-perpetual-care__cards {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    margin-top: 62px;
+    gap: 6.771vw;
     max-width: 920px;
-    gap: 40px;
   }
 }
 .page-s-perpetual-care__section--8 .page-s-perpetual-care__card {
   width: 100%;
   background: #fff;
-  padding: 6px;
-  max-width: 550px;
+  max-width: 350px;
   margin-inline: auto;
 }
 @media (min-width: 1024px) {
   .page-s-perpetual-care__section--8 .page-s-perpetual-care__card {
-    padding: 20px;
     max-width: 440px;
   }
 }
@@ -5921,14 +5928,10 @@ main {
   text-align: center;
   color: #333333;
   line-height: 1.8;
-}
-@media (min-width: 1024px) {
-  .page-s-perpetual-care__section--8 .page-s-perpetual-care__card-ttl {
-    font-size: 24px;
-  }
+  font-size: 24px;
 }
 .page-s-perpetual-care__section--8 .page-s-perpetual-care__card-img {
-  margin-top: 15px;
+  margin-top: 30px;
   width: 350px;
   height: 230px;
   margin-inline: auto;
@@ -5939,59 +5942,28 @@ main {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.page-s-perpetual-care__section--8 .page-s-perpetual-care__card-table {
-  margin-top: 25px;
-  border-collapse: collapse;
-  width: 100%;
-}
-.page-s-perpetual-care__section--8 .page-s-perpetual-care__card-table-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  font-size: 14px;
-  line-height: 2;
-  border-top: 1px solid #333333;
-  padding-block: 25px;
-}
-.page-s-perpetual-care__section--8 .page-s-perpetual-care__card-table-list:last-child {
-  border-bottom: 1px solid #333333;
+.page-s-perpetual-care__section--8 .page-s-perpetual-care__txt {
+  margin-top: 50px;
+  max-width: 420px;
+  text-align: left;
+  margin-inline: auto;
 }
 @media (min-width: 1024px) {
-  .page-s-perpetual-care__section--8 .page-s-perpetual-care__card-table-list {
-    font-size: 16px;
+  .page-s-perpetual-care__section--8 .page-s-perpetual-care__txt {
+    margin-top: 36px;
+    max-width: 480px;
   }
 }
-.page-s-perpetual-care__section--8 .page-s-perpetual-care__card-table-ttl {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  width: 80px;
-  padding-inline: 12px;
+.page-s-perpetual-care__section--8 .page-s-perpetual-care__txt p {
+  display: inline-block;
+  text-align: left;
+  font-size: 14px;
+  line-height: 2;
 }
-.page-s-perpetual-care__section--8 .page-s-perpetual-care__card-table-input {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  width: 278px;
-  padding-inline: 8px;
+@media (min-width: 1024px) {
+  .page-s-perpetual-care__section--8 .page-s-perpetual-care__txt p {
+    font-size: 16px;
+  }
 }
 
 .page-faq .block-page-ttl {

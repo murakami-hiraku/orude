@@ -22,7 +22,7 @@
           <!-- コンテンツ切り替えボタン ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
           <div class="page-s-perpetual-care__menu">
             <button class="page-s-perpetual-care__btn btn-1 is-active" data-target="content-1">
-              ご家族とご一緒の納骨をご検討中の方<span></span>
+              ご一緒の納骨をご検討中の方<span></span>
             </button>
             <button class="page-s-perpetual-care__btn btn-2" data-target="content-2">
               納骨のみをご検討の方<span></span>
@@ -254,23 +254,10 @@
           <div class="page-s-perpetual-care__container">
             <h2 class="page-s-perpetual-care__ttl">あの子が、ずっと安らげる場所へ。</h2>
             <p class="page-s-perpetual-care__txt">
-              大切な家族の一員だったあの子に、<br>きちんとしたお別れと、安らかな眠りの場所を。<br>心を込めてご供養いたします。</p>
-
-            <div class="page-s-perpetual-care__card">
-              <div class="page-s-perpetual-care__card-img">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/page-perpetual/perpetual-sec2-1.png" alt="">
-              </div>
-              <p class="page-s-perpetual-care__card-txt">
-                当然のお別れで、頭の中が真っ白になってしまう方も多いと思います。<br>
-                「ちゃんとお墓に入れてあげたい。でもどうすればいいの？」<br>
-                「費用はどのくらいかかるんだろう。」<br>
-                「お寺に相談するのはハードルが高くて…」<br>
-                そんな気持ちに、そっと寄り添いたい。<br>
-                このページを見てくださっているあなたの「ちゃんとしてあげたい」という気持ちが、あの子への何よりの供養だと、私たちは思っています。<br>
-                どうか、一人で抱え込まないでください。<br>
-                まずは気軽にご相談ください。
-              </p>
-            </div>
+              大切な家族の一員だったあの子に、<br>
+              きちんとしたお別れと、安らかな眠りの場所を。<br>
+              心を込めてご供養いたします。
+            </p>
           </div>
 
         </div>
@@ -291,47 +278,21 @@
               <div class="page-s-perpetual-care__card-img">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/page-perpetual/perpetual-sec8-1.png" alt="">
               </div>
-              <table class="page-s-perpetual-care__card-table">
-                <tr class="page-s-perpetual-care__card-table-list">
-                  <th class="page-s-perpetual-care__card-table-ttl">住所</th>
-                  <td class="page-s-perpetual-care__card-table-input">〒558-0043<br>
-                    大阪府大阪市住吉区墨江４丁目１５−１５</td>
-                </tr>
-                <tr class="page-s-perpetual-care__card-table-list">
-                  <th class="page-s-perpetual-care__card-table-ttl">納骨方法</th>
-                  <td class="page-s-perpetual-care__card-table-input">合祀（お骨の返還は不可）</td>
-                </tr>
-                <tr class="page-s-perpetual-care__card-table-list">
-                  <th class="page-s-perpetual-care__card-table-ttl">納骨日</th>
-                  <td class="page-s-perpetual-care__card-table-input">毎月、第1日曜日の午前10時に行います。<br>※お彼岸・お盆・年末年始は変更の場合がございます。</td>
-                </tr>
-
-              </table>
             </div>
 
             <div class="page-s-perpetual-care__card card-2">
-              <h2 class="page-s-perpetual-care__card-ttl">大阪市天王寺区</h2>
+              <h2 class="page-s-perpetual-care__card-ttl">奈良県生駒郡</h2>
               <div class="page-s-perpetual-care__card-img">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/page-perpetual/perpetual-sec8-2.png" alt="">
               </div>
-              <table class="page-s-perpetual-care__card-table">
-                <tr class="page-s-perpetual-care__card-table-list">
-                  <th class="page-s-perpetual-care__card-table-ttl">住所</th>
-                  <td class="page-s-perpetual-care__card-table-input">〒543-0073<br>
-                    大阪府大阪市天王寺区生玉寺町６−２６</td>
-                </tr>
-                <tr class="page-s-perpetual-care__card-table-list">
-                  <th class="page-s-perpetual-care__card-table-ttl">納骨方法</th>
-                  <td class="page-s-perpetual-care__card-table-input">合祀（お骨の返還は不可）</td>
-                </tr>
-                <tr class="page-s-perpetual-care__card-table-list">
-                  <th class="page-s-perpetual-care__card-table-ttl">納骨日</th>
-                  <td class="page-s-perpetual-care__card-table-input">毎月、第1日曜日の午前10時に行います。<br>※お彼岸・お盆・年末年始は変更の場合がございます。</td>
-                </tr>
-
-              </table>
             </div>
 
+          </div>
+
+          <div class="page-s-perpetual-care__txt">
+            <p>※納骨の際、読経をご希望の方は、別途回向料が必要となります。</p>
+            <p>※お申込みの際、事務所手数料が必要となる場合がございます。</p>
+            <p>※事務手数料に関しては、お問い合わせください。</p>
           </div>
 
         </div>

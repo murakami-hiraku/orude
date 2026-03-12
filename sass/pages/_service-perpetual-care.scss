@@ -978,10 +978,9 @@
       .page-s-perpetual-care {
         &__inner {
           padding-top: 100px;
-          padding-bottom: 50px;
+          text-align: center;
 
           @include b.mq(pc) {
-            padding-bottom: 100px;
           }
         }
 
@@ -997,28 +996,32 @@
           margin-top: 33px;
 
           width: 100%;
-          max-width: 550px;
-          margin-inline: auto; // 中央寄せ
+          max-width: 350px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 50px;
+
+          @include b.mq(tb) {
+            flex-direction: row;
+            gap: 20px;
+          }
 
           @include b.mq(pc) {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            margin-top: 62px;
+            gap: 6.771vw;
             max-width: 920px; // (440px * 2) + gap(40px) で、2枚並んだ時の最大幅に固定
-
-            gap: 40px; // カード同士の隙間
           }
         }
 
         &__card {
           width: 100%; // 親のグリッド幅いっぱいに広がる
-          background: #fff;
-          padding: 6px;
-          max-width: 550px;
+          background: b.$sub-color-light;
+          max-width: 350px;
           margin-inline: auto;
 
           @include b.mq(pc) {
-            padding: 20px;
             max-width: 440px;
           }
 
@@ -1026,13 +1029,10 @@
             text-align: center;
             color: b.$text-color-dark;
             line-height: 1.8;
-
-            @include b.mq(pc) {
-              font-size: 24px;
-            }
+            font-size: 24px;
           }
           &-img {
-            margin-top: 15px;
+            margin-top: 30px;
             width: 350px;
             height: 230px;
             margin-inline: auto;
@@ -1043,44 +1043,27 @@
               object-fit: cover;
             }
           }
+        }
 
-          &-table {
-            margin-top: 25px;
-            border-collapse: collapse;
-            width: 100%;
+        &__txt {
+          margin-top: 50px;
+          max-width: 420px;
+          text-align: left;
+          margin-inline: auto;
 
-            &-list {
-              display: flex;
-              justify-content: space-between;
-              align-items: stretch;
-              font-size: 14px;
-              line-height: 2;
-              border-top: 1px solid b.$border-color-dark;
-              padding-block: 25px;
+          @include b.mq(pc) {
+            margin-top: 36px;
+            max-width: 480px;
+          }
 
-              &:last-child {
-                border-bottom: 1px solid b.$border-color-dark;
-              }
+          p {
+            display: inline-block;
+            text-align: left;
+            font-size: 14px;
+            line-height: 2;
 
-              @include b.mq(pc) {
-                font-size: 16px;
-              }
-            }
-
-            &-ttl {
-              display: flex;
-              justify-content: start;
-              align-items: flex-start;
-              width: 80px;
-              padding-inline: 12px;
-            }
-
-            &-input {
-              display: flex;
-              justify-content: flex-start;
-              align-items: flex-start;
-              width: 278px;
-              padding-inline: 8px;
+            @include b.mq(pc) {
+              font-size: 16px;
             }
           }
         }
