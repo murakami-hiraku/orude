@@ -178,7 +178,7 @@
 
           .btn-2 {
             span {
-              margin-left: 48px;
+              margin-left: 12px;
             }
           }
         }
@@ -191,11 +191,12 @@
           line-height: 1.8;
           max-width: 350px;
           width: 100%;
+          text-align: center;
+          align-items: center;
           border: 1px solid transparent;
           box-sizing: border-box;
 
-          padding: 2px 30px;
-          text-align: right;
+          padding: 0 30px;
           display: inline-block;
           cursor: pointer; // 基本は指マーク
 
@@ -235,6 +236,8 @@
 
           span {
             position: relative;
+            text-align: center;
+            align-items: center;
             display: inline-block;
             width: 10px;
             height: 0;
@@ -920,48 +923,6 @@
           @include b.mq(pc) {
             margin-top: 30px;
             font-size: 24px;
-          }
-        }
-
-        &__card {
-          margin-top: 40px;
-          margin-inline: auto;
-          max-width: 550px;
-
-          @include b.mq(pc) {
-            margin-top: 54px;
-            max-width: 1080px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 35px;
-          }
-
-          &-img {
-            width: 100%;
-
-            @include b.mq(pc) {
-              max-width: 430px;
-              width: 40%;
-              flex: 0.7;
-            }
-
-            img {
-              width: 100%;
-            }
-          }
-
-          &-txt {
-            text-align: center;
-            margin-top: 20px;
-            line-height: 1.8;
-
-            @include b.mq(pc) {
-              margin-top: 0;
-              text-align: left;
-              line-height: 2;
-              flex: 1;
-            }
           }
         }
       }
