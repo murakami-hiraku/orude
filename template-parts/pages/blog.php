@@ -54,7 +54,7 @@ Template Name: ブログ一覧
                         <?php if (has_post_thumbnail()) : ?>
                           <?php the_post_thumbnail('medium'); ?>
                         <?php else : ?>
-                          <img src="<?php echo get_template_directory_uri(); ?>/img/no-img.png" alt="no image">
+                          <img src="<?php echo get_template_directory_uri(); ?>/img/common/no-img.png" alt="no image">
                         <?php endif; ?>
                       </div>
                       <div class="page-blog__card-body">
