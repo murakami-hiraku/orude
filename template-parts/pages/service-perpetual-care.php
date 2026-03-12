@@ -22,7 +22,7 @@
           <!-- コンテンツ切り替えボタン ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
           <div class="page-s-perpetual-care__menu">
             <button class="page-s-perpetual-care__btn btn-1 is-active" data-target="content-1">
-              ご一緒の納骨をご検討中の方<span></span>
+              ご家族とご一緒の納骨をご検討中の方<span></span>
             </button>
             <button class="page-s-perpetual-care__btn btn-2" data-target="content-2">
               納骨のみをご検討の方<span></span>
