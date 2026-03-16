@@ -79,7 +79,7 @@
     <!-- /コンタクト -->
 
 
-    <!-- セクション4 -->
+    <!-- セクション4 プランについて -->
     <section class="page-s-cremation__section page-s-cremation__section--4 section fadein">
 
       <div class="page-s-cremation__inner inner">
@@ -112,7 +112,7 @@
             </div>
             <div class="page-s-cremation__card-body">
               <h2 class="page-s-cremation__card-ttl">一任個別火葬</h2>
-              <p class="page-s-cremation__card-txt">個別火葬火葬後、お骨はスタッフが収骨を執り行い、骨壺にお納めしてお客様にお返しいたします。</p>
+              <p class="page-s-cremation__card-txt">個別火葬火葬後、お骨はスタッフがお骨上げを執り行い、骨壺にお納めしてお客様にお返しいたします。</p>
               <div class="page-s-cremation__flow">
                 <div class="page-s-cremation__flow-step step--1">お伺い
                 </div>
@@ -131,7 +131,7 @@
             </div>
             <div class="page-s-cremation__card-body">
               <h2 class="page-s-cremation__card-ttl">立会個別火葬</h2>
-              <p class="page-s-cremation__card-txt">個別火葬火葬後、お骨はご家族様で収骨を執り行い、骨壺にお納めしてお客様にお返しいたします。</p>
+              <p class="page-s-cremation__card-txt">個別火葬火葬後、お骨はご家族様でお骨上げを執り行い、骨壺にお納めしてお客様にお返しいたします。</p>
               <div class="page-s-cremation__flow">
                 <div class="page-s-cremation__flow-step step--1">お伺い
                 </div>
