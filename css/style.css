@@ -5026,13 +5026,15 @@ main {
 }
 .page-s-perpetual-care__section--1 .page-s-perpetual-care__menu .btn-1 {
   padding: 0 24px;
-  font-size: 16px;
+}
+.page-s-perpetual-care__section--1 .page-s-perpetual-care__menu .btn-2 {
+  padding: 0 24px;
 }
 .page-s-perpetual-care__section--1 .page-s-perpetual-care__btn {
   background-color: #907910;
   color: #fff;
   font-weight: 900;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.8;
   max-width: 350px;
   width: 100%;
@@ -5044,7 +5046,6 @@ main {
   border: 1px solid transparent;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0 30px;
   display: inline-block;
   cursor: pointer;
 }

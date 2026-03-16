@@ -25,7 +25,7 @@
               ご家族とご一緒の納骨をご検討中の方<span></span>
             </button>
             <button class="page-s-perpetual-care__btn btn-2" data-target="content-2">
-              納骨のみをご検討の方<span></span>
+              ペットのご納骨のみをお考えの方<span></span>
             </button>
           </div>
           <!-- コンテンツ切り替えボタン ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
