@@ -57,6 +57,7 @@
     gap: 25px;
 
     @include b.mq(pc) {
+      max-height: 300px;
       display: grid;
       // 2列にする（1列目は残り全部、2列目はコンテンツ幅）
       grid-template-columns: 1fr auto;
@@ -132,7 +133,7 @@
     margin-inline: auto;
 
     @include b.mq(pc) {
-      margin-top: 64px;
+      margin-top: auto;
       margin-right: 0;
       margin-left: auto;
     }

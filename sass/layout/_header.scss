@@ -7,7 +7,7 @@
   position: fixed; // 常に固定
   top: 0;
   left: 0;
-  z-index: 50;
+  z-index: 9999 !important; // 最前面に表示
   transition: background-color 0.3s;
 
   .home & {

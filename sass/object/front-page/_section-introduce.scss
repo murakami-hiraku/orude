@@ -2,6 +2,8 @@
 @use "../../foundation/base" as b;
 
 .section-introduce {
+  position: relative;
+  background: b.$sub-color-light;
   margin-top: 100px;
   padding-bottom: 50px;
 
@@ -27,14 +29,21 @@
   &__content {
     max-width: 600px;
     margin-inline: auto;
+    margin-top: 25px;
+
+    @include b.mq(pc) {
+    }
+    @include b.mq(lg) {
+    }
 
     @include b.mq(pc) {
       display: flex;
       justify-content: center;
-      align-items: center;
-      gap: 54px;
+      align-items: end;
       margin-top: 50px;
-      max-width: 1020px;
+      // max-width: 860px;
+      max-width: 44.79vw;
+      gap: 0;
     }
   }
 
@@ -42,20 +51,38 @@
     padding: 25px 30px;
     max-width: 500px;
     margin-inline: auto;
-
-    @include b.mq(pc) {
-      max-width: 450px;
-      padding: 0;
-    }
+    position: relative;
+    z-index: 1;
     img {
       width: 100%;
       box-shadow: 0px 4px 4px 0px #00000040;
     }
+
+    @include b.mq(pc) {
+      min-width: 450px;
+      max-width: 450px;
+      padding: 0;
+      margin: 0;
+      margin-right: auto;
+    }
   }
 
   &__body {
+    background: b.$sub-color-light;
+    position: relative;
+    z-index: 2;
+
     @include b.mq(pc) {
-      padding-top: 50px;
+      min-width: 450px;
+
+      max-width: 450px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: -20px;
+      margin-left: -36px;
+      margin-bottom: -10px;
+      padding: 20px 20px 10px 20px;
+      box-shadow: 0px 4px 4px 0px #00000040;
     }
   }
 
@@ -77,7 +104,7 @@
     margin-inline: auto;
 
     @include b.mq(pc) {
-      margin-top: 70px;
+      margin-top: 10px;
       margin-inline: 0;
       margin-left: auto;
     }

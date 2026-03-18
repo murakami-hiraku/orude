@@ -220,7 +220,7 @@
         }
         // --- ここまで ---
 
-        z-index: 9999 !important;
+        z-index: 9995 !important;
         display: flex !important;
 
         flex-direction: column;
@@ -228,6 +228,18 @@
         padding-block: 10px;
         pointer-events: auto !important;
       }
+    }
+
+    transition:
+      transform 0.3s ease,
+      opacity 0.3s ease,
+      visibility 0.3s ease;
+
+    &.is-hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none; // クリックできないようにする
+      transform: translateY(20px); // 少し下げて消す
     }
   }
 

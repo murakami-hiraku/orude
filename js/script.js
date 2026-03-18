@@ -203,7 +203,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const originalParent = links.parentNode;
 
   window.addEventListener("scroll", function () {
-    if (window.innerWidth >= 1025) {
+    if (window.innerWidth >= 1024) {
       const scrollY = window.pageYOffset;
       const headerHeight = header.offsetHeight;
 
@@ -272,4 +272,40 @@ tabButtons.forEach((button) => {
     const targetId = button.dataset.target;
     document.getElementById(targetId).classList.add("is-active");
   });
+});
+
+// --- 12. fvのリンクを特定セクション内に入ったら非表示 ---
+document.addEventListener("DOMContentLoaded", function () {
+  const links = document.querySelector(".section-fv__links");
+  const introduceSection = document.querySelector(".section-introduce");
+  const mm = window.matchMedia("(max-width: 1919px)");
+
+  if (!links || !introduceSection) return;
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      if (mm.matches) {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            links.classList.add("is-hidden");
+          } else {
+            links.classList.remove("is-hidden");
+          }
+        });
+      } else {
+        // 1920pxを超えたら隠しクラスを外す
+        links.classList.remove("is-hidden");
+      }
+    },
+    {
+      // 下端から「-200px」の位置に境界線を引く
+      // つまり、セクションが画面の下から○○px分せり上がってくるまで反応しない
+      rootMargin: "0px 0px -50% 0px",
+
+      // どのタイミングで反応させるか（0.1なら10%入ったら発火）
+      threshold: 0.2,
+    },
+  );
+
+  observer.observe(introduceSection);
 });
