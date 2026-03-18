@@ -136,8 +136,11 @@ parentMenuItems.forEach((link) => {
 // 1. 共通の設定（swiperOptions）を定義する
 const swiperOptions = {
   effect: "fade",
+  fadeEffect: {
+    crossFade: true, // 前のスライドが消えながら次が出る
+  },
   loop: true,
-  speed: 5000, // スライドが動くスピード
+  speed: 8000, // スライドが動くスピード
   allowTouchMove: false, // 手動操作を禁止
 };
 
@@ -155,20 +158,20 @@ function startSequentialLoop() {
   // ○○秒後に2番目を動かす
   setTimeout(() => {
     if (fvSwiper2) fvSwiper2.slideNext();
-  }, 3000);
+  }, 4000);
 
   // ○○秒後に3番目を動かす
   setTimeout(() => {
     if (fvSwiper3) fvSwiper3.slideNext();
-  }, 6000);
+  }, 8000);
 
   // ○○秒おきにこの関数自体をループ
-  setTimeout(startSequentialLoop, 9000);
+  setTimeout(startSequentialLoop, 12000);
 }
 
 // ページ読み込み完了後に実行
 window.addEventListener("load", () => {
-  setTimeout(startSequentialLoop, 2000);
+  setTimeout(startSequentialLoop, 12000);
 });
 
 // --- 9. secスワイパー制御 ---
