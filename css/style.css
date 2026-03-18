@@ -139,7 +139,7 @@ main {
   z-index: 2;
   pointer-events: none;
   inset: 0;
-  background: rgba(85, 85, 85, 0.4);
+  background: rgba(85, 85, 85, 0.2);
 }
 .section-fv__inner {
   position: relative;
