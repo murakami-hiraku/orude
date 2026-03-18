@@ -33,7 +33,7 @@
 
       <div class="section-service__card">
         <h3 class="section-service__card-ttl section-service__card-item">永代供養</h3>
-        <p class="section-service__card-txt section-service__card-item">お子様のご遺骨を永代に渡り供養いたします。<br>亡くなったお子様とご家族様が”語り合える場所”をご案内いたします。</p>
+        <p class="section-service__card-txt section-service__card-item">お子様のご遺骨を永代に渡り供養いたします。<br>亡くなったお子様とご家族様が”語り合える場所”をご案内いたします。<br>また、４９日法要や周忌法要も承ります。</p>
         <div class="section-service__img section-service__card-item"><img src="<?php echo get_template_directory_uri(); ?>/img/front-page/service-img-3.png" alt=""></div>
         <?php get_template_part('template-parts/parts/parts-btn', null, [
           'text'  => '永代供養の詳細へ',
