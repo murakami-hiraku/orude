@@ -4559,6 +4559,9 @@ main {
     margin-top: 200px;
   }
 }
+.page-s-ceremony__section--3 .page-s-ceremony__inner {
+  text-align: center;
+}
 .page-s-ceremony__section--3 .page-s-ceremony__txt {
   margin-top: 15px;
   font-size: 14px;
@@ -4664,7 +4667,7 @@ main {
 }
 @media (min-width: 1024px) {
   .page-s-ceremony__section--3 .page-s-ceremony__card-txt {
-    padding-inline: 36px;
+    padding-inline: 34px;
   }
 }
 .page-s-ceremony__section--3 .page-s-ceremony__card-txt--sub {
@@ -4707,6 +4710,16 @@ main {
 .page-s-ceremony__section--3 .page-s-ceremony__card-price--sub small {
   font-weight: 900;
   color: #907910;
+}
+.page-s-ceremony__section--3 .page-s-ceremony__note {
+  margin-top: 35px;
+  line-height: 1.8;
+}
+@media (min-width: 1024px) {
+  .page-s-ceremony__section--3 .page-s-ceremony__note {
+    margin-top: 50px;
+    font-size: 16px;
+  }
 }
 .page-s-ceremony__section--3 .parts-btn {
   margin-top: 10px;

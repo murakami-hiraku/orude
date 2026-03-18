@@ -58,7 +58,9 @@
             </div>
             <h2 class="page-s-ceremony__card-ttl">セレモニープランA</h2>
             <p class="page-s-ceremony__card-txt">
-              たくさんの愛をくれた存在へ「ありがとう」を——そんな想いを込めたセレモニープランです。
+              たくさんの愛をくれた存在へ「ありがとう」を——そんな想いを込めたセレモニープランです。<br>
+              （祭壇中央以外の花籠は、アーティフィシャルフラワーになります。）
+
             </p>
             <p class="page-s-ceremony__card-price">55,000円 <small>（税込）〜
               </small></p>
@@ -77,10 +79,12 @@
             </div>
             <h2 class="page-s-ceremony__card-ttl">セレモニープランB</h2>
             <p class="page-s-ceremony__card-txt">
-              虹の向こうでまた会える——そんな願いを込めたセレモニープランです。
+              虹の向こうでまた会える——そんな願いを込めたセレモニープランです。<br>
+              （祭壇中央以外の花籠は、アーティフィシャルフラワーになります。）
+
             </p>
             <p class="page-s-ceremony__card-price">55,000<small>円（税込）〜</small></p>
-            <p class="page-s-ceremony__card-price--sub">セレモニーと火葬をセットで行う場合は、<br><strong>3,300</strong><small>円（税込）</small>引かせていただきます。</p>
+            <p class="page-s-ceremony__card-price--sub">セレモニーと火葬をセットで行う場合は、<br><strong>特別料金</strong><small></small>でご案内させていただきます。</p>
             <?php get_template_part('template-parts/parts/parts-btn', null, [
               'text'  => '火葬料金はこちら',
               'link'  => home_url('/service-cremation/#price-list'),
@@ -90,6 +94,12 @@
 
         </div>
 
+        <div class="page-s-ceremony__note">
+          <p>※設営に時間がかかるため、詳細は電話で問い合わせが必要</p>
+          <p>※別途、火葬料が必要</p>
+          <p>※住宅環境によっては受けられない場合がある</p>
+
+        </div>
       </div>
 
     </section>
@@ -113,8 +123,7 @@
               <h2 class="page-s-ceremony__card-ttl">01　お問い合わせ</h2>
               <p class="page-s-ceremony__card-txt">
                 完全予約制になっております。<br>
-                ご希望のセレモニープランをお申し付けください。<br>
-                最後の時間をゆっくりと取れるよう日程のご相談ください。
+                ご希望のセレモニープランをお申し付けください。
               </p>
               <?php
               get_template_part('/template-parts/parts/parts-tel--primary')
@@ -150,7 +159,7 @@
                 お子様との最後のお別れの時間をゆっくりお過ごしください。<br>
                 ※他社で火葬の場合、設営翌日に祭壇・飾り付けお引取りになります。<br>
                 ※ご自宅でのお飾りとなります。必ず駐車場所（1台分）を確保下さい。<br>
-                ※近隣の有料駐車場にお止めした場合の費用は実費請求させて頂きます。
+                ※近隣の駐車場をりようした場合の費用は、ご負担をお願いいたします。
               </p>
 
             </div>
@@ -177,8 +186,8 @@
 
               <h2 class="page-s-ceremony__card-ttl">05　火葬</h2>
               <p class="page-s-ceremony__card-txt">
-                ご迷惑にならない場所で火葬を行ないます。<br>
-                火葬の煙・においが発生しにくい最新式の火葬炉になっておりますのでご安心ください。
+                火葬については、各市区町村の条例に従い安全に火葬出来る場所で火葬を執り行います。<br>
+                移動しながらの火葬はいたしません。ご安心ください。
               </p>
 
             </div>

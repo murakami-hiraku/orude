@@ -219,6 +219,7 @@
 
       .page-s-ceremony {
         &__inner {
+          text-align: center;
         }
 
         &__ttl {
@@ -298,7 +299,7 @@
             line-height: 2;
 
             @include b.mq(pc) {
-              padding-inline: 36px;
+              padding-inline: 34px;
             }
 
             &--sub {
@@ -343,6 +344,16 @@
                 color: b.$main-color;
               }
             }
+          }
+        }
+
+        &__note {
+          margin-top: 35px;
+          line-height: 1.8;
+
+          @include b.mq(pc) {
+            margin-top: 50px;
+            font-size: 16px;
           }
         }
       }
