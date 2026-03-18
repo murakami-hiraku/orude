@@ -604,6 +604,7 @@
           justify-content: center;
           gap: 20px;
           padding-bottom: 25px;
+          background: b.$sub-color-light;
           box-shadow: 0px 4px 4px 0px #00000040;
 
           @include b.mq(pc) {
@@ -775,7 +776,7 @@
 
             @include b.mq(pc) {
               font-size: 18px;
-              max-width: 380px;
+              max-width: 500px;
             }
           }
 
@@ -802,10 +803,12 @@
             }
           }
 
-          &-label {
-          }
-
-          &-value {
+          .item-4 {
+            br {
+              @media (min-width: 480px) {
+                display: none;
+              }
+            }
           }
         }
       }

@@ -22,7 +22,7 @@
           <!-- コンテンツ切り替えボタン ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
           <div class="page-s-perpetual-care__menu">
             <button class="page-s-perpetual-care__btn btn-1 is-active" data-target="content-1">
-              ご家族とご一緒の納骨をご検討中の方<span></span>
+              ペットと一緒のご納骨をお考えの方<span></span>
             </button>
             <button class="page-s-perpetual-care__btn btn-2" data-target="content-2">
               ペットのご納骨のみをお考えの方<span></span>
@@ -153,7 +153,7 @@
             </div>
             <div class="page-s-perpetual-care__card">
               <div class="page-s-perpetual-care__card-img">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/page-perpetual/perpetual-sec4-5.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/page-perpetual/perpetual-sec4-2.png" alt="">
               </div>
               <div class="page-s-perpetual-care__card-body">
                 <h2 class="page-s-perpetual-care__card-ttl">05　お参り</h2>
@@ -184,25 +184,22 @@
 
 
             <div class="page-s-perpetual-care__card-body">
-              <div class="page-s-perpetual-care__list">
-                <dl class="page-s-perpetual-care__list-item item-1">
-                  <dt class="page-s-perpetual-care__list-label">永代納骨『ともに』プラン（合同墓）</dt>
-                  <dd class="page-s-perpetual-care__list-value">– ¥150,000円</dd>
-                </dl>
-                <dl class="page-s-perpetual-care__list-item">
-                  <dt class="page-s-perpetual-care__list-label">ご親族の追加お一人につき</dt>
-                  <dd class="page-s-perpetual-care__list-value">– ¥100,000円</dd>
-                </dl>
-                <dl class="page-s-perpetual-care__list-item">
-                  <dt class="page-s-perpetual-care__list-label">ペットの追加１匹</dt>
-                  <dd class="page-s-perpetual-care__list-value">– ¥50,000円</dd>
-                </dl>
-                <dl class="page-s-perpetual-care__list-item">
-                  <dt class="page-s-perpetual-care__list-label">プレート（お一人とペット１匹）</dt>
-                  <dd class="page-s-perpetual-care__list-value">– ¥50,000円</dd>
-                </dl>
-              </div>
-              <p class="page-s-perpetual-care__card-txt">複数のご遺骨を合同で納骨墓に収蔵するプランです。<br>他の形式に比べ費用を抑えられるのが特徴です。<br>経済的負担を軽減しつつ、永代にわたり手厚い供養を受けられます。</p>
+              <ul class="page-s-perpetual-care__list">
+                <li class="page-s-perpetual-care__list-item item-1">
+                  <span>永代納骨『ともに』プラン（合同墓）</span><span>– ¥150,000円</span>
+                </li>
+                <li class="page-s-perpetual-care__list-item">
+                  <span>ご親族の追加お一人につき</span><span>– ¥100,000円</span>
+                </li>
+                <li class="page-s-perpetual-care__list-item">
+                  <span>ペットの追加１匹</span><span>– ¥50,000円</span>
+                </li>
+                <li class="page-s-perpetual-care__list-item item-4">
+                  <span>お名前入りプレート<br>（お一人とペット１匹）</span><span>– ¥50,000円</span>
+                </li>
+              </ul>
+              <p class="page-s-perpetual-care__card-txt txt-1">※永代納骨墓「ともに」のお支払いは、現金のみとなります。</p>
+              <p class="page-s-perpetual-care__card-txt txt-2">複数のご遺骨を合同で納骨墓に収蔵するプランです。<br>他の形式に比べ費用を抑えられるのが特徴です。<br>経済的負担を軽減しつつ、永代にわたり手厚い供養を受けられます。</p>
             </div>
           </div>
 
