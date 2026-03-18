@@ -222,8 +222,7 @@
             </div>
             <div class="page-s-cremation__card-body">
               <h2 class="page-s-cremation__card-ttl">03　火葬</h2>
-              <p class="page-s-cremation__card-txt">ご迷惑にならない場所で火葬を行います。<br>火葬の煙・においが発生しにくい最新式の火葬炉になっておりますのでご安心ください。</p>
-              <p class="page-s-cremation__card-txt--sub">※火葬については、各市区町村の条例に従い安全に火葬出来る場所で火葬を行います。移動をしながらの火葬はしませんので、ご安心ください。</p>
+              <p class="page-s-cremation__card-txt">火葬については、各市区町村の条例に従い安全に火葬出来る場所で火葬を執り行います。<br>移動をしながらの火葬はいたしません。ご安心ください。</p>
             </div>
           </div>
           <div class="page-s-cremation__card card--4">
@@ -304,10 +303,11 @@
           <div class="page-s-cremation__card">
             <h2 class="page-s-cremation__card-ttl">お迎え・出張費について</h2>
             <p class="page-s-cremation__card-txt">
-              ご遺体のお迎えエリアは<br>
-              大阪府下全域　尼崎市・芦屋市・伊丹市・川西市・神戸市・西宮市・生駒市・宇陀市・橿原市・葛城市・御所市・五條市・桜井市・天理市・奈良市<br>
+              大阪府下全域<br>
+              兵庫県（尼崎市・芦屋市・伊丹市・川西市・神戸市・西宮市）
+              奈良県（生駒市・宇陀市・橿原市・葛城市・御所市・五條市・桜井市・天理市・奈良市）<br>
               ※神戸市・西宮市に関して、一部対応外地域がございますので、ご相談ください。<br>
-              ※地域により別途出張費￥３,３００～必要となります。<br>
+              ※上記エリア外でもご対応できますので、ご相談ください。<br>
             </p>
           </div>
         </div>
