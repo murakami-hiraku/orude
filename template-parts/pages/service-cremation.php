@@ -213,7 +213,7 @@
             </div>
             <div class="page-s-cremation__card-body">
               <h2 class="page-s-cremation__card-ttl">02　お迎え</h2>
-              <p class="page-s-cremation__card-txt">ご自宅またはご指定の場所にお伺いに上がります。<br>お迎えに上がる前までにお別れを済ませておいていただくようお願いいたします。</p>
+              <p class="page-s-cremation__card-txt">ご自宅またはご指定の場所にお迎えに上がります。<br>お迎えに上がる前までにお別れを済ませておいていただくようお願いいたします。</p>
             </div>
           </div>
           <div class="page-s-cremation__card card--3">
