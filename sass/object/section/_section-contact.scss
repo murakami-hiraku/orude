@@ -118,19 +118,6 @@
     }
   }
 
-  &__txt {
-    margin-top: 25px;
-    font-weight: 900;
-    font-size: 14px;
-    line-height: 1.8;
-    text-align: center;
-
-    @include b.mq(pc) {
-      margin-top: 40px;
-      font-size: 20px;
-    }
-  }
-
   &__card-logo {
     margin-top: 25px;
     padding-inline: 6.41vw; // 25px
@@ -140,6 +127,18 @@
     @include b.mq(pc) {
       margin-top: 41px;
       padding-inline: 0;
+    }
+  }
+
+  &__txt {
+    margin-top: 25px;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 1.8;
+    text-align: center;
+
+    @include b.mq(pc) {
+      font-size: 20px;
     }
   }
 

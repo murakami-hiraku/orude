@@ -1976,19 +1976,6 @@ main {
     background-color: #000;
   }
 }
-.section-contact__txt {
-  margin-top: 25px;
-  font-weight: 900;
-  font-size: 14px;
-  line-height: 1.8;
-  text-align: center;
-}
-@media (min-width: 1024px) {
-  .section-contact__txt {
-    margin-top: 40px;
-    font-size: 20px;
-  }
-}
 .section-contact__card-logo {
   margin-top: 25px;
   padding-inline: 6.41vw;
@@ -1998,6 +1985,18 @@ main {
   .section-contact__card-logo {
     margin-top: 41px;
     padding-inline: 0;
+  }
+}
+.section-contact__txt {
+  margin-top: 25px;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 1.8;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .section-contact__txt {
+    font-size: 20px;
   }
 }
 .section-contact__img {
