@@ -4826,7 +4826,6 @@ main {
   }
 }
 .page-s-ceremony__section--4 .page-s-ceremony__card-img {
-  max-height: 69.231vw;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4840,7 +4839,10 @@ main {
 }
 @media (min-width: 1024px) {
   .page-s-ceremony__section--4 .page-s-ceremony__card-img {
+    max-height: 250px;
     max-width: 300px;
+    min-height: 250px;
+    min-width: 300px;
   }
 }
 .page-s-ceremony__section--4 .page-s-ceremony__card-img img {
@@ -4881,6 +4883,9 @@ main {
             justify-content: center;
     gap: 12px;
   }
+}
+.page-s-ceremony__section--4 .page-s-ceremony__card .body-5 {
+  margin-top: 15px;
 }
 .page-s-ceremony__section--4 .page-s-ceremony__card-txt {
   padding-inline: 10px;

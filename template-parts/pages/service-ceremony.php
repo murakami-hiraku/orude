@@ -183,12 +183,12 @@
             <div class="page-s-ceremony__card-img">
               <img src="<?php echo get_template_directory_uri(); ?>/img/page-ceremony/ceremony-sec4-5.png" alt="">
             </div>
-            <div class="page-s-ceremony__card-body">
+            <div class="page-s-ceremony__card-body body-5">
 
               <h2 class="page-s-ceremony__card-ttl">05　火葬</h2>
               <p class="page-s-ceremony__card-txt">
-                火葬については、各市区町村の条例に従い安全に火葬出来る場所で火葬を執り行います。<br>
-                移動しながらの火葬はいたしません。ご安心ください。
+                移動火葬車は、住宅事情によりペットが慣れ親しんだ自宅で火葬することもできますが、駐車場がない、駐車場に屋根（カーポート）がある、住宅が隣接しているなどの場合は、自宅での火葬ができません。<br>
+                その場合は、近隣の安全な場所に移動して火葬を執り行います。（市区町村において条例がある場合は、それに準じます）<br>移動しながらの火葬はいたしません。ご安心ください。
               </p>
 
             </div>
