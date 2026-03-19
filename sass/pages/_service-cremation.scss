@@ -727,6 +727,7 @@
               align-items: start;
               justify-content: start;
               padding-top: 35px;
+              padding-right: 60px;
             }
           }
 
@@ -780,7 +781,9 @@
           &.card--3 {
             .page-s-cremation__card-body {
               @include b.mq(pc) {
-                padding: 0;
+                padding-top: 0;
+                padding-bottom: 15px;
+                padding-right: 60px;
               }
             }
           }
