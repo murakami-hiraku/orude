@@ -123,7 +123,8 @@
               <h2 class="page-s-ceremony__card-ttl">01　お問い合わせ</h2>
               <p class="page-s-ceremony__card-txt">
                 完全予約制になっております。<br>
-                ご希望のセレモニープランをお申し付けください。
+                ご希望のセレモニープランをお申し付けください。<br>
+                ※ペット飼育不可のマンション等では承ることができません。
               </p>
               <?php
               get_template_part('/template-parts/parts/parts-tel--primary')

@@ -4199,6 +4199,7 @@ main {
         -ms-flex-pack: start;
             justify-content: start;
     padding-top: 35px;
+    padding-right: 60px;
   }
 }
 .page-s-cremation__section--5 .page-s-cremation__card-ttl {
@@ -4248,7 +4249,9 @@ main {
 }
 @media (min-width: 1024px) {
   .page-s-cremation__section--5 .page-s-cremation__card.card--3 .page-s-cremation__card-body {
-    padding: 0;
+    padding-top: 0;
+    padding-bottom: 15px;
+    padding-right: 60px;
   }
 }
 .page-s-cremation__section--6 {
