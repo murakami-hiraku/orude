@@ -5913,6 +5913,7 @@ main {
 }
 .page-s-perpetual-care__section--8 .page-s-perpetual-care__cards {
   margin-top: 33px;
+  margin-inline: auto;
   width: 100%;
   max-width: 350px;
   display: -webkit-box;
@@ -5932,30 +5933,26 @@ main {
 }
 @media (min-width: 768px) {
   .page-s-perpetual-care__section--8 .page-s-perpetual-care__cards {
+    max-width: 920px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 20px;
   }
 }
 @media (min-width: 1024px) {
   .page-s-perpetual-care__section--8 .page-s-perpetual-care__cards {
-    margin-top: 62px;
+    margin-top: 40px;
     gap: 6.771vw;
-    max-width: 920px;
   }
 }
 .page-s-perpetual-care__section--8 .page-s-perpetual-care__card {
   width: 100%;
   background: #fff;
   max-width: 350px;
-  margin-inline: auto;
-}
-@media (min-width: 1024px) {
-  .page-s-perpetual-care__section--8 .page-s-perpetual-care__card {
-    max-width: 440px;
-  }
 }
 .page-s-perpetual-care__section--8 .page-s-perpetual-care__card-ttl {
   text-align: center;

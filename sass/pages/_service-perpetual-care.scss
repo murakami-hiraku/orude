@@ -952,7 +952,7 @@
 
         &__cards {
           margin-top: 33px;
-
+          margin-inline: auto;
           width: 100%;
           max-width: 350px;
           display: flex;
@@ -962,14 +962,16 @@
           gap: 50px;
 
           @include b.mq(tb) {
-            flex-direction: row;
+            max-width: 920px; // (440px * 2) + gap(40px) で、2枚並んだ時の最大幅に固定
+
+            flex-direction: row; // PCは横並び
+            flex-wrap: wrap; // 3枚目が入り切らない時に折り返す
             gap: 20px;
           }
 
           @include b.mq(pc) {
-            margin-top: 62px;
+            margin-top: 40px;
             gap: 6.771vw;
-            max-width: 920px; // (440px * 2) + gap(40px) で、2枚並んだ時の最大幅に固定
           }
         }
 
@@ -977,10 +979,8 @@
           width: 100%; // 親のグリッド幅いっぱいに広がる
           background: b.$sub-color-light;
           max-width: 350px;
-          margin-inline: auto;
 
           @include b.mq(pc) {
-            max-width: 440px;
           }
 
           &-ttl {

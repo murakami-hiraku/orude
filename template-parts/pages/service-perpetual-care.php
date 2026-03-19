@@ -284,6 +284,13 @@
               </div>
             </div>
 
+            <div class="page-s-perpetual-care__card card-3">
+              <h2 class="page-s-perpetual-care__card-ttl">堺市堺区</h2>
+              <div class="page-s-perpetual-care__card-img">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/page-perpetual/perpetual-sec8-3.png" alt="">
+              </div>
+            </div>
+
           </div>
 
           <div class="page-s-perpetual-care__txt">
