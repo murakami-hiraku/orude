@@ -56,7 +56,7 @@
           </div>
           <div class="page-privacy-policy__card">
             <h2 class="page-privacy-policy__card-ttl">【10.お問い合わせ窓口】</h2>
-            <p class="page-privacy-policy__card-txt">当社は、個人情報の取扱いに関する担当窓口を以下の通り設けます。<br>住所：〒583-0872 大阪府羽曳野市はびきの3-316-84<br>社名：株式会社アエルデ<br>代表取締役：北池　章一<br>Eメールアドレス：○○○○@○○<br>電話番号：○○-○○○○-○○○○</p>
+            <p class="page-privacy-policy__card-txt">当社は、個人情報の取扱いに関する担当窓口を以下の通り設けます。<br>住所：〒583-0872 大阪府羽曳野市はびきの3-316-84<br>社名：株式会社アエル・デ<br>代表取締役：北池　章一<br>Eメールアドレス：info@orude-memoria.com<br>電話番号：0800-080-0188</p>
           </div>
           <div class="page-privacy-policy__card">
             <h2 class="page-privacy-policy__card-ttl">【11.SSLセキュリティ（Secure Socket Layer）について】</h2>
@@ -67,8 +67,8 @@
             <p class="page-privacy-policy__card-txt">cookieとは、WebサーバーがWebブラウザに送信するデータのことを指します。Webサーバーがcookieを参照してユーザーのパソコンを識別することができ、当社Webサイトを効率的に利用できます。当社Webサイトがcookieとして送るファイルは、個人を特定するような情報は含んでおりません。お使いのWebブラウザの設定により、cookieを無効にすることも可能です。</p>
           </div>
           <div class="page-privacy-policy__card">
-            <h2 class="page-privacy-policy__card-ttl">【13.プライバシーポリシーの制定日および改定日】</h2>
-            <p class="page-privacy-policy__card-txt">制定日：○○年○月○日<br>改定日：○○年○月○日</p>
+            <h2 class="page-privacy-policy__card-ttl">【13.プライバシーポリシーの制定日】</h2>
+            <p class="page-privacy-policy__card-txt">制定日：2026年3月20日</p>
           </div>
           <div class="page-privacy-policy__card">
             <h2 class="page-privacy-policy__card-ttl">【14.免責事項】</h2>
