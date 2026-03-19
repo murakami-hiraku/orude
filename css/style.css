@@ -1930,7 +1930,7 @@ main {
     max-width: 700px;
     padding: 48px 50px 30px;
     position: absolute;
-    bottom: 40px;
+    bottom: 25px;
     left: 3.125vw;
     z-index: 100;
   }
