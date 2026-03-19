@@ -2678,7 +2678,7 @@ main {
 }
 .header__drawer-icon:hover {
   background: #fff;
-  border: 2px solid #907910;
+  border: 1px solid #907910;
 }
 .header__drawer-icon:hover .header__icon-bar {
   background: #907910;
