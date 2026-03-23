@@ -166,7 +166,7 @@ function startSequentialLoop() {
   }, 12000);
 
   // ○○秒おきにこの関数自体をループ
-  setTimeout(startSequentialLoop, 6000);
+  setTimeout(startSequentialLoop, 18000);
 }
 
 // ページ読み込み完了後に実行
