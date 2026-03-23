@@ -149,9 +149,7 @@ const fvSwiper1 = new Swiper(".p-fv-slider--1", swiperOptions);
 const fvSwiper2 = new Swiper(".p-fv-slider--2", swiperOptions);
 const fvSwiper3 = new Swiper(".p-fv-slider--3", swiperOptions);
 
-// --- 自動・数珠つなぎループのロジック ---
 // --- 数珠つなぎの連動ロジック ---
-
 // スライドの「切り替え開始」を検知して次のスライダーにバトンを渡す
 fvSwiper1.on("slideChangeTransitionStart", () => {
   setTimeout(() => {
