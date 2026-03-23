@@ -15,8 +15,8 @@
         ?>
         <div class="page-s-ceremony__container">
           <div class="page-s-ceremony__box">
-            <h2 class="page-s-ceremony__ttl">その子らしく、美しく。心を込めたお別れの時間を</h2>
-            <p class="page-s-ceremony__txt">大切なご家族とのお別れを、もっと丁寧に、もっとその子らしく。オルデでは、火葬だけでなく、葬儀としてのセレモニーを大切に考えています。<br>お花に囲まれた空間で、ゆっくりと感謝を伝える時間——<br>それは、ご家族の心にとっても、必要なひとときです。</p>
+            <h2 class="page-s-ceremony__ttl">その子らしく。思い出に寄り添う場所で</h2>
+            <p class="page-s-ceremony__txt">オルデでは、火葬だけでなく、葬儀としてのセレモニーを大切に考えています。<br>いつもの場所で、心をこめたお別れの時間——<br>その時間が、これからをやさしく支えます。</p>
           </div>
         </div>
       </div>
@@ -29,15 +29,19 @@
     <section class="page-s-ceremony__section page-s-ceremony__section--2 section fadein ">
       <div class="page-s-ceremony__inner inner">
         <h2 class="page-s-ceremony__ttl">セレモニーという“お別れのかたち”</h2>
-        <p class="page-s-ceremony__txt">ご葬儀とは、火葬の前にその子に心を届ける儀式の時間。</p>
-        <p class="page-s-ceremony__txt--sub sub-1">「ありがとう」「またね」「大好きだよ」——<br>その想いを、静かに、丁寧に伝える場をご用意します。</p>
+        <!-- <p class="page-s-ceremony__txt">ご葬儀とは、火葬の前にその子に心を届ける儀式の時間。</p> -->
+        <p class="page-s-ceremony__txt--sub sub-1">
+          「ありがとう」「またね」「大好きだよ」——<br>
+          その想いを、静かに、丁寧に伝える場をご用意します。<br>
+          お別れの時間を何より大切に、心ゆくまでお過ごしいただけるご葬儀をお届けします。
+        </p>
 
-        <div class="page-s-ceremony__card">
+        <!-- <div class="page-s-ceremony__card">
           <div class="page-s-ceremony__img">
             <img src="<?php echo get_template_directory_uri(); ?>/img/common/c-arch.png" alt="">
           </div>
           <p class="page-s-ceremony__txt--sub sub-2">大切なのは“その子に寄り添う”こと。<br>ご希望やご事情を伺いながら、<br>最適なセレモニーを一緒に創ってまいります。</p>
-        </div>
+        </div> -->
 
       </div>
 
@@ -47,8 +51,8 @@
     <!-- セクション３　見送りスタイル　ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
     <section class="page-s-ceremony__section page-s-ceremony__section--3 section fadein ">
       <div class="page-s-ceremony__inner inner">
-        <h2 class="page-s-ceremony__ttl">選べる2つのお見送りスタイル</h2>
-        <p class="page-s-ceremony__txt">オルデでは、ご家族の想いやお別れの形に合わせて、2種類のセレモニースタイルをご用意しています。<br>どちらも「火葬前にゆっくりお別れの時間を持ちたい」という想いに寄り添った葬儀プランですが、飾り付けの内容や雰囲気が異なります。<br>どちらのプランもその子を中心に、やさしく美しく空間を整え、感謝の気持ちを伝える時間を大切にしています。</p>
+        <!-- <h2 class="page-s-ceremony__ttl">選べる2つのお見送りスタイル</h2>
+        <p class="page-s-ceremony__txt">オルデでは、ご家族の想いやお別れの形に合わせて、2種類のセレモニースタイルをご用意しています。<br>どちらも「火葬前にゆっくりお別れの時間を持ちたい」という想いに寄り添った葬儀プランですが、飾り付けの内容や雰囲気が異なります。<br>どちらのプランもその子を中心に、やさしく美しく空間を整え、感謝の気持ちを伝える時間を大切にしています。</p> -->
 
         <div class="page-s-ceremony__cards">
 
@@ -58,9 +62,7 @@
             </div>
             <h2 class="page-s-ceremony__card-ttl">セレモニープランA</h2>
             <p class="page-s-ceremony__card-txt">
-              たくさんの愛をくれた存在へ「ありがとう」を——そんな想いを込めたセレモニープランです。<br>
-              （祭壇中央以外の花籠は、アーティフィシャルフラワーになります。）
-
+              たくさんの愛をくれた存在へ「ありがとう」を——そんな想いを込めたセレモニープランです。
             </p>
             <p class="page-s-ceremony__card-price">55,000円 <small>（税込）〜
               </small></p>
@@ -79,8 +81,7 @@
             </div>
             <h2 class="page-s-ceremony__card-ttl">セレモニープランB</h2>
             <p class="page-s-ceremony__card-txt">
-              虹の向こうでまた会える——そんな願いを込めたセレモニープランです。<br>
-              （祭壇中央以外の花籠は、アーティフィシャルフラワーになります。）
+              虹の向こうでまた会える——そんな願いを込めたセレモニープランです。
 
             </p>
             <p class="page-s-ceremony__card-price">55,000<small>円（税込）〜</small></p>
@@ -95,9 +96,13 @@
         </div>
 
         <div class="page-s-ceremony__note">
-          <p>※設営に時間がかかるため、詳細は電話で問い合わせが必要</p>
-          <p>※別途、火葬料が必要</p>
-          <p>※住宅環境によっては受けられない場合がある</p>
+
+          <p>※セレモニープランA・B共に。祭壇はアーティフィシャルフラワーになります。</p>
+          <p>※別途、お別れのお花は生花をご用意させていただきます。</p>
+          <p>※設営にお時間をいただく場合がございます。詳細はお問い合わせください。</p>
+          <p>※別途、出張費が必要となる場合がございます。</p>
+          <p>※住宅環境によってはお受けできない場合がございます。</p>
+          <p>詳細はお問い合わせください。</p>
 
         </div>
       </div>
@@ -112,7 +117,7 @@
         get_template_part('/template-parts/parts/parts-bg-flower--right')
         ?>
         <h2 class="page-s-ceremony__ttl">ご葬儀の流れ ～セレモニー当日のステップ～</h2>
-        <p class="page-s-ceremony__txt txt-1">初めてご依頼される方にも安心していただけるよう、オルデの一般的な葬儀当日の流れをご説明いたします。<br>ご家族のご希望や状況に応じて多少前後する場合もございますが、一例として参考にしてください。</p>
+        <p class="page-s-ceremony__txt txt-1">初めてご依頼される方にも安心していただけるよう、オルデの一般的な葬儀当日の流れをご説明いたします。<br>ご家族のご希望や状況に応じて多少前後する場合もございますが、一例としてご参考になさってください。</p>
 
         <div class="page-s-ceremony__cards">
           <div class="page-s-ceremony__card card--1">
@@ -124,13 +129,14 @@
               <p class="page-s-ceremony__card-txt">
                 完全予約制になっております。<br>
                 ご希望のセレモニープランをお申し付けください。<br>
+                日程はご相談ください。<br>
                 ※ペット飼育不可のマンション等では承ることができません。
               </p>
               <?php
               get_template_part('/template-parts/parts/parts-tel--primary')
               ?>
               <p class="page-s-ceremony__card-txt--sub">
-                電話受付時間：9:00~22:00<br class="hidden-pc">
+                電話受付時間：8:00~22:00<br class="hidden-pc">
                 定休日：年中無休（年末年始を除く）
               </p>
             </div>
@@ -158,9 +164,8 @@
               <h2 class="page-s-ceremony__card-ttl">03　お通夜・ご葬儀</h2>
               <p class="page-s-ceremony__card-txt">
                 お子様との最後のお別れの時間をゆっくりお過ごしください。<br>
-                ※他社で火葬の場合、設営翌日に祭壇・飾り付けお引取りになります。<br>
-                ※ご自宅でのお飾りとなります。必ず駐車場所（1台分）を確保下さい。<br>
-                ※近隣の駐車場をりようした場合の費用は、ご負担をお願いいたします。
+                ※駐車場所（1台分）の確保をお願いいたします。<br>
+                ※近隣の駐車場を利用した場合の費用は、ご負担をお願いいたします。
               </p>
 
             </div>
@@ -173,8 +178,8 @@
 
               <h2 class="page-s-ceremony__card-ttl">04　お花入れ</h2>
               <p class="page-s-ceremony__card-txt">
-                火葬当日にお伺いさせていただきお別れの準備をさせていただきます。<br>
-                飾り付けたお花をご家族様で棺の中にお納めしていただきます。
+                火葬当日にお伺いさせていただきお別れの準備をいたします。<br>
+                お別れのお花をご家族様で棺の中にお納めしていただきます。
               </p>
 
             </div>
@@ -187,8 +192,7 @@
 
               <h2 class="page-s-ceremony__card-ttl">05　火葬</h2>
               <p class="page-s-ceremony__card-txt">
-                移動火葬車は、住宅事情によりペットが慣れ親しんだ自宅で火葬することもできますが、駐車場がない、駐車場に屋根（カーポート）がある、住宅が隣接しているなどの場合は、自宅での火葬ができません。<br>
-                その場合は、近隣の安全な場所に移動して火葬を執り行います。（市区町村において条例がある場合は、それに準じます）<br>移動しながらの火葬はいたしません。ご安心ください。
+                近隣の安全な場所に移動して火葬を執り行います。（市区町村において条例がある場合は、それに準じます）<br>移動しながらの火葬はいたしません。ご安心ください。
               </p>
 
             </div>
