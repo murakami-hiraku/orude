@@ -50,7 +50,7 @@
             <div class="page-s-perpetual-care__card-img">
               <img src="<?php echo get_template_directory_uri(); ?>/img/page-perpetual/perpetual-sec2-1.png" alt="">
             </div>
-            <p class="page-s-perpetual-care__card-txt">大当社の理念は、「ペットも大切な家族」という想いのもと、死後も安らげる場所を提供することです。飼い主様とお子様双方にとって最適な“終の棲家”をご用意します。また、当社提携先のペット専用合同供養墓のご案内も可能です。さらに生前契約にも対応しており、元気なうちからお子様とご自身の永代納骨先を決めておかれる方も増えています。専門の寺院と提携し、手厚い法要と行き届いた管理体制のもと運営しておりますので、安心してお任せください。</p>
+            <p class="page-s-perpetual-care__card-txt">当社の理念は、「ペットも大切な家族」という想いのもと、死後も安らげる場所を提供することです。飼い主様とお子様双方にとって最適な“終の棲家”をご用意します。また、当社提携先のペット専用合同供養墓のご案内も可能です。さらに生前契約にも対応しており、元気なうちからお子様とご自身の永代納骨先を決めておかれる方も増えています。専門の寺院と提携し、手厚い法要と行き届いた管理体制のもと運営しておりますので、安心してお任せください。</p>
           </div>
 
         </div>
@@ -139,7 +139,7 @@
               </div>
               <div class="page-s-perpetual-care__card-body">
                 <h2 class="page-s-perpetual-care__card-ttl">03　納骨準備・法要打ち合わせ</h2>
-                <p class="page-s-perpetual-care__card-txt">お申し込み後、実際にご納骨される際の日程や流れについて打ち合わせを行います。<br>また、納骨式当日の法要の内容（読経やお焼香など）について、ご希望があればお伝えください。</p>
+                <p class="page-s-perpetual-care__card-txt">お申し込み後、実際にご納骨される際の日程や流れについて打ち合わせを行います。</p>
               </div>
             </div>
             <div class="page-s-perpetual-care__card">
@@ -189,13 +189,13 @@
                   <span>永代納骨『ともに』プラン（合同墓）</span><span>– ¥150,000円</span>
                 </li>
                 <li class="page-s-perpetual-care__list-item">
-                  <span>ご親族の追加お一人につき</span><span>– ¥100,000円</span>
+                  <span>ご親族の追加お一人につき</span><span>¥100,000円</span>
                 </li>
                 <li class="page-s-perpetual-care__list-item">
-                  <span>ペットの追加１匹</span><span>– ¥50,000円</span>
+                  <span>ペットの追加１匹</span><span>¥50,000円</span>
                 </li>
                 <li class="page-s-perpetual-care__list-item item-4">
-                  <span>お名前入りプレート<br>（お一人とペット１匹）</span><span>– ¥50,000円</span>
+                  <span>お名前入りプレート</span><span>¥50,000円</span>
                 </li>
               </ul>
               <p class="page-s-perpetual-care__card-txt txt-1">※永代納骨墓「ともに」のお支払いは、現金のみとなります。</p>
@@ -220,7 +220,6 @@
             </div>
 
             <p class="page-s-perpetual-care__txt">
-              オルデでは、銀山寺での永代納骨を中心にご案内しておりますが、<br>
               ご家族様のご事情やご希望に応じて、その他の霊園・寺院のご紹介も可能です。<br>
               ・立地やアクセスを重視したい方<br>
               ・ご自宅から通いやすい場所を選びたい方<br>
@@ -295,8 +294,8 @@
 
           <div class="page-s-perpetual-care__txt">
             <p>※納骨の際、読経をご希望の方は、別途回向料が必要となります。</p>
-            <p>※お申込みの際、事務所手数料が必要となる場合がございます。</p>
-            <p>※事務手数料に関しては、お問い合わせください。</p>
+            <p>※お申込みの際、事務所手数料が必要となる場合がございます。詳細は、お問い合わせください。</p>
+            <p>※ペット合同墓のお支払いは現金のみとなります。</p>
           </div>
 
         </div>

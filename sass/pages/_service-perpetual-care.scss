@@ -1011,7 +1011,8 @@
 
           @include b.mq(pc) {
             margin-top: 36px;
-            max-width: 480px;
+            // max-width: 480px;
+            max-width: 705px;
           }
 
           p {
