@@ -896,15 +896,18 @@
             }
           }
 
-          &:last-child {
-            border-top: 1px dashed b.$border-color-light;
-          }
-
           &.card--1 {
             @include b.mq(pc) {
               padding: 0;
               padding-bottom: 40px;
             }
+          }
+
+          &.card--2 {
+            border-top: 1px dashed b.$border-color-light;
+          }
+          &.card--3 {
+            padding-top: 0;
           }
         }
       }

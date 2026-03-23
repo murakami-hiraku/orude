@@ -15,8 +15,8 @@
         get_template_part('template-parts/parts/parts-bg-circle');
         ?>
 
-        <h2 class="page-s-cremation__ttl">ご自宅近くで行う、やさしいお見送り</h2>
-        <p class="page-s-cremation__txt">オルデの訪問火葬は、ご自宅またはご自宅近隣まで専用車でお伺いし、火葬のみを執り行うサービスです。<br>葬儀やセレモニーは行わず、「静かに、丁寧に火葬をしてほい」「形式よりも負担を少なくしたい」というご家族様のためのプランです。<br>慣れ親しんだ場所の近くでお見送りができるため、移動のご負担もなく、落ち着いた気持ちで最期の時間をお過ごしいただけます。</p>
+        <h2 class="page-s-cremation__ttl">大切なご家族にふさわしい、やさしいお見送り</h2>
+        <p class="page-s-cremation__txt">オルデの訪問火葬は、ご自宅またはご指定の場所まで専用車でお伺いし、火葬のみを執り行うサービスです。<br>葬儀やセレモニーは行わず、「静かに、丁寧に火葬をしてほい」「形式よりも負担を少なくしたい」というご家族様のためのプランです。<br>移動のご負担もなく、お迎えに上がるまでゆっくりと最期の時間をお過ごしいただけます。</p>
       </div>
 
     </section>
@@ -197,12 +197,12 @@
             </div>
             <div class="page-s-cremation__card-body">
               <h2 class="page-s-cremation__card-ttl">01　もしもの時は・・・</h2>
-              <h4 class="page-s-cremation__card-lead">完全予約制になっております。<br>最後の時間をゆっくり取れるよう日程のご相談ください。</h4>
+              <h4 class="page-s-cremation__card-lead">完全予約制になっております。<br>日程はご相談ください。</h4>
               <?php
               get_template_part('/template-parts/parts/parts-tel--primary')
               ?>
               <p class="page-s-cremation__card-txt--sub">
-                電話受付時間：9:00~22:00<br class="hidden-pc">
+                電話受付時間：8:00~22:00<br class="hidden-pc">
                 定休日：年中無休（年末年始を除く）
               </p>
             </div>
@@ -222,7 +222,7 @@
             </div>
             <div class="page-s-cremation__card-body">
               <h2 class="page-s-cremation__card-ttl">03　火葬</h2>
-              <p class="page-s-cremation__card-txt">移動火葬車は、住宅事情によりペットが慣れ親しんだ自宅で火葬することもできますが、駐車場がない、駐車場に屋根（カーポート）がある、住宅が隣接しているなどの場合は、自宅での火葬ができません。<br>その場合は、近隣の安全な場所に移動して火葬を執り行います。（市区町村において条例がある場合は、それに準じます）<br>移動しながらの火葬はいたしません。ご安心ください。</p>
+              <p class="page-s-cremation__card-txt">近隣の安全な場所に移動して火葬を執り行います。（市区町村において条例がある場合は、それに準じます）<br>移動しながらの火葬はいたしません。ご安心ください。</p>
             </div>
           </div>
           <div class="page-s-cremation__card card--4">
@@ -265,7 +265,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/page-cremation/cremation-sec3-1.png" alt="">
           </div>
           <div class="page-s-cremation__card-body">
-            <p class="page-s-cremation__card-txt">火葬後は、ご希望に応じてお骨上げを行い、ご遺骨を骨壷にお納めしてご返骨いたします。<br>ご自宅でのご供養や、その後のご相談についても承っております。<br>また、４９日法要や周忌法要も承っております。<br>分骨カプセルやメモリアルグッズなどをご希望の場合は、事前にご案内いたします。</p>
+            <p class="page-s-cremation__card-txt">火葬後は、ご希望に応じてお骨上げを行い、ご遺骨を骨壷にお納めしてご返骨いたします。<br>ご自宅でのご供養や、その後のご納骨の相談についても承っております。<br>また、４９日法要や周忌法要も承っております。<br>分骨カプセルやメモリアルグッズなどをご希望の場合は、事前にご案内いたします。</p>
 
             <a class="page-s-cremation__link ceremony" href="<?php echo home_url('/service-perpetual-care'); ?>">
               <p class="link-txt">納骨をご希望の方はこちら</p><span class="icon-arrow"></span>
@@ -300,14 +300,22 @@
               生花・祭壇・葬儀セレモニー等は含まれておりません。
             </p>
           </div>
-          <div class="page-s-cremation__card">
+          <div class="page-s-cremation__card card--2">
             <h2 class="page-s-cremation__card-ttl">お迎え・出張費について</h2>
+            <p class="page-s-cremation__card-txt">
+              大阪府下全域　無料<br>
+              ※地域により別途出張費￥３,３００～必要となります。<br>
+              　地域により高速代が必要となります。
+            </p>
+          </div>
+          <div class="page-s-cremation__card card--3">
+            <h2 class="page-s-cremation__card-ttl">対応エリアについて</h2>
             <p class="page-s-cremation__card-txt">
               大阪府下全域<br>
               兵庫県（尼崎市・芦屋市・伊丹市・川西市・神戸市・西宮市）<br>
               奈良県（生駒市・宇陀市・橿原市・葛城市・御所市・五條市・桜井市・天理市・奈良市）<br>
               ※神戸市・西宮市に関して、一部対応外地域がございますので、ご相談ください。<br>
-              ※上記エリア外でもご対応できますので、ご相談ください。<br>
+              ※上記エリア外でもご対応できますので、ご相談ください。
             </p>
           </div>
         </div>
