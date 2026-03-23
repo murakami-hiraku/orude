@@ -568,16 +568,16 @@ main {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-transition: -webkit-transform 16s;
-  transition: -webkit-transform 16s;
-  transition: transform 16s;
-  transition: transform 16s, -webkit-transform 16s;
+  -webkit-transition: -webkit-transform 6s;
+  transition: -webkit-transform 6s;
+  transition: transform 6s;
+  transition: transform 6s, -webkit-transform 6s;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 .section-fv .p-fv-slider .swiper-slide-active img {
-  -webkit-animation: sliderAnime 16s linear forwards;
-          animation: sliderAnime 16s linear forwards;
+  -webkit-animation: sliderAnime 6s linear forwards;
+          animation: sliderAnime 6s linear forwards;
 }
 @-webkit-keyframes sliderAnime {
   0% {

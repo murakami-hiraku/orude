@@ -173,7 +173,7 @@ fvSwiper3.on("slideChangeTransitionStart", () => {
 window.addEventListener("load", () => {
   setTimeout(() => {
     fvSwiper1.slideNext();
-  }, 18000);
+  }, 6000);
 });
 
 // --- 9. secスワイパー制御 ---

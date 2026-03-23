@@ -464,14 +464,14 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        transition: transform 16s; // JSのspeedと同じ時間に合わせる
+        transition: transform 6s; // JSのspeedと同じ時間に合わせる
         transform: scale(1.2); // 消える時も少し拡大した状態をキープ
       }
     }
 
     // アクティブ（表示中）になった時の画像のアニメーション
     .swiper-slide-active img {
-      animation: sliderAnime 16s linear forwards;
+      animation: sliderAnime 6s linear forwards;
     }
 
     // じわじわ拡大するアニメーション
