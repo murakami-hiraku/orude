@@ -140,7 +140,7 @@ const swiperOptions = {
     crossFade: true, // 前のスライドが消えながら次が出る
   },
   loop: true,
-  speed: 18000, // スライドが動くスピード
+  speed: 16000, // スライドが動くスピード
   allowTouchMove: false, // 手動操作を禁止
 };
 
@@ -150,28 +150,32 @@ const fvSwiper2 = new Swiper(".p-fv-slider--2", swiperOptions);
 const fvSwiper3 = new Swiper(".p-fv-slider--3", swiperOptions);
 
 // --- 自動・数珠つなぎループのロジック ---
+// --- 数珠つなぎの連動ロジック ---
 
-function startSequentialLoop() {
-  // 1番目を動かす
-  if (fvSwiper1) fvSwiper1.slideNext();
-
-  // ○○秒後に2番目を動かす
+// スライドの「切り替え開始」を検知して次のスライダーにバトンを渡す
+fvSwiper1.on("slideChangeTransitionStart", () => {
   setTimeout(() => {
-    if (fvSwiper2) fvSwiper2.slideNext();
-  }, 6000);
+    fvSwiper2.slideNext();
+  }, 6000); // 1番目が動いてから6秒後に2番目
+});
 
-  // ○○秒後に3番目を動かす
+fvSwiper2.on("slideChangeTransitionStart", () => {
   setTimeout(() => {
-    if (fvSwiper3) fvSwiper3.slideNext();
-  }, 12000);
+    fvSwiper3.slideNext();
+  }, 6000); // 2番目が動いてから6秒後に3番目
+});
 
-  // ○○秒おきにこの関数自体をループ
-  setTimeout(startSequentialLoop, 18000);
-}
+fvSwiper3.on("slideChangeTransitionStart", () => {
+  setTimeout(() => {
+    fvSwiper1.slideNext();
+  }, 6000); // 3番目が動いてから6秒後に1番目に戻る
+});
 
-// ページ読み込み完了後に実行
+// 最初のキッカケだけ1回実行
 window.addEventListener("load", () => {
-  setTimeout(startSequentialLoop, 18000);
+  setTimeout(() => {
+    fvSwiper1.slideNext();
+  }, 18000);
 });
 
 // --- 9. secスワイパー制御 ---
