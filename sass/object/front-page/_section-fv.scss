@@ -351,54 +351,55 @@
   }
 
   .p-fv-slider-circle {
-    position: absolute;
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 1px solid b.$main-color;
-    top: 0;
-    left: 0;
-    z-index: 10;
+    display: none;
+    // position: absolute;
+    // width: 120px;
+    // height: 120px;
+    // border-radius: 50%;
+    // border: 1px solid b.$main-color;
+    // top: 0;
+    // left: 0;
+    // z-index: 10;
 
-    @include b.mq(lg) {
-      width: 160px;
-      height: 160px;
-    }
-    @include b.mq(xl) {
-      width: 220px;
-      height: 220px;
-    }
+    // @include b.mq(lg) {
+    //   width: 160px;
+    //   height: 160px;
+    // }
+    // @include b.mq(xl) {
+    //   width: 220px;
+    //   height: 220px;
+    // }
 
-    &--1 {
-      z-index: 15;
-      top: -12px;
-      left: -8px;
+    // &--1 {
+    //   z-index: 15;
+    //   top: -12px;
+    //   left: -8px;
 
-      @include b.mq(pc) {
-        top: -110px;
-        left: 65px;
-      }
-    }
-    &--2 {
-      z-index: 35;
-      top: -10px;
-      left: -5px;
+    //   @include b.mq(pc) {
+    //     top: -110px;
+    //     left: 65px;
+    //   }
+    // }
+    // &--2 {
+    //   z-index: 35;
+    //   top: -10px;
+    //   left: -5px;
 
-      @include b.mq(pc) {
-        top: 2px;
-        left: -18px;
-      }
-    }
-    &--3 {
-      z-index: 25;
-      top: -6px;
-      left: 3px;
+    //   @include b.mq(pc) {
+    //     top: 2px;
+    //     left: -18px;
+    //   }
+    // }
+    // &--3 {
+    //   z-index: 25;
+    //   top: -6px;
+    //   left: 3px;
 
-      @include b.mq(pc) {
-        top: -51px;
-        left: -36px;
-      }
-    }
+    //   @include b.mq(pc) {
+    //     top: -51px;
+    //     left: -36px;
+    //   }
+    // }
   }
 
   .p-fv-slider {
@@ -419,25 +420,25 @@
       height: 210px;
     }
 
-    &--1 {
-      z-index: 10;
-      @include b.mq(pc) {
-        left: 80px;
-        top: -87px;
-      }
-    }
-    &--2 {
-      z-index: 30;
-      @include b.mq(pc) {
-      }
-    }
-    &--3 {
-      z-index: 20;
-      @include b.mq(pc) {
-        right: 40px;
-        top: -35px;
-      }
-    }
+    // &--1 {
+    //   z-index: 10;
+    //   @include b.mq(pc) {
+    //     left: 80px;
+    //     top: -87px;
+    //   }
+    // }
+    // &--2 {
+    //   z-index: 30;
+    //   @include b.mq(pc) {
+    //   }
+    // }
+    // &--3 {
+    //   z-index: 20;
+    //   @include b.mq(pc) {
+    //     right: 40px;
+    //     top: -35px;
+    //   }
+    // }
 
     .swiper-wrapper {
       width: 100%;
@@ -463,16 +464,16 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        transition: transform 4s;
+        transition: transform 18s;
         // 初期状態
-        transition: opacity 8s; // JSのspeedと同じ時間に合わせる
+        transition: opacity 18s; // JSのspeedと同じ時間に合わせる
         transform: scale(1.2); // 消える時も少し拡大した状態をキープ
       }
     }
 
     // アクティブ（表示中）になった時の画像のアニメーション
     .swiper-slide-active img {
-      animation: sliderAnime 12s linear forwards;
+      animation: sliderAnime 18s linear forwards;
     }
 
     // じわじわ拡大するアニメーション

@@ -140,7 +140,7 @@ const swiperOptions = {
     crossFade: true, // 前のスライドが消えながら次が出る
   },
   loop: true,
-  speed: 8000, // スライドが動くスピード
+  speed: 18000, // スライドが動くスピード
   allowTouchMove: false, // 手動操作を禁止
 };
 
@@ -158,20 +158,20 @@ function startSequentialLoop() {
   // ○○秒後に2番目を動かす
   setTimeout(() => {
     if (fvSwiper2) fvSwiper2.slideNext();
-  }, 4000);
+  }, 6000);
 
   // ○○秒後に3番目を動かす
   setTimeout(() => {
     if (fvSwiper3) fvSwiper3.slideNext();
-  }, 8000);
+  }, 12000);
 
   // ○○秒おきにこの関数自体をループ
-  setTimeout(startSequentialLoop, 12000);
+  setTimeout(startSequentialLoop, 6000);
 }
 
 // ページ読み込み完了後に実行
 window.addEventListener("load", () => {
-  setTimeout(startSequentialLoop, 12000);
+  setTimeout(startSequentialLoop, 18000);
 });
 
 // --- 9. secスワイパー制御 ---

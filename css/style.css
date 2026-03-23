@@ -518,59 +518,7 @@ main {
   }
 }
 .section-fv .p-fv-slider-circle {
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  border: 1px solid #907910;
-  top: 0;
-  left: 0;
-  z-index: 10;
-}
-@media (min-width: 1440px) {
-  .section-fv .p-fv-slider-circle {
-    width: 160px;
-    height: 160px;
-  }
-}
-@media (min-width: 1920px) {
-  .section-fv .p-fv-slider-circle {
-    width: 220px;
-    height: 220px;
-  }
-}
-.section-fv .p-fv-slider-circle--1 {
-  z-index: 15;
-  top: -12px;
-  left: -8px;
-}
-@media (min-width: 1024px) {
-  .section-fv .p-fv-slider-circle--1 {
-    top: -110px;
-    left: 65px;
-  }
-}
-.section-fv .p-fv-slider-circle--2 {
-  z-index: 35;
-  top: -10px;
-  left: -5px;
-}
-@media (min-width: 1024px) {
-  .section-fv .p-fv-slider-circle--2 {
-    top: 2px;
-    left: -18px;
-  }
-}
-.section-fv .p-fv-slider-circle--3 {
-  z-index: 25;
-  top: -6px;
-  left: 3px;
-}
-@media (min-width: 1024px) {
-  .section-fv .p-fv-slider-circle--3 {
-    top: -51px;
-    left: -36px;
-  }
+  display: none;
 }
 .section-fv .p-fv-slider {
   position: relative;
@@ -591,27 +539,6 @@ main {
   .section-fv .p-fv-slider {
     width: 210px;
     height: 210px;
-  }
-}
-.section-fv .p-fv-slider--1 {
-  z-index: 10;
-}
-@media (min-width: 1024px) {
-  .section-fv .p-fv-slider--1 {
-    left: 80px;
-    top: -87px;
-  }
-}
-.section-fv .p-fv-slider--2 {
-  z-index: 30;
-}
-.section-fv .p-fv-slider--3 {
-  z-index: 20;
-}
-@media (min-width: 1024px) {
-  .section-fv .p-fv-slider--3 {
-    right: 40px;
-    top: -35px;
   }
 }
 .section-fv .p-fv-slider .swiper-wrapper {
@@ -641,18 +568,18 @@ main {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-transition: -webkit-transform 4s;
-  transition: -webkit-transform 4s;
-  transition: transform 4s;
-  transition: transform 4s, -webkit-transform 4s;
-  -webkit-transition: opacity 8s;
-  transition: opacity 8s;
+  -webkit-transition: -webkit-transform 18s;
+  transition: -webkit-transform 18s;
+  transition: transform 18s;
+  transition: transform 18s, -webkit-transform 18s;
+  -webkit-transition: opacity 18s;
+  transition: opacity 18s;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 .section-fv .p-fv-slider .swiper-slide-active img {
-  -webkit-animation: sliderAnime 12s linear forwards;
-          animation: sliderAnime 12s linear forwards;
+  -webkit-animation: sliderAnime 18s linear forwards;
+          animation: sliderAnime 18s linear forwards;
 }
 @-webkit-keyframes sliderAnime {
   0% {
