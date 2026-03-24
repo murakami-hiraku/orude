@@ -311,8 +311,9 @@
   }
 
   /* 背景スライダーのスタイル */
-
-  .p-fv-windows {
+  &__windows {
+    width: 100%;
+    height: 100vh;
     position: absolute;
     width: 100%;
     max-width: 1080px;
@@ -331,125 +332,16 @@
       left: 40%;
       bottom: 18px;
     }
-  }
 
-  .p-fv-slider-wrap {
-    position: relative;
-    display: block;
-    width: 115px;
-    height: 115px;
-    flex-shrink: 0; // 潰れないように固定
-
-    @include b.mq(lg) {
-      width: 150px;
-      height: 150px;
-    }
-    @include b.mq(xl) {
-      width: 210px;
-      height: 210px;
-    }
-  }
-
-  .p-fv-slider-circle {
-    display: none;
-    // position: absolute;
-    // width: 120px;
-    // height: 120px;
-    // border-radius: 50%;
-    // border: 1px solid b.$main-color;
-    // top: 0;
-    // left: 0;
-    // z-index: 10;
-
-    // @include b.mq(lg) {
-    //   width: 160px;
-    //   height: 160px;
-    // }
-    // @include b.mq(xl) {
-    //   width: 220px;
-    //   height: 220px;
-    // }
-
-    // &--1 {
-    //   z-index: 15;
-    //   top: -12px;
-    //   left: -8px;
-
-    //   @include b.mq(pc) {
-    //     top: -110px;
-    //     left: 65px;
-    //   }
-    // }
-    // &--2 {
-    //   z-index: 35;
-    //   top: -10px;
-    //   left: -5px;
-
-    //   @include b.mq(pc) {
-    //     top: 2px;
-    //     left: -18px;
-    //   }
-    // }
-    // &--3 {
-    //   z-index: 25;
-    //   top: -6px;
-    //   left: 3px;
-
-    //   @include b.mq(pc) {
-    //     top: -51px;
-    //     left: -36px;
-    //   }
-    // }
-  }
-
-  .p-fv-slider {
-    position: relative;
-    display: block;
-    width: 115px;
-    height: 115px;
-    border-radius: 50%;
-    pointer-events: auto; // スライダー自体は触れるように戻す
-    overflow: hidden;
-
-    @include b.mq(lg) {
-      width: 150px;
-      height: 150px;
-    }
-    @include b.mq(xl) {
-      width: 210px;
-      height: 210px;
-    }
-
-    // &--1 {
-    //   z-index: 10;
-    //   @include b.mq(pc) {
-    //     left: 80px;
-    //     top: -87px;
-    //   }
-    // }
-    // &--2 {
-    //   z-index: 30;
-    //   @include b.mq(pc) {
-    //   }
-    // }
-    // &--3 {
-    //   z-index: 20;
-    //   @include b.mq(pc) {
-    //     right: 40px;
-    //     top: -35px;
-    //   }
-    // }
-
-    .swiper-wrapper {
-      width: 100%;
-      height: 100%;
-      border-radius: 50%; // wrapperを丸くする
-    }
-
-    .swiper-slide {
-      border-radius: 50%;
+    .slider-area {
+      overflow: hidden;
+      position: relative;
+      display: block;
       width: 115px;
       height: 115px;
+      border-radius: 50%;
+
+      flex-shrink: 0; // 潰れないように固定
 
       @include b.mq(lg) {
         width: 150px;
@@ -460,43 +352,83 @@
         height: 210px;
       }
 
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: transform 6s; // JSのspeedと同じ時間に合わせる
-        transform: scale(1.2); // 消える時も少し拡大した状態をキープ
-      }
-    }
+      .slider-item {
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        // アニメーション名を指定
+        animation: sliderAnime 60s linear infinite;
+        animation-play-state: paused;
 
-    // アクティブ（表示中）になった時の画像のアニメーション
-    .swiper-slide-active img {
-      animation: sliderAnime 6s linear forwards;
-    }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
 
-    // じわじわ拡大するアニメーション
-    @keyframes sliderAnime {
-      0% {
-        transform: scale(1);
+      // クラス付与でアニメーション開始
+      &.is-active .slider-item, // slider-area自体に付く場合
+    .section-fv.is-active & .slider-item {
+        // 親に付く場合
+        animation-play-state: running;
       }
-      100% {
-        transform: scale(1.2);
-      }
-    }
 
-    @include b.mq(pc) {
-      &__img {
-        &--1 {
+      // --- 窓ごとの「数珠つなぎ」ディレイ設定 ---
+
+      // 全窓共通：1枚目だけは最初から見せておく
+      .slider-item:nth-child(1) {
+        opacity: 1;
+      }
+
+      // 1番目の窓（基準）
+      &:nth-child(1) .slider-item {
+        @for $i from 1 through 5 {
+          &:nth-child(#{$i}) {
+            animation-delay: ($i - 1) * -12s;
+          }
         }
-        &--2 {
+      }
+
+      // 2番目の窓（20秒分「過去」にずらす）
+      &:nth-child(2) .slider-item {
+        @for $i from 1 through 5 {
+          &:nth-child(#{$i}) {
+            animation-delay: (($i - 1) * -12s) - 8s;
+          }
         }
-        &--3 {
-        }
-        &--4 {
-        }
-        &--5 {
+      }
+
+      // 3番目の窓（40秒分「過去」にずらす）
+      &:nth-child(3) .slider-item {
+        @for $i from 1 through 5 {
+          &:nth-child(#{$i}) {
+            animation-delay: (($i - 1) * -12s) - 4s;
+          }
         }
       }
     }
+  }
+}
+
+// 50秒周期に合わせたキーフレーム（1枚10秒計算）
+@keyframes sliderAnime {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  6% {
+    opacity: 1; // フェードイン
+  }
+  20% {
+    opacity: 1;
+  }
+  28% {
+    opacity: 0;
+    transform: scale(1.15);
+  } // 次が重なりながら消える
+  100% {
+    opacity: 0;
+    transform: scale(1.2);
   }
 }

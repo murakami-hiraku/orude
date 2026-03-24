@@ -131,49 +131,54 @@ parentMenuItems.forEach((link) => {
   });
 });
 
-// --- 8. fvスワイパー制御 ---
+// // --- 8. fvスワイパー制御 ---
 
-// 1. 共通の設定（swiperOptions）を定義する
-const swiperOptions = {
-  effect: "fade",
-  fadeEffect: {
-    crossFade: true, // 前のスライドが消えながら次が出る
-  },
-  loop: true,
-  speed: 16000, // スライドが動くスピード
-  allowTouchMove: false, // 手動操作を禁止
-};
+// // 1. 共通の設定（swiperOptions）を定義する
+// const swiperOptions = {
+//   effect: "fade",
+//   fadeEffect: {
+//     crossFade: true, // 前のスライドが消えながら次が出る
+//   },
+//   loop: true,
+//   speed: 16000, // スライドが動くスピード
+//   allowTouchMove: false, // 手動操作を禁止
+// };
 
-// 2. 定義した swiperOptions を使って初期化
-const fvSwiper1 = new Swiper(".p-fv-slider--1", swiperOptions);
-const fvSwiper2 = new Swiper(".p-fv-slider--2", swiperOptions);
-const fvSwiper3 = new Swiper(".p-fv-slider--3", swiperOptions);
+// // 2. 定義した swiperOptions を使って初期化
+// const fvSwiper1 = new Swiper(".p-fv-slider--1", swiperOptions);
+// const fvSwiper2 = new Swiper(".p-fv-slider--2", swiperOptions);
+// const fvSwiper3 = new Swiper(".p-fv-slider--3", swiperOptions);
 
-// --- 数珠つなぎの連動ロジック ---
-// スライドの「切り替え開始」を検知して次のスライダーにバトンを渡す
-fvSwiper1.on("slideChangeTransitionStart", () => {
-  setTimeout(() => {
-    fvSwiper2.slideNext();
-  }, 6000); // 1番目が動いてから6秒後に2番目
-});
+// // --- 数珠つなぎの連動ロジック ---
+// // スライドの「切り替え開始」を検知して次のスライダーにバトンを渡す
+// fvSwiper1.on("slideChangeTransitionStart", () => {
+//   setTimeout(() => {
+//     fvSwiper2.slideNext();
+//   }, 6000); // 1番目が動いてから6秒後に2番目
+// });
 
-fvSwiper2.on("slideChangeTransitionStart", () => {
-  setTimeout(() => {
-    fvSwiper3.slideNext();
-  }, 6000); // 2番目が動いてから6秒後に3番目
-});
+// fvSwiper2.on("slideChangeTransitionStart", () => {
+//   setTimeout(() => {
+//     fvSwiper3.slideNext();
+//   }, 6000); // 2番目が動いてから6秒後に3番目
+// });
 
-fvSwiper3.on("slideChangeTransitionStart", () => {
-  setTimeout(() => {
-    fvSwiper1.slideNext();
-  }, 6000); // 3番目が動いてから6秒後に1番目に戻る
-});
+// fvSwiper3.on("slideChangeTransitionStart", () => {
+//   setTimeout(() => {
+//     fvSwiper1.slideNext();
+//   }, 6000); // 3番目が動いてから6秒後に1番目に戻る
+// });
 
-// 最初のキッカケだけ1回実行
+// // 最初のキッカケだけ1回実行
+// window.addEventListener("load", () => {
+//   setTimeout(() => {
+//     fvSwiper1.slideNext();
+//   }, 6000);
+// });
+
+// // --- 8. fv画像制御 ---
 window.addEventListener("load", () => {
-  setTimeout(() => {
-    fvSwiper1.slideNext();
-  }, 6000);
+  document.querySelector(".section-fv").classList.add("is-active");
 });
 
 // --- 9. secスワイパー制御 ---
