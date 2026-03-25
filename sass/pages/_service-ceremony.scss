@@ -447,10 +447,12 @@
           }
 
           &-img {
+            width: 100%;
             overflow: hidden;
             display: flex; // 中央寄せのためにFlexを導入
             align-items: center; // 垂直中央
             justify-content: center; // 水平中央
+            object-fit: cover;
 
             @include b.mq(pc) {
               max-height: 250px;
@@ -459,9 +461,16 @@
               min-width: 300px;
             }
             img {
-              aspect-ratio: 300 / 250;
+              aspect-ratio: 360 / 250;
+              max-width: 550px;
               width: 100%;
               object-fit: cover;
+
+              @include b.mq(pc) {
+                aspect-ratio: 300 / 250;
+                height: 250px;
+                max-width: 300px;
+              }
             }
           }
 
@@ -484,10 +493,6 @@
               justify-content: center;
               gap: 12px;
             }
-          }
-
-          .body-5 {
-            margin-top: 15px;
           }
 
           &-ttl {
@@ -531,7 +536,7 @@
 
           &.card--1 {
             .page-s-ceremony__card-body {
-              margin-top: 15px;
+              margin-top: 12px;
             }
           }
         }

@@ -4810,6 +4810,7 @@ main {
   }
 }
 .page-s-ceremony__section--4 .page-s-ceremony__card-img {
+  width: 100%;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4820,6 +4821,8 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (min-width: 1024px) {
   .page-s-ceremony__section--4 .page-s-ceremony__card-img {
@@ -4830,10 +4833,18 @@ main {
   }
 }
 .page-s-ceremony__section--4 .page-s-ceremony__card-img img {
-  aspect-ratio: 300/250;
+  aspect-ratio: 360/250;
+  max-width: 550px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (min-width: 1024px) {
+  .page-s-ceremony__section--4 .page-s-ceremony__card-img img {
+    aspect-ratio: 300/250;
+    height: 250px;
+    max-width: 300px;
+  }
 }
 @media (min-width: 1024px) {
   .page-s-ceremony__section--4 .page-s-ceremony__card .img-2 {
@@ -4868,9 +4879,6 @@ main {
     gap: 12px;
   }
 }
-.page-s-ceremony__section--4 .page-s-ceremony__card .body-5 {
-  margin-top: 15px;
-}
 .page-s-ceremony__section--4 .page-s-ceremony__card-txt {
   padding-inline: 10px;
   line-height: 1.8;
@@ -4903,7 +4911,7 @@ main {
   }
 }
 .page-s-ceremony__section--4 .page-s-ceremony__card.card--1 .page-s-ceremony__card-body {
-  margin-top: 15px;
+  margin-top: 12px;
 }
 .page-s-ceremony__section--4 .parts-btn {
   margin-top: 20px;
@@ -5536,11 +5544,8 @@ main {
     gap: 50px;
   }
 }
-.page-s-perpetual-care__section--4 .page-s-perpetual-care__card:first-child img {
-  height: 250px;
-}
 .page-s-perpetual-care__section--4 .page-s-perpetual-care__card-img {
-  aspect-ratio: 300/250;
+  aspect-ratio: 360/230;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -5558,6 +5563,7 @@ main {
 }
 @media (min-width: 1024px) {
   .page-s-perpetual-care__section--4 .page-s-perpetual-care__card-img {
+    aspect-ratio: 300/250;
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;

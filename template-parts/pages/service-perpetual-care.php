@@ -119,7 +119,7 @@
               <div class="page-s-perpetual-care__card-img">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/common/c-operator.png" alt="">
               </div>
-              <div class="page-s-perpetual-care__card-body">
+              <div class="page-s-perpetual-care__card-body body-1">
                 <h2 class="page-s-perpetual-care__card-ttl">01　お問い合わせ</h2>
                 <p class="page-s-perpetual-care__card-txt">まずはお電話やホームページのお問い合わせフォームにてご連絡ください。<br>専任スタッフがサービス内容や費用の目安などについて丁寧にご説明いたします。<br>疑問点や不安な点は何でもご相談ください。<br>生前のお申し込みについてのご相談も承っております。</p>
               </div>

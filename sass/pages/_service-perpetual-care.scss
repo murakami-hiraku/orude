@@ -614,14 +614,9 @@
             padding: 0;
             gap: 50px;
           }
-          &:first-child {
-            img {
-              height: 250px;
-            }
-          }
 
           &-img {
-            aspect-ratio: 300 / 250;
+            aspect-ratio: 360 / 230;
             width: 100%;
             object-fit: cover;
             max-width: 550px;
@@ -631,6 +626,7 @@
             justify-content: center; // 水平中央
 
             @include b.mq(pc) {
+              aspect-ratio: 300 / 250;
               flex: 1;
               max-width: 300px;
             }
