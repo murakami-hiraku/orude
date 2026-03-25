@@ -3285,11 +3285,16 @@ main {
   }
 }
 .page-introduce__card img {
+  aspect-ratio: 300/250;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   max-width: 550px;
 }
 @media (min-width: 1024px) {
   .page-introduce__card img {
+    aspect-ratio: auto;
+    height: 100%;
     max-width: 300px;
     max-height: 365px;
   }
@@ -5535,7 +5540,11 @@ main {
   height: 250px;
 }
 .page-s-perpetual-care__section--4 .page-s-perpetual-care__card-img {
-  max-height: 69.231vw;
+  aspect-ratio: 300/250;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 550px;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;

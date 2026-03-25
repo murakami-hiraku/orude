@@ -143,10 +143,14 @@
     }
 
     img {
+      aspect-ratio: 300 / 250;
       width: 100%;
+      object-fit: cover;
       max-width: 550px;
 
       @include b.mq(pc) {
+        aspect-ratio: auto;
+        height: 100%;
         max-width: 300px;
         max-height: 365px;
       }

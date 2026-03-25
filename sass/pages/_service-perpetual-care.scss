@@ -621,7 +621,10 @@
           }
 
           &-img {
-            max-height: 69.231vw;
+            aspect-ratio: 300 / 250;
+            width: 100%;
+            object-fit: cover;
+            max-width: 550px;
             overflow: hidden;
             display: flex; // 中央寄せのためにFlexを導入
             align-items: center; // 垂直中央
