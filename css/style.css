@@ -807,7 +807,7 @@ main {
 }
 
 .section-service {
-  margin-top: 66px;
+  margin-top: 160px;
 }
 @media (min-width: 1024px) {
   .section-service {
@@ -849,7 +849,7 @@ main {
           flex-direction: column;
   max-width: 600px;
   margin-inline: auto;
-  gap: 50px;
+  gap: 12.82vw;
 }
 @media (min-width: 1024px) {
   .section-service__cards {
@@ -917,9 +917,13 @@ main {
   font-weight: 600;
   font-size: 14px;
   line-height: 2;
+  max-width: 400px;
+  margin-inline: auto;
 }
 @media (min-width: 1024px) {
   .section-service__card-txt {
+    max-width: none;
+    width: 100%;
     text-align: left;
     font-size: 16px;
   }
@@ -1041,9 +1045,13 @@ main {
   font-size: 14px;
   line-height: 2;
   text-align: center;
+  max-width: 400px;
+  margin-inline: auto;
 }
 @media (min-width: 1024px) {
   .section-introduce__txt {
+    max-width: none;
+    width: 100%;
     font-size: 16px;
     -moz-text-align-last: left;
          text-align-last: left;
@@ -4880,7 +4888,7 @@ main {
   }
 }
 .page-s-ceremony__section--4 .page-s-ceremony__card-txt {
-  padding-inline: 10px;
+  padding-inline: 2.564vw;
   line-height: 1.8;
 }
 @media (min-width: 1024px) {
@@ -5620,7 +5628,7 @@ main {
   }
 }
 .page-s-perpetual-care__section--4 .page-s-perpetual-care__card-txt {
-  padding-inline: 10px;
+  padding-inline: 2.564vw;
   line-height: 1.8;
 }
 @media (min-width: 1024px) {

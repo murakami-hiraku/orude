@@ -2,7 +2,7 @@
 @use "../../foundation/base" as b;
 
 .section-service {
-  margin-top: 66px;
+  margin-top: 160px;
 
   @include b.mq(pc) {
     margin-top: 200px;
@@ -40,7 +40,7 @@
     flex-direction: column;
     max-width: 600px;
     margin-inline: auto;
-    gap: 50px;
+    gap: 12.82vw;
 
     @include b.mq(pc) {
       padding-top: 50px;
@@ -103,8 +103,13 @@
       font-weight: 600;
       font-size: 14px;
       line-height: 2;
+      max-width: 400px;
+      margin-inline: auto;
 
       @include b.mq(pc) {
+        max-width: none;
+        width: 100%;
+
         text-align: left;
         font-size: 16px;
       }
