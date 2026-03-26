@@ -265,7 +265,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/page-cremation/cremation-sec3-1.png" alt="">
           </div>
           <div class="page-s-cremation__card-body">
-            <p class="page-s-cremation__card-txt">火葬後は、ご希望に応じてお骨上げを行い、ご遺骨を骨壷にお納めしてご返骨いたします。<br>ご自宅でのご供養や、その後のご納骨の相談についても承っております。<br>また、４９日法要や周忌法要も承っております。<br>分骨カプセルやメモリアルグッズなどをご希望の場合は、事前にご案内いたします。</p>
+            <p class="page-s-cremation__card-txt">火葬後は、ご希望に応じてお骨上げを行い、ご遺骨を骨壷にお納めしてご返骨いたします。<br>ご自宅でのご供養や、その後のご納骨の相談についても承っております。<br>また、４９日法要や周忌法要も承ります。<br>分骨カプセルやメモリアルグッズなどをご希望の場合は、事前にご案内いたします。</p>
 
             <a class="page-s-cremation__link ceremony" href="<?php echo home_url('/service-perpetual-care'); ?>">
               <p class="link-txt">納骨をご希望の方はこちら</p><span class="icon-arrow"></span>
