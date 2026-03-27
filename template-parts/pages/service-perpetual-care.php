@@ -186,7 +186,7 @@
             <div class="page-s-perpetual-care__card-body">
               <ul class="page-s-perpetual-care__list">
                 <li class="page-s-perpetual-care__list-item item-1">
-                  <span>永代納骨『ともに』プラン（合同墓）</span><span>– ¥150,000円</span>
+                  <span>永代納骨『ともに』プラン（合同墓）</span><span>¥150,000円</span>
                 </li>
                 <li class="page-s-perpetual-care__list-item">
                   <span>ご親族の追加お一人につき</span><span>¥100,000円</span>
