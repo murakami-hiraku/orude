@@ -16,7 +16,7 @@
         <div class="page-s-ceremony__container">
           <div class="page-s-ceremony__box">
             <h2 class="page-s-ceremony__ttl">その子らしく。思い出に寄り添う場所で</h2>
-            <p class="page-s-ceremony__txt">オルデでは、火葬だけでなく、葬儀としてのセレモニーを大切に考えています。<br>いつもの場所で、その子らしいお別れの時間を<br>その時間が、これからをやさしく支えてくれると信じています。</p>
+            <p class="page-s-ceremony__txt">オルデでは、火葬だけでなく、葬儀としてのセレモニーを大切に考えています。<br>いつもの場所で、その子らしいお別れの時間を——<br>その時間が、これからをやさしく支えてくれると信じています。</p>
           </div>
         </div>
       </div>
