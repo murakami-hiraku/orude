@@ -195,7 +195,7 @@
                   <span>ペットの追加１匹</span><span>¥50,000円</span>
                 </li>
                 <li class="page-s-perpetual-care__list-item item-4">
-                  <span>お名前入りプレート</span><span>¥50,000円</span>
+                  <span>お名前入りプレート</span><span>¥100,000円</span>
                 </li>
               </ul>
               <p class="page-s-perpetual-care__card-txt txt-1">※永代納骨墓「ともに」のお支払いは、現金のみとなります。</p>
