@@ -356,7 +356,7 @@
         inset: 0;
         opacity: 0;
         // アニメーション名を指定
-        animation: sliderAnime 60s linear infinite;
+        animation: sliderAnime 80s linear infinite;
         animation-play-state: paused;
 
         img {
@@ -384,7 +384,7 @@
       &:nth-child(1) .slider-item {
         @for $i from 1 through 5 {
           &:nth-child(#{$i}) {
-            animation-delay: ($i - 1) * -12s;
+            animation-delay: ($i - 1) * -16s;
           }
         }
       }
@@ -393,7 +393,7 @@
       &:nth-child(2) .slider-item {
         @for $i from 1 through 5 {
           &:nth-child(#{$i}) {
-            animation-delay: (($i - 1) * -12s) - 8s;
+            animation-delay: (($i - 1) * -16s) - 10.666666666s;
           }
         }
       }
@@ -402,7 +402,7 @@
       &:nth-child(3) .slider-item {
         @for $i from 1 through 5 {
           &:nth-child(#{$i}) {
-            animation-delay: (($i - 1) * -12s) - 4s;
+            animation-delay: (($i - 1) * -16s) - 5.333333333s;
           }
         }
       }
@@ -410,22 +410,23 @@
   }
 }
 
-// 50秒周期に合わせたキーフレーム（1枚10秒計算）
 @keyframes sliderAnime {
   0% {
     opacity: 0;
     transform: scale(1);
   }
-  6% {
-    opacity: 1; // フェードイン
+  12% {
+    // 6% → 12% に延長（約7.2秒かけてフェードイン）
+    opacity: 1;
   }
   20% {
     opacity: 1;
   }
-  28% {
+  35% {
+    // 28% → 35% に延長（約9秒かけてフェードアウト）
     opacity: 0;
     transform: scale(1.15);
-  } // 次が重なりながら消える
+  }
   100% {
     opacity: 0;
     transform: scale(1.2);

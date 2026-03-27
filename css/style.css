@@ -524,8 +524,8 @@ main {
   position: absolute;
   inset: 0;
   opacity: 0;
-  -webkit-animation: sliderAnime 60s linear infinite;
-          animation: sliderAnime 60s linear infinite;
+  -webkit-animation: sliderAnime 80s linear infinite;
+          animation: sliderAnime 80s linear infinite;
   -webkit-animation-play-state: paused;
           animation-play-state: paused;
 }
@@ -547,60 +547,60 @@ main {
           animation-delay: 0s;
 }
 .section-fv__windows .slider-area:nth-child(1) .slider-item:nth-child(2) {
-  -webkit-animation-delay: -12s;
-          animation-delay: -12s;
-}
-.section-fv__windows .slider-area:nth-child(1) .slider-item:nth-child(3) {
-  -webkit-animation-delay: -24s;
-          animation-delay: -24s;
-}
-.section-fv__windows .slider-area:nth-child(1) .slider-item:nth-child(4) {
-  -webkit-animation-delay: -36s;
-          animation-delay: -36s;
-}
-.section-fv__windows .slider-area:nth-child(1) .slider-item:nth-child(5) {
-  -webkit-animation-delay: -48s;
-          animation-delay: -48s;
-}
-.section-fv__windows .slider-area:nth-child(2) .slider-item:nth-child(1) {
-  -webkit-animation-delay: -8s;
-          animation-delay: -8s;
-}
-.section-fv__windows .slider-area:nth-child(2) .slider-item:nth-child(2) {
-  -webkit-animation-delay: -20s;
-          animation-delay: -20s;
-}
-.section-fv__windows .slider-area:nth-child(2) .slider-item:nth-child(3) {
-  -webkit-animation-delay: -32s;
-          animation-delay: -32s;
-}
-.section-fv__windows .slider-area:nth-child(2) .slider-item:nth-child(4) {
-  -webkit-animation-delay: -44s;
-          animation-delay: -44s;
-}
-.section-fv__windows .slider-area:nth-child(2) .slider-item:nth-child(5) {
-  -webkit-animation-delay: -56s;
-          animation-delay: -56s;
-}
-.section-fv__windows .slider-area:nth-child(3) .slider-item:nth-child(1) {
-  -webkit-animation-delay: -4s;
-          animation-delay: -4s;
-}
-.section-fv__windows .slider-area:nth-child(3) .slider-item:nth-child(2) {
   -webkit-animation-delay: -16s;
           animation-delay: -16s;
 }
+.section-fv__windows .slider-area:nth-child(1) .slider-item:nth-child(3) {
+  -webkit-animation-delay: -32s;
+          animation-delay: -32s;
+}
+.section-fv__windows .slider-area:nth-child(1) .slider-item:nth-child(4) {
+  -webkit-animation-delay: -48s;
+          animation-delay: -48s;
+}
+.section-fv__windows .slider-area:nth-child(1) .slider-item:nth-child(5) {
+  -webkit-animation-delay: -64s;
+          animation-delay: -64s;
+}
+.section-fv__windows .slider-area:nth-child(2) .slider-item:nth-child(1) {
+  -webkit-animation-delay: -10.666666666s;
+          animation-delay: -10.666666666s;
+}
+.section-fv__windows .slider-area:nth-child(2) .slider-item:nth-child(2) {
+  -webkit-animation-delay: -26.666666666s;
+          animation-delay: -26.666666666s;
+}
+.section-fv__windows .slider-area:nth-child(2) .slider-item:nth-child(3) {
+  -webkit-animation-delay: -42.666666666s;
+          animation-delay: -42.666666666s;
+}
+.section-fv__windows .slider-area:nth-child(2) .slider-item:nth-child(4) {
+  -webkit-animation-delay: -58.666666666s;
+          animation-delay: -58.666666666s;
+}
+.section-fv__windows .slider-area:nth-child(2) .slider-item:nth-child(5) {
+  -webkit-animation-delay: -74.666666666s;
+          animation-delay: -74.666666666s;
+}
+.section-fv__windows .slider-area:nth-child(3) .slider-item:nth-child(1) {
+  -webkit-animation-delay: -5.333333333s;
+          animation-delay: -5.333333333s;
+}
+.section-fv__windows .slider-area:nth-child(3) .slider-item:nth-child(2) {
+  -webkit-animation-delay: -21.333333333s;
+          animation-delay: -21.333333333s;
+}
 .section-fv__windows .slider-area:nth-child(3) .slider-item:nth-child(3) {
-  -webkit-animation-delay: -28s;
-          animation-delay: -28s;
+  -webkit-animation-delay: -37.333333333s;
+          animation-delay: -37.333333333s;
 }
 .section-fv__windows .slider-area:nth-child(3) .slider-item:nth-child(4) {
-  -webkit-animation-delay: -40s;
-          animation-delay: -40s;
+  -webkit-animation-delay: -53.333333333s;
+          animation-delay: -53.333333333s;
 }
 .section-fv__windows .slider-area:nth-child(3) .slider-item:nth-child(5) {
-  -webkit-animation-delay: -52s;
-          animation-delay: -52s;
+  -webkit-animation-delay: -69.333333333s;
+          animation-delay: -69.333333333s;
 }
 
 @-webkit-keyframes sliderAnime {
@@ -609,13 +609,13 @@ main {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  6% {
+  12% {
     opacity: 1;
   }
   20% {
     opacity: 1;
   }
-  28% {
+  35% {
     opacity: 0;
     -webkit-transform: scale(1.15);
             transform: scale(1.15);
@@ -633,13 +633,13 @@ main {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  6% {
+  12% {
     opacity: 1;
   }
   20% {
     opacity: 1;
   }
-  28% {
+  35% {
     opacity: 0;
     -webkit-transform: scale(1.15);
             transform: scale(1.15);
