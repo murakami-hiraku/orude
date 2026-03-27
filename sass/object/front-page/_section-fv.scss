@@ -329,7 +329,37 @@
 
     @include b.mq(pc) {
       left: 40%;
-      bottom: 18px;
+      bottom: 0;
+    }
+
+    .area-1 {
+      @include b.mq(pc) {
+        margin-bottom: 3.9583vw;
+        margin-right: -8px;
+      }
+
+      @include b.mq(lg) {
+        margin-right: -10px;
+      }
+      @include b.mq(xl) {
+        margin-right: -16px;
+      }
+    }
+    .area-2 {
+      @include b.mq(pc) {
+      }
+    }
+    .area-3 {
+      @include b.mq(pc) {
+        margin-bottom: 2.6042vw;
+        margin-left: -2px;
+      }
+
+      @include b.mq(lg) {
+        margin-left: -6px;
+      }
+      @include b.mq(xl) {
+      }
     }
 
     .slider-area {
@@ -339,8 +369,12 @@
       width: 115px;
       height: 115px;
       border-radius: 50%;
+      background: b.$sub-color-light;
 
       flex-shrink: 0; // 潰れないように固定
+
+      @include b.mq(pc) {
+      }
 
       @include b.mq(lg) {
         width: 150px;

@@ -42,7 +42,7 @@
 
 
       <div class="section-fv__windows">
-        <div class="slider-area">
+        <div class="slider-area area-1">
           <div class="slider-item">
             <img src="<?php echo get_template_directory_uri(); ?>/img/front-page/fv-img-1.png" alt="">
           </div>
@@ -59,7 +59,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/front-page/fv-img-5.png" alt="">
           </div>
         </div>
-        <div class="slider-area">
+        <div class="slider-area area-2">
           <div class="slider-item">
             <img src="<?php echo get_template_directory_uri(); ?>/img/front-page/fv-img-3.png" alt="">
           </div>
@@ -76,7 +76,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/img/front-page/fv-img-2.png" alt="">
           </div>
         </div>
-        <div class="slider-area">
+        <div class="slider-area area-3">
           <div class="slider-item">
             <img src="<?php echo get_template_directory_uri(); ?>/img/front-page/fv-img-5.png" alt="">
           </div>
