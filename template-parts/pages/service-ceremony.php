@@ -64,7 +64,7 @@
             <p class="page-s-ceremony__card-txt">
               たくさんの愛をくれた存在へ「ありがとう」を——そんな想いを込めたセレモニープランです。
             </p>
-            <p class="page-s-ceremony__card-price">55,000円 <small>（税込）〜
+            <p class="page-s-ceremony__card-price">55,000<small>円（税込）
               </small></p>
 
             <div class="page-s-ceremony__card-img--sub">
@@ -84,7 +84,7 @@
               虹の向こうでまた会える——そんな願いを込めたセレモニープランです。
 
             </p>
-            <p class="page-s-ceremony__card-price">55,000<small>円（税込）〜</small></p>
+            <p class="page-s-ceremony__card-price">55,000<small>円（税込）</small></p>
             <p class="page-s-ceremony__card-price--sub">セレモニーと火葬をセットで行う場合は、<br><strong>特別料金</strong><small></small>でご案内させていただきます。</p>
             <?php get_template_part('template-parts/parts/parts-btn', null, [
               'text'  => '火葬料金はこちら',
