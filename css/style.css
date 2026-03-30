@@ -535,6 +535,8 @@ main {
   background: #fff;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  -webkit-mask-image: radial-gradient(circle closest-side, #000 calc(93% - 11px), transparent 100%);
+  mask-image: radial-gradient(circle closest-side, #000 calc(93% - 11px), transparent 100%);
 }
 @media (min-width: 1440px) {
   .section-fv__windows .slider-area {

@@ -373,6 +373,18 @@
 
       flex-shrink: 0; // 潰れないように固定
 
+      // 画像の縁をぼかすためのマスク
+      -webkit-mask-image: radial-gradient(
+        circle closest-side,
+        #000 calc(93% - 11px),
+        transparent 100%
+      );
+      mask-image: radial-gradient(
+        circle closest-side,
+        #000 calc(93% - 11px),
+        transparent 100%
+      );
+
       @include b.mq(pc) {
       }
 
