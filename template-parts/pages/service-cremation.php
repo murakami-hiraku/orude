@@ -16,7 +16,7 @@
         ?>
 
         <h2 class="page-s-cremation__ttl">大切なご家族にふさわしい、やさしいお見送り</h2>
-        <p class="page-s-cremation__txt">オルデの訪問火葬は、ご自宅またはご指定の場所まで専用車でお伺いし、火葬のみを執り行うサービスです。<br>葬儀やセレモニーは行わず、「静かに、丁寧に火葬をしてほい」「形式よりも負担を少なくしたい」というご家族様のためのプランです。<br>移動のご負担もなく、お迎えに上がるまでゆっくりと最期の時間をお過ごしいただけます。</p>
+        <p class="page-s-cremation__txt">オルデの訪問火葬は、ご自宅またはご指定の場所まで専用車でお伺いし、火葬のみを執り行うサービスです。<br>葬儀や自宅葬は行わず、「静かに、丁寧に火葬をしてほい」「形式よりも負担を少なくしたい」というご家族様のためのプランです。<br>移動のご負担もなく、お迎えに上がるまでゆっくりと最期の時間をお過ごしいただけます。</p>
       </div>
 
     </section>
@@ -45,7 +45,7 @@
             <div class="page-s-cremation__card-img">
               <img src="<?php echo get_template_directory_uri(); ?>/img/page-cremation/cremation-sec2-2.png" alt="">
             </div>
-            <h2 class="page-s-cremation__card-ttl">プライバシーに配慮したセレモニー車</h2>
+            <h2 class="page-s-cremation__card-ttl">プライバシーに配慮した自宅葬車</h2>
 
             <p class="page-s-cremation__card-txt">火葬炉を搭載した車両には、社名やロゴなどの表記は一切ありません。一見すると一般的なバンタイプの車両のため、ご近所に配慮しながらご利用いただけます。マンションや住宅街でも安心してご相談ください。</p>
 
@@ -154,7 +154,7 @@
 
               <a class="page-s-cremation__link ceremony" href="<?php echo home_url('/service-ceremony'); ?>">
 
-                <p class="link-txt">セレモニープランの詳細はこちら</p><span class="icon-arrow"></span>
+                <p class="link-txt">自宅葬プランの詳細はこちら</p><span class="icon-arrow"></span>
               </a>
 
               <div class="page-s-cremation__flow">
@@ -297,7 +297,7 @@
             <p class="page-s-cremation__card-txt">
               個別火葬プラン（一任個別葬・立会個別葬）には、骨壷・骨袋（覆い袋）が含まれております。<br>
               合同火葬プランは、お骨をお返しできません。火葬後は、一部のお骨を合同墓へお納めいたします。<br>
-              生花・祭壇・葬儀セレモニー等は含まれておりません。
+              生花・祭壇・葬儀自宅葬等は含まれておりません。
             </p>
           </div>
           <div class="page-s-cremation__card card--2">

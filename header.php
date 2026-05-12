@@ -30,7 +30,7 @@
 
   <!-- OGP（SNSでシェアされたときの表示） -->
   <meta property="og:title" content="ペットの総合供養 オルデ｜大切な家族との最後の時間を穏やかに【大阪】">
-  <meta property="og:description" content="大阪のペット総合供養「オルデ」。ご自宅への訪問火葬、想いに寄り添うセレモニー、永代供養まで、大切な家族のお見送りを心を込めてお手伝いいたします。お電話受付8:00〜22:00。まずはお気軽にご相談ください。">
+  <meta property="og:description" content="大阪のペット総合供養「オルデ」。ご自宅への訪問火葬、想いに寄り添う自宅葬、永代供養まで、大切な家族のお見送りを心を込めてお手伝いいたします。お電話受付8:00〜22:00。まずはお気軽にご相談ください。">
   <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/img/common/ogp.png">
   <meta property="og:url" content="">
   <meta property="og:type" content="website">

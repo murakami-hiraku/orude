@@ -15,7 +15,7 @@
 
       <div class="page-faq__contents">
         <div class="page-faq__category cremation">
-          <h2 class="page-faq__ttl">訪問火葬プラン・セレモニープランに<br class="hidden-pc">関するご質問</h2>
+          <h2 class="page-faq__ttl">訪問火葬プラン・自宅葬プランに<br class="hidden-pc">関するご質問</h2>
           <?php
           get_template_part('template-parts/parts/parts-faq-1')
           ?>

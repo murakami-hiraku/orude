@@ -16,7 +16,7 @@
         <div class="page-s-ceremony__container">
           <div class="page-s-ceremony__box">
             <h2 class="page-s-ceremony__ttl">その子らしく。思い出に寄り添う場所で</h2>
-            <p class="page-s-ceremony__txt">オルデでは、火葬だけでなく、葬儀としてのセレモニーを大切に考えています。<br>いつもの場所で、その子らしいお別れの時間を——<br>その時間が、これからをやさしく支えてくれると信じています。</p>
+            <p class="page-s-ceremony__txt">オルデでは、火葬だけでなく、葬儀としての自宅葬を大切に考えています。<br>いつもの場所で、その子らしいお別れの時間を——<br>その時間が、これからをやさしく支えてくれると信じています。</p>
           </div>
         </div>
       </div>
@@ -28,7 +28,7 @@
 
     <section class="page-s-ceremony__section page-s-ceremony__section--2 section fadein ">
       <div class="page-s-ceremony__inner inner">
-        <h2 class="page-s-ceremony__ttl">セレモニーという“お別れのかたち”</h2>
+        <h2 class="page-s-ceremony__ttl">自宅葬という“お別れのかたち”</h2>
         <!-- <p class="page-s-ceremony__txt">ご葬儀とは、火葬の前にその子に心を届ける儀式の時間。</p> -->
         <p class="page-s-ceremony__txt--sub sub-1">
           「ありがとう」「またね」「大好きだよ」——<br>
@@ -40,7 +40,7 @@
           <div class="page-s-ceremony__img">
             <img src="<?php echo get_template_directory_uri(); ?>/img/common/c-arch.png" alt="">
           </div>
-          <p class="page-s-ceremony__txt--sub sub-2">大切なのは“その子に寄り添う”こと。<br>ご希望やご事情を伺いながら、<br>最適なセレモニーを一緒に創ってまいります。</p>
+          <p class="page-s-ceremony__txt--sub sub-2">大切なのは“その子に寄り添う”こと。<br>ご希望やご事情を伺いながら、<br>最適な自宅葬を一緒に創ってまいります。</p>
         </div> -->
 
       </div>
@@ -52,7 +52,7 @@
     <section class="page-s-ceremony__section page-s-ceremony__section--3 section fadein ">
       <div class="page-s-ceremony__inner inner">
         <!-- <h2 class="page-s-ceremony__ttl">選べる2つのお見送りスタイル</h2>
-        <p class="page-s-ceremony__txt">オルデでは、ご家族の想いやお別れの形に合わせて、2種類のセレモニースタイルをご用意しています。<br>どちらも「火葬前にゆっくりお別れの時間を持ちたい」という想いに寄り添った葬儀プランですが、飾り付けの内容や雰囲気が異なります。<br>どちらのプランもその子を中心に、やさしく美しく空間を整え、感謝の気持ちを伝える時間を大切にしています。</p> -->
+        <p class="page-s-ceremony__txt">オルデでは、ご家族の想いやお別れの形に合わせて、2種類の自宅葬スタイルをご用意しています。<br>どちらも「火葬前にゆっくりお別れの時間を持ちたい」という想いに寄り添った葬儀プランですが、飾り付けの内容や雰囲気が異なります。<br>どちらのプランもその子を中心に、やさしく美しく空間を整え、感謝の気持ちを伝える時間を大切にしています。</p> -->
 
         <div class="page-s-ceremony__cards">
 
@@ -60,9 +60,9 @@
             <div class="page-s-ceremony__card-img">
               <img src="<?php echo get_template_directory_uri(); ?>/img/page-ceremony/ceremony-sec3-1.png" alt="">
             </div>
-            <h2 class="page-s-ceremony__card-ttl">セレモニープランA</h2>
+            <h2 class="page-s-ceremony__card-ttl">自宅葬プランA</h2>
             <p class="page-s-ceremony__card-txt">
-              たくさんの愛をくれた存在へ「ありがとう」を——そんな想いを込めたセレモニープランです。
+              たくさんの愛をくれた存在へ「ありがとう」を——そんな想いを込めた自宅葬プランです。
             </p>
             <p class="page-s-ceremony__card-price">55,000<small>円（税込）
               </small></p>
@@ -79,13 +79,13 @@
             <div class="page-s-ceremony__card-img">
               <img src="<?php echo get_template_directory_uri(); ?>/img/page-ceremony/ceremony-sec3-5.png" alt="">
             </div>
-            <h2 class="page-s-ceremony__card-ttl">セレモニープランB</h2>
+            <h2 class="page-s-ceremony__card-ttl">自宅葬プランB</h2>
             <p class="page-s-ceremony__card-txt">
-              虹の向こうでまた会える——そんな願いを込めたセレモニープランです。
+              虹の向こうでまた会える——そんな願いを込めた自宅葬プランです。
 
             </p>
             <p class="page-s-ceremony__card-price">55,000<small>円（税込）</small></p>
-            <p class="page-s-ceremony__card-price--sub">セレモニーと火葬をセットで行う場合は、<br><strong>特別料金</strong><small></small>でご案内させていただきます。</p>
+            <p class="page-s-ceremony__card-price--sub">自宅葬と火葬をセットで行う場合は、<br><strong>特別料金</strong><small></small>でご案内させていただきます。</p>
             <?php get_template_part('template-parts/parts/parts-btn', null, [
               'text'  => '火葬料金はこちら',
               'link'  => home_url('/service-cremation/#price-list'),
@@ -97,7 +97,7 @@
 
         <div class="page-s-ceremony__note">
 
-          <p>※セレモニープランA・B共に、祭壇はアーティフィシャルフラワーになります。</p>
+          <p>※自宅葬プランA・B共に、祭壇はアーティフィシャルフラワーになります。</p>
           <p>※別途、お別れのお花は生花をご用意させていただきます。</p>
           <p>※設営にお時間をいただく場合がございます。</p>
           <p>※別途、出張費が必要となる場合がございます。</p>
@@ -116,7 +116,7 @@
         <?php
         get_template_part('/template-parts/parts/parts-bg-flower--right')
         ?>
-        <h2 class="page-s-ceremony__ttl">ご葬儀の流れ ～セレモニー当日のステップ～</h2>
+        <h2 class="page-s-ceremony__ttl">ご葬儀の流れ ～自宅葬当日のステップ～</h2>
         <p class="page-s-ceremony__txt txt-1">初めてご依頼される方にも安心していただけるよう、オルデの一般的な葬儀当日の流れをご説明いたします。<br>ご家族のご希望や状況に応じて多少前後する場合もございますが、一例としてご参考になさってください。</p>
 
         <div class="page-s-ceremony__cards">
@@ -128,7 +128,7 @@
               <h2 class="page-s-ceremony__card-ttl">01　お問い合わせ</h2>
               <p class="page-s-ceremony__card-txt">
                 完全予約制になっております。<br>
-                ご希望のセレモニープランをお申し付けください。<br>
+                ご希望の自宅葬プランをお申し付けください。<br>
                 日程はご相談ください。<br>
                 ※ペット飼育不可のマンション等では承ることができません。
               </p>
@@ -150,7 +150,7 @@
               <h2 class="page-s-ceremony__card-ttl">02　ご訪問・設営</h2>
               <p class="page-s-ceremony__card-txt">
                 ご葬儀当日、スタッフがご自宅またはご指定の場所へお伺いします。<br>
-                セレモニーに必要な祭壇や飾り付けを丁寧に設営し、落ち着いてお別れの時間を過ごしていただける空間を整えます。
+                自宅葬に必要な祭壇や飾り付けを丁寧に設営し、落ち着いてお別れの時間を過ごしていただける空間を整えます。
               </p>
 
             </div>
