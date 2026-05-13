@@ -27,7 +27,7 @@
           </a>
 
           <a class="section-fv__link ceremony" href="<?php echo home_url('/service-ceremony'); ?>">
-            <p class="link-txt">自宅葬はこちら</p><span class="icon-arrow"></span>
+            <p class="link-txt">自宅葬をご希望の方はこちら</p><span class="icon-arrow"></span>
           </a>
 
           <a class="section-fv__link perpetual-care" href="<?php echo home_url('/service-perpetual-care'); ?>">
