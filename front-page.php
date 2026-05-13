@@ -39,6 +39,10 @@
     <?php get_template_part('template-parts/section/section-contact'); ?>
     <!-- /コンタクト（contact） -->
 
+    <!-- スマホ専用固定ボタン -->
+    <?php get_template_part('template-parts/parts/parts-fix-button'); ?>
+    <!-- /スマホ専用固定ボタン -->
+
   </main>
 
   <!-- フッター -->
