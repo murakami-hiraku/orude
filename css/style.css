@@ -1747,6 +1747,10 @@ main {
   }
 }
 
+.parts-fix-button-wrapper {
+  position: relative;
+}
+
 .parts-fix-button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1761,9 +1765,18 @@ main {
   left: 0;
   width: 100%;
   z-index: 1000;
+  padding-inline: 3.846vw;
   padding-bottom: env(safe-area-inset-bottom);
   pointer-events: none;
-  padding-inline: 3.846vw;
+  -webkit-transition: opacity 0.4s ease, visibility 0.4s ease;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+  opacity: 1;
+  visibility: visible;
+}
+.parts-fix-button.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 @media (min-width: 768px) {
   .parts-fix-button {

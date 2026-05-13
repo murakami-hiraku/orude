@@ -316,3 +316,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
   observer.observe(introduceSection);
 });
+
+// --- 13. 固定ボタンが画面の下端に到達したらボタンをフェードアウトする ---
+window.addEventListener("scroll", function () {
+  const fixButton = document.querySelector(".parts-fix-button");
+  const footer = document.querySelector("footer"); // フッターのセレクタ
+
+  if (!fixButton || !footer) return;
+
+  const scrollHeight = document.documentElement.scrollHeight;
+  const scrollPosition = window.innerHeight + window.pageYOffset;
+  const footerHeight = footer.offsetHeight;
+
+  // フッターが画面に現れたらクラスを追加
+  if (scrollHeight - scrollPosition <= footerHeight) {
+    fixButton.classList.add("is-hidden");
+  } else {
+    fixButton.classList.remove("is-hidden");
+  }
+});

@@ -1,18 +1,36 @@
 @use "sass:map";
 @use "../../foundation/base" as b;
 
+.parts-fix-button-wrapper {
+  position: relative;
+  // ここを起点にするため、ボタンが止まる位置をコントロール
+}
+
 .parts-fix-button {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; // ★子要素を中央に寄せる
+  justify-content: center; // 子要素を中央に寄せる
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
-  padding-bottom: env(safe-area-inset-bottom);
-  pointer-events: none; // ★ボタン以外の隙間をタップできるようにする（重要）
   padding-inline: 3.846vw;
+  padding-bottom: env(safe-area-inset-bottom);
+  pointer-events: none; // ボタン以外の隙間をタップできるようにする
+  // アニメーションの設定
+  transition:
+    opacity 0.4s ease,
+    visibility 0.4s ease;
+  opacity: 1;
+  visibility: visible;
+
+  // フッターに到達して消える時のスタイル
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none; // 消えている間はクリックできないようにする
+  }
 
   @include b.mq(tb) {
     display: none;
