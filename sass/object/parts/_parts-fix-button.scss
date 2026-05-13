@@ -1,0 +1,57 @@
+@use "sass:map";
+@use "../../foundation/base" as b;
+
+.parts-fix-button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; // ★子要素を中央に寄せる
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding-bottom: env(safe-area-inset-bottom);
+  pointer-events: none; // ★ボタン以外の隙間をタップできるようにする（重要）
+  padding-inline: 3.846vw;
+
+  @include b.mq(tb) {
+    display: none;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 900;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 50%;
+    background: b.$main-color;
+    border: 1px solid #fff;
+    pointer-events: auto; // ★ボタン自体はタップできるように戻す
+
+    &:first-child {
+      // 50%幅のままで「両サイドに25%ずつの外余白」を作ることで中央に配置
+      margin-inline: 25%;
+    }
+
+    // ★2行目（2つ目と3つ目のボタン）だけに上の隙間を作る
+    &:nth-child(n + 2) {
+      margin-top: 5px; // ここで上下の隙間を調整
+    }
+
+    // 2番目（自宅葬）と3番目（納骨）の境目に線を入れたい場合
+    // &.ceremony {
+    //   border-right: 1px solid #fff;
+    // }
+  }
+
+  .link-txt {
+    margin: 0;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+}
