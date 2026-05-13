@@ -12,7 +12,7 @@
 
       <div class="section-fv__ttl">
         <h3>ーペットの総合供養ー</h3>
-        <h2>これからの旅が<br>穏やかな旅でありますように</h2>
+        <h2>家族になってありがとう</h2>
       </div>
 
       <div class="section-fv__container">
@@ -27,7 +27,7 @@
           </a>
 
           <a class="section-fv__link ceremony" href="<?php echo home_url('/service-ceremony'); ?>">
-            <p class="link-txt">ゆっくりお別れをしたい方はこちら</p><span class="icon-arrow"></span>
+            <p class="link-txt">自宅葬はこちら</p><span class="icon-arrow"></span>
           </a>
 
           <a class="section-fv__link perpetual-care" href="<?php echo home_url('/service-perpetual-care'); ?>">

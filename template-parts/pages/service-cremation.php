@@ -45,7 +45,7 @@
             <div class="page-s-cremation__card-img">
               <img src="<?php echo get_template_directory_uri(); ?>/img/page-cremation/cremation-sec2-2.png" alt="">
             </div>
-            <h2 class="page-s-cremation__card-ttl">プライバシーに配慮した自宅葬車</h2>
+            <h2 class="page-s-cremation__card-ttl">プライバシーに配慮したセレモニー車</h2>
 
             <p class="page-s-cremation__card-txt">火葬炉を搭載した車両には、社名やロゴなどの表記は一切ありません。一見すると一般的なバンタイプの車両のため、ご近所に配慮しながらご利用いただけます。マンションや住宅街でも安心してご相談ください。</p>
 
