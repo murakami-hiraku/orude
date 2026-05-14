@@ -155,7 +155,7 @@
           </div>
           <div class="page-s-perpetual-care__card">
             <div class="page-s-perpetual-care__card-img">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/page-perpetual/perpetual-sec4-4.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/page-perpetual/perpetual-sec4-4.webp" alt="">
             </div>
             <div class="page-s-perpetual-care__card-body">
               <h2 class="page-s-perpetual-care__card-ttl">04　ご納骨</h2>
@@ -304,6 +304,12 @@
             <h2 class="page-s-perpetual-care__card-ttl">堺市堺区</h2>
             <div class="page-s-perpetual-care__card-img">
               <img src="<?php echo get_template_directory_uri(); ?>/img/page-perpetual/perpetual-sec8-3.png" alt="">
+            </div>
+          </div>
+          <div class="page-s-perpetual-care__card card-3">
+            <h2 class="page-s-perpetual-care__card-ttl">堺市南区</h2>
+            <div class="page-s-perpetual-care__card-img">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/page-perpetual/perpetual-sec8-4.webp" alt="">
             </div>
           </div>
 
