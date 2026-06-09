@@ -1218,8 +1218,8 @@ main {
   height: 24px;
   -webkit-mask-image: url("../img/ui/tel-icon.svg");
           mask-image: url("../img/ui/tel-icon.svg");
-  -webkit-mask-size: cover;
-          mask-size: cover;
+  -webkit-mask-size: contain;
+          mask-size: contain;
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
   -webkit-mask-position: center;
