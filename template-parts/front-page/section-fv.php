@@ -12,7 +12,7 @@
 
       <div class="section-fv__ttl">
         <h3>ーペットの総合供養ー</h3>
-        <h2>家族になってありがとう</h2>
+        <h2>「家族でいてくれてありがとう」</h2>
       </div>
 
       <div class="section-fv__container">

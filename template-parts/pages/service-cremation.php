@@ -95,7 +95,7 @@
             </div>
             <div class="page-s-cremation__card-body">
               <h2 class="page-s-cremation__card-ttl">合同火葬</h2>
-              <p class="page-s-cremation__card-txt">お預かりしたお子様を合同火葬いたします。<br>火葬後のご遺骨の一部を合同墓へ埋葬いたします。<br>※お骨をお返しすることはできません。</p>
+              <p class="page-s-cremation__card-txt">お預かりしたお子様を合同火葬いたします。<br>火葬後のお骨を合同墓へお納めいたします。<br>※お骨をお返しすることはできません。</p>
               <div class="page-s-cremation__flow">
                 <div class="page-s-cremation__flow-step step--1">お伺い
                 </div>
@@ -303,7 +303,7 @@
           <div class="page-s-cremation__card card--2">
             <h2 class="page-s-cremation__card-ttl">お迎え・出張費について</h2>
             <p class="page-s-cremation__card-txt">
-              大阪府下全域　無料<br>
+              大阪市内全域　無料<br>
               ※地域により別途出張費￥３,３００～必要となります。<br>
               　地域により高速代が必要となります。
             </p>
