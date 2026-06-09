@@ -2081,6 +2081,7 @@ main {
 @media (min-width: 1024px) {
   .section-contact__txt {
     font-size: 20px;
+    text-align: left;
   }
 }
 .section-contact__img {
