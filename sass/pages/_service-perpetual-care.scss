@@ -947,6 +947,15 @@
           @include b.mq(pc) {
             font-size: 40px;
           }
+
+          &--sub {
+            color: b.$sub-color-dark;
+            font-size: 20px;
+
+            @include b.mq(pc) {
+              font-size: 24px;
+            }
+          }
         }
 
         &__cards {

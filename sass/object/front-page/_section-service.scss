@@ -114,6 +114,38 @@
         font-size: 16px;
       }
     }
+
+    &-btns {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      flex-direction: column;
+      gap: 18px;
+
+      @include b.mq(pc) {
+        margin-left: auto;
+        flex-direction: row;
+        gap: 36px;
+      }
+
+      & .parts-btn {
+        margin: 0;
+
+        @include b.mq(pc) {
+          margin: 0;
+        }
+      }
+    }
+
+    .parts-btn {
+      margin-inline: auto;
+
+      @include b.mq(pc) {
+        margin-top: auto;
+        margin-right: 0;
+        margin-left: auto;
+      }
+    }
   }
 
   &__img {
@@ -131,16 +163,6 @@
     img {
       width: 100%;
       box-shadow: 0px 4px 4px 0px #00000040;
-    }
-  }
-
-  .parts-btn {
-    margin-inline: auto;
-
-    @include b.mq(pc) {
-      margin-top: auto;
-      margin-right: 0;
-      margin-left: auto;
     }
   }
 }
