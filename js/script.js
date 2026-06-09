@@ -337,106 +337,48 @@ window.addEventListener("scroll", function () {
 });
 
 // --- 14. 永代合同墓ページコンテンツ切り替え スクロールバージョン ---
-// window.addEventListener("DOMContentLoaded", () => {
-//   // ページ完全に読み込み後に実行（要素の高さ計算を正確にするため）
-//   window.addEventListener("load", () => {
-//     // URLのハッシュを取得
-//     const hash = window.location.hash;
-
-//     // ハッシュが「#content-2-sec9」だった場合
-//     if (hash === "#content-2-sec9") {
-//       // 1. タブボタンの切り替え
-//       const btn1 = document.querySelector(".page-s-perpetual-care__btn.btn-1");
-//       const btn2 = document.querySelector(".page-s-perpetual-care__btn.btn-2");
-//       if (btn1) btn1.classList.remove("is-active");
-//       if (btn2) btn2.classList.add("is-active");
-
-//       // 2. コンテンツエリアの切り替え
-//       const content1 = document.getElementById("content-1");
-//       const content2 = document.getElementById("content-2");
-//       if (content1) content1.classList.remove("is-active");
-//       if (content2) content2.classList.add("is-active");
-
-//       // 3. セクション9（id="sec-surrogate"）へのスムーススクロール
-//       const target = document.getElementById("sec-surrogate");
-//       if (target) {
-//         // ヘッダーが固定（追従）の場合は、その高さ分（例: 100px）をここで調整
-//         // --- ここでPCとSPのヘッダー高さを分岐 ---
-//         let headerHeight = 100; // デフォルト（PC用）の高さ
-
-//         if (window.innerWidth < 768) {
-//           headerHeight = 0; // スマホ（画面幅768px未満）の時の高さ
-//         }
-//         // ---------------------------------------
-//         const targetPosition =
-//           target.getBoundingClientRect().top +
-//           window.pageYOffset -
-//           headerHeight;
-
-//         // スクロール実行
-//         window.scrollTo({
-//           top: targetPosition,
-//           behavior: "smooth",
-//         });
-//       }
-//     }
-//   });
-// });
-
-// --- 14. 永代合同墓ページコンテンツ切り替え 直接表示バージョン ---
 window.addEventListener("DOMContentLoaded", () => {
-  const hash = window.location.hash;
+  // ページ完全に読み込み後に実行（要素の高さ計算を正確にするため）
+  window.addEventListener("load", () => {
+    // URLのハッシュを取得
+    const hash = window.location.hash;
 
-  if (hash === "#content-2-sec9") {
-    // 1. タブの切り替えを即座に実行
-    const btn1 = document.querySelector(".page-s-perpetual-care__btn.btn-1");
-    const btn2 = document.querySelector(".page-s-perpetual-care__btn.btn-2");
-    const content1 = document.getElementById("content-1");
-    const content2 = document.getElementById("content-2");
+    // ハッシュが「#content-2-sec9」だった場合
+    if (hash === "#content-2-sec9") {
+      // 1. タブボタンの切り替え
+      const btn1 = document.querySelector(".page-s-perpetual-care__btn.btn-1");
+      const btn2 = document.querySelector(".page-s-perpetual-care__btn.btn-2");
+      if (btn1) btn1.classList.remove("is-active");
+      if (btn2) btn2.classList.add("is-active");
 
-    if (btn1) btn1.classList.remove("is-active");
-    if (btn2) btn2.classList.add("is-active");
-    if (content1) content1.classList.remove("is-active");
-    if (content2) content2.classList.add("is-active");
+      // 2. コンテンツエリアの切り替え
+      const content1 = document.getElementById("content-1");
+      const content2 = document.getElementById("content-2");
+      if (content1) content1.classList.remove("is-active");
+      if (content2) content2.classList.add("is-active");
 
-    // 2. ページ読み込み完了を待たずに、位置を計算して「瞬間移動」
-    const target = document.getElementById("sec-surrogate");
-    if (target) {
-      // ヘッダーの高さを考慮
-      // --- ここでPCとSPのヘッダー高さを分岐 ---
-      let headerHeight = 100; // デフォルト（PC用）の高さ
+      // 3. セクション9（id="sec-surrogate"）へのスムーススクロール
+      const target = document.getElementById("sec-surrogate");
+      if (target) {
+        // ヘッダーが固定（追従）の場合は、その高さ分（例: 100px）をここで調整
+        // --- ここでPCとSPのヘッダー高さを分岐 ---
+        let headerHeight = 100; // デフォルト（PC用）の高さ
 
-      if (window.innerWidth < 768) {
-        headerHeight = 0; // スマホ（画面幅768px未満）の時の高さ
+        if (window.innerWidth < 768) {
+          headerHeight = 0; // スマホ（画面幅768px未満）の時の高さ
+        }
+        // ---------------------------------------
+        const targetPosition =
+          target.getBoundingClientRect().top +
+          window.pageYOffset -
+          headerHeight;
+
+        // スクロール実行
+        window.scrollTo({
+          top: targetPosition,
+          behavior: "smooth",
+        });
       }
-      // ---------------------------------------
-      const targetPosition =
-        target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
-
-      // behaviorを指定しない（または 'auto'）にすることで、スクロールアニメなしで移動
-      window.scrollTo({
-        top: targetPosition,
-        behavior: "auto",
-      });
     }
-  }
-});
-
-// 念のため、画像などが読み込まれて高さが変わった後にもう一度位置を補正（より確実にする場合）
-window.addEventListener("load", () => {
-  if (window.location.hash === "#content-2-sec9") {
-    const target = document.getElementById("sec-surrogate");
-    if (target) {
-      // --- ここでPCとSPのヘッダー高さを分岐 ---
-      let headerHeight = 100; // デフォルト（PC用）の高さ
-
-      if (window.innerWidth < 768) {
-        headerHeight = 0; // スマホ（画面幅768px未満）の時の高さ
-      }
-      // ---------------------------------------
-      const targetPosition =
-        target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
-      window.scrollTo(0, targetPosition);
-    }
-  }
+  });
 });
