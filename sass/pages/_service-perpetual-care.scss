@@ -934,10 +934,15 @@
     &--8 {
       .page-s-perpetual-care {
         &__inner {
-          padding-top: 100px;
+          padding-top: 50px;
           text-align: center;
+          max-width: 500px;
 
+          @include b.mq(tb) {
+            max-width: none;
+          }
           @include b.mq(pc) {
+            padding-top: 100px;
           }
         }
 
@@ -951,67 +956,268 @@
           &--sub {
             color: b.$sub-color-dark;
             font-size: 20px;
+            margin-top: 60px; // 上のcards--1との間に余白を追加
 
             @include b.mq(pc) {
               font-size: 24px;
+              margin-top: 100px;
             }
           }
         }
 
+        // 共通のカードコンテナのベース設定
         &__cards {
-          margin-top: 33px;
+          margin-top: 24px;
           margin-inline: auto;
           width: 100%;
-          max-width: 350px;
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          gap: 50px;
 
           @include b.mq(tb) {
-            max-width: 920px; // (440px * 2) + gap(40px) で、2枚並んだ時の最大幅に固定
-
-            flex-direction: row; // PCは横並び
-            flex-wrap: wrap; // 3枚目が入り切らない時に折り返す
-            gap: 20px;
+            flex-direction: row;
+            flex-wrap: wrap;
           }
 
           @include b.mq(pc) {
             margin-top: 40px;
-            gap: 6.771vw;
-            gap: clamp(0px, 6.771vw, 75px);
+          }
+
+          // 【新設】追加コンテンツ（來迎寺・大善寺など）用のコンテナ
+          &.cards--1 {
+            max-width: 500px;
+            gap: 80px;
+
+            @include b.mq(tb) {
+              max-width: 920px; // 2枚綺麗に並ぶ幅
+              display: flex;
+              align-items: start;
+
+              gap: clamp(20px, 4.167vw, 40px);
+            }
+
+            @include b.mq(pc) {
+              gap: clamp(40px, 4.167vw, 100px);
+            }
+
+            // cards--1 の中のカード固有スタイル
+            .page-s-perpetual-care__card {
+              background: b.$sub-color-light;
+              max-width: 500px;
+
+              @include b.mq(pc) {
+                max-width: 350px;
+              }
+
+              // 住所テキスト
+              .page-s-perpetual-care__cards--txt {
+                font-size: 16px;
+                margin-top: 18px;
+                line-height: 1.8;
+                color: b.$text-color-dark;
+              }
+            }
+          }
+
+          // 【新設】そのほかご紹介（住吉区・生駒郡など）用のコンテナ
+          &.cards--2 {
+            max-width: 350px;
+            gap: 50px;
+
+            @include b.mq(tb) {
+              max-width: 920px;
+              gap: 20px;
+            }
+
+            @include b.mq(pc) {
+              gap: clamp(0px, 6.771vw, 75px);
+            }
+
+            // cards--2 の中のカードは背景をつけてシンプルに
+            .page-s-perpetual-care__card {
+              background: b.$sub-color-light;
+              max-width: 350px;
+            }
           }
         }
 
+        // カード単体の共通要素
         &__card {
-          width: 100%; // 親のグリッド幅いっぱいに広がる
-          background: b.$sub-color-light;
-          max-width: 350px;
+          width: 100%;
+          text-align: center;
 
-          @include b.mq(pc) {
+          @include b.mq(tb) {
+            max-width: 390px;
+            margin-bottom: 20px;
           }
 
+          // 来迎寺・大善寺の特別な大きいタイトル
+          &--ttl {
+            background: b.$main-color;
+            color: b.$text-color-white;
+            font-size: 32px;
+            font-weight: 400;
+            width: 100%;
+            max-width: 390px;
+            height: 50px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-inline: auto;
+
+            @include b.mq(pc) {
+              font-size: 28px;
+            }
+          }
+
+          // 下部の住吉区・生駒郡などの通常タイトル
           &-ttl {
             text-align: center;
             color: b.$text-color-dark;
             line-height: 1.8;
             font-size: 24px;
           }
+
+          // 画像エリア
           &-img {
-            margin-top: 30px;
-            width: 350px;
-            height: 230px;
+            margin-top: 20px;
+            width: 100%;
+            max-width: 500px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px; // 2枚の画像が並んだ時のすき間
+            justify-content: center;
             margin-inline: auto;
+
+            @include b.mq(pc) {
+              max-width: 350px; // 2枚綺麗に並ぶ幅
+            }
 
             img {
               width: 100%;
-              height: 100%;
               object-fit: cover;
+            }
+
+            // 下部の住吉区などの1枚画像パターンの時の調整
+            &:not(:has(img:nth-child(2))) {
+              height: 230px;
+              img {
+                max-width: 100%;
+                height: 100%;
+              }
+            }
+          }
+
+          // 価格表示エリア（來迎寺・大善寺用）
+          &--price {
+            margin-top: 20px;
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            text-align: left;
+            background: b.$text-color-white; // 内側を白背景にして見やすく
+            width: fit-content;
+            margin-inline: auto;
+
+            img {
+              height: 54px;
+              width: auto;
+            }
+
+            .box {
+              display: flex;
+              flex-direction: column;
+              align-items: end;
+              justify-content: center;
+            }
+
+            p {
+              font-size: 20px;
+              line-height: 1.6;
+              margin: 0;
+              display: flex;
+            }
+
+            .main {
+              align-items: center;
+            }
+
+            .num {
+              font-size: 32px;
+              margin-left: 12px;
+            }
+
+            .unit {
+              padding-top: 4px;
+              margin-left: 3px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+              .tax {
+                font-size: 6px;
+                margin-bottom: -6px;
+              }
+
+              .yen {
+                font-size: 16px;
+              }
+            }
+
+            .sub {
+              font-size: 16px;
+            }
+
+            &--2 {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 8px;
+
+              .label {
+                font-size: 16px;
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+                small {
+                  font-size: 8px;
+                }
+              }
+
+              .value {
+                display: flex;
+                align-items: center;
+              }
+
+              .num {
+                font-size: 32px;
+              }
+
+              .unit {
+                padding-top: 4px;
+                margin-left: 3px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .tax {
+                  font-size: 6px;
+                }
+
+                .yen {
+                  margin-top: -6px;
+                  font-size: 16px;
+                }
+              }
             }
           }
         }
 
+        // 注意書きテキスト
         &__txt {
           margin-top: 50px;
           max-width: 420px;
@@ -1020,7 +1226,6 @@
 
           @include b.mq(pc) {
             margin-top: 36px;
-            // max-width: 480px;
             max-width: 705px;
           }
 
@@ -1037,9 +1242,7 @@
         }
       }
     }
-
     // セクション８-------------------------------------------------------
-
     // セクション9-------------------------------------------------------
     &--9 {
       .page-s-perpetual-care {

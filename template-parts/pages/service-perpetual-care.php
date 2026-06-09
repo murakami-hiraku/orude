@@ -278,13 +278,91 @@
     </section>
     <!-- セクション7ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
 
+
     <!-- セクション8ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
 
     <section class="page-s-perpetual-care__section page-s-perpetual-care__section--8 section fadein ">
       <div class="page-s-perpetual-care__inner inner">
-        <h2 class="page-s-perpetual-care__ttl">ご紹介できる永代合同墓</h2>
+        <!-- 追加コンテンツーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
+        <h2 class="page-s-perpetual-care__ttl">
+          ご紹介できる永代合同墓
+        </h2>
 
-        <div class="page-s-perpetual-care__cards">
+        <div class="page-s-perpetual-care__cards cards--1">
+
+          <div class="page-s-perpetual-care__card card-1">
+            <h2 class="page-s-perpetual-care__card--ttl">來迎寺</h2>
+            <p class="page-s-perpetual-care__cards--txt">〒543-0001 大阪市天王寺区上本町8-4-7</p>
+            <div class="page-s-perpetual-care__card-img">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/page-perpetual/perpetual-sec8-5.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/page-perpetual/perpetual-sec8-6.png" alt="">
+            </div>
+
+            <div class="page-s-perpetual-care__card--price">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/common/dog-icon.png" alt="">
+
+              <div class="box">
+                <p class="main">納骨料1体
+                  <span class="num">7,000</span>
+                  <span class="unit">
+                    <small class="tax">(税込)</small>
+                    <small class="yen">円</small></span>
+                </p>
+                <p class="sub">納骨法要を行う場合別途1万円</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="page-s-perpetual-care__card card-2">
+            <h2 class="page-s-perpetual-care__card--ttl">大善寺</h2>
+            <p class="page-s-perpetual-care__cards--txt">〒543-0017 大阪市天王寺区城南寺町8-26</p>
+
+            <div class="page-s-perpetual-care__card-img">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/page-perpetual/perpetual-sec8-7.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/page-perpetual/perpetual-sec8-8.png" alt="">
+            </div>
+
+
+            <div class="page-s-perpetual-care__card--prices">
+              <div class="page-s-perpetual-care__card--price">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/common/cat-icon.png" alt="">
+
+                <div class="box">
+                  <p class="main">納骨料1体
+                    <span class="num">7,000</span>
+                    <span class="unit">
+                      <small class="tax">(税込)</small>
+                      <small class="yen">円</small></span>
+                  </p>
+                  <p class="sub">納骨法要を行う場合別途1万円</p>
+                </div>
+              </div>
+
+              <div class="page-s-perpetual-care__card--price--2">
+
+                <div class="label">
+                  <p>ステンレスプレート</p><small>お名前を彫刻いたします</small>
+                </div>
+
+                <div class="value">
+                  <span class="num">16,500</span>
+                  <span class="unit">
+                    <small class="tax">(税込)</small>
+                    <small class="yen">円</small>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- 追加コンテンツーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーフ -->
+
+        <h2 class="page-s-perpetual-care__ttl--sub">
+          そのほかご紹介できる<br>
+          永代合同墓ございます
+        </h2>
+        <div class="page-s-perpetual-care__cards cards--2">
 
           <div class="page-s-perpetual-care__card card-1">
             <h2 class="page-s-perpetual-care__card-ttl">大阪市住吉区</h2>
@@ -328,7 +406,8 @@
 
     <!-- セクション9ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
 
-    <section class="page-s-perpetual-care__section page-s-perpetual-care__section--9 section fadein ">
+    <section id="sec-surrogate"
+      class="page-s-perpetual-care__section page-s-perpetual-care__section--9 section fadein ">
       <div class="page-s-perpetual-care__inner inner">
         <h2 class="page-s-perpetual-care__ttl">
           納骨代行<br>
