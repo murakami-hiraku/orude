@@ -499,10 +499,6 @@
             left: 50%;
             transform: translate(-50%, -50%);
           }
-
-          // ホバー時の演出
-          &:hover {
-          }
         }
 
         .swiper-button-icon {
@@ -692,12 +688,6 @@
       }
 
       .page-s-perpetual-care {
-        &__inner {
-        }
-
-        &__ttl {
-        }
-
         &__txt {
           margin-top: 15px;
           line-height: 2;
