@@ -1099,15 +1099,6 @@
               width: 100%;
               object-fit: cover;
             }
-
-            // 下部の住吉区などの1枚画像パターンの時の調整
-            &:not(:has(img:nth-child(2))) {
-              height: 230px;
-              img {
-                max-width: 100%;
-                height: 100%;
-              }
-            }
           }
 
           // 価格表示エリア（來迎寺・大善寺用）
@@ -1213,6 +1204,36 @@
                   font-size: 16px;
                 }
               }
+            }
+          }
+        }
+
+        &.cards--1 {
+          // cards--1 の中の画像エリア（2枚横並び、または縦並び用）
+          .page-s-perpetual-care__card-img {
+            max-width: 500px;
+            flex-direction: column; // スマホは縦並び（HTMLがflexなので一応指定）
+
+            @include b.mq(pc) {
+              max-width: 350px;
+              flex-direction: row; // PCで横並びにするならここをrowに
+            }
+
+            img {
+              // 2枚並ぶので高さは固定せず、アスペクト比で保つと潰れません
+              aspect-ratio: 3 / 2;
+            }
+          }
+        }
+
+        &.cards--2 {
+          // cards--2 の中の画像エリア（1枚のみパターン）
+          .page-s-perpetual-care__card-img {
+            height: 230px; // 1枚画像の時だけ高さを230pxに固定
+
+            img {
+              max-width: 100%;
+              height: 100%;
             }
           }
         }
