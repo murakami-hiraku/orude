@@ -5,14 +5,14 @@
 <main class="page-s-perpetual-care">
   <?php
   get_template_part('template-parts/block/block-page-ttl')
-    ?>
+  ?>
 
   <!-- セクション１ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
   <section class="page-s-perpetual-care__section page-s-perpetual-care__section--1 section fadein ">
     <div class="page-s-perpetual-care__inner inner">
       <?php
       get_template_part('/template-parts/parts/parts-bg-circle')
-        ?>
+      ?>
       <div class="page-s-perpetual-care__container">
         <div class="page-s-perpetual-care__box">
           <h2 class="page-s-perpetual-care__ttl">愛するペットは家族同様の存在であり、その絆は命を超えても続きます。</h2>
@@ -118,7 +118,7 @@
       <div class="page-s-perpetual-care__inner inner">
         <?php
         get_template_part('/template-parts/parts/parts-bg-flower--right')
-          ?>
+        ?>
         <h2 class="page-s-perpetual-care__ttl">ご利用の流れ</h2>
 
         <div class="page-s-perpetual-care__cards">
@@ -179,7 +179,7 @@
         </div>
         <?php
         get_template_part('/template-parts/parts/parts-bg-flower--left')
-          ?>
+        ?>
       </div>
 
     </section>
@@ -329,7 +329,7 @@
 
                 <div class="box">
                   <p class="main">納骨料1体
-                    <span class="num">7,000</span>
+                    <span class="num">20,000</span>
                     <span class="unit">
                       <small class="tax">(税込)</small>
                       <small class="yen">円</small></span>
@@ -420,7 +420,7 @@
           </div>
 
           <div class="page-s-perpetual-care__card-txt">
-            <p>ご自宅に保管されているペットちゃんのご遺骨を、スタッフがお伺いして丁寧にお預かりし、ご希望の霊園・寺院へ納骨いたします。他社様で火葬されたご遺骨もお引き受け可能です。<br>
+            <p>ご自宅に保管されているペットちゃんのご遺骨を、スタッフがお伺いして丁寧にお預かりし、当社提携の霊園・寺院へ納骨いたします。他社様で火葬されたご遺骨もお引き受け可能です。<br>
               <br>
               「そろそろ納骨を考えているけれど、霊園まで行くのが難しい」<br>
               「納骨先が見つからない」<br>
