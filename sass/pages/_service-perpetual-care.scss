@@ -762,7 +762,7 @@
             font-size: 20px;
             margin-bottom: 10px;
 
-            // この要素だけ、1000pxで横並びに変える！
+            // この要素だけ、1000pxで横並びに変える
             @media (min-width: 550px) {
               white-space: nowrap;
               flex-direction: row;
