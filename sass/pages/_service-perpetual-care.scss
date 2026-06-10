@@ -284,9 +284,6 @@
       }
 
       .page-s-perpetual-care {
-        &__inner {
-        }
-
         &__ttl {
           br {
             @include b.mq(pc) {
@@ -359,12 +356,6 @@
       }
 
       .page-s-perpetual-care {
-        &__inner {
-        }
-
-        &__ttl {
-        }
-
         &__container {
           @include b.mq(pc) {
             margin-top: 50px;
