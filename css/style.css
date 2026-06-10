@@ -6080,7 +6080,9 @@ main {
 .page-s-perpetual-care__section--8 .page-s-perpetual-care__cards {
   margin-top: 24px;
   margin-inline: auto;
-  width: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6110,68 +6112,12 @@ main {
     margin-top: 40px;
   }
 }
-.page-s-perpetual-care__section--8 .page-s-perpetual-care__cards.cards--1 {
-  max-width: 500px;
-  gap: 80px;
-}
-@media (min-width: 768px) {
-  .page-s-perpetual-care__section--8 .page-s-perpetual-care__cards.cards--1 {
-    max-width: 920px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
-    gap: clamp(20px, 4.167vw, 40px);
-  }
-}
-@media (min-width: 1024px) {
-  .page-s-perpetual-care__section--8 .page-s-perpetual-care__cards.cards--1 {
-    gap: clamp(40px, 4.167vw, 100px);
-  }
-}
-.page-s-perpetual-care__section--8 .page-s-perpetual-care__cards.cards--1 .page-s-perpetual-care__card {
-  background: #fff;
-  max-width: 500px;
-}
-@media (min-width: 1024px) {
-  .page-s-perpetual-care__section--8 .page-s-perpetual-care__cards.cards--1 .page-s-perpetual-care__card {
-    max-width: 350px;
-  }
-}
-.page-s-perpetual-care__section--8 .page-s-perpetual-care__cards.cards--1 .page-s-perpetual-care__card .page-s-perpetual-care__cards--txt {
-  font-size: 16px;
-  margin-top: 18px;
-  line-height: 1.8;
-  color: #333333;
-}
-.page-s-perpetual-care__section--8 .page-s-perpetual-care__cards.cards--2 {
-  max-width: 350px;
-  gap: 50px;
-}
-@media (min-width: 768px) {
-  .page-s-perpetual-care__section--8 .page-s-perpetual-care__cards.cards--2 {
-    max-width: 920px;
-    gap: 20px;
-  }
-}
-@media (min-width: 1024px) {
-  .page-s-perpetual-care__section--8 .page-s-perpetual-care__cards.cards--2 {
-    gap: clamp(0px, 6.771vw, 75px);
-  }
-}
-.page-s-perpetual-care__section--8 .page-s-perpetual-care__cards.cards--2 .page-s-perpetual-care__card {
-  background: #fff;
-  max-width: 350px;
-}
 .page-s-perpetual-care__section--8 .page-s-perpetual-care__card {
   width: 100%;
   text-align: center;
 }
 @media (min-width: 768px) {
   .page-s-perpetual-care__section--8 .page-s-perpetual-care__card {
-    max-width: 390px;
     margin-bottom: 20px;
   }
 }
@@ -6230,8 +6176,10 @@ main {
 }
 .page-s-perpetual-care__section--8 .page-s-perpetual-care__card-img img {
   width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  aspect-ratio: 350/230;
 }
 .page-s-perpetual-care__section--8 .page-s-perpetual-care__card--price {
   margin-top: 20px;
@@ -6375,7 +6323,43 @@ main {
   margin-top: -6px;
   font-size: 16px;
 }
-.page-s-perpetual-care__section--8 .page-s-perpetual-care.cards--1 .page-s-perpetual-care__card-img {
+.page-s-perpetual-care__section--8 .page-s-perpetual-care__inner .cards--1 {
+  max-width: 500px;
+  gap: 80px;
+}
+@media (min-width: 768px) {
+  .page-s-perpetual-care__section--8 .page-s-perpetual-care__inner .cards--1 {
+    max-width: 920px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    gap: clamp(20px, 4.167vw, 40px);
+  }
+}
+@media (min-width: 1024px) {
+  .page-s-perpetual-care__section--8 .page-s-perpetual-care__inner .cards--1 {
+    gap: clamp(40px, 4.167vw, 60px);
+  }
+}
+.page-s-perpetual-care__section--8 .page-s-perpetual-care__inner .cards--1 .page-s-perpetual-care__card {
+  background: #fff;
+  max-width: 500px;
+}
+@media (min-width: 1024px) {
+  .page-s-perpetual-care__section--8 .page-s-perpetual-care__inner .cards--1 .page-s-perpetual-care__card {
+    max-width: 350px;
+  }
+}
+.page-s-perpetual-care__section--8 .page-s-perpetual-care__inner .cards--1 .page-s-perpetual-care__card .page-s-perpetual-care__cards--txt {
+  font-size: 16px;
+  margin-top: 18px;
+  line-height: 1.8;
+  color: #333333;
+}
+.page-s-perpetual-care__section--8 .page-s-perpetual-care__inner .cards--1 .page-s-perpetual-care__card-img {
   max-width: 500px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -6383,23 +6367,47 @@ main {
           flex-direction: column;
 }
 @media (min-width: 1024px) {
-  .page-s-perpetual-care__section--8 .page-s-perpetual-care.cards--1 .page-s-perpetual-care__card-img {
+  .page-s-perpetual-care__section--8 .page-s-perpetual-care__inner .cards--1 .page-s-perpetual-care__card-img {
     max-width: 350px;
+  }
+}
+.page-s-perpetual-care__section--8 .page-s-perpetual-care__inner .cards--2 {
+  max-width: 500px;
+}
+@media (min-width: 768px) {
+  .page-s-perpetual-care__section--8 .page-s-perpetual-care__inner .cards--2 {
+    max-width: 920px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    gap: clamp(0px, 6.771vw, 20px);
   }
 }
-.page-s-perpetual-care__section--8 .page-s-perpetual-care.cards--1 .page-s-perpetual-care__card-img img {
-  aspect-ratio: 3/2;
+@media (min-width: 1024px) {
+  .page-s-perpetual-care__section--8 .page-s-perpetual-care__inner .cards--2 {
+    gap: clamp(40px, 4.167vw, 60px);
+  }
 }
-.page-s-perpetual-care__section--8 .page-s-perpetual-care.cards--2 .page-s-perpetual-care__card-img {
-  height: 230px;
+.page-s-perpetual-care__section--8 .page-s-perpetual-care__inner .cards--2 .page-s-perpetual-care__card {
+  max-width: 500px;
+  gap: 50px;
 }
-.page-s-perpetual-care__section--8 .page-s-perpetual-care.cards--2 .page-s-perpetual-care__card-img img {
-  max-width: 100%;
-  height: 100%;
+@media (min-width: 768px) {
+  .page-s-perpetual-care__section--8 .page-s-perpetual-care__inner .cards--2 .page-s-perpetual-care__card {
+    max-width: 350px;
+    gap: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .page-s-perpetual-care__section--8 .page-s-perpetual-care__inner .cards--2 .page-s-perpetual-care__card-img {
+    max-height: 230px;
+  }
+}
+@media (min-width: 768px) {
+  .page-s-perpetual-care__section--8 .page-s-perpetual-care__inner .cards--2 .page-s-perpetual-care__card-img img {
+    max-height: 230px;
+  }
 }
 .page-s-perpetual-care__section--8 .page-s-perpetual-care__txt {
   margin-top: 50px;

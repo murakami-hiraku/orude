@@ -969,7 +969,7 @@
         &__cards {
           margin-top: 24px;
           margin-inline: auto;
-          width: 100%;
+          width: fit-content;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -983,63 +983,6 @@
           @include b.mq(pc) {
             margin-top: 40px;
           }
-
-          // 【新設】追加コンテンツ（來迎寺・大善寺など）用のコンテナ
-          &.cards--1 {
-            max-width: 500px;
-            gap: 80px;
-
-            @include b.mq(tb) {
-              max-width: 920px; // 2枚綺麗に並ぶ幅
-              display: flex;
-              align-items: start;
-
-              gap: clamp(20px, 4.167vw, 40px);
-            }
-
-            @include b.mq(pc) {
-              gap: clamp(40px, 4.167vw, 100px);
-            }
-
-            // cards--1 の中のカード固有スタイル
-            .page-s-perpetual-care__card {
-              background: b.$sub-color-light;
-              max-width: 500px;
-
-              @include b.mq(pc) {
-                max-width: 350px;
-              }
-
-              // 住所テキスト
-              .page-s-perpetual-care__cards--txt {
-                font-size: 16px;
-                margin-top: 18px;
-                line-height: 1.8;
-                color: b.$text-color-dark;
-              }
-            }
-          }
-
-          // 【新設】そのほかご紹介（住吉区・生駒郡など）用のコンテナ
-          &.cards--2 {
-            max-width: 350px;
-            gap: 50px;
-
-            @include b.mq(tb) {
-              max-width: 920px;
-              gap: 20px;
-            }
-
-            @include b.mq(pc) {
-              gap: clamp(0px, 6.771vw, 75px);
-            }
-
-            // cards--2 の中のカードは背景をつけてシンプルに
-            .page-s-perpetual-care__card {
-              background: b.$sub-color-light;
-              max-width: 350px;
-            }
-          }
         }
 
         // カード単体の共通要素
@@ -1048,7 +991,6 @@
           text-align: center;
 
           @include b.mq(tb) {
-            max-width: 390px;
             margin-bottom: 20px;
           }
 
@@ -1097,7 +1039,9 @@
 
             img {
               width: 100%;
+              height: 100%;
               object-fit: cover;
+              aspect-ratio: 350/ 230;
             }
           }
 
@@ -1208,32 +1152,85 @@
           }
         }
 
-        &.cards--1 {
-          // cards--1 の中の画像エリア（2枚横並び、または縦並び用）
-          .page-s-perpetual-care__card-img {
+        &__inner {
+          .cards--1 {
             max-width: 500px;
-            flex-direction: column; // スマホは縦並び（HTMLがflexなので一応指定）
+            gap: 80px;
+
+            @include b.mq(tb) {
+              max-width: 920px; // 2枚綺麗に並ぶ幅
+              display: flex;
+              align-items: start;
+
+              gap: clamp(20px, 4.167vw, 40px);
+            }
 
             @include b.mq(pc) {
-              max-width: 350px;
-              flex-direction: row; // PCで横並びにするならここをrowに
+              gap: clamp(40px, 4.167vw, 60px);
             }
 
-            img {
-              // 2枚並ぶので高さは固定せず、アスペクト比で保つと潰れません
-              aspect-ratio: 3 / 2;
+            .page-s-perpetual-care__card {
+              background: b.$sub-color-light;
+              max-width: 500px;
+
+              @include b.mq(pc) {
+                max-width: 350px;
+              }
+
+              // 住所テキスト
+              .page-s-perpetual-care__cards--txt {
+                font-size: 16px;
+                margin-top: 18px;
+                line-height: 1.8;
+                color: b.$text-color-dark;
+              }
+            }
+
+            // cards--1 の中の画像エリア（2枚横並び、または縦並び用）
+            .page-s-perpetual-care__card-img {
+              max-width: 500px;
+              flex-direction: column; // スマホは縦並び（HTMLがflexなので一応指定）
+
+              @include b.mq(pc) {
+                max-width: 350px;
+              }
             }
           }
-        }
 
-        &.cards--2 {
-          // cards--2 の中の画像エリア（1枚のみパターン）
-          .page-s-perpetual-care__card-img {
-            height: 230px; // 1枚画像の時だけ高さを230pxに固定
+          .cards--2 {
+            max-width: 500px;
 
-            img {
-              max-width: 100%;
-              height: 100%;
+            @include b.mq(tb) {
+              max-width: 920px;
+              flex-direction: row;
+              gap: clamp(0px, 6.771vw, 20px);
+            }
+
+            @include b.mq(pc) {
+              gap: clamp(40px, 4.167vw, 60px);
+            }
+
+            .page-s-perpetual-care__card {
+              max-width: 500px;
+              gap: 50px;
+
+              @include b.mq(tb) {
+                max-width: 350px;
+                gap: 20px;
+              }
+            }
+
+            // cards--2 の中の画像エリア（1枚のみパターン）
+            .page-s-perpetual-care__card-img {
+              @include b.mq(tb) {
+                max-height: 230px;
+              }
+
+              img {
+                @include b.mq(tb) {
+                  max-height: 230px;
+                }
+              }
             }
           }
         }
