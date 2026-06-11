@@ -14,7 +14,7 @@
         <p class="section-service__card-txt section-service__card-item">
           専用設計の火葬炉を備えた専用車でご自宅までお伺いし、ご家族だけで、静かにお見送りができる環境をご用意いたします。</p>
         <div class="section-service__img section-service__card-item"><img
-            src="<?php echo get_template_directory_uri(); ?>/img/front-page/service-img-1.png" alt=""></div>
+            src="<?php echo get_template_directory_uri(); ?>/img/front-page/service-img-1.webp" alt=""></div>
         <?php get_template_part('template-parts/parts/parts-btn', null, [
           'text' => 'サービスの詳細へ',
           'link' => '/service-cremation/',
@@ -23,11 +23,11 @@
       </div>
 
       <div class="section-service__card">
-        <h3 class="section-service__card-ttl section-service__card-item">ご葬儀・自宅葬</h3>
+        <h3 class="section-service__card-ttl section-service__card-item">自宅葬</h3>
         <p class="section-service__card-txt section-service__card-item">
           ご家族らしい、かたちにとらわれないお見送りをご提案いたします。<br>想いに寄り添いながらプロデュースいたします。<br>慣れ親しんだ場所でゆっくりとお別れの時間を過ごせます。</p>
         <div class="section-service__img section-service__card-item"><img
-            src="<?php echo get_template_directory_uri(); ?>/img/front-page/service-img-2.png" alt=""></div>
+            src="<?php echo get_template_directory_uri(); ?>/img/front-page/service-img-2.webp" alt=""></div>
         <?php get_template_part('template-parts/parts/parts-btn', null, [
           'text' => '自宅葬の詳細へ',
           'link' => '/service-ceremony/',
