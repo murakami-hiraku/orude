@@ -5,14 +5,14 @@
 <main class="page-s-perpetual-care">
   <?php
   get_template_part('template-parts/block/block-page-ttl')
-  ?>
+    ?>
 
   <!-- セクション１ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
   <section class="page-s-perpetual-care__section page-s-perpetual-care__section--1 section fadein ">
     <div class="page-s-perpetual-care__inner inner">
       <?php
       get_template_part('/template-parts/parts/parts-bg-circle')
-      ?>
+        ?>
       <div class="page-s-perpetual-care__container">
         <div class="page-s-perpetual-care__box">
           <h2 class="page-s-perpetual-care__ttl">愛するペットは家族同様の存在であり、その絆は命を超えても続きます。</h2>
@@ -118,7 +118,7 @@
       <div class="page-s-perpetual-care__inner inner">
         <?php
         get_template_part('/template-parts/parts/parts-bg-flower--right')
-        ?>
+          ?>
         <h2 class="page-s-perpetual-care__ttl">ご利用の流れ</h2>
 
         <div class="page-s-perpetual-care__cards">
@@ -179,7 +179,7 @@
         </div>
         <?php
         get_template_part('/template-parts/parts/parts-bg-flower--left')
-        ?>
+          ?>
       </div>
 
     </section>
@@ -416,7 +416,7 @@
         <div class="page-s-perpetual-care__card">
 
           <div class="page-s-perpetual-care__card-img">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/page-perpetual/perpetual-sec9-1.png" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/page-perpetual/perpetual-sec9-1.webp" alt="">
           </div>
 
           <div class="page-s-perpetual-care__card-txt">
