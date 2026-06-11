@@ -1167,6 +1167,7 @@
 
           .cards--2 {
             max-width: 500px;
+            gap: 50px;
 
             @include b.mq(tb) {
               max-width: 920px;

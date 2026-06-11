@@ -6372,6 +6372,7 @@ main {
 }
 .page-s-perpetual-care__section--8 .page-s-perpetual-care__inner .cards--2 {
   max-width: 500px;
+  gap: 50px;
 }
 @media (min-width: 768px) {
   .page-s-perpetual-care__section--8 .page-s-perpetual-care__inner .cards--2 {
