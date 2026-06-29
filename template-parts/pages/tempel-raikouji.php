@@ -11,7 +11,8 @@
 
     <div class="tempel__inner inner">
       <?php
-      ?>
+      get_template_part('/template-parts/parts/parts-bg-circle')
+        ?>
       <div class="tempel__container">
         <h2 class="tempel__ttl">あの子が、ずっと安らげる場所へ。</h2>
         <p class="tempel__txt">
