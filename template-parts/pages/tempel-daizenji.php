@@ -7,7 +7,8 @@
   get_template_part('template-parts/block/block-page-ttl');
   ?>
 
-  <section class="raikouji section fadein">
+  <section class="tempel daizenji section fadein">
+
 
 
 

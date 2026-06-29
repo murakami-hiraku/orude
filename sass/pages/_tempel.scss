@@ -2,6 +2,52 @@
 @use "../foundation/base" as b;
 
 .page-tempel {
+  .tempel {
+    &__inner {
+      padding-top: 50px;
+
+      @include b.mq(tb) {
+        padding-top: 100px;
+      }
+    }
+
+    &__container {
+      max-width: 550px;
+      width: 100%;
+      margin-inline: auto;
+
+      @include b.mq(pc) {
+        max-width: 1080px;
+      }
+    }
+
+    &__ttl {
+      font-weight: 900;
+      color: b.$main-color;
+      font-size: 20px;
+      text-align: center;
+
+      @include b.mq(pc) {
+        font-size: 40px;
+      }
+    }
+    &__txt {
+      margin-top: 20px;
+      font-size: 16px;
+      text-align: center;
+      line-height: 1.8;
+
+      &--sub {
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.8;
+      }
+
+      @include b.mq(pc) {
+        font-size: 24px;
+      }
+    }
+  }
   .raikouji {
   }
 

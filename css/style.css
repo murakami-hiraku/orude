@@ -2920,6 +2920,51 @@ main {
   }
 }
 
+.page-tempel .tempel__inner {
+  padding-top: 50px;
+}
+@media (min-width: 768px) {
+  .page-tempel .tempel__inner {
+    padding-top: 100px;
+  }
+}
+.page-tempel .tempel__container {
+  max-width: 550px;
+  width: 100%;
+  margin-inline: auto;
+}
+@media (min-width: 1024px) {
+  .page-tempel .tempel__container {
+    max-width: 1080px;
+  }
+}
+.page-tempel .tempel__ttl {
+  font-weight: 900;
+  color: #907910;
+  font-size: 20px;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .page-tempel .tempel__ttl {
+    font-size: 40px;
+  }
+}
+.page-tempel .tempel__txt {
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.8;
+}
+.page-tempel .tempel__txt--sub {
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.8;
+}
+@media (min-width: 1024px) {
+  .page-tempel .tempel__txt {
+    font-size: 24px;
+  }
+}
 .single__inner {
   padding-top: 30px;
   padding-bottom: 20px;
