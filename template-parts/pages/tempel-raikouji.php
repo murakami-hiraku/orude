@@ -22,9 +22,11 @@
       </div>
 
       <div class="tempel__cards">
-        <div class="tempel__card">
+
+        <div class="tempel__card card-1">
           <h2 class="tempel__card-ttl">本堂葬儀</h2>
-          <div class="tempel__card-img"><img src="<?php echo get_template_directory_uri(); ?>/img/" alt=""></div>
+          <div class="tempel__card-img"><img
+              src="<?php echo get_template_directory_uri(); ?>/img/page-tempel/raikouji-1.png" alt=""></div>
           <p class="tempel__card-lead">本堂での僧侶によるご葬儀から火葬まで含めたプランになります。お骨上げに関しては、ご家族様にお選びいただけます。</p>
           <div class="tempel__card-head">
 
@@ -90,7 +92,52 @@
             詳しくは、お問い合わせください。</p>
           </p>
         </div>
+
+        <div class="tempel__card card-2">
+          <h2 class="tempel__card-ttl">ペット永代納骨墓</h2>
+          <div class="tempel__card-img"><img
+              src="<?php echo get_template_directory_uri(); ?>/img/page-tempel/raikouji-2.png" alt=""></div>
+          <p class="tempel__card-lead">本堂での僧侶によるご葬儀から火葬まで含めたプランになります。お骨上げに関しては、ご家族様にお選びいただけます。</p>
+          <div class="tempel__card-head">
+
+            <div class="box">
+              <div class="img"> <img src="<?php echo get_template_directory_uri(); ?>/img/common/cat-dog-icon.png"
+                  alt="">
+              </div>
+              <div class="txt">
+                <div class="main">
+                  <p>納骨料１体
+                    <span class="num">7,000</span>
+                    <span class="unit">
+                      <small class="tax">(税込)</small>
+                      <small class="yen">円</small>
+                    </span>
+                  </p>
+                </div>
+                <p class="sub">納骨法要を行う場合別途１万円</p>
+              </div>
+            </div>
+            <p class="notes">他社様で火葬されたご遺骨でもご納骨可能です。</p>
+          </div>
+
+          <div class="tempel__card-body">
+            <div class="ttl">
+              <p>ご葬儀料金</p>
+            </div>
+            <p class="txt">
+              ご自宅に保管されているペットちゃんのご遺骨をスタッフがお伺いして丁寧にお預かりし、来迎寺ペット永代供養墓へご納骨いたします。<br>
+              他社様で火葬されたご遺骨もお引き受け可能です。
+            </p>
+            <div class="line"></div>
+            <p class="notes">※すべて完全予約制になっております。<br>
+              日程は、ご相談ください。<br>
+              直接お寺にお越しになられることは、<br>
+              ご遠慮ください。</p>
+          </div>
+        </div>
+
       </div>
+    </div>
     </div>
 
 
