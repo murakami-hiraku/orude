@@ -47,6 +47,337 @@
         font-size: 24px;
       }
     }
+
+    &__cards {
+      margin-top: 52px;
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      align-items: center;
+      justify-content: center;
+
+      @include b.mq(pc) {
+        flex-direction: row;
+        gap: 90px;
+        align-items: start;
+      }
+    }
+
+    &__card {
+      max-width: 550px;
+      margin: 0 auto;
+
+      @include b.mq(pc) {
+        max-width: 390px;
+        margin: 0;
+      }
+      &-ttl {
+        color: b.$main-color;
+        font-size: 32px;
+        text-align: center;
+      }
+
+      &-img {
+        margin-top: 34px;
+      }
+
+      &-lead {
+        margin-top: 16px;
+        font-size: 20px;
+      }
+
+      &-head {
+        margin-top: 42px;
+
+        .box {
+          display: flex;
+          gap: 16px;
+          align-items: center;
+          justify-content: center;
+        }
+        .container {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .txt {
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+          align-items: start;
+        }
+
+        .txt-daizenji {
+          width: 100%;
+          max-width: 390px;
+          margin: 0 auto;
+          flex-direction: row;
+          justify-content: space-between;
+          margin-top: 24px;
+
+          &:nth-child(2) {
+            justify-content: end;
+            gap: 20px;
+          }
+        }
+
+        .img {
+          width: 66px;
+        }
+
+        .group {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .ttl-daizenji {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          p {
+            font-size: 20px;
+            line-height: 1;
+
+            &:nth-child(2) {
+              font-size: 12px;
+            }
+          }
+        }
+
+        .price-daizenji {
+          display: flex;
+          gap: 4px;
+          align-items: center;
+
+          .num {
+            font-size: 34px;
+          }
+
+          .unit {
+            padding-top: 4px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .tax {
+              font-size: 6px;
+            }
+
+            .yen {
+            }
+          }
+        }
+
+        .main {
+          display: flex;
+          gap: 20px;
+          align-items: end;
+          justify-content: start;
+
+          p {
+            font-size: 20px;
+          }
+
+          div {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+          }
+
+          .num {
+            font-size: 34px;
+          }
+
+          .unit {
+            padding-top: 4px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .tax {
+              font-size: 6px;
+            }
+
+            .yen {
+            }
+          }
+        }
+
+        .notes {
+          letter-spacing: -0.02em;
+          margin-top: 24px;
+          text-align: center;
+        }
+
+        .example {
+          font-size: 20px;
+          color: b.$main-color;
+        }
+
+        .ex-txt {
+          .num {
+            font-size: 32px;
+          }
+        }
+      }
+
+      &-body {
+        margin-block: 24px;
+
+        .ttl {
+          color: b.$main-color;
+          font-size: 24px;
+          text-align: center;
+        }
+
+        .txt {
+          margin-top: 16px;
+        }
+
+        .line {
+          width: 100%;
+          height: 1px; /* 線の太さ */
+
+          /* 1色だけで、塗る範囲とスキマの範囲をハッキリ指定する */
+          background-image: repeating-linear-gradient(
+            to right,
+            b.$main-color 0px,
+            /* 0pxからスタート */ b.$main-color 6px,
+            /* 6pxまでべた塗り（線の長さ） */ rgba(0, 0, 0, 0) 6px,
+            /* ここから色を消す */ rgba(0, 0, 0, 0) 12px
+              /* 12pxまでスキマ（スキマの長さも6px） */
+          );
+        }
+
+        .line--3 {
+          margin-block: 24px;
+        }
+
+        .notes {
+          line-height: 1.8;
+        }
+
+        .price {
+          max-width: 300px;
+          margin-inline: auto;
+          margin-block: 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          p {
+            font-size: 20px;
+          }
+
+          div {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+          }
+
+          .num {
+            font-size: 34px;
+          }
+
+          .unit {
+            padding-top: 4px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .tax {
+              font-size: 6px;
+            }
+
+            .yen {
+            }
+          }
+        }
+
+        .price--1 {
+        }
+
+        .price--2 {
+          margin-top: 24px;
+        }
+
+        .total {
+          max-width: 360px;
+          margin-inline: auto;
+          margin-block: 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          p {
+            font-size: 36px;
+          }
+
+          div {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+          }
+
+          .num {
+            font-size: 48px;
+          }
+
+          .unit {
+            padding-top: 4px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .tax {
+              font-size: 6px;
+            }
+
+            .yen {
+            }
+          }
+        }
+      }
+
+      &-foot {
+        p {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 2px;
+
+          &:nth-child(2) {
+            margin-top: 16px;
+          }
+
+          .num {
+            font-size: 28px;
+          }
+
+          .unit {
+            padding-top: 4px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .tax {
+              font-size: 6px;
+            }
+
+            .yen {
+            }
+          }
+        }
+      }
+    }
   }
   .raikouji {
   }

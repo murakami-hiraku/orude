@@ -48,49 +48,51 @@
           </div>
 
           <div class="tempel__card-body">
-            <div class="line"></div>
-            <div class="price--1">
-              <p>ご葬儀料金
+            <div class="line line--1"></div>
+            <div class="price price--1">
+              <p>ご葬儀料金</p>
+              <div>
                 <span class="num">83,000</span>
                 <span class="unit">
                   <small class="tax">(税込)</small>
                   <small class="yen">円</small>
                 </span>
-              </p>
+              </div>
             </div>
-            <div class="price--2">
-              <p>火葬料金
+            <div class="price price--2">
+              <p>火葬料金</p>
+              <div>
                 <span class="num">31,900</span>
                 <span class="unit">
                   <small class="tax">(税込)</small>
                   <small class="yen">円</small>
                 </span>
-              </p>
+              </div>
             </div>
-            <div class="line"></div>
+            <div class="line line--2"></div>
             <div class="total">
-              <p>合計
+              <p>合計</p>
+              <div>
                 <span class="num">114,900</span>
                 <span class="unit">
                   <small class="tax">(税込)</small>
                   <small class="yen">円</small>
                 </span>
-              </p>
+              </div>
 
             </div>
           </div>
 
-          <p class="tempel__card-foot">
-          <p>ご家族でお骨上げをご希望の場合
-            <span class="num">3,300</span>
-            <span class="unit">
-              <small class="tax">(税込)</small>
-              <small class="yen">円</small>
-            </span>
-          </p>
-          <p>※火葬のみのプランもご案内できます。
-            詳しくは、お問い合わせください。</p>
-          </p>
+          <div class="tempel__card-foot">
+            <p>ご家族でお骨上げをご希望の場合
+              <span class="num">3,300</span>
+              <span class="unit">
+                <small class="tax">(税込)</small>
+                <small class="yen">円</small>
+              </span>
+            </p>
+            <p>※火葬のみのプランもご案内できます。<br>　詳しくは、お問い合わせください。</p>
+          </div>
         </div>
 
         <div class="tempel__card card-2">
@@ -106,13 +108,14 @@
               </div>
               <div class="txt">
                 <div class="main">
-                  <p>納骨料１体
+                  <p>納骨料１体</p>
+                  <div>
                     <span class="num">7,000</span>
                     <span class="unit">
                       <small class="tax">(税込)</small>
                       <small class="yen">円</small>
                     </span>
-                  </p>
+                  </div>
                 </div>
                 <p class="sub">納骨法要を行う場合別途１万円</p>
               </div>
@@ -121,18 +124,15 @@
           </div>
 
           <div class="tempel__card-body">
-            <div class="ttl">
-              <p>ご葬儀料金</p>
-            </div>
+            <h4 class="ttl">
+              納骨代行
+            </h4>
             <p class="txt">
               ご自宅に保管されているペットちゃんのご遺骨をスタッフがお伺いして丁寧にお預かりし、来迎寺ペット永代供養墓へご納骨いたします。<br>
               他社様で火葬されたご遺骨もお引き受け可能です。
             </p>
-            <div class="line"></div>
-            <p class="notes">※すべて完全予約制になっております。<br>
-              日程は、ご相談ください。<br>
-              直接お寺にお越しになられることは、<br>
-              ご遠慮ください。</p>
+            <div class="line line--3"></div>
+            <p class="notes">※すべて完全予約制になっております。<br>　日程は、ご相談ください。<br>　直接お寺にお越しになられることは、<br>　ご遠慮ください。</p>
           </div>
         </div>
 
