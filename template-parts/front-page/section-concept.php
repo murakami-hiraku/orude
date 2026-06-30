@@ -26,13 +26,13 @@
     </div>
   </div>
   <div class="section-concept__links inner">
-    <a href="/about" class="section-concept__link">
+    <a href="/tempel-raikouji" class="section-concept__link">
       <div>
         <img src="<?php echo get_template_directory_uri(); ?>/img/common/c-tempel-raikouji.png" alt="" class="right">
       </div>
       <h4>來迎寺でのペット葬儀　詳しくはこちら</h4>
     </a>
-    <a href="/about" class="section-concept__link">
+    <a href="/tempel-daizenji" class="section-concept__link">
       <div>
         <img src="<?php echo get_template_directory_uri(); ?>/img/common/c-tempel-daizenji.png" alt="" class="right">
       </div>
