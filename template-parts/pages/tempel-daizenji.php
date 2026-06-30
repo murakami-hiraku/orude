@@ -99,7 +99,6 @@
           <h2 class="tempel__card-ttl">ペット永代納骨墓</h2>
           <div class="tempel__card-img"><img
               src="<?php echo get_template_directory_uri(); ?>/img/page-tempel/daizenji-2.png" alt=""></div>
-          <p class="tempel__card-lead">本堂での僧侶によるご葬儀から火葬まで含めたプランになります。お骨上げに関しては、ご家族様にお選びいただけます。</p>
           <div class="tempel__card-head">
 
             <div class="box">
