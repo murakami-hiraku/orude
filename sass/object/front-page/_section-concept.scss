@@ -156,17 +156,27 @@
   }
 
   &__links {
+    margin-top: 120px;
+
+    @include b.mq(pc) {
+      margin-top: 160px;
+    }
+
+    .section-concept__ttl {
+      text-align: center;
+    }
+  }
+
+  &__links-inner {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 25px;
-    margin-top: 24px;
     flex-direction: column;
 
     @include b.mq(tb) {
       flex-direction: row;
       gap: 60px;
-      margin-top: 48px;
     }
 
     @include b.mq(pc) {

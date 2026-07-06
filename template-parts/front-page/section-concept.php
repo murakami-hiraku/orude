@@ -25,19 +25,23 @@
       <img src="<?php echo get_template_directory_uri(); ?>/img/front-page/concept-img-right.png" alt="" class="right">
     </div>
   </div>
-  <div class="section-concept__links inner">
-    <a href="/tempel-raikouji" class="section-concept__link">
-      <div>
-        <img src="<?php echo get_template_directory_uri(); ?>/img/common/c-tempel-raikouji.png" alt="" class="right">
-      </div>
-      <h4>來迎寺でのペット葬儀　詳しくはこちら</h4>
-    </a>
-    <a href="/tempel-daizenji" class="section-concept__link">
-      <div>
-        <img src="<?php echo get_template_directory_uri(); ?>/img/common/c-tempel-daizenji.png" alt="" class="right">
-      </div>
-      <h4>大善寺でのペット葬儀　詳しくはこちら</h4>
-    </a>
+  <div class="section-concept__links fadein">
+    <h2 class="section-concept__ttl">天王寺区でのペット葬儀</h2>
+
+    <div class="section-concept__links-inner inner">
+      <a href="/tempel-raikouji" class="section-concept__link">
+        <div>
+          <img src="<?php echo get_template_directory_uri(); ?>/img/common/c-tempel-raikouji.png" alt="" class="right">
+        </div>
+        <h4>來迎寺でのペット葬儀　詳しくはこちら</h4>
+      </a>
+      <a href="/tempel-daizenji" class="section-concept__link">
+        <div>
+          <img src="<?php echo get_template_directory_uri(); ?>/img/common/c-tempel-daizenji.png" alt="" class="right">
+        </div>
+        <h4>大善寺でのペット葬儀　詳しくはこちら</h4>
+      </a>
+    </div>
   </div>
 </section>
 <!-- /私たちの想い（concept） -->
