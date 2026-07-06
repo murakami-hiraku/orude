@@ -9,10 +9,14 @@
 
   <section class="tempel raikouji section fadein">
 
+    <h2 class="tempel__ttl--main">來迎寺</h2>
+    <p class="tempel__add">〒543-0001 大阪市天王寺区上本町8-4-7</p>
+
     <div class="tempel__inner inner">
+
       <?php
       get_template_part('/template-parts/parts/parts-bg-circle')
-        ?>
+      ?>
       <div class="tempel__container">
         <h2 class="tempel__ttl">あの子が、ずっと安らげる場所へ。</h2>
         <p class="tempel__txt">

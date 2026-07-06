@@ -9,10 +9,14 @@
 
   <section class="tempel daizenji section fadein">
 
+    <h2 class="tempel__ttl--main">大善寺</h2>
+    <p class="tempel__add">〒543-0017 大阪市天王寺区城南寺町8-26</p>
+
     <div class="tempel__inner inner">
+
       <?php
       get_template_part('/template-parts/parts/parts-bg-circle')
-        ?>
+      ?>
       <div class="tempel__container">
         <h2 class="tempel__ttl">あの子が、ずっと安らげる場所へ。</h2>
         <p class="tempel__txt">

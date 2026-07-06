@@ -30,7 +30,26 @@
       @include b.mq(pc) {
         font-size: 40px;
       }
+
+      &--main {
+        font-size: 32px;
+        color: b.$main-color;
+        text-align: center;
+
+        @include b.mq(pc) {
+          font-size: 64px;
+        }
+      }
     }
+
+    &__add {
+      text-align: center;
+
+      @include b.mq(pc) {
+        font-size: 24px;
+      }
+    }
+
     &__txt {
       margin-top: 20px;
       font-size: 16px;

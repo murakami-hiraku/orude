@@ -3030,6 +3030,24 @@ main {
     font-size: 40px;
   }
 }
+.page-tempel .tempel__ttl--main {
+  font-size: 32px;
+  color: #907910;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .page-tempel .tempel__ttl--main {
+    font-size: 64px;
+  }
+}
+.page-tempel .tempel__add {
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .page-tempel .tempel__add {
+    font-size: 24px;
+  }
+}
 .page-tempel .tempel__txt {
   margin-top: 20px;
   font-size: 16px;
