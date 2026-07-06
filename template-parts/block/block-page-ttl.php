@@ -13,8 +13,10 @@ if (is_404()) {
   $page_title = 'お問い合わせありがとうございます。';
 } else {
   $acf_title = get_field('display_title');
-  if ($acf_title) {
-    // 【重要】テキストエリアの改行を <br> に変換する
+  // 入力値の前後の空白を削除し、小文字に統一して判定（「none」「None」「none 」対策）
+  if ($acf_title && strtolower(trim($acf_title)) === 'none') {
+    $page_title = ''; // 文字を非表示（空）にする
+  } elseif ($acf_title) {    // 【重要】テキストエリアの改行を <br> に変換する
     // esc_htmlで安全を確保してから nl2br で改行を入れる
     $page_title = nl2br(esc_html($acf_title));
   } else {
