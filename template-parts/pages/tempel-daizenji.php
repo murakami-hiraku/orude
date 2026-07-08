@@ -16,7 +16,7 @@
 
       <?php
       get_template_part('/template-parts/parts/parts-bg-circle')
-      ?>
+        ?>
       <div class="tempel__container">
         <h2 class="tempel__ttl">あの子が、ずっと安らげる場所へ。</h2>
         <p class="tempel__txt">
@@ -160,8 +160,13 @@
 
       </div>
     </div>
-    </div>
 
+    <a href="https://osaka-daizenji.jp/" class="tempel__link">
+      <p class="tempel__link-txt">大善寺ホームページ</p>
+
+      <div class="tempel__link-img"><img
+          src="<?php echo get_template_directory_uri(); ?>/img/page-tempel/daizenji-3.png" alt=""></div>
+    </a>
 
   </section>
 
