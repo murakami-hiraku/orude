@@ -12,7 +12,7 @@
       <div class="page-company__container">
         <?php
         get_template_part('template-parts/parts/parts-bg-flower--right')
-        ?>
+          ?>
         <div class="page-company__box">
           <h2 class="page-company__ttl">会社概要</h2>
           <table class="page-company__table">
@@ -47,6 +47,14 @@
             <tr class="page-company__table-list">
               <th class="page-company__table-ttl">資本金</th>
               <td class="page-company__table-input">100万円</td>
+            </tr>
+            <tr class="page-company__table-list">
+              <th class="page-company__table-ttl">許可証</th>
+              <td class="page-company__table-input">堺市移動火葬業開始届出書<br>大阪市移動火葬車使用開始届出書</td>
+            </tr>
+            <tr class="page-company__table-list">
+              <th class="page-company__table-ttl">加盟団体</th>
+              <td class="page-company__table-input">ペット火葬協会</td>
             </tr>
           </table>
 
