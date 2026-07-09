@@ -32,7 +32,7 @@
     pointer-events: none; // 消えている間はクリックできないようにする
   }
 
-  @include b.mq(tb) {
+  @include b.mq(pc) {
     display: none;
   }
 
@@ -50,6 +50,7 @@
     background: b.$main-color;
     border: 1px solid #fff;
     pointer-events: auto; // ★ボタン自体はタップできるように戻す
+    max-width: 360px;
 
     &:first-child {
       // 50%幅のままで「両サイドに25%ずつの外余白」を作ることで中央に配置

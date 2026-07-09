@@ -19,7 +19,7 @@
 
         <div class="section-fv__scrollbar"></div>
 
-        <div class="section-fv__links">
+        <div class="section-fv__links ">
 
           <a class="section-fv__link cremation" href="<?php echo home_url('/service-cremation'); ?>">
             <p class="link-txt">
