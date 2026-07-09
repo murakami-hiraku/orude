@@ -24,12 +24,12 @@ $news_query = new WP_Query($args);
 
               <div class="section-news__content">
                 <span class="section-news__date"><?php echo get_the_date('Y.m.d'); ?></span>
-                <p class="section-news__text">
+                <p class="section-news__txt">
                   <?php
                   // 本文をプレーンテキストで取得
                   $content = wp_strip_all_tags(get_the_content());
                   // 40文字で切り捨てて、後ろに「...」を付与
-                  echo wp_html_excerpt($content, 40, '...');
+                  echo wp_html_excerpt($content, 38, '...');
                   ?>
                 </p>
               </div>

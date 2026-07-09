@@ -2,4 +2,152 @@
 @use "../../foundation/base" as b;
 
 .section-news {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: fit-content;
+  overflow: hidden;
+
+  @include b.mq(pc) {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    max-width: 1440px;
+    margin-inline: auto;
+  }
+
+  &__inner {
+    width: 100%;
+    margin: 0;
+
+    @include b.mq(pc) {
+      margin-right: auto;
+    }
+
+    @include b.mq(xl) {
+      margin-left: 74px;
+      padding: 0;
+    }
+  }
+
+  &__ttl {
+    font-weight: 900;
+    font-size: 20px;
+    color: b.$main-color;
+    text-align: center;
+
+    @include b.mq(tb) {
+    }
+
+    @include b.mq(pc) {
+      max-width: 772px;
+      padding-inline: 3.137vw;
+      text-align: left;
+      width: 60vw;
+      font-size: 40px;
+    }
+
+    @include b.mq(xl) {
+    }
+  }
+
+  &__list {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+
+    @include b.mq(tb) {
+    }
+
+    @include b.mq(pc) {
+      max-width: 840px;
+      width: 60vw;
+      margin: 0;
+      margin-right: auto;
+    }
+
+    @include b.mq(xl) {
+      max-width: none;
+    }
+  }
+
+  &__item {
+    border-bottom: 1px solid b.$main-color;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: fit-content;
+
+    @include b.mq(tb) {
+      padding-inline: 3.137vw;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding-block: 12px;
+
+      @include b.mq(pc) {
+        gap: 36px;
+      }
+    }
+  }
+
+  .item-thumb {
+    a {
+      gap: 24px;
+      padding-block: 24px;
+    }
+  }
+
+  &__thumb-img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    position: relative;
+    max-width: 100px;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -12px;
+      left: 12px;
+      width: 100%;
+      height: 100%;
+      background: b.$main-color;
+      z-index: -1;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__mark {
+    min-width: 12px;
+    width: 12px;
+    height: 12px;
+    background: b.$main-color;
+
+    @include b.mq(pc) {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__content {
+  }
+
+  &__date {
+    font-size: 14px;
+    color: b.$text-color-light;
+  }
+
+  &__txt {
+    font-size: 16px;
+    color: b.$text-color-dark;
+  }
 }

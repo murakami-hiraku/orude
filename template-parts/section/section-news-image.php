@@ -18,14 +18,15 @@ $news_query = new WP_Query($args);
       <ul class="section-news__list-thumb">
         <?php while ($news_query->have_posts()):
           $news_query->the_post(); ?>
-          <li class="section-news__item">
+          <li class="section-news__item item-thumb">
             <a href="<?php the_permalink(); ?>">
 
               <div class="section-news__thumb-wrap">
                 <div class="section-news__thumb-bg"></div>
                 <div class="section-news__thumb-img">
                   <?php if (has_post_thumbnail()): ?>
-                    <?php the_post_thumbnail('medium'); // 中サイズで取得 ?>
+                    <?php the_post_thumbnail('medium'); // 中サイズで取得
+                    ?>
                   <?php else: ?>
                     <img src="<?php echo get_theme_file_uri('/images/no-image.jpg'); ?>" alt="No Image">
                   <?php endif; ?>
@@ -34,7 +35,7 @@ $news_query = new WP_Query($args);
 
               <div class="section-news__content">
                 <span class="section-news__date"><?php echo get_the_date('Y.m.d'); ?></span>
-                <p class="section-news__text">
+                <p class="section-news__txt">
                   <?php
                   $content = wp_strip_all_tags(get_the_content());
                   echo wp_html_excerpt($content, 80, '...'); // 画像付きなので文字数を少し多め（80文字）に調整
