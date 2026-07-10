@@ -2381,6 +2381,7 @@ main {
      object-fit: cover;
   position: relative;
   max-width: 100px;
+  min-width: 80px;
 }
 .section-news__thumb-img::before {
   content: "";
