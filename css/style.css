@@ -2311,7 +2311,6 @@ main {
 @media (min-width: 1024px) {
   .section-news__ttl {
     max-width: 772px;
-    padding-inline: 3.137vw;
     text-align: left;
     width: 60vw;
     font-size: 40px;
@@ -2332,7 +2331,7 @@ main {
 }
 @media (min-width: 1920px) {
   .section-news__list {
-    max-width: none;
+    max-width: 920px;
   }
 }
 .section-news__item {
@@ -2370,7 +2369,7 @@ main {
     gap: 36px;
   }
 }
-.section-news .item-thumb a {
+.section-news .thumb-item a {
   gap: 24px;
   padding-block: 24px;
 }

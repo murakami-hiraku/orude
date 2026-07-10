@@ -39,7 +39,6 @@
 
     @include b.mq(pc) {
       max-width: 772px;
-      padding-inline: 3.137vw;
       text-align: left;
       width: 60vw;
       font-size: 40px;
@@ -65,7 +64,7 @@
     }
 
     @include b.mq(xl) {
-      max-width: none;
+      max-width: 920px;
     }
   }
 
@@ -92,7 +91,7 @@
     }
   }
 
-  .item-thumb {
+  .thumb-item {
     a {
       gap: 24px;
       padding-block: 24px;
@@ -136,9 +135,6 @@
       width: 24px;
       height: 24px;
     }
-  }
-
-  &__content {
   }
 
   &__date {

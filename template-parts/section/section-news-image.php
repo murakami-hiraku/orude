@@ -15,10 +15,10 @@ $news_query = new WP_Query($args);
     <h2 class="section-news__ttl">お知らせ</h2>
 
     <?php if ($news_query->have_posts()): ?>
-      <ul class="section-news__list-thumb">
+      <ul class="section-news__list thumb-list">
         <?php while ($news_query->have_posts()):
           $news_query->the_post(); ?>
-          <li class="section-news__item item-thumb">
+          <li class="section-news__item thumb-item">
             <a href="<?php the_permalink(); ?>">
 
               <div class="section-news__thumb-wrap">
@@ -26,7 +26,7 @@ $news_query = new WP_Query($args);
                 <div class="section-news__thumb-img">
                   <?php if (has_post_thumbnail()): ?>
                     <?php the_post_thumbnail('medium'); // 中サイズで取得
-                    ?>
+                          ?>
                   <?php else: ?>
                     <img src="<?php echo get_theme_file_uri('/images/no-image.jpg'); ?>" alt="No Image">
                   <?php endif; ?>
