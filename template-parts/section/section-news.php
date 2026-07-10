@@ -28,7 +28,7 @@ $news_query = new WP_Query($args);
                   <?php
                   // 本文をプレーンテキストで取得
                   $content = wp_strip_all_tags(get_the_content());
-                  // 40文字で切り捨てて、後ろに「...」を付与
+                  // 38文字で切り捨てて、後ろに「...」を付与
                   echo wp_html_excerpt($content, 38, '...');
                   ?>
                 </p>
