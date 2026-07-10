@@ -28,7 +28,7 @@ $news_query = new WP_Query($args);
                     <?php the_post_thumbnail('medium'); // 中サイズで取得
                           ?>
                   <?php else: ?>
-                    <img src="<?php echo get_theme_file_uri('/images/no-image.jpg'); ?>" alt="No Image">
+                    <img src="<?php echo get_theme_file_uri('/img/common/no-img.png'); ?>" alt="No Image">
                   <?php endif; ?>
                 </div>
               </div>
