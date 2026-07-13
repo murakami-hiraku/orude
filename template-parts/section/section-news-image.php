@@ -38,7 +38,7 @@ $news_query = new WP_Query($args);
                 <p class="section-news__txt">
                   <?php
                   $content = wp_strip_all_tags(get_the_content());
-                  echo wp_html_excerpt($content, 65, '...'); // 画像付きなので文字数を少し多めに調整
+                  echo wp_html_excerpt($content, 80, '...'); // 画像付きなので文字数を少し多めに調整
                   ?>
                 </p>
               </div>
