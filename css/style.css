@@ -2271,6 +2271,17 @@ main {
             transform: translateX(-100%);
   }
 }
+.section-contact .block-info--primary .parts-tel--primary a {
+  border: 2px solid #907910;
+  padding: 20px;
+  color: #fff;
+  background-color: #907910;
+  border-radius: 5px;
+}
+.section-contact .block-info--primary .parts-tel--primary span {
+  background-color: #fff;
+}
+
 .section-news {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -3996,16 +4007,6 @@ main {
 }
 .front-page {
   position: relative;
-}
-.front-page .section-contact .block-info--primary .parts-tel--primary a {
-  border: 2px solid #907910;
-  padding: 20px;
-  color: #fff;
-  background-color: #907910;
-  border-radius: 5px;
-}
-.front-page .section-contact .block-info--primary .parts-tel--primary span {
-  background-color: #fff;
 }
 
 .page-introduce .block-page-ttl {

@@ -197,3 +197,22 @@
     transform: translateX(-100%); // 1つ分左にズレたらリセット
   }
 }
+
+// 2026.07.23 修正
+.section-contact {
+  .block-info--primary {
+    .parts-tel--primary {
+      a {
+        border: 2px solid b.$main-color;
+        padding: 20px;
+        color: b.$text-color-white;
+        background-color: b.$main-color;
+        border-radius: 5px;
+      }
+
+      span {
+        background-color: b.$text-color-white;
+      }
+    }
+  }
+}
