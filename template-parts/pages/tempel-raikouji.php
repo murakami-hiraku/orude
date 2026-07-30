@@ -31,8 +31,12 @@
           <h2 class="tempel__card-ttl">本堂葬儀</h2>
           <div class="tempel__card-img"><img
               src="<?php echo get_template_directory_uri(); ?>/img/page-tempel/raikouji-1.png" alt=""></div>
-          <p class="tempel__card-lead">本堂での僧侶によるご葬儀から火葬まで含めたプランになります。お骨上げに関しては、ご家族様にお選びいただけます。</p>
-          <div class="tempel__card-head">
+          <p class="tempel__card-lead">本堂にて僧侶による心を込めたご葬儀を執り行うプランです。ご希望の方には、火葬まで含めてご対応いたします。</p>
+          <p class="tempel__card-notes">
+            ※ご家族様は本堂内にお入りいただけます。ご友人など、ご家族様以外の方も本堂の外よりお見送りいただけますので、大切な方々と一緒にお別れの時間をお過ごしいただけます。</p>
+
+          <!-- 2026.7.30 非表示に編集 -->
+          <!-- <div class="tempel__card-head">
 
             <div class="box">
               <div class="img"> <img src="<?php echo get_template_directory_uri(); ?>/img/common/cat-dog-icon.png"
@@ -49,7 +53,7 @@
               </div>
             </div>
 
-          </div>
+          </div> -->
 
           <div class="tempel__card-body">
             <div class="line line--1"></div>
@@ -63,7 +67,9 @@
                 </span>
               </div>
             </div>
-            <div class="price price--2">
+
+            <!-- 2026.7.30 非表示に編集 -->
+            <!-- <div class="price price--2">
               <p>火葬料金</p>
               <div>
                 <span class="num">31,900</span>
@@ -72,9 +78,11 @@
                   <small class="yen">円</small>
                 </span>
               </div>
-            </div>
+            </div> -->
             <div class="line line--2"></div>
-            <div class="total">
+
+            <!-- 2026.7.30 非表示に編集 -->
+            <!-- <div class="total">
               <p>合計</p>
               <div>
                 <span class="num">114,900</span>
@@ -84,18 +92,25 @@
                 </span>
               </div>
 
-            </div>
+            </div> -->
           </div>
 
           <div class="tempel__card-foot">
-            <p>ご家族でお骨上げをご希望の場合
+            <!-- 2026.7.30 非表示に編集 -->
+            <!-- <p>ご家族でお骨上げをご希望の場合
               <span class="num">3,300</span>
               <span class="unit">
                 <small class="tax">(税込)</small>
                 <small class="yen">円</small>
               </span>
-            </p>
-            <p>※火葬のみのプランもご案内できます。<br>　詳しくは、お問い合わせください。</p>
+            </p> -->
+            <p>※火葬をご希望の場合は、別途承ります（体重により料金が異なります）。<br>※詳しくは、お問い合わせください。</p>
+
+            <?php get_template_part('template-parts/parts/parts-btn', null, [
+              'text' => '火葬料金はこちら',
+              'link' => '/service-cremation/',
+              'class' => '' // 色を変えたい時などの識別用クラス
+            ]); ?>
           </div>
         </div>
 

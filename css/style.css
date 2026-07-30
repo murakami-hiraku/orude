@@ -3277,6 +3277,10 @@ main {
   margin-top: 16px;
   font-size: 20px;
 }
+.page-tempel .tempel__card-notes {
+  font-size: 16px;
+  margin-top: 16px;
+}
 .page-tempel .tempel__card-head {
   margin-top: 42px;
 }
@@ -3617,6 +3621,10 @@ main {
 }
 .page-tempel .tempel__card-foot p .unit .tax {
   font-size: 6px;
+}
+.page-tempel .tempel__card-foot .parts-btn {
+  margin-top: 20px;
+  margin-inline: auto;
 }
 .page-tempel .tempel__link {
   display: -webkit-box;
