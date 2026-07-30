@@ -12,9 +12,9 @@ $has_icon = isset($args['has_icon']) ? $args['has_icon'] : false;
 
 <div class="parts-btn <?php echo esc_attr($class); ?>">
   <a href="<?php echo esc_url($link); ?>" class="parts-btn__link">
-    <?php if ($has_icon) : ?>
+    <?php if ($has_icon): ?>
       <?php // もし $has_icon が true だったら span を表示する
-      ?>
+        ?>
       <span class="link-icon"></span>
     <?php endif; ?>
 
@@ -22,3 +22,12 @@ $has_icon = isset($args['has_icon']) ? $args['has_icon'] : false;
 
   </a>
 </div>
+
+<!-- テンプレートパーツ呼び出しの書き方 -->
+<?php //get_template_part('template-parts/parts/parts-btn', null, [
+//'text' => 'サービスの詳細へ',
+//'link' => '/service-cremation/',
+//'class' => '' // 色を変えたい時などの識別用クラス
+//]);
+?>
+<!-- テンプレートパーツ呼び出しの書き方 -->
