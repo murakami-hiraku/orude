@@ -24,7 +24,8 @@ $has_icon = isset($args['has_icon']) ? $args['has_icon'] : false;
 </div>
 
 <!-- テンプレートパーツ呼び出しの書き方 -->
-<?php //get_template_part('template-parts/parts/parts-btn', null, [
+<?php
+//get_template_part('template-parts/parts/parts-btn', null, [
 //'text' => 'サービスの詳細へ',
 //'link' => '/service-cremation/',
 //'class' => '' // 色を変えたい時などの識別用クラス
