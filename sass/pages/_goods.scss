@@ -2,4 +2,123 @@
 @use "../foundation/base" as b;
 
 .page-goods {
+  .card-list {
+    &__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+      }
+
+      @media (max-width: 480px) {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    &__more {
+      height: 0;
+      overflow: hidden;
+      transition: height 0.3s ease;
+
+      .card-list__grid {
+        margin-top: 24px;
+
+        @media (max-width: 768px) {
+          margin-top: 16px;
+        }
+      }
+    }
+
+    &__actions {
+      display: flex;
+      justify-content: center;
+      margin-top: 32px;
+    }
+
+    &__toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 32px;
+      background: #fff;
+      font-size: 14px;
+      cursor: pointer;
+      transition:
+        background 0.3s ease,
+        border-color 0.3s ease;
+
+      &:hover {
+      }
+
+      &-icon {
+        width: 10px;
+        height: 10px;
+        border-right: 2px solid currentColor;
+        border-bottom: 2px solid currentColor;
+        transform: rotate(45deg);
+        transition: transform 0.3s ease;
+      }
+
+      &[aria-expanded="true"] {
+        .card-list__toggle-icon {
+          transform: rotate(-135deg);
+        }
+      }
+    }
+  }
+
+  // ------------------------------
+  // Individual card
+  // ------------------------------
+  .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    background: #fff;
+    transition:
+      box-shadow 0.3s ease,
+      transform 0.3s ease;
+
+    &:hover {
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+      transform: translateY(-2px);
+    }
+
+    &__thumb {
+      width: 100%;
+      aspect-ratio: 400 / 260;
+      object-fit: cover;
+    }
+
+    &__body {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      padding: 16px;
+    }
+
+    &__cat {
+      margin: 0 0 4px;
+      font-size: 12px;
+    }
+
+    &__title {
+      margin: 0 0 8px;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    &__text {
+      margin: 0;
+      font-size: 13px;
+      line-height: 1.7;
+    }
+  }
 }

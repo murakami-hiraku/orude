@@ -382,3 +382,46 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+// --- 15. カードリストの切り替え ---
+(function () {
+  const toggleBtn = document.getElementById("cardListToggle");
+  const more = document.getElementById("cardListMore");
+
+  if (!toggleBtn || !more) return;
+
+  const toggleText = toggleBtn.querySelector(".card-list__toggle-text");
+
+  // 初期状態
+  more.style.height = "0px";
+  toggleBtn.setAttribute("aria-expanded", "false");
+  toggleText.textContent = "もっと見る";
+
+  toggleBtn.addEventListener("click", function () {
+    const isOpen = toggleBtn.getAttribute("aria-expanded") === "true";
+
+    if (!isOpen) {
+      // 開く
+      more.style.height = more.scrollHeight + "px";
+
+      toggleBtn.setAttribute("aria-expanded", "true");
+      toggleText.textContent = "閉じる";
+    } else {
+      // 閉じる
+      more.style.height = "0px";
+
+      toggleBtn.setAttribute("aria-expanded", "false");
+      toggleText.textContent = "もっと見る";
+    }
+  });
+
+  // リサイズ時に開いていたら高さを再計算
+  window.addEventListener("resize", function () {
+    const isOpen = toggleBtn.getAttribute("aria-expanded") === "true";
+
+    if (isOpen) {
+      more.style.height = "auto";
+      more.style.height = more.scrollHeight + "px";
+    }
+  });
+})();
