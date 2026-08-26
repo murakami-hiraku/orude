@@ -385,43 +385,48 @@ window.addEventListener("DOMContentLoaded", () => {
 
 // --- 15. カードリストの切り替え ---
 (function () {
-  const toggleBtn = document.getElementById("cardListToggle");
-  const more = document.getElementById("cardListMore");
+  const cardLists = document.querySelectorAll(".card-list");
 
-  if (!toggleBtn || !more) return;
+  if (!cardLists.length) return;
 
-  const toggleText = toggleBtn.querySelector(".card-list__toggle-text");
+  cardLists.forEach(function (cardList) {
+    const toggleBtn = cardList.querySelector(".card-list__toggle");
+    const more = cardList.querySelector(".card-list__more");
+    const toggleText = cardList.querySelector(".card-list__toggle-text");
 
-  // 初期状態
-  more.style.height = "0px";
-  toggleBtn.setAttribute("aria-expanded", "false");
-  toggleText.textContent = "もっと見る";
+    if (!toggleBtn || !more || !toggleText) return;
 
-  toggleBtn.addEventListener("click", function () {
-    const isOpen = toggleBtn.getAttribute("aria-expanded") === "true";
+    // 初期状態
+    more.style.height = "0px";
+    toggleBtn.setAttribute("aria-expanded", "false");
+    toggleText.textContent = "もっと見る";
 
-    if (!isOpen) {
-      // 開く
-      more.style.height = more.scrollHeight + "px";
+    toggleBtn.addEventListener("click", function () {
+      const isOpen = toggleBtn.getAttribute("aria-expanded") === "true";
 
-      toggleBtn.setAttribute("aria-expanded", "true");
-      toggleText.textContent = "閉じる";
-    } else {
-      // 閉じる
-      more.style.height = "0px";
+      if (!isOpen) {
+        // 開く
+        more.style.height = more.scrollHeight + "px";
 
-      toggleBtn.setAttribute("aria-expanded", "false");
-      toggleText.textContent = "もっと見る";
-    }
-  });
+        toggleBtn.setAttribute("aria-expanded", "true");
+        toggleText.textContent = "閉じる";
+      } else {
+        // 閉じる
+        more.style.height = "0px";
 
-  // リサイズ時に開いていたら高さを再計算
-  window.addEventListener("resize", function () {
-    const isOpen = toggleBtn.getAttribute("aria-expanded") === "true";
+        toggleBtn.setAttribute("aria-expanded", "false");
+        toggleText.textContent = "もっと見る";
+      }
+    });
 
-    if (isOpen) {
-      more.style.height = "auto";
-      more.style.height = more.scrollHeight + "px";
-    }
+    // リサイズ対応
+    window.addEventListener("resize", function () {
+      const isOpen = toggleBtn.getAttribute("aria-expanded") === "true";
+
+      if (isOpen) {
+        more.style.height = "auto";
+        more.style.height = more.scrollHeight + "px";
+      }
+    });
   });
 })();
