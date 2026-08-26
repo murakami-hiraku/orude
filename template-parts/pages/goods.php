@@ -172,10 +172,22 @@ $lineups = [
         <h2 class="page-goods__ttl">タイトル</h2>
         <div class="page-goods__info">
           <ul>
-            <li>リスト</li>
-            <li>リスト</li>
-            <li>リスト</li>
-            <li>リスト</li>
+            <li class="info-list">
+              <h3></h3>
+              <p></p>
+            </li>
+            <li class="info-list">
+              <h3></h3>
+              <p></p>
+            </li>
+            <li class="info-list">
+              <h3></h3>
+              <p></p>
+            </li>
+            <li class="info-list">
+              <h3></h3>
+              <p></p>
+            </li>
           </ul>
         </div>
       </div>
