@@ -86,8 +86,9 @@ $lineups = [
       ?>
       <div class="page-goods__container">
         <div class="page-goods__box">
-          <h2 class="page-goods__ttl"></h2>
-          <p class="page-goods__txt"></p>
+          <h2 class="page-goods__ttl">ご遺骨の、新しい選択肢。</h2>
+          <p class="page-goods__txt">火葬を終えたあと、「このご遺骨をどうすればいいのだろう」と悩まれる飼い主様は少なくありません。納骨する、ご自宅で手元供養する——
+            そのどちらでもない、第三の選択肢があります。大切なあの子のご遺骨を、身につけられるジュエリーに。いつでも、どこでも、そばに感じられるかたちで。オルデでは、遺骨ジュエリー専門店「inori」と提携し、心を込めてお作りするメモリアルジュエリーをご案内しております。</p>
         </div>
       </div>
     </div>
@@ -98,9 +99,14 @@ $lineups = [
   <section class="page-goods__section page-goods__section--2 section fadein ">
     <div class="page-goods__inner inner">
       <div class="page-goods__container">
-        <h2 class="page-goods__ttl"></h2>
+        <h2 class="page-goods__ttl">塩珠（しおたま）という、世界にひとつのかたち</h2>
         <div class="page-goods__box">
-          <p class="page-goods__txt"></p>
+          <p class="page-goods__txt">透明感あふれるガラスの中に、
+            ご遺骨と沖縄の塩を封じ込めたinoriだけの遺骨ジュエリー「塩珠」。炎で磨かれたガラスは澄んだ結晶となり、その中に浮かぶ微細な気泡が、
+            光を受けて美しく輝きます。塩は、古くから「守護」の象徴とされてきました。大切な想いを、そっと守り続けます。一点一点、すべて職人の手仕事で
+            お仕立てしております。同じものは、ふたつとありません。
+
+            ※「塩珠」は商標登録済みです（2021年5月登録）</p>
           <div class="page-goods__img">
             <img src="" alt="">
           </div>
@@ -116,10 +122,11 @@ $lineups = [
 
       <div class="page-goods__container">
 
-        <h2 class="page-goods__ttl"></h2>
+        <h2 class="page-goods__ttl">Lineup ｜ 商品のご紹介</h2>
 
         <div class="page-goods__box">
-          <p class="page-goods__txt"></p>
+          <p class="page-goods__txt">ネックレス、ピアス、イヤリング、ブレスレット。
+            日々の暮らしに寄り添うかたちをお選びいただけます。</p>
         </div>
 
       </div>
@@ -169,24 +176,26 @@ $lineups = [
   <section class="page-goods__section page-goods__section--4 section fadein ">
     <div class="page-goods__inner inner">
       <div class="page-goods__container">
-        <h2 class="page-goods__ttl">タイトル</h2>
+        <h2 class="page-goods__ttl">はじめての方へ
+          ｜ 安心してお任せいただくために</h2>
         <div class="page-goods__info">
           <ul>
             <li class="info-list">
-              <h3></h3>
-              <p></p>
+              <h3>ご遺骨は、ごくわずかな量で製作できます</h3>
+              <p>必要なご遺骨は、枝豆1粒ほど。実際に使用するのは2〜3粒ほどのごく少量です。「ほとんど残らなくなってしまうのでは」というご心配はいりません。</p>
             </li>
             <li class="info-list">
-              <h3></h3>
-              <p></p>
+              <h3>未使用のご遺骨は、大切にご返却いたします</h3>
+              <p>製作に使用しなかったご遺骨は、名入れ専用のボトルに入れてお手元へお返しいたします。</p>
             </li>
             <li class="info-list">
-              <h3></h3>
-              <p></p>
+              <h3>納期は約5〜10日</h3>
+              <p>ご遺骨をお預かりしてから、およそ5〜10日でお届けいたします。一点一点、職人が心を込めてお仕立てしております。</p>
             </li>
             <li class="info-list">
-              <h3></h3>
-              <p></p>
+              <h3>金属アレルギーにも配慮</h3>
+              <p>イヤリング・ピアスはニッケルフリー仕様をご用意しております。
+              </p>
             </li>
           </ul>
         </div>
@@ -199,14 +208,15 @@ $lineups = [
   <section class="page-goods__section page-goods__section--5 section fadein ">
     <div class="page-goods__inner inner">
       <div class="page-goods__container">
-        <h2 class="page-goods__ttl">タイトル</h2>
-        <p class="page-goods__txt">テキスト</p>
+        <h2 class="page-goods__ttl">オルデのお客様へ</h2>
+        <p class="page-goods__txt">INORI公式オンラインショップにてご購入の際、下記クーポンコードを入力欄にご入力ください。
+          全商品1,000円OFFにてご購入いただけます。</p>
 
         <div class="page-goods__code">
-          <h3 class="page-goods__code-ttl">タイトル</h3>
-          <p>[<strong class="page-goods__code-num">コード</strong>]</p>
+          <h3 class="page-goods__code-ttl">COUPON CODE</h3>
+          <p>[<strong class="page-goods__code-num">ollude1000</strong>]</p>
           <small>注意書き</small>
-          <button>ボタン</button>
+          <button>inori公式ショップで商品を見る</button>
         </div>
       </div>
     </div>
@@ -216,28 +226,33 @@ $lineups = [
   <section class="page-goods__section page-goods__section--6 section fadein ">
     <div class="page-goods__inner inner">
       <div class="page-goods__container">
-        <h2 class="page-goods__ttl">タイトル</h2>
+        <h2 class="page-goods__ttl">Flow ｜ ご購入の流れ</h2>
 
         <div class="page-goods__flow">
           <div class="page-goods__flow-item">
             <img src="" alt="">
-            <h3 class="card-ttl">タイトル</h3>
-            <p class="card-txt">テキスト</p>
+            <h3 class="card-ttl">inori公式ショップへ</h3>
+            <p class="card-txt">本ページのボタンより、inori公式オンラインショップへお進みください。</p>
           </div>
           <div class="page-goods__flow-item">
             <img src="" alt="">
-            <h3 class="card-ttl">タイトル</h3>
-            <p class="card-txt">テキスト</p>
+            <h3 class="card-ttl">商品をお選びください</h3>
+            <p class="card-txt">ネックレス、ピアス、イヤリング、ブレスレットからお好みの一点を。</p>
           </div>
           <div class="page-goods__flow-item">
             <img src="" alt="">
-            <h3 class="card-ttl">タイトル</h3>
-            <p class="card-txt">テキスト</p>
+            <h3 class="card-ttl">クーポンコードをご入力</h3>
+            <p class="card-txt">お会計時、クーポンコード入力欄に上記のコードをご入力ください。</p>
           </div>
           <div class="page-goods__flow-item">
             <img src="" alt="">
-            <h3 class="card-ttl">タイトル</h3>
-            <p class="card-txt">テキスト</p>
+            <h3 class="card-ttl">ご遺骨をご郵送</h3>
+            <p class="card-txt">ご注文後、inoriよりご案内する送付先へご遺骨をお送りください。必要な量は枝豆1粒ほどです。</p>
+          </div>
+          <div class="page-goods__flow-item">
+            <img src="" alt="">
+            <h3 class="card-ttl">お届け</h3>
+            <p class="card-txt">約5〜10日でお手元へお届けいたします。未使用のご遺骨も、専用ボトルに入れて一緒にご返送いたします。</p>
           </div>
         </div>
       </div>
@@ -248,12 +263,13 @@ $lineups = [
   <section class="page-goods__section page-goods__section--7 section fadein ">
     <div class="page-goods__inner inner">
       <div class="page-goods__container">
-        <h2 class="page-goods__ttl">タイトル</h2>
-        <p class="page-goods__txt">テキスト</p>
+        <h2 class="page-goods__ttl">大切なあの子を、いつもそばに。</h2>
+        <p class="page-goods__txt">ご不明な点やご相談は、
+          オルデまでお気軽にお問い合わせください。</p>
 
         <div class="page-goods__contact">
-          <button>ボタン</button>
-          <button>ボタン</button>
+          <button>inori公式ショップを見る</button>
+          <button>オルデに相談する（0800-080-0188）</button>
         </div>
       </div>
     </div>
