@@ -2,6 +2,25 @@
 @use "../foundation/base" as b;
 
 .page-goods {
+  .block-page-ttl {
+    background-position: 50% center;
+    background-size: 180% auto;
+
+    @include b.mq(tb) {
+      background-size: cover;
+    }
+
+    @include b.mq(pc) {
+      background-position: center center;
+
+      br {
+        display: none;
+      }
+    }
+  }
+
+  // 共通スタイルーーーーーーーーーーーーーーーーーーーーーーーーー
+
   .card-list {
     &__grid {
       display: grid;
