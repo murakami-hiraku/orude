@@ -3173,7 +3173,7 @@ main {
 }
 @media (min-width: 1024px) {
   .page-goods .block-page-ttl {
-    background-position: 10% center;
+    background-position: center center;
   }
 }
 .page-goods .block-page-ttl__txt {

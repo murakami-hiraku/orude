@@ -11,7 +11,7 @@
     }
 
     @include b.mq(pc) {
-      background-position: 10% center;
+      background-position: center center;
     }
 
     &__txt {
