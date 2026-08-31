@@ -3162,6 +3162,28 @@ main {
   }
 }
 
+.page-goods .block-page-ttl {
+  background-position: 80% 90%;
+  background-size: 180% auto;
+}
+@media (min-width: 768px) {
+  .page-goods .block-page-ttl {
+    background-size: cover;
+  }
+}
+@media (min-width: 1024px) {
+  .page-goods .block-page-ttl {
+    background-position: 10% center;
+  }
+}
+.page-goods .block-page-ttl__txt {
+  padding-top: 50px;
+}
+@media (min-width: 1024px) {
+  .page-goods .block-page-ttl__txt {
+    text-align: left;
+  }
+}
 .page-goods .card-list__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

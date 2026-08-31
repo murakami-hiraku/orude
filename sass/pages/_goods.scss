@@ -3,7 +3,7 @@
 
 .page-goods {
   .block-page-ttl {
-    background-position: 50% center;
+    background-position: 80% 90%;
     background-size: 180% auto;
 
     @include b.mq(tb) {
@@ -11,10 +11,14 @@
     }
 
     @include b.mq(pc) {
-      background-position: center center;
+      background-position: 10% center;
+    }
 
-      br {
-        display: none;
+    &__txt {
+      padding-top: 50px;
+
+      @include b.mq(pc) {
+        text-align: left;
       }
     }
   }
