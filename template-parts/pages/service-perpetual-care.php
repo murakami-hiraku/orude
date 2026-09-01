@@ -23,10 +23,9 @@
 
         <!-- コンテンツ切り替えボタン ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
         <div class="page-s-perpetual-care__menu">
-          <!-- 2026.7.9 非表示設定 --------------------------------------------->
-          <!-- <button class="page-s-perpetual-care__btn btn-1 is-active" data-target="content-1">
+          <button class="page-s-perpetual-care__btn btn-1 is-active" data-target="content-1">
             ペットと一緒のご納骨をお考えの方<span></span>
-          </button> -->
+          </button>
           <button class="page-s-perpetual-care__btn btn-2" data-target="content-2">
             ペットのご納骨のみをお考えの方<span></span>
           </button>
@@ -65,8 +64,8 @@
 
 
 
-    <!-- セクション３　銀山寺のご紹介　2026.7.9 銀山時関連のコンテンツ非表示設定ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
-    <!-- <section class="page-s-perpetual-care__section page-s-perpetual-care__section--3 section fadein ">
+    <!-- セクション３ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
+    <section class="page-s-perpetual-care__section page-s-perpetual-care__section--3 section fadein ">
       <div class="page-s-perpetual-care__inner inner">
         <h2 class="page-s-perpetual-care__ttl">銀山寺のご紹介</h2>
 
@@ -106,13 +105,13 @@
         </div>
       </div>
 
-    </section> -->
+    </section>
     <!-- セクション３ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
 
 
 
     <!-- セクション４　ご利用の流れ　ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
-    <!-- <section class="page-s-perpetual-care__section page-s-perpetual-care__section--4 section fadein ">
+    <section class="page-s-perpetual-care__section page-s-perpetual-care__section--4 section fadein ">
       <div class="page-s-perpetual-care__inner inner">
         <?php
         get_template_part('/template-parts/parts/parts-bg-flower--right')
@@ -180,12 +179,12 @@
           ?>
       </div>
 
-    </section> -->
+    </section>
     <!-- セクション４ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
 
     <!-- セクション５　料金・プラン例　ーーーーーーーーーーーーーーーーーーーーーーーーー -->
 
-    <!-- <section class="page-s-perpetual-care__section page-s-perpetual-care__section--5 section fadein ">
+    <section class="page-s-perpetual-care__section page-s-perpetual-care__section--5 section fadein ">
       <div class="page-s-perpetual-care__inner inner">
         <h2 class="page-s-perpetual-care__ttl">料金・プラン例</h2>
         <p class="page-s-perpetual-care__txt">ご利用料金は供養形態や収蔵人数（ペットの頭数）によって異なりますが、<br>
@@ -220,12 +219,12 @@
 
       </div>
 
-    </section> -->
+    </section>
     <!-- セクション５ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
 
     <!-- セクション6 提携霊園・寺院のご案内について ーーーーーーーーーーーーーーーーー -->
 
-    <!-- <section class="page-s-perpetual-care__section page-s-perpetual-care__section--6 section fadein ">
+    <section class="page-s-perpetual-care__section page-s-perpetual-care__section--6 section fadein ">
       <div class="page-s-perpetual-care__inner inner">
         <h2 class="page-s-perpetual-care__ttl">提携霊園・寺院のご案内について</h2>
 
@@ -243,7 +242,7 @@
         </div>
 
       </div>
-    </section> -->
+    </section>
     <!-- セクション6ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
   </div>
 

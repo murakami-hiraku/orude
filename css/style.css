@@ -3163,7 +3163,11 @@ main {
 }
 
 .page-goods .block-page-ttl {
+<<<<<<< HEAD
   background-position: 50% center;
+=======
+  background-position: 80% 90%;
+>>>>>>> 71297e9e90769cc427a6242b0ad2187eb360aef7
   background-size: 180% auto;
 }
 @media (min-width: 768px) {
@@ -3175,6 +3179,7 @@ main {
   .page-goods .block-page-ttl {
     background-position: center center;
   }
+<<<<<<< HEAD
   .page-goods .block-page-ttl br {
     display: none;
   }
@@ -3194,6 +3199,17 @@ main {
   font-weight: 600;
   text-align: center;
 }
+=======
+}
+.page-goods .block-page-ttl__txt {
+  padding-top: 50px;
+}
+@media (min-width: 1024px) {
+  .page-goods .block-page-ttl__txt {
+    text-align: left;
+  }
+}
+>>>>>>> 71297e9e90769cc427a6242b0ad2187eb360aef7
 .page-goods .card-list__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
