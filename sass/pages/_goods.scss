@@ -21,6 +21,24 @@
 
   // 共通スタイルーーーーーーーーーーーーーーーーーーーーーーーーー
 
+  &__ttl {
+    font-weight: 900;
+    color: b.$main-color;
+    font-size: 20px;
+    text-align: center;
+
+    br {
+      @include b.mq(pc) {
+        display: none;
+      }
+    }
+  }
+
+  &__txt {
+    font-weight: 600;
+    text-align: center;
+  }
+
   .card-list {
     &__grid {
       display: grid;

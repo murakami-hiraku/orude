@@ -21,15 +21,16 @@ $initial_cards = $args['initial_cards'] ?? 2;
 
           <div class="card__body">
 
-            <?php if (!empty($card['category'])) : ?>
-              <p class="card__cat">
-                <?php echo esc_html($card['category']); ?>
-              </p>
-            <?php endif; ?>
 
             <h3 class="card__title">
               <?php echo esc_html($card['title']); ?>
             </h3>
+
+            <?php if (!empty($card['price'])) : ?>
+              <p class="card__price">
+                <?php echo esc_html($card['price']); ?>
+              </p>
+            <?php endif; ?>
 
             <?php if (!empty($card['text'])) : ?>
               <p class="card__text">
@@ -68,15 +69,16 @@ $initial_cards = $args['initial_cards'] ?? 2;
 
               <div class="card__body">
 
-                <?php if (!empty($card['category'])) : ?>
-                  <p class="card__cat">
-                    <?php echo esc_html($card['category']); ?>
-                  </p>
-                <?php endif; ?>
 
                 <h3 class="card__title">
                   <?php echo esc_html($card['title']); ?>
                 </h3>
+
+                <?php if (!empty($card['price'])) : ?>
+                  <p class="card__price">
+                    <?php echo esc_html($card['price']); ?>
+                  </p>
+                <?php endif; ?>
 
                 <?php if (!empty($card['text'])) : ?>
                   <p class="card__text">

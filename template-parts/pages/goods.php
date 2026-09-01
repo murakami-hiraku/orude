@@ -4,63 +4,119 @@ $initial_cards = 2;
 
 $lineups = [
   [
-    'title' => 'タイトル',
-    'subtitle' => 'サブタイトル',
+    'title' => 'Premium Line',
+    'subtitle' => '特別な一品を、お求めの方へ',
     'cards' => [
       [
-        'image' => $theme_uri . '/img/goods/goods-01.jpg',
+        'image' => $theme_uri . '/img/page-goods/goods-sec3-1.png',
         'alt' => 'カードタイトル1',
-        'category' => 'カテゴリー',
         'title' => 'カードタイトル1',
+        'price' => '¥000,000',
         'text' => 'ここに説明文が入ります。',
       ],
       [
-        'image' => $theme_uri . '/img/goods/goods-02.jpg',
+        'image' => $theme_uri . '/img/page-goods/goods-sec3-2.png',
         'alt' => 'カードタイトル2',
-        'category' => 'カテゴリー',
         'title' => 'カードタイトル2',
+        'price' => '¥000,000',
         'text' => 'ここに説明文が入ります。',
       ],
       [
-        'image' => $theme_uri . '/img/goods/goods-03.jpg',
+        'image' => $theme_uri . '/img/page-goods/goods-sec3-3.png',
         'alt' => 'カードタイトル3',
-        'category' => 'カテゴリー',
         'title' => 'カードタイトル3',
+        'price' => '¥000,000',
         'text' => 'ここに説明文が入ります。',
       ],
       [
-        'image' => $theme_uri . '/img/goods/goods-04.jpg',
+        'image' => $theme_uri . '/img/page-goods/goods-sec3-4.png',
         'alt' => 'カードタイトル4',
-        'category' => 'カテゴリー',
         'title' => 'カードタイトル4',
+        'price' => '¥000,000',
+        'text' => 'ここに説明文が入ります。',
+      ],
+      [
+        'image' => $theme_uri . '/img/page-goods/goods-sec3-5.png',
+        'alt' => 'カードタイトル4',
+        'title' => 'カードタイトル4',
+        'price' => '¥000,000',
+        'text' => 'ここに説明文が入ります。',
+      ],
+      [
+        'image' => $theme_uri . '/img/page-goods/goods-sec3-6.png',
+        'alt' => 'カードタイトル4',
+        'title' => 'カードタイトル4',
+        'price' => '¥000,000',
+        'text' => 'ここに説明文が入ります。',
+      ],
+      [
+        'image' => $theme_uri . '/img/page-goods/goods-sec3-7.png',
+        'alt' => 'カードタイトル4',
+        'title' => 'カードタイトル4',
+        'price' => '¥000,000',
+        'text' => 'ここに説明文が入ります。',
+      ],
+      [
+        'image' => $theme_uri . '/img/page-goods/goods-sec3-8.png',
+        'alt' => 'カードタイトル4',
+        'title' => 'カードタイトル4',
+        'price' => '¥000,000',
+        'text' => 'ここに説明文が入ります。',
+      ],
+      [
+        'image' => $theme_uri . '/img/page-goods/goods-sec3-9.png',
+        'alt' => 'カードタイトル4',
+        'title' => 'カードタイトル4',
+        'price' => '¥000,000',
         'text' => 'ここに説明文が入ります。',
       ],
     ],
   ],
 
   [
-    'title' => 'タイトル2',
+    'title' => 'Standard Line',
     'subtitle' => '',
     'cards' => [
       [
-        'image' => $theme_uri . '/img/goods/goods-05.jpg',
+        'image' => $theme_uri . '/img/page-goods/goods-sec3-10.png',
         'alt' => 'カードタイトル5',
-        'category' => 'カテゴリー',
         'title' => 'カードタイトル5',
+        'price' => '¥000,000',
         'text' => 'ここに説明文が入ります。',
       ],
       [
-        'image' => $theme_uri . '/img/goods/goods-06.jpg',
+        'image' => $theme_uri . '/img/page-goods/goods-sec3-11.png',
         'alt' => 'カードタイトル6',
-        'category' => 'カテゴリー',
         'title' => 'カードタイトル6',
+        'price' => '¥000,000',
         'text' => 'ここに説明文が入ります。',
       ],
       [
-        'image' => $theme_uri . '/img/goods/goods-07.jpg',
+        'image' => $theme_uri . '/img/page-goods/goods-sec3-12.png',
         'alt' => 'カードタイトル7',
-        'category' => 'カテゴリー',
         'title' => 'カードタイトル7',
+        'price' => '¥000,000',
+        'text' => 'ここに説明文が入ります。',
+      ],
+      [
+        'image' => $theme_uri . '/img/page-goods/goods-sec3-13.png',
+        'alt' => 'カードタイトル7',
+        'title' => 'カードタイトル7',
+        'price' => '¥000,000',
+        'text' => 'ここに説明文が入ります。',
+      ],
+      [
+        'image' => $theme_uri . '/img/page-goods/goods-sec3-14.png',
+        'alt' => 'カードタイトル7',
+        'title' => 'カードタイトル7',
+        'price' => '¥000,000',
+        'text' => 'ここに説明文が入ります。',
+      ],
+      [
+        'image' => $theme_uri . '/img/page-goods/goods-sec3-15.png',
+        'alt' => 'カードタイトル7',
+        'title' => 'カードタイトル7',
+        'price' => '¥000,000',
         'text' => 'ここに説明文が入ります。',
       ],
     ],
@@ -99,7 +155,7 @@ $lineups = [
   <section class="page-goods__section page-goods__section--2 section fadein ">
     <div class="page-goods__inner inner">
       <div class="page-goods__container">
-        <h2 class="page-goods__ttl">塩珠（しおたま）という、世界にひとつのかたち</h2>
+        <h2 class="page-goods__ttl">塩珠（しおたま）という、<br>世界にひとつのかたち</h2>
         <div class="page-goods__box">
           <p class="page-goods__txt">透明感あふれるガラスの中に、
             ご遺骨と沖縄の塩を封じ込めたinoriだけの遺骨ジュエリー「塩珠」。炎で磨かれたガラスは澄んだ結晶となり、その中に浮かぶ微細な気泡が、
@@ -176,7 +232,7 @@ $lineups = [
   <section class="page-goods__section page-goods__section--4 section fadein ">
     <div class="page-goods__inner inner">
       <div class="page-goods__container">
-        <h2 class="page-goods__ttl">はじめての方へ
+        <h2 class="page-goods__ttl">はじめての方へ<br>
           ｜ 安心してお任せいただくために</h2>
         <div class="page-goods__info">
           <ul>
@@ -264,12 +320,12 @@ $lineups = [
     <div class="page-goods__inner inner">
       <div class="page-goods__container">
         <h2 class="page-goods__ttl">大切なあの子を、いつもそばに。</h2>
-        <p class="page-goods__txt">ご不明な点やご相談は、
-          オルデまでお気軽にお問い合わせください。</p>
+        <p class="page-goods__txt">ご不明な点やご相談は、<br>
+          inoriまでお気軽に下記の公式LINEおよびInstagramからお問い合わせください。</p>
 
         <div class="page-goods__contact">
-          <button>inori公式ショップを見る</button>
-          <button>オルデに相談する（0800-080-0188）</button>
+          <button>公式LINEはこちら</button>
+          <button>Instagramはこちら</button>
         </div>
       </div>
     </div>

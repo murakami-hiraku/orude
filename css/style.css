@@ -3162,6 +3162,38 @@ main {
   }
 }
 
+.page-goods .block-page-ttl {
+  background-position: 50% center;
+  background-size: 180% auto;
+}
+@media (min-width: 768px) {
+  .page-goods .block-page-ttl {
+    background-size: cover;
+  }
+}
+@media (min-width: 1024px) {
+  .page-goods .block-page-ttl {
+    background-position: center center;
+  }
+  .page-goods .block-page-ttl br {
+    display: none;
+  }
+}
+.page-goods__ttl {
+  font-weight: 900;
+  color: #907910;
+  font-size: 20px;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .page-goods__ttl br {
+    display: none;
+  }
+}
+.page-goods__txt {
+  font-weight: 600;
+  text-align: center;
+}
 .page-goods .card-list__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
