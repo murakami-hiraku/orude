@@ -34,10 +34,9 @@ $initial_cards = $args['initial_cards'] ?? 2;
 
             <?php if (!empty($card['text'])) : ?>
               <p class="card__text">
-                <?php echo esc_html($card['text']); ?>
+                <?php echo nl2br(esc_html($card['text'])); ?>
               </p>
             <?php endif; ?>
-
           </div>
 
         </div>
@@ -82,7 +81,7 @@ $initial_cards = $args['initial_cards'] ?? 2;
 
                 <?php if (!empty($card['text'])) : ?>
                   <p class="card__text">
-                    <?php echo esc_html($card['text']); ?>
+                    <?php echo nl2br(esc_html($card['text'])); ?>
                   </p>
                 <?php endif; ?>
 
