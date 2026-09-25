@@ -131,27 +131,27 @@ $flow_steps = [
   [
     'image' => $theme_uri . '/img/page-goods/goods-sec6-1.png',
     'title' => 'inori公式ショップへ',
-    'text'  => '本ページのボタンより、inori公式オンラインショップへお進みください。',
+    'text' => '本ページのボタンより、inori公式オンラインショップへお進みください。',
   ],
   [
     'image' => $theme_uri . '/img/page-goods/goods-sec6-2.png',
     'title' => '商品をお選びください',
-    'text'  => 'ネックレス、ピアス、イヤリング、ブレスレットからお好みの一点を。',
+    'text' => 'ネックレス、ピアス、イヤリング、ブレスレットからお好みの一点を。',
   ],
   [
     'image' => $theme_uri . '/img/page-goods/goods-sec6-3.png',
     'title' => 'クーポンコードをご入力',
-    'text'  => 'お会計時、クーポンコード入力欄に上記のコードをご入力ください。',
+    'text' => 'お会計時、クーポンコード入力欄に上記のコードをご入力ください。',
   ],
   [
     'image' => $theme_uri . '/img/page-goods/goods-sec6-4.png',
     'title' => 'ご遺骨をご郵送',
-    'text'  => "ご注文後、inoriよりご案内する送付先へご遺骨をお送りください。\n必要な量は枝豆1粒ほどです。",
+    'text' => "ご注文後、inoriよりご案内する送付先へご遺骨をお送りください。\n必要な量は枝豆1粒ほどです。",
   ],
   [
     'image' => $theme_uri . '/img/page-goods/goods-sec6-5.png',
     'title' => 'お届け',
-    'text'  => "約5〜10日でお手元へお届けいたします。\n未使用のご遺骨も、専用ボトルに入れて一緒にご返送いたします。",
+    'text' => "約5〜10日でお手元へお届けいたします。\n未使用のご遺骨も、専用ボトルに入れて一緒にご返送いたします。",
   ],
 ];
 ?>
@@ -165,7 +165,7 @@ $flow_steps = [
   <?php
   // ACF（display_title / page_ttl_bg）が未入力の場合は、ここで渡した値が使われます
   get_template_part('template-parts/block/block-page-ttl', null, [
-    'bg'    => $theme_uri . '/img/page-goods/goods-ttl-bg.jpg',
+    'bg' => $theme_uri . '/img/page-goods/goods-ttl-bg.jpg',
     'title' => '<span class="block-page-ttl__lead">「inori」遺骨メモリアルジュエリーのご紹介</span>あの子のぬくもりを、いつもそばに。',
   ]);
   ?>
@@ -229,14 +229,14 @@ $flow_steps = [
       </div>
 
       <!-- ラインナップ -->
-      <?php foreach ($lineups as $lineup) : ?>
+      <?php foreach ($lineups as $lineup): ?>
         <div class="lineup lineup--<?php echo esc_attr($lineup['slug']); ?>">
 
-          <?php if (!empty($lineup['title'])) : ?>
+          <?php if (!empty($lineup['title'])): ?>
             <h3 class="lineup-title"><?php echo esc_html($lineup['title']); ?></h3>
           <?php endif; ?>
 
-          <?php if (!empty($lineup['subtitle'])) : ?>
+          <?php if (!empty($lineup['subtitle'])): ?>
             <p class="lineup-subtitle"><?php echo esc_html($lineup['subtitle']); ?></p>
           <?php endif; ?>
 
@@ -261,7 +261,7 @@ $flow_steps = [
   <section class="page-goods__section page-goods__section--5 section fadein">
     <div class="page-goods__inner inner">
       <div class="page-goods__container">
-        <h2 class="page-goods__ttl">ご購入検討中の方へ</h2>
+        <h2 class="page-goods__ttl">ご購入をお考えの方へ</h2>
         <p class="page-goods__txt">INORI公式オンラインショップにてご購入の際、下記クーポンコードを入力欄にご入力ください。<br>
           全商品1,000円OFFにてご購入いただけます。</p>
 
@@ -270,10 +270,10 @@ $flow_steps = [
           <p class="page-goods__code-txt">［ <strong class="page-goods__code-num">ollude1000</strong> ］</p>
           <div class="page-goods__btn page-goods__btn--sec5">
             <?php get_template_part('template-parts/parts/parts-btn', null, [
-              'text'     => 'inori公式ショップで商品を見る',
+              'text' => 'inori公式ショップで商品を見る',
               'has_icon' => false,
-              'class'    => 'page-goods__code--btn',
-              'link'     => 'https://inoriokinawa.base.shop/',
+              'class' => 'page-goods__code--btn',
+              'link' => 'https://inoriokinawa.base.shop/',
             ]); ?>
           </div>
         </div>
@@ -289,7 +289,7 @@ $flow_steps = [
         <h2 class="page-goods__ttl">Flow ｜ ご購入の流れ</h2>
 
         <ol class="page-goods__flow">
-          <?php foreach ($flow_steps as $i => $step) : ?>
+          <?php foreach ($flow_steps as $i => $step): ?>
             <li class="page-goods__flow-item">
               <div class="page-goods__flow-step">
                 <span class="page-goods__flow-step-label">STEP</span>
@@ -318,16 +318,16 @@ $flow_steps = [
 
         <div class="page-goods__contact">
           <?php get_template_part('template-parts/parts/parts-btn', null, [
-            'text'     => '「inori」公式LINEはこちら',
+            'text' => '「inori」公式LINEはこちら',
             'has_icon' => false,
-            'class'    => 'page-goods__btn page-goods__btn--line',
-            'link'     => 'https://line.me/R/ti/p/%40114vrmsl',
+            'class' => 'page-goods__btn page-goods__btn--line',
+            'link' => 'https://line.me/R/ti/p/%40114vrmsl',
           ]); ?>
           <?php get_template_part('template-parts/parts/parts-btn', null, [
-            'text'     => '「inori」Instagramはこちら',
+            'text' => '「inori」Instagramはこちら',
             'has_icon' => false,
-            'class'    => 'page-goods__btn page-goods__btn--insta',
-            'link'     => 'https://www.instagram.com/inoriokinawa?utm_source=ig_web_button_share_sheet&igsi=ZDNlZDc0MzIxNw==',
+            'class' => 'page-goods__btn page-goods__btn--insta',
+            'link' => 'https://www.instagram.com/inoriokinawa?utm_source=ig_web_button_share_sheet&igsi=ZDNlZDc0MzIxNw==',
           ]); ?>
         </div>
       </div>

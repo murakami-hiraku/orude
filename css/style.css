@@ -573,8 +573,8 @@ main {
   opacity: 1;
 }
 .section-fv__windows .slider-area:nth-child(1) .slider-item:nth-child(1) {
-  -webkit-animation-delay: -0s;
-          animation-delay: -0s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
 }
 .section-fv__windows .slider-area:nth-child(1) .slider-item:nth-child(2) {
   -webkit-animation-delay: -16s;
@@ -3183,6 +3183,7 @@ main {
   font-size: 20px;
   font-weight: 400;
   line-height: 1.5;
+  padding-bottom: 36px;
 }
 @media (min-width: 1024px) {
   .page-goods .block-page-ttl__txt {
@@ -3209,6 +3210,7 @@ main {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.5;
+  padding-bottom: 100px;
 }
 @media (min-width: 1024px) {
   .page-goods .block-page-ttl__lead {
@@ -4661,6 +4663,11 @@ main {
 .page-tempel .ginzanji .tempel__link--tomoni .tempel__link-img img {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.daizenji .block-page-ttl {
+  background-position: center center;
+  background-size: cover;
 }
 
 .single__inner {

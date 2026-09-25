@@ -2,12 +2,12 @@
 <?php get_header(); ?>
 <!-- /ヘッダー -->
 
-<main class="page-tempel">
+<main class="page-tempel daizenji">
   <?php
   get_template_part('template-parts/block/block-page-ttl');
   ?>
 
-  <section class="tempel daizenji section fadein">
+  <section class="tempel section fadein">
 
     <h2 class="tempel__ttl--main">大善寺</h2>
     <p class="tempel__add">〒543-0017 大阪市天王寺区城南寺町8-26</p>
@@ -165,6 +165,8 @@
               </div>
 
             </div>
+            <p class="notes">宗旨・宗派問わずお納めいただけます。</p>
+
             <p class="notes">他社様で火葬されたご遺骨でもご納骨可能です。</p>
           </div>
 
@@ -176,7 +178,6 @@
               ご自宅に保管されているペットちゃんのご遺骨をスタッフがお伺いして丁寧にお預かりし、大善寺ペット永代供養墓へご納骨いたします。<br>
               他社様で火葬されたご遺骨もお引き受け可能です。
             </p>
-            <p class="notes">宗旨・宗派問わずお納めいただけます。</p>
             <div class="line line--3"></div>
             <p class="notes">※すべて完全予約制になっております。<br>　日程は、ご相談ください。<br>　直接お寺にお越しになられることは、<br>　ご遠慮ください。</p>
           </div>
