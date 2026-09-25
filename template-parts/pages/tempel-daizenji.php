@@ -18,22 +18,23 @@
       get_template_part('/template-parts/parts/parts-bg-circle')
         ?>
       <div class="tempel__container">
-        <h2 class="tempel__ttl">あの子が、ずっと安らげる場所へ。</h2>
+        <h2 class="tempel__ttl">約450年の歴史に見守られて、<br class="hidden-pc">やすらかな眠りを。</h2>
         <p class="tempel__txt">
-          安心できる環境でご葬儀・永代納骨を行い、ご家族様に寄り添うことをお約束します。<br>
-          大切なペットも人と同じように心を込めて供養させていただきます
+          天正10年（1582年）正誉上人により創建された約450年の歴史をもつ浄土宗のお寺です。<br>
+          「大阪新四十八願所阿弥陀巡礼」 第17番のお寺となっています。<br>
+          長きにわたり受け継がれてきた祈りの場で、大切なペットたちも心を込めて供養させていただきます。
         </p>
       </div>
 
       <div class="tempel__cards">
 
         <div class="tempel__card card-1">
-          <h2 class="tempel__card-ttl">本堂葬儀</h2>
+          <h2 class="tempel__card-ttl tempel__card-ttl--long">大切な方々と一緒にお別れの時間をお過ごしいただけます。</h2>
           <div class="tempel__card-img"><img
               src="<?php echo get_template_directory_uri(); ?>/img/page-tempel/daizenji-1.png" alt=""></div>
           <p class="tempel__card-lead">本堂にて僧侶による心を込めたご葬儀を執り行うプランです。ご希望の方には、火葬まで含めてご対応いたします。</p>
           <p class="tempel__card-notes">
-            ※ご家族様は本堂内にお入りいただけます。ご友人など、ご家族様以外の方も本堂の外よりお見送りいただけますので、大切な方々と一緒にお別れの時間をお過ごしいただけます。</p>
+            ※ご家族様は本堂内にお入りいただけます。ご友人など、ご家族様以外の方も本堂の外よりお見送りいただけます。</p>
 
           <!-- 2026.7.30 非表示に編集 -->
           <!-- <div class="tempel__card-head">
@@ -106,10 +107,19 @@
             <?php get_template_part('template-parts/parts/parts-btn', null, [
               'text' => '火葬料金はこちら',
               'link' => '/service-cremation/',
-              'class' => '' // 色を変えたい時などの識別用クラス
+              'class' => 'tempel__cremation-btn--pc' // PC（横並び）時のみ表示
             ]); ?>
 
           </div>
+        </div>
+
+        <!-- SP（縦並び）時のみ表示：納骨墓カードと本堂葬儀カードの間に配置 -->
+        <div class="tempel__cremation-btn tempel__cremation-btn--sp">
+          <?php get_template_part('template-parts/parts/parts-btn', null, [
+            'text' => '火葬料金はこちら',
+            'link' => '/service-cremation/',
+            'class' => ''
+          ]); ?>
         </div>
 
         <div class="tempel__card card-2">
@@ -163,9 +173,10 @@
               納骨代行
             </h4>
             <p class="txt">
-              ご自宅に保管されているペットちゃんのご遺骨をスタッフがお伺いして丁寧にお預かりし、来迎寺ペット永代供養墓へご納骨いたします。<br>
+              ご自宅に保管されているペットちゃんのご遺骨をスタッフがお伺いして丁寧にお預かりし、大善寺ペット永代供養墓へご納骨いたします。<br>
               他社様で火葬されたご遺骨もお引き受け可能です。
             </p>
+            <p class="notes">宗旨・宗派問わずお納めいただけます。</p>
             <div class="line line--3"></div>
             <p class="notes">※すべて完全予約制になっております。<br>　日程は、ご相談ください。<br>　直接お寺にお越しになられることは、<br>　ご遠慮ください。</p>
           </div>

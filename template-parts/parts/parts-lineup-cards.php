@@ -107,7 +107,7 @@ $initial_cards = $args['initial_cards'] ?? 2;
         aria-expanded="false">
 
         <span class="card-list__toggle-text">
-          もっと見る
+          その他の商品を見る
         </span>
 
         <span

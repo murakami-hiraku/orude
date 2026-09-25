@@ -19,6 +19,9 @@ if (is_404()) {
   } elseif ($acf_title) {    // 【重要】テキストエリアの改行を <br> に変換する
     // esc_htmlで安全を確保してから nl2br で改行を入れる
     $page_title = nl2br(esc_html($acf_title));
+  } elseif (!empty($args['title'])) {
+    // テンプレート側から直接タイトルを渡す場合（ACF未入力時のフォールバック）
+    $page_title = wp_kses_post($args['title']);
   } else {
     $page_title = esc_html(get_the_title());
   }
@@ -29,14 +32,19 @@ if (is_404()) {
 // 1. まずACFから画像を取得（返り値が「URL」設定の場合）
 $bg_img = get_field('page_ttl_bg');
 
-// 2. もしACFが空なら、デフォルト画像のURLを入れる
+// 2. ACFが空で、テンプレート側から背景画像が渡されていればそれを使う
+if (!$bg_img && !empty($args['bg'])) {
+  $bg_img = $args['bg'];
+}
+
+// 3. それでも空なら、デフォルト画像のURLを入れる
 if (!$bg_img) {
   // get_template_directory_uri() はテーマのルートURLを返します
   // /img/default-bg.jpg の部分は実際のファイル名に合わせて書き換えてください
   $bg_img = get_template_directory_uri() . '/img/common/page-ttl-img-common.png';
 }
 
-// 3. 最終的なURLを使ってstyle属性を作る
+// 4. 最終的なURLを使ってstyle属性を作る
 $style = ' style="background-image: url(' . esc_url($bg_img) . ');"';
 ?>
 
@@ -44,8 +52,6 @@ $style = ' style="background-image: url(' . esc_url($bg_img) . ');"';
 <div class="block-page-ttl" <?php echo $style; ?>>
   <div class="block-page-ttl__overlay"></div>
   <div class="block-page-ttl__content">
-    <!-- <?php get_template_part('template-parts/block/block-breadcrumb'); ?> -->
-
     <h1 class="block-page-ttl__txt">
       <?php echo $page_title; ?> </h1>
   </div>

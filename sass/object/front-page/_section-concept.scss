@@ -176,6 +176,7 @@
 
     @include b.mq(tb) {
       flex-direction: row;
+      flex-wrap: wrap; // 3件目以降は幅に応じて折り返す
       gap: 60px;
     }
 

@@ -30,7 +30,18 @@
             </tr>
             <tr class="page-company__table-list">
               <th class="page-company__table-ttl">所在地</th>
-              <td class="page-company__table-input">〒558-0051<br>大阪市住吉区東粉浜<br class="hidden-tb">3-12-17</td>
+              <td class="page-company__table-input">
+                <div class="page-company__address">
+                  <p class="page-company__address-item">
+                    <span class="page-company__address-label">本社</span>
+                    〒583-0872<br>大阪府羽曳野市はびきの<br class="hidden-tb">3-316-84
+                  </p>
+                  <p class="page-company__address-item">
+                    <span class="page-company__address-label">営業所</span>
+                    〒558-0051<br>大阪市住吉区東粉浜<br class="hidden-tb">3-12-17
+                  </p>
+                </div>
+              </td>
             </tr>
             <tr class="page-company__table-list">
               <th class="page-company__table-ttl">フリーダイヤル</th>

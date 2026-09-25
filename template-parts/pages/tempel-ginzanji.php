@@ -2,15 +2,19 @@
 <?php get_header(); ?>
 <!-- /ヘッダー -->
 
-<main class="page-tempel">
+<main class="page-tempel page-tempel-ginzanji">
   <?php
-  get_template_part('template-parts/block/block-page-ttl');
+  // ACF（display_title / page_ttl_bg）が未入力の場合は、ここで渡した値が使われます
+  get_template_part('template-parts/block/block-page-ttl', null, [
+    'bg'    => get_template_directory_uri() . '/img/page-tempel/ginzanji-bg.jpg',
+    'title' => '銀山寺',
+  ]);
   ?>
 
-  <section class="tempel raikouji section fadein">
+  <section class="tempel ginzanji section fadein">
 
-    <h2 class="tempel__ttl--main">來迎寺</h2>
-    <p class="tempel__add">〒543-0001 大阪市天王寺区上本町8-4-7</p>
+    <h2 class="tempel__ttl--main">銀山寺</h2>
+    <p class="tempel__add">〒543-0073 大阪市天王寺区生玉寺町6-26</p>
 
     <div class="tempel__inner inner">
 
@@ -18,12 +22,11 @@
       get_template_part('/template-parts/parts/parts-bg-circle')
         ?>
       <div class="tempel__container">
-        <h2 class="tempel__ttl">すべてのいのちに、<br class="hidden-pc">やすらぎの旅立ちを。</h2>
+        <h2 class="tempel__ttl">太閤秀吉ゆかりの古刹で、<br class="hidden-pc">静かな祈りを。</h2>
         <p class="tempel__txt">
-          来迎寺は、天保７年（1836年）に創建された歴史ある浄土宗の寺院です。<br>
-          令和５年に本堂を新築し、モダンな造りで、お寺に見えないと言う方も大勢いらっしゃいます。<br>
-          参詣者が靴を脱ぐことなく、本尊に参拝できるように本堂を土足とするなど斬新な造りとなっています。<br>
-          阿弥陀様がお迎え下さる「来迎」の心で人も生きものも分けへだてなく寄り添う寺院です。
+          銀山寺は、京都黒谷 紫雲山金戒光明寺第24世 三蓮社縁譽上人休岸大和尚が開山したお寺です。<br>
+          1591年（天正19年）、豊臣秀吉の城下町建設の一環として「大福寺」の名で創建され、のちに太閤秀吉の命により「寶樹山銀山寺」と改称されました。<br>
+          430年余りの歴史を重ねた境内で、大切なあの子を心を込めて供養いたします。
         </p>
       </div>
 
@@ -32,7 +35,7 @@
         <div class="tempel__card card-1">
           <h2 class="tempel__card-ttl tempel__card-ttl--long">大切な方々と一緒にお別れの時間をお過ごしいただけます。</h2>
           <div class="tempel__card-img"><img
-              src="<?php echo get_template_directory_uri(); ?>/img/page-tempel/raikouji-1.png" alt=""></div>
+              src="<?php echo get_template_directory_uri(); ?>/img/page-tempel/ginzanji-4.jpg" alt="銀山寺 本堂"></div>
           <p class="tempel__card-lead">本堂にて僧侶による心を込めたご葬儀を執り行うプランです。ご希望の方には、火葬まで含めてご対応いたします。</p>
           <p class="tempel__card-notes">
             ※ご家族様は本堂内にお入りいただけます。ご友人など、ご家族様以外の方も本堂の外よりお見送りいただけます。</p>
@@ -128,7 +131,7 @@
         <div class="tempel__card card-2">
           <h2 class="tempel__card-ttl">ペット永代納骨墓</h2>
           <div class="tempel__card-img"><img
-              src="<?php echo get_template_directory_uri(); ?>/img/page-tempel/raikouji-2.png" alt=""></div>
+              src="<?php echo get_template_directory_uri(); ?>/img/page-tempel/ginzanji-1.jpg" alt="銀山寺ペット永代納骨墓での読経"></div>
           <div class="tempel__card-head">
 
             <div class="box">
@@ -139,16 +142,16 @@
                 <div class="main">
                   <p>納骨料１体</p>
                   <div>
-                    <span class="num">7,000</span>
+                    <span class="num">20,000</span>
                     <span class="unit">
                       <small class="tax">(税込)</small>
                       <small class="yen">円</small>
                     </span>
                   </div>
                 </div>
-                <p class="sub">納骨法要を行う場合別途１万円</p>
               </div>
             </div>
+            <p class="notes notes--service">月に2回（第2土曜日と第4日曜日）お塔婆をたて、<br class="hidden-sp">ご住職に読経していただきます。<br>ご希望の方は、お立ち合いしていただけます。</p>
             <p class="notes">他社様で火葬されたご遺骨でもご納骨可能です。</p>
           </div>
 
@@ -157,12 +160,9 @@
               納骨代行
             </h4>
             <p class="txt">
-              ご自宅に保管されているペットちゃんのご遺骨をスタッフがお伺いして丁寧にお預かりし、来迎寺ペット永代供養墓へご納骨いたします。<br>
+              ご自宅に保管されているペットちゃんのご遺骨をスタッフがお伺いして丁寧にお預かりし、銀山寺ペット永代納骨墓へご納骨いたします。<br>
               他社様で火葬されたご遺骨もお引き受け可能です。
             </p>
-            <p class="notes">宗旨・宗派問わずお納めいただけます。</p>
-            <div class="line line--3"></div>
-            <p class="notes">※すべて完全予約制になっております。<br>　日程は、ご相談ください。<br>　直接お寺にお越しになられることは、<br>　ご遠慮ください。</p>
           </div>
         </div>
 
@@ -170,11 +170,11 @@
 
 
     </div>
-    <a href="https://raikouji-uehonmachi.com/" class="tempel__link">
-      <p class="tempel__link-txt">來迎寺ホームページ</p>
+    <a href="<?php echo home_url('/service-perpetual-care/'); ?>" class="tempel__link tempel__link--tomoni">
+      <p class="tempel__link-txt">永代納骨『ともに』はこちら</p>
 
       <div class="tempel__link-img"><img
-          src="<?php echo get_template_directory_uri(); ?>/img/page-tempel/raikouji-3.png" alt=""></div>
+          src="<?php echo get_template_directory_uri(); ?>/img/page-tempel/ginzanji-2.jpg" alt=""></div>
     </a>
 
 

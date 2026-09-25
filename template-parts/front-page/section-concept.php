@@ -41,6 +41,12 @@
         </div>
         <h4>大善寺でのペット葬儀　詳しくはこちら</h4>
       </a>
+      <a href="/tempel-ginzanji" class="section-concept__link">
+        <div>
+          <img src="<?php echo get_template_directory_uri(); ?>/img/common/c-tempel-ginzanji.png" alt="" class="right">
+        </div>
+        <h4>銀山寺でのペット葬儀　詳しくはこちら</h4>
+      </a>
     </div>
   </div>
 </section>

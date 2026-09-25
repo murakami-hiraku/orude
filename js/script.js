@@ -399,7 +399,7 @@ window.addEventListener("DOMContentLoaded", () => {
     // 初期状態
     more.style.height = "0px";
     toggleBtn.setAttribute("aria-expanded", "false");
-    toggleText.textContent = "もっと見る";
+    toggleText.textContent = "その他の商品を見る";
 
     toggleBtn.addEventListener("click", function () {
       const isOpen = toggleBtn.getAttribute("aria-expanded") === "true";
@@ -415,7 +415,7 @@ window.addEventListener("DOMContentLoaded", () => {
         more.style.height = "0px";
 
         toggleBtn.setAttribute("aria-expanded", "false");
-        toggleText.textContent = "もっと見る";
+        toggleText.textContent = "その他の商品を見る";
       }
     });
 

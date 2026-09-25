@@ -295,7 +295,7 @@
     </div>
     <div class="page-s-cremation__container">
       <div class="page-s-cremation__img">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/page-cremation/cremation-sec6-1.png" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/page-cremation/cremation-sec6-price-2026.png" alt="火葬料金表（体重別・税込）">
       </div>
 
       <div class="page-s-cremation__cards">

@@ -131,4 +131,20 @@
       }
     }
   }
+
+  // 所在地（本社・営業所）
+  &__address {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &-item {
+      line-height: 1.6;
+    }
+
+    &-label {
+      display: block;
+      margin-bottom: 2px;
+    }
+  }
 }
